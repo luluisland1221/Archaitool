@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Microlink API 测试</h1>
+    
+    <div class="test-item">
+        <h3>测试 1: AiTwo (https://aitwo.co/)</h3>
+        <div id="status1" class="loading">正在加载截图...</div>
+        <img id="img1" class="screenshot" style="display:none;" />
+    </div>
+    
+    <div class="test-item">
+        <h3>测试 2: Maket AI (https://www.maket.ai/)</h3>
+        <div id="status2" class="loading">正在加载截图...</div>
+        <img id="img2" class="screenshot" style="display:none;" />
+    </div>
+    
+    <div class="test-item">
+        <h3>测试 3: Midjourney (https://midjourney.com/)</h3>
+        <div id="status3" class="loading">正在加载截图...</div>
+        <img id="img3" class="screenshot" style="display:none;" />
+    </div>
+    
+    <div class="test-item">
+        <h3>测试 4: RoomGPT (https://www.roomgpt.io/)</h3>
+        <div id="status4" class="loading">正在加载截图...</div>
+        <img id="img4" class="screenshot" style="display:none;" />
+    </div>
+
+    <script>
+        // 测试不同的网站截图
+        const tests = [
+            {
+                id: 1,
+                name: "AiTwo",
+                url: "https://aitwo.co/"
+            },
+            {
+                id: 2,
+                name: "Maket AI", 
+                url: "https://www.maket.ai/"
+            },
+            {
+                id: 3,
+                name: "Midjourney",
+                url: "https://midjourney.com/"
+            },
+            {
+                id: 4,
+                name: "RoomGPT",
+                url: "https://www.roomgpt.io/"
+            }
+        ];
+
+        function createScreenshotUrl(targetUrl) {
+            // 使用 Microlink API 获取截图
+            const baseUrl = "https://api.microlink.io";
+            const params = new URLSearchParams({
+                url: targetUrl,
+                screenshot: "true",
+                meta: "false", 
+                "viewport.width": "1200",
+                "viewport.height": "800",
+                "waitFor": "2000"
+            });
+            
+            return `${baseUrl}?${params.toString()}`;
+        }
+
+        async function testScreenshot(test) {
+            const img = document.getElementById(`img${test.id}`);
+            const status = document.getElementById(`status${test.id}`);
+            
+            const apiUrl = createScreenshotUrl(test.url);
+            console.log(`Testing ${test.name}: ${apiUrl}`);
+            
+            try {
+                // 先获取API响应
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                
+                if (data.status === 'success' && data.data.screenshot && data.data.screenshot.url) {
+                    // 提取截图URL
+                    const screenshotUrl = data.data.screenshot.url;
+                    console.log(`Screenshot URL for ${test.name}: ${screenshotUrl}`);
+                    
+                    img.onload = function() {
+                        status.textContent = "✅ 截图加载成功！";
+                        status.className = "success";
+                        img.style.display = "block";
+                    };
+                    
+                    img.onerror = function() {
+                        status.textContent = "❌ 截图图片加载失败";
+                        status.className = "error";
+                    };
+                    
+                    img.src = screenshotUrl;
+                } else {
+                    status.textContent = "❌ API响应中没有截图";
+                    status.className = "error";
+                    console.error(`No screenshot in API response for ${test.name}:`, data);
+                }
+            } catch (error) {
+                status.textContent = "❌ API调用失败";
+                status.className = "error";
+                console.error(`API call failed for ${test.name}:`, error);
+            }
+        }
+
+        // 开始测试
+        tests.forEach(test => {
+            setTimeout(() => testScreenshot(test), test.id * 1000); // 间隔1秒测试
+        });
+    </script>
+</body>
+</html>

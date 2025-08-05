@@ -1,0 +1,5 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M100 200 L200 100 L300 200 L200 300 Z" stroke="black" stroke-width="2" fill="none"/>
+  <text x="350" y="250" font-family="Arial" font-size="120" font-weight="bold" fill="black">ARCH AI</text>
+  <text x="350" y="350" font-family="Arial" font-size="40" fill="black">NAVIGATION WEBSITE FOR ARCHITECTURAL AI TOOLS</text>
+</svg>
