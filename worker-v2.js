@@ -68,7 +68,7 @@ async function handleRequest(request) {
 
       console.log(`[PROXY] Screenshot request for: ${targetUrl}`)
 
-      // 构建Microlink API URL
+      // 构建Microlink API URL（使用正确的参数格式）
       const microlinkParams = new URLSearchParams({
         url: targetUrl,
         screenshot: 'true',
@@ -77,7 +77,8 @@ async function handleRequest(request) {
         'viewport.width': width,
         'viewport.height': height,
         type: format,
-        quality: quality
+        quality: quality,
+        waitFor: '1000'
       })
 
       const microlinkUrl = `https://api.microlink.io?${microlinkParams.toString()}`

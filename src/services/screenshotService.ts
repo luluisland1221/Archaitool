@@ -208,7 +208,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
 
       // 处理不同的响应格式
       let screenshotUrl: string;
-      let screenshotSize?: number;
+      let screenshotSize: number | undefined;
 
       if (responseData.status === 'success') {
         // Cloudflare Workers v2 响应格式
