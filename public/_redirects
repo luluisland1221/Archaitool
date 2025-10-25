@@ -1,12 +1,11 @@
-# 域名重定向配置
-# 确保所有域名变体都重定向到主站点 https://archaitool.com/
+# 域名重定向配置 - 仅处理域名重定向，保留查询参数和路径
 
-# HTTP -> HTTPS 重定向
+# HTTP -> HTTPS 重定向（保留所有查询参数和路径）
 http://archaitool.com/*  https://archaitool.com/:splat  301!
 http://www.archaitool.com/*  https://archaitool.com/:splat  301!
 
-# HTTPS www 重定向
+# HTTPS www 重定向（保留所有查询参数和路径）
 https://www.archaitool.com/*  https://archaitool.com/:splat  301!
 
-# SPA路由支持
+# SPA路由支持 - 处理所有其他路由
 /*    /index.html   200
