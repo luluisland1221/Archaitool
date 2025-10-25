@@ -1,3 +1,5 @@
+import { getFallbackScreenshotUrl, getPlaceholderImageUrl } from '../utils/fallbackScreenshots';
+
 export interface ScreenshotCache {
   url: string;
   timestamp: number;
@@ -55,11 +57,20 @@ class ScreenshotService {
 
   /**
    * 获取备用图片URL（当API配额耗尽时使用）
+   * 优先使用静态截图，否则使用美观的占位图
    */
   private getFallbackScreenshotUrl(url: string): string {
-    // 使用固定的占位图片，避免重复API调用
-    const domain = new URL(url).hostname.replace(/^www\./, '');
-    return `https://via.placeholder.com/800x530/4a5568/ffffff?text=${encodeURIComponent(domain)}`;
+    // 首先尝试使用静态截图
+    const staticFallback = getFallbackScreenshotUrl(url);
+    if (staticFallback) {
+      console.log(`Using static fallback screenshot for ${url}`);
+      return staticFallback;
+    }
+
+    // 没有静态截图时使用占位图
+    const placeholderUrl = getPlaceholderImageUrl();
+    console.log(`Using placeholder image for ${url}`);
+    return placeholderUrl;
   }
 
   /**

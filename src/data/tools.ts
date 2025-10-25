@@ -627,7 +627,8 @@ export const configureToolScreenshots = (categories: Category[]): Category[] => 
       ...subcategory,
       tools: subcategory.tools.map(tool => {
         // 默认所有工具都使用动态截图，除了那些已经使用占位符的
-        const shouldUseDynamic = !tool.image.includes('via.placeholder.com');
+        // 暂时禁用动态截图以避免API配额耗尽
+        const shouldUseDynamic = false;
 
         return {
           ...tool,
