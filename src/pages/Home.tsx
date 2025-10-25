@@ -2,13 +2,46 @@ import React from 'react';
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
-import { categories } from '../data/tools';
+import { configuredCategories } from '../data/tools';
+import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
+import { screenshotService } from '../services/screenshotService';
 
 const Home = () => {
   const navigate = useNavigate();
   
   useEffect(() => {
     document.title = 'Arch AI Tool - Discover AI Tools for Architecture & Design';
+
+    // 预加载首屏图片
+    const preloadFirstScreenImages = async () => {
+      try {
+        // 获取前6个工具的URL进行预加载
+        const firstScreenUrls = [];
+        for (const category of configuredCategories) {
+          for (const subcategory of category.subcategories) {
+            for (const tool of subcategory.tools.slice(0, 2)) { // 每个分类前2个
+              if (tool.useDynamicScreenshot && firstScreenUrls.length < 6) {
+                firstScreenUrls.push(tool.url);
+              }
+            }
+            if (firstScreenUrls.length >= 6) break;
+          }
+          if (firstScreenUrls.length >= 6) break;
+        }
+
+        if (firstScreenUrls.length > 0) {
+          console.log('Preloading first screen screenshots:', firstScreenUrls);
+          await screenshotService.preloadScreenshots(firstScreenUrls, true);
+        }
+      } catch (error) {
+        console.warn('Failed to preload first screen images:', error);
+      }
+    };
+
+    // 延迟1秒后开始预加载，避免阻塞页面渲染
+    const timer = setTimeout(preloadFirstScreenImages, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const handleCardClick = (toolId: string) => {
@@ -34,7 +67,7 @@ const Home = () => {
               Your gateway to agentic architecture and AI-powered design solutions
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {categories.map((category) => (
+              {configuredCategories.map((category) => (
                 <Link
                   to={`/tools/${category.id}`}
                   key={category.id}
@@ -57,7 +90,7 @@ const Home = () => {
       </section>
 
       {/* Featured Tools by Category */}
-      {categories.map((category) => (
+      {configuredCategories.map((category) => (
         <section key={category.id} className="py-16 border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Primary Category Header */}
@@ -86,14 +119,14 @@ const Home = () => {
                       >
                         <div className="relative">
                           <div className="relative overflow-hidden">
-                            <img 
-                              src={tool.image} 
+                            <DynamicScreenshotImage
+                              toolUrl={tool.url}
+                              toolName={tool.name}
+                              fallbackImage={tool.fallbackImage || tool.image}
                               alt={tool.name}
                               className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                              onError={(e) => {
-                                console.log(`Screenshot failed for ${tool.name}: ${tool.image}`);
-                                e.target.src = `https://via.placeholder.com/400x300/f3f4f6/6b7280?text=${encodeURIComponent(tool.name)}`;
-                              }}
+                              useDynamicScreenshot={tool.useDynamicScreenshot}
+                              lazy={true}
                             />
                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>

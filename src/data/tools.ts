@@ -7,6 +7,8 @@ export interface Tool {
   isPaid: boolean;
   category: string;
   subcategory: string;
+  useDynamicScreenshot?: boolean;
+  fallbackImage?: string;
 }
 
 export interface Subcategory {
@@ -616,3 +618,26 @@ export const categories: Category[] = [
     ]
   }
 ];
+
+// 配置工具的动态截图设置
+export const configureToolScreenshots = (categories: Category[]): Category[] => {
+  return categories.map(category => ({
+    ...category,
+    subcategories: category.subcategories.map(subcategory => ({
+      ...subcategory,
+      tools: subcategory.tools.map(tool => {
+        // 默认所有工具都使用动态截图，除了那些已经使用占位符的
+        const shouldUseDynamic = !tool.image.includes('via.placeholder.com');
+
+        return {
+          ...tool,
+          useDynamicScreenshot: shouldUseDynamic,
+          fallbackImage: tool.image // 原有图片作为备用
+        };
+      })
+    }))
+  }));
+};
+
+// 获取配置后的分类数据
+export const configuredCategories = configureToolScreenshots(categories);

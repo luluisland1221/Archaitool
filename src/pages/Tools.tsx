@@ -2,7 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useSearchParams, useParams, Link, useNavigate } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
-import { categories } from '../data/tools';
+import { configuredCategories } from '../data/tools';
+import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 
 const Tools = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Tools = () => {
   const finalSubcategoryId = params.subcategory || subcategoryId;
   
   const selectedCategory = finalCategoryId 
-    ? categories.find(cat => cat.id === finalCategoryId)
+    ? configuredCategories.find(cat => cat.id === finalCategoryId)
     : null;
 
   const selectedSubcategory = selectedCategory && finalSubcategoryId
@@ -64,7 +65,7 @@ const Tools = () => {
 
   const renderCategories = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {categories.map((category) => (
+      {configuredCategories.map((category) => (
         <div
           key={category.id}
           onClick={() => navigate(`/tools/${category.id}`)}
@@ -97,10 +98,14 @@ const Tools = () => {
       >
         <div className="relative">
           <div className="relative overflow-hidden">
-            <img 
-              src={tool.image} 
+            <DynamicScreenshotImage
+              toolUrl={tool.url}
+              toolName={tool.name}
+              fallbackImage={tool.fallbackImage || tool.image}
               alt={tool.name}
               className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+              useDynamicScreenshot={tool.useDynamicScreenshot}
+              lazy={true}
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -131,7 +136,7 @@ const Tools = () => {
     );
   };
 
-  const renderSubcategories = (category) => (
+  const renderSubconfiguredCategories = (category) => (
     <div className="space-y-16">
       {category.subcategories.map((subcategory) => (
         <div key={subcategory.id}>
@@ -176,7 +181,7 @@ const Tools = () => {
         {selectedCategory && !selectedSubcategory && (
           <>
             <h1 className="text-4xl font-bold mb-8">{selectedCategory.name}</h1>
-            {renderSubcategories(selectedCategory)}
+            {renderSubconfiguredCategories(selectedCategory)}
           </>
         )}
 

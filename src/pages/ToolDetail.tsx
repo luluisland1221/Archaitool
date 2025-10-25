@@ -2,13 +2,14 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ExternalLink, ArrowLeft, Check, Building2, Cpu, Palette, Clock } from 'lucide-react';
-import { categories } from '../data/tools';
+import { configuredCategories } from '../data/tools';
+import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 
 const ToolDetail = () => {
   const { id } = useParams();
   
   // Find the tool in our data
-  const tool = categories.flatMap(category => 
+  const tool = configuredCategories.flatMap(category => 
     category.subcategories.flatMap(subcategory => 
       subcategory.tools
     )
@@ -43,7 +44,7 @@ const ToolDetail = () => {
   }
 
   // Find the category and subcategory
-  const category = categories.find(c => 
+  const category = configuredCategories.find(c => 
     c.subcategories.some(s => s.tools.some(t => t.id === id))
   );
   
@@ -67,11 +68,16 @@ const ToolDetail = () => {
 
         <div className="bg-white shadow-xl rounded-lg overflow-hidden">
           {/* Hero Section */}
-          <div className="relative h-64 md:h-96">
-            <img 
-              src={tool.image} 
+          <div className="relative h-64 md:h-96 max-h-96 overflow-hidden">
+            <DynamicScreenshotImage
+              toolUrl={tool.url}
+              toolName={tool.name}
+              fallbackImage={tool.fallbackImage || tool.image}
               alt={tool.name}
               className="w-full h-full object-cover"
+              useDynamicScreenshot={tool.useDynamicScreenshot}
+              lazy={false}
+              style={{ maxHeight: '384px' }}
             />
             <div className="absolute inset-0 bg-black bg-opacity-40" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
