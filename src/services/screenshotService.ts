@@ -16,10 +16,10 @@ export interface ScreenshotResponse {
 }
 
 class ScreenshotService {
-  private readonly CACHE_DURATION = 24 * 60 * 60 * 1000; // 24小时
+  private readonly CACHE_DURATION = 48 * 60 * 60 * 1000; // 延长到48小时缓存
   private readonly CACHE_KEY_PREFIX = 'screenshot_cache_';
-  private readonly MAX_RETRIES = 2; // 减少重试次数
-  private readonly TIMEOUT = 8000; // 减少到8秒超时
+  private readonly MAX_RETRIES = 1; // 减少重试次数
+  private readonly TIMEOUT = 6000; // 减少到6秒超时
   private apiUrl: string = 'https://api.microlink.io'; // 动态API URL
 
   /**
@@ -36,6 +36,30 @@ class ScreenshotService {
         console.warn('Failed to initialize CDN proxy, using direct API:', error);
       }
     }
+  }
+
+  /**
+   * 检查是否为配额耗尽错误
+   */
+  private isQuotaExceededError(error: any): boolean {
+    const errorMessage = error?.message?.toLowerCase() || '';
+    const responseMessage = error?.responseMessage?.toLowerCase() || '';
+    const fullErrorText = `${errorMessage} ${responseMessage}`;
+
+    return fullErrorText.includes('quota') ||
+           fullErrorText.includes('not enough') ||
+           fullErrorText.includes('exceeded') ||
+           fullErrorText.includes('limit') ||
+           fullErrorText.includes('payment required');
+  }
+
+  /**
+   * 获取备用图片URL（当API配额耗尽时使用）
+   */
+  private getFallbackScreenshotUrl(url: string): string {
+    // 使用固定的占位图片，避免重复API调用
+    const domain = new URL(url).hostname.replace(/^www\./, '');
+    return `https://via.placeholder.com/800x530/4a5568/ffffff?text=${encodeURIComponent(domain)}`;
   }
 
   /**
@@ -294,6 +318,24 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
       }
     } catch (error) {
       console.error(`Failed to get screenshot for ${url}:`, error);
+
+      // 检查是否为配额耗尽错误
+      if (this.isQuotaExceededError(error)) {
+        console.warn('API quota exceeded, using fallback screenshot');
+        const fallbackUrl = this.getFallbackScreenshotUrl(url);
+        const fallbackData = {
+          url: fallbackUrl,
+          size: 5000 // 估算大小
+        };
+
+        // 将备用图片也缓存起来，避免重复生成
+        if (useCache) {
+          this.setCachedScreenshot(url, fallbackData);
+        }
+
+        return fallbackData;
+      }
+
       throw error;
     }
   }

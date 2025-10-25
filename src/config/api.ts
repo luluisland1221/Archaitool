@@ -1,10 +1,10 @@
 // API配置
 export const API_CONFIG = {
-  // 主要API基础URL (Cloudflare Workers代理)
-  PRIMARY_API_URL: 'https://screenshot-proxy.hebringstherain.workers.dev',
+  // 优先使用直接Microlink API (配额更精确控制)
+  PRIMARY_API_URL: 'https://api.microlink.io',
 
-  // 备用API (直接Microlink)
-  FALLBACK_API_URL: 'https://api.microlink.io',
+  // 备用API (Cloudflare Workers代理)
+  FALLBACK_API_URL: 'https://screenshot-proxy.hebringstherain.workers.dev',
 
   // 当前使用的API (会自动切换)
   get currentApiUrl() {
@@ -33,14 +33,14 @@ export const checkApiHealth = async (apiUrl: string): Promise<boolean> => {
 
 // 获取可用的API URL
 export const getAvailableApiUrl = async (): Promise<string> => {
-  // 首先尝试主API (Cloudflare)
+  // 优先使用直接Microlink API (更好的配额控制)
   const primaryAvailable = await checkApiHealth(API_CONFIG.PRIMARY_API_URL);
   if (primaryAvailable) {
-    console.log('Using Cloudflare CDN proxy');
+    console.log('Using direct Microlink API (quota aware)');
     return API_CONFIG.PRIMARY_API_URL;
   }
 
-  // 降级到备用API (直接Microlink)
-  console.log('Falling back to direct Microlink API');
+  // 降级到备用API (Cloudflare Workers代理)
+  console.log('Falling back to Cloudflare CDN proxy');
   return API_CONFIG.FALLBACK_API_URL;
 };
