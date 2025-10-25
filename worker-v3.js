@@ -71,7 +71,7 @@ async function handleRequest(request) {
         embed: 'screenshot',
         'viewport.width': width,
         'viewport.height': height,
-        waitFor: '1000'
+        waitFor: '800'  // 减少等待时间: 1000ms -> 800ms
       })
 
       const apiUrl = `https://api.microlink.io?${params.toString()}`

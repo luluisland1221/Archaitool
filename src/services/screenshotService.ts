@@ -147,14 +147,14 @@ class ScreenshotService {
 
       // 根据API类型选择不同的请求方式
       if (this.apiUrl.includes('workers.dev')) {
-        // 使用Cloudflare Workers代理
+        // 使用Cloudflare Workers代理 - 优化参数
         const proxyParams = {
           url: url,
-          width: '900',
-          height: '600',
+          width: '800',      // 降低分辨率: 900x600 -> 800x530
+          height: '530',
           type: useWebP ? 'webp' : 'jpeg',
-          quality: '75',
-          waitFor: '1000'
+          quality: '70',     // 降低质量: 75% -> 70%
+          waitFor: '800'     // 减少等待时间: 1000ms -> 800ms
         };
 
         const configModule = await import('../config/api');
@@ -173,17 +173,17 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
           signal: AbortSignal.timeout(this.TIMEOUT)
         });
       } else {
-        // 直接使用Microlink API
+        // 直接使用Microlink API - 优化参数
         const params = new URLSearchParams({
           url: url,
           screenshot: 'true',
           meta: 'false',
-          'viewport.width': '900',
-          'viewport.height': '600',
-          'waitFor': '1000',
+          'viewport.width': '800',      // 降低分辨率: 900x600 -> 800x530
+          'viewport.height': '530',
+          'waitFor': '800',             // 减少等待时间: 1000ms -> 800ms
           'deviceScaleFactor': '1',
           'type': useWebP ? 'webp' : 'jpeg',
-          'quality': '75'
+          'quality': '70'              // 降低质量: 75% -> 70%
         });
 
         const apiUrl = `${this.apiUrl}?${params.toString()}`;
