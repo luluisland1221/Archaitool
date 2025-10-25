@@ -16,11 +16,27 @@ export interface ScreenshotResponse {
 }
 
 class ScreenshotService {
-  private readonly API_BASE_URL = 'https://api.microlink.io';
   private readonly CACHE_DURATION = 24 * 60 * 60 * 1000; // 24小时
   private readonly CACHE_KEY_PREFIX = 'screenshot_cache_';
   private readonly MAX_RETRIES = 2; // 减少重试次数
   private readonly TIMEOUT = 8000; // 减少到8秒超时
+  private apiUrl: string = 'https://api.microlink.io'; // 动态API URL
+
+  /**
+   * 初始化API URL（支持CDN代理）
+   */
+  private async initializeApiUrl(): Promise<void> {
+    if (this.apiUrl === 'https://api.microlink.io') {
+      try {
+        // 尝试使用CDN代理
+        const configModule = await import('../config/api');
+        this.apiUrl = await configModule.getAvailableApiUrl();
+        console.log(`Using API URL: ${this.apiUrl}`);
+      } catch (error) {
+        console.warn('Failed to initialize CDN proxy, using direct API:', error);
+      }
+    }
+  }
 
   /**
    * 生成缓存键
@@ -124,30 +140,65 @@ class ScreenshotService {
       // 检查WebP支持
       const useWebP = this.supportsWebP();
 
-      const params = new URLSearchParams({
-        url: url,
-        screenshot: 'true',
-        meta: 'false',
-        'viewport.width': '900',  // 降低分辨率
-        'viewport.height': '600', // 降低分辨率
-        'waitFor': '1000',        // 减少到1秒等待时间
-        'deviceScaleFactor': '1',
-        'type': useWebP ? 'webp' : 'jpeg', // 优先WebP，降级到JPEG
-        'quality': '75'           // 质量设置
-      });
+      // 初始化API URL
+      await this.initializeApiUrl();
 
-      const apiUrl = `${this.API_BASE_URL}?${params.toString()}`;
+      let response: Response;
 
-      console.log(`Fetching screenshot for ${url} (attempt ${retryCount + 1})`);
+      // 根据API类型选择不同的请求方式
+      if (this.apiUrl.includes('workers.dev')) {
+        // 使用Cloudflare Workers代理
+        const proxyParams = {
+          url: url,
+          width: '900',
+          height: '600',
+          type: useWebP ? 'webp' : 'jpeg',
+          quality: '75',
+          waitFor: '1000'
+        };
 
-      const response = await fetch(apiUrl, {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        signal: AbortSignal.timeout(this.TIMEOUT)
-      });
+        const configModule = await import('../config/api');
+const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screenshot);
+        Object.entries(proxyParams).forEach(([key, value]) => {
+          proxyUrl.searchParams.set(key, value);
+        });
+
+        console.log(`Fetching screenshot via CDN proxy for ${url} (attempt ${retryCount + 1})`);
+
+        response = await fetch(proxyUrl.toString(), {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json'
+          },
+          signal: AbortSignal.timeout(this.TIMEOUT)
+        });
+      } else {
+        // 直接使用Microlink API
+        const params = new URLSearchParams({
+          url: url,
+          screenshot: 'true',
+          meta: 'false',
+          'viewport.width': '900',
+          'viewport.height': '600',
+          'waitFor': '1000',
+          'deviceScaleFactor': '1',
+          'type': useWebP ? 'webp' : 'jpeg',
+          'quality': '75'
+        });
+
+        const apiUrl = `${this.apiUrl}?${params.toString()}`;
+
+        console.log(`Fetching screenshot via direct API for ${url} (attempt ${retryCount + 1})`);
+
+        response = await fetch(apiUrl, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          signal: AbortSignal.timeout(this.TIMEOUT)
+        });
+      }
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
