@@ -204,12 +204,44 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const data: ScreenshotResponse = await response.json();
+      const responseData = await response.json();
 
-      if (data.status === 'success' && data.data?.screenshot?.url) {
-        return data;
+      // 处理不同的响应格式
+      let screenshotUrl: string;
+      let screenshotSize?: number;
+
+      if (responseData.status === 'success') {
+        // Cloudflare Workers v2 响应格式
+        if (responseData.screenshotUrl) {
+          screenshotUrl = responseData.screenshotUrl;
+          screenshotSize = responseData.meta?.size;
+        }
+        // Microlink 直接API响应格式
+        else if (responseData.data?.screenshot?.url) {
+          screenshotUrl = responseData.data.screenshot.url;
+          screenshotSize = responseData.data.screenshot.size;
+        }
+        // 备用格式
+        else if (responseData.url) {
+          screenshotUrl = responseData.url;
+          screenshotSize = responseData.size;
+        } else {
+          throw new Error('No screenshot URL found in response');
+        }
+
+        // 转换为标准格式返回
+        return {
+          status: 'success',
+          data: {
+            screenshot: {
+              url: screenshotUrl,
+              size: screenshotSize,
+              type: 'png'
+            }
+          }
+        };
       } else {
-        throw new Error(data.message || 'Invalid API response');
+        throw new Error(responseData.message || responseData.error || 'Invalid API response');
       }
     } catch (error) {
       console.error(`Screenshot fetch failed (attempt ${retryCount + 1}):`, error);
