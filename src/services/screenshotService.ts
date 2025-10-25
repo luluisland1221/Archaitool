@@ -105,19 +105,35 @@ class ScreenshotService {
   }
 
   /**
+   * 检查WebP支持
+   */
+  private supportsWebP(): boolean {
+    if (typeof window === 'undefined') return false;
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 1;
+    canvas.height = 1;
+    return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+  }
+
+  /**
    * 调用Microlink API获取截图
    */
   private async fetchScreenshot(url: string, retryCount = 0): Promise<ScreenshotResponse> {
     try {
+      // 检查WebP支持
+      const useWebP = this.supportsWebP();
+
       const params = new URLSearchParams({
         url: url,
         screenshot: 'true',
         meta: 'false',
-        'viewport.width': '1200',
-        'viewport.height': '800',
-        'waitFor': '1500', // 减少到1.5秒等待时间
+        'viewport.width': '900',  // 降低分辨率
+        'viewport.height': '600', // 降低分辨率
+        'waitFor': '1000',        // 减少到1秒等待时间
         'deviceScaleFactor': '1',
-        'type': 'png'
+        'type': useWebP ? 'webp' : 'jpeg', // 优先WebP，降级到JPEG
+        'quality': '75'           // 质量设置
       });
 
       const apiUrl = `${this.API_BASE_URL}?${params.toString()}`;

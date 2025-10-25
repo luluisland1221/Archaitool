@@ -10,7 +10,8 @@
       "Bash(npm run preview:*)",
       "Bash(findstr:*)",
       "Bash(npm run build:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
