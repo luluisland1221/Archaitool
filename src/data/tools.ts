@@ -668,16 +668,6 @@ export const categories: Category[] = [
             isPaid: true,
             category: "general-design",
             subcategory: "design-automation"
-          },
-          {
-            id: "designflow-ai",
-            name: "DesignFlow AI",
-            description: "Streamline your design workflow with AI automation",
-            image: "https://via.placeholder.com/400x300/f3f4f6/6b7280?text=DesignFlow+AI",
-            url: "https://designflow.ai/",
-            isPaid: true,
-            category: "general-design",
-            subcategory: "design-automation"
           }
         ]
       }
