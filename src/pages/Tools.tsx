@@ -9,6 +9,23 @@ const Tools = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const params = useParams();
+
+  // List of newly added tool IDs
+  const newToolIds = [
+    'ai-architectures',
+    'vibe3d',
+    '3d-house-planner',
+    'floordesign-ai',
+    'home-design-ai',
+    'rendera-ai',
+    'renovate-ai',
+    'artevia',
+    'madespace',
+    'rustic-ai',
+    'ai-garden-design',
+    'landscapingai',
+    'arcadium3d'
+  ];
   
   // Support both old query params and new path params
   const categoryId = searchParams.get('category');
@@ -91,8 +108,10 @@ const Tools = () => {
       navigate(`/tool/${tool.id}`);
     };
 
+    const isNewTool = newToolIds.includes(tool.id);
+
     return (
-      <div 
+      <div
         onClick={handleCardClick}
         className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative"
       >
@@ -108,6 +127,11 @@ const Tools = () => {
               lazy={true}
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            {isNewTool && (
+              <div className="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase z-20">
+                NEW
+              </div>
+            )}
           </div>
           <div className="p-6 relative z-10">
             <h3 className="text-xl font-semibold mb-2">

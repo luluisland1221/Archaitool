@@ -8,7 +8,24 @@ import { screenshotService } from '../services/screenshotService';
 
 const Home = () => {
   const navigate = useNavigate();
-  
+
+  // List of newly added tool IDs
+  const newToolIds = [
+    'ai-architectures',
+    'vibe3d',
+    '3d-house-planner',
+    'floordesign-ai',
+    'home-design-ai',
+    'rendera-ai',
+    'renovate-ai',
+    'artevia',
+    'madespace',
+    'rustic-ai',
+    'ai-garden-design',
+    'landscapingai',
+    'arcadium3d'
+  ];
+
   useEffect(() => {
     document.title = 'Arch AI Tool - Discover AI Tools for Architecture & Design';
 
@@ -110,51 +127,59 @@ const Home = () => {
                     <p className="text-gray-600 mt-2">{subcategory.description}</p>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {subcategory.tools.slice(0, 3).map((tool) => (
-                      <div 
-                        key={tool.id}
-                        onClick={() => navigate(`/tool/${tool.id}`)}
-                        className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative"
-                      >
-                        <div className="relative">
-                          <div className="relative overflow-hidden">
-                            <DynamicScreenshotImage
-                              toolUrl={tool.url}
-                              toolName={tool.name}
-                              fallbackImage={tool.fallbackImage || tool.image}
-                              alt={tool.name}
-                              className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                              useDynamicScreenshot={tool.useDynamicScreenshot}
-                              lazy={true}
-                            />
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                          <div className="p-6 relative z-10">
-                            <h4 className="text-xl font-semibold mb-2">
-                              {tool.name}
-                            </h4>
-                            <p className="text-gray-600 mb-4">
-                              {tool.description}
-                            </p>
-                            <div className="flex justify-between items-center">
-                              <span className={`px-3 py-1 ${tool.isPaid ? 'bg-gray-100' : 'bg-green-50'} text-sm rounded-full`}>
-                                {tool.isPaid ? 'Paid' : 'Free'}
-                              </span>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    {subcategory.tools.map((tool) => {
+                      const isNewTool = newToolIds.includes(tool.id);
+                      return (
+                        <div
+                          key={tool.id}
+                          onClick={() => navigate(`/tool/${tool.id}`)}
+                          className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative"
+                        >
+                          <div className="relative">
+                            <div className="relative overflow-hidden">
+                              <DynamicScreenshotImage
+                                toolUrl={tool.url}
+                                toolName={tool.name}
+                                fallbackImage={tool.fallbackImage || tool.image}
+                                alt={tool.name}
+                                className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                                useDynamicScreenshot={tool.useDynamicScreenshot}
+                                lazy={true}
+                              />
+                              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                              {isNewTool && (
+                                <div className="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase z-20">
+                                  NEW
+                                </div>
+                              )}
+                            </div>
+                            <div className="p-6 relative z-10">
+                              <h4 className="text-xl font-semibold mb-2">
+                                {tool.name}
+                              </h4>
+                              <p className="text-gray-600 mb-4">
+                                {tool.description}
+                              </p>
+                              <div className="flex justify-between items-center">
+                                <span className={`px-3 py-1 ${tool.isPaid ? 'bg-gray-100' : 'bg-green-50'} text-sm rounded-full`}>
+                                  {tool.isPaid ? 'Paid' : 'Free'}
+                                </span>
+                              </div>
                             </div>
                           </div>
+                          <a
+                            href={tool.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <ExternalLink className="h-4 w-4 text-gray-600" />
+                          </a>
                         </div>
-                        <a
-                          href={tool.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <ExternalLink className="h-4 w-4 text-gray-600" />
-                        </a>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                   
                   <div className="mt-8 text-center">

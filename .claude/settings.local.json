@@ -13,7 +13,22 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(curl:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(for:*)",
+      "Bash(do mv:*)",
+      "Bash(done:*)",
+      "Bash(dir:*)",
+      "Bash(cmd:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git rm:*)",
+      "Bash(git reset:*)",
+      "Read(//g/ai编程/100个网站/02 建筑生图工具导航站/**)",
+      "Bash(python screenshot_new_tools.py:*)",
+      "Bash(where:*)",
+      "Bash(\"C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe\":*)",
+      "Bash(pip:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

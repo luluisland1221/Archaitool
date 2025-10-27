@@ -7,13 +7,33 @@ import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 
 const ToolDetail = () => {
   const { id } = useParams();
-  
+
+  // List of newly added tool IDs
+  const newToolIds = [
+    'ai-architectures',
+    'vibe3d',
+    '3d-house-planner',
+    'floordesign-ai',
+    'home-design-ai',
+    'rendera-ai',
+    'renovate-ai',
+    'artevia',
+    'madespace',
+    'rustic-ai',
+    'ai-garden-design',
+    'landscapingai',
+    'arcadium3d'
+  ];
+
   // Find the tool in our data
-  const tool = configuredCategories.flatMap(category => 
-    category.subcategories.flatMap(subcategory => 
+  const tool = configuredCategories.flatMap(category =>
+    category.subcategories.flatMap(subcategory =>
       subcategory.tools
     )
   ).find(t => t.id === id);
+
+  // Check if this is a new tool
+  const isNewTool = newToolIds.includes(id);
 
   useEffect(() => {
     if (tool) {
@@ -82,7 +102,14 @@ const ToolDetail = () => {
             <div className="absolute inset-0 bg-black bg-opacity-40" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
               <div className="flex items-center justify-between">
-                <h1 className="text-4xl font-bold">{tool.name}</h1>
+                <div className="flex items-center gap-3">
+                  <h1 className="text-4xl font-bold">{tool.name}</h1>
+                  {isNewTool && (
+                    <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
+                      NEW
+                    </span>
+                  )}
+                </div>
                 <a
                   href={tool.url}
                   target="_blank"
