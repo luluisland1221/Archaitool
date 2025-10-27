@@ -678,16 +678,6 @@ export const categories: Category[] = [
             isPaid: true,
             category: "general-design",
             subcategory: "design-automation"
-          },
-          {
-            id: "archbot",
-            name: "ArchBot",
-            description: "AI assistant for architectural design automation",
-            image: "https://via.placeholder.com/400x300/f3f4f6/6b7280?text=ArchBot",
-            url: "https://archbot.ai/",
-            isPaid: true,
-            category: "general-design",
-            subcategory: "design-automation"
           }
         ]
       }
