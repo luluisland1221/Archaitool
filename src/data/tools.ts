@@ -115,6 +115,36 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design"
+          },
+          {
+            id: "ai-architectures",
+            name: "AI Architectures",
+            description: "AI-powered architecture design platform for professional designs, plans, and renderings in seconds",
+            image: "/screenshots/ai-architectures_com.webp",
+            url: "https://ai-architectures.com/",
+            isPaid: false,
+            category: "architecture-spatial",
+            subcategory: "architectural-design"
+          },
+          {
+            id: "3d-house-planner",
+            name: "3D House Planner",
+            description: "Free 3D home design software accessible through browser, no installation required",
+            image: "/screenshots/3dhouseplanner_com.webp",
+            url: "https://3dhouseplanner.com/",
+            isPaid: false,
+            category: "architecture-spatial",
+            subcategory: "architectural-design"
+          },
+          {
+            id: "arcadium-3d",
+            name: "Arcadium 3D",
+            description: "Browser-based 3D home and interior design tool with AI visualization and instant sharing",
+            image: "/screenshots/arcadium3d_com.webp",
+            url: "https://arcadium3d.com/",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-design"
           }
         ]
       },
@@ -222,6 +252,16 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization"
+          },
+          {
+            id: "rendera-ai",
+            name: "Rendera AI",
+            description: "AI interior, exterior, and landscape design generator with photo upload",
+            image: "/screenshots/rendera_ai.webp",
+            url: "https://www.rendera.ai/",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-visualization"
           }
         ]
       }
@@ -326,6 +366,56 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling"
+          },
+          {
+            id: "vibe3d",
+            name: "Vibe3D",
+            description: "AI Interior Design & Realistic 3D Renders in seconds",
+            image: "/screenshots/vibe3d_ai.webp",
+            url: "https://vibe3d.ai/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling"
+          },
+          {
+            id: "home-design-ai",
+            name: "Home Design AI",
+            description: "Revolutionize Your Home Design with AI - free instant interior design",
+            image: "/screenshots/home-design_ai.webp",
+            url: "https://home-design.ai/",
+            isPaid: false,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling"
+          },
+          {
+            id: "renovate-ai",
+            name: "Renovate AI",
+            description: "AI-powered home renovation tool that redesigns homes instantly with style choices",
+            image: "/screenshots/renovate_ai.webp",
+            url: "https://www.renovateai.ai/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling"
+          },
+          {
+            id: "artevia",
+            name: "Artevia",
+            description: "AI interior design tool that transforms rooms with real Amazon products",
+            image: "/screenshots/artevia_ai.webp",
+            url: "https://artevia.ai/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling"
+          },
+          {
+            id: "madespace",
+            name: "Madespace",
+            description: "Autonomous interior design studio providing AI-powered design solutions",
+            image: "/screenshots/madespace_ai.webp",
+            url: "https://madespace.ai/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling"
           }
         ]
       },
@@ -403,6 +493,16 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging"
+          },
+          {
+            id: "floordesign-ai",
+            name: "FloorDesign.ai",
+            description: "AI floor design tool with photo upload for instant space transformation",
+            image: "/screenshots/floordesign_ai.webp",
+            url: "https://floordesign.ai/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "virtual-staging"
           }
         ]
       }
@@ -444,6 +544,26 @@ export const categories: Category[] = [
             description: "Visualize your dream yard before construction",
             image: "/screenshots/www_yardflip_ai_.webp",
             url: "https://www.yardflip.ai/",
+            isPaid: true,
+            category: "landscape-design",
+            subcategory: "landscape-planning"
+          },
+          {
+            id: "ai-garden-design",
+            name: "AI Garden Design",
+            description: "Smart landscape solutions - upload photos to get professional AI landscape designs",
+            image: "/screenshots/aigardendesign_io.webp",
+            url: "https://aigardendesign.io/",
+            isPaid: true,
+            category: "landscape-design",
+            subcategory: "landscape-planning"
+          },
+          {
+            id: "landscaping-ai",
+            name: "LandscapingAI",
+            description: "Transform your property with AI-powered landscaping solutions",
+            image: "/screenshots/landscapingai_site.webp",
+            url: "https://app.landscapingai.site/",
             isPaid: true,
             category: "landscape-design",
             subcategory: "landscape-planning"
@@ -498,6 +618,16 @@ export const categories: Category[] = [
             description: "AI-powered moodboard creation and customization",
             image: "/screenshots/moodboardai_com_.webp",
             url: "https://moodboardai.com/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai"
+          },
+          {
+            id: "rustic-ai",
+            name: "Rustic AI",
+            description: "Generate Ads, Creatives, YouTube Thumbnails, and more with AI design editor",
+            image: "/screenshots/rusticai_art.webp",
+            url: "https://www.rusticai.art/",
             isPaid: true,
             category: "general-design",
             subcategory: "multi-domain-ai"
