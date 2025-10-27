@@ -552,7 +552,7 @@ export const categories: Category[] = [
             id: "ai-garden-design",
             name: "AI Garden Design",
             description: "Smart landscape solutions - upload photos to get professional AI landscape designs",
-            image: "/screenshots/aigardendesign_io.webp",
+            image: "/screenshots/aigardendesign_io_.webp",
             url: "https://aigardendesign.io/",
             isPaid: true,
             category: "landscape-design",
