@@ -85,11 +85,11 @@ const ToolDetail = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Text and Image side by side */}
       <div className="bg-white">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col xl:flex-row xl:items-start gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            {/* Left: Tool Information */}
-            <div className="flex-1 xl:max-w-[500px]">
+            {/* Left: Tool Information - spans 2 columns */}
+            <div className="md:col-span-2">
               {/* Title and rating section */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
@@ -128,8 +128,8 @@ const ToolDetail = () => {
               </p>
             </div>
 
-            {/* Right: Tool Screenshot */}
-            <div className="relative h-[259.5px] w-full md:max-w-[600px] md:mx-auto xl:w-auto xl:flex-shrink-0 bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
+            {/* Right: Tool Screenshot - spans 1 column */}
+            <div className="relative h-[259.5px] bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
               <div className="w-full h-full">
                 <DynamicScreenshotImage
                   toolUrl={tool.url}
