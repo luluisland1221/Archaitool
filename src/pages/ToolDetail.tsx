@@ -83,61 +83,64 @@ const ToolDetail = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section - Image with gradient overlay */}
+      {/* Hero Section - Text and Image side by side */}
       <div className="bg-white">
-        {/* Tool Screenshot Section with gradient */}
-        <div className="relative h-48 bg-black overflow-hidden">
-          <DynamicScreenshotImage
-            toolUrl={tool.url}
-            toolName={tool.name}
-            fallbackImage={tool.fallbackImage || tool.image}
-            alt={tool.name}
-            className="w-full h-full object-cover opacity-80"
-            useDynamicScreenshot={tool.useDynamicScreenshot}
-            lazy={false}
-          />
-          {/* Black gradient overlay on image */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
-        </div>
-
-        {/* Tool Information Section with side gradient */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+
+            {/* Left: Tool Information */}
             <div className="flex-1">
-              <div className="flex items-center gap-4 mb-4">
-                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name}</h1>
-                {isNewTool && (
-                  <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
-                    NEW
-                  </span>
-                )}
-                {tool.userRating && (
-                  <div className="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm font-medium text-gray-900">{tool.userRating}</span>
-                    {tool.reviewCount && (
-                      <span className="text-sm text-gray-600">({tool.reviewCount} reviews)</span>
-                    )}
-                  </div>
-                )}
+              {/* Title and rating section */}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+                <div className="flex items-center gap-4">
+                  <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name}</h1>
+                  {isNewTool && (
+                    <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
+                      NEW
+                    </span>
+                  )}
+                  {tool.userRating && (
+                    <div className="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">
+                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <span className="text-sm font-medium text-gray-900">{tool.userRating}</span>
+                      {tool.reviewCount && (
+                        <span className="text-sm text-gray-600">({tool.reviewCount} reviews)</span>
+                      )}
+                    </div>
+                  )}
+                </div>
+
+                {/* CTA Button */}
+                <a
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg text-lg"
+                >
+                  Visit Website
+                  <ExternalLink className="h-5 w-5 ml-2" />
+                </a>
               </div>
 
+              {/* Description */}
               <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
                 {tool.detailedDescription || tool.description}
               </p>
             </div>
 
-            {/* CTA Button on image */}
-            <div className="relative">
-              <a
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg text-lg"
-              >
-                Visit Website
-                <ExternalLink className="h-5 w-5 ml-2" />
-              </a>
+            {/* Right: Tool Screenshot */}
+            <div className="relative h-48 lg:w-96 bg-black overflow-hidden flex-shrink-0">
+              <DynamicScreenshotImage
+                toolUrl={tool.url}
+                toolName={tool.name}
+                fallbackImage={tool.fallbackImage || tool.image}
+                alt={tool.name}
+                className="w-full h-full object-contain opacity-80"
+                useDynamicScreenshot={tool.useDynamicScreenshot}
+                lazy={false}
+              />
+              {/* Black gradient overlay on image */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
             </div>
           </div>
         </div>
