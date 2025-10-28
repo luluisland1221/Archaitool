@@ -83,26 +83,26 @@ const ToolDetail = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section - Completely separate image and text */}
+      {/* Hero Section - Image with gradient overlay */}
       <div className="bg-white">
-        {/* Tool Screenshot Section - Image only with contained gradient */}
+        {/* Tool Screenshot Section with gradient */}
         <div className="relative h-48 bg-black overflow-hidden">
           <DynamicScreenshotImage
             toolUrl={tool.url}
             toolName={tool.name}
             fallbackImage={tool.fallbackImage || tool.image}
             alt={tool.name}
-            className="w-full h-full object-cover opacity-85"
+            className="w-full h-full object-cover opacity-80"
             useDynamicScreenshot={tool.useDynamicScreenshot}
             lazy={false}
           />
-          {/* Gradient only in image area, not extending to text */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+          {/* Black gradient overlay on image */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
         </div>
 
-        {/* Tool Information Section - Completely separate container */}
+        {/* Tool Information Section with side gradient */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="flex-1">
               <div className="flex items-center gap-4 mb-4">
                 <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name}</h1>
@@ -127,7 +127,8 @@ const ToolDetail = () => {
               </p>
             </div>
 
-            <div className="flex-shrink-0">
+            {/* CTA Button on image */}
+            <div className="relative">
               <a
                 href={tool.url}
                 target="_blank"
