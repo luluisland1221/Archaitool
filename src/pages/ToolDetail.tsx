@@ -89,7 +89,7 @@ const ToolDetail = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             {/* Left: Tool Information - spans 2 columns */}
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 xl:max-w-[750px]">
               {/* Title and rating section */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
@@ -129,20 +129,18 @@ const ToolDetail = () => {
             </div>
 
             {/* Right: Tool Screenshot - spans 1 column */}
-            <div className="relative h-[259.5px] bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
+            <div className="relative h-[240px] bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
               <div className="w-full h-full">
                 <DynamicScreenshotImage
                   toolUrl={tool.url}
                   toolName={tool.name}
                   fallbackImage={tool.fallbackImage || tool.image}
                   alt={tool.name}
-                  className="w-full h-full object-contain opacity-80"
+                  className="w-full h-full object-contain opacity-100"
                   useDynamicScreenshot={tool.useDynamicScreenshot}
                   lazy={false}
                 />
               </div>
-              {/* Black gradient overlay on image */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
             </div>
           </div>
         </div>
