@@ -129,7 +129,7 @@ const ToolDetail = () => {
             </div>
 
             {/* Right: Tool Screenshot - spans 1 column */}
-            <div className="relative h-[240px] bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
+            <div className="relative aspect-[1888/786] bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
               <div className="w-full h-full">
                 <DynamicScreenshotImage
                   toolUrl={tool.url}
