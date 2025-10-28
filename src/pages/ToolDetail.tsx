@@ -83,57 +83,63 @@ const ToolDetail = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="relative h-96 bg-black overflow-hidden">
-        {/* Tool Screenshot - Full image without cropping */}
-        <DynamicScreenshotImage
-          toolUrl={tool.url}
-          toolName={tool.name}
-          fallbackImage={tool.fallbackImage || tool.image}
-          alt={tool.name}
-          className="w-full h-full object-contain opacity-90"
-          useDynamicScreenshot={tool.useDynamicScreenshot}
-          lazy={false}
-        />
+      {/* Hero Section - Completely Separate */}
+      <div className="bg-white">
+        {/* Tool Screenshot Section - Pure image display */}
+        <div className="relative h-80 bg-gray-50 border-b">
+          <DynamicScreenshotImage
+            toolUrl={tool.url}
+            toolName={tool.name}
+            fallbackImage={tool.fallbackImage || tool.image}
+            alt={tool.name}
+            className="w-full h-full object-contain"
+            useDynamicScreenshot={tool.useDynamicScreenshot}
+            lazy={false}
+          />
+          {/* Very subtle gradient for aesthetic only, no text overlap */}
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-100/5 via-transparent to-transparent" />
+        </div>
 
-        {/* Minimal gradient overlay - reduced coverage */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
-
-        {/* Tool Information Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <h1 className="text-5xl font-bold">{tool.name}</h1>
+        {/* Tool Information Section - Completely separate container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+            {/* Left: Tool Info */}
+            <div className="flex-1">
+              <div className="flex items-center gap-4 mb-6">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">{tool.name}</h1>
                 {isNewTool && (
                   <span className="bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-full uppercase">
                     NEW
                   </span>
                 )}
                 {tool.userRating && (
-                  <div className="flex items-center gap-1 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <div className="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm font-medium">{tool.userRating}</span>
+                    <span className="text-sm font-medium text-gray-900">{tool.userRating}</span>
                     {tool.reviewCount && (
-                      <span className="text-sm text-gray-300">({tool.reviewCount} reviews)</span>
+                      <span className="text-sm text-gray-600">({tool.reviewCount} reviews)</span>
                     )}
                   </div>
                 )}
               </div>
+
+              <p className="text-xl text-gray-700 leading-relaxed mb-8">
+                {tool.detailedDescription || tool.description}
+              </p>
+            </div>
+
+            {/* Right: CTA Button */}
+            <div className="flex-shrink-0">
               <a
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg"
+                className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg text-lg"
               >
                 Visit Website
                 <ExternalLink className="h-5 w-5 ml-2" />
               </a>
             </div>
-
-            <p className="text-xl text-gray-200 mt-4 max-w-3xl">
-              {tool.detailedDescription || tool.description}
-            </p>
           </div>
         </div>
       </div>
