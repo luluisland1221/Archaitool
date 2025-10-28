@@ -9,6 +9,77 @@ export interface Tool {
   subcategory: string;
   useDynamicScreenshot?: boolean;
   fallbackImage?: string;
+
+  // Enhanced fields for detailed information
+  detailedDescription?: string;
+  keyFeatures: string[];
+  technicalSpecs?: TechnicalSpecs;
+  pricing?: PricingInfo;
+  useCases?: string[];
+  integrations?: string[];
+  companyInfo?: CompanyInfo;
+  additionalScreenshots?: string[];
+  userRating?: number;
+  reviewCount?: number;
+  lastUpdated?: string;
+}
+
+export interface TechnicalSpecs {
+  supportedFormats: string[];
+  exportOptions: string[];
+  renderSpeed?: string;
+  systemRequirements?: string[];
+  apiAvailable?: boolean;
+  collaboration?: boolean;
+  mobileSupport?: boolean;
+}
+
+export interface PricingInfo {
+  freeTier?: {
+    features: string[];
+    limitations?: string[];
+  };
+  paid?: {
+    plans: PricingPlan[];
+  };
+  trialAvailable?: boolean;
+  enterprisePlan?: boolean;
+}
+
+export interface PricingPlan {
+  name: string;
+  price: string;
+  billing: 'monthly' | 'yearly' | 'onetime';
+  features: string[];
+  limitations?: string[];
+  targetUser: string;
+}
+
+export interface CompanyInfo {
+  name: string;
+  founded?: string;
+  headquarters?: string;
+  teamSize?: string;
+  patent?: string;
+  userStats?: {
+    users?: string;
+    countries?: string;
+    projects?: string;
+  };
+  support: {
+    email?: string;
+    chat?: boolean;
+    documentation?: string;
+    tutorials?: string;
+  };
+  socialMedia?: {
+    linkedin?: string;
+    twitter?: string;
+    youtube?: string;
+    instagram?: string;
+  };
+  accreditations?: string[];
+  mediaMentions?: string[];
 }
 
 export interface Subcategory {
@@ -54,7 +125,99 @@ export const categories: Category[] = [
             url: "https://www.maket.ai/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Maket AI is a revolutionary generative design platform that empowers architects, builders, and developers to create customized residential floor plans and navigate zoning codes with ease. Our platform combines AI-powered design generation with intelligent regulatory assistance to streamline the entire pre-design process.",
+            keyFeatures: [
+              "Generate thousands of residential floor plan variations instantly",
+              "Specify room dimension & adjacency constraints",
+              "Real-time collaboration with stakeholders",
+              "Virtual Assistant for design guidance and cost analysis",
+              "Regulatory Assistant for zoning code compliance",
+              "Virtual Designer for style exploration and customization",
+              "Export designs to .DXF, PDF, and PNG formats",
+              "Natural language design input (coming soon)"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["DXF", "PDF", "PNG"],
+              exportOptions: ["DXF", "PDF", "PNG"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "1 Active Project",
+                  "Unlimited Floorplan Generation",
+                  "Basic Floorplan Editing",
+                  "2 Image Generation Credits",
+                  "Low Resolution Generation"
+                ],
+                limitations: ["Limited to 1 active project", "Low resolution output", "Limited credits"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro Plan",
+                    price: "$30/month",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited Active Projects",
+                      "Unlimited Floorplan Generation",
+                      "Advanced Floorplan Editing",
+                      "Unlimited Image Generation Credits",
+                      "High Resolution Generation",
+                      "Priority Support",
+                      "Advanced Style Library"
+                    ],
+                    targetUser: "Professional architects and designers"
+                  },
+                  {
+                    name: "Annual Plan",
+                    price: "$288/year",
+                    billing: "yearly",
+                    features: [
+                      "All Pro Plan Features",
+                      "2 Months Free",
+                      "Priority Support",
+                      "Early Access to New Features"
+                    ],
+                    targetUser: "Teams and frequent users"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Residential architectural design",
+              "Multi-family housing planning",
+              "Renovation and remodeling projects",
+              "Pre-design feasibility studies",
+              "Client presentations and iterations",
+              "Zoning compliance verification"
+            ],
+            integrations: [
+              "AutoCAD (via DXF export)",
+              "BIM software workflows",
+              "PDF documentation pipelines"
+            ],
+            companyInfo: {
+              name: "Maket AI",
+              support: {
+                email: "support@maket.ai",
+                chat: true,
+                documentation: "https://www.maket.ai/features",
+                tutorials: "https://www.maket.ai/blog"
+              },
+              socialMedia: {
+                linkedin: "https://www.linkedin.com/company/maket-ai",
+                twitter: "https://twitter.com/maketplans",
+                youtube: "https://www.youtube.com/@Maketplans",
+                instagram: "https://www.instagram.com/maket.ai"
+              }
+            },
+            lastUpdated: "2025-10-27"
           },
           {
             id: "arkdesign-ai",
@@ -64,7 +227,118 @@ export const categories: Category[] = [
             url: "https://arkdesign.ai/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Ark Design AI is the first AI solution specifically designed for architectural schematic design, specializing in multi-family and mixed-use projects. Our patented technology enables automated floor plan generation and feasibility reports that comply with US building codes and ordinances.",
+            keyFeatures: [
+              "Patented AI technology (US Patent No. 11,972,174)",
+              "Automated floor plan generation for multi-family housing",
+              "Feasibility studies and unit mix optimization",
+              "US building code and ordinance compliance",
+              "Real-time profitability analysis",
+              "Density optimization algorithms",
+              "Living standards enhancement tools",
+              "Interactive 3D model generation",
+              "Lot editor for precise site constraints"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["DWG", "DXF", "PDF"],
+              exportOptions: ["DWG", "DXF", "PDF", "Excel Reports"],
+              collaboration: true,
+              apiAvailable: true,
+              mobileSupport: false,
+              systemRequirements: ["Modern web browser", "Stable internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Basic floor plan generation",
+                  "Limited project complexity",
+                  "Standard support"
+                ],
+                limitations: ["Limited to smaller projects", "Basic features only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "Contact for pricing",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited project complexity",
+                      "Advanced feasibility analysis",
+                      "Priority support",
+                      "Custom unit configurations",
+                      "Advanced reporting tools"
+                    ],
+                    targetUser: "Professional architects and firms"
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "Custom pricing",
+                    billing: "yearly",
+                    features: [
+                      "All Professional features",
+                      "API access",
+                      "Dedicated support",
+                      "Custom integrations",
+                      "Training and onboarding"
+                    ],
+                    targetUser: "Large architecture firms and developers"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Multi-family residential design",
+              "Mixed-use development planning",
+              "Urban density optimization",
+              "Pre-development feasibility studies",
+              "Unit mix and profitability analysis",
+              "Building code compliance verification",
+              "Large-scale residential projects"
+            ],
+            integrations: [
+              "AutoCAD and Revit workflows",
+              "BIM software integration",
+              "Excel reporting pipelines",
+              "Custom API for enterprise clients"
+            ],
+            companyInfo: {
+              name: "Ark Automatic Architectural Design Ltd.",
+              founded: "2020",
+              headquarters: "New York, USA",
+              patent: "United States Patent number 11,972,174",
+              userStats: {
+                users: "5300+",
+                countries: "120+",
+                projects: "8000+"
+              },
+              support: {
+                email: "support@arkdesign.ai",
+                chat: true,
+                documentation: "https://arkdesign.ai/how-it-works/",
+                tutorials: "https://arkdesign.ai/how-it-works/"
+              },
+              socialMedia: {
+                linkedin: "https://www.linkedin.com/company/ark-design-ai/",
+                youtube: "https://www.youtube.com/@Arkdesign-rb1dx",
+                instagram: "https://www.instagram.com/ark_design_ai/",
+                facebook: "https://www.facebook.com/people/ArkDesignAI/61562135823183/"
+              },
+              accreditations: [
+                "AIA recognized",
+                "NCARB approved",
+                "US Patent Office"
+              ],
+              mediaMentions: [
+                "Autodesk featured partner",
+                "ArchDaily coverage",
+                "Architizer recognition"
+              ]
+            },
+            lastUpdated: "2025-10-27"
           },
           {
             id: "architechtures",
