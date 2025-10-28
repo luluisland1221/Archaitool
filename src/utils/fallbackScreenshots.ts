@@ -1,4 +1,4 @@
-// 静态截图映射 - 当API配额耗尽时使用
+// Static screenshot mapping - Use when API quota exhausted
 export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   // Architecture & Spatial Design
   'aitwo.co': '/screenshots/aitwo_co_.png',

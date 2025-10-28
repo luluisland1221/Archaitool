@@ -729,26 +729,26 @@ export const categories: Category[] = [
   }
 ];
 
-// 配置工具的动态截图设置
+// Configure dynamic screenshot settings for tools
 export const configureToolScreenshots = (categories: Category[]): Category[] => {
   return categories.map(category => ({
     ...category,
     subcategories: category.subcategories.map(subcategory => ({
       ...subcategory,
       tools: subcategory.tools.map(tool => {
-        // 默认所有工具都使用动态截图，除了那些已经使用占位符的
-        // 暂时禁用动态截图以避免API配额耗尽
+        // All tools use dynamic screenshots by default，Except those already using placeholders
+        // Temporarily disable dynamic screenshots to avoid API quota exhaustion
         const shouldUseDynamic = false;
 
         return {
           ...tool,
           useDynamicScreenshot: shouldUseDynamic,
-          fallbackImage: tool.image // 原有图片作为备用
+          fallbackImage: tool.image // Original image as fallback
         };
       })
     }))
   }));
 };
 
-// 获取配置后的分类数据
+// Get configured category data
 export const configuredCategories = configureToolScreenshots(categories);

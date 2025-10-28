@@ -29,14 +29,14 @@ const Home = () => {
   useEffect(() => {
     document.title = 'Arch AI Tool - Discover AI Tools for Architecture & Design';
 
-    // 预加载首屏图片
+    // Preload first screen images
     const preloadFirstScreenImages = async () => {
       try {
-        // 获取前6个工具的URL进行预加载
+        // Get URLs of first 6 tools for preloading
         const firstScreenUrls = [];
         for (const category of configuredCategories) {
           for (const subcategory of category.subcategories) {
-            for (const tool of subcategory.tools.slice(0, 2)) { // 每个分类前2个
+            for (const tool of subcategory.tools.slice(0, 2)) { // First 2 tools per category
               if (tool.useDynamicScreenshot && firstScreenUrls.length < 6) {
                 firstScreenUrls.push(tool.url);
               }
@@ -55,7 +55,7 @@ const Home = () => {
       }
     };
 
-    // 延迟1秒后开始预加载，避免阻塞页面渲染
+    // Start preloading after 1 second delay to avoid blocking page rendering
     const timer = setTimeout(preloadFirstScreenImages, 1000);
 
     return () => clearTimeout(timer);

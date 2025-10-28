@@ -18,19 +18,19 @@ export interface ScreenshotResponse {
 }
 
 class ScreenshotService {
-  private readonly CACHE_DURATION = 48 * 60 * 60 * 1000; // 延长到48小时缓存
+  private readonly CACHE_DURATION = 48 * 60 * 60 * 1000; // Extend to 48 hour cache
   private readonly CACHE_KEY_PREFIX = 'screenshot_cache_';
-  private readonly MAX_RETRIES = 1; // 减少重试次数
-  private readonly TIMEOUT = 6000; // 减少到6秒超时
-  private apiUrl: string = 'https://api.microlink.io'; // 动态API URL
+  private readonly MAX_RETRIES = 1; // 减少Retry次数
+  private readonly TIMEOUT = 6000; // Reduce to 6 second timeout
+  private apiUrl: string = 'https://api.microlink.io'; // Dynamic API URL
 
   /**
-   * 初始化API URL（支持CDN代理）
+   * InitializeAPI URL（Support CDN proxy）
    */
   private async initializeApiUrl(): Promise<void> {
     if (this.apiUrl === 'https://api.microlink.io') {
       try {
-        // 尝试使用CDN代理
+        // Try using CDN proxy
         const configModule = await import('../config/api');
         this.apiUrl = await configModule.getAvailableApiUrl();
         console.log(`Using API URL: ${this.apiUrl}`);
@@ -41,7 +41,7 @@ class ScreenshotService {
   }
 
   /**
-   * 检查是否为配额耗尽错误
+   * Check if quota exhausted error
    */
   private isQuotaExceededError(error: any): boolean {
     const errorMessage = error?.message?.toLowerCase() || '';
@@ -56,8 +56,8 @@ class ScreenshotService {
   }
 
   /**
-   * 获取备用图片URL（当API配额耗尽时使用）
-   * 优先使用静态截图，否则使用美观的占位图
+   * Get fallback image URL（Use when API quota exhausted）
+   * Prefer static screenshots，否则Use beautiful placeholder images
    */
   private getFallbackScreenshotUrl(url: string): string {
     // 首先尝试使用静态截图
@@ -67,28 +67,28 @@ class ScreenshotService {
       return staticFallback;
     }
 
-    // 没有静态截图时使用占位图
+    // Use placeholder when no static screenshot
     const placeholderUrl = getPlaceholderImageUrl();
     console.log(`Using placeholder image for ${url}`);
     return placeholderUrl;
   }
 
   /**
-   * 生成缓存键
+   * Generate cache key
    */
   private getCacheKey(url: string): string {
     return `${this.CACHE_KEY_PREFIX}${btoa(url).replace(/[^a-zA-Z0-9]/g, '')}`;
   }
 
   /**
-   * 检查缓存是否有效
+   * Check if cache is valid
    */
   private isCacheValid(cache: ScreenshotCache): boolean {
     return Date.now() - cache.timestamp < this.CACHE_DURATION;
   }
 
   /**
-   * 从localStorage获取缓存
+   * Get cache from localStorage
    */
   private getCachedScreenshot(url: string): ScreenshotCache | null {
     try {
@@ -103,7 +103,7 @@ class ScreenshotService {
         return cache;
       }
 
-      // 缓存过期，删除
+      // Cache expired, delete
       localStorage.removeItem(cacheKey);
       return null;
     } catch (error) {
@@ -113,7 +113,7 @@ class ScreenshotService {
   }
 
   /**
-   * 保存截图到缓存
+   * Save screenshot to cache
    */
   private setCachedScreenshot(url: string, screenshotData: { url: string; size?: number }): void {
     try {
@@ -127,13 +127,13 @@ class ScreenshotService {
       localStorage.setItem(cacheKey, JSON.stringify(cache));
     } catch (error) {
       console.warn('Failed to cache screenshot:', error);
-      // 如果localStorage满了，尝试清理旧缓存
+      // If localStorage is full，Try cleaning old cache
       this.cleanupOldCache();
     }
   }
 
   /**
-   * 清理过期的缓存
+   * Clean expired cache
    */
   private cleanupOldCache(): void {
     try {
@@ -156,7 +156,7 @@ class ScreenshotService {
   }
 
   /**
-   * 检查WebP支持
+   * Check WebP support
    */
   private supportsWebP(): boolean {
     if (typeof window === 'undefined') return false;
@@ -168,28 +168,28 @@ class ScreenshotService {
   }
 
   /**
-   * 调用Microlink API获取截图
+   * Call Microlink API to get screenshot
    */
   private async fetchScreenshot(url: string, retryCount = 0): Promise<ScreenshotResponse> {
     try {
-      // 检查WebP支持
+      // Check WebP support
       const useWebP = this.supportsWebP();
 
-      // 初始化API URL
+      // InitializeAPI URL
       await this.initializeApiUrl();
 
       let response: Response;
 
-      // 根据API类型选择不同的请求方式
+      // Choose different request methods based on API type
       if (this.apiUrl.includes('workers.dev')) {
-        // 使用Cloudflare Workers代理 - 优化参数
+        // Use Cloudflare Workers proxy - Optimized parameters
         const proxyParams = {
           url: url,
-          width: '800',      // 降低分辨率: 900x600 -> 800x530
+          width: '800',      // Reduce resolution: 900x600 -> 800x530
           height: '530',
           type: useWebP ? 'webp' : 'jpeg',
-          quality: '70',     // 降低质量: 75% -> 70%
-          waitFor: '800'     // 减少等待时间: 1000ms -> 800ms
+          quality: '70',     // Reduce quality: 75% -> 70%
+          waitFor: '800'     // Reduce wait time: 1000ms -> 800ms
         };
 
         const configModule = await import('../config/api');
@@ -208,17 +208,17 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
           signal: AbortSignal.timeout(this.TIMEOUT)
         });
       } else {
-        // 直接使用Microlink API - 优化参数
+        // Use direct Microlink API - Optimized parameters
         const params = new URLSearchParams({
           url: url,
           screenshot: 'true',
           meta: 'false',
-          'viewport.width': '800',      // 降低分辨率: 900x600 -> 800x530
+          'viewport.width': '800',      // Reduce resolution: 900x600 -> 800x530
           'viewport.height': '530',
-          'waitFor': '800',             // 减少等待时间: 1000ms -> 800ms
+          'waitFor': '800',             // Reduce wait time: 1000ms -> 800ms
           'deviceScaleFactor': '1',
           'type': useWebP ? 'webp' : 'jpeg',
-          'quality': '70'              // 降低质量: 75% -> 70%
+          'quality': '70'              // Reduce quality: 75% -> 70%
         });
 
         const apiUrl = `${this.apiUrl}?${params.toString()}`;
@@ -241,22 +241,22 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
 
       const responseData = await response.json();
 
-      // 处理不同的响应格式
+      // Handle different response formats
       let screenshotUrl: string;
       let screenshotSize: number | undefined;
 
       if (responseData.status === 'success') {
-        // Cloudflare Workers v2 响应格式
+        // Cloudflare Workers v2 response format
         if (responseData.screenshotUrl) {
           screenshotUrl = responseData.screenshotUrl;
           screenshotSize = responseData.meta?.size;
         }
-        // Microlink 直接API响应格式
+        // Microlink direct API response format
         else if (responseData.data?.screenshot?.url) {
           screenshotUrl = responseData.data.screenshot.url;
           screenshotSize = responseData.data.screenshot.size;
         }
-        // 备用格式
+        // Fallback format
         else if (responseData.url) {
           screenshotUrl = responseData.url;
           screenshotSize = responseData.size;
@@ -264,7 +264,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
           throw new Error('No screenshot URL found in response');
         }
 
-        // 转换为标准格式返回
+        // Convert to standard format and return
         return {
           status: 'success',
           data: {
@@ -281,9 +281,9 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
     } catch (error) {
       console.error(`Screenshot fetch failed (attempt ${retryCount + 1}):`, error);
 
-      // 重试逻辑
+      // Retry逻辑
       if (retryCount < this.MAX_RETRIES - 1) {
-        const delay = Math.pow(2, retryCount) * 500; // 减少重试延迟到500ms
+        const delay = Math.pow(2, retryCount) * 500; // 减少Retry延迟到500ms
         await new Promise(resolve => setTimeout(resolve, delay));
         return this.fetchScreenshot(url, retryCount + 1);
       }
@@ -293,13 +293,13 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
   }
 
   /**
-   * 获取网站截图
-   * @param url 网站URL
-   * @param useCache 是否使用缓存（默认true）
-   * @returns Promise<ScreenshotCache> 截图缓存信息
+   * Get website screenshot
+   * @param url Website URL
+   * @param useCache Whether to use cache（默认true）
+   * @returns Promise<ScreenshotCache> Screenshot cache info
    */
   async getScreenshot(url: string, useCache: boolean = true): Promise<ScreenshotCache> {
-    // 尝试从缓存获取
+    // Try to get from cache
     if (useCache) {
       const cached = this.getCachedScreenshot(url);
       if (cached) {
@@ -309,7 +309,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
     }
 
     try {
-      // 调用API获取新截图
+      // Call API to get new screenshot
       const response = await this.fetchScreenshot(url);
 
       if (response.status === 'success' && response.data?.screenshot) {
@@ -318,7 +318,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
           size: response.data.screenshot.size
         };
 
-        // 保存到缓存
+        // Save to cache
         if (useCache) {
           this.setCachedScreenshot(url, screenshotData);
         }
@@ -330,16 +330,16 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
     } catch (error) {
       console.error(`Failed to get screenshot for ${url}:`, error);
 
-      // 检查是否为配额耗尽错误
+      // Check if quota exhausted error
       if (this.isQuotaExceededError(error)) {
         console.warn('API quota exceeded, using fallback screenshot');
         const fallbackUrl = this.getFallbackScreenshotUrl(url);
         const fallbackData = {
           url: fallbackUrl,
-          size: 5000 // 估算大小
+          size: 5000 // Estimated size
         };
 
-        // 将备用图片也缓存起来，避免重复生成
+        // Also cache fallback images，Avoid repeated generation
         if (useCache) {
           this.setCachedScreenshot(url, fallbackData);
         }
@@ -352,14 +352,14 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
   }
 
   /**
-   * 预加载多个截图
-   * @param urls 网站URL数组
-   * @param useCache 是否使用缓存
-   * @returns Promise<ScreenshotCache[]> 截图缓存数组
+   * Preload multiple screenshots
+   * @param urls Website URL数组
+   * @param useCache Whether to use cache
+   * @returns Promise<ScreenshotCache[]> Screenshot cache array
    */
   async preloadScreenshots(urls: string[], useCache: boolean = true): Promise<ScreenshotCache[]> {
     const results: ScreenshotCache[] = [];
-    const batchSize = 2; // 减少到2个并发请求，提高响应速度
+    const batchSize = 2; // Reduce to 2 concurrent requests，Improve response speed
 
     for (let i = 0; i < urls.length; i += batchSize) {
       const batch = urls.slice(i, i + batchSize);
@@ -375,7 +375,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
       const batchResults = await Promise.all(batchPromises);
       results.push(...batchResults.filter((result): result is ScreenshotCache => result !== null));
 
-      // 批次间延迟，避免API限制
+      // Delay between batches，Avoid API limits
       if (i + batchSize < urls.length) {
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
@@ -385,7 +385,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
   }
 
   /**
-   * 清除所有缓存
+   * Clear all cache
    */
   clearAllCache(): void {
     try {
@@ -402,7 +402,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
   }
 
   /**
-   * 获取缓存统计信息
+   * Get cache statistics
    */
   getCacheStats(): { total: number; totalSize: string; oldestCache: string } {
     try {
@@ -418,7 +418,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
             oldestTimestamp = cache.timestamp;
           }
         } catch {
-          // 忽略损坏的缓存
+          // Ignore corrupted cache
         }
       });
 
@@ -433,7 +433,7 @@ const proxyUrl = new URL(this.apiUrl + configModule.API_CONFIG.endpoints.screens
   }
 }
 
-// 创建单例实例
+// Create singleton instance
 export const screenshotService = new ScreenshotService();
 
 export default screenshotService;

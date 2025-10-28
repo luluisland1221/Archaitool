@@ -34,7 +34,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
   const imgRef = useRef<HTMLImageElement>(null);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
-  // 初始化图片
+  // Initialize图片
   useEffect(() => {
     if (!useDynamicScreenshot) {
       setImageUrl(fallbackImage);
@@ -43,12 +43,12 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     }
 
     if (lazy) {
-      // 懒加载：等待图片进入视口
+      // Lazy loading：Wait for image to enter viewport
       if (imgRef.current) {
         observerRef.current = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              // 提前开始加载，当图片有50%进入视口时
+              // Start loading early，当图片有50%进入视口时
               if (entry.isIntersecting || entry.intersectionRatio > 0.5) {
                 loadDynamicScreenshot();
                 observerRef.current?.disconnect();
@@ -61,7 +61,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
         observerRef.current.observe(imgRef.current);
       }
     } else {
-      // 立即加载
+      // Immediate loading
       loadDynamicScreenshot();
     }
 
@@ -75,12 +75,12 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
       setLoadingState('loading');
       console.log(`Loading dynamic screenshot for ${toolName}: ${toolUrl}`);
 
-      // 设置3秒超时，如果超时则立即显示静态图片
+      // Set 3 second timeout，如果超时则立即显示静态图片
       const timeoutPromise = new Promise<never>((_, reject) => {
         setTimeout(() => reject(new Error('Dynamic screenshot timeout')), 3000);
       });
 
-      // 从缓存或API获取截图，但有3秒超时限制
+      // Get screenshot from cache or API，但有3秒超时限制
       const screenshot = await Promise.race([
         screenshotService.getScreenshot(toolUrl, true),
         timeoutPromise
@@ -94,9 +94,9 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     } catch (error) {
       console.error(`Failed to load dynamic screenshot for ${toolName}:`, error);
 
-      // 立即降级到静态图片
+      // Immediately fallback to static image
       setImageUrl(fallbackImage);
-      setLoadingState('loaded'); // 改为loaded状态，避免显示错误状态
+      setLoadingState('loaded'); // Change to loaded state，Avoid showing error state
 
       if (onError) {
         onError(error instanceof Error ? error : new Error('Unknown error'));
@@ -113,7 +113,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     console.error(`Image load failed for ${toolName}: ${imageUrl}`);
 
     if (retryCount < 2 && imageUrl !== fallbackImage) {
-      // 重试：回退到静态图片
+      // Retry：Fallback to static image
       setRetryCount(prev => prev + 1);
       setImageUrl(fallbackImage);
     } else {
@@ -128,7 +128,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     loadDynamicScreenshot();
   };
 
-  // 骨架屏组件
+  // Skeleton component
   const Skeleton = () => (
     <div
       className={`bg-gray-200 animate-pulse flex items-center justify-center ${className}`}
@@ -144,7 +144,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     </div>
   );
 
-  // 错误状态组件
+  // Error state component
   const ErrorState = () => (
     <div
       className={`bg-gray-100 border border-gray-300 flex flex-col items-center justify-center ${className}`}
@@ -166,7 +166,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     </div>
   );
 
-  // 加载状态组件
+  // Loading state component
   const LoadingState = () => (
     <div
       className={`bg-gray-100 flex flex-col items-center justify-center relative ${className}`}
@@ -186,14 +186,14 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     </div>
   );
 
-  // 根据加载状态渲染不同内容
+  // Render different content based on loading state
   const renderContent = () => {
-    // 如果正在加载动态截图，显示加载状态
+    // If loading dynamic screenshot，显示加载状态
     if (loadingState === 'loading' && useDynamicScreenshot && imageUrl === fallbackImage) {
       return <LoadingState />;
     }
 
-    // 直接显示图片（无论是动态截图成功还是静态图片）
+    // Display image directly（无论是动态截图成功还是静态图片）
     return (
       <img
         ref={imgRef}
@@ -214,7 +214,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     <div className="relative">
       {renderContent()}
 
-      {/* 调试信息（仅在开发环境显示） */}
+      {/* Debug info（Only show in development environment） */}
       {process.env.NODE_ENV === 'development' && (
         <div className="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-xs p-1 rounded-br opacity-0 hover:opacity-100 transition-opacity">
           <div>URL: {toolUrl}</div>
