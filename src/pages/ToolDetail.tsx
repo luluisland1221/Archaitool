@@ -109,17 +109,6 @@ const ToolDetail = () => {
                     </div>
                   )}
                 </div>
-
-                {/* CTA Button */}
-                <a
-                  href={tool.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg text-lg"
-                >
-                  Visit Website
-                  <ExternalLink className="h-5 w-5 ml-2" />
-                </a>
               </div>
 
               {/* Description */}
@@ -128,18 +117,41 @@ const ToolDetail = () => {
               </p>
             </div>
 
-            {/* Right: Tool Screenshot - spans 1 column */}
-            <div className="relative aspect-[1888/786] bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
-              <div className="w-full h-full">
-                <DynamicScreenshotImage
-                  toolUrl={tool.url}
-                  toolName={tool.name}
-                  fallbackImage={tool.fallbackImage || tool.image}
-                  alt={tool.name}
-                  className="w-full h-full object-contain opacity-100"
-                  useDynamicScreenshot={tool.useDynamicScreenshot}
-                  lazy={false}
-                />
+            {/* Right: Tool Card - spans 1 column */}
+            <div className="group bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              {/* Screenshot */}
+              <div className="relative aspect-[1888/786] bg-black">
+                <div className="w-full h-full">
+                  <DynamicScreenshotImage
+                    toolUrl={tool.url}
+                    toolName={tool.name}
+                    fallbackImage={tool.fallbackImage || tool.image}
+                    alt={tool.name}
+                    className="w-full h-full object-contain opacity-100 group-hover:opacity-90 transition-opacity duration-300"
+                    useDynamicScreenshot={tool.useDynamicScreenshot}
+                    lazy={false}
+                  />
+                </div>
+                {/* Hover overlay hint */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white/90 backdrop-blur px-4 py-2 rounded-full flex items-center gap-2">
+                    <ExternalLink className="h-4 w-4" />
+                    <span className="text-sm font-medium">Click to visit</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition-colors duration-300">
+                <a
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center justify-center shadow-lg text-lg group-hover:shadow-xl"
+                >
+                  Visit Website
+                  <ExternalLink className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                </a>
               </div>
             </div>
           </div>
