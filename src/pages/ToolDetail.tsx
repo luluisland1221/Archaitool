@@ -84,53 +84,54 @@ const ToolDetail = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative h-96 bg-black overflow-hidden">
-        <DynamicScreenshotImage
-          toolUrl={tool.url}
-          toolName={tool.name}
-          fallbackImage={tool.fallbackImage || tool.image}
-          alt={tool.name}
-          className="w-full h-full object-cover opacity-70"
-          useDynamicScreenshot={tool.useDynamicScreenshot}
-          lazy={false}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+      <div className="bg-white">
+        {/* Tool Screenshot - No overlay */}
+        <div className="relative h-80 bg-gray-100 overflow-hidden">
+          <DynamicScreenshotImage
+            toolUrl={tool.url}
+            toolName={tool.name}
+            fallbackImage={tool.fallbackImage || tool.image}
+            alt={tool.name}
+            className="w-full h-full object-contain"
+            useDynamicScreenshot={tool.useDynamicScreenshot}
+            lazy={false}
+          />
+        </div>
 
-        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <h1 className="text-5xl font-bold">{tool.name}</h1>
-                {isNewTool && (
-                  <span className="bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-full uppercase">
-                    NEW
-                  </span>
-                )}
-                {tool.userRating && (
-                  <div className="flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm font-medium">{tool.userRating}</span>
-                    {tool.reviewCount && (
-                      <span className="text-sm text-gray-300">({tool.reviewCount} reviews)</span>
-                    )}
-                  </div>
-                )}
-              </div>
-              <a
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-semibold inline-flex items-center"
-              >
-                Visit Website
-                <ExternalLink className="h-5 w-5 ml-2" />
-              </a>
+        {/* Tool Information Container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-4">
+              <h1 className="text-4xl font-bold text-gray-900">{tool.name}</h1>
+              {isNewTool && (
+                <span className="bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-full uppercase">
+                  NEW
+                </span>
+              )}
+              {tool.userRating && (
+                <div className="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">
+                  <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  <span className="text-sm font-medium text-gray-900">{tool.userRating}</span>
+                  {tool.reviewCount && (
+                    <span className="text-sm text-gray-600">({tool.reviewCount} reviews)</span>
+                  )}
+                </div>
+              )}
             </div>
-
-            <p className="text-xl text-gray-200 mt-4 max-w-3xl">
-              {tool.detailedDescription || tool.description}
-            </p>
+            <a
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg"
+            >
+              Visit Website
+              <ExternalLink className="h-5 w-5 ml-2" />
+            </a>
           </div>
+
+          <p className="text-xl text-gray-700 max-w-4xl leading-relaxed">
+            {tool.detailedDescription || tool.description}
+          </p>
         </div>
       </div>
 

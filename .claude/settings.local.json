@@ -28,7 +28,8 @@
       "Bash(where:*)",
       "Bash(\"C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe\":*)",
       "Bash(pip:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(gh pages --help:*)"
     ],
     "deny": [],
     "ask": []
