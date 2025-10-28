@@ -85,11 +85,11 @@ const ToolDetail = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Text and Image side by side */}
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-col xl:flex-row xl:items-start gap-6">
 
             {/* Left: Tool Information */}
-            <div className="flex-1">
+            <div className="flex-1 xl:max-w-[500px]">
               {/* Title and rating section */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
@@ -123,22 +123,24 @@ const ToolDetail = () => {
               </div>
 
               {/* Description */}
-              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {tool.detailedDescription || tool.description}
               </p>
             </div>
 
             {/* Right: Tool Screenshot */}
-            <div className="relative h-[259.5px] lg:w-96 bg-black overflow-hidden flex-shrink-0 rounded-lg shadow-xl border border-gray-200">
-              <DynamicScreenshotImage
-                toolUrl={tool.url}
-                toolName={tool.name}
-                fallbackImage={tool.fallbackImage || tool.image}
-                alt={tool.name}
-                className="w-full h-full object-contain opacity-80"
-                useDynamicScreenshot={tool.useDynamicScreenshot}
-                lazy={false}
-              />
+            <div className="relative h-[259.5px] w-full md:max-w-[600px] md:mx-auto xl:w-auto xl:flex-shrink-0 bg-black overflow-hidden rounded-lg shadow-xl border border-gray-200">
+              <div className="w-full h-full">
+                <DynamicScreenshotImage
+                  toolUrl={tool.url}
+                  toolName={tool.name}
+                  fallbackImage={tool.fallbackImage || tool.image}
+                  alt={tool.name}
+                  className="w-full h-full object-contain opacity-80"
+                  useDynamicScreenshot={tool.useDynamicScreenshot}
+                  lazy={false}
+                />
+              </div>
               {/* Black gradient overlay on image */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
             </div>
