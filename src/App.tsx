@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Tools from './pages/Tools';
 import ToolDetail from './pages/ToolDetail';
 import About from './pages/About';
+import ResearchManagement from './pages/ResearchManagement';
 
 // Component to handle title updates
 const TitleUpdater = () => {
@@ -22,7 +23,8 @@ const TitleUpdater = () => {
       '/tools/interior-design': 'Interior Design Tools | Arch AI Tool',
       '/tools/landscape-design': 'Landscape Design Tools | Arch AI Tool',
       '/tools/general-design': 'General Design Tools | Arch AI Tool',
-      '/tools/real-estate': 'Real Estate Tools | Arch AI Tool'
+      '/tools/real-estate': 'Real Estate Tools | Arch AI Tool',
+      '/admin/research': 'Research Management | Arch AI Tool'
     };
     
     // Handle tool detail pages
@@ -51,6 +53,8 @@ function App() {
             <Route path="/tools/:id" element={<ToolDetail />} />
             <Route path="/tool/:id" element={<ToolDetail />} />
             <Route path="/about" element={<About />} />
+            {/* Admin routes for research management */}
+            <Route path="/admin/research" element={<ResearchManagement />} />
             {/* Redirect old query parameter URLs to new path-based URLs */}
             <Route path="/tools" element={<Navigate to="/tools" replace />} />
           </Routes>
