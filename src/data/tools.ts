@@ -115,7 +115,126 @@ export const categories: Category[] = [
             url: "https://aitwo.co/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "AiTwo is a comprehensive AI-powered design platform that revolutionizes interior, exterior, and architectural design using cutting-edge artificial intelligence technology. With over 306,000 users and 1.6 million designs generated, AiTwo enables both professionals and homeowners to transform spaces in minutes rather than months. The platform offers 5000+ AI tools including exterior remodeling, interior design, virtual staging, and architectural visualization.",
+            keyFeatures: [
+              "5000+ AI design tools included",
+              "Interior and exterior remodeling AI",
+              "Virtual staging for real estate",
+              "Sketch to reality conversion",
+              "AI house painter and color suggestions",
+              "Landscaping and yard design AI",
+              "Architecture design AI",
+              "Real-time design generation in 30 seconds",
+              "Works on all devices",
+              "Cancel anytime subscription model"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WEBP"],
+              exportOptions: ["JPG", "PNG", "WEBP"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "30 seconds average"
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "First 2 designs free",
+                  "Access to basic AI tools",
+                  "Limited credits to start"
+                ],
+                limitations: ["Limited to 2 designs", "Basic functionality only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$4.99/week",
+                    billing: "weekly",
+                    features: [
+                      "71 Premium Credits per week",
+                      "5000+ AI Tools Included",
+                      "AI House Painter",
+                      "Interior AI",
+                      "Exterior AI",
+                      "Landscaping & Yard Design AI",
+                      "Architecture Design AI",
+                      "Works on All Devices",
+                      "Cancel Anytime"
+                    ],
+                    targetUser: "Homeowners and casual users"
+                  },
+                  {
+                    name: "AITwo Plus",
+                    price: "$29/month",
+                    billing: "monthly",
+                    features: [
+                      "1300 Premium Credits per month",
+                      "All Basic Features",
+                      "Advanced design tools",
+                      "Priority processing",
+                      "Unlimited style options",
+                      "Higher resolution exports"
+                    ],
+                    targetUser: "Professional designers and frequent users"
+                  },
+                  {
+                    name: "AITwo Mini",
+                    price: "$10/month",
+                    billing: "yearly",
+                    features: [
+                      "6000 Premium Credits per year",
+                      "All AITwo Plus Features",
+                      "Best value for annual users",
+                      "Save $85 compared to monthly",
+                      "Complete tool access"
+                    ],
+                    targetUser: "Budget-conscious professionals"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Home remodeling and renovation projects",
+              "Interior design for residential and commercial spaces",
+              "Exterior home design and curb appeal improvement",
+              "Virtual staging for real estate listings",
+              "Architectural concept visualization",
+              "Landscape and garden design planning",
+              "Real estate marketing materials",
+              "Design inspiration and ideation"
+            ],
+            integrations: [
+              "Image upload for style reference",
+              "Multiple device compatibility",
+              "Social media sharing integration"
+            ],
+            companyInfo: {
+              name: "AiTwo",
+              founded: "2023",
+              userStats: {
+                users: "306,248+",
+                countries: "120+",
+                projects: "1,693,409+"
+              },
+              support: {
+                email: "help@mail.aitwo.co",
+                documentation: "https://aitwo.co/use-cases",
+                tutorials: "https://aitwo.co/blog"
+              },
+              socialMedia: {
+                linkedin: "https://www.linkedin.com/company/aitwo",
+                twitter: "https://twitter.com/usamaClick",
+                youtube: "https://www.youtube.com/@AITwo_co/",
+                instagram: "https://www.instagram.com/aitwo.co/"
+              }
+            },
+            userRating: 5,
+            reviewCount: 306248,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "maket-ai",
@@ -150,27 +269,29 @@ export const categories: Category[] = [
                   "1 Active Project",
                   "Unlimited Floorplan Generation",
                   "Basic Floorplan Editing",
-                  "2 Image Generation Credits",
+                  "5 Image Generation Credits (total)",
                   "Low Resolution Generation"
                 ],
-                limitations: ["Limited to 1 active project", "Low resolution output", "Limited credits"]
+                limitations: ["Limited to 1 active project", "Low resolution output", "One-time credits only"]
               },
               paid: {
                 plans: [
                   {
-                    name: "Pro Plan",
+                    name: "Pro",
                     price: "$30/month",
                     billing: "monthly",
                     features: [
-                      "Unlimited Active Projects",
-                      "Unlimited Floorplan Generation",
+                      "All Basic Features",
+                      "Unlimited Projects",
+                      "Export in DXF/PDF/JPEG",
+                      "Versioning",
                       "Advanced Floorplan Editing",
-                      "Unlimited Image Generation Credits",
-                      "High Resolution Generation",
-                      "Priority Support",
-                      "Advanced Style Library"
+                      "20 Image Generation Credits (per month)",
+                      "1 Plan Upload and Digitization",
+                      "2D to 3D Conversion",
+                      "Shareable Link to Projects"
                     ],
-                    targetUser: "Professional architects and designers"
+                    targetUser: "Homeowners and professionals"
                   },
                   {
                     name: "Annual Plan",
