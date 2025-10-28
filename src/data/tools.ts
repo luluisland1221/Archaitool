@@ -469,7 +469,44 @@ export const categories: Category[] = [
             url: "https://architechtures.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Architechtures is a revolutionary AI-powered platform that transforms residential design processes, enabling architects and developers to generate optimal building designs in minutes rather than months. The platform leverages advanced generative AI to create real-time architectural solutions while maintaining full compatibility with traditional BIM workflows through seamless export capabilities.",
+            keyFeatures: [
+              "Real-time AI architecture generation",
+              "2D/3D modeling and visualization",
+              "BIM solution creation and export",
+              "Cost estimation and analysis",
+              "Regulatory compliance checking",
+              "Environment integration via OSM",
+              "Terrain adaptation and analysis",
+              "Custom presets and templates"
+            ],
+            pricing: {
+              trialAvailable: true,
+              enterprisePlan: true,
+              custom: ["7-day free trial", "Enterprise pricing available"]
+            },
+            useCases: [
+              "Residential development optimization",
+              "Multi-family housing design",
+              "Site planning and feasibility studies",
+              "Rapid prototyping and iteration",
+              "Cost-benefit analysis"
+            ],
+            integrations: [
+              "BIM standards (IFC export)",
+              "DXF format support",
+              "XLSX data export",
+              "OpenStreetMap integration"
+            ],
+            companyInfo: {
+              name: "Architechtures",
+              founded: 2021,
+              headquarters: "Wilmington, DE, USA",
+              additional: "Offices in Malaga, Spain. Funded by the European Union."
+            },
+            userRating: 4.5,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "autodesk-forma",
@@ -599,7 +636,65 @@ export const categories: Category[] = [
             url: "https://www.bricsys.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Bricsys BIM is an AI-driven Building Information Modeling solution built on a DWG-compatible CAD platform, offering the easiest path for CAD users to deliver BIM data. As part of the BricsCAD family, it combines familiar 2D drafting tools with powerful 3D modeling and BIM capabilities, enabling professionals to transition seamlessly to BIM workflows while maintaining full DWG compatibility.",
+            keyFeatures: [
+              "AI-driven BIM tools for processing building scans",
+              "Convert 2D/3D assets to BIM data automatically",
+              "Building documentation and detailing tools",
+              "Point cloud processing and modeling",
+              "DWG-based BIM platform",
+              "IFC format support for industry compatibility",
+              "Model-based quantity takeoff",
+              "Automated detailing with AI assistance"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "BIM",
+                    price: "$1,060/year",
+                    features: ["Full BIM capabilities", "DWG compatibility", "AI tools"]
+                  },
+                  {
+                    name: "Ultimate",
+                    price: "Custom pricing",
+                    features: ["All BIM features + additional tools", "Priority support"]
+                  }
+                ]
+              },
+              trialAvailable: true,
+              freeForEducation: true
+            },
+            useCases: [
+              "Scan-to-BIM workflows",
+              "Building documentation and detailing",
+              "Model-based quantity takeoff",
+              "2D to 3D BIM conversion",
+              "Shop drawing production",
+              "Point cloud modeling and analysis"
+            ],
+            integrations: [
+              "DWG format (full compatibility)",
+              "IFC (Industry Foundation Classes)",
+              "Point cloud data processing",
+              "Third-party applications via API"
+            ],
+            companyInfo: {
+              name: "Bricsys NV (Hexagon)",
+              founded: 2002,
+              headquarters: "Ghent, Belgium",
+              additional: "Part of Hexagon since 2018. Global technology company with offices worldwide.",
+              teamSize: "200+ employees"
+            },
+            technicalSpecs: {
+              supportedPlatforms: ["Windows", "Linux", "macOS"],
+              fileFormats: ["DWG", "IFC", "Point clouds"],
+              apiAvailable: true,
+              collaboration: true
+            },
+            userRating: 4.3,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "testfit",
@@ -754,7 +849,49 @@ export const categories: Category[] = [
             url: "https://www.floorplan-ai.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Floorplan AI is a specialized AI-powered tool that helps users generate floor plan ideas quickly and efficiently. The platform enables users to create personalized floor plans through an intuitive web editor and export them in professional DXF format, significantly reducing time spent on architectural planning projects.",
+            keyFeatures: [
+              "AI-powered floor plan generation",
+              "Web-based customization editor",
+              "DXF export for CAD integration",
+              "Multiple room type support",
+              "Quick modification tools",
+              "PNG format sharing options"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["4 AI credits", "PNG exports"],
+                limitations: ["No DXF exports", "Limited credits"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$5 (one-time)",
+                    features: ["10 AI credits", "10 DXF exports"]
+                  },
+                  {
+                    name: "Pro",
+                    price: "$39 (limited time, originally $69)",
+                    features: ["100 AI credits", "100 DXF exports", "Priority support"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Residential home design",
+              "Real estate property visualization",
+              "Architectural planning and concept development",
+              "Construction project planning",
+              "Interior design layout optimization"
+            ],
+            integrations: [
+              "DXF format for CAD software",
+              "PNG format for sharing and presentations"
+            ],
+            userRating: 4.0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "ai-architectures",
@@ -990,7 +1127,77 @@ export const categories: Category[] = [
             url: "https://lumion.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Lumion is industry-leading 3D rendering software that empowers architects, designers, and visualization professionals to bring spaces to life with stunning real-time rendering. Known for its intuitive workflow and exceptional speed, Lumion transforms complex 3D models into breathtaking visualizations, making professional architectural visualization accessible without the traditional technical barriers and time constraints.",
+            keyFeatures: [
+              "Real-time ray tracing technology",
+              "AI-powered image upscaler (5x faster rendering)",
+              "High-quality asset library with thousands of objects",
+              "Customizable FX stacks and post-processing",
+              "Atmospheric controls (lighting, weather, seasons)",
+              "4K to 8K resolution rendering",
+              "360° panoramic visualization",
+              "LiveSync integration with major CAD/BIM tools"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Lumion View",
+                    price: "Contact for pricing",
+                    features: ["Basic rendering capabilities", "Standard asset library", "720p/1080p output"]
+                  },
+                  {
+                    name: "Lumion Pro",
+                    price: "Contact for pricing",
+                    features: ["Advanced AI upscaler", "Full asset library", "8K output", "Professional effects"]
+                  },
+                  {
+                    name: "Lumion Studio",
+                    price: "Contact for pricing",
+                    features: ["All Pro features", "Multi-seat licensing", "Priority support", "Advanced integrations"]
+                  }
+                ]
+              },
+              trialAvailable: true,
+              freeForEducation: true,
+              custom: ["Educational licenses free for students and faculty"]
+            },
+            useCases: [
+              "Architectural visualization and presentations",
+              "Interior design renderings",
+              "Landscape architecture visualization",
+              "Urban planning and development presentations",
+              "Real estate marketing materials",
+              "Construction progress visualization"
+            ],
+            integrations: [
+              "SketchUp (LiveSync plugin)",
+              "Autodesk Revit (LiveSync plugin)",
+              "ArchiCAD (LiveSync plugin)",
+              "Rhinoceros (LiveSync plugin)",
+              "AutoCAD (DWG import)",
+              "Vectorworks (file import)",
+              "3ds Max (file import)"
+            ],
+            companyInfo: {
+              name: "Act-3D B.V.",
+              founded: 1998,
+              headquarters: "Garderen, Netherlands",
+              additional: "Pioneering real-time 3D visualization technology for over 25 years. Global leader in architectural rendering software.",
+              teamSize: "50+ employees"
+            },
+            technicalSpecs: {
+              supportedPlatforms: ["Windows"],
+              renderSpeed: "Up to 5x faster with AI upscaler",
+              maxResolution: "8K with AI upscaler",
+              apiAvailable: true,
+              collaboration: true,
+              recommendedHardware: "NVIDIA RTX GPU recommended"
+            },
+            userRating: 4.7,
+            reviewCount: 0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "d5-render",
@@ -1044,7 +1251,33 @@ export const categories: Category[] = [
             url: "https://ainterior.design/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Ainterior Design leverages artificial intelligence to transform interior spaces efficiently and cost-effectively. The platform specializes in AI-powered interior revamping, making professional design accessible at a fraction of traditional interior design costs.",
+            keyFeatures: [
+              "AI-powered interior design generation",
+              "Cost-effective design solutions",
+              "Multiple style options",
+              "Quick turnaround time"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Basic Design Package",
+                    price: "Contact for pricing",
+                    features: ["AI design generation", "Basic revisions"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Home interior renovation",
+              "Room redesign projects",
+              "Budget-friendly makeovers",
+              "Quick design refreshes"
+            ],
+            userRating: 4.0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "arch-e-ai",
