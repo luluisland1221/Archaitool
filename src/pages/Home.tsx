@@ -128,7 +128,7 @@ const Home = () => {
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                    {subcategory.tools.map((tool) => {
+                    {subcategory.tools.slice(0, 3).map((tool) => {
                       const isNewTool = newToolIds.includes(tool.id);
                       return (
                         <div
