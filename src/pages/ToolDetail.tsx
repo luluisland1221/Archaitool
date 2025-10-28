@@ -83,57 +83,61 @@ const ToolDetail = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section - Smaller image with gradient overlay */}
-      <div className="relative h-64 bg-black overflow-hidden">
-        {/* Tool Screenshot - Smaller size */}
-        <DynamicScreenshotImage
-          toolUrl={tool.url}
-          toolName={tool.name}
-          fallbackImage={tool.fallbackImage || tool.image}
-          alt={tool.name}
-          className="w-full h-full object-cover opacity-80"
-          useDynamicScreenshot={tool.useDynamicScreenshot}
-          lazy={false}
-        />
+      {/* Hero Section - Completely separate image and text */}
+      <div className="bg-white">
+        {/* Tool Screenshot Section - Image only with contained gradient */}
+        <div className="relative h-48 bg-black overflow-hidden">
+          <DynamicScreenshotImage
+            toolUrl={tool.url}
+            toolName={tool.name}
+            fallbackImage={tool.fallbackImage || tool.image}
+            alt={tool.name}
+            className="w-full h-full object-cover opacity-85"
+            useDynamicScreenshot={tool.useDynamicScreenshot}
+            lazy={false}
+          />
+          {/* Gradient only in image area, not extending to text */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+        </div>
 
-        {/* Black gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-
-        {/* Tool Information Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <h1 className="text-3xl sm:text-4xl font-bold">{tool.name}</h1>
+        {/* Tool Information Section - Completely separate container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <div className="flex-1">
+              <div className="flex items-center gap-4 mb-4">
+                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name}</h1>
                 {isNewTool && (
                   <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
                     NEW
                   </span>
                 )}
                 {tool.userRating && (
-                  <div className="flex items-center gap-1 bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">
-                    <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                    <span className="text-xs font-medium">{tool.userRating}</span>
+                  <div className="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">
+                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <span className="text-sm font-medium text-gray-900">{tool.userRating}</span>
                     {tool.reviewCount && (
-                      <span className="text-xs text-gray-300">({tool.reviewCount})</span>
+                      <span className="text-sm text-gray-600">({tool.reviewCount} reviews)</span>
                     )}
                   </div>
                 )}
               </div>
+
+              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
+                {tool.detailedDescription || tool.description}
+              </p>
+            </div>
+
+            <div className="flex-shrink-0">
               <a
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg"
+                className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold inline-flex items-center shadow-lg text-lg"
               >
                 Visit Website
-                <ExternalLink className="h-4 w-4 ml-2" />
+                <ExternalLink className="h-5 w-5 ml-2" />
               </a>
             </div>
-
-            <p className="text-base sm:text-lg text-gray-200 mt-3 max-w-3xl">
-              {tool.detailedDescription || tool.description}
-            </p>
           </div>
         </div>
       </div>
