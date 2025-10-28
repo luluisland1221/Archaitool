@@ -479,7 +479,117 @@ export const categories: Category[] = [
             url: "https://www.autodesk.com/products/forma/overview",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Autodesk Forma is a powerful AI-powered cloud software for data-driven planning that revolutionizes pre-design and schematic design workflows. As part of Autodesk's AEC Collection, Forma combines AI automations with contextual data to help architects, urban planners, and real estate developers make informed decisions faster. The platform integrates seamlessly with existing tools like Revit, Rhino, and Dynamo to streamline the entire design process.",
+            keyFeatures: [
+              "AI-powered generative design with site automation",
+              "Real-time environmental analysis (noise, wind, embodied carbon)",
+              "3D modeling with intuitive design tools",
+              "Contextual site data integration",
+              "Automatic area metrics generation",
+              "Forma Board for collaboration and presentations",
+              "Geolocated Revit project conversion",
+              "Rapid site optioneering capabilities",
+              "API and extension support",
+              "Multi-format import/export (IFC, OBJ, Revit)"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["IFC", "OBJ", "RVT", "DWG", "DXF"],
+              exportOptions: ["Revit projects", "AutoCAD", "SketchUp", "Excel", "PDF"],
+              collaboration: true,
+              apiAvailable: true,
+              mobileSupport: true,
+              renderSpeed: "Cloud-based processing",
+              systemRequirements: ["Modern web browser", "Autodesk account"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Free trial available",
+                  "Basic feature access",
+                  "Limited project capabilities"
+                ],
+                limitations: ["Trial period limitations", "Reduced functionality"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Standalone Subscription",
+                    price: "Varies by region",
+                    billing: "monthly",
+                    features: [
+                      "Full Forma functionality",
+                      "Cloud-based processing",
+                      "All analysis tools",
+                      "Collaboration features",
+                      "Technical support"
+                    ],
+                    targetUser: "Individual professionals and small firms"
+                  },
+                  {
+                    name: "AEC Collection",
+                    price: "Included in collection",
+                    billing: "yearly",
+                    features: [
+                      "Forma included at no extra cost",
+                      "Access to 15+ other Autodesk tools",
+                      "Revit, AutoCAD, Civil 3D included",
+                      "Cloud services and collaboration tools",
+                      "Cost-effective bundle pricing"
+                    ],
+                    targetUser: "Architecture, engineering, and construction firms"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Pre-design feasibility studies",
+              "Site planning and analysis",
+              "Urban planning and development",
+              "Environmental impact assessment",
+              "Concept design and massing studies",
+              "Zoning compliance analysis",
+              "Real estate development planning",
+              "Multi-family housing design"
+            ],
+            integrations: [
+              "Revit with seamless workflow",
+              "Rhino/Grasshopper integration",
+              "Dynamo for automation",
+              "Autodesk Construction Cloud (ACC)",
+              "AutoCAD compatibility",
+              "Custom API development"
+            ],
+            companyInfo: {
+              name: "Autodesk",
+              founded: "1982",
+              headquarters: "San Rafael, California, USA",
+              teamSize: "13,000+ employees",
+              userStats: {
+                users: "Millions of professionals",
+                countries: "Global presence"
+              },
+              support: {
+                email: "Available through Autodesk support",
+                chat: true,
+                documentation: "https://help.autodesk.com/",
+                tutorials: "https://www.autodesk.com/support/forma"
+              },
+              socialMedia: {
+                linkedin: "https://www.linkedin.com/company/autodesk/",
+                twitter: "https://twitter.com/autodesk",
+                youtube: "https://www.youtube.com/user/Autodesk"
+              },
+              accreditations: [
+                "AIA provider",
+                "Global industry standards"
+              ]
+            },
+            userRating: 4.5,
+            reviewCount: 0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "bricsys",
@@ -499,7 +609,142 @@ export const categories: Category[] = [
             url: "https://www.testfit.io/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "TestFit is a revolutionary real estate feasibility platform that transforms the site planning and development process with AI-powered optimization. Used by over 3,300 professionals, TestFit enables architects, developers, and urban planners to validate pro formas against actual layouts, generate optimized solutions instantly, and make data-driven decisions. The platform has helped users save an average of $90,000 per year on feasibility studies and win significant project fees.",
+            keyFeatures: [
+              "Automated massing layouts in hours, not days",
+              "Instant cost models and quantity takeoffs",
+              "Real-time deal prototyping and comparison",
+              "Generative design with building optimization",
+              "3D context visualization with terrain data",
+              "Zoning and environmental data integration",
+              "Parking layout with custom stalls",
+              "Direct Revit, CAD, and SketchUp integrations",
+              "Live feasibility reports and collaboration",
+              "Multi-tenant typology solutions"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Revit (RVT)", "AutoCAD (DWG/DXF)", "SketchUp", "Excel", "PDF"],
+              exportOptions: ["Revit projects", "CAD files", "Excel reports", "PDF documents"],
+              collaboration: true,
+              apiAvailable: true,
+              mobileSupport: true,
+              renderSpeed: "Real-time processing",
+              systemRequirements: ["Modern web browser", "Stable internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Limited trial access",
+                  "Basic functionality testing"
+                ],
+                limitations: ["Restricted features", "Time-limited trial"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Urban Planner",
+                    price: "$100/month",
+                    billing: "yearly",
+                    features: [
+                      "Automated massing layouts",
+                      "Instant cost model & quantity takeoff",
+                      "Site creation from parcel",
+                      "Manual drive aisle configuration",
+                      "Concept iteration",
+                      "Online training resources"
+                    ],
+                    targetUser: "Urban planners and preliminary designers"
+                  },
+                  {
+                    name: "Data Maps",
+                    price: "$250/month",
+                    billing: "yearly",
+                    features: [
+                      "All Urban Planner features",
+                      "Zoning and environmental data",
+                      "3D terrain with cut and fill",
+                      "Custom stalls (ADA, Compact, etc.)",
+                      "Map layers integration",
+                      "Utility and power data"
+                    ],
+                    targetUser: "Developers and site planners"
+                  },
+                  {
+                    name: "Site Solver",
+                    price: "Starting at $8,000/year",
+                    billing: "yearly",
+                    features: [
+                      "All Data Maps features",
+                      "High-detailed building presets",
+                      "Generative design capabilities",
+                      "Building optimization with goals",
+                      "Dedicated account manager",
+                      "Onboarding and training",
+                      "Volume discounts available"
+                    ],
+                    targetUser: "Large firms and enterprise clients"
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "Custom pricing",
+                    billing: "yearly",
+                    features: [
+                      "All Site Solver features",
+                      "Quarterly business reviews",
+                      "Custom integrations",
+                      "Premium support",
+                      "Training programs"
+                    ],
+                    targetUser: "Enterprise organizations"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Real estate feasibility analysis",
+              "Site planning and optimization",
+              "Multi-family housing design",
+              "Mixed-use development planning",
+              "Pro forma validation",
+              "Zoning compliance studies",
+              "Parking layout optimization",
+              "Environmental impact assessment"
+            ],
+            integrations: [
+              "Revit with direct push functionality",
+              "AutoCAD for detailed documentation",
+              "SketchUp for conceptual modeling",
+              "Excel for financial analysis",
+              "PDF for presentations",
+              "Custom API for enterprise solutions"
+            ],
+            companyInfo: {
+              name: "TestFit",
+              userStats: {
+                users: "3,300+ professionals",
+                projects: "650+ deals evaluated per week"
+              },
+              support: {
+                email: "sales@testfit.io",
+                chat: true,
+                documentation: "Available on website",
+                tutorials: "Online training resources"
+              },
+              accreditations: [
+                "Industry recognized platform",
+                "Professional endorsements"
+              ],
+              mediaMentions: [
+                "Customer testimonials from major firms",
+                "Industry publications coverage"
+              ]
+            },
+            userRating: 4.7,
+            reviewCount: 0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "floorplan-ai",
@@ -556,7 +801,126 @@ export const categories: Category[] = [
             url: "https://myarchitectai.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "MyArchitect AI is a revolutionary AI-powered rendering platform that transforms architectural and interior designs into photorealistic renders in under 10 seconds. Used by hundreds of architects and interior designers worldwide, the platform has generated over 1,500,000 renders to date. With cloud-based processing, no hardware requirements, and zero learning curve, it democratizes high-quality architectural visualization.",
+            keyFeatures: [
+              "Photorealistic AI rendering in under 10 seconds",
+              "One-click rendering engine for instant results",
+              "Style transfer for endless design variations",
+              "AI render editing for material and object replacement",
+              "AI enhancer for improving low-resolution renders",
+              "Compatible with any CAD or 3D modeling software",
+              "Runs entirely in browser - no installation needed",
+              "Supports JPG, PNG, and WEBP formats",
+              "Private and secure cloud processing",
+              "Works on any device (desktop, mobile, tablet)"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WEBP"],
+              exportOptions: ["4K resolution exports"],
+              renderSpeed: "9.3 seconds average",
+              collaboration: false,
+              apiAvailable: true,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Stable internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "10 renders per month",
+                  "10 edits per month",
+                  "Private usage license",
+                  "Standard quality downloads",
+                  "One-click rendering engine",
+                  "Style transfer engine",
+                  "AI enhancer",
+                  "Style filters",
+                  "Private renders"
+                ],
+                limitations: ["Limited to 10 renders/edits per month", "Standard quality only", "Private license only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$29/month",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited renders",
+                      "Unlimited edits",
+                      "Commercial usage license",
+                      "Highest quality downloads (4K)",
+                      "One-click rendering engine",
+                      "Style transfer engine",
+                      "AI enhancer",
+                      "Style filters",
+                      "Private renders",
+                      "Runs in your browser",
+                      "Priority support from founders",
+                      "Animations (coming soon)",
+                      "Rendering history (coming soon)"
+                    ],
+                    targetUser: "Professional architects and designers"
+                  },
+                  {
+                    name: "Pro Annual",
+                    price: "$249/year",
+                    billing: "yearly",
+                    features: [
+                      "All Pro monthly features",
+                      "Save $99 compared to monthly billing",
+                      "Unlimited renders and edits",
+                      "Commercial usage license",
+                      "4K quality exports",
+                      "Early access to experimental features"
+                    ],
+                    targetUser: "Professionals seeking annual savings"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Architectural visualization and concept development",
+              "Interior design rendering and presentation",
+              "Furniture product visualization",
+              "Real estate marketing materials",
+              "Client presentations and design approvals",
+              "Sketch to render conversion",
+              "Design iteration and style exploration",
+              "Virtual staging and furnishing"
+            ],
+            integrations: [
+              "SketchUp",
+              "Archicad",
+              "Revit",
+              "Rhino",
+              "Chief Architect",
+              "Vectorworks",
+              "API for custom integrations"
+            ],
+            companyInfo: {
+              name: "MyArchitect AI",
+              userStats: {
+                users: "Hundreds of professionals",
+                projects: "1,500,000+ renders generated"
+              },
+              support: {
+                email: "Available via live chat",
+                chat: true,
+                documentation: "https://help.myarchitectai.com/help",
+                tutorials: "https://myarchitectai.com/rendering-tutorials"
+              },
+              socialMedia: {
+                twitter: "https://twitter.com/myarchitectai",
+                linkedin: "Available on website",
+                youtube: "Available on website"
+              }
+            },
+            userRating: 4.9,
+            reviewCount: 0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "visualizee-ai",
@@ -700,7 +1064,99 @@ export const categories: Category[] = [
             url: "https://archi.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Archi AI is a revolutionary AI-powered design tool that enables both professionals and individuals to create unlimited, photo-realistic renders of any space in seconds. Using advanced AI technology, Archi AI transforms uploaded photos of interior or exterior spaces into stunning design visualizations, helping users explore endless design possibilities without the need for traditional 3D modeling expertise.",
+            keyFeatures: [
+              "Generate photo-like images in seconds",
+              "Interior and exterior space design",
+              "Support for living room, bedroom, kitchen, bathroom, and dining room",
+              "AI-powered style recommendations",
+              "Simple 3-step design process",
+              "Cost-effective design solution",
+              "No design experience required",
+              "Unlimited design variations",
+              "Mobile-friendly interface",
+              "Natural and unique AI model outputs"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "JPEG"],
+              exportOptions: ["High-resolution images"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "Seconds average",
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Basic design generation",
+                  "Limited renders per month",
+                  "Standard quality outputs",
+                  "Access to basic styles"
+                ],
+                limitations: ["Limited number of renders", "Basic features only", "Standard quality"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$19/month",
+                    billing: "monthly",
+                    features: [
+                      "100 renders per month",
+                      "Access to all tools",
+                      "No watermark",
+                      "Commercial usage license",
+                      "Faster & higher quality renders"
+                    ],
+                    targetUser: "Casual users and small projects"
+                  },
+                  {
+                    name: "Unlimited",
+                    price: "$29/month",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited renders per month",
+                      "Access to all tools",
+                      "No watermark",
+                      "Commercial usage license",
+                      "Faster & higher quality renders"
+                    ],
+                    targetUser: "Professional designers and frequent users"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Interior design visualization",
+              "Exterior home design",
+              "Room remodeling and renovation",
+              "Real estate staging",
+              "Design concept exploration",
+              "Client presentations",
+              "Home improvement planning",
+              "Furniture arrangement visualization"
+            ],
+            integrations: [
+              "Image upload and processing",
+              "Social media sharing",
+              "Cloud-based storage"
+            ],
+            companyInfo: {
+              name: "Archi AI",
+              support: {
+                chat: true,
+                documentation: "Available on website"
+              },
+              socialMedia: {
+                facebook: "https://www.facebook.com/profile.php?id=100093642397434",
+                instagram: "https://www.instagram.com/archiai_/"
+              }
+            },
+            lastUpdated: "2025-10-28"
           },
           {
             id: "indesignify",
@@ -931,7 +1387,84 @@ export const categories: Category[] = [
             url: "https://www.dreamzar.app/",
             isPaid: true,
             category: "landscape-design",
-            subcategory: "landscape-planning"
+            subcategory: "landscape-planning",
+            detailedDescription: "DreamzAR is an innovative AI landscape design app designed for both homeowners and landscaping professionals. The app enables users to create stunning outdoor transformations and professional landscape designs using just an iPhone or iPad. With comprehensive tools including 2D Design with Photos, 3D Design with AR, AI Landscape Design Stylist, and AI Landscape Design Idea Generator, DreamzAR makes professional landscape design accessible at a fraction of traditional costs.",
+            keyFeatures: [
+              "2D Design with Photos for quick transformations",
+              "3D Design with Augmented Reality",
+              "AI Landscape Design Stylist",
+              "AI Landscape Design Idea Generator",
+              "2000+ plant options and varieties",
+              "iPhone and iPad compatibility",
+              "Professional-grade design tools",
+              "Share designs with clients and contractors",
+              "Cost-effective solution for outdoor transformations",
+              "User-friendly mobile interface"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Photo uploads", "AR captures"],
+              exportOptions: ["High-resolution designs", "Shareable formats"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "Mobile-optimized processing",
+              systemRequirements: ["iPhone or iPad", "iOS compatibility"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Basic design tools",
+                  "Limited plant library access",
+                  "Standard design generation"
+                ],
+                limitations: ["Limited features", "Reduced plant options", "Basic functionality"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Premium",
+                    price: "Mobile app pricing",
+                    billing: "monthly",
+                    features: [
+                      "Full access to 2000+ plant library",
+                      "Advanced AI design features",
+                      "3D AR design capabilities",
+                      "Professional design tools",
+                      "Unlimited designs",
+                      "High-resolution exports"
+                    ],
+                    targetUser: "Homeowners and professionals"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Backyard landscape design",
+              "Front yard transformation planning",
+              "Garden design and plant selection",
+              "Outdoor living space visualization",
+              "Professional landscape presentations",
+              "Client design consultations",
+              "DIY landscape projects",
+              "Commercial landscape planning"
+            ],
+            integrations: [
+              "Mobile camera integration",
+              "AR technology",
+              "Photo processing",
+              "Social media sharing"
+            ],
+            companyInfo: {
+              name: "DreamzAR",
+              support: {
+                email: "Available through app",
+                documentation: "In-app tutorials",
+                tutorials: "Mobile app guidance"
+              }
+            },
+            lastUpdated: "2025-10-28"
           },
           {
             id: "yardflip",
