@@ -1739,7 +1739,49 @@ export const categories: Category[] = [
             url: "https://arch-e.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Arch E AI is an innovative AI-powered platform that combines interior design transformation with product shopping recommendations, enabling homeowners and designers to redesign spaces and shop recommended products in a seamless workflow. Using advanced computer vision and machine learning, the platform understands room contents and reimagines spaces in selected styles while providing curated shopping lists to recreate the new look.",
+            keyFeatures: [
+              "AI-powered interior design transformation",
+              "30+ design styles (Industrial, Mid Century, Minimalist, Bohemian)",
+              "Architectural AI for building image generation",
+              "Photorealistic rendering capabilities",
+              "Product recommendation engine",
+              "Shopping integration for home decor",
+              "Under-30-second design generation",
+              "Room analysis and style matching"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["First few generations free", "Basic design capabilities"],
+                limitations: ["Subscription required for long-term access", "Private generations need subscription"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Premium",
+                    price: "Contact for pricing",
+                    features: ["Unlimited generations", "Private designs", "Full shopping access"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Room redesign (living room, bathroom, bedroom)",
+              "Interior design inspiration and planning",
+              "Home redecoration projects",
+              "Furniture and decor shopping assistance",
+              "Architectural visualization",
+              "Decor planning and budgeting"
+            ],
+            integrations: [
+              "Photo upload and analysis",
+              "E-commerce product integration",
+              "Mobile and web platform access",
+              "Shopping cart functionality"
+            ],
+            userRating: 4.3,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "archi-ai",
@@ -1851,7 +1893,35 @@ export const categories: Category[] = [
             url: "https://indesignify.com/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Indesignify is an AI-powered interior design platform that enables users to redesign their interior spaces in seconds using advanced artificial intelligence. The platform simplifies the interior redesign process, making professional-quality design accessible to homeowners and designers without requiring extensive technical knowledge or time investment.",
+            keyFeatures: [
+              "AI-powered interior redesign",
+              "Seconds-level design generation",
+              "Professional interior design quality",
+              "User-friendly interface",
+              "Rapid design iteration"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "Contact for pricing",
+                    features: ["AI redesign capabilities", "High quality output", "Commercial use"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Interior space redesign",
+              "Home decoration planning",
+              "Design inspiration and visualization",
+              "Rapid interior design prototyping",
+              "Professional design consultation support"
+            ],
+            userRating: 4.0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "designai",
@@ -1861,7 +1931,33 @@ export const categories: Category[] = [
             url: "https://www.designai.us/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "DesignAI is an AI-powered virtual assistant that provides effortless living space transformation by understanding user style preferences and recreating rooms with class. The platform enables homeowners and renters to instantly remodel various spaces using advanced algorithms that deliver professional-quality interior design transformations tailored to individual tastes.",
+            keyFeatures: [
+              "AI virtual assistant for interior design",
+              "Instant room remodeling capabilities",
+              "Multiple style options (Boho, Industrial, Modern)",
+              "Advanced style preference algorithms",
+              "Before/after visualization",
+              "Multiple space type support"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Free account creation", "Basic remodeling capabilities", "Style transformations"]
+              }
+            },
+            useCases: [
+              "Home interior redesign",
+              "Living room transformation",
+              "Bedroom style updates",
+              "Kitchen and dining area remodeling",
+              "Bathroom redesign",
+              "Front and backyard transformation",
+              "Street view enhancement",
+              "Interior design inspiration"
+            ],
+            userRating: 4.1,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "decorion",
@@ -1871,7 +1967,35 @@ export const categories: Category[] = [
             url: "https://decorion.xyz/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Decorion is a personal AI interior designer that provides customized interior design solutions tailored to individual preferences and needs. The platform leverages artificial intelligence to deliver personalized design recommendations, style guidance, and space planning assistance, making professional interior design accessible to everyone regardless of design experience.",
+            keyFeatures: [
+              "Personal AI interior designer",
+              "Customized design recommendations",
+              "Personalized style guidance",
+              "Space planning assistance",
+              "Interior design expertise"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "Contact for pricing",
+                    features: ["Personal AI designer", "Custom designs", "Professional consultation"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Personalized interior design",
+              "Space planning and layout",
+              "Style consultation and guidance",
+              "Home decoration advice",
+              "Interior design project assistance"
+            ],
+            userRating: 4.2,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "ai4spaces",
@@ -1881,7 +2005,61 @@ export const categories: Category[] = [
             url: "https://ai4spaces.com/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "AI4Spaces is a comprehensive AI-powered interior design platform that enables users to create their dream homes through advanced artificial intelligence. The platform transforms uploaded room photos into photorealistic AI room makeovers within 10-30 seconds, offering over 40 interior styles and supporting both residential and commercial space design with professional-grade visualization quality.",
+            keyFeatures: [
+              "AI house design from uploaded photos",
+              "Room makeover transformations",
+              "Video walkthrough generation",
+              "360° interior view creation",
+              "AI image upscaling and enhancement",
+              "Precision image editing tools",
+              "40+ interior design styles",
+              "Custom style creation based on landscapes/emotions/artists"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["10 credits/month", "Basic AI design generation"],
+                limitations: ["Limited credits", "Basic features only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Monthly",
+                    price: "$9-$180/month",
+                    features: ["More credits", "Advanced features", "Priority support"]
+                  },
+                  {
+                    name: "Lifetime",
+                    price: "$175-$2,495 one-time",
+                    features: ["Unlimited designs", "All features", "Best value"]
+                  },
+                  {
+                    name: "Pay-as-you-go",
+                    price: "$19-$129",
+                    features: ["Credit packs", "Flexible usage", "No commitment"]
+                  }
+                ]
+              }
+            }
+            },
+            useCases: [
+              "Virtual staging for real estate listings",
+              "Interior design planning and visualization",
+              "Architectural concept development",
+              "Home renovation planning",
+              "Commercial space design (offices, restaurants, hotels)",
+              "Design portfolio creation",
+              "Client presentations and approvals"
+            ],
+            integrations: [
+              "Photo upload from multiple sources",
+              "Sketch and 3D render support",
+              "Video and 360° output formats",
+              "HD image export capabilities"
+            ],
+            userRating: 4.4,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "roomgpt",
