@@ -901,7 +901,53 @@ export const categories: Category[] = [
             url: "https://ai-architectures.com/",
             isPaid: false,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "AI Architectures is a revolutionary AI-powered platform that generates professional architectural designs in just 30 seconds with a single click. Serving over 10,000 happy architects and having created 50,000+ designs, the platform eliminates manual drafting while delivering professional-grade designs, floor plans, and photorealistic renderings that meet industry standards.",
+            keyFeatures: [
+              "AI Architecture Generator (30-second designs)",
+              "Professional floor plan generation",
+              "Photorealistic architectural rendering",
+              "Hand sketch to digital conversion",
+              "Code compliance suggestions",
+              "Image editor and enhancement tools",
+              "Style libraries and prompt recipes",
+              "Multiple export formats (DXF, PDF, PNG)"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic design generation", "Limited credits"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "Contact for pricing",
+                    features: ["Unlimited designs", "HD renders", "Commercial use"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Residential design projects",
+              "Commercial and retail spaces",
+              "Mixed-use developments",
+              "Industrial architecture",
+              "Urban planning concepts",
+              "Rapid prototyping and iterations"
+            ],
+            integrations: [
+              "Sketch to digital conversion",
+              "DXF export for CAD integration",
+              "PDF export for documentation"
+            ],
+            companyInfo: {
+              userStats: {
+                users: "10,000+ Happy Architects",
+                designs: "50,000+ Designs Created"
+              }
+            },
+            userRating: 4.4,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "3d-house-planner",
@@ -911,7 +957,39 @@ export const categories: Category[] = [
             url: "https://3dhouseplanner.com/",
             isPaid: false,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "3D House Planner is a completely free web-based 3D home design application that requires no installation. Built for homeowners and DIY enthusiasts, the platform enables users to build apartments and houses with professional design tools in just a few clicks, while maintaining complete privacy with no login required.",
+            keyFeatures: [
+              "Browser-based 3D design (no installation)",
+              "AI-powered floor plan generation from images",
+              "Build walls, floors, roofs, frames instantly",
+              "Import 3D models (GLB, GLTF, OBJ, Babylon)",
+              "Thousands of objects in catalog",
+              "Design up to 50 floors",
+              "Physically Based Rendering (PBR) materials",
+              "Terrain modeling and painting"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Complete functionality", "Commercial use allowed", "No registration required"],
+                limitations: ["Accepts donations for development support"]
+              }
+            },
+            useCases: [
+              "Home design and renovation planning",
+              "DIY home improvement projects",
+              "Apartment layout design",
+              "Interior space planning",
+              "Real estate visualization",
+              "Educational purposes and learning"
+            ],
+            integrations: [
+              "3D model import (GLB, GLTF, OBJ, Babylon)",
+              "Scene export for continued work",
+              "Image-based AI floor plan generation"
+            ],
+            userRating: 4.2,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "arcadium-3d",
@@ -921,7 +999,48 @@ export const categories: Category[] = [
             url: "https://arcadium3d.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-design"
+            subcategory: "architectural-design",
+            detailedDescription: "Arcadium 3D is a comprehensive browser-based 3D design platform that offers fast, intuitive house and interior design capabilities without requiring software installation. Combining clean, simple design tools with powerful AI visualization, Arcadium enables both professionals and DIY enthusiasts to create stunning 3D designs, collaborate in real-time, and generate photorealistic visualizations from any browser.",
+            keyFeatures: [
+              "Multiple view modes (top-down, floor plan, isometric, first-person)",
+              "AI-powered visualization generation",
+              "Large 3D model library (furniture, plants, kitchen elements)",
+              "Parametric components (stairs, windows, doors)",
+              "Millimeter-level precision tools",
+              "Realistic lighting controls",
+              "Instant cloud-based collaboration",
+              "Virtual tour capabilities"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Full project creation", "Basic 3D modeling", "Collaboration features"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "Contact for pricing",
+                    features: ["Advanced AI visualizations", "Premium 3D models", "Enhanced collaboration"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Interior design mock-ups",
+              "Home renovation planning",
+              "Kitchen and bathroom design",
+              "Landscape and garden design",
+              "Architectural concept visualization",
+              "Client presentations and virtual tours"
+            ],
+            integrations: [
+              "URL-based sharing for collaboration",
+              "2D floor plan exports",
+              "Elevation drawings for builders",
+              "Mobile device compatibility"
+            ],
+            userRating: 4.5,
+            lastUpdated: "2025-10-28"
           }
         ]
       },
