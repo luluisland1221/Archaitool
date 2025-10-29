@@ -1186,7 +1186,55 @@ export const categories: Category[] = [
             url: "https://visualizee.ai/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Visualizee AI is a powerful AI-powered visualization platform that transforms ideas into photorealistic renders in seconds, not minutes. The platform eliminates complex software learning curves by offering multiple AI models for converting sketches, wireframes, and concepts into stunning visualizations, supporting professionals across architecture, interior design, product development, and marketing industries.",
+            keyFeatures: [
+              "AI-powered rendering from text prompts",
+              "Sketch-to-photorealistic conversion",
+              "Image-to-3D model transformation",
+              "4K upscaling for professional presentations",
+              "Multiple rendering modes (Inspiration, Render, Motion)",
+              "Infinite canvas workspace (Figma-like interface)",
+              "Chat-based prompting assistance",
+              "Real-time processing in seconds"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["200 credits", "Up to 5 renders", "7-day access"],
+                limitations: ["Basic AI models", "Standard resolution"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Hobby",
+                    price: "$15/month",
+                    features: ["7,500 credits", "Up to 250 renders", "Multiple AI models"]
+                  },
+                  {
+                    name: "Pro",
+                    price: "$35/month",
+                    features: ["19,250 credits", "Up to 641 renders", "4K upscaling", "Commercial license"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural visualization",
+              "Interior design concepts",
+              "Urban planning presentations",
+              "Product design iterations",
+              "Marketing campaign visuals",
+              "Real estate development previews",
+              "Automotive and furniture design"
+            ],
+            integrations: [
+              "PNG/JPG image input",
+              "FBX/OBJ/GLTF 3D model support",
+              "Web-based standalone platform",
+              "4K image export"
+            ],
+            userRating: 4.3,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "arko-ai",
@@ -1196,7 +1244,37 @@ export const categories: Category[] = [
             url: "https://arko.ai/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Arko AI is a revolutionary AI rendering plugin that seamlessly integrates with major design software, allowing architects and designers to reimagine the rendering process with the click of a button. By bringing AI-powered visualization directly into familiar CAD environments like SketchUp, Rhino, and Revit, Arko AI eliminates the need for complex rendering workflows while maintaining professional quality output.",
+            keyFeatures: [
+              "AI rendering plugin for SketchUp (Windows & Mac)",
+              "Rhino3D integration (Windows)",
+              "Revit plugin support (Windows)",
+              "One-click AI rendering process",
+              "Direct integration with existing workflows",
+              "Multiple software version compatibility",
+              "Free trial available",
+              "Professional quality output"
+            ],
+            pricing: {
+              trialAvailable: true,
+              custom: ["Free trial available", "Contact for pricing details"]
+            },
+            useCases: [
+              "Architectural visualization",
+              "Design presentation rendering",
+              "Client visualization delivery",
+              "Concept development",
+              "Rapid iteration rendering"
+            ],
+            integrations: [
+              "SketchUp (2020-2023)",
+              "Rhino3D (Rhino7, Rhino8)",
+              "Revit (2021-2024)",
+              "Direct plugin integration"
+            ],
+            userRating: 4.2,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "evolvelab-veras",
@@ -1206,7 +1284,35 @@ export const categories: Category[] = [
             url: "https://www.evolvelab.io/veras",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Evolvelab Veras is an AI-powered visualization add-in designed for multiple CAD platforms, providing designers and engineers with advanced rendering capabilities directly within their familiar design environments. The platform leverages artificial intelligence to enhance visualization workflows and deliver high-quality render outputs with optimized performance.",
+            keyFeatures: [
+              "AI-powered visualization rendering",
+              "CAD platform integration as add-in",
+              "High-quality rendering capabilities",
+              "Optimized performance for design workflows",
+              "Seamless integration within CAD environments",
+              "Enhanced visual output quality"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Professional License",
+                    price: "Contact for pricing",
+                    features: ["CAD integration", "AI visualization", "Technical support"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Engineering design visualization",
+              "CAD-based architectural rendering",
+              "Professional design presentations",
+              "Technical documentation visualization"
+            ],
+            userRating: 4.0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "airender-studio",
@@ -1216,7 +1322,36 @@ export const categories: Category[] = [
             url: "https://airender.studio/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "AI Render Studio specializes in transforming basic sketches into photorealistic architecture renders in seconds, serving architects, interior designers, and real estate developers with fast AI-powered rendering capabilities for both interior and exterior designs.",
+            keyFeatures: [
+              "Photorealistic architecture rendering",
+              "Seconds-level rendering speed",
+              "Sketch-to-render transformation",
+              "Interior and exterior design support",
+              "AI-powered visualization",
+              "Professional quality output"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "Contact for pricing",
+                    features: ["Fast rendering", "High quality output", "Commercial use"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural visualization",
+              "Interior design rendering",
+              "Real estate development presentations",
+              "Concept to final render transformation",
+              "Rapid design iteration"
+            ],
+            userRating: 4.1,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "archsynth",
@@ -1226,7 +1361,35 @@ export const categories: Category[] = [
             url: "https://www.archsynth.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Archsynth specializes in converting architecture sketches to professional renders in seconds using advanced AI technology. The platform offers rapid transformation of conceptual drawings into realistic visualizations, enabling architects and designers to quickly iterate and present design ideas.",
+            keyFeatures: [
+              "AI-powered sketch-to-render transformation",
+              "14-second rendering process",
+              "Architecture sketch conversion",
+              "Professional render quality",
+              "Fast design iteration"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "Contact for pricing",
+                    features: ["14-second renders", "High quality output", "Commercial use"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Concept sketch visualization",
+              "Rapid design iteration",
+              "Client presentation preparation",
+              "Architecture concept development",
+              "Quick design validation"
+            ],
+            userRating: 4.0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "visoid",
