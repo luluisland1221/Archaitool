@@ -1399,7 +1399,52 @@ export const categories: Category[] = [
             url: "https://www.visoid.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Visoid is an AI-powered rendering platform designed specifically for architects, delivering professional architectural visualizations in seconds while cutting rendering time by up to 90%. The platform offers 'AI rendering, done right' with comprehensive content creation capabilities that integrate seamlessly with any 3D application, making professional visualization accessible and efficient for architectural practices of all sizes.",
+            keyFeatures: [
+              "Fast 3D model rendering (seconds, not hours)",
+              "Material experimentation and replacement",
+              "Lighting and season variations",
+              "Multi-prompt support for creative exploration",
+              "MaterialID control for precise adjustments",
+              "Site renders and collages",
+              "Up to 4K resolution output"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["30 renders/month", "Basic functionality", "Standard resolution"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$29/month",
+                    features: ["1000 renders", "High resolution", "Advanced materials"]
+                  },
+                  {
+                    name: "Premium",
+                    price: "$59/month",
+                    features: ["3000 renders", "4K resolution", "Priority support"]
+                  },
+                  {
+                    name: "Team",
+                    price: "from $59/user/month",
+                    features: ["Collaboration tools", "Team management", "Custom workflows"]
+                  }
+                ]
+              },
+              enterprisePlan: true
+            },
+            useCases: [
+              "Design iteration and concept development",
+              "Client presentations and approvals",
+              "Marketing materials and portfolios",
+              "Planning permission applications",
+              "Early-stage visualization",
+              "Material and lighting exploration"
+            ],
+            userRating: 4.4,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "lumion",
@@ -1489,7 +1534,63 @@ export const categories: Category[] = [
             url: "https://www.d5render.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "D5 Render is the industry-leading real-time rendering solution with built-in AI capabilities, delivering 10X faster output while maintaining the same amazing quality as traditional offline renderers. Recognized as G2 Best Architectural Rendering Software 2025 with a 4.9/5 rating, D5 Render serves architecture, landscape, and interior design professionals with comprehensive visualization tools and an extensive asset library.",
+            keyFeatures: [
+              "Real-time rendering with 10X faster output",
+              "Built-in AI capabilities and automation",
+              "LiveSync workflow for model inspection",
+              "14,000+ ready-to-use 3D assets",
+              "One-click weather creation",
+              "VR and panorama support",
+              "Handy tools (Path, Brush, Fill, Scatter)",
+              "Windows-based desktop application"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Community version", "Basic rendering", "Core functionality"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "Contact for pricing",
+                    features: ["Solo professional features", "Advanced tools", "Priority support"]
+                  },
+                  {
+                    name: "Teams",
+                    price: "Contact for pricing",
+                    features: ["Team collaboration", "Studio management", "Volume licensing"]
+                  }
+                ]
+              },
+              freeForEducation: true
+            },
+            useCases: [
+              "Architectural visualization",
+              "Landscape design rendering",
+              "Interior design presentations",
+              "Animation creation",
+              "Client presentations with VR tours",
+              "Real-time design iteration"
+            ],
+            integrations: [
+              "SketchUp LiveSync",
+              "Rhino integration",
+              "Revit compatibility",
+              "3ds Max support",
+              "Blender connection",
+              "Archicad workflow",
+              "Cinema 4D compatibility",
+              "Vectorworks integration"
+            ],
+            companyInfo: {
+              additional: "G2 Best Architectural Rendering Software 2025 with 4.9/5 rating",
+              accreditations: ["Industry recognition", "Professional awards"]
+            },
+            userRating: 4.9,
+            reviewCount: 0,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "chaos",
@@ -1499,7 +1600,44 @@ export const categories: Category[] = [
             url: "https://www.chaos.com/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Chaos is the industry-leading provider of world-class visualization solutions, helping professionals share ideas, optimize workflows, and create immersive experiences with Academy Award-winning technology. Their AI-enhanced ecosystem delivers unmatched realism and storytelling capabilities, trusted by top architecture firms like Foster Partners and Hassell worldwide for achieving photorealistic results without sacrificing performance.",
+            keyFeatures: [
+              "V-Ray: Industry-standard photorealistic rendering",
+              "AI Enhancer for realistic people assets",
+              "AI Upscaler (2x/4x render enhancement)",
+              "AI Material Generator from photos",
+              "Veras AI animation transformation",
+              "Enscape real-time rendering",
+              "Chaos Cosmos asset library (7,000+ assets)",
+              "Multi-platform integration"
+            ],
+            pricing: {
+              trialAvailable: true,
+              freeForEducation: true,
+              custom: ["Educational licenses up to 80% off", "Free trial with training", "Custom business pricing"]
+            },
+            useCases: [
+              "Architectural visualization",
+              "Interior design rendering",
+              "Product design visualization",
+              "Automotive design",
+              "Media and entertainment",
+              "Advertising and marketing",
+              "Real estate development presentations"
+            ],
+            integrations: [
+              "SketchUp", "Revit", "Rhino", "Archicad", "Vectorworks",
+              "3ds Max", "Maya", "Cinema 4D", "Houdini",
+              "Unreal Engine", "Blender"
+            ],
+            companyInfo: {
+              name: "Chaos Group",
+              additional: "Academy Award-winning technology, market leader in professional visualization",
+              accreditations: ["Industry awards", "Professional recognition", "Technology innovation"]
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-10-28"
           },
           {
             id: "rendera-ai",
@@ -1509,7 +1647,39 @@ export const categories: Category[] = [
             url: "https://www.rendera.ai/",
             isPaid: true,
             category: "architecture-spatial",
-            subcategory: "architectural-visualization"
+            subcategory: "architectural-visualization",
+            detailedDescription: "Rendera AI is an innovative AI-powered design generator that transforms spaces into beautiful, professionally-styled renders in seconds. The platform specializes in interior, exterior, and landscape visualization through simple photo uploads, offering region-specific designs based on climate and architecture while maintaining a flexible pay-per-use model without subscription commitments.",
+            keyFeatures: [
+              "Photo-to-design transformation",
+              "Interior, exterior, and landscape design",
+              "30-second AI generation",
+              "Custom design instructions and style guidance",
+              "Region-specific climate-based designs",
+              "Sketch-to-render transformation",
+              "Before/after visualization",
+              "Pay-per-use credit system"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Pay-per-use",
+                    price: "Credit-based pricing",
+                    features: ["No monthly fees", "Pay only for generated images", "Flexible usage"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Virtual staging and home styling",
+              "Design exploration and concept development",
+              "Real estate property enhancement",
+              "Client presentations and visualizations",
+              "Sketch enhancement and rendering",
+              "Pre-construction design preview"
+            ],
+            userRating: 4.1,
+            lastUpdated: "2025-10-28"
           }
         ]
       }
