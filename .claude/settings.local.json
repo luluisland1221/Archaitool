@@ -35,7 +35,8 @@
       "Bash(do echo \"=== $tool ===\")",
       "Bash(npm start)",
       "Bash(npm run)",
-      "Bash(timeout:*)"
+      "Bash(timeout:*)",
+      "Bash(Arch AI Tool\"\n- Generate unique meta descriptions for each tool based on features and pricing\n- Add canonical URLs for proper SEO indexing\n- Implement Open Graph meta tags for better social sharing\n- Add Twitter Card meta tags for improved social media presence\n- Solve Ahrefs duplicate content issue across all tool detail pages\n- Each tool page now has unique, descriptive SEO metadata\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

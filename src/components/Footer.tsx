@@ -22,7 +22,32 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/tools" className="text-gray-400 hover:text-white">
-                  Tools
+                  All Tools
+                </Link>
+              </li>
+              <li>
+                <Link to="/tools/architecture-spatial" className="text-gray-400 hover:text-white">
+                  Architecture & Design
+                </Link>
+              </li>
+              <li>
+                <Link to="/tools/interior-design" className="text-gray-400 hover:text-white">
+                  Interior Design
+                </Link>
+              </li>
+              <li>
+                <Link to="/tools/landscape-design" className="text-gray-400 hover:text-white">
+                  Landscape Design
+                </Link>
+              </li>
+              <li>
+                <Link to="/tools/general-design" className="text-gray-400 hover:text-white">
+                  General AI Tools
+                </Link>
+              </li>
+              <li>
+                <Link to="/tools/real-estate" className="text-gray-400 hover:text-white">
+                  Real Estate
                 </Link>
               </li>
               <li>

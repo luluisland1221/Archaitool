@@ -600,6 +600,63 @@ const ToolDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Related Tools Section */}
+        {category && subcategory && (
+          <div className="mt-12">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Related Tools</h2>
+              <p className="text-gray-600 mb-6">
+                Discover more {subcategory.name} tools in {category.name}
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {subcategory.tools
+                  .filter(t => t.id !== tool.id) // Exclude current tool
+                  .slice(0, 6) // Show up to 6 related tools
+                  .map((relatedTool) => (
+                    <Link
+                      key={relatedTool.id}
+                      to={`/tool/${relatedTool.id}`}
+                      className="group bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-all duration-300 hover:shadow-md"
+                    >
+                      <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <img
+                          src={relatedTool.image}
+                          alt={relatedTool.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-lg text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                        {relatedTool.name}
+                      </h3>
+                      <p className="text-gray-600 text-sm line-clamp-2">
+                        {relatedTool.description}
+                      </p>
+                      {relatedTool.userRating && (
+                        <div className="flex items-center gap-1 mt-3">
+                          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                          <span className="text-sm font-medium text-gray-900">{relatedTool.userRating}</span>
+                        </div>
+                      )}
+                    </Link>
+                  ))}
+              </div>
+
+              {/* View All Tools Button */}
+              <div className="text-center mt-8">
+                <Link
+                  to={`/tools/${category.id}/${subcategory.id}`}
+                  className="inline-flex items-center bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
+                >
+                  View All {subcategory.name} Tools
+                  <ArrowLeft className="h-4 w-4 ml-2 rotate-180" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
