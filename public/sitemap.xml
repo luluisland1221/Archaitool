@@ -278,13 +278,6 @@
 
   <!-- Tool detail pages - Interior Design -->
   <url>
-    <loc>https://archaitool.com/tool/ainterior</loc>
-    <lastmod>2025-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://archaitool.com/tool/arch-e-ai</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>

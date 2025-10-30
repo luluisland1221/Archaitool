@@ -1696,42 +1696,6 @@ export const categories: Category[] = [
         description: "AI-powered interior design and remodeling tools",
         tools: [
           {
-            id: "ainterior",
-            name: "Ainterior Design",
-            description: "AI-powered interior revamping at a fraction of traditional costs",
-            image: "/screenshots/ainterior_design_.webp",
-            url: "https://ainterior.design/",
-            isPaid: true,
-            category: "interior-design",
-            subcategory: "interior-design-remodeling",
-            detailedDescription: "Ainterior Design leverages artificial intelligence to transform interior spaces efficiently and cost-effectively. The platform specializes in AI-powered interior revamping, making professional design accessible at a fraction of traditional interior design costs.",
-            keyFeatures: [
-              "AI-powered interior design generation",
-              "Cost-effective design solutions",
-              "Multiple style options",
-              "Quick turnaround time"
-            ],
-            pricing: {
-              paid: {
-                plans: [
-                  {
-                    name: "Basic Design Package",
-                    price: "Contact for pricing",
-                    features: ["AI design generation", "Basic revisions"]
-                  }
-                ]
-              }
-            },
-            useCases: [
-              "Home interior renovation",
-              "Room redesign projects",
-              "Budget-friendly makeovers",
-              "Quick design refreshes"
-            ],
-            userRating: 4.0,
-            lastUpdated: "2025-10-28"
-          },
-          {
             id: "arch-e-ai",
             name: "Arch E AI",
             description: "Transform spaces and shop recommended products",
@@ -2121,16 +2085,6 @@ export const categories: Category[] = [
             },
             userRating: 4.6,
             lastUpdated: "2025-10-30"
-          },
-          {
-            id: "designera",
-            name: "Designera",
-            description: "Experience AI-generated personalized design ideas",
-            image: "/screenshots/designera_app_.webp",
-            url: "https://designera.app/",
-            isPaid: true,
-            category: "interior-design",
-            subcategory: "interior-design-remodeling"
           },
           {
             id: "vibe3d",
@@ -4257,7 +4211,7 @@ export const categories: Category[] = [
             name: "Iacrea",
             description: "Advanced AI solutions for real estate visualization",
             image: "/screenshots/www_iacrea_com_.webp",
-            url: "https://iacrea.ai/",
+            url: "https://www.iacrea.com/en",
             isPaid: true,
             category: "real-estate",
             subcategory: "property-visualization",

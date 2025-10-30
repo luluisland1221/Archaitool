@@ -1,0 +1,499 @@
+{
+  "testTime": "2025-10-30T12:20:51.955Z",
+  "summary": {
+    "total": 61,
+    "successful": 55,
+    "failed": 6,
+    "averageResponseTime": "1885"
+  },
+  "results": [
+    {
+      "index": 1,
+      "url": "https://aitwo.co/",
+      "status": 200,
+      "responseTime": 1432,
+      "finalUrl": "https://aitwo.co/",
+      "success": true
+    },
+    {
+      "index": 2,
+      "url": "https://www.maket.ai/",
+      "status": 200,
+      "responseTime": 1306,
+      "finalUrl": "https://www.maket.ai/",
+      "success": true
+    },
+    {
+      "index": 3,
+      "url": "https://arkdesign.ai/",
+      "status": 200,
+      "responseTime": 2153,
+      "finalUrl": "https://arkdesign.ai/",
+      "success": true
+    },
+    {
+      "index": 4,
+      "url": "https://architechtures.com/",
+      "status": 308,
+      "responseTime": 1592,
+      "finalUrl": "/en",
+      "success": true
+    },
+    {
+      "index": 5,
+      "url": "https://www.autodesk.com/products/forma/overview",
+      "status": 403,
+      "responseTime": 1584,
+      "finalUrl": "https://www.autodesk.com/products/forma/overview",
+      "success": false
+    },
+    {
+      "index": 6,
+      "url": "https://www.bricsys.com/",
+      "status": 200,
+      "responseTime": 1556,
+      "finalUrl": "https://www.bricsys.com/",
+      "success": true
+    },
+    {
+      "index": 7,
+      "url": "https://www.testfit.io/",
+      "status": 200,
+      "responseTime": 1390,
+      "finalUrl": "https://www.testfit.io/",
+      "success": true
+    },
+    {
+      "index": 8,
+      "url": "https://www.floorplan-ai.com/",
+      "status": 200,
+      "responseTime": 1593,
+      "finalUrl": "https://www.floorplan-ai.com/",
+      "success": true
+    },
+    {
+      "index": 9,
+      "url": "https://ai-architectures.com/",
+      "status": 200,
+      "responseTime": 1387,
+      "finalUrl": "https://ai-architectures.com/",
+      "success": true
+    },
+    {
+      "index": 10,
+      "url": "https://3dhouseplanner.com/",
+      "status": 200,
+      "responseTime": 1777,
+      "finalUrl": "https://3dhouseplanner.com/",
+      "success": true
+    },
+    {
+      "index": 11,
+      "url": "https://arcadium3d.com/",
+      "status": 200,
+      "responseTime": 1390,
+      "finalUrl": "https://arcadium3d.com/",
+      "success": true
+    },
+    {
+      "index": 12,
+      "url": "https://myarchitectai.com/",
+      "status": 301,
+      "responseTime": 1781,
+      "finalUrl": "https://www.myarchitectai.com/",
+      "success": true
+    },
+    {
+      "index": 13,
+      "url": "https://visualizee.ai/",
+      "status": 200,
+      "responseTime": 1629,
+      "finalUrl": "https://visualizee.ai/",
+      "success": true
+    },
+    {
+      "index": 14,
+      "url": "https://arko.ai/",
+      "status": 200,
+      "responseTime": 1749,
+      "finalUrl": "https://arko.ai/",
+      "success": true
+    },
+    {
+      "index": 15,
+      "url": "https://www.evolvelab.io/veras",
+      "status": 200,
+      "responseTime": 3197,
+      "finalUrl": "https://www.evolvelab.io/veras",
+      "success": true
+    },
+    {
+      "index": 16,
+      "url": "https://airender.studio/",
+      "status": 200,
+      "responseTime": 1903,
+      "finalUrl": "https://airender.studio/",
+      "success": true
+    },
+    {
+      "index": 17,
+      "url": "https://www.archsynth.com/",
+      "status": 200,
+      "responseTime": 1489,
+      "finalUrl": "https://www.archsynth.com/",
+      "success": true
+    },
+    {
+      "index": 18,
+      "url": "https://www.visoid.com/",
+      "status": 200,
+      "responseTime": 1960,
+      "finalUrl": "https://www.visoid.com/",
+      "success": true
+    },
+    {
+      "index": 19,
+      "url": "https://lumion.com/",
+      "status": 200,
+      "responseTime": 1548,
+      "finalUrl": "https://lumion.com/",
+      "success": true
+    },
+    {
+      "index": 20,
+      "url": "https://www.d5render.com/",
+      "status": 200,
+      "responseTime": 1903,
+      "finalUrl": "https://www.d5render.com/",
+      "success": true
+    },
+    {
+      "index": 21,
+      "url": "https://www.chaos.com/",
+      "status": 200,
+      "responseTime": 2744,
+      "finalUrl": "https://www.chaos.com/",
+      "success": true
+    },
+    {
+      "index": 22,
+      "url": "https://www.rendera.ai/",
+      "status": 200,
+      "responseTime": 1748,
+      "finalUrl": "https://www.rendera.ai/",
+      "success": true
+    },
+    {
+      "index": 23,
+      "url": "https://ainterior.design/",
+      "status": "ERROR",
+      "responseTime": 15596,
+      "error": "read ECONNRESET",
+      "success": false
+    },
+    {
+      "index": 24,
+      "url": "https://arch-e.ai/",
+      "status": 308,
+      "responseTime": 2266,
+      "finalUrl": "https://www.arch-e.ai/",
+      "success": true
+    },
+    {
+      "index": 25,
+      "url": "https://archi.ai/",
+      "status": 200,
+      "responseTime": 1953,
+      "finalUrl": "https://archi.ai/",
+      "success": true
+    },
+    {
+      "index": 26,
+      "url": "https://indesignify.com/",
+      "status": 308,
+      "responseTime": 1395,
+      "finalUrl": "https://www.indesignify.com/",
+      "success": true
+    },
+    {
+      "index": 27,
+      "url": "https://www.designai.us/",
+      "status": 200,
+      "responseTime": 1431,
+      "finalUrl": "https://www.designai.us/",
+      "success": true
+    },
+    {
+      "index": 28,
+      "url": "https://decorion.xyz/",
+      "status": 200,
+      "responseTime": 1728,
+      "finalUrl": "https://decorion.xyz/",
+      "success": true
+    },
+    {
+      "index": 29,
+      "url": "https://ai4spaces.com/",
+      "status": 200,
+      "responseTime": 1774,
+      "finalUrl": "https://ai4spaces.com/",
+      "success": true
+    },
+    {
+      "index": 30,
+      "url": "https://www.roomgpt.io/",
+      "status": 200,
+      "responseTime": 2360,
+      "finalUrl": "https://www.roomgpt.io/",
+      "success": true
+    },
+    {
+      "index": 31,
+      "url": "https://designera.app/",
+      "status": "ERROR",
+      "responseTime": 1336,
+      "error": "getaddrinfo EAI_AGAIN designera.app",
+      "success": false
+    },
+    {
+      "index": 32,
+      "url": "https://vibe3d.ai/",
+      "status": 200,
+      "responseTime": 2221,
+      "finalUrl": "https://vibe3d.ai/",
+      "success": true
+    },
+    {
+      "index": 33,
+      "url": "https://home-design.ai/",
+      "status": 200,
+      "responseTime": 2577,
+      "finalUrl": "https://home-design.ai/",
+      "success": true
+    },
+    {
+      "index": 34,
+      "url": "https://www.renovateai.ai/",
+      "status": 200,
+      "responseTime": 3012,
+      "finalUrl": "https://www.renovateai.ai/",
+      "success": true
+    },
+    {
+      "index": 35,
+      "url": "https://artevia.ai/",
+      "status": 200,
+      "responseTime": 3203,
+      "finalUrl": "https://artevia.ai/",
+      "success": true
+    },
+    {
+      "index": 36,
+      "url": "https://madespace.ai/",
+      "status": 200,
+      "responseTime": 1550,
+      "finalUrl": "https://madespace.ai/",
+      "success": true
+    },
+    {
+      "index": 37,
+      "url": "https://gepettoapp.com/",
+      "status": 200,
+      "responseTime": 1329,
+      "finalUrl": "https://gepettoapp.com/",
+      "success": true
+    },
+    {
+      "index": 38,
+      "url": "https://palette.immo/",
+      "status": 200,
+      "responseTime": 1972,
+      "finalUrl": "https://palette.immo/",
+      "success": true
+    },
+    {
+      "index": 39,
+      "url": "https://paintit.ai/",
+      "status": 200,
+      "responseTime": 2322,
+      "finalUrl": "https://paintit.ai/",
+      "success": true
+    },
+    {
+      "index": 40,
+      "url": "https://sofabrain.com/",
+      "status": 200,
+      "responseTime": 2923,
+      "finalUrl": "https://sofabrain.com/",
+      "success": true
+    },
+    {
+      "index": 41,
+      "url": "https://renovateai.app/",
+      "status": 200,
+      "responseTime": 1208,
+      "finalUrl": "https://renovateai.app/",
+      "success": true
+    },
+    {
+      "index": 42,
+      "url": "https://instantdeco.ai/",
+      "status": 200,
+      "responseTime": 1667,
+      "finalUrl": "https://instantdeco.ai/",
+      "success": true
+    },
+    {
+      "index": 43,
+      "url": "https://www.decoratly.com/",
+      "status": 200,
+      "responseTime": 1706,
+      "finalUrl": "https://www.decoratly.com/",
+      "success": true
+    },
+    {
+      "index": 44,
+      "url": "https://floordesign.ai/",
+      "status": 200,
+      "responseTime": 1545,
+      "finalUrl": "https://floordesign.ai/",
+      "success": true
+    },
+    {
+      "index": 45,
+      "url": "https://landscapedesignsai.com/",
+      "status": 200,
+      "responseTime": 2733,
+      "finalUrl": "https://landscapedesignsai.com/",
+      "success": true
+    },
+    {
+      "index": 46,
+      "url": "https://www.dreamzar.app/",
+      "status": 200,
+      "responseTime": 2820,
+      "finalUrl": "https://www.dreamzar.app/",
+      "success": true
+    },
+    {
+      "index": 47,
+      "url": "https://www.yardflip.ai/",
+      "status": 200,
+      "responseTime": 1883,
+      "finalUrl": "https://www.yardflip.ai/",
+      "success": true
+    },
+    {
+      "index": 48,
+      "url": "https://aigardendesign.io/",
+      "status": 200,
+      "responseTime": 1781,
+      "finalUrl": "https://aigardendesign.io/",
+      "success": true
+    },
+    {
+      "index": 49,
+      "url": "https://app.landscapingai.site/",
+      "status": 200,
+      "responseTime": 1449,
+      "finalUrl": "https://app.landscapingai.site/",
+      "success": true
+    },
+    {
+      "index": 50,
+      "url": "https://midjourney.com/",
+      "status": 301,
+      "responseTime": 1696,
+      "finalUrl": "https://www.midjourney.com/",
+      "success": true
+    },
+    {
+      "index": 51,
+      "url": "https://helpx.adobe.com/firefly/get-set-up/access-the-app/access-adobe-firefly.html",
+      "status": "TIMEOUT",
+      "responseTime": 10000,
+      "error": "Request timeout",
+      "success": false
+    },
+    {
+      "index": 52,
+      "url": "https://openai.com/dall-e-3",
+      "status": 403,
+      "responseTime": 1723,
+      "finalUrl": "https://openai.com/dall-e-3",
+      "success": false
+    },
+    {
+      "index": 53,
+      "url": "https://moodboardai.com/",
+      "status": 200,
+      "responseTime": 1553,
+      "finalUrl": "https://moodboardai.com/",
+      "success": true
+    },
+    {
+      "index": 54,
+      "url": "https://www.rusticai.art/",
+      "status": 200,
+      "responseTime": 2212,
+      "finalUrl": "https://www.rusticai.art/",
+      "success": true
+    },
+    {
+      "index": 55,
+      "url": "https://sketchpro.ai/",
+      "status": 200,
+      "responseTime": 2396,
+      "finalUrl": "https://sketchpro.ai/",
+      "success": true
+    },
+    {
+      "index": 56,
+      "url": "https://draftaid.io/",
+      "status": 200,
+      "responseTime": 1388,
+      "finalUrl": "https://draftaid.io/",
+      "success": true
+    },
+    {
+      "index": 57,
+      "url": "https://www.opal-ai.com/",
+      "status": 200,
+      "responseTime": 1324,
+      "finalUrl": "https://www.opal-ai.com/",
+      "success": true
+    },
+    {
+      "index": 58,
+      "url": "https://collov.ai/",
+      "status": 200,
+      "responseTime": 1881,
+      "finalUrl": "https://collov.ai/",
+      "success": true
+    },
+    {
+      "index": 59,
+      "url": "https://www.reimaginehome.ai/",
+      "status": 200,
+      "responseTime": 1638,
+      "finalUrl": "https://www.reimaginehome.ai/",
+      "success": true
+    },
+    {
+      "index": 60,
+      "url": "https://aihomedesign.com/",
+      "status": 200,
+      "responseTime": 1575,
+      "finalUrl": "https://aihomedesign.com/",
+      "success": true
+    },
+    {
+      "index": 61,
+      "url": "https://iacrea.ai/",
+      "status": "ERROR",
+      "responseTime": 263,
+      "error": "getaddrinfo ENOTFOUND iacrea.ai",
+      "success": false
+    }
+  ]
+}
