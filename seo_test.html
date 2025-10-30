@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Test - Dynamic Meta Tags</title>
+</head>
+<body>
+    <h1>SEO Meta Tags Test</h1>
+    <p>Use browser developer tools to inspect the meta tags on tool detail pages.</p>
+
+    <h2>Test URLs:</h2>
+    <ul>
+        <li><a href="http://localhost:5173/tool/midjourney" target="_blank">Midjourney Tool</a></li>
+        <li><a href="http://localhost:5173/tool/aitwo" target="_blank">AITwo Tool</a></li>
+        <li><a href="http://localhost:5173/tool/vibe3d" target="_blank">Vibe3D Tool</a></li>
+        <li><a href="http://localhost:5173/tool/roomgpt" target="_blank">RoomGPT Tool</a></li>
+    </ul>
+
+    <h2>How to Test:</h2>
+    <ol>
+        <li>Open any of the test URLs above</li>
+        <li>Right-click and select "Inspect" or "View Page Source"</li>
+        <li>Check the &lt;title&gt; tag - should be unique for each tool</li>
+        <li>Check the meta description - should be unique and descriptive</li>
+        <li>Check canonical URL - should point to the specific tool page</li>
+        <li>Check Open Graph tags (og:title, og:description, og:url)</li>
+        <li>Check Twitter Card tags (twitter:title, twitter:description)</li>
+    </ol>
+
+    <h2>Expected Results:</h2>
+    <ul>
+        <li><strong>Title:</strong> "Tool Name - Tool Description | Arch AI Tool"</li>
+        <li><strong>Description:</strong> "Tool Name: Detailed description. Key features: feature1, feature2, feature3. Pricing info. Read reviews and explore this AI architecture tool."</li>
+        <li><strong>Canonical URL:</strong> "https://archaitool.com/tool/tool-id"</li>
+    </ul>
+</body>
+</html>

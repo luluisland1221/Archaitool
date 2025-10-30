@@ -42,9 +42,83 @@ const ToolDetail = () => {
 
   useEffect(() => {
     if (tool) {
-      document.title = `${tool.name} - AI Architecture Tool | Arch AI Tool`;
+      // Update page title
+      document.title = `${tool.name} - ${tool.description} | Arch AI Tool`;
+
+      // Update or create meta description
+      let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
+      if (!metaDescription) {
+        metaDescription = document.createElement('meta');
+        metaDescription.name = 'description';
+        document.head.appendChild(metaDescription);
+      }
+
+      // Generate unique meta description based on tool information
+      const description = tool.detailedDescription || tool.description;
+      const features = tool.keyFeatures?.slice(0, 3).join(', ') || '';
+      const pricingInfo = tool.isPaid ? 'Paid tool' : 'Free tool available';
+      const metaDescText = `${tool.name}: ${description}. Key features: ${features}. ${pricingInfo}. Read reviews and explore this AI architecture tool.`;
+      metaDescription.content = metaDescText.substring(0, 160);
+
+      // Update or create canonical URL
+      let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+      if (!canonicalLink) {
+        canonicalLink = document.createElement('link');
+        canonicalLink.rel = 'canonical';
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.href = `https://archaitool.com/tool/${tool.id}`;
+
+      // Update Open Graph meta tags
+      let ogTitle = document.querySelector('meta[property="og:title"]') as HTMLMetaElement;
+      if (!ogTitle) {
+        ogTitle = document.createElement('meta');
+        ogTitle.property = 'og:title';
+        document.head.appendChild(ogTitle);
+      }
+      ogTitle.content = `${tool.name} - ${tool.description}`;
+
+      let ogDescription = document.querySelector('meta[property="og:description"]') as HTMLMetaElement;
+      if (!ogDescription) {
+        ogDescription = document.createElement('meta');
+        ogDescription.property = 'og:description';
+        document.head.appendChild(ogDescription);
+      }
+      ogDescription.content = metaDescText.substring(0, 160);
+
+      let ogUrl = document.querySelector('meta[property="og:url"]') as HTMLMetaElement;
+      if (!ogUrl) {
+        ogUrl = document.createElement('meta');
+        ogUrl.property = 'og:url';
+        document.head.appendChild(ogUrl);
+      }
+      ogUrl.content = `https://archaitool.com/tool/${tool.id}`;
+
+      // Update Twitter Card meta tags
+      let twitterTitle = document.querySelector('meta[name="twitter:title"]') as HTMLMetaElement;
+      if (!twitterTitle) {
+        twitterTitle = document.createElement('meta');
+        twitterTitle.name = 'twitter:title';
+        document.head.appendChild(twitterTitle);
+      }
+      twitterTitle.content = `${tool.name} - ${tool.description}`;
+
+      let twitterDescription = document.querySelector('meta[name="twitter:description"]') as HTMLMetaElement;
+      if (!twitterDescription) {
+        twitterDescription = document.createElement('meta');
+        twitterDescription.name = 'twitter:description';
+        document.head.appendChild(twitterDescription);
+      }
+      twitterDescription.content = metaDescText.substring(0, 160);
+
     } else {
       document.title = 'Tool Not Found | Arch AI Tool';
+
+      // Set default meta description for 404 page
+      let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
+      if (metaDescription) {
+        metaDescription.content = 'The AI architecture tool you are looking for was not found. Explore our comprehensive directory of AI-powered architecture and design tools.';
+      }
     }
   }, [tool]);
 
