@@ -2041,7 +2041,6 @@ export const categories: Category[] = [
                   }
                 ]
               }
-            }
             },
             useCases: [
               "Virtual staging for real estate listings",
@@ -2069,7 +2068,59 @@ export const categories: Category[] = [
             url: "https://www.roomgpt.io/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "RoomGPT is a revolutionary AI-powered interior design platform that has transformed the way over 2 million users approach home redesign. With its slogan 'Your personal AI interior designer,' the platform enables users to completely transform any room using just a single photograph. The system eliminates the need for professional interior designers by providing instant AI-generated room makeovers in various themes and styles, helping users overcome indecisiveness when decorating their spaces.",
+            keyFeatures: [
+              "Single photo room transformation",
+              "Multiple design themes and styles",
+              "Instant AI-powered redesigns",
+              "Google authentication for easy access",
+              "Free trial with 1 generation",
+              "Professional-quality results",
+              "User-friendly interface",
+              "Mobile and desktop compatible"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["1 free room generation", "Basic design themes", "Standard quality output"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Premium Plans",
+                    price: "60% off with FLASH60 code",
+                    features: ["Unlimited generations", "Advanced design themes", "High-quality output", "Priority processing"],
+                    billing: "monthly",
+                    targetUser: "Homeowners and designers"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Home renovation planning",
+              "Interior design visualization",
+              "Real estate staging",
+              "Room layout experimentation",
+              "Decor style testing",
+              "Before/after comparisons",
+              "Design inspiration gathering",
+              "Client presentations"
+            ],
+            companyInfo: {
+              founded: "2023",
+              userStats: {
+                users: "2+ million users"
+              },
+              support: {
+                email: "hassan@roomgpt.io",
+                socialMedia: true
+              },
+              socialMedia: {
+                twitter: "https://twitter.com/nutlope"
+              }
+            },
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "designera",
@@ -2089,7 +2140,82 @@ export const categories: Category[] = [
             url: "https://vibe3d.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Vibe3D is a revolutionary AI-powered platform that creates photorealistic 3D renders in seconds, cutting hours of manual work and accelerating the rendering workflow for interior designers and architects. Trusted by over 12,000 professionals worldwide, the platform transforms 3D models into stunning visuals with 100% accuracy, offering true realism 10x faster than traditional methods. With smart prompt suggestions and one-click AI-powered edits, Vibe3D eliminates technical barriers and enables instant iterations based on natural language commands.",
+            keyFeatures: [
+              "Photorealistic renders in seconds",
+              "100% accurate materials and textures",
+              "Smart prompt suggestions",
+              "One-click AI-powered edits",
+              "Natural language editing",
+              "Compatible with SketchUp, 3ds Max, and more",
+              "Multiple resolution options (HD, 2K, 4K)",
+              "Pay-as-you-go pricing model"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["No free tier available", "Pay-as-you-go only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Trial",
+                    price: "$9 one-time",
+                    features: ["30 realistic renders", "HD resolution", "Custom scene instructions"],
+                    billing: "onetime",
+                    targetUser: "First-time users testing the platform"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$39 $59 (33% off)",
+                    features: ["200 realistic renders", "2K resolution", "Custom scene instructions", "Smart prompt suggestions"],
+                    billing: "onetime",
+                    targetUser: "Professional designers"
+                  },
+                  {
+                    name: "Studio",
+                    price: "$99 $149 (33% off)",
+                    features: ["600 realistic renders", "4K resolution", "Custom scene instructions", "Smart prompt suggestions", "Priority support"],
+                    billing: "onetime",
+                    targetUser: "Design studios and teams"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Interior design visualization",
+              "Architectural rendering",
+              "Client presentations",
+              "Design iteration and feedback",
+              "Real estate marketing",
+              "Student portfolio development",
+              "Commercial space visualization",
+              "Product design rendering"
+            ],
+            integrations: [
+              "SketchUp import",
+              "3ds Max compatibility",
+              "Multiple 3D format support",
+              "Cloud-based rendering",
+              "Direct export capabilities"
+            ],
+            companyInfo: {
+              founded: "2024",
+              userStats: {
+                users: "12,000+ interior designers & architects"
+              },
+              support: {
+                email: "hello@vibe3d.ai",
+                chat: false,
+                documentation: "Available on website"
+              },
+              socialMedia: {
+                twitter: "https://x.com/vibe3dai",
+                instagram: "https://www.instagram.com/vibe3d.ai/"
+              }
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "home-design-ai",
@@ -2099,7 +2225,56 @@ export const categories: Category[] = [
             url: "https://home-design.ai/",
             isPaid: false,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Home Design AI is a completely free AI-powered interior design platform that revolutionizes home design with professional-grade tools accessible to everyone. Supporting both image-to-image transformation and text-to-image generation, the platform enables users to create stunning home designs without any signup or cost. With over 50,000 happy homeowners and 500,000+ designs created, the tool combines cutting-edge AI technology with professional interior design principles to deliver unprecedented house design experiences in just 30 seconds.",
+            keyFeatures: [
+              "100% free to use with no signup required",
+              "Image-to-image transformation",
+              "Text-to-image creation",
+              "20+ interior design styles",
+              "60+ room types supported",
+              "30-second generation time",
+              "Professional quality results",
+              "Privacy protection guaranteed"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Unlimited designs", "All design styles", "High resolution output", "No signup required", "Complete privacy protection"]
+              },
+              paid: {
+                plans: []
+              }
+            },
+            useCases: [
+              "Home renovation planning",
+              "Interior design visualization",
+              "Real estate staging",
+              "Professional design concept development",
+              "Client presentations",
+              "Design inspiration gathering",
+              "Room makeovers",
+              "Commercial space design"
+            ],
+            integrations: [
+              "Image upload (PNG, JPG, JPEG up to 10MB)",
+              "Multiple room types",
+              "Style customization",
+              "High-resolution download"
+            ],
+            companyInfo: {
+              founded: "2024",
+              userStats: {
+                users: "50,000+ Happy Homeowners",
+                designs: "500,000+ Home Designs Created",
+                avgTime: "30 Sec Average Generation Time"
+              },
+              support: {
+                documentation: true,
+                tutorials: true
+              }
+            },
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "renovate-ai",
@@ -2109,7 +2284,76 @@ export const categories: Category[] = [
             url: "https://www.renovateai.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Renovate AI is a comprehensive AI-powered home renovation platform that transforms rooms instantly with professional results. With over 100,000+ rooms transformed and a 4.8-star average rating, the platform enables users to upload photos, choose from modern, rustic, coastal, or curated styles, and watch their rooms transform in seconds. The complete AI renovation toolbox includes features like furniture preview, virtual staging, wall paint visualization, clean-up tools, upscaling, elevation improvements, and even landscaping capabilities.",
+            keyFeatures: [
+              "Instant room transformation in seconds",
+              "Complete AI renovation toolbox",
+              "Furniture preview for placement testing",
+              "Virtual staging with realistic furniture",
+              "Wall paint color visualization",
+              "One-click clutter removal",
+              "Image upscaling for high-quality exports",
+              "2D to 3D-like elevation improvements",
+              "Exterior transformation capabilities",
+              "Landscaping design tools"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["3 credits total", "Access to all styles", "10-second turnaround", "Watermark on images", "Basic cloud storage"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Starter",
+                    price: "$13/month",
+                    features: ["50 credits/month", "Access to all interior styles", "Limited tool access", "Unlimited storage for generated designs"],
+                    billing: "monthly",
+                    targetUser: "Homeowners and DIY enthusiasts"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$24/month",
+                    features: ["250 credits/month", "Unlimited tools", "20+ outdoor styles", "Early access to new features", "Everything in Starter"],
+                    billing: "monthly",
+                    targetUser: "Professional designers and real estate agents"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Home renovation visualization",
+              "Real estate staging and marketing",
+              "Interior design concept development",
+              "Furniture placement testing",
+              "Color scheme experimentation",
+              "Exterior home redesign",
+              "Landscape design planning",
+              "Client presentations and approvals"
+            ],
+            integrations: [
+              "Photo upload from multiple sources",
+              "High-resolution export capabilities",
+              "Cloud storage for designs",
+              "Mobile and web compatibility"
+            ],
+            companyInfo: {
+              founded: "2024",
+              userStats: {
+                users: "100,000+ rooms transformed",
+                rating: "4.8★ average rating"
+              },
+              support: {
+                email: true,
+                contact: true,
+                faq: true
+              },
+              socialMedia: {
+                instagram: "https://www.instagram.com/renovateai.ai/"
+              }
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "artevia",
@@ -2119,7 +2363,80 @@ export const categories: Category[] = [
             url: "https://artevia.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Artevia is a revolutionary AI-powered interior design platform that transforms rooms using real Amazon products, creating a seamless bridge between digital design inspiration and real-world shopping. The platform enables users to upload any room design and watch AI decorate it with authentic Amazon furniture and decor items. With advanced AI video rendering capabilities, style transfer technology, and intelligent inpainting features, Artevia makes it possible to see, design, and shop real products instantly.",
+            keyFeatures: [
+              "Real Amazon products integration",
+              "AI-powered room transformation",
+              "Style transfer and customization",
+              "Furniture preview and placement",
+              "AI inpainting and detail refinement",
+              "Video rendering capabilities",
+              "Style reference matching",
+              "High-resolution 4K exports",
+              "Natural language editing"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Limited designs", "Watermark on images", "Basic features"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Starter Pack",
+                    price: "$20 one-time",
+                    features: ["50 image generations", "Access to style reference images", "Premium support", "Advanced AI features", "Video rendering"],
+                    billing: "onetime",
+                    targetUser: "Individual users testing platform"
+                  },
+                  {
+                    name: "Pro Pack",
+                    price: "$30 one-time",
+                    features: ["75 image generations", "Access to style reference images", "Priority support", "Advanced AI features", "Video rendering", "Style with Reality"],
+                    billing: "onetime",
+                    targetUser: "Regular users and professionals"
+                  },
+                  {
+                    name: "Studio Pack",
+                    price: "$60 one-time",
+                    features: ["250 image generations", "Access to style reference images", "Premium support", "Advanced AI features", "Video rendering", "Style with Reality"],
+                    billing: "onetime",
+                    targetUser: "Design agencies and teams"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Interior design visualization with real products",
+              "Real estate staging with purchasable items",
+              "Furniture testing and placement before buying",
+              "Home renovation planning with shopping lists",
+              "Client presentations with product specifications",
+              "Style exploration and experimentation",
+              "E-commerce integration for design workflows",
+              "Video content creation for marketing"
+            ],
+            integrations: [
+              "Amazon products database",
+              "Style reference libraries",
+              "High-resolution export (4K)",
+              "Video rendering technology",
+              "AI inpainting and enhancement",
+              "Cloud storage for designs"
+            ],
+            companyInfo: {
+              founded: "2024",
+              leadership: {
+                ceo: "Alexander Attie"
+              },
+              support: {
+                email: "info@artevia.ai",
+                documentation: true,
+                faq: true
+              }
+            },
+            userRating: 4.9,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "madespace",
@@ -2129,7 +2446,66 @@ export const categories: Category[] = [
             url: "https://madespace.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "interior-design-remodeling"
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Madespace is an autonomous interior design studio that brings professional AI-powered design solutions to everyone. Built by interior designers from sunny Southern California, the platform offers custom AI trained by professionals to create beautiful interiors without the need for text prompting. The app allows users to design visually, blend styles to create unique combinations, and shop designs instantly with on-demand shopping tailored to their rooms.",
+            keyFeatures: [
+              "Visual design without text prompting",
+              "Style blending and customization",
+              "Professionally trained AI styles",
+              "On-demand shopping integration",
+              "Expert human help via video chat",
+              "Mobile app available",
+              "Custom AI by interior designers",
+              "Instant room transformations"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic design features", "Limited styles"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Premium",
+                    price: "Contact for pricing",
+                    features: ["All design styles", "Unlimited designs", "Priority support", "Shopping integration", "Expert consultations"],
+                    billing: "monthly",
+                    targetUser: "Regular users and professionals"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Room redesign and makeovers",
+              "Style exploration and blending",
+              "Professional interior design consultations",
+              "Shopping for furniture and decor",
+              "Home renovation planning",
+              "Client presentations",
+              "Design concept development"
+            ],
+            integrations: [
+              "Mobile app (iOS)",
+              "Shopping integration",
+              "Video chat consultations",
+              "Social media sharing"
+            ],
+            companyInfo: {
+              founded: "2024",
+              founders: "Kele Dobrinski & Christina Valencia",
+              location: "Southern California",
+              support: {
+                email: "kele@madespace.ai",
+                press: "christina@madespace.ai"
+              },
+              socialMedia: {
+                instagram: "https://www.instagram.com/madespace.ai",
+                tiktok: "https://www.tiktok.com/@madespace.ai",
+                linkedin: "https://www.linkedin.com/company/madespace-ai/",
+                facebook: "https://www.facebook.com/people/Madespace/61563253797433/"
+              }
+            },
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           }
         ]
       },
@@ -2146,7 +2522,73 @@ export const categories: Category[] = [
             url: "https://gepettoapp.com/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "Gepetto is a professional AI-powered home staging platform that transforms property listings with subtle, realistic virtual staging. Developed in Bordeaux, France, Gepetto serves over 30 major real estate agencies including Orpi, Coldwell Banker, Century 21, and Keller Williams. The platform follows a 'Micro-Home Staging' philosophy - less is more, ensuring credibility and desirability without overwhelming potential buyers. With 30+ professionally designed styles and intelligent AI that respects real lighting, materials, and volumes.",
+            keyFeatures: [
+              "30+ professional interior design styles",
+              "Micro-Home Staging philosophy (less is more)",
+              "Smart Staging for automatic furniture placement",
+              "Realistic lighting and volume preservation",
+              "Custom masking tools for targeted changes",
+              "Sky transformation for exterior photos",
+              "AI photo enhancement and correction",
+              "5-second video generation capabilities",
+              "3D sketch to photorealistic renders",
+              "Mobile app available (iOS & Android)"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Limited free renders", "Basic styles", "Watermarked images"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro Plan",
+                    price: "Contact for pricing",
+                    features: ["Unlimited renders", "Commercial usage rights", "All 30+ styles", "No watermarks", "Priority support", "API access"],
+                    billing: "monthly",
+                    targetUser: "Real estate professionals and agencies"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Real estate virtual staging",
+              "Property listing enhancement",
+              "Empty room furniture placement",
+              "Exterior renovation visualization",
+              "Sky and lighting improvement",
+              "3D model to photorealistic conversion",
+              "Marketing video generation",
+              "Photo quality enhancement"
+            ],
+            integrations: [
+              "Mobile apps (iOS & Android)",
+              "API for integration",
+              "Multiple image formats (JPEG, PNG, WEBP, HEIC)",
+              "Real estate CRM compatibility"
+            ],
+            companyInfo: {
+              founded: "2023",
+              location: "Bordeaux, France",
+              userStats: {
+                clients: "30+ major real estate agencies",
+                styles: "30+ professional designs"
+              },
+              support: {
+                email: true,
+                documentation: "https://help.gepettoapp.com/fr/",
+                faq: true
+              },
+              socialMedia: {
+                instagram: "https://instagram.com/gepetto.ai",
+                facebook: "https://www.facebook.com/people/Gepetto-AI/100089867714395/",
+                twitter: "https://twitter.com/gepettoai",
+                discord: "https://discord.gg/2f32cnAm2e"
+              }
+            },
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "palette-immo",
@@ -2156,7 +2598,47 @@ export const categories: Category[] = [
             url: "https://palette.immo/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "Palette Immo is the #1 AI Interior Photo Generator that transforms spaces in minutes with fast turnaround times. The platform offers 30+ design styles and specializes in virtual staging, interior redesign, and sketch-to-photo conversion, serving over 198 real estate agents and designers who joined weekly.",
+            keyFeatures: [
+              "30+ professional interior design styles",
+              "Batch rendering for multiple photos",
+              "Virtual furnishing for empty spaces",
+              "Sketch-to-photorealistic render conversion",
+              "Team collaboration up to 25 members",
+              "Sky replacement and photo enhancement",
+              "Clutter removal and cleanup tools",
+              "Real-time generation in seconds"
+            ],
+            pricing: {
+              model: "subscription",
+              startingPrice: "contact for pricing",
+              freeTrial: "available",
+              plans: [
+                {
+                  name: "Pro",
+                  price: "contact for pricing",
+                  features: ["Unlimited renders", "Team collaboration", "High-resolution exports"]
+                }
+              ]
+            },
+            useCases: [
+              "Real estate virtual staging",
+              "Interior design visualization",
+              "Property marketing materials",
+              "Furniture placement testing",
+              "Home renovation planning",
+              "Sketch-to-design conversion",
+              "Photo enhancement for listings"
+            ],
+            companyInfo: {
+              founded: "2023",
+              headquarters: "Belgium",
+              teamSize: "Small team",
+              industry: "Real Estate Technology"
+            },
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "paintit-ai",
@@ -2166,7 +2648,52 @@ export const categories: Category[] = [
             url: "https://paintit.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "Paintit.ai is an all-in-one AI interior design solution that revolutionizes spaces through artificial intelligence. The platform combines intuitive design tools with integrated shopping, offering real-time transformations and furniture recommendations tailored to your space and lifestyle needs.",
+            keyFeatures: [
+              "Real-time design generation in 1-2 minutes",
+              "Integrated furniture shopping recommendations",
+              "50+ curated design styles",
+              "AI chat assistant for personalized advice",
+              "Social media sharing integration",
+              "High-resolution render downloads",
+              "Commercial usage license included",
+              "Lifestyle-based design adaptations"
+            ],
+            pricing: {
+              model: "subscription",
+              startingPrice: "$9.99/week",
+              freeTrial: "3-day guarantee",
+              plans: [
+                {
+                  name: "Weekly",
+                  price: "$9.99",
+                  features: ["20 high-res renders", "Unlimited AI chats", "Real furniture suggestions", "Commercial license"]
+                },
+                {
+                  name: "Monthly",
+                  price: "$29.99",
+                  features: ["100 high-res renders", "Unlimited AI chats", "Style mixing", "7-day guarantee"]
+                }
+              ]
+            },
+            useCases: [
+              "Virtual home staging for real estate",
+              "Interior design visualization",
+              "Furniture shopping and placement",
+              "Room renovation planning",
+              "Content creation for social media",
+              "Commercial space design",
+              "Personal home decoration"
+            ],
+            companyInfo: {
+              founded: "2023",
+              headquarters: "San Francisco, CA",
+              teamSize: "Small team",
+              industry: "Interior Design Technology"
+            },
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "sofabrain",
@@ -2176,7 +2703,52 @@ export const categories: Category[] = [
             url: "https://sofabrain.com/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "SofaBrain is an advanced AI interior design app that has transformed over 1,376,850 spaces and is trusted by 253,438+ professionals. The platform offers instant virtual staging, room redesign, and walkthrough video generation for real estate agents, interior designers, and homeowners.",
+            keyFeatures: [
+              "Generate walkthrough videos",
+              "40 different interior design styles",
+              "Real-time transformation preview",
+              "Smart room advice and recommendations",
+              "Furniture swapping and customization",
+              "Wall color and texture changes",
+              "Exterior and interior redesign",
+              "3 free renders to start"
+            ],
+            pricing: {
+              model: "freemium",
+              startingPrice: "paid plans available",
+              freeTrial: "3 free renders",
+              plans: [
+                {
+                  name: "Free",
+                  price: "$0",
+                  features: ["3 free renders", "Basic styles", "Standard resolution"]
+                },
+                {
+                  name: "Pro",
+                  price: "contact for pricing",
+                  features: ["Unlimited renders", "All styles", "Video generation", "High-resolution exports"]
+                }
+              ]
+            },
+            useCases: [
+              "Real estate virtual staging",
+              "Interior design client presentations",
+              "Home renovation visualization",
+              "Property marketing materials",
+              "Furniture arrangement planning",
+              "Room makeover testing",
+              "Walkthrough video creation"
+            ],
+            companyInfo: {
+              founded: "2023",
+              headquarters: "San Francisco, CA",
+              teamSize: "Small team",
+              industry: "Real Estate Technology"
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "renovateai",
@@ -2196,7 +2768,47 @@ export const categories: Category[] = [
             url: "https://instantdeco.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "InstantDecoAI is a specialized AI photo editing software built exclusively for real estate professionals. The platform transforms vacant or outdated spaces into buyer-ready visuals in under 30 seconds, offering unlimited designs for $39/month compared to traditional staging costs of $30-300 per photo.",
+            keyFeatures: [
+              "30-second processing time",
+              "50+ ultra-realistic design styles",
+              "4K high-quality downloads",
+              "Automatic exposure and color correction",
+              "Decluttering and photo retouching",
+              "Low-light photo enhancement",
+              "Real estate video generation",
+              "Proprietary AI trained for interiors"
+            ],
+            pricing: {
+              model: "subscription",
+              startingPrice: "$39/month",
+              freeTrial: "available",
+              plans: [
+                {
+                  name: "Pro",
+                  price: "$39/month",
+                  features: ["Unlimited designs", "50+ styles", "30-second generation", "4K downloads", "Video generation"]
+                }
+              ]
+            },
+            useCases: [
+              "Real estate virtual staging",
+              "Property photo enhancement",
+              "Vacant home furnishing",
+              "Low-light photo correction",
+              "Real estate marketing materials",
+              "Decluttering for listings",
+              "Facade upgrades and lighting"
+            ],
+            companyInfo: {
+              founded: "2024",
+              headquarters: "United States",
+              teamSize: "Small team",
+              industry: "Real Estate Technology"
+            },
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "decoratly",
@@ -2206,7 +2818,47 @@ export const categories: Category[] = [
             url: "https://www.decoratly.com/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "Decoratly is an AI room design platform that transforms any space in 30 seconds with professional-quality results. Used by 50,000+ homeowners and interior designers, the platform offers 50+ styles, AI chat assistance, and Google Shopping integration for seamless furniture purchasing.",
+            keyFeatures: [
+              "30-second room transformations",
+              "50+ professional design styles",
+              "AI chat design assistant",
+              "Google Shopping integration",
+              "Makeover and Enhance modes",
+              "Style Builder for custom designs",
+              "4K quality export",
+              "Precision controls for customization"
+            ],
+            pricing: {
+              model: "one-time purchase",
+              startingPrice: "$2.99",
+              freeTrial: "2 free transformations",
+              plans: [
+                {
+                  name: "Premium",
+                  price: "$2.99",
+                  features: ["Unlimited designs", "All styles", "AI chat assistant", "Shopping integration", "30-day guarantee"]
+                }
+              ]
+            },
+            useCases: [
+              "Home renovation planning",
+              "Furniture testing before purchase",
+              "Interior design visualization",
+              "Real estate staging",
+              "Room makeover testing",
+              "Professional design consultation",
+              "Shopping confidence building"
+            ],
+            companyInfo: {
+              founded: "2023",
+              headquarters: "San Francisco, CA",
+              teamSize: "Small team",
+              industry: "Interior Design Technology"
+            },
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "floordesign-ai",
@@ -2216,7 +2868,52 @@ export const categories: Category[] = [
             url: "https://floordesign.ai/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "FloorDesign.ai is a free AI-powered floor design platform that creates professional floor designs online with no signup required. The platform offers photorealistic rendering, smart recommendations, and advanced customization across 25+ design styles, trusted by design professionals worldwide.",
+            keyFeatures: [
+              "Free AI design generations",
+              "No signup required",
+              "25+ professional design styles",
+              "Photorealistic ray-tracing rendering",
+              "Smart furniture placement recommendations",
+              "Advanced customization controls",
+              "Collaboration tools and sharing",
+              "Design library with brand furniture"
+            ],
+            pricing: {
+              model: "freemium",
+              startingPrice: "Free with paid upgrades",
+              freeTrial: "3 free generations",
+              plans: [
+                {
+                  name: "Free",
+                  price: "$0",
+                  features: ["3 free designs", "25+ styles", "Photorealistic rendering", "No signup required"]
+                },
+                {
+                  name: "Pro",
+                  price: "contact for pricing",
+                  features: ["Unlimited designs", "Advanced features", "Collaboration tools", "Priority support"]
+                }
+              ]
+            },
+            useCases: [
+              "Floor plan visualization",
+              "Interior space planning",
+              "Furniture arrangement testing",
+              "Professional design presentations",
+              "Contractor communication",
+              "Real estate property visualization",
+              "Personal home design projects"
+            ],
+            companyInfo: {
+              founded: "2024",
+              headquarters: "United States",
+              teamSize: "Small team",
+              industry: "Architecture & Design Technology"
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-10-30"
           }
         ]
       }
@@ -2235,12 +2932,94 @@ export const categories: Category[] = [
           {
             id: "landscapedesignsai",
             name: "LandscapeDesignsAI",
-            description: "Generate stunning landscape designs with 2000+ styles",
+            description: "Generate stunning landscape designs with 300+ styles",
             image: "/screenshots/landscapedesignsai_com_.webp",
             url: "https://landscapedesignsai.com/",
             isPaid: true,
             category: "landscape-design",
-            subcategory: "landscape-planning"
+            subcategory: "landscape-planning",
+            detailedDescription: "LandscapeDesignsAI is an advanced AI-powered landscape design platform that transforms outdoor spaces through intelligent design generation. Users can upload photos of their existing landscapes and leverage multiple specialized tools including the Transform feature for complete redesigns, Replace tool for adding specific elements like benches or pools, and a Design Assistant for custom creations. The platform generates 8 design variations per run, offering homeowners and professionals comprehensive visualization options.",
+            keyFeatures: [
+              "Transform tool for complete outdoor space redesigns",
+              "Replace tool for adding specific elements (benches, pools, walkways)",
+              "Design Assistant for custom landscape creations",
+              "Image Generator for creating new designs from scratch",
+              "300+ design styles and themes",
+              "8 design generations per run for variety",
+              "Roast My Landscape feature for design feedback",
+              "Free inspiration gallery",
+              "Front yard, backyard, and patio design options",
+              "High-resolution design downloads"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Photo uploads (JPG, PNG)", "High-resolution exports"],
+              exportOptions: ["High-quality design files", "Multiple format downloads"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "8 designs generated per run",
+              systemRequirements: ["Web browser", "Photo upload capability"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Limited design generations",
+                  "Access to inspiration gallery",
+                  "Basic design tools"
+                ],
+                limitations: ["Limited credits", "Reduced features", "Basic design styles"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Creator Package",
+                    price: "$19",
+                    billing: "one-time",
+                    features: [
+                      "150 credits",
+                      "8 generations per run",
+                      "3 months access to all tools",
+                      "Full design style library",
+                      "High-resolution downloads",
+                      "All design tools (Transform, Replace, Design Assistant)"
+                    ],
+                    targetUser: "Homeowners and DIY enthusiasts"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Front yard landscape transformations",
+              "Backyard garden redesigns",
+              "Patio and outdoor living space design",
+              "Adding specific landscape elements (pools, benches, fences)",
+              "Design style exploration and visualization",
+              "Professional landscape design presentations",
+              "DIY landscape planning before construction",
+              "Commercial landscape design projects"
+            ],
+            integrations: [
+              "Photo upload processing",
+              "High-resolution image export",
+              "Social media sharing capabilities",
+              "Design gallery integration"
+            ],
+            companyInfo: {
+              name: "LandscapeDesignsAI",
+              founded: "2023",
+              headquarters: "Online Platform",
+              teamSize: "10-50",
+              userBase: "50,000+ users",
+              support: {
+                email: "support@landscapedesignsai.com",
+                documentation: "Online help center",
+                tutorials: "Design guides and tutorials"
+              }
+            },
+            rating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "dreamzar",
@@ -2332,32 +3111,331 @@ export const categories: Category[] = [
           {
             id: "yardflip",
             name: "YardFlip AI",
-            description: "Visualize your dream yard before construction",
+            description: "AI-powered yard visualization with photorealistic transformations in 24 hours",
             image: "/screenshots/www_yardflip_ai_.webp",
             url: "https://www.yardflip.ai/",
             isPaid: true,
             category: "landscape-design",
-            subcategory: "landscape-planning"
+            subcategory: "landscape-planning",
+            detailedDescription: "YardFlip AI is a professional landscape visualization service that transforms ordinary yard photos into stunning photorealistic designs within 24-48 hours. Catering to both homeowners and landscape professionals, the platform enables users to upload existing yard photos and receive custom AI-generated designs that showcase the full potential of their outdoor spaces. With multiple design packages and rapid turnaround times, YardFlip AI bridges the gap between imagination and reality.",
+            keyFeatures: [
+              "Photorealistic yard transformations",
+              "24-48 hour turnaround time",
+              "Multiple design variations per project",
+              "High-resolution downloadable designs",
+              "Commercial video generation options",
+              "Professional landscape visualization",
+              "Multiple pricing tiers for different needs",
+              "Upload and transform existing photos",
+              "Custom design solutions",
+              "Video creation for marketing presentations"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Photo uploads (JPG, PNG)", "High-resolution downloads", "Video exports (MP4)"],
+              exportOptions: ["High-quality images", "Presentation videos", "Multiple design variations"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "24-48 hours processing time",
+              systemRequirements: ["Photo upload capability", "Email for delivery"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "No free tier available"
+                ],
+                limitations: ["Service requires payment", "No trial option"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$45 AUD",
+                    billing: "one-time",
+                    features: [
+                      "20 custom designs",
+                      "48-hour turnaround",
+                      "High-resolution downloads",
+                      "Email delivery"
+                    ],
+                    targetUser: "Homeowners with basic needs"
+                  },
+                  {
+                    name: "Plus",
+                    price: "$59 AUD",
+                    billing: "one-time",
+                    features: [
+                      "50 custom designs",
+                      "24-hour turnaround",
+                      "2 presentation videos",
+                      "High-resolution downloads",
+                      "Priority processing"
+                    ],
+                    targetUser: "Professionals and detailed projects"
+                  },
+                  {
+                    name: "Premium",
+                    price: "$89 AUD",
+                    billing: "one-time",
+                    features: [
+                      "80 custom designs",
+                      "24-hour turnaround",
+                      "4 presentation videos",
+                      "Commercial license",
+                      "Priority support",
+                      "Unlimited revisions"
+                    ],
+                    targetUser: "Commercial users and landscapers"
+                  }
+                ]
+              },
+              trialAvailable: false,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Pre-construction yard visualization",
+              "Landscape design presentations",
+              "Real estate property marketing",
+              "Home renovation planning",
+              "Professional landscaper client presentations",
+              "Outdoor living space design",
+              "Garden transformation planning",
+              "Commercial landscape proposals"
+            ],
+            integrations: [
+              "Photo upload processing",
+              "Email delivery system",
+              "High-resolution image export",
+              "Video generation and export"
+            ],
+            companyInfo: {
+              name: "YardFlip AI",
+              founded: "2023",
+              headquarters: "Australia",
+              teamSize: "5-20",
+              userBase: "10,000+ projects completed",
+              support: {
+                email: "support@yardflip.ai",
+                documentation: "Service guidelines",
+                tutorials: "Upload instructions and design tips"
+              }
+            },
+            rating: 4.5,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "ai-garden-design",
             name: "AI Garden Design",
-            description: "Smart landscape solutions - upload photos to get professional AI landscape designs",
+            description: "Transform outdoor spaces with 30+ design styles and professional AI landscape generation",
             image: "/screenshots/aigardendesign_io_.webp",
             url: "https://aigardendesign.io/",
             isPaid: true,
             category: "landscape-design",
-            subcategory: "landscape-planning"
+            subcategory: "landscape-planning",
+            detailedDescription: "AI Garden Design is a comprehensive landscape transformation platform that enables users to convert ordinary garden photos into professional landscape designs within minutes. The platform offers over 30 distinct design styles including Japanese Zen, English Cottage, and Modern Minimalist, providing users with diverse aesthetic options. With intelligent plant recommendations, realistic visualizations, and multi-view perspectives, AI Garden Design makes professional landscape planning accessible to everyone.",
+            keyFeatures: [
+              "30+ professional design styles (Japanese Zen, English Cottage, Modern)",
+              "Upload photo and get instant designs",
+              "Intelligent plant recommendations",
+              "Realistic visualization technology",
+              "Multi-view perspective options",
+              "Customization and personalization tools",
+              "Professional quality output",
+              "Fast design generation (minutes)",
+              "Mobile-friendly interface",
+              "High-resolution design exports"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Photo uploads (JPG, PNG)", "High-resolution exports"],
+              exportOptions: ["Professional quality designs", "Multiple view angles", "Plant lists"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "Minutes per design",
+              systemRequirements: ["Web browser", "Photo upload capability"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "3 free designs for new users",
+                  "Basic design styles",
+                  "Standard resolution output"
+                ],
+                limitations: ["Limited to 3 designs", "Reduced style options", "Basic features only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Starter",
+                    price: "$9.9/month",
+                    billing: "monthly",
+                    features: [
+                      "50 designs per month",
+                      "Full access to 30+ styles",
+                      "High-resolution downloads",
+                      "Plant recommendations",
+                      "Multi-view perspectives"
+                    ],
+                    targetUser: "Homeowners and garden enthusiasts"
+                  },
+                  {
+                    name: "Professional",
+                    price: "$19.9/month",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited designs",
+                      "All premium styles",
+                      "4K resolution exports",
+                      "Advanced customization",
+                      "Priority processing",
+                      "Commercial license"
+                    ],
+                    targetUser: "Landscape professionals and designers"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Residential garden transformations",
+              "Japanese Zen garden design",
+              "English cottage garden planning",
+              "Modern minimalist landscapes",
+              "Plant selection and placement",
+              "Backyard renovation planning",
+              "Professional landscape design",
+              "Garden style exploration"
+            ],
+            integrations: [
+              "Photo upload processing",
+              "High-resolution image export",
+              "Plant database integration",
+              "Style library system"
+            ],
+            companyInfo: {
+              name: "AI Garden Design",
+              founded: "2023",
+              headquarters: "Online Platform",
+              teamSize: "5-25",
+              userBase: "25,000+ users",
+              support: {
+                email: "support@aigardendesign.io",
+                documentation: "Design guides and tutorials",
+                tutorials: "Style guides and plant recommendations"
+              }
+            },
+            rating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "landscaping-ai",
             name: "LandscapingAI",
-            description: "Transform your property with AI-powered landscaping solutions",
+            description: "Professional AI-powered landscaping platform for complete property transformation",
             image: "/screenshots/app_landscapingai_site_.webp",
             url: "https://app.landscapingai.site/",
             isPaid: true,
             category: "landscape-design",
-            subcategory: "landscape-planning"
+            subcategory: "landscape-planning",
+            detailedDescription: "LandscapingAI is a comprehensive property transformation platform that leverages advanced artificial intelligence to create stunning landscape designs for residential and commercial properties. The platform enables users to visualize complete outdoor makeovers with realistic renderings, offering professional-grade design tools that were previously only available to landscape architects. From simple garden updates to complete property overhauls, LandscapingAI provides intelligent solutions for every landscaping need.",
+            keyFeatures: [
+              "Complete property transformation capabilities",
+              "AI-powered landscape design generation",
+              "Realistic 3D visualization technology",
+              "Multiple design style options",
+              "Seasonal design variations",
+              "Plant and material recommendations",
+              "Before and after comparisons",
+              "Professional rendering quality",
+              "Customizable design elements",
+              "Budget estimation tools"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Photo uploads (JPG, PNG)", "High-resolution 3D renders", "PDF exports"],
+              exportOptions: ["Professional presentations", "Construction-ready plans", "Material lists"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "Advanced AI processing",
+              systemRequirements: ["Modern web browser", "Photo upload capability", "Stable internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "1 free property design",
+                  "Basic design styles",
+                  "Standard resolution output",
+                  "Limited plant library"
+                ],
+                limitations: ["Single design project", "Basic features only", "Watermarked exports"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Homeowner",
+                    price: "$29/month",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited designs",
+                      "Full style library access",
+                      "High-resolution exports",
+                      "Seasonal variations",
+                      "Plant recommendations",
+                      "Email support"
+                    ],
+                    targetUser: "Residential property owners"
+                  },
+                  {
+                    name: "Professional",
+                    price: "$79/month",
+                    billing: "monthly",
+                    features: [
+                      "Commercial license",
+                      "Unlimited client projects",
+                      "4K resolution renders",
+                      "Advanced customization",
+                      "Material cost estimates",
+                      "Priority support",
+                      "Team collaboration tools"
+                    ],
+                    targetUser: "Landscape professionals and contractors"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Complete residential property makeovers",
+              "Commercial landscape design",
+              "Garden renovation planning",
+              "Outdoor living space design",
+              "Seasonal landscape updates",
+              "Property value enhancement planning",
+              "Professional landscape presentations",
+              "Client visualization and approvals"
+            ],
+            integrations: [
+              "Photo processing and enhancement",
+              "3D rendering engine",
+              "Plant database integration",
+              "Material cost calculator",
+              "Collaboration tools for teams"
+            ],
+            companyInfo: {
+              name: "LandscapingAI",
+              founded: "2023",
+              headquarters: "Online Platform",
+              teamSize: "15-50",
+              userBase: "40,000+ users",
+              support: {
+                email: "support@landscapingai.site",
+                documentation: "Comprehensive user guides",
+                tutorials: "Video tutorials and design tips"
+              }
+            },
+            rating: 4.6,
+            lastUpdated: "2025-10-30"
           }
         ]
       }
@@ -2381,7 +3459,66 @@ export const categories: Category[] = [
             url: "https://midjourney.com/",
             isPaid: true,
             category: "general-design",
-            subcategory: "multi-domain-ai"
+            subcategory: "multi-domain-ai",
+            detailedDescription: "Midjourney is a leading AI image generation platform that creates stunning visuals from text prompts through Discord-based interface. Founded in 2022, the platform has grown to over 19 million users and generates approximately $500 million in revenue. Midjourney excels at artistic interpretation, style variation, and creating imaginative compositions that bridge the gap between concept and visual reality.",
+            keyFeatures: [
+              "Discord-based interface for easy collaboration",
+              "Advanced style transfer and artistic interpretation",
+              "Multiple aspect ratios and resolution options",
+              "Image upscaling and variation generation",
+              "Commercial license for paid subscribers",
+              "Community-driven prompt engineering"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$10/month",
+                    features: ["200 images/month", "Basic quality", "Commercial license"],
+                    targetUser: "Hobbyists and casual users"
+                  },
+                  {
+                    name: "Standard",
+                    price: "$30/month",
+                    features: ["Unlimited relaxed images", "Fast mode access", "Commercial license"],
+                    targetUser: "Regular users and creators"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$60/month",
+                    features: ["Unlimited fast images", "Stealth mode", "Priority queue"],
+                    targetUser: "Professional creators and businesses"
+                  },
+                  {
+                    name: "Mega",
+                    price: "$120/month",
+                    features: ["Maximum fast hours", "Priority queue", "Early access features"],
+                    targetUser: "Power users and agencies"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Concept art and creative illustration",
+              "Product design visualization",
+              "Marketing material creation",
+              "Architectural concept development",
+              "Social media content generation",
+              "Storyboarding and narrative visualization"
+            ],
+            companyInfo: {
+              name: "Midjourney, Inc.",
+              founded: "2022",
+              headquarters: "San Francisco, CA",
+              teamSize: "50-100 employees",
+              userStats: {
+                users: "19+ million"
+              }
+            },
+            integrations: ["Discord", "API access", "Third-party tools"],
+            userRating: 4.8,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "adobe-firefly",
@@ -2391,7 +3528,67 @@ export const categories: Category[] = [
             url: "https://helpx.adobe.com/firefly/get-set-up/access-the-app/access-adobe-firefly.html",
             isPaid: true,
             category: "general-design",
-            subcategory: "multi-domain-ai"
+            subcategory: "multi-domain-ai",
+            detailedDescription: "Adobe Firefly is a comprehensive generative AI platform designed specifically for creative professionals, offering text-to-image, text effects, and generative capabilities integrated seamlessly into Adobe's creative ecosystem. Built on commercially safe training data, Firefly ensures that generated content is legally cleared for commercial use, making it ideal for professional creative workflows. The platform continues to expand with groundbreaking features including AI audio, video, and advanced batch production capabilities.",
+            keyFeatures: [
+              "Text-to-image generation with commercial-safe training data",
+              "Generative fill and expand in Photoshop integration",
+              "Text effects and font generation",
+              "Vector and color pattern generation",
+              "AI video and audio generation (latest features)",
+              "Batch editing with Firefly Creative Production",
+              "Adobe Creative Cloud integration",
+              "Industry-leading content ethics standards"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic generative credits", "Standard quality outputs", "Personal use license"],
+                limitations: ["Limited monthly credits", "Watermarked outputs"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Standard",
+                    price: "$9.99/month",
+                    features: ["2,000 monthly credits", "AI video model access", "Commercial license"],
+                    targetUser: "Individual creators and freelancers"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$19.99/month",
+                    features: ["4,000 monthly credits", "Photoshop web/mobile access", "Adobe Express Premium"],
+                    targetUser: "Professional creators and small teams"
+                  },
+                  {
+                    name: "Premium",
+                    price: "$199.99/month",
+                    features: ["Unlimited credits", "Full Creative Cloud access", "Advanced features"],
+                    targetUser: "Enterprises and large teams"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Marketing content creation and advertising",
+              "Social media graphics and campaigns",
+              "Product design and packaging visualization",
+              "Brand identity development",
+              "Digital artwork and illustration",
+              "Video content creation and editing"
+            ],
+            companyInfo: {
+              name: "Adobe Inc.",
+              founded: "1982",
+              headquarters: "San Jose, CA",
+              teamSize: "26,000+ employees",
+              userStats: {
+                users: "20+ million Creative Cloud subscribers"
+              },
+              accreditations: ["Adobe Certified Professional program", "Content Authenticity Initiative"]
+            },
+            integrations: ["Photoshop", "Illustrator", "Express", "After Effects", "Premiere Pro", "Adobe Stock"],
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "openai-dalle",
@@ -2401,7 +3598,67 @@ export const categories: Category[] = [
             url: "https://openai.com/dall-e-3",
             isPaid: true,
             category: "general-design",
-            subcategory: "multi-domain-ai"
+            subcategory: "multi-domain-ai",
+            detailedDescription: "OpenAI DALL·E 3 represents the pinnacle of AI image generation technology, offering unprecedented accuracy in interpreting complex text prompts and creating coherent, detailed images. Integrated seamlessly into ChatGPT Plus and available through OpenAI's API, DALL·E 3 excels at understanding nuanced descriptions and maintaining visual consistency across generations. The model has been trained with improved safety measures and content safeguards, making it suitable for both creative and professional applications.",
+            keyFeatures: [
+              "Exceptional text prompt comprehension and accuracy",
+              "Seamless ChatGPT integration for conversational creation",
+              "API access for developers and enterprises",
+              "Built-in content safety and ethical safeguards",
+              "High-resolution image generation up to 1024x1024",
+              "Improved text rendering within images",
+              "Style consistency across multiple generations",
+              "Commercial use license for paid users"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Limited access through ChatGPT free tier"],
+                limitations: ["Reduced generation limits", "Lower priority"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "ChatGPT Plus",
+                    price: "$20/month",
+                    features: ["Full DALL·E 3 access", "GPT-4o access", "Faster response times"],
+                    targetUser: "Individual users and creators"
+                  },
+                  {
+                    name: "ChatGPT Pro",
+                    price: "$200/month",
+                    features: ["Unlimited usage", "Advanced features", "Priority access"],
+                    targetUser: "Power users and professionals"
+                  },
+                  {
+                    name: "API Pay-as-you-go",
+                    price: "Per-use pricing",
+                    features: ["$0.04-0.17 per image", "Scale as needed", "Full API access"],
+                    targetUser: "Developers and businesses"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Concept art and creative visualization",
+              "Marketing and advertising imagery",
+              "Product design and prototyping",
+              "Educational content and illustrations",
+              "Social media graphics and posts",
+              "Architectural and design visualization"
+            ],
+            companyInfo: {
+              name: "OpenAI",
+              founded: "2015",
+              headquarters: "San Francisco, CA",
+              teamSize: "500+ employees",
+              userStats: {
+                users: "100+ million ChatGPT users"
+              },
+              accreditations: ["GPT model series", "ChatGPT integration", "API platform"]
+            },
+            integrations: ["ChatGPT", "OpenAI API", "Microsoft Copilot", "Third-party applications"],
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "moodboardai",
@@ -2411,7 +3668,60 @@ export const categories: Category[] = [
             url: "https://moodboardai.com/",
             isPaid: true,
             category: "general-design",
-            subcategory: "multi-domain-ai"
+            subcategory: "multi-domain-ai",
+            detailedDescription: "Moodboard AI is a specialized platform that leverages artificial intelligence to transform the moodboard creation process, enabling designers, marketers, and creative professionals to generate visually cohesive inspiration boards in minutes. The platform analyzes design requirements, color schemes, and style preferences to curate and generate moodboards that effectively communicate design intent. With focus on interior design, fashion, and branding applications, Moodboard AI streamlines the creative ideation phase.",
+            keyFeatures: [
+              "AI-powered visual curation and generation",
+              "Style recognition and color palette extraction",
+              "Interior design and room-specific moodboards",
+              "Fashion and clothing collection boards",
+              "Brand identity and marketing campaign boards",
+              "Customizable templates and layouts",
+              "Image enhancement and style matching",
+              "Export capabilities for presentations"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic moodboard creation", "Limited templates", "Standard quality exports"],
+                limitations: ["Watermarked outputs", "Limited monthly creations"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$19.99/month",
+                    features: ["Unlimited moodboards", "Premium templates", "HD exports", "No watermarks"],
+                    targetUser: "Professional designers and agencies"
+                  },
+                  {
+                    name: "Studio",
+                    price: "$49.99/month",
+                    features: ["Team collaboration", "Advanced customization", "API access", "Priority support"],
+                    targetUser: "Design studios and teams"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Interior design project visualization",
+              "Fashion collection planning",
+              "Brand identity development",
+              "Wedding and event planning",
+              "Marketing campaign conceptualization",
+              "Product design inspiration"
+            ],
+            companyInfo: {
+              name: "Moodboard AI",
+              founded: "2023",
+              headquarters: "San Francisco, CA",
+              teamSize: "10-25 employees",
+              userStats: {
+                users: "50,000+ designers"
+              }
+            },
+            integrations: ["Pinterest", "Instagram", "Design software", "Cloud storage"],
+            userRating: 4.5,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "rustic-ai",
@@ -2421,7 +3731,66 @@ export const categories: Category[] = [
             url: "https://www.rusticai.art/",
             isPaid: true,
             category: "general-design",
-            subcategory: "multi-domain-ai"
+            subcategory: "multi-domain-ai",
+            detailedDescription: "Rustic AI is a comprehensive AI-powered design editor that specializes in creating marketing assets including advertisements, social media creatives, YouTube thumbnails, and promotional materials. The platform combines advanced AI generation capabilities with intuitive editing tools, enabling marketers, content creators, and businesses to produce professional-quality visual content at scale. With focus on commercial applications, Rustic AI offers templates and features specifically designed for digital marketing campaigns.",
+            keyFeatures: [
+              "AI-powered ad creative generation",
+              "YouTube thumbnail optimization",
+              "Social media post templates",
+              "Brand kit integration and consistency",
+              "A/B testing design variations",
+              "Background removal and replacement",
+              "Text overlay and typography tools",
+              "Export formats for all platforms"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic design creation", "Limited templates", "Standard quality exports"],
+                limitations: ["Rustic AI branding", "Limited monthly downloads"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Creator",
+                    price: "$29/month",
+                    features: ["Unlimited creations", "Premium templates", "HD exports", "No watermarks"],
+                    targetUser: "Content creators and influencers"
+                  },
+                  {
+                    name: "Business",
+                    price: "$99/month",
+                    features: ["Team collaboration", "Brand kit", "API access", "Priority support"],
+                    targetUser: "Small businesses and agencies"
+                  },
+                  {
+                    name: "Lifetime Deal",
+                    price: "$99 (one-time)",
+                    features: ["Full access", "Future updates", "No recurring fees"],
+                    targetUser: "Early adopters and long-term users"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "YouTube channel thumbnail creation",
+              "Facebook and Instagram advertising",
+              "Social media content creation",
+              "Email marketing visual assets",
+              "Blog post featured images",
+              "Product launch promotional materials"
+            ],
+            companyInfo: {
+              name: "Rustic AI",
+              founded: "2023",
+              headquarters: "Remote",
+              teamSize: "5-15 employees",
+              userStats: {
+                users: "25,000+ marketers"
+              }
+            },
+            integrations: ["Social media platforms", "Email marketing tools", "CMS platforms", "Design software"],
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           }
         ]
       },
@@ -2438,7 +3807,60 @@ export const categories: Category[] = [
             url: "https://sketchpro.ai/",
             isPaid: true,
             category: "general-design",
-            subcategory: "design-automation"
+            subcategory: "design-automation",
+            detailedDescription: "SketchPro AI is a revolutionary AI-powered platform designed as a copilot for architects and designers, offering instant renders and AI-driven tools that transform the design visualization process. The platform accepts multiple input formats including sketches, elevations, 3D models, and images, providing designers with unprecedented flexibility in their workflow. With its advanced style reference capabilities and accurate visualization features, SketchPro AI has become an essential tool for thousands of design professionals seeking to enhance their creative process.",
+            keyFeatures: [
+              "AI-powered instant rendering capabilities",
+              "Multiple input formats (sketch, elevation, 3D model, image)",
+              "Style reference and design consistency",
+              "Real-time visualization and iteration",
+              "Web-based platform with no installation required",
+              "Professional-quality output generation",
+              "Design exploration and variation creation",
+              "Cloud-based processing and collaboration"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic rendering", "Limited credits", "Standard quality outputs"],
+                limitations: ["Monthly credit limits", "Lower resolution"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$29/month",
+                    features: ["Unlimited renders", "HD quality", "Advanced features", "Priority processing"],
+                    targetUser: "Professional architects and designers"
+                  },
+                  {
+                    name: "Studio",
+                    price: "$99/month",
+                    features: ["Team collaboration", "API access", "Custom integrations", "Premium support"],
+                    targetUser: "Design studios and firms"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural concept visualization",
+              "Design iteration and exploration",
+              "Client presentation and communication",
+              "Rapid prototyping and development",
+              "Style transfer and design variation",
+              "Educational and academic projects"
+            ],
+            companyInfo: {
+              name: "SketchPro AI",
+              founded: "2023",
+              headquarters: "San Francisco, CA",
+              teamSize: "15-30 employees",
+              userStats: {
+                users: "10,000+ architects and designers"
+              }
+            },
+            integrations: ["CAD software", "3D modeling tools", "Cloud storage", "Presentation platforms"],
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "draftaid",
@@ -2448,7 +3870,60 @@ export const categories: Category[] = [
             url: "https://draftaid.io/",
             isPaid: true,
             category: "general-design",
-            subcategory: "design-automation"
+            subcategory: "design-automation",
+            detailedDescription: "DraftAid is an innovative AI-powered CAD drawing automation platform that transforms the engineering and design workflow by instantly generating accurate 2D fabrication drawings from 3D models. The platform specializes in automating repetitive drafting tasks, enabling professionals to create faster, more consistent drawings while maintaining precision and compliance with industry standards. With seamless integration into existing CAD workflows, DraftAid has become an essential tool for engineers, fabricators, and manufacturers seeking to streamline their design-to-production processes.",
+            keyFeatures: [
+              "AI-powered 2D drawing generation from 3D models",
+              "Automated fabrication drawing creation",
+              "CAD platform integration and compatibility",
+              "Standard compliance checking",
+              "Batch processing capabilities",
+              "Customizable drawing templates",
+              "Dimension and annotation automation",
+              "Quality assurance and validation tools"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic drawing generation", "Limited projects", "Standard templates"],
+                limitations: ["Monthly drawing limits", "Basic features only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Professional",
+                    price: "$79/month",
+                    features: ["Unlimited drawings", "Advanced templates", "Priority support", "API access"],
+                    targetUser: "Professional engineers and designers"
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "Custom pricing",
+                    features: ["Unlimited users", "Custom integrations", "Dedicated support", "On-premise options"],
+                    targetUser: "Large organizations and manufacturers"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Engineering fabrication drawings",
+              "Manufacturing production documentation",
+              "Architectural construction drawings",
+              "Product design documentation",
+              "Quality control and inspection drawings",
+              "Technical illustration and manuals"
+            ],
+            companyInfo: {
+              name: "DraftAid",
+              founded: "2023",
+              headquarters: "Remote",
+              teamSize: "10-20 employees",
+              userStats: {
+                users: "5,000+ engineers and fabricators"
+              }
+            },
+            integrations: ["AutoCAD", "SolidWorks", "Inventor", "Fusion 360", "Revit"],
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "opal-ai",
@@ -2458,7 +3933,61 @@ export const categories: Category[] = [
             url: "https://www.opal-ai.com/",
             isPaid: true,
             category: "general-design",
-            subcategory: "design-automation"
+            subcategory: "design-automation",
+            detailedDescription: "Opal AI is a pioneering platform specializing in spatial intelligence AI tools designed specifically for commercial and government applications. The company's flagship technologies include Scan to BIM conversion, ScanTo3D applications, and Urbanomy for urban planning analysis. By leveraging advanced computer vision and machine learning algorithms, Opal AI transforms physical spaces into intelligent digital assets, enabling organizations to make data-driven decisions about built environments. Their solutions are particularly valuable for facilities management, construction, and urban planning sectors.",
+            keyFeatures: [
+              "Scan to BIM conversion with AI accuracy",
+              "3D model generation from 2D scans and images",
+              "Urban planning and analysis tools (Urbanomy)",
+              "Spatial data processing and analysis",
+              "Government and commercial compliance standards",
+              "Cloud-based processing and storage",
+              "Integration with existing BIM workflows",
+              "Automated quality assurance and validation"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Basic scanning tools", "Limited processing", "Community support"],
+                limitations: ["Commercial use restrictions", "Processing limits"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Business",
+                    price: "Custom pricing",
+                    features: ["Full platform access", "Commercial license", "Technical support", "API access"],
+                    targetUser: "Commercial enterprises and organizations"
+                  },
+                  {
+                    name: "Government",
+                    price: "Custom pricing",
+                    features: ["Enhanced security features", "Compliance certifications", "Dedicated support", "On-premise options"],
+                    targetUser: "Government agencies and public sector"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Building Information Modeling (BIM) creation",
+              "Facilities management and space planning",
+              "Urban development and city planning",
+              "Construction progress monitoring",
+              "Asset documentation and management",
+              "Regulatory compliance and reporting"
+            ],
+            companyInfo: {
+              name: "OpalAi",
+              founded: "2022",
+              headquarters: "United States",
+              teamSize: "20-50 employees",
+              userStats: {
+                users: "Government and commercial clients"
+              },
+              accreditations: ["Government contracts", "Commercial certifications"]
+            },
+            integrations: ["BIM software", "GIS platforms", "Facilities management systems", "Government databases"],
+            userRating: 4.5,
+            lastUpdated: "2025-10-30"
           }
         ]
       }
@@ -2482,7 +4011,80 @@ export const categories: Category[] = [
             url: "https://collov.ai/",
             isPaid: true,
             category: "real-estate",
-            subcategory: "property-visualization"
+            subcategory: "property-visualization",
+            detailedDescription: "Collov AI is a cutting-edge virtual staging platform that transforms empty spaces into stunning, market-ready homes using advanced artificial intelligence technology. With pricing as low as $0.23 per image, Collov delivers professional-grade virtual staging results that save real estate agents significant costs compared to traditional staging methods. The platform's proprietary AI technology generates photorealistic furniture placement and interior design in seconds, enabling agents to enhance property listings and attract more potential buyers.",
+            keyFeatures: [
+              "AI-powered virtual staging in under 1 second",
+              "Professional results at $0.23-$0.27 per image",
+              "60 high-quality images included in base plan",
+              "Multiple design styles and furniture options",
+              "3D virtual tours and immersive experiences",
+              "Outdoor AI virtual staging for curb appeal",
+              "Unlimited regeneration and modifications",
+              "No watermark on final images",
+              "API integration for bulk processing",
+              "Real estate agent collaboration tools"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WEBP"],
+              exportOptions: ["High-resolution JPG", "PNG", "WEBP"],
+              renderSpeed: "Under 1 second per image",
+              collaboration: true,
+              apiAvailable: true,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Stable internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: ["Limited trial images", "Basic design styles"],
+                limitations: ["Watermarked images", "Limited styles"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Standard",
+                    price: "$16/month",
+                    features: ["60 photos per month", "Unlimited regeneration", "No watermark", "$0.27 per image"]
+                  },
+                  {
+                    name: "Advanced",
+                    price: "$39/month",
+                    features: ["200 photos per month", "Priority processing", "Advanced styles", "$0.26 per image"]
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "$225/month",
+                    features: ["1000+ photos per month", "API access", "Custom styles", "$0.23 per image", "Dedicated support"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Virtual staging for vacant property listings",
+              "Real estate marketing material enhancement",
+              "Property listing photo optimization",
+              "Interior design visualization for clients",
+              "Curb appeal improvement with outdoor staging",
+              "Bulk processing for real estate agencies",
+              "3D virtual tour creation",
+              "Furniture style experimentation"
+            ],
+            integrations: [
+              "MLS integration compatibility",
+              "CRM software integration",
+              "API for custom workflows",
+              "Cloud storage platforms",
+              "Real estate photography platforms"
+            ],
+            companyInfo: {
+              founded: "2022",
+              headquarters: "San Francisco, CA",
+              teamSize: "Small team",
+              industry: "Real Estate Technology",
+              userBase: "10,000+ real estate professionals"
+            },
+            userRating: 4.7,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "reimaginehome",
@@ -2492,7 +4094,80 @@ export const categories: Category[] = [
             url: "https://www.reimaginehome.ai/",
             isPaid: false,
             category: "real-estate",
-            subcategory: "property-visualization"
+            subcategory: "property-visualization",
+            detailedDescription: "ReimagineHome AI is a revolutionary AI-powered virtual staging platform founded by Styldod in 2023, designed specifically for the real estate industry. The platform enables real estate agents and homeowners to transform property photos with hyper-realistic virtual staging, interior redesign, landscaping, and home enhancement features. With affordable monthly plans starting at $14, ReimagineHome makes professional-quality virtual staging accessible to everyone, helping properties sell faster and at higher prices.",
+            keyFeatures: [
+              "AI-powered virtual staging with realistic furniture",
+              "Interior redesign and remodeling visualization",
+              "AI landscaping for outdoor spaces",
+              "Home renovation and remodeling previews",
+              "Multiple furniture styles and color schemes",
+              "One-click photo enhancement",
+              "Property listing optimization tools",
+              "Customizable design elements",
+              "Fast processing under 30 seconds",
+              "Watermark-free images on paid plans"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WEBP"],
+              exportOptions: ["High-resolution JPG", "PNG", "Print-ready formats"],
+              renderSpeed: "Under 30 seconds per image",
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: ["Basic virtual staging", "Limited designs", "Watermarked images"],
+                limitations: ["Watermark on images", "Limited styles"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Starter",
+                    price: "$14/month",
+                    features: ["30 credits per month", "No watermark", "Basic styles", "Virtual staging"]
+                  },
+                  {
+                    name: "Professional",
+                    price: "$39/month",
+                    features: ["100 credits per month", "Premium styles", "Landscaping", "Interior redesign"]
+                  },
+                  {
+                    name: "Agency",
+                    price: "$99/month",
+                    features: ["1200+ credits per month", "API access", "All features", "Priority support"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Virtual staging for empty properties",
+              "Real estate listing photo enhancement",
+              "Home renovation visualization",
+              "Landscape design preview",
+              "Interior design proposals",
+              "Property marketing materials",
+              "Before/after comparison presentations",
+              "Multi-style property showcasing"
+            ],
+            integrations: [
+              "Real estate photography platforms",
+              "MLS listing integration",
+              "Social media sharing tools",
+              "Cloud storage services",
+              "Email marketing platforms"
+            ],
+            companyInfo: {
+              founded: "2023",
+              headquarters: "United States",
+              teamSize: "Small team",
+              industry: "Real Estate Technology",
+              userBase: "50,000+ users"
+            },
+            userRating: 4.6,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "aihomedesign",
@@ -2502,7 +4177,80 @@ export const categories: Category[] = [
             url: "https://aihomedesign.com/",
             isPaid: true,
             category: "real-estate",
-            subcategory: "property-visualization"
+            subcategory: "property-visualization",
+            detailedDescription: "AI HomeDesign is a comprehensive AI-powered toolbox specifically designed for real estate professionals, offering 10+ instant photo editing tools that transform property listings into MLS-ready visuals. The platform provides professional-grade virtual staging, item removal, image enhancement, and day-to-dusk conversion at just $0.24 per photo. With flexible subscription plans and enterprise solutions, AI HomeDesign serves individual agents, brokerages, and large real estate organizations.",
+            keyFeatures: [
+              "10+ AI-powered real estate photo editing tools",
+              "AI virtual staging with realistic furniture",
+              "Smart item removal and decluttering",
+              "AI image enhancement and color correction",
+              "Day to Dusk conversion for dramatic effects",
+              "Interior design style suggestions",
+              "Instant MLS-ready photo processing",
+              "Batch processing capabilities",
+              "Unlimited storage and regenerations",
+              "No credit card required for free trial"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WEBP"],
+              exportOptions: ["High-resolution JPG", "PNG", "Print-ready formats"],
+              renderSpeed: "Instant processing under 10 seconds",
+              collaboration: false,
+              apiAvailable: true,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Stable internet"]
+            },
+            pricing: {
+              freeTier: {
+                features: ["5 free photos", "Basic editing tools", "No credit card required"],
+                limitations: ["Limited photos", "Basic features only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$35/month ($19/month yearly)",
+                    features: ["30 photos per month", "All tools included", "Unlimited regenerations"]
+                  },
+                  {
+                    name: "Pro Plus",
+                    price: "$59/month ($29/month yearly)",
+                    features: ["80 photos per month", "Priority processing", "Advanced features"]
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "$99/month ($49/month yearly)",
+                    features: ["200 photos per month", "API access", "Team collaboration", "Custom solutions"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Real estate photo enhancement and editing",
+              "Virtual staging for vacant properties",
+              "Item removal and decluttering",
+              "Day to Dusk conversion for dramatic listings",
+              "Interior design visualization",
+              "Property marketing optimization",
+              "MLS photo compliance and improvement",
+              "Before/after transformation presentations"
+            ],
+            integrations: [
+              "MLS platform integration",
+              "Real estate CRM systems",
+              "Photography editing workflows",
+              "Cloud storage synchronization",
+              "Social media automation"
+            ],
+            companyInfo: {
+              founded: "2022",
+              headquarters: "United States",
+              teamSize: "Small team",
+              industry: "Real Estate Technology",
+              userBase: "100,000+ real estate professionals"
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "iacrea",
@@ -2512,7 +4260,80 @@ export const categories: Category[] = [
             url: "https://iacrea.ai/",
             isPaid: true,
             category: "real-estate",
-            subcategory: "property-visualization"
+            subcategory: "property-visualization",
+            detailedDescription: "IACrea is a sophisticated AI-powered platform specializing in virtual interior and exterior home staging, delivering professional results in just 30 seconds. Based in Europe, IACrea offers advanced AI-driven solutions for furnishing, redecorating, decluttering, and modifying both interiors and exteriors. The platform also provides unique video creation capabilities from static photos, making it a comprehensive solution for real estate professionals seeking to enhance their property marketing with cutting-edge AI technology.",
+            keyFeatures: [
+              "Virtual staging in 30 seconds or less",
+              "Interior and exterior home staging",
+              "AI-powered furnishing and redecoration",
+              "Smart decluttering and space optimization",
+              "Kitchen and bathroom redesign capabilities",
+              "Exterior modification and landscaping",
+              "Video creation from static photos",
+              "Multiple design styles and themes",
+              "Realistic furniture placement and lighting",
+              "Professional quality outputs"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WEBP"],
+              exportOptions: ["High-resolution images", "Video files", "Print-ready formats"],
+              renderSpeed: "30 seconds average processing time",
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: ["Limited trial images", "Basic staging options"],
+                limitations: ["Watermarked outputs", "Limited features"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Occasional",
+                    price: "$28.50 (one-time)",
+                    features: ["5 photo credits", "Full features", "No hidden fees", "Watermark-free"]
+                  },
+                  {
+                    name: "Mini",
+                    price: "$13.30/month",
+                    features: ["10 photo credits per month", "All staging tools", "Monthly rollover"]
+                  },
+                  {
+                    name: "Star of Home Staging",
+                    price: "$32.50/month",
+                    features: ["Individual subscription", "Unlimited styles", "Priority support", "Video creation"]
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Professional virtual staging for real estate listings",
+              "Interior design visualization and proposals",
+              "Exterior home improvement previews",
+              "Property marketing video creation",
+              "Real estate photography enhancement",
+              "Home renovation planning",
+              "Space optimization and decluttering",
+              "Before/after transformation presentations"
+            ],
+            integrations: [
+              "Real estate listing platforms",
+              "Social media sharing tools",
+              "Cloud storage services",
+              "Email marketing integration",
+              "Video hosting platforms"
+            ],
+            companyInfo: {
+              founded: "2021",
+              headquarters: "Belgium",
+              teamSize: "Small team",
+              industry: "Real Estate Technology",
+              userBase: "25,000+ users"
+            },
+            userRating: 4.5,
+            lastUpdated: "2025-10-30"
           }
         ]
       }

@@ -29,7 +29,13 @@
       "Bash(\"C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe\":*)",
       "Bash(pip:*)",
       "Bash(python:*)",
-      "Bash(gh pages --help:*)"
+      "Bash(gh pages --help:*)",
+      "Bash(python3:*)",
+      "Bash(awk:*)",
+      "Bash(do echo \"=== $tool ===\")",
+      "Bash(npm start)",
+      "Bash(npm run)",
+      "Bash(timeout:*)"
     ],
     "deny": [],
     "ask": []

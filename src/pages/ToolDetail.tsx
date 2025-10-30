@@ -128,12 +128,15 @@ const ToolDetail = () => {
                     fallbackImage={tool.fallbackImage || tool.image}
                     alt={tool.name}
                     className="w-full h-full object-contain opacity-100 group-hover:opacity-90 transition-opacity duration-300"
-                    useDynamicScreenshot={tool.useDynamicScreenshot}
+                    useDynamicScreenshot={false}
                     lazy={false}
                   />
                 </div>
                 {/* Hover overlay hint */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 flex items-center justify-center">
+                <div
+                  className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 flex items-center justify-center cursor-pointer"
+                  onClick={() => window.open(tool.url, '_blank')}
+                >
                   <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white/90 backdrop-blur px-4 py-2 rounded-full flex items-center gap-2">
                     <ExternalLink className="h-4 w-4" />
                     <span className="text-sm font-medium">Click to visit</span>
@@ -459,19 +462,19 @@ const ToolDetail = () => {
                   <div className="border-t pt-4">
                     <h4 className="font-medium mb-3">Support Options</h4>
                     <div className="space-y-2">
-                      {tool.companyInfo.support.email && (
-                        <a href={`mailto:${tool.companyInfo.support.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600">
+                      {tool.companyInfo?.support?.email && (
+                        <a href={`mailto:${tool.companyInfo?.support?.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600">
                           <Mail className="h-4 w-4" />
                           Email Support
                         </a>
                       )}
-                      {tool.companyInfo.support.chat && (
+                      {tool.companyInfo?.support?.chat && (
                         <div className="flex items-center gap-2 text-sm text-gray-600">
                           <MessageCircle className="h-4 w-4" />
                           Live Chat
                         </div>
                       )}
-                      {tool.companyInfo.support.documentation && (
+                      {tool.companyInfo?.support?.documentation && (
                         <a href={tool.companyInfo.support.documentation} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600">
                           <BookOpen className="h-4 w-4" />
                           Documentation
@@ -485,17 +488,17 @@ const ToolDetail = () => {
                     <div className="border-t pt-4 mt-4">
                       <h4 className="font-medium mb-3">Follow</h4>
                       <div className="flex gap-2">
-                        {tool.companyInfo.socialMedia.linkedin && (
+                        {tool.companyInfo?.socialMedia?.linkedin && (
                           <a href={tool.companyInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600">
                             <Globe className="h-5 w-5" />
                           </a>
                         )}
-                        {tool.companyInfo.socialMedia.twitter && (
+                        {tool.companyInfo?.socialMedia?.twitter && (
                           <a href={tool.companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400">
                             <MessageCircle className="h-5 w-5" />
                           </a>
                         )}
-                        {tool.companyInfo.socialMedia.youtube && (
+                        {tool.companyInfo?.socialMedia?.youtube && (
                           <a href={tool.companyInfo.socialMedia.youtube} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-red-600">
                             <Play className="h-5 w-5" />
                           </a>
