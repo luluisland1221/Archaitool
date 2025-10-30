@@ -55,8 +55,6 @@ function App() {
             <Route path="/about" element={<About />} />
             {/* Admin routes for research management */}
             <Route path="/admin/research" element={<ResearchManagement />} />
-            {/* Redirect old query parameter URLs to new path-based URLs */}
-            <Route path="/tools" element={<Navigate to="/tools" replace />} />
           </Routes>
         </main>
         <Footer />
