@@ -167,7 +167,7 @@ const ToolDetail = () => {
               {/* Title and rating section */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
-                  <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name}</h1>
+                  <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name} - AI Tool for Architecture & Design</h1>
                   {isNewTool && (
                     <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
                       NEW

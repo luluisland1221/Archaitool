@@ -78,7 +78,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-3 text-white">
-              Discover AI Tools for Architecture
+              Discover AI Tools for Architecture & Design
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200">
               Your gateway to agentic architecture and AI-powered design solutions

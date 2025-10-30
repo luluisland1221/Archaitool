@@ -180,7 +180,7 @@ const Tools = () => {
 
   const renderTools = (subcategory) => (
     <div>
-      <h2 className="text-3xl font-bold mb-4">{subcategory.name}</h2>
+      <h1 className="text-3xl font-bold mb-4">{subcategory.name} - AI Tools Directory</h1>
       <p className="text-gray-600 mb-8">{subcategory.description}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {subcategory.tools.map((tool) => (
@@ -197,14 +197,14 @@ const Tools = () => {
         
         {!selectedCategory && (
           <>
-            <h1 className="text-4xl font-bold mb-8">AI Architecture & Design Tools</h1>
+            <h1 className="text-4xl font-bold mb-8">Complete AI Architecture & Design Tools Directory</h1>
             {renderCategories()}
           </>
         )}
 
         {selectedCategory && !selectedSubcategory && (
           <>
-            <h1 className="text-4xl font-bold mb-8">{selectedCategory.name}</h1>
+            <h1 className="text-4xl font-bold mb-8">{selectedCategory.name} - AI Tools & Software</h1>
             {renderSubconfiguredCategories(selectedCategory)}
           </>
         )}
