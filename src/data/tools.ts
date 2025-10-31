@@ -245,16 +245,16 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Maket AI is a revolutionary generative design platform that empowers architects, builders, and developers to create customized residential floor plans and navigate zoning codes with ease. Our platform combines AI-powered design generation with intelligent regulatory assistance to streamline the entire pre-design process.",
+            detailedDescription: "Maket AI is a specialized generative AI platform for residential design that helps architects, developers, and homeowners quickly generate multiple housing design solutions. By inputting room quantities, dimension requirements, or natural language descriptions, the platform can generate hundreds of floor layout options that comply with local regulations within seconds, significantly improving design efficiency and solution diversity.",
             keyFeatures: [
-              "Generate thousands of residential floor plan variations instantly",
-              "Specify room dimension & adjacency constraints",
-              "Real-time collaboration with stakeholders",
-              "Virtual Assistant for design guidance and cost analysis",
-              "Regulatory Assistant for zoning code compliance",
-              "Virtual Designer for style exploration and customization",
-              "Export designs to .DXF, PDF, and PNG formats",
-              "Natural language design input (coming soon)"
+              "AI-powered residential floor plan generation - creates hundreds of layout options in seconds",
+              "Customizable room dimensions and adjacency constraints",
+              "Real-time collaboration - share designs with clients and team members",
+              "Virtual design assistant - professional guidance on materials and costs",
+              "Regulatory compliance assistant - checks local building codes and zoning requirements",
+              "Virtual designer - switch between different architectural and design styles instantly",
+              "Multi-format export - supports DXF, PDF, PNG formats",
+              "Natural language design input - describe design needs in plain text (coming soon)"
             ],
             technicalSpecs: {
               supportedFormats: ["DXF", "PDF", "PNG"],
@@ -325,6 +325,9 @@ export const categories: Category[] = [
             ],
             companyInfo: {
               name: "Maket AI",
+              userStats: {
+                users: "600,000+ global users"
+              },
               support: {
                 email: "support@maket.ai",
                 chat: true,
@@ -335,8 +338,12 @@ export const categories: Category[] = [
                 linkedin: "https://www.linkedin.com/company/maket-ai",
                 twitter: "https://twitter.com/maketplans",
                 youtube: "https://www.youtube.com/@Maketplans",
-                instagram: "https://www.instagram.com/maket.ai"
-              }
+                instagram: "https://www.instagram.com/maket.ai",
+                facebook: "https://www.facebook.com/Maketplans"
+              },
+              accreditations: [
+                "Backed by top investors (BY Venture Partners, Blitzscaling Ventures)"
+              ]
             },
             lastUpdated: "2025-10-27"
           },
@@ -349,17 +356,18 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Ark Design AI is the first AI solution specifically designed for architectural schematic design, specializing in multi-family and mixed-use projects. Our patented technology enables automated floor plan generation and feasibility reports that comply with US building codes and ordinances.",
+            detailedDescription: "Arkdesign AI is the pioneering AI platform specifically designed for architectural schematic design, focusing on multi-family and mixed-use development projects. With over 19,609 users across 126 countries and 29,399 projects created, the platform leverages patented AI technology (US Patent No. 11,972,174) to automate floor plan generation, feasibility studies, and unit mix optimization while ensuring compliance with US building codes and ordinances.",
             keyFeatures: [
-              "Patented AI technology (US Patent No. 11,972,174)",
-              "Automated floor plan generation for multi-family housing",
-              "Feasibility studies and unit mix optimization",
-              "US building code and ordinance compliance",
-              "Real-time profitability analysis",
-              "Density optimization algorithms",
-              "Living standards enhancement tools",
-              "Interactive 3D model generation",
-              "Lot editor for precise site constraints"
+              "Patented AI technology (US Patent No. 11,972,174) for schematic design",
+              "Automated floor plan generation for multi-family and mixed-use projects",
+              "Real-time feasibility studies and unit mix optimization",
+              "US building code and ordinance compliance verification",
+              "Profitability analysis with real-time financial metrics",
+              "Density optimization algorithms for maximum efficiency",
+              "Lot editor for precise site constraints and boundary conditions",
+              "Automated unit configuration and layout suggestions",
+              "Interactive design iteration and modification tools",
+              "Export capabilities to industry-standard formats (DWG, DXF, PDF)"
             ],
             technicalSpecs: {
               supportedFormats: ["DWG", "DXF", "PDF"],
@@ -372,39 +380,53 @@ export const categories: Category[] = [
             pricing: {
               freeTier: {
                 features: [
+                  "Lite plan access",
                   "Basic floor plan generation",
-                  "Limited project complexity",
-                  "Standard support"
+                  "Standard unit configurations",
+                  "Community support"
                 ],
-                limitations: ["Limited to smaller projects", "Basic features only"]
+                limitations: ["Limited functionality", "Basic features only"]
               },
               paid: {
                 plans: [
                   {
-                    name: "Professional",
-                    price: "Contact for pricing",
+                    name: "Lite",
+                    price: "Free",
+                    billing: "monthly",
+                    features: [
+                      "Basic floor plan generation",
+                      "Standard unit types",
+                      "Limited projects per month"
+                    ],
+                    targetUser: "Students and casual users"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$399",
                     billing: "monthly",
                     features: [
                       "Unlimited project complexity",
                       "Advanced feasibility analysis",
-                      "Priority support",
+                      "Priority email support",
                       "Custom unit configurations",
-                      "Advanced reporting tools"
+                      "Advanced reporting tools",
+                      "Export capabilities"
                     ],
-                    targetUser: "Professional architects and firms"
+                    targetUser: "Professional architects and small firms"
                   },
                   {
-                    name: "Enterprise",
-                    price: "Custom pricing",
-                    billing: "yearly",
+                    name: "Premium",
+                    price: "$3,600",
+                    billing: "monthly",
                     features: [
-                      "All Professional features",
+                      "All Pro features",
                       "API access",
-                      "Dedicated support",
+                      "Dedicated account manager",
                       "Custom integrations",
-                      "Training and onboarding"
+                      "Training and onboarding",
+                      "Priority feature requests"
                     ],
-                    targetUser: "Large architecture firms and developers"
+                    targetUser: "Large architecture firms and enterprise developers"
                   }
                 ]
               },
@@ -412,13 +434,15 @@ export const categories: Category[] = [
               enterprisePlan: true
             },
             useCases: [
-              "Multi-family residential design",
-              "Mixed-use development planning",
-              "Urban density optimization",
-              "Pre-development feasibility studies",
-              "Unit mix and profitability analysis",
-              "Building code compliance verification",
-              "Large-scale residential projects"
+              "Multi-family residential building design and optimization",
+              "Mixed-use development planning and feasibility analysis",
+              "Urban density optimization and space efficiency studies",
+              "Pre-development feasibility studies for real estate projects",
+              "Unit mix analysis and profitability optimization",
+              "Building code compliance verification and documentation",
+              "Large-scale residential project planning and design",
+              "Architectural schematic design automation for professionals",
+              "Real estate development project assessment and planning"
             ],
             integrations: [
               "AutoCAD and Revit workflows",
@@ -432,9 +456,9 @@ export const categories: Category[] = [
               headquarters: "New York, USA",
               patent: "United States Patent number 11,972,174",
               userStats: {
-                users: "5300+",
-                countries: "120+",
-                projects: "8000+"
+                users: "19,609+",
+                countries: "126+",
+                projects: "29,399+"
               },
               support: {
                 email: "support@arkdesign.ai",
@@ -459,7 +483,7 @@ export const categories: Category[] = [
                 "Architizer recognition"
               ]
             },
-            lastUpdated: "2025-10-27"
+            lastUpdated: "2025-10-30"
           },
           {
             id: "architechtures",
@@ -470,28 +494,97 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Architechtures is a revolutionary AI-powered platform that transforms residential design processes, enabling architects and developers to generate optimal building designs in minutes rather than months. The platform leverages advanced generative AI to create real-time architectural solutions while maintaining full compatibility with traditional BIM workflows through seamless export capabilities.",
+            detailedDescription: "Architechtures is a leading generative AI-powered building design platform that serves over 170+ countries worldwide, processing 110k+ units and 12M+ square meters monthly. The platform revolutionizes residential design processes by enabling architects and developers to generate optimal building designs in minutes rather than months. With real-time AI architecture generation and seamless BIM workflow integration, Architechtures maintains full compatibility with traditional design processes while dramatically accelerating project development cycles.",
             keyFeatures: [
-              "Real-time AI architecture generation",
-              "2D/3D modeling and visualization",
-              "BIM solution creation and export",
-              "Cost estimation and analysis",
-              "Regulatory compliance checking",
-              "Environment integration via OSM",
-              "Terrain adaptation and analysis",
-              "Custom presets and templates"
+              "Real-time generative AI building design in seconds",
+              "2D/3D modeling and visualization with cloud-based editing",
+              "BIM solution creation and export (IFC, DXF, XLSX formats)",
+              "Cost estimation and real-time financial analysis",
+              "Regulatory compliance checking and urban parameter verification",
+              "Environment integration via OpenStreetMap (OSM)",
+              "Dynamic terrain adaptation and topography analysis",
+              "Assisted below-grade parking generation",
+              "Custom presets and templates for design parameters",
+              "Collaborative design sharing with view/edit modes",
+              "Unlimited AI-assisted generations and iterations"
             ],
             pricing: {
+              freeTier: {
+                features: [
+                  "7-day free trial access",
+                  "Basic design functionalities",
+                  "Email support during trial"
+                ],
+                limitations: ["Limited to 7 days", "Trial features only"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "$49",
+                    billing: "monthly (billed yearly at $588)",
+                    features: [
+                      "Unlimited AI-assisted generations",
+                      "Manual edition and parking lot design",
+                      "Areas and project data calculation",
+                      "OpenStreetMap and topography integration",
+                      "Cloud storage for 200 designs",
+                      "Design sharing for viewing/editing",
+                      "Unlimited downloadable exports (XLSX, DXF, IFC)",
+                      "Email support (5-day response time)"
+                    ],
+                    targetUser: "Professional architects and small firms"
+                  },
+                  {
+                    name: "Business",
+                    price: "$294",
+                    billing: "monthly (billed yearly at $3,528)",
+                    features: [
+                      "All Pro features included",
+                      "Design cost analysis",
+                      "Project comparison dashboard (coming soon)",
+                      "Design sales analysis (coming soon)",
+                      "Environmental analysis (coming soon)",
+                      "Cloud storage for 1,200 designs",
+                      "Presets for quick design and cost parameters",
+                      "Priority email support (1-day response)",
+                      "Technical account manager (2h/month)",
+                      "Onboarding training (2 hours)"
+                    ],
+                    targetUser: "Growing firms and development companies"
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "Custom",
+                    billing: "yearly",
+                    features: [
+                      "All Business features included",
+                      "Unlimited cloud storage",
+                      "Customized building and unit typologies",
+                      "Customized design data output",
+                      "Multiple accounts with unified invoice",
+                      "Team management capabilities",
+                      "Customized training and support",
+                      "Dedicated enterprise success manager"
+                    ],
+                    targetUser: "Large enterprises and organizations"
+                  }
+                ]
+              },
               trialAvailable: true,
-              enterprisePlan: true,
-              custom: ["7-day free trial", "Enterprise pricing available"]
+              enterprisePlan: true
             },
             useCases: [
-              "Residential development optimization",
-              "Multi-family housing design",
-              "Site planning and feasibility studies",
-              "Rapid prototyping and iteration",
-              "Cost-benefit analysis"
+              "Feasibility studies and conceptual design for residential developments",
+              "Real-time architectural iteration and optimization",
+              "Building code compliance verification and urban planning",
+              "Cost estimation and financial feasibility analysis",
+              "Multi-family housing design and unit mix optimization",
+              "Terrain adaptation and environmental integration analysis",
+              "Below-grade parking layout design and optimization",
+              "BIM model generation for downstream workflow integration",
+              "Real estate development planning and client presentations",
+              "Collaborative design review and team coordination"
             ],
             integrations: [
               "BIM standards (IFC export)",
@@ -500,13 +593,41 @@ export const categories: Category[] = [
               "OpenStreetMap integration"
             ],
             companyInfo: {
-              name: "Architechtures",
-              founded: 2021,
-              headquarters: "Wilmington, DE, USA",
-              additional: "Offices in Malaga, Spain. Funded by the European Union."
+              name: "SmartScapes Studio S.L.",
+              founded: "2021",
+              headquarters: "Malaga, Spain",
+              userStats: {
+                users: "170+ countries",
+                units: "110k+ units/month",
+                squareMeters: "12M+ sq meters/month"
+              },
+              support: {
+                email: "Available through website",
+                documentation: "https://architechtures.com/en/tutorials",
+                tutorials: "https://architechtures.com/en/quick-start-guide"
+              },
+              socialMedia: {
+                linkedin: "https://www.linkedin.com/company/architechtures",
+                youtube: "https://www.youtube.com/@architechtures-english"
+              },
+              accreditations: [
+                "European Union funded project",
+                "PropTech Awards Best Innovation Award",
+                "ASPRIMA-SIMA Award for real estate innovation",
+                "DRASTIC Summit Contech Pitch Contest Winners"
+              ],
+              notableClients: [
+                "Neinor Homes",
+                "Larsen & Toubro",
+                "Kajima Corporation",
+                "Perkins and Will",
+                "NEOM",
+                "Realiza Arquitectura",
+                "Gómez Platero"
+              ]
             },
             userRating: 4.5,
-            lastUpdated: "2025-10-28"
+            lastUpdated: "2025-10-30"
           },
           {
             id: "autodesk-forma",
@@ -517,18 +638,20 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Autodesk Forma is a powerful AI-powered cloud software for data-driven planning that revolutionizes pre-design and schematic design workflows. As part of Autodesk's AEC Collection, Forma combines AI automations with contextual data to help architects, urban planners, and real estate developers make informed decisions faster. The platform integrates seamlessly with existing tools like Revit, Rhino, and Dynamo to streamline the entire design process.",
+            detailedDescription: "Autodesk Forma is a comprehensive AI-powered cloud software specifically designed for data-driven planning in architecture and real estate development. As part of the Autodesk AEC Collection, Forma combines sophisticated AI automations with contextual site data to help architects, urban planners, and developers make informed decisions faster. The platform delivers 90% efficiency improvements through task consolidation and enables teams to save up to 70% time on volume studies while maintaining seamless integration with existing BIM workflows.",
             keyFeatures: [
-              "AI-powered generative design with site automation",
-              "Real-time environmental analysis (noise, wind, embodied carbon)",
-              "3D modeling with intuitive design tools",
-              "Contextual site data integration",
-              "Automatic area metrics generation",
-              "Forma Board for collaboration and presentations",
-              "Geolocated Revit project conversion",
-              "Rapid site optioneering capabilities",
-              "API and extension support",
-              "Multi-format import/export (IFC, OBJ, Revit)"
+              "AI-powered generative design with rapid site optioneering",
+              "Real-time environmental analysis (noise, wind, embodied carbon, sunlight)",
+              "Intuitive 3D modeling and massing concept creation tools",
+              "Contextual site data integration with geolocated project setup",
+              "Automatic area metrics generation and real-time calculations",
+              "Forma Board for team collaboration and client presentations",
+              "Seamless geolocated Revit project conversion workflow",
+              "Cloud-based processing with generous monthly generation limits",
+              "Comprehensive API and extension ecosystem for customization",
+              "Multi-format integration (Revit, Rhino, Dynamo, ACC, AutoCAD)",
+              "Below-grade terrain adaptation and topography analysis",
+              "Automated design workflow consolidation and optimization"
             ],
             technicalSpecs: {
               supportedFormats: ["IFC", "OBJ", "RVT", "DWG", "DXF"],
@@ -542,39 +665,58 @@ export const categories: Category[] = [
             pricing: {
               freeTier: {
                 features: [
-                  "Free trial available",
-                  "Basic feature access",
-                  "Limited project capabilities"
+                  "30-day free trial access",
+                  "Full feature exploration",
+                  "Cloud-based processing",
+                  "Technical support during trial"
                 ],
-                limitations: ["Trial period limitations", "Reduced functionality"]
+                limitations: ["Limited to 30 days", "Requires Autodesk account"]
               },
               paid: {
                 plans: [
                   {
-                    name: "Standalone Subscription",
-                    price: "Varies by region",
-                    billing: "monthly",
+                    name: "Annual Subscription",
+                    price: "$307",
+                    billing: "monthly (billed annually at $3,675/year)",
                     features: [
-                      "Full Forma functionality",
-                      "Cloud-based processing",
-                      "All analysis tools",
-                      "Collaboration features",
+                      "Full Forma Site Design functionality",
+                      "Autodesk Docs integration included",
+                      "Cloud-based processing with generous limits",
+                      "All environmental analysis tools",
+                      "Forma Board collaboration features",
+                      "API and extension access",
                       "Technical support"
                     ],
-                    targetUser: "Individual professionals and small firms"
+                    targetUser: "Most popular choice for professionals"
+                  },
+                  {
+                    name: "Monthly Subscription",
+                    price: "$460",
+                    billing: "monthly",
+                    features: [
+                      "Full Forma Site Design functionality",
+                      "Autodesk Docs integration included",
+                      "Cloud-based processing with generous limits",
+                      "All environmental analysis tools",
+                      "Forma Board collaboration features",
+                      "API and extension access",
+                      "Technical support"
+                    ],
+                    targetUser: "Flexible month-to-month usage"
                   },
                   {
                     name: "AEC Collection",
-                    price: "Included in collection",
+                    price: "Included at no extra cost",
                     billing: "yearly",
                     features: [
-                      "Forma included at no extra cost",
-                      "Access to 15+ other Autodesk tools",
-                      "Revit, AutoCAD, Civil 3D included",
-                      "Cloud services and collaboration tools",
-                      "Cost-effective bundle pricing"
+                      "Forma Site Design included with collection",
+                      "Access to 15+ Autodesk professional tools",
+                      "Revit, AutoCAD, Civil 3D, 3ds Max included",
+                      "Autodesk Docs and cloud collaboration tools",
+                      "Cost-effective bundle for comprehensive workflows",
+                      "Unified subscription management"
                     ],
-                    targetUser: "Architecture, engineering, and construction firms"
+                    targetUser: "Established AEC firms seeking comprehensive toolset"
                   }
                 ]
               },
@@ -582,14 +724,16 @@ export const categories: Category[] = [
               enterprisePlan: true
             },
             useCases: [
-              "Pre-design feasibility studies",
-              "Site planning and analysis",
-              "Urban planning and development",
-              "Environmental impact assessment",
-              "Concept design and massing studies",
-              "Zoning compliance analysis",
-              "Real estate development planning",
-              "Multi-family housing design"
+              "Pre-design feasibility studies with data-driven insights",
+              "Site context analysis and environmental assessment",
+              "Urban planning and large-scale development projects",
+              "Real-time environmental analysis (noise, wind, carbon, sunlight)",
+              "Rapid concept design and massing iteration studies",
+              "Zoning compliance and urban parameter verification",
+              "Real estate development planning and optimization",
+              "Multi-family housing and mixed-use development design",
+              "Terrain adaptation and topography integration studies",
+              "Collaborative design review with Forma Board presentations"
             ],
             integrations: [
               "Revit with seamless workflow",
@@ -600,33 +744,43 @@ export const categories: Category[] = [
               "Custom API development"
             ],
             companyInfo: {
-              name: "Autodesk",
+              name: "Autodesk Inc.",
               founded: "1982",
               headquarters: "San Rafael, California, USA",
-              teamSize: "13,000+ employees",
+              teamSize: "13,000+ employees worldwide",
               userStats: {
-                users: "Millions of professionals",
-                countries: "Global presence"
+                users: "Millions of global professionals",
+                countries: "200+ countries",
+                efficiency: "90% efficiency improvement reported by users"
               },
               support: {
-                email: "Available through Autodesk support",
+                email: "Available through Autodesk support portal",
                 chat: true,
-                documentation: "https://help.autodesk.com/",
-                tutorials: "https://www.autodesk.com/support/forma"
+                documentation: "https://help.autodesk.com/en/support/forma",
+                tutorials: "https://www.autodesk.com/support/forma/learn-discover",
+                phone: "Regional support centers available"
               },
               socialMedia: {
                 linkedin: "https://www.linkedin.com/company/autodesk/",
                 twitter: "https://twitter.com/autodesk",
-                youtube: "https://www.youtube.com/user/Autodesk"
+                youtube: "https://www.youtube.com/c/Autodesk",
+                facebook: "https://www.facebook.com/Autodesk"
               },
               accreditations: [
-                "AIA provider",
-                "Global industry standards"
+                "Fortune 500 Company",
+                "NASDAQ: ADSK publicly traded",
+                "ISO 9001 certified",
+                "AEC industry leader for 40+ years"
+              ],
+              customerSuccess: [
+                "BBA: 90% efficiency increase through task consolidation",
+                "RSP Singapore: 70% time savings on volume studies",
+                "PKA: 15% company growth driven by Forma-supported competition wins"
               ]
             },
-            userRating: 4.5,
-            reviewCount: 0,
-            lastUpdated: "2025-10-28"
+            userRating: 4.7,
+            reviewCount: 150,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "bricsys",
@@ -637,42 +791,80 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Bricsys BIM is an AI-driven Building Information Modeling solution built on a DWG-compatible CAD platform, offering the easiest path for CAD users to deliver BIM data. As part of the BricsCAD family, it combines familiar 2D drafting tools with powerful 3D modeling and BIM capabilities, enabling professionals to transition seamlessly to BIM workflows while maintaining full DWG compatibility.",
+            detailedDescription: "Bricsys BIM is an AI-driven Building Information Modeling solution built on a DWG-compatible CAD platform, rated 4.6/5 by 133 users. As part of the BricsCAD family and Hexagon ecosystem, it offers the easiest path for CAD users to deliver BIM data with pricing starting from $1,060/year. The platform combines familiar 2D drafting tools with powerful 3D modeling and BIM capabilities, enabling professionals to transition seamlessly to BIM workflows while maintaining full DWG compatibility and industry-standard IFC support.",
             keyFeatures: [
-              "AI-driven BIM tools for processing building scans",
-              "Convert 2D/3D assets to BIM data automatically",
-              "Building documentation and detailing tools",
-              "Point cloud processing and modeling",
-              "DWG-based BIM platform",
-              "IFC format support for industry compatibility",
-              "Model-based quantity takeoff",
-              "Automated detailing with AI assistance"
+              "AI-driven scan-to-BIM tools for building scan processing",
+              "Automatic conversion of 2D/3D assets to BIM data",
+              "Building documentation and detailing with AI assistance",
+              "Native point cloud processing and modeling capabilities",
+              "DWG-based BIM platform with full compatibility",
+              "Industry-standard IFC format support and sharing",
+              "Model-based quantity takeoff for cost estimation",
+              "Automated detailing tools reducing errors and oversights",
+              "Seamless 2D to 3D workflow transition",
+              "Single platform for modeling and documentation",
+              "30-day free trial with no credit card required"
             ],
             pricing: {
+              freeTier: {
+                features: [
+                  "30-day free trial access",
+                  "Full feature exploration",
+                  "All BricsCAD license levels available during trial",
+                  "No credit card required"
+                ],
+                limitations: ["Limited to 30 days", "Trial period only"]
+              },
               paid: {
                 plans: [
                   {
                     name: "BIM",
-                    price: "$1,060/year",
-                    features: ["Full BIM capabilities", "DWG compatibility", "AI tools"]
+                    price: "$1,060",
+                    billing: "yearly",
+                    features: [
+                      "AI-driven BIM capabilities",
+                      "DWG compatibility with full file support",
+                      "Scan-to-BIM processing tools",
+                      "Point cloud modeling and processing",
+                      "Building documentation and detailing",
+                      "IFC format import/export and sharing",
+                      "Model-based quantity takeoff",
+                      "30-day money-back guarantee"
+                    ],
+                    targetUser: "Architects and engineering firms"
                   },
                   {
                     name: "Ultimate",
-                    price: "Custom pricing",
-                    features: ["All BIM features + additional tools", "Priority support"]
+                    price: "$1,180",
+                    billing: "yearly",
+                    features: [
+                      "All BIM features included",
+                      "Advanced mechanical design tools",
+                      "Comprehensive 2D/3D workflows",
+                      "Priority technical support",
+                      "Custom integration options",
+                      "Enhanced collaboration features",
+                      "Advanced API access"
+                    ],
+                    targetUser: "Large enterprises requiring comprehensive toolset"
                   }
                 ]
               },
               trialAvailable: true,
-              freeForEducation: true
+              freeForEducation: true,
+              moneyBackGuarantee: "30 days"
             },
             useCases: [
-              "Scan-to-BIM workflows",
-              "Building documentation and detailing",
-              "Model-based quantity takeoff",
-              "2D to 3D BIM conversion",
-              "Shop drawing production",
-              "Point cloud modeling and analysis"
+              "Scan-to-BIM workflows with AI-powered processing",
+              "Building documentation and automated detailing generation",
+              "Model-based quantity takeoff for accurate cost estimation",
+              "Seamless 2D to 3D BIM conversion and workflow transition",
+              "Shop drawing production from BIM models",
+              "Point cloud modeling and analysis for existing structures",
+              "Architectural design documentation and detailing",
+              "Engineering design and fabrication workflows",
+              "Construction planning and project management",
+              "Facility management and maintenance documentation"
             ],
             integrations: [
               "DWG format (full compatibility)",
@@ -681,11 +873,51 @@ export const categories: Category[] = [
               "Third-party applications via API"
             ],
             companyInfo: {
-              name: "Bricsys NV (Hexagon)",
-              founded: 2002,
+              name: "Bricsys NV",
+              founded: "2002",
               headquarters: "Ghent, Belgium",
-              additional: "Part of Hexagon since 2018. Global technology company with offices worldwide.",
-              teamSize: "200+ employees"
+              teamSize: "200+ employees worldwide",
+              userStats: {
+                users: "133+ verified reviewers",
+                rating: "4.6/5 stars",
+                customers: "Leading global companies trust Bricsys"
+              },
+              support: {
+                email: "Available through support portal",
+                phone: "Regional support centers",
+                chat: true,
+                documentation: "https://help.bricsys.com",
+                forum: "https://forum.bricsys.com",
+                tutorials: "https://learning.bricsys.com/",
+                developerDocs: "https://developer.bricsys.com/"
+              },
+              socialMedia: {
+                linkedin: "https://www.linkedin.com/company/bricsys",
+                twitter: "https://twitter.com/bricsys",
+                youtube: "https://www.youtube.com/c/BricsysOfficial",
+                facebook: "https://www.facebook.com/bricsys",
+                instagram: "https://www.instagram.com/bricsys"
+              },
+              accreditations: [
+                "Part of Hexagon since 2018",
+                "Global CAD technology leader",
+                "Industry-standard DWG compatibility",
+                "G2 High Performer recognition"
+              ],
+              notableClients: [
+                "Mazda - Automotive manufacturing",
+                "PERI - Formwork and scaffolding systems",
+                "Willemen Construct - Construction",
+                "Fluor - Engineering and construction",
+                "SNCF - National railway company",
+                "Subsea 7 - Subsea engineering",
+                "Volvo - Automotive manufacturing",
+                "Mitsubishi Electric - Electronics manufacturing"
+              ],
+              customerTestimonials: [
+                "\"BricsCAD BIM can do a lot—for example, model a site layout plan or make a plan of action for a worker. It is a very user-friendly program.\" - Dieter Froyen, Head of Work Preparation Construction, Willemen Construct",
+                "\"When we switched to BricsCAD, many problems were solved by having a reliable platform. Out of the many CAD solutions, BricsCAD was the one always improving.\" - Michael Rock, Technical Director, SH Formas"
+              ]
             },
             technicalSpecs: {
               supportedPlatforms: ["Windows", "Linux", "macOS"],
@@ -693,8 +925,9 @@ export const categories: Category[] = [
               apiAvailable: true,
               collaboration: true
             },
-            userRating: 4.3,
-            lastUpdated: "2025-10-28"
+            userRating: 4.6,
+            reviewCount: 133,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "testfit",
@@ -844,54 +1077,108 @@ export const categories: Category[] = [
           {
             id: "floorplan-ai",
             name: "Floorplan AI",
-            description: "Generate and customize floor plans with AI assistance",
+            description: "AI-powered floor plan generator with web editor and DXF export",
             image: "/screenshots/www_floorplan_ai_com_.webp",
             url: "https://www.floorplan-ai.com/",
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Floorplan AI is a specialized AI-powered tool that helps users generate floor plan ideas quickly and efficiently. The platform enables users to create personalized floor plans through an intuitive web editor and export them in professional DXF format, significantly reducing time spent on architectural planning projects.",
+            detailedDescription: "Floorplan AI is a specialized AI-powered platform that enables users to generate floor plan ideas quickly and efficiently. With the tagline 'Get Inspired. Personalize. Integrate,' the platform offers a complete workflow from AI generation to customization and professional export. Users can create personalized floor plans through an exclusive web editor and export them in DXF format for seamless integration into their projects, significantly reducing time spent on architectural planning.",
             keyFeatures: [
-              "AI-powered floor plan generation",
-              "Web-based customization editor",
-              "DXF export for CAD integration",
-              "Multiple room type support",
-              "Quick modification tools",
-              "PNG format sharing options"
+              "AI-powered floor plan generation with custom requirements",
+              "Exclusive web-based editor for easy customization",
+              "Professional DXF export for CAD software integration",
+              "Multiple room types and configurations (bedrooms, kitchens, living rooms, bathrooms, garages)",
+              "Real-time floor plan assistance and chat support",
+              "Show dimensions and measurement tools",
+              "Design elements library for enhanced customization",
+              "PNG export for sharing and presentations",
+              "Sample DXF files available for quality preview"
             ],
             pricing: {
               freeTier: {
-                features: ["4 AI credits", "PNG exports"],
-                limitations: ["No DXF exports", "Limited credits"]
+                features: [
+                  "4 AI credits to start",
+                  "Create floor plans from scratch",
+                  "Unlimited PNG exports",
+                  "Access to web editor",
+                  "Show dimensions feature"
+                ],
+                limitations: ["No DXF exports", "Limited AI credits"]
               },
               paid: {
                 plans: [
                   {
                     name: "Basic",
-                    price: "$5 (one-time)",
-                    features: ["10 AI credits", "10 DXF exports"]
+                    price: "$5",
+                    billing: "one-time",
+                    features: [
+                      "10 AI credits (one-time)",
+                      "10 DXF exports",
+                      "Create floor plans with AI",
+                      "Unlimited PNG exports",
+                      "Email support"
+                    ],
+                    targetUser: "Users starting with AI floor planning"
                   },
                   {
                     name: "Pro",
-                    price: "$39 (limited time, originally $69)",
-                    features: ["100 AI credits", "100 DXF exports", "Priority support"]
+                    price: "$39",
+                    originalPrice: "$69",
+                    billing: "one-time",
+                    specialOffer: "Limited time discount",
+                    features: [
+                      "100 AI credits (one-time)",
+                      "100 DXF exports",
+                      "Create floor plans with AI",
+                      "Unlimited PNG exports",
+                      "Email support",
+                      "Priority customer service"
+                    ],
+                    targetUser: "Professionals needing comprehensive floor planning tools"
                   }
-                ]
+                ],
+                trialAvailable: false,
+                enterprisePlan: false
               }
             },
             useCases: [
-              "Residential home design",
-              "Real estate property visualization",
+              "Residential home design and remodeling",
+              "Real estate property visualization and marketing",
               "Architectural planning and concept development",
-              "Construction project planning",
-              "Interior design layout optimization"
+              "Construction project planning and documentation",
+              "Interior design layout optimization",
+              "Space planning and furniture arrangement",
+              "Quick prototyping for client presentations"
             ],
             integrations: [
-              "DXF format for CAD software",
-              "PNG format for sharing and presentations"
+              "DXF format for AutoCAD and other CAD software",
+              "PNG format for presentations and sharing",
+              "Web-based platform accessible from any browser"
             ],
-            userRating: 4.0,
-            lastUpdated: "2025-10-28"
+            companyInfo: {
+              name: "Floor Plan AI",
+              support: {
+                email: "help@floorplan-ai.com",
+                documentation: "Available on website",
+                faq: "Comprehensive FAQ section"
+              },
+              accreditations: [
+                "Featured on SaaSHub",
+                "Listed on Startup Fame",
+                "Featured on Twelve Tools",
+                "Recognized by findly.tools"
+              ],
+              uniqueFeatures: [
+                "FloorPlan Assistant chat integration",
+                "Real-time room allocation adjustments",
+                "Version history for projects",
+                "Save and export functionality"
+              ]
+            },
+            userRating: 4.2,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "ai-architectures",
@@ -1239,212 +1526,683 @@ export const categories: Category[] = [
           {
             id: "arko-ai",
             name: "Arko AI",
-            description: "AI renders for SketchUp, Rhino and Revit",
+            description: "AI rendering plugin for SketchUp, Rhino3D and Revit with professional quality output",
             image: "/screenshots/arko_ai_.webp",
             url: "https://arko.ai/",
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Arko AI is a revolutionary AI rendering plugin that seamlessly integrates with major design software, allowing architects and designers to reimagine the rendering process with the click of a button. By bringing AI-powered visualization directly into familiar CAD environments like SketchUp, Rhino, and Revit, Arko AI eliminates the need for complex rendering workflows while maintaining professional quality output.",
+            detailedDescription: "Arko AI is a revolutionary AI rendering plugin that enables architects and designers to 'Reimagine the rendering process with the click of a button.' The platform seamlessly integrates with major CAD software including SketchUp, Rhino3D, and Revit, bringing AI-powered visualization directly into familiar design environments. With automatic monthly or yearly billing starting at $39/month, Arko AI eliminates complex rendering workflows while delivering professional quality output through a cloud-based platform.",
             keyFeatures: [
-              "AI rendering plugin for SketchUp (Windows & Mac)",
-              "Rhino3D integration (Windows)",
-              "Revit plugin support (Windows)",
+              "AI rendering plugin for SketchUp (2020-2023, Windows & Mac)",
+              "Rhino3D integration (Rhino7, Coming Soon Rhino8, Windows)",
+              "Revit plugin support (2021-2024, Windows)",
               "One-click AI rendering process",
-              "Direct integration with existing workflows",
-              "Multiple software version compatibility",
+              "Unlimited renderings with Pro license",
+              "High-quality image resolution (768px height vs 608px free)",
+              "30+ additional rendering categories for accuracy",
+              "Seed setting for consistent rendering styles",
+              "Negative prompts for precise control",
               "Free trial available",
-              "Professional quality output"
+              "Automatic billing system with monthly/yearly options"
             ],
+            technicalSpecs: {
+              supportedPlatforms: ["Windows", "MacOS"],
+              supportedSoftware: ["SketchUp 2020-2023", "Rhino3D Rhino7", "Revit 2021-2024"],
+              renderQuality: {
+                free: "Max file size: 800kb, Max height: 608px",
+                pro: "Average file size: 1200kb, Average height: 768px"
+              },
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: false
+            },
             pricing: {
-              trialAvailable: true,
-              custom: ["Free trial available", "Contact for pricing details"]
+              freeTier: {
+                features: [
+                  "Basic AI rendering capabilities",
+                  "Max file size: 800kb",
+                  "Max image height: 608 pixels",
+                  "Limited categories",
+                  "One license for all platforms"
+                ],
+                limitations: ["File size restrictions", "Lower image resolution", "Limited features"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro License",
+                    price: "$39",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited renderings",
+                      "High-quality image resolution (768px height)",
+                      "30+ additional rendering categories",
+                      "Seed setting for consistent styles",
+                      "Negative prompts for precise control",
+                      "Access on all platforms (SketchUp, Rhino3D, Revit)",
+                      "Automatic billing",
+                      "Priority customer support"
+                    ],
+                    targetUser: "Professional architects and designers"
+                  }
+                ],
+                yearlyBilling: true,
+                trialAvailable: true
+              }
             },
             useCases: [
-              "Architectural visualization",
-              "Design presentation rendering",
+              "Architectural visualization and presentation",
+              "Design concept development",
               "Client visualization delivery",
-              "Concept development",
-              "Rapid iteration rendering"
+              "Rapid iteration rendering",
+              "Professional portfolio creation",
+              "Real estate development previews",
+              "Construction documentation visualization"
             ],
             integrations: [
-              "SketchUp (2020-2023)",
-              "Rhino3D (Rhino7, Rhino8)",
-              "Revit (2021-2024)",
-              "Direct plugin integration"
+              "SketchUp (2020, 2021, 2022, 2023)",
+              "Rhino3D (Rhino7 currently, Rhino8 coming soon)",
+              "Revit (2021, 2022, 2023, 2024)",
+              "Direct plugin integration within CAD environments",
+              "Cloud-based processing"
             ],
-            userRating: 4.2,
-            lastUpdated: "2025-10-28"
+            companyInfo: {
+              name: "ArkoAI",
+              founded: "2023",
+              support: {
+                email: "Available through contact form",
+                forum: "https://forum.arko.ai/",
+                documentation: "Available on website"
+              },
+              socialMedia: {
+                instagram: "https://www.instagram.com/arko.ai/",
+                linkedin: "https://www.linkedin.com/company/arkoai/",
+                twitter: "https://www.x.com/ArkoAI_",
+                youtube: "https://www.youtube.com/channel/UCwmpD1FpISvKvMehqucTYVg"
+              },
+              uniqueFeatures: [
+                "One license for all platforms",
+                "Seed setting for style consistency",
+                "Negative prompt functionality",
+                "30+ specialized rendering categories"
+              ]
+            },
+            userRating: 4.3,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "evolvelab-veras",
-            name: "Evolvelab Veras",
-            description: "AI-powered visualization add-in for multiple CAD platforms",
+            name: "Veras by EvolveLAB",
+            description: "AI-powered visualization app for SketchUp, Revit, Rhino, Vectorworks, and Web with geometry override and selection rendering",
             image: "/screenshots/www_evolvelab_io_veras.webp",
             url: "https://www.evolvelab.io/veras",
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Evolvelab Veras is an AI-powered visualization add-in designed for multiple CAD platforms, providing designers and engineers with advanced rendering capabilities directly within their familiar design environments. The platform leverages artificial intelligence to enhance visualization workflows and deliver high-quality render outputs with optimized performance.",
+            detailedDescription: "Veras by EvolveLAB is a comprehensive AI-powered visualization application that 'uses your substrate for creativity and inspiration' across multiple platforms including SketchUp®, Revit®, Rhinoceros®, Vectorworks®, Archicad®, and Web. Recently acquired by Chaos ecosystem, Veras offers innovative features like the Geometry Override Slider for creative control, Render Selection for specific area editing, and Same Seed rendering for design consistency. The platform provides professional AI visualization capabilities directly within familiar CAD environments and as a standalone web application.",
             keyFeatures: [
-              "AI-powered visualization rendering",
-              "CAD platform integration as add-in",
-              "High-quality rendering capabilities",
-              "Optimized performance for design workflows",
-              "Seamless integration within CAD environments",
-              "Enhanced visual output quality"
+              "Geometry Override Slider for creative precision control",
+              "Render Selection feature for specific area editing",
+              "Render Same Seed for design consistency across iterations",
+              "Image-to-Image web app functionality",
+              "Multi-platform CAD integration (SketchUp, Revit, Rhino, Vectorworks, Archicad)",
+              "AI-powered visualization and rendering enhancement",
+              "Web-based version without software limitations",
+              "Professional quality rendering output",
+              "30-day free trial with 30 renders",
+              "Part of Chaos ecosystem for enhanced reliability"
             ],
+            technicalSpecs: {
+              supportedPlatforms: ["Windows", "MacOS", "Web"],
+              supportedSoftware: [
+                "SketchUp (2021-2025, Windows & Mac)",
+                "Autodesk Revit (2021-2026)",
+                "Rhinoceros (7 and 8)",
+                "Autodesk Forma (Web)",
+                "Archicad (28, Windows & Mac)",
+                "Vectorworks (2024-2025, Windows & Mac)"
+              ],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: false,
+              webBased: true,
+              renderSpeed: "AI-powered processing"
+            },
             pricing: {
+              freeTier: {
+                features: [
+                  "30 renders",
+                  "15-day trial period",
+                  "Access to all core features",
+                  "Web app access"
+                ],
+                limitations: ["Limited to 30 renders", "15-day time limit"]
+              },
               paid: {
                 plans: [
                   {
-                    name: "Professional License",
-                    price: "Contact for pricing",
-                    features: ["CAD integration", "AI visualization", "Technical support"]
+                    name: "Named License",
+                    price: "$59",
+                    billing: "monthly",
+                    features: [
+                      "Assigned to specific users or workstations",
+                      "Predictable monthly costs ($59/month)",
+                      "Simplified license management",
+                      "Full feature access",
+                      "Direct CAD integration"
+                    ],
+                    targetUser: "Smaller teams with stable user numbers"
+                  },
+                  {
+                    name: "Floating License",
+                    price: "$51",
+                    billing: "monthly (billed annually at $612/year)",
+                    features: [
+                      "Shared access among multiple users",
+                      "Cost-effective for large teams",
+                      "Not tied to specific users or machines",
+                      "Dynamic access based on project needs",
+                      "Usage monitoring and optimization"
+                    ],
+                    targetUser: "Larger teams with fluctuating user numbers"
+                  },
+                  {
+                    name: "Student License",
+                    price: "$12.42",
+                    billing: "monthly (billed annually at $149/year)",
+                    features: [
+                      "Individual student access",
+                      "Full feature access for learning",
+                      "Non-commercial educational use only",
+                      "Time-limited for academic duration",
+                      "Discounted educational pricing"
+                    ],
+                    targetUser: "Students and educators"
                   }
-                ]
+                ],
+                enterprisePricing: true,
+                trialAvailable: true
               }
             },
             useCases: [
-              "Engineering design visualization",
-              "CAD-based architectural rendering",
-              "Professional design presentations",
-              "Technical documentation visualization"
+              "Architectural visualization and rendering",
+              "Design concept exploration and iteration",
+              "Professional presentations and client visualization",
+              "Real-time design adjustments with Render Selection",
+              "Consistent design variations with Same Seed",
+              "Creative design exploration with Geometry Override",
+              "Educational projects and student work",
+              "Web-based visualization without CAD software requirements"
             ],
-            userRating: 4.0,
-            lastUpdated: "2025-10-28"
+            integrations: [
+              "SketchUp (2021-2025, Windows & Mac)",
+              "Autodesk Revit (2021-2026)",
+              "Rhinoceros (7 and 8)",
+              "Autodesk Forma (Web platform)",
+              "Archicad (28, Windows & Mac)",
+              "Vectorworks (2024-2025, Windows & Mac)",
+              "Standalone web application",
+              "Chaos ecosystem integration"
+            ],
+            companyInfo: {
+              name: "EvolveLAB LLC (Part of Chaos ecosystem)",
+              founded: "EvolveLAB established, recently acquired by Chaos",
+              support: {
+                forum: "https://forum.evolvelab.io/c/veras/12",
+                contact: "https://www.evolvelab.io/contact",
+                featureRequest: "Available through online form",
+                subscriptionManagement: "https://my.chaos.com/"
+              },
+              socialMedia: {
+                youtube: "https://www.youtube.com/@EvolveLABio",
+                linkedin: "https://www.linkedin.com/company/evolvelabio",
+                twitter: "https://twitter.com/EvolveLABio",
+                instagram: "https://www.instagram.com/evolvelabio/",
+                facebook: "https://www.facebook.com/EvolveLABio/"
+              },
+              accreditations: [
+                "Part of Chaos ecosystem",
+                "Industry-recognized AI visualization tool",
+                "Featured in top AI tools for architects 2025"
+              ]
+            },
+            userRating: 4.4,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "airender-studio",
             name: "AI Render Studio",
-            description: "Photorealistic architecture renders in seconds using AI",
+            description: "Photorealistic architecture and interior renders in seconds with pay-as-you-use pricing",
             image: "/screenshots/airender_studio__enhanced.webp",
             url: "https://airender.studio/",
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "AI Render Studio specializes in transforming basic sketches into photorealistic architecture renders in seconds, serving architects, interior designers, and real estate developers with fast AI-powered rendering capabilities for both interior and exterior designs.",
+            detailedDescription: "AI Render Studio delivers 'Photorealistic architecture and interior renders in seconds using AI,' offering both sketch-to-render and render enhancement capabilities. The platform enables users to 'Enhance your 3d renderings and 1-click sketch to render using the power of AI' with a pay-as-you-use pricing model. Compatible with basic SketchUp, Blender, Revit, and CAD drawings, AI Render Studio serves architects, interior designers, real estate developers, and students with instant professional-quality visualizations.",
             keyFeatures: [
-              "Photorealistic architecture rendering",
-              "Seconds-level rendering speed",
-              "Sketch-to-render transformation",
-              "Interior and exterior design support",
-              "AI-powered visualization",
-              "Professional quality output"
+              "Sketch-to-render conversion in seconds",
+              "3D rendering enhancement and upscaling",
+              "Interior and exterior architecture rendering",
+              "4K upscaling capability",
+              "High-resolution output generation",
+              "Commercial use licensing",
+              "Web-based platform (no installation required)",
+              "Pay-as-you-use pricing model",
+              "New Year Sale: 15% OFF with code RENDER24",
+              "Compatible with SketchUp, Blender, Revit, CAD drawings"
             ],
+            technicalSpecs: {
+              supportedPlatforms: ["Web-based"],
+              supportedFormats: ["Image uploads from various sources", "Enhanced renders output"],
+              exportOptions: ["High resolution images", "4K upscaled renders"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "Seconds average",
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
             pricing: {
+              freeTier: {
+                features: ["Free trial available", "Basic rendering capabilities"],
+                limitations: ["Limited renders", "Basic features only"]
+              },
               paid: {
                 plans: [
                   {
-                    name: "Professional",
-                    price: "Contact for pricing",
-                    features: ["Fast rendering", "High quality output", "Commercial use"]
+                    name: "Starter Pack",
+                    price: "$12",
+                    billing: "one-time",
+                    features: [
+                      "30 renders",
+                      "High resolution renders",
+                      "Save generated renders",
+                      "4K upscaling",
+                      "Commercial use license"
+                    ],
+                    targetUser: "Users trying AI renders for workflow enhancement"
+                  },
+                  {
+                    name: "Professional Pack",
+                    price: "$29",
+                    billing: "one-time",
+                    features: [
+                      "250 renders",
+                      "High resolution renders",
+                      "Save generated renders",
+                      "4K upscaling",
+                      "Commercial use license"
+                    ],
+                    targetUser: "Professionals generating amazing renders instantly",
+                    popular: true
+                  },
+                  {
+                    name: "Workflow Optimizer",
+                    price: "$99",
+                    billing: "one-time",
+                    features: [
+                      "1,000 renders",
+                      "High resolution renders",
+                      "Save generated renders",
+                      "4K upscaling",
+                      "Commercial use license"
+                    ],
+                    targetUser: "Design professionals serving clients fast"
                   }
-                ]
+                ],
+                discountCode: "RENDER24 (15% OFF)",
+                enterprisePlan: true,
+                trialAvailable: true
               }
             },
             useCases: [
-              "Architectural visualization",
-              "Interior design rendering",
-              "Real estate development presentations",
-              "Concept to final render transformation",
-              "Rapid design iteration"
+              "Architectural visualization and presentation",
+              "Interior design sketch conversion",
+              "Real estate development marketing",
+              "Student project enhancement",
+              "3D art portfolio improvement",
+              "Home renovation visualization",
+              "Design workflow optimization",
+              "Client presentation preparation"
             ],
-            userRating: 4.1,
-            lastUpdated: "2025-10-28"
+            integrations: [
+              "SketchUp drawing enhancement",
+              "Blender render improvement",
+              "Revit CAD drawing processing",
+              "General CAD file enhancement",
+              "Web-based accessibility"
+            ],
+            companyInfo: {
+              name: "AI Render Studio",
+              support: {
+                contact: "Available through website contact form",
+                documentation: "FAQ section available",
+                login: "https://airender.studio/login",
+                register: "https://airender.studio/register"
+              },
+              accreditations: [
+                "Pay-as-you-use pricing model",
+                "Commercial use licensing",
+                "4K upscaling technology"
+              ],
+              customerTestimonials: [
+                "\"AI Render is a lifesaver for my architectural projects. It's fast, easy to use, and the results are outstanding!\" - Jonathan L. - Architect",
+                "\"I love how AI Render takes my interior design sketches and turns them into stunning visuals. It's a time-saver and a design enhancer!\" - Emma H. - Interior Designer",
+                "\"The speed and quality of AI Render's renderings are unmatched. It's an essential tool for showcasing our real estate projects.\" - Mark D. - Real Estate Developer",
+                "\"AI Render makes my coursework a breeze. It turns my class projects into professional-level renderings. It's a student's dream.\" - Mia S. - Architecture Student"
+              ]
+            },
+            userRating: 4.5,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "archsynth",
             name: "Archsynth",
-            description: "Transform sketches to renders with AI in 14 seconds",
+            description: "The Most Comprehensive AI solution for Architecture and Interior design with 14-second rendering",
             image: "/screenshots/www_archsynth_com_.webp",
             url: "https://www.archsynth.com/",
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Archsynth specializes in converting architecture sketches to professional renders in seconds using advanced AI technology. The platform offers rapid transformation of conceptual drawings into realistic visualizations, enabling architects and designers to quickly iterate and present design ideas.",
+            detailedDescription: "Archsynth is 'The Most Comprehensive AI solution for Architecture and Interior design' that enables users to 'Quadruple your outputs' and 'Create polished Visuals, CAD files, 3D models and renderings in a fraction of the time.' Trusted by 176,582+ users worldwide with 15,698,726+ renders created, Archsynth offers revolutionary features including sketch-to-render in 14 seconds, 2D to 3D conversion, image-to-CAD transformation, and moodboard rendering capabilities that help users 'work at the speed of your ideas' and potentially 'double your rates.'",
             keyFeatures: [
-              "AI-powered sketch-to-render transformation",
-              "14-second rendering process",
-              "Architecture sketch conversion",
-              "Professional render quality",
-              "Fast design iteration"
+              "Sketch to Render in 14 seconds",
+              "2D to 3D model conversion",
+              "Image to CAD transformation",
+              "Render with moodboards capability",
+              "AI assistant for image analysis",
+              "Generate from moodboards (exclusive feature)",
+              "Maintain colors from input (exclusive)",
+              "Image to 3D conversion (exclusive)",
+              "AI Inpainting and Upscaling",
+              "Text to Image generation",
+              "Edit with Words functionality",
+              "Background Removal technology",
+              "Fast Rendering speed",
+              "Tileable Textures generation",
+              "Create Beautiful Illustrations for presentations"
             ],
+            technicalSpecs: {
+              supportedPlatforms: ["Web-based"],
+              supportedFormats: ["Sketch images", "CAD files", "3D models", "Various image formats"],
+              exportOptions: ["High-resolution renders", "3D models for SketchUp, Rhino, Revit, 3ds Max", "CAD files", "Illustrations"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "14 seconds average",
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
             pricing: {
+              freeTier: {
+                features: ["Limited free generations", "Basic functionality testing"],
+                limitations: ["Limited features", "Restricted usage"]
+              },
               paid: {
                 plans: [
                   {
-                    name: "Professional",
-                    price: "Contact for pricing",
-                    features: ["14-second renders", "High quality output", "Commercial use"]
+                    name: "Student Plan",
+                    price: "$10",
+                    billing: "monthly",
+                    originalPrice: "$11.99",
+                    discountedPrice: "$8.25",
+                    features: [
+                      "200 renders per month",
+                      "All AI tools included (Sketch to Render, Text to Image, Photo Enhancing, Interior Design, Generative Fill, Virtual Staging, AI Landscaping, Image to Video, Image to CAD, Image to 3D, AI Assistant)",
+                      "AI enhancing & masking brush",
+                      "No watermark",
+                      "Educational usage license",
+                      "Commercial use allowed"
+                    ],
+                    targetUser: "Students and educational users",
+                    popular: false
+                  },
+                  {
+                    name: "Pro Plan",
+                    price: "$24",
+                    billing: "monthly",
+                    originalPrice: "$49",
+                    features: [
+                      "1000 renders per month",
+                      "All Student Plan features",
+                      "Priority support",
+                      "All core functionalities",
+                      "Commercial usage license",
+                      "Professional access"
+                    ],
+                    targetUser: "Individual professionals and freelancers",
+                    popular: true
+                  },
+                  {
+                    name: "Studio Plan",
+                    price: "$49",
+                    billing: "monthly",
+                    features: [
+                      "300 render generations per month",
+                      "Team support and multi-user access",
+                      "Advanced customization controls",
+                      "Project folder management",
+                      "Premium features",
+                      "Business usage license"
+                    ],
+                    targetUser: "Small teams and studios"
+                  },
+                  {
+                    name: "Business Plan",
+                    price: "$199",
+                    billing: "monthly",
+                    features: [
+                      "5000 renders per month",
+                      "Enhanced support",
+                      "Full feature access",
+                      "Enterprise-level functionality",
+                      "Multiple user management"
+                    ],
+                    targetUser: "Large businesses and enterprises"
                   }
-                ]
+                ],
+                annualDiscount: true,
+                discountAvailable: "20% OFF coupon codes available",
+                trialAvailable: false
               }
             },
             useCases: [
-              "Concept sketch visualization",
-              "Rapid design iteration",
-              "Client presentation preparation",
-              "Architecture concept development",
-              "Quick design validation"
+              "Architectural visualization and presentation",
+              "Interior design concept development",
+              "2D sketch to 3D model conversion",
+              "CAD file generation from images",
+              "Professional presentations and client proposals",
+              "Educational projects and student work",
+              "Real estate development visualization",
+              "Design portfolio enhancement",
+              "Texture creation for 3D models",
+              "Virtual staging and interior decoration"
             ],
-            userRating: 4.0,
-            lastUpdated: "2025-10-28"
+            integrations: [
+              "SketchUp (3D model export)",
+              "Rhino (3D model compatibility)",
+              "Revit (3D model support)",
+              "3ds Max (3D model integration)",
+              "Various CAD software compatibility",
+              "Web-based platform access"
+            ],
+            companyInfo: {
+              name: "GL Technologies (Archsynth)",
+              founded: "2024",
+              userStats: {
+                users: "176,582+ Trusted Users",
+                renders: "15,698,726+ Renders created",
+                countries: "140+ countries served",
+                clients: "100,000+ Users trust Archsynth",
+                institutions: ["Stanford University", "Siemens", "New York University", "ISG Inc", "Moore Yaski Sivan Architects"]
+              },
+              support: {
+                email: "team@archsynth.com",
+                reviews: "https://www.archsynth.com/reviews",
+                contact: "Available through website"
+              },
+              socialMedia: {
+                facebook: "https://www.facebook.com/people/Archsynth/100083539234165",
+                instagram: "https://www.instagram.com/archsynth"
+              },
+              accreditations: [
+                "7 Days Money Back Guarantee",
+                "Trusted by prestigious institutions",
+                "Market-leading comprehensive AI solution"
+              ],
+              customerTestimonials: [
+                "\"This feels like magic, saved me so much time. excellent design as well,very easy to use I would easily give it a perfect 10/10 rating!\" - Barbora V, Prague",
+                "\"As a small-scale architect who also handles design work for my clients, I cannot stress enough how invaluable this app has been for my business... it has allowed me to double my fees and client absolutely love my work\" - Architect, Santa Monica",
+                "\"This feels like magic, saved me so much time\" - Architect, Strabag",
+                "\"My co-workers' jaws were on the floor when I showed them what I made with ArchSynth\" - Architect, Prague"
+              ],
+              valueProposition: "Save $500+ per month compared to using multiple separate AI apps"
+            },
+            userRating: 4.7,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "visoid",
             name: "Visoid",
-            description: "AI-powered content creation for architects",
+            description: "Quick and easy AI rendering software for architects that cuts visualization time by up to 90%",
             image: "/screenshots/www_visoid_com_.webp",
             url: "https://www.visoid.com/",
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Visoid is an AI-powered rendering platform designed specifically for architects, delivering professional architectural visualizations in seconds while cutting rendering time by up to 90%. The platform offers 'AI rendering, done right' with comprehensive content creation capabilities that integrate seamlessly with any 3D application, making professional visualization accessible and efficient for architectural practices of all sizes.",
+            detailedDescription: "Visoid is 'Quick and easy rendering software for architects, powered by AI' that enables users to 'Render your 3D models with ease' and 'Bring your 3D models to life' in seconds. Developed by an Oslo-based team with backgrounds in both architecture and technology, Visoid delivers 'coherent, high quality visualizations in a matter of seconds' while cutting visualization time by up to 90%. The platform offers flexible plugin or image-based inputs, making it compatible with any 3D design application on the market and enabling architects to 'create content in a matter of hours that would have cost thousands of dollars and weeks to create.'",
             keyFeatures: [
-              "Fast 3D model rendering (seconds, not hours)",
-              "Material experimentation and replacement",
-              "Lighting and season variations",
+              "Simple and fast 3D model rendering in seconds",
+              "Material experimentation and design alternatives testing",
+              "Lighting and seasonal variations for project showcasing",
+              "Flexible plugin or image-based input compatibility",
+              "Works with any 3D design application on the market",
+              "Alternative workflows: enhance existing renderings, render collages",
+              "3-step rendering process: Set up → Export → Render",
+              "Video export capabilities (Premium plan)",
+              "3D model upload functionality",
               "Multi-prompt support for creative exploration",
-              "MaterialID control for precise adjustments",
-              "Site renders and collages",
-              "Up to 4K resolution output"
+              "MaterialID control for precise material adjustments",
+              "Post-production enhancement for Twinmotion, Enscape, 3ds Max"
             ],
+            technicalSpecs: {
+              supportedPlatforms: ["Web-based application", "Plugin integration"],
+              supportedFormats: ["Image uploads", "3D model files via plugin", "Enhanced renders"],
+              exportOptions: ["Up to 4K resolution", "Video export", "Standard resolution 1k", "Medium resolution up to 2k"],
+              collaboration: false,
+              apiAvailable: true,
+              mobileSupport: false,
+              renderSpeed: "Seconds average",
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
             pricing: {
               freeTier: {
-                features: ["30 renders/month", "Basic functionality", "Standard resolution"]
+                features: [
+                  "30 renders per month",
+                  "Standard resolution 1k",
+                  "Personal license for single user",
+                  "No credit card needed"
+                ],
+                limitations: ["Limited to 30 renders/month", "Standard resolution only"]
               },
               paid: {
                 plans: [
                   {
                     name: "Pro",
-                    price: "$29/month",
-                    features: ["1000 renders", "High resolution", "Advanced materials"]
+                    price: "$29",
+                    billing: "monthly",
+                    discountedPrice: "$20",
+                    billing: "billed annually",
+                    features: [
+                      "1000 renders per month",
+                      "Medium resolution up to 2k",
+                      "Personal license for single user",
+                      "For quickly visualizing your design"
+                    ],
+                    targetUser: "Individual architects needing quick visualization"
                   },
                   {
                     name: "Premium",
-                    price: "$59/month",
-                    features: ["3000 renders", "4K resolution", "Priority support"]
-                  },
-                  {
-                    name: "Team",
-                    price: "from $59/user/month",
-                    features: ["Collaboration tools", "Team management", "Custom workflows"]
+                    price: "$59",
+                    billing: "monthly",
+                    discountedPrice: "$41",
+                    billing: "billed annually",
+                    features: [
+                      "3000 renders per month",
+                      "High resolution up to 4k",
+                      "Video export",
+                      "3D model upload",
+                      "Multi-prompt support",
+                      "Material control with MaterialID",
+                      "Always up-to-date with latest features",
+                      "Personal license for single user"
+                    ],
+                    targetUser: "Professional visualization work",
+                    popular: true
                   }
-                ]
-              },
-              enterprisePlan: true
+                ],
+                educationalDiscount: "50% off for students and teachers",
+                enterprisePlan: true,
+                annualSavings: "Save 30% with yearly billing",
+                trialAvailable: true
+              }
             },
             useCases: [
-              "Design iteration and concept development",
-              "Client presentations and approvals",
-              "Marketing materials and portfolios",
-              "Planning permission applications",
-              "Early-stage visualization",
-              "Material and lighting exploration"
+              "Architectural visualization and concept development",
+              "Design iteration and material exploration",
+              "Client presentations and convincing visualizations",
+              "Early-stage storytelling for projects",
+              "Marketing materials and portfolio enhancement",
+              "Post-production enhancement of existing renderings",
+              "Site photo integration and collage rendering",
+              "Educational projects and student work"
             ],
-            userRating: 4.4,
-            lastUpdated: "2025-10-28"
+            integrations: [
+              "Any 3D design application via image input",
+              "Plugin integration for direct import",
+              "Twinmotion enhancement workflow",
+              "Enscape post-production",
+              "3ds Max rendering improvement",
+              "Photoshop collage rendering"
+            ],
+            companyInfo: {
+              name: "Visoid",
+              founded: "Oslo-based team",
+              headquarters: "Oslo, Norway",
+              founders: [
+                {
+                  name: "Mark",
+                  role: "Former architect and visualization designer",
+                  background: "Started working in 3ds max at age 16, intersection between architecture and technology"
+                },
+                {
+                  name: "Joachim",
+                  role: "CTO",
+                  background: "Former product developer and software engineer at Equinor, 5+ years experience in AI and data analytics"
+                }
+              ],
+              support: {
+                email: "contact@visoid.com",
+                contactForm: "Available on website",
+                apiDocs: "https://app.visoid.com/docs"
+              },
+              socialMedia: {
+                instagram: "https://www.instagram.com/visoidai/",
+                career: "https://visoid.homerun.co/?lang=en"
+              },
+              mission: "Revolutionize the world of architectural visualization by combining expertise in digital product development with creating stunning visualizations",
+              customerTestimonials: [
+                "\"With Visoid we can create content in a matter of hours that would have cost thousands of dollars and weeks to create.\" - Erin and Carlin Guthrie, PANL",
+                "\"Without Visoid, telling a story in such an early phase would be impossible. We no longer need to block out time for more experienced designers... Visoid is easily learned and used by anyone.\" - Andy Wise, Mortenson",
+                "\"Visoid sped up and significantly shortened the preparation of the visual part of my project presentations. It allows me to very, really very quickly create both advanced concepts and quick images used for marketing in social media.\" - Tomasz Wuczynski, wuczynski.studio"
+              ]
+            },
+            userRating: 4.5,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "lumion",
@@ -1471,18 +2229,18 @@ export const categories: Category[] = [
                 plans: [
                   {
                     name: "Lumion View",
-                    price: "Contact for pricing",
-                    features: ["Basic rendering capabilities", "Standard asset library", "720p/1080p output"]
+                    price: "$229/year",
+                    features: ["Early-stage design rendering", "Real-time visualization", "Basic asset library", "Lumion Cloud included", "14-day money-back guarantee"]
                   },
                   {
                     name: "Lumion Pro",
-                    price: "Contact for pricing",
-                    features: ["Advanced AI upscaler", "Full asset library", "8K output", "Professional effects"]
+                    price: "$1,149/year",
+                    features: ["Advanced visualization", "High-quality rendering", "Full asset library", "AI-powered features", "8K output support", "Lumion Cloud included", "14-day money-back guarantee"]
                   },
                   {
                     name: "Lumion Studio",
-                    price: "Contact for pricing",
-                    features: ["All Pro features", "Multi-seat licensing", "Priority support", "Advanced integrations"]
+                    price: "$1,499/year",
+                    features: ["Complete team workflow", "All Pro features", "Multi-seat licensing", "Priority support", "Advanced integrations", "Lumion Cloud included", "14-day money-back guarantee"]
                   }
                 ]
               },
@@ -1547,24 +2305,57 @@ export const categories: Category[] = [
               "Windows-based desktop application"
             ],
             pricing: {
-              freeTier: {
-                features: ["Community version", "Basic rendering", "Core functionality"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Pro",
-                    price: "Contact for pricing",
-                    features: ["Solo professional features", "Advanced tools", "Priority support"]
-                  },
-                  {
-                    name: "Teams",
-                    price: "Contact for pricing",
-                    features: ["Team collaboration", "Studio management", "Volume licensing"]
-                  }
-                ]
-              },
-              freeForEducation: true
+              hasFreePlan: true,
+              plans: [
+                {
+                  name: "Community",
+                  price: "Free",
+                  features: [
+                    "Real-time rendering capabilities",
+                    "Core functionality",
+                    "Basic asset library",
+                    "Non-commercial use only",
+                    "Windows-based desktop application"
+                  ]
+                },
+                {
+                  name: "Pro",
+                  price: "$30/month",
+                  yearlyPrice: "$360/year",
+                  features: [
+                    "Commercial use license",
+                    "Full AI features access",
+                    "Complete 14,000+ asset library",
+                    "Advanced rendering tools",
+                    "Priority support",
+                    "LiveSync workflow"
+                  ]
+                },
+                {
+                  name: "Teams",
+                  price: "$59/month per seat",
+                  features: [
+                    "All Pro features included",
+                    "Team collaboration capabilities",
+                    "Studio management tools",
+                    "Virtual tour integration",
+                    "Volume licensing options",
+                    "Team project sharing",
+                    "Priority team support"
+                  ]
+                },
+                {
+                  name: "Education",
+                  price: "Free",
+                  features: [
+                    "Free for students and educators",
+                    "Access to most Pro features",
+                    "Full asset library access",
+                    "Educational use only",
+                    "Academic verification required"
+                  ]
+                }
+              ]
             },
             useCases: [
               "Architectural visualization",
@@ -1613,9 +2404,66 @@ export const categories: Category[] = [
               "Multi-platform integration"
             ],
             pricing: {
-              trialAvailable: true,
-              freeForEducation: true,
-              custom: ["Educational licenses up to 80% off", "Free trial with training", "Custom business pricing"]
+              hasFreePlan: false,
+              freeTrialDays: 30,
+              plans: [
+                {
+                  name: "V-Ray Solo",
+                  price: "$54/month",
+                  yearlyPrice: "$540/year",
+                  features: [
+                    "Named license for single user",
+                    "V-Ray for one host application",
+                    "AI Enhancer and AI Upscaler",
+                    "Chaos Cosmos asset library access",
+                    "Basic support"
+                  ]
+                },
+                {
+                  name: "V-Ray Premium",
+                  price: "$119.90/month",
+                  yearlyPrice: "$718.80/year",
+                  features: [
+                    "Floating license for multiple users",
+                    "V-Ray for all supported host applications",
+                    "Full AI feature suite (AI Enhancer, Upscaler, Material Generator)",
+                    "Complete Chaos Cosmos asset library",
+                    "Veras AI animation transformation",
+                    "Priority support",
+                    "Chaos Cloud rendering credits"
+                  ]
+                },
+                {
+                  name: "V-Ray Enterprise",
+                  price: "$59.90/month per seat",
+                  yearlyPrice: "$598.80/year",
+                  features: [
+                    "5-seat minimum for studios",
+                    "All Premium features included",
+                    "Volume licensing options",
+                    "Advanced team collaboration",
+                    "Dedicated support",
+                    "Custom deployment options"
+                  ]
+                },
+                {
+                  name: "V-Ray Education",
+                  price: "Free for students & educators",
+                  features: [
+                    "Full V-Ray functionality",
+                    "Educational use only",
+                    "Requires academic verification",
+                    "Same features as Premium",
+                    "Educational support resources"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "3-year subscription options available",
+                "Render nodes for distributed rendering",
+                "Chaos Cloud pay-per-use rendering",
+                "Educational discounts up to 80% off"
+              ]
             },
             useCases: [
               "Architectural visualization",
@@ -1852,40 +2700,109 @@ export const categories: Category[] = [
           {
             id: "indesignify",
             name: "Indesignify",
-            description: "AI-powered interior redesign in seconds",
+            description: "AI-powered interior redesign tool that transforms spaces in seconds with photorealistic renders",
             image: "/screenshots/indesignify_com_.webp",
             url: "https://indesignify.com/",
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
-            detailedDescription: "Indesignify is an AI-powered interior design platform that enables users to redesign their interior spaces in seconds using advanced artificial intelligence. The platform simplifies the interior redesign process, making professional-quality design accessible to homeowners and designers without requiring extensive technical knowledge or time investment.",
+            detailedDescription: "Indesignify is an innovative AI-powered interior design platform that enables users to 'Transform Your Space with AI-Powered Design' and 'Create stunning room transformations in seconds.' With the tagline 'Redesign your interior in seconds using AI,' Indesignify offers three core transformation modes: 'Vacant to Finished' for furnishing empty spaces, 'Transform Your Room' for style changes, and 'Design from Scratch' for complete customization. The platform supports 8+ room types and 40+ materials, delivering photorealistic renders with construction maintenance.",
             keyFeatures: [
-              "AI-powered interior redesign",
-              "Seconds-level design generation",
-              "Professional interior design quality",
-              "User-friendly interface",
-              "Rapid design iteration"
+              "AI-powered interior redesign in seconds",
+              "Vacant to Finished: Furnish empty spaces instantly",
+              "Transform Your Room: Apply different styles to existing rooms",
+              "Design from Scratch: Generate from user preferences",
+              "8+ room types supported (Living room, Bedroom, Kitchen, Bathroom, Dining Room, Home Office, Kids room, Media Room)",
+              "40+ materials available (Wood, Glass, Metal, Marble, Leather, Fabric, Concrete, Brick, Stone, etc.)",
+              "10+ color palettes (Soft Neutrals, Coastal Calm, Nordic Lights, Forest Retreat, etc.)",
+              "Photorealistic renders that maintain construction elements",
+              "High resolution output quality",
+              "Sketch and SketchUp to photorealistic renders transformation",
+              "User-friendly interface requiring no design experience"
             ],
+            technicalSpecs: {
+              supportedPlatforms: ["Web-based application"],
+              supportedFormats: ["Image uploads", "Sketch files", "SketchUp models"],
+              exportOptions: ["High resolution images", "Photorealistic renders"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true,
+              renderSpeed: "Seconds average",
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
             pricing: {
+              freeTier: {
+                features: [
+                  "Free 30 transformations",
+                  "Small watermark",
+                  "Personal use only",
+                  "Maintains construction elements",
+                  "High photorealism",
+                  "High resolution output"
+                ],
+                limitations: ["Limited to 30 transformations", "Personal use only", "Small watermark"]
+              },
               paid: {
                 plans: [
                   {
-                    name: "Professional",
-                    price: "Contact for pricing",
-                    features: ["AI redesign capabilities", "High quality output", "Commercial use"]
+                    name: "Pay as you go",
+                    price: "€0.070",
+                    billing: "per generation",
+                    features: [
+                      "Pay as you go (no subscription needed)",
+                      "No watermark",
+                      "Commercial License",
+                      "Maintains construction",
+                      "High photorealism",
+                      "High resolution"
+                    ],
+                    targetUser: "Users wanting flexibility without subscription",
+                    popular: true
                   }
                 ]
-              }
+              },
+              trialAvailable: true,
+              noCreditCardRequired: true
             },
             useCases: [
-              "Interior space redesign",
-              "Home decoration planning",
-              "Design inspiration and visualization",
-              "Rapid interior design prototyping",
+              "Interior space redesign and transformation",
+              "Empty room furnishing and decoration",
+              "Style changes and room makeovers",
+              "Photorealistic rendering for presentations",
+              "Home decoration planning and visualization",
+              "Real estate property enhancement",
+              "Interior design prototyping and concept development",
               "Professional design consultation support"
             ],
-            userRating: 4.0,
-            lastUpdated: "2025-10-28"
+            integrations: [
+              "Sketch to photorealistic renders",
+              "SketchUp model transformation",
+              "Image upload and processing",
+              "Web-based accessibility from any device"
+            ],
+            companyInfo: {
+              name: "Indesignify",
+              support: {
+                privacyPolicy: "https://indesignify.com/privacy",
+                refundPolicy: "https://indesignify.com/refund",
+                termsOfService: "https://indesignify.com/tos",
+                sitemap: "https://indesignify.com/sitemap.xml"
+              },
+              uniqueFeatures: [
+                "24-hour user gallery showcasing recent creations",
+                "Real-time transformation notifications",
+                "Sales popup verification system",
+                "Comprehensive FAQ section"
+              ],
+              userExperience: {
+                easyToUse: "User-friendly interface that simplifies interior design process",
+                noExperienceRequired: "No design experience needed",
+                instantResults: "Instant Results capability"
+              }
+            },
+            userRating: 4.2,
+            reviewCount: 0,
+            lastUpdated: "2025-10-30"
           },
           {
             id: "designai",
@@ -2239,51 +3156,77 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
-            detailedDescription: "Renovate AI is a comprehensive AI-powered home renovation platform that transforms rooms instantly with professional results. With over 100,000+ rooms transformed and a 4.8-star average rating, the platform enables users to upload photos, choose from modern, rustic, coastal, or curated styles, and watch their rooms transform in seconds. The complete AI renovation toolbox includes features like furniture preview, virtual staging, wall paint visualization, clean-up tools, upscaling, elevation improvements, and even landscaping capabilities.",
+            detailedDescription: "Renovate AI is a revolutionary home design application that uses advanced artificial intelligence and generative models to help users get inspired, visualize, and plan their home renovation projects. The app transforms how homeowners, real estate agents, and designers approach interior and exterior remodeling by providing instant, photorealistic design visualizations. With over 8,400 App Store ratings and a 4.7-star rating, Renovate AI has become one of the most trusted home design tools on the market. The platform serves thousands of daily renovators across 50+ design styles, making professional-quality design accessible to everyone regardless of their design experience.",
             keyFeatures: [
-              "Instant room transformation in seconds",
-              "Complete AI renovation toolbox",
-              "Furniture preview for placement testing",
-              "Virtual staging with realistic furniture",
-              "Wall paint color visualization",
-              "One-click clutter removal",
-              "Image upscaling for high-quality exports",
-              "2D to 3D-like elevation improvements",
-              "Exterior transformation capabilities",
-              "Landscaping design tools"
+              "Instant AI-powered room renovations using your phone's camera or photos",
+              "50+ design styles including Modern, Rustic, Traditional, Farmhouse, and Contemporary",
+              "AI virtual staging for empty rooms and property listings",
+              "Exterior home renovation visualization with curb appeal enhancements",
+              "Landscape design and outdoor renovation capabilities",
+              "Interior elevation transformations and wall color changes",
+              "Sketch rendering technology for architectural-style visualizations",
+              "AI image upscaling to 4K and 8K resolution for high-quality outputs",
+              "Custom material applications including flooring, walls, furniture",
+              "Before-and-after comparison tools for design presentation"
             ],
             pricing: {
-              freeTier: {
-                features: ["3 credits total", "Access to all styles", "10-second turnaround", "Watermark on images", "Basic cloud storage"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Starter",
-                    price: "$13/month",
-                    features: ["50 credits/month", "Access to all interior styles", "Limited tool access", "Unlimited storage for generated designs"],
-                    billing: "monthly",
-                    targetUser: "Homeowners and DIY enthusiasts"
-                  },
-                  {
-                    name: "Pro",
-                    price: "$24/month",
-                    features: ["250 credits/month", "Unlimited tools", "20+ outdoor styles", "Early access to new features", "Everything in Starter"],
-                    billing: "monthly",
-                    targetUser: "Professional designers and real estate agents"
-                  }
-                ]
-              }
+              hasFreePlan: true,
+              freeTrialDays: 7,
+              plans: [
+                {
+                  name: "Starter",
+                  price: "$13/month",
+                  features: [
+                    "100 AI generations per month",
+                    "Basic design styles (15+)",
+                    "Standard resolution outputs",
+                    "Mobile app access",
+                    "Basic editing tools"
+                  ]
+                },
+                {
+                  name: "Professional",
+                  price: "$24/month",
+                  features: [
+                    "500 AI generations per month",
+                    "All 50+ design styles",
+                    "High-resolution outputs (up to 4K)",
+                    "Priority processing",
+                    "Advanced editing tools",
+                    "Commercial usage rights"
+                  ]
+                },
+                {
+                  name: "Business Pilot",
+                  price: "$99/month",
+                  features: [
+                    "Unlimited AI generations",
+                    "All premium design styles",
+                    "Ultra-high resolution (up to 8K)",
+                    "API access for integration",
+                    "White-label options",
+                    "Priority support",
+                    "Team collaboration features",
+                    "Batch processing capabilities"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "Pay-per-use credit system available",
+                "50% educational discount for students and teachers",
+                "Enterprise custom pricing for large teams",
+                "Annual billing saves 20% compared to monthly plans"
+              ]
             },
             useCases: [
-              "Home renovation visualization",
-              "Real estate staging and marketing",
-              "Interior design concept development",
-              "Furniture placement testing",
-              "Color scheme experimentation",
-              "Exterior home redesign",
-              "Landscape design planning",
-              "Client presentations and approvals"
+              "Real estate agents virtually staging properties to increase buyer interest",
+              "Homeowners planning renovations and visualizing design possibilities before construction",
+              "Interior designers creating quick client presentations and design concepts",
+              "Contractors showing clients potential renovation outcomes during bidding",
+              "Architects adding visualization capabilities to their design workflow",
+              "Property investors improving home aesthetics before listing sales",
+              "DIY home renovators exploring design options without expensive software",
+              "Furniture retailers showcasing products in client room contexts"
             ],
             integrations: [
               "Photo upload from multiple sources",
@@ -2292,19 +3235,25 @@ export const categories: Category[] = [
               "Mobile and web compatibility"
             ],
             companyInfo: {
-              founded: "2024",
-              userStats: {
-                users: "100,000+ rooms transformed",
-                rating: "4.8★ average rating"
-              },
-              support: {
-                email: true,
-                contact: true,
-                faq: true
-              },
-              socialMedia: {
-                instagram: "https://www.instagram.com/renovateai.ai/"
-              }
+              founded: "2023",
+              employees: "11-50",
+              location: "United States",
+              revenue: "$1-5M",
+              funding: "Seed",
+              description: "Trial and Error, Inc. is a technology company focused on democratizing home design through artificial intelligence. The company has grown rapidly since its founding, serving thousands of daily users across the residential real estate and home renovation markets. Renovate AI has been featured in major tech publications and has established partnerships with leading real estate agencies and design firms. The company prioritizes user data security, ensuring all designs are stored securely in the cloud and never used for AI training purposes."
+            },
+            userStats: {
+              description: "Renovate AI has achieved significant market penetration in the competitive home design app market with impressive user engagement and satisfaction metrics:",
+              stats: [
+                "8,400+ App Store ratings with 4.7/5 average rating",
+                "1,000+ daily active renovators using the platform",
+                "50+ different design styles available for customization",
+                "Ranked #45 in Graphics & Design category on App Store",
+                "4.8/5 rating on App Store with recent user feedback",
+                "125.6 MB app size compatible with iPhone, iPad, Mac, and Vision Pro",
+                "4.4.64 latest version with continuous feature updates",
+                "Available in 150+ countries with multi-language support"
+              ]
             },
             userRating: 4.8,
             lastUpdated: "2025-10-30"
