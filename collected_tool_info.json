@@ -1,0 +1,180 @@
+{
+  "summary": {
+    "total": 5,
+    "successful": 4,
+    "failed": 1,
+    "averageResponseTime": 1617
+  },
+  "levelDistribution": {
+    "level0": 1,
+    "level1": 4,
+    "level2": 0,
+    "level3": 0
+  },
+  "results": [
+    {
+      "id": "aitwo",
+      "name": "AiTwo",
+      "url": "https://aitwo.co/",
+      "assessment": {
+        "toolId": "aitwo",
+        "url": "https://aitwo.co/",
+        "responseTime": 1548,
+        "accessible": true,
+        "estimatedLevel": 1,
+        "dataHints": [
+          "pricing"
+        ],
+        "keyPages": [],
+        "collectionConfidence": 0.8,
+        "notes": "估算等级: Level 1, 导航项: 0, 页面大小: 17539"
+      },
+      "collectedInfo": {
+        "toolId": "aitwo",
+        "url": "https://aitwo.co/",
+        "infoLevel": 1,
+        "success": true,
+        "collectedAt": "2025-10-30T13:19:03.914Z",
+        "sources": [
+          "https://aitwo.co/"
+        ],
+        "confidenceLevel": 0.8,
+        "collectionTime": 329,
+        "detailedDescription": "详细信息正在收集中...",
+        "coreFeatures": [
+          "功能信息收集中..."
+        ],
+        "pricingModel": "付费版本"
+      }
+    },
+    {
+      "id": "maket-ai",
+      "name": "Maket AI",
+      "url": "https://www.maket.ai/",
+      "assessment": {
+        "toolId": "maket-ai",
+        "url": "https://www.maket.ai/",
+        "responseTime": 1413,
+        "accessible": true,
+        "estimatedLevel": 1,
+        "dataHints": [
+          "pricing"
+        ],
+        "keyPages": [],
+        "collectionConfidence": 0.8,
+        "notes": "估算等级: Level 1, 导航项: 0, 页面大小: 13536"
+      },
+      "collectedInfo": {
+        "toolId": "maket-ai",
+        "url": "https://www.maket.ai/",
+        "infoLevel": 1,
+        "success": true,
+        "collectedAt": "2025-10-30T13:19:03.815Z",
+        "sources": [
+          "https://www.maket.ai/"
+        ],
+        "confidenceLevel": 0.8,
+        "collectionTime": 289,
+        "detailedDescription": "详细信息正在收集中...",
+        "coreFeatures": [
+          "功能信息收集中..."
+        ],
+        "pricingModel": "付费版本"
+      }
+    },
+    {
+      "id": "arkdesign-ai",
+      "name": "Arkdesign AI",
+      "url": "https://arkdesign.ai/",
+      "assessment": {
+        "toolId": "arkdesign-ai",
+        "url": "https://arkdesign.ai/",
+        "responseTime": 2311,
+        "accessible": true,
+        "estimatedLevel": 1,
+        "dataHints": [
+          "pricing"
+        ],
+        "keyPages": [],
+        "collectionConfidence": 0.8,
+        "notes": "估算等级: Level 1, 导航项: 0, 页面大小: 25554"
+      },
+      "collectedInfo": {
+        "toolId": "arkdesign-ai",
+        "url": "https://arkdesign.ai/",
+        "infoLevel": 1,
+        "success": true,
+        "collectedAt": "2025-10-30T13:19:08.480Z",
+        "sources": [
+          "https://arkdesign.ai/"
+        ],
+        "confidenceLevel": 0.8,
+        "collectionTime": 235,
+        "detailedDescription": "详细信息正在收集中...",
+        "coreFeatures": [
+          "功能信息收集中..."
+        ],
+        "pricingModel": "付费版本"
+      }
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "url": "https://midjourney.com/",
+      "assessment": {
+        "toolId": "midjourney",
+        "url": "https://midjourney.com/",
+        "responseTime": 1088,
+        "accessible": false,
+        "estimatedLevel": 0,
+        "dataHints": [],
+        "keyPages": [],
+        "collectionConfidence": 0.5,
+        "notes": "无法访问: undefined"
+      },
+      "collectedInfo": {
+        "toolId": "midjourney",
+        "infoLevel": 0,
+        "success": false,
+        "error": "无法访问",
+        "collectedAt": "2025-10-30T13:19:07.022Z"
+      }
+    },
+    {
+      "id": "roomgpt",
+      "name": "RoomGPT",
+      "url": "https://www.roomgpt.io/",
+      "assessment": {
+        "toolId": "roomgpt",
+        "url": "https://www.roomgpt.io/",
+        "responseTime": 1727,
+        "accessible": true,
+        "estimatedLevel": 1,
+        "dataHints": [
+          "pricing"
+        ],
+        "keyPages": [],
+        "collectionConfidence": 0.8,
+        "notes": "估算等级: Level 1, 导航项: 0, 页面大小: 4330"
+      },
+      "collectedInfo": {
+        "toolId": "roomgpt",
+        "url": "https://www.roomgpt.io/",
+        "infoLevel": 1,
+        "success": true,
+        "collectedAt": "2025-10-30T13:19:12.475Z",
+        "sources": [
+          "https://www.roomgpt.io/"
+        ],
+        "confidenceLevel": 0.8,
+        "collectionTime": 257,
+        "detailedDescription": "详细信息正在收集中...",
+        "coreFeatures": [
+          "功能信息收集中..."
+        ],
+        "pricingModel": "付费版本"
+      }
+    }
+  ],
+  "generatedAt": "2025-10-30T13:19:12.477Z"
+}

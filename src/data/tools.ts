@@ -2849,31 +2849,93 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
-            detailedDescription: "Decorion is a personal AI interior designer that provides customized interior design solutions tailored to individual preferences and needs. The platform leverages artificial intelligence to deliver personalized design recommendations, style guidance, and space planning assistance, making professional interior design accessible to everyone regardless of design experience.",
+            detailedDescription: "Decorion is an innovative AI-powered interior design assistant that helps users visualize interior design concepts before implementation, significantly reducing errors, time, and unnecessary costs. The platform transforms the traditional interior design process by enabling users to upload room images, choose from multiple design styles, and generate stunning interior design options in just 30 seconds. With mobile apps available and a three-step simple process, Decorion makes personalized interior design efficient, affordable, and hassle-free for everyone.",
             keyFeatures: [
-              "Personal AI interior designer",
-              "Customized design recommendations",
-              "Personalized style guidance",
-              "Space planning assistance",
-              "Interior design expertise"
+              "AI-powered interior design generation in 30 seconds",
+              "Upload room images and get instant design transformations",
+              "Multiple design styles and themes to choose from",
+              "100-1500 image renders depending on selected plan",
+              "Mobile app support for on-the-go designing",
+              "Three-step simple design process",
+              "Professional-quality interior design outputs",
+              "Cost-effective visualization before implementation"
             ],
             pricing: {
-              paid: {
-                plans: [
-                  {
-                    name: "Professional",
-                    price: "Contact for pricing",
-                    features: ["Personal AI designer", "Custom designs", "Professional consultation"]
-                  }
-                ]
-              }
+              hasFreePlan: false,
+              plans: [
+                {
+                  name: "Starter Plan",
+                  price: "$15",
+                  features: [
+                    "100 AI-generated interior design renders",
+                    "Basic design styles and themes",
+                    "Mobile app access",
+                    "Perfect for design enthusiasts",
+                    "One-time purchase"
+                  ]
+                },
+                {
+                  name: "Premium Plan",
+                  price: "$50",
+                  features: [
+                    "500 AI-generated interior design renders",
+                    "Extended design style library",
+                    "High-resolution output options",
+                    "Priority processing",
+                    "Mobile app access",
+                    "Email support"
+                  ],
+                  popular: true
+                },
+                {
+                  name: "Pro Plan",
+                  price: "$100",
+                  features: [
+                    "1,500 AI-generated interior design renders",
+                    "Complete design style collection",
+                    "Ultra-high resolution outputs",
+                    "Priority processing",
+                    "Advanced customization options",
+                    "Mobile app access",
+                    "Priority customer support",
+                    "Commercial usage rights"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "Pay-per-use credit system available",
+                "All renders are one-time purchases",
+                "Mobile apps available for iOS and Android",
+                "No subscription required"
+              ]
+            },
+            companyInfo: {
+              founded: "2023",
+              industry: "Interior Design Technology",
+              description: "Decorion is a technology company specializing in AI-powered interior design solutions. The platform was created to bridge the gap between creative aspirations and practical outcomes, making personalized interior design efficient, affordable, and hassle-free for everyone. Decorion has established itself as an innovative player in the AI interior design market with its user-friendly approach and mobile accessibility."
+            },
+            userStats: {
+              description: "Decorion has gained significant traction in the AI interior design market with its accessible pricing and user-friendly approach:",
+              stats: [
+                "2,000+ monthly website visitors indicating strong user interest",
+                "40.88% bounce rate showing good user engagement",
+                "1.91 pages per visit average indicating thorough exploration",
+                "30-second average design generation time",
+                "Mobile apps available for iOS and Android platforms",
+                "Three-step simple design process for accessibility",
+                "Pay-per-use model allowing flexible budget control",
+                "No subscription required reducing barriers to entry"
+              ]
             },
             useCases: [
-              "Personalized interior design",
-              "Space planning and layout",
-              "Style consultation and guidance",
-              "Home decoration advice",
-              "Interior design project assistance"
+              "Homeowners visualizing design concepts before implementation",
+              "Interior designers creating quick client presentations",
+              "Real estate agents staging properties virtually",
+              "Design enthusiasts experimenting with different styles",
+              "Renovation planning with before/after visualizations",
+              "Space planning and layout optimization",
+              "Budget-conscious design exploration",
+              "Mobile on-the-go design consultations"
             ],
             userRating: 4.2,
             lastUpdated: "2025-10-28"
@@ -2899,29 +2961,68 @@ export const categories: Category[] = [
               "Custom style creation based on landscapes/emotions/artists"
             ],
             pricing: {
-              freeTier: {
-                features: ["10 credits/month", "Basic AI design generation"],
-                limitations: ["Limited credits", "Basic features only"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Monthly",
-                    price: "$9-$180/month",
-                    features: ["More credits", "Advanced features", "Priority support"]
-                  },
-                  {
-                    name: "Lifetime",
-                    price: "$175-$2,495 one-time",
-                    features: ["Unlimited designs", "All features", "Best value"]
-                  },
-                  {
-                    name: "Pay-as-you-go",
-                    price: "$19-$129",
-                    features: ["Credit packs", "Flexible usage", "No commitment"]
-                  }
-                ]
-              }
+              hasFreePlan: true,
+              freeCredits: 5,
+              plans: [
+                {
+                  name: "Free Plan",
+                  price: "Free",
+                  features: [
+                    "5 free credits per month",
+                    "Basic AI design generation",
+                    "Standard quality output",
+                    "Square image format only",
+                    "Personal use only"
+                  ],
+                  limitations: ["Limited credits", "Basic features only", "Watermarked images"]
+                },
+                {
+                  name: "Premium Plan",
+                  price: "$9/month",
+                  features: [
+                    "500 credits per month",
+                    "HD quality rendering",
+                    "All interior design styles",
+                    "Custom style creation",
+                    "No watermarks",
+                    "Priority support",
+                    "High-resolution exports"
+                  ],
+                  popular: true
+                },
+                {
+                  name: "Pro Plan",
+                  price: "$36/month",
+                  features: [
+                    "2000+ credits per month",
+                    "Unlimited HD rendering",
+                    "360° interior views",
+                    "Video walkthrough generation",
+                    "AI image upscaling and enhancement",
+                    "Advanced editing tools",
+                    "Priority processing",
+                    "Dedicated support"
+                  ]
+                },
+                {
+                  name: "Lifetime Plans",
+                  price: "$175 - $2,495 one-time",
+                  features: [
+                    "Unlimited designs forever",
+                    "All Premium and Pro features",
+                    "No monthly payments",
+                    "Best value for frequent users",
+                    "All future updates included",
+                    "Priority lifetime support"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "Pay-as-you-go credit packs available ($19-$129)",
+                "Custom enterprise solutions for large teams",
+                "Multi-user discounts available",
+                "30-day money-back guarantee on paid plans"
+              ]
             },
             useCases: [
               "Virtual staging for real estate listings",
@@ -2932,6 +3033,30 @@ export const categories: Category[] = [
               "Design portfolio creation",
               "Client presentations and approvals"
             ],
+            companyInfo: {
+              founded: "2023",
+              industry: "Interior Design Technology",
+              description: "AI4Spaces is a technology company specializing in AI-powered interior design solutions. The platform has established itself as a comprehensive tool for homeowners, interior designers, and real estate professionals seeking to create dream spaces through artificial intelligence. With flexible pricing options including lifetime plans and credit packs, AI4Spaces has made professional interior design accessible to a broad audience.",
+              support: {
+                email: true,
+                knowledgeBase: true,
+                tutorials: true,
+                moneyBackGuarantee: "30-day money-back guarantee"
+              }
+            },
+            userStats: {
+              description: "AI4Spaces has gained significant traction in the AI interior design market with its comprehensive features and flexible pricing:",
+              stats: [
+                "40+ different interior design styles available",
+                "10-30 second average room transformation time",
+                "Support for both residential and commercial space design",
+                "Professional-grade visualization quality",
+                "Custom style creation based on landscapes, emotions, and artists",
+                "HD rendering and AI image upscaling capabilities",
+                "360° interior view and video walkthrough generation",
+                "Pay-as-you-go credit system for flexible budgeting"
+              ]
+            },
             integrations: [
               "Photo upload from multiple sources",
               "Sketch and 3D render support",
@@ -2962,20 +3087,56 @@ export const categories: Category[] = [
               "Mobile and desktop compatible"
             ],
             pricing: {
-              freeTier: {
-                features: ["1 free room generation", "Basic design themes", "Standard quality output"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Premium Plans",
-                    price: "60% off with FLASH60 code",
-                    features: ["Unlimited generations", "Advanced design themes", "High-quality output", "Priority processing"],
-                    billing: "monthly",
-                    targetUser: "Homeowners and designers"
-                  }
-                ]
-              }
+              hasFreePlan: true,
+              freeGenerations: 1,
+              plans: [
+                {
+                  name: "30 Credits Package",
+                  price: "$9",
+                  features: [
+                    "30 room redesigns",
+                    "Access to every design option available",
+                    "Standard quality output",
+                    "Google authentication",
+                    "Mobile and desktop access"
+                  ],
+                  description: "Perfect for small projects or testing the platform"
+                },
+                {
+                  name: "100 Credits Package",
+                  price: "$19",
+                  features: [
+                    "100 room redesigns",
+                    "All design themes and styles",
+                    "High-quality output",
+                    "Priority processing",
+                    "Multiple room projects",
+                    "Cost-effective at $0.19 per room"
+                  ],
+                  description: "Most popular choice for homeowners",
+                  popular: true
+                },
+                {
+                  name: "200 Credits Package",
+                  price: "$29",
+                  features: [
+                    "200 room redesigns",
+                    "All Premium features included",
+                    "Unlimited design variations",
+                    "Fast processing",
+                    "Multiple room projects",
+                    "Best value at $0.145 per room"
+                  ],
+                  description: "Best value for extensive redesign projects"
+                }
+              ],
+              additionalPricing: [
+                "No monthly subscriptions required",
+                "Credit-based system for flexible usage",
+                "Discount codes occasionally available (e.g., FLASH60)",
+                "Credits never expire",
+                "Professional-quality results"
+              ]
             },
             useCases: [
               "Home renovation planning",
@@ -2989,9 +3150,8 @@ export const categories: Category[] = [
             ],
             companyInfo: {
               founded: "2023",
-              userStats: {
-                users: "2+ million users"
-              },
+              industry: "Interior Design Technology",
+              description: "RoomGPT is a technology company that has revolutionized the interior design industry with its AI-powered room transformation platform. Founded with the vision to make professional interior design accessible to everyone, RoomGPT has grown to serve over 2 million users globally, helping them transform spaces without the need for expensive interior designers.",
               support: {
                 email: "hassan@roomgpt.io",
                 socialMedia: true
@@ -2999,6 +3159,20 @@ export const categories: Category[] = [
               socialMedia: {
                 twitter: "https://twitter.com/nutlope"
               }
+            },
+            userStats: {
+              description: "RoomGPT has achieved remarkable growth and user adoption in the competitive AI interior design market:",
+              stats: [
+                "2+ million users worldwide",
+                "Free trial with 1 generation to test the platform",
+                "Google authentication for easy and secure access",
+                "Credit-based pricing system starting at $9 for 30 generations",
+                "Cost-effective as low as $0.145 per room redesign",
+                "Professional-quality results that rival traditional interior design",
+                "Mobile and desktop compatible for on-the-go designing",
+                "Multiple design themes and styles available",
+                "Single photo transformation technology eliminating complexity"
+              ]
             },
             userRating: 4.6,
             lastUpdated: "2025-10-30"
@@ -5188,7 +5362,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "real-estate",
             subcategory: "property-visualization",
-            detailedDescription: "AI HomeDesign is a comprehensive AI-powered toolbox specifically designed for real estate professionals, offering 10+ instant photo editing tools that transform property listings into MLS-ready visuals. The platform provides professional-grade virtual staging, item removal, image enhancement, and day-to-dusk conversion at just $0.24 per photo. With flexible subscription plans and enterprise solutions, AI HomeDesign serves individual agents, brokerages, and large real estate organizations.",
+            detailedDescription: "AI HomeDesign is a fast, intuitive AI-powered platform that revolutionizes real estate photo editing by transforming property photos into professional MLS-ready visuals in approximately 30 seconds. Designed specifically for real estate agents, photographers, stagers, interior designers, and contractors, the platform uses advanced artificial intelligence to deliver photo-realistic results without requiring technical skills or design experience. The platform accepts multiple file formats (JPG, JPEG, PNG, WEBP, HEIC) up to 50MB and provides users with full rights to download and use edited images for real estate marketing across major platforms including MLS, Zillow, Realtor.com, and Redfin.",
             keyFeatures: [
               "10+ AI-powered real estate photo editing tools",
               "AI virtual staging with realistic furniture",
@@ -5202,38 +5376,78 @@ export const categories: Category[] = [
               "No credit card required for free trial"
             ],
             technicalSpecs: {
-              supportedFormats: ["JPG", "PNG", "WEBP"],
-              exportOptions: ["High-resolution JPG", "PNG", "Print-ready formats"],
-              renderSpeed: "Instant processing under 10 seconds",
+              supportedFormats: ["JPG", "JPEG", "PNG", "WEBP", "HEIC"],
+              maxFileSize: "50MB per file",
+              exportOptions: ["High-resolution JPG", "PNG", "MLS-ready formats"],
+              renderSpeed: "Approximately 30 seconds per image",
               collaboration: false,
               apiAvailable: true,
               mobileSupport: true,
-              systemRequirements: ["Modern web browser", "Stable internet"]
+              systemRequirements: ["Modern web browser", "Stable internet connection"],
+              watermark: "Free plan includes watermarked images"
             },
             pricing: {
-              freeTier: {
-                features: ["5 free photos", "Basic editing tools", "No credit card required"],
-                limitations: ["Limited photos", "Basic features only"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Pro",
-                    price: "$35/month ($19/month yearly)",
-                    features: ["30 photos per month", "All tools included", "Unlimited regenerations"]
-                  },
-                  {
-                    name: "Pro Plus",
-                    price: "$59/month ($29/month yearly)",
-                    features: ["80 photos per month", "Priority processing", "Advanced features"]
-                  },
-                  {
-                    name: "Enterprise",
-                    price: "$99/month ($49/month yearly)",
-                    features: ["200 photos per month", "API access", "Team collaboration", "Custom solutions"]
-                  }
-                ]
-              }
+              hasFreePlan: true,
+              freeTrialCredits: 5,
+              payPerUse: "$0.24 per photo",
+              plans: [
+                {
+                  name: "Free Trial",
+                  price: "Free",
+                  features: [
+                    "5 free photo credits",
+                    "Basic AI editing tools",
+                    "No credit card required",
+                    "Watermarked images",
+                    "Full usage rights for marketing"
+                  ]
+                },
+                {
+                  name: "Pro Plan",
+                  price: "Starting at $16/month",
+                  features: [
+                    "Professional-grade editing tools",
+                    "30 photos per month (starting tier)",
+                    "Unlimited regenerations",
+                    "No watermark on images",
+                    "Full commercial usage rights",
+                    "MLS-ready output formats",
+                    "Priority customer support"
+                  ],
+                  popular: true
+                },
+                {
+                  name: "Professional Plus",
+                  price: "$35/month",
+                  features: [
+                    "80 photos per month",
+                    "All Pro Plan features included",
+                    "Priority processing",
+                    "Advanced editing capabilities",
+                    "Batch processing options",
+                    "Enhanced customer support"
+                  ]
+                },
+                {
+                  name: "Enterprise",
+                  price: "Custom pricing",
+                  features: [
+                    "200+ photos per month",
+                    "API access for integration",
+                    "Team collaboration features",
+                    "Custom workflow solutions",
+                    "Dedicated account manager",
+                    "White-label options available",
+                    "Unlimited commercial usage"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "Pay-per-use option available at $0.24 per photo",
+                "Annual billing discounts available",
+                "Custom enterprise pricing for large organizations",
+                "Free trial with 5 credits to test platform"
+              ]
             },
             useCases: [
               "Real estate photo enhancement and editing",
@@ -5255,9 +5469,26 @@ export const categories: Category[] = [
             companyInfo: {
               founded: "2022",
               headquarters: "United States",
-              teamSize: "Small team",
               industry: "Real Estate Technology",
-              userBase: "100,000+ real estate professionals"
+              description: "AI HomeDesign is a technology company specializing in AI-powered solutions for the real estate industry. The platform has established itself as a leader in real estate photo editing, serving professionals across the United States and international markets with innovative tools that transform how property photos are edited and marketed.",
+              support: {
+                email: "support@aihomedesign.com",
+                knowledgeBase: true,
+                tutorials: true
+              }
+            },
+            userStats: {
+              description: "AI HomeDesign has gained significant traction among real estate professionals for its efficiency and professional results:",
+              stats: [
+                "100,000+ real estate professionals using the platform",
+                "10+ AI-powered photo editing tools available",
+                "$0.24 per photo cost-effective pricing model",
+                "30-second average processing time per image",
+                "Support for 5 major file formats (JPG, JPEG, PNG, WEBP, HEIC)",
+                "Full commercial usage rights for all edited images",
+                "Integration compatible with major real estate platforms (MLS, Zillow, Realtor.com, Redfin)",
+                "5-free credit trial system for new users"
+              ]
             },
             userRating: 4.8,
             lastUpdated: "2025-10-30"
@@ -5271,7 +5502,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "real-estate",
             subcategory: "property-visualization",
-            detailedDescription: "IACrea is a sophisticated AI-powered platform specializing in virtual interior and exterior home staging, delivering professional results in just 30 seconds. Based in Europe, IACrea offers advanced AI-driven solutions for furnishing, redecorating, decluttering, and modifying both interiors and exteriors. The platform also provides unique video creation capabilities from static photos, making it a comprehensive solution for real estate professionals seeking to enhance their property marketing with cutting-edge AI technology.",
+            detailedDescription: "IACrea is a revolutionary AI-powered virtual staging platform founded in 2023 by French engineers, designed to help users envision themselves in real estate properties through rapid interior and exterior transformations. Delivering professional-quality results in just 30 seconds, IACrea serves over 3,000 real estate professionals with its innovative approach to virtual home staging. The platform combines advanced artificial intelligence with an intuitive interface, enabling users to redecorate, renovate, furnish interiors and beautify exteriors with remarkable speed and realism, featuring over 25,000 unique exterior design options.",
             keyFeatures: [
               "Virtual staging in 30 seconds or less",
               "Interior and exterior home staging",
@@ -5294,29 +5525,62 @@ export const categories: Category[] = [
               systemRequirements: ["Modern web browser", "Internet connection"]
             },
             pricing: {
-              freeTier: {
-                features: ["Limited trial images", "Basic staging options"],
-                limitations: ["Watermarked outputs", "Limited features"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Occasional",
-                    price: "$28.50 (one-time)",
-                    features: ["5 photo credits", "Full features", "No hidden fees", "Watermark-free"]
-                  },
-                  {
-                    name: "Mini",
-                    price: "$13.30/month",
-                    features: ["10 photo credits per month", "All staging tools", "Monthly rollover"]
-                  },
-                  {
-                    name: "Star of Home Staging",
-                    price: "$32.50/month",
-                    features: ["Individual subscription", "Unlimited styles", "Priority support", "Video creation"]
-                  }
-                ]
-              }
+              hasFreePlan: true,
+              freeTrialDays: 7,
+              plans: [
+                {
+                  name: "Free Trial",
+                  price: "Free",
+                  features: [
+                    "Limited trial images",
+                    "Basic staging options",
+                    "Test all features",
+                    "7-day access"
+                  ],
+                  limitations: ["Watermarked outputs", "Limited credits"]
+                },
+                {
+                  name: "Occasional Need",
+                  price: "$38 (one-time)",
+                  features: [
+                    "5 photo credits (one-time)",
+                    "Full staging features",
+                    "Interior and exterior staging",
+                    "No watermarks",
+                    "No hidden fees"
+                  ]
+                },
+                {
+                  name: "Mini Individual",
+                  price: "$18/month",
+                  features: [
+                    "10 photo credits per month",
+                    "All staging tools included",
+                    "Interior and exterior staging",
+                    "Monthly credit rollover",
+                    "Unlimited design styles"
+                  ],
+                  popular: true
+                },
+                {
+                  name: "Home Staging Star",
+                  price: "$25/month",
+                  features: [
+                    "Individual professional subscription",
+                    "Unlimited design styles",
+                    "Priority customer support",
+                    "Video creation capabilities",
+                    "All Mini features included",
+                    "Advanced customization options"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "Combined Photo + Video plans available with 15% discount",
+                "White-label solutions for businesses",
+                "Custom enterprise pricing available",
+                "Video creation add-on features"
+              ]
             },
             useCases: [
               "Professional virtual staging for real estate listings",
@@ -5336,11 +5600,24 @@ export const categories: Category[] = [
               "Video hosting platforms"
             ],
             companyInfo: {
-              founded: "2021",
-              headquarters: "Belgium",
-              teamSize: "Small team",
+              founded: "2023",
+              headquarters: "France",
+              founders: "French engineers",
               industry: "Real Estate Technology",
-              userBase: "25,000+ users"
+              description: "IACrea was founded in 2023 by French engineers with a vision to revolutionize virtual home staging using artificial intelligence. The company has quickly established itself as an innovative leader in the European real estate technology market, providing cutting-edge AI solutions that help real estate professionals and property owners transform spaces quickly and realistically."
+            },
+            userStats: {
+              description: "IACrea has gained significant traction among real estate professionals for its speed and quality:",
+              stats: [
+                "3,000+ real estate professionals using the platform",
+                "25,000+ unique exterior design options available",
+                "30-second average transformation time",
+                "Founded in 2023 by French engineering team",
+                "Advanced AI-powered interior and exterior staging",
+                "Video creation capabilities from static photos",
+                "7-day free trial for new users",
+                "White-label solutions available for businesses"
+              ]
             },
             userRating: 4.5,
             lastUpdated: "2025-10-30"
