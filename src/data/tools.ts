@@ -3722,7 +3722,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging",
-            detailedDescription: "Decoratly is an AI room design platform that transforms any space in 30 seconds with professional-quality results. Used by 50,000+ homeowners and interior designers, the platform offers 50+ styles, AI chat assistance, and Google Shopping integration for seamless furniture purchasing.",
+            detailedDescription: "Decoratly is a leading AI-powered interior design platform that transforms any room in just 30 seconds with professional-quality results. With over 50,000+ happy users and a 4.9/5 star rating, Decoratly has become the go-to solution for homeowners and interior designers seeking instant room makeovers. The platform combines sophisticated AI technology developed by former interior designers and computer vision experts with over 20 years of combined experience, offering 127,000+ design transformations to date.",
             keyFeatures: [
               "30-second room transformations",
               "50+ professional design styles",
@@ -3734,14 +3734,58 @@ export const categories: Category[] = [
               "Precision controls for customization"
             ],
             pricing: {
-              model: "one-time purchase",
-              startingPrice: "$2.99",
-              freeTrial: "2 free transformations",
+              hasFreePlan: true,
+              freeTrialDesigns: 2,
               plans: [
                 {
-                  name: "Premium",
-                  price: "$2.99",
-                  features: ["Unlimited designs", "All styles", "AI chat assistant", "Shopping integration", "30-day guarantee"]
+                  name: "Free Trial",
+                  price: "Free",
+                  features: [
+                    "2 room designs",
+                    "3 professional styles (Modern, Scandinavian, Dark Modern)",
+                    "Basic quality output",
+                    "No credit card required"
+                  ]
+                },
+                {
+                  name: "24 Hours Access",
+                  price: "$4.99",
+                  features: [
+                    "Unlimited designs for 24 hours",
+                    "50+ professional styles",
+                    "AI chat assistant",
+                    "Google Shopping integration",
+                    "Makeover and Enhance modes",
+                    "4K quality export"
+                  ]
+                },
+                {
+                  name: "7 Days Access",
+                  price: "$8.99",
+                  features: [
+                    "Unlimited designs for 7 days",
+                    "All 50+ professional styles",
+                    "AI chat design assistant",
+                    "Google Shopping integration",
+                    "Style Builder for custom designs",
+                    "4K quality export",
+                    "Priority support"
+                  ]
+                },
+                {
+                  name: "1 Month Access",
+                  price: "$16.99",
+                  features: [
+                    "Unlimited designs for 30 days",
+                    "Complete style library access",
+                    "Advanced AI design assistant",
+                    "Full shopping integration",
+                    "Custom style creation tools",
+                    "Ultra-high quality export",
+                    "Priority customer support",
+                    "30-day money-back guarantee"
+                  ],
+                  popular: true
                 }
               ]
             },
@@ -3757,10 +3801,23 @@ export const categories: Category[] = [
             companyInfo: {
               founded: "2023",
               headquarters: "San Francisco, CA",
-              teamSize: "Small team",
-              industry: "Interior Design Technology"
+              teamSize: "Small team of interior designers and computer vision experts",
+              industry: "Interior Design Technology",
+              description: "Founded by former interior designers and computer vision experts with over 20 years of combined experience, Decoratly brings professional interior design capabilities to everyone through AI technology."
             },
-            userRating: 4.7,
+            userStats: {
+              description: "Decoratly has achieved rapid growth and high user satisfaction in the competitive AI interior design market:",
+              stats: [
+                "50,000+ happy homeowners and designers using the platform",
+                "4.9/5 star average user rating across all platforms",
+                "127,000+ successful room design transformations completed",
+                "50+ professional interior design styles available",
+                "30-day money-back guarantee for customer confidence",
+                "30-second average transformation time",
+                "Google Shopping integration for seamless furniture purchasing"
+              ]
+            },
+            userRating: 4.9,
             lastUpdated: "2025-10-30"
           },
           {
@@ -4998,7 +5055,7 @@ export const categories: Category[] = [
             isPaid: false,
             category: "real-estate",
             subcategory: "property-visualization",
-            detailedDescription: "ReimagineHome AI is a revolutionary AI-powered virtual staging platform founded by Styldod in 2023, designed specifically for the real estate industry. The platform enables real estate agents and homeowners to transform property photos with hyper-realistic virtual staging, interior redesign, landscaping, and home enhancement features. With affordable monthly plans starting at $14, ReimagineHome makes professional-quality virtual staging accessible to everyone, helping properties sell faster and at higher prices.",
+            detailedDescription: "ReimagineHome AI is a leading AI-powered virtual staging and interior design platform developed by Styldod, Inc., transforming real estate and home design visualization across 190+ countries worldwide. With over 1.5 million registered users and 23 million+ designs generated, the platform has become an essential tool for real estate professionals, homeowners, and interior designers. The platform's innovative 'one photo, one prompt, total transformation' approach enables users to virtually stage empty rooms, redesign furnished spaces, enhance landscapes, and visualize home renovations with remarkable speed and realism.",
             keyFeatures: [
               "AI-powered virtual staging with realistic furniture",
               "Interior redesign and remodeling visualization",
@@ -5021,29 +5078,67 @@ export const categories: Category[] = [
               systemRequirements: ["Modern web browser", "Internet connection"]
             },
             pricing: {
-              freeTier: {
-                features: ["Basic virtual staging", "Limited designs", "Watermarked images"],
-                limitations: ["Watermark on images", "Limited styles"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Starter",
-                    price: "$14/month",
-                    features: ["30 credits per month", "No watermark", "Basic styles", "Virtual staging"]
-                  },
-                  {
-                    name: "Professional",
-                    price: "$39/month",
-                    features: ["100 credits per month", "Premium styles", "Landscaping", "Interior redesign"]
-                  },
-                  {
-                    name: "Agency",
-                    price: "$99/month",
-                    features: ["1200+ credits per month", "API access", "All features", "Priority support"]
-                  }
-                ]
-              }
+              hasFreePlan: true,
+              freeCredits: 5,
+              plans: [
+                {
+                  name: "Essential",
+                  price: "$14/month",
+                  features: [
+                    "20 credits per month",
+                    "Basic virtual staging tools",
+                    "Interior redesign capabilities",
+                    "No watermark on images",
+                    "Standard quality output",
+                    "Email support"
+                  ]
+                },
+                {
+                  name: "Optimal",
+                  price: "$29/month",
+                  features: [
+                    "150 credits per month",
+                    "Full design freedom",
+                    "Complete virtual staging suite",
+                    "Furniture swapping capabilities",
+                    "Landscaping design tools",
+                    "High-resolution output",
+                    "Priority support"
+                  ],
+                  popular: true
+                },
+                {
+                  name: "Advanced",
+                  price: "$49/month",
+                  features: [
+                    "400 credits per month",
+                    "All Optimal features included",
+                    "Batch processing (up to 10 photos)",
+                    "Advanced customization options",
+                    "Commercial usage rights",
+                    "Priority customer support"
+                  ]
+                },
+                {
+                  name: "Premium",
+                  price: "$99/month",
+                  features: [
+                    "1000 credits per month",
+                    "Agency bundle features",
+                    "API access for integration",
+                    "White-label options",
+                    "Dedicated account manager",
+                    "Custom solutions available",
+                    "Unlimited commercial usage"
+                  ]
+                }
+              ],
+              additionalPricing: [
+                "Image support up to 25MB",
+                "Credits rollover option available",
+                "Custom enterprise pricing",
+                "5 free credits for new users"
+              ]
             },
             useCases: [
               "Virtual staging for empty properties",
@@ -5063,11 +5158,23 @@ export const categories: Category[] = [
               "Email marketing platforms"
             ],
             companyInfo: {
+              name: "Styldod, Inc.",
               founded: "2023",
               headquarters: "United States",
-              teamSize: "Small team",
               industry: "Real Estate Technology",
-              userBase: "50,000+ users"
+              description: "Styldod, Inc. is a technology company specializing in AI-powered solutions for the real estate industry. ReimagineHome AI has quickly become a global leader in virtual staging and property visualization, serving professionals across 190+ countries with innovative AI technology that transforms how properties are marketed and sold."
+            },
+            userStats: {
+              description: "ReimagineHome AI has achieved remarkable global adoption and user engagement in the competitive real estate technology market:",
+              stats: [
+                "1.5 million+ registered users worldwide",
+                "23 million+ AI designs generated to date",
+                "190+ countries with active users",
+                "5 free credits for every new user",
+                "Broad user base: real estate agents, homeowners, interior designers, outdoor professionals, and brands",
+                "Platform supports multiple image formats up to 25MB",
+                "Batch processing capability for professional users"
+              ]
             },
             userRating: 4.6,
             lastUpdated: "2025-10-30"
