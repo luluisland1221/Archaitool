@@ -1474,33 +1474,47 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Visualizee AI is a powerful AI-powered visualization platform that transforms ideas into photorealistic renders in seconds, not minutes. The platform eliminates complex software learning curves by offering multiple AI models for converting sketches, wireframes, and concepts into stunning visualizations, supporting professionals across architecture, interior design, product development, and marketing industries.",
+            detailedDescription: "Visualizee AI is a powerful AI-powered visualization platform that transforms ideas into photorealistic renders in seconds, not minutes. Trusted by over 10,000 users worldwide with an impressive 4.8/5 rating, the platform eliminates complex software learning curves by offering multiple AI models for converting sketches, wireframes, and concepts into stunning visualizations. Visualizee AI supports professionals across architecture, interior design, product development, and marketing industries with features like AI rendering, text-to-image generation, 4K upscaling, motion mode, and comprehensive project organization.",
             keyFeatures: [
               "AI-powered rendering from text prompts",
               "Sketch-to-photorealistic conversion",
-              "Image-to-3D model transformation",
+              "Text-to-image generation",
               "4K upscaling for professional presentations",
+              "Motion mode for dynamic visualizations",
+              "Project organization capabilities",
               "Multiple rendering modes (Inspiration, Render, Motion)",
               "Infinite canvas workspace (Figma-like interface)",
               "Chat-based prompting assistance",
-              "Real-time processing in seconds"
+              "Real-time processing in seconds",
+              "Trusted by 10,000+ users with 4.8/5 rating"
             ],
             pricing: {
               freeTier: {
-                features: ["200 credits", "Up to 5 renders", "7-day access"],
-                limitations: ["Basic AI models", "Standard resolution"]
+                features: ["200 credits", "Up to 5 renders", "Basic AI rendering features"],
+                limitations: ["Limited credits", "Standard resolution", "No advanced features"]
               },
               paid: {
                 plans: [
                   {
                     name: "Hobby",
                     price: "$15/month",
-                    features: ["7,500 credits", "Up to 250 renders", "Multiple AI models"]
+                    billing: "monthly",
+                    features: ["750 credits per month", "Multiple AI models", "Basic project organization", "Standard support"],
+                    targetUser: "Individual users and hobbyists"
                   },
                   {
                     name: "Pro",
                     price: "$35/month",
-                    features: ["19,250 credits", "Up to 641 renders", "4K upscaling", "Commercial license"]
+                    billing: "monthly",
+                    features: ["1,925 credits per month", "4K upscaling", "Motion mode", "Commercial license", "Advanced project organization", "Priority support"],
+                    targetUser: "Professional designers and studios"
+                  },
+                  {
+                    name: "Max",
+                    price: "$80/month",
+                    billing: "monthly",
+                    features: ["4,800 credits per month", "Unlimited 4K upscaling", "Advanced motion features", "Commercial license", "Premium project organization", "Priority support"],
+                    targetUser: "Power users and large teams"
                   }
                 ]
               }
@@ -1520,8 +1534,22 @@ export const categories: Category[] = [
               "Web-based standalone platform",
               "4K image export"
             ],
-            userRating: 4.3,
-            lastUpdated: "2025-10-28"
+            companyInfo: {
+              founded: "2023",
+              headquarters: "Poland",
+              founder: "Piotr Obidowski",
+              support: {
+                email: "support@visualizee.ai",
+                responseTime: "Professional support team"
+              },
+              userStats: {
+                users: "10,000+",
+                rating: "4.8/5",
+                trustLevel: "Highly trusted by professionals"
+              }
+            },
+            userRating: 4.8,
+            lastUpdated: "2025-01-31"
           },
           {
             id: "arko-ai",
@@ -3789,10 +3817,16 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging",
-            detailedDescription: "SofaBrain is an advanced AI interior design app that has transformed over 1,376,850 spaces and is trusted by 253,438+ professionals. The platform offers instant virtual staging, room redesign, and walkthrough video generation for real estate agents, interior designers, and homeowners.",
+            detailedDescription: "SofaBrain is an advanced AI interior design app serving 253,438+ professionals with over 1,376,850 spaces redesigned. The platform offers instant virtual staging, room redesign, and walkthrough video generation with an impressive 5.0 rating from 4,800+ reviews. Trusted by major real estate companies including Redfin, Zillow, and Century 21, SofaBrain provides clutter removal, style switching across 27+ design options, and professional-grade results for real estate agents, interior designers, and homeowners.",
             keyFeatures: [
+              "5.0 rating with 4,800+ reviews",
+              "253,438+ professional users worldwide",
+              "1,376,850+ spaces successfully redesigned",
+              "Trusted by Redfin, Zillow, and Century 21",
               "Generate walkthrough videos",
-              "40 different interior design styles",
+              "27+ different interior design styles",
+              "Clutter removal for clean presentations",
+              "Style switching and customization",
               "Real-time transformation preview",
               "Smart room advice and recommendations",
               "Furniture swapping and customization",
@@ -3802,18 +3836,27 @@ export const categories: Category[] = [
             ],
             pricing: {
               model: "freemium",
-              startingPrice: "paid plans available",
               freeTrial: "3 free renders",
               plans: [
                 {
                   name: "Free",
                   price: "$0",
-                  features: ["3 free renders", "Basic styles", "Standard resolution"]
+                  features: ["3 free renders", "Basic styles", "Standard resolution"],
+                  targetUser: "First-time users testing the platform"
                 },
                 {
-                  name: "Pro",
-                  price: "contact for pricing",
-                  features: ["Unlimited renders", "All styles", "Video generation", "High-resolution exports"]
+                  name: "Basic",
+                  price: "$18/month",
+                  billing: "monthly",
+                  features: ["Virtual staging", "Style switching", "Standard resolution", "Email support"],
+                  targetUser: "Individual agents and homeowners"
+                },
+                {
+                  name: "Standard",
+                  price: "$29/month",
+                  billing: "monthly",
+                  features: ["Unlimited renders", "All 27+ styles", "Video generation", "High-resolution exports", "Priority support", "Clutter removal"],
+                  targetUser: "Professional teams and agencies"
                 }
               ]
             },
@@ -3830,10 +3873,11 @@ export const categories: Category[] = [
               founded: "2023",
               headquarters: "San Francisco, CA",
               teamSize: "Small team",
-              industry: "Real Estate Technology"
+              industry: "Real Estate Technology",
+              trustLevel: "Trusted by Redfin, Zillow, and Century 21"
             },
-            userRating: 4.8,
-            lastUpdated: "2025-10-30"
+            userRating: 5.0,
+            lastUpdated: "2025-01-31"
           },
           {
             id: "renovateai",
@@ -4011,16 +4055,18 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging",
-            detailedDescription: "FloorDesign.ai is a free AI-powered floor design platform that creates professional floor designs online with no signup required. The platform offers photorealistic rendering, smart recommendations, and advanced customization across 25+ design styles, trusted by design professionals worldwide.",
+            detailedDescription: "FloorDesign.ai is a completely free AI floor design tool with no signup required, offering professional-grade floor design capabilities with 25+ design styles. Trusted by 150K+ design projects with an impressive 98% satisfaction rate, the platform provides three design studios in one comprehensive solution. FloorDesign.ai delivers photorealistic rendering with smart recommendations and advanced customization, making professional floor design accessible to everyone without any upfront commitment.",
             keyFeatures: [
-              "Free AI design generations",
-              "No signup required",
+              "150K+ completed design projects with 98% satisfaction",
+              "Completely free with no signup required",
+              "Three design studios in one platform",
               "25+ professional design styles",
               "Photorealistic ray-tracing rendering",
               "Smart furniture placement recommendations",
               "Advanced customization controls",
               "Collaboration tools and sharing",
-              "Design library with brand furniture"
+              "Design library with brand furniture",
+              "Professional-grade capabilities at zero cost"
             ],
             pricing: {
               model: "freemium",
