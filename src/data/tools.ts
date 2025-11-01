@@ -2213,10 +2213,12 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Lumion is industry-leading 3D rendering software that empowers architects, designers, and visualization professionals to bring spaces to life with stunning real-time rendering. Known for its intuitive workflow and exceptional speed, Lumion transforms complex 3D models into breathtaking visualizations, making professional architectural visualization accessible without the traditional technical barriers and time constraints.",
+            detailedDescription: "Lumion is industry-leading 3D rendering software that transforms architectural design workflows with real-time rendering capabilities, making high-end visualization fast, intuitive, and stress-free for architects, landscape architects, interior designers, and urban planners worldwide. With over 25 years of pioneering real-time 3D visualization technology, Lumion integrates seamlessly with all major CAD and BIM tools, including the revolutionary AI image upscaler in Lumion Pro 2025 that renders up to 5x faster. The platform serves professionals across architecture, landscape design, interior design, and urban planning with its comprehensive Lumion Cloud collaboration platform included free with all subscriptions.",
             keyFeatures: [
-              "Real-time ray tracing technology",
-              "AI-powered image upscaler (5x faster rendering)",
+              "Real-time ray tracing technology in modeling tools",
+              "AI image upscaler in Lumion Pro 2025 (renders up to 5x faster)",
+              "Lumion Cloud collaboration platform (free with all subscriptions)",
+              "Seamless integration with all major CAD and BIM software",
               "High-quality asset library with thousands of objects",
               "Customizable FX stacks and post-processing",
               "Atmospheric controls (lighting, weather, seasons)",
@@ -2496,16 +2498,19 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
-            detailedDescription: "Rendera AI is an innovative AI-powered design generator that transforms spaces into beautiful, professionally-styled renders in seconds. The platform specializes in interior, exterior, and landscape visualization through simple photo uploads, offering region-specific designs based on climate and architecture while maintaining a flexible pay-per-use model without subscription commitments.",
+            detailedDescription: "Rendera AI is an innovative AI-powered interior, exterior, and landscape design tool that transforms spaces into beautiful, professionally-styled renders in seconds. Trusted by homeowners, architects, and designers worldwide, the platform offers a simple three-step process: upload photos, describe desired styles, and generate stunning redesigns in 30 seconds. Rendera AI provides localized design results based on regional climate and architecture, with flexible pay-per-use pricing and no subscription commitments. The tool features sketch-to-render transformations and serves both residential and commercial design needs.",
             keyFeatures: [
               "Photo-to-design transformation",
               "Interior, exterior, and landscape design",
               "30-second AI generation",
+              "Simple 3-step process: upload, describe, generate",
               "Custom design instructions and style guidance",
               "Region-specific climate-based designs",
+              "Localized design results",
               "Sketch-to-render transformation",
               "Before/after visualization",
-              "Pay-per-use credit system"
+              "Pay-per-use credit system (no subscriptions)",
+              "Trusted by homeowners, architects, and designers"
             ],
             pricing: {
               paid: {
@@ -2604,18 +2609,18 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
-            detailedDescription: "Archi AI is a revolutionary AI-powered design tool that enables both professionals and individuals to create unlimited, photo-realistic renders of any space in seconds. Using advanced AI technology, Archi AI transforms uploaded photos of interior or exterior spaces into stunning design visualizations, helping users explore endless design possibilities without the need for traditional 3D modeling expertise.",
+            detailedDescription: "Archi AI is a revolutionary AI-powered interior and exterior design tool that generates photo-like renders in seconds, featuring 'an AI model that is nothing like you've seen before: natural, unique and creative.' The platform enables both professionals and individuals to transform uploaded photos of any space into stunning design visualizations, offering unlimited designs with no watermarks and commercial usage rights. Archi AI eliminates the need for traditional 3D modeling expertise while delivering professional-quality results for living rooms, bedrooms, kitchens, bathrooms, and dining rooms.",
             keyFeatures: [
               "Generate photo-like images in seconds",
+              "Revolutionary AI model: 'natural, unique and creative'",
               "Interior and exterior space design",
               "Support for living room, bedroom, kitchen, bathroom, and dining room",
+              "Unlimited designs with no watermarks",
+              "Commercial usage rights included",
               "AI-powered style recommendations",
               "Simple 3-step design process",
-              "Cost-effective design solution",
               "No design experience required",
-              "Unlimited design variations",
-              "Mobile-friendly interface",
-              "Natural and unique AI model outputs"
+              "Mobile-friendly interface"
             ],
             technicalSpecs: {
               supportedFormats: ["JPG", "PNG", "JPEG"],
@@ -2813,14 +2818,17 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
-            detailedDescription: "DesignAI is an AI-powered virtual assistant that provides effortless living space transformation by understanding user style preferences and recreating rooms with class. The platform enables homeowners and renters to instantly remodel various spaces using advanced algorithms that deliver professional-quality interior design transformations tailored to individual tastes.",
+            detailedDescription: "DesignAI is an AI-powered virtual assistant that provides effortless living space transformation by understanding unique user style preferences and recreating rooms with class. The platform enables homeowners and renters to instantly remodel various spaces using advanced algorithms that deliver professional-quality interior design transformations. With a free account creation process and an inspiration gallery showcasing before/after transformations, DesignAI offers multiple style options including Boho, Industrial, and Modern aesthetics for bedrooms, kitchens, restrooms, living areas, and even outdoor spaces.",
             keyFeatures: [
               "AI virtual assistant for interior design",
               "Instant room remodeling capabilities",
               "Multiple style options (Boho, Industrial, Modern)",
               "Advanced style preference algorithms",
-              "Before/after visualization",
-              "Multiple space type support"
+              "Before/after visualization gallery",
+              "Multiple space type support (bedroom, kitchen, restroom, living room, outdoor)",
+              "Free account creation",
+              "Regular gallery updates with new design transformations",
+              "Professional-quality output tailored to individual tastes"
             ],
             pricing: {
               freeTier: {
