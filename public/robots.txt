@@ -1,0 +1,66 @@
+# AI Architecture Tools - robots.txt
+# https://www.archaitool.com/
+
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all content
+Allow: /tools
+Allow: /categories
+Allow: /about
+Allow: /blog
+Allow: /resources
+Allow: /compare
+Allow: /sitemap.xml
+
+# Disallow crawling of admin and development files
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+
+# Disallow dynamic parameters that could cause duplicate content
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+
+# Allow important JS and CSS files
+Allow: *.css
+Allow: *.js
+Allow: /assets/
+Allow: /screenshots/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.archaitool.com/sitemap.xml
+Sitemap: https://www.archaitool.com/sitemap-index.xml
+
+# Special rules for specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: BaiduSpider
+Allow: /
+Crawl-delay: 2
+
+# Block unwanted crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
