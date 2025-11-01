@@ -40,7 +40,6 @@ Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://www.archaitool.com/sitemap.xml
-Sitemap: https://www.archaitool.com/sitemap-index.xml
 
 # Special rules for specific crawlers
 User-agent: Googlebot
