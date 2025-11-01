@@ -4321,7 +4321,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "landscape-design",
             subcategory: "landscape-planning",
-            detailedDescription: "YardFlip AI is a professional landscape visualization service that transforms ordinary yard photos into stunning photorealistic designs within 24-48 hours. Catering to both homeowners and landscape professionals, the platform enables users to upload existing yard photos and receive custom AI-generated designs that showcase the full potential of their outdoor spaces. With multiple design packages and rapid turnaround times, YardFlip AI bridges the gap between imagination and reality.",
+            detailedDescription: "YardFlip AI is a professional AI-powered landscape visualization service founded by Regan Kirk in 2024, rated 5/5 by homeowners internationally. The platform 'transforms your yard in 24 hours' using advanced inpainting technology to convert ordinary yard photos into stunning photorealistic designs. Serving US, AU, and NZ markets, YardFlip AI offers a 100% money-back guarantee and eliminates the need for expensive landscape contractors by providing multiple design options customized to your specific yard.",
             keyFeatures: [
               "Photorealistic yard transformations",
               "24-48 hour turnaround time",
@@ -4354,11 +4354,12 @@ export const categories: Category[] = [
                 plans: [
                   {
                     name: "Basic",
-                    price: "$45 AUD",
-                    billing: "one-time",
+                    price: "$45/month",
+                    usdPrice: "$29 USD",
                     features: [
-                      "20 custom designs",
+                      "20 yard designs",
                       "48-hour turnaround",
+                      "One area with one style",
                       "High-resolution downloads",
                       "Email delivery"
                     ],
@@ -4366,32 +4367,38 @@ export const categories: Category[] = [
                   },
                   {
                     name: "Plus",
-                    price: "$59 AUD",
-                    billing: "one-time",
+                    price: "$77/month",
+                    usdPrice: "$51 USD",
+                    yearlyPrice: "$59 AUD/year",
                     features: [
-                      "50 custom designs",
+                      "50 yard designs",
                       "24-hour turnaround",
-                      "2 presentation videos",
-                      "High-resolution downloads",
+                      "Multiple areas and styles",
+                      "2 video fly-throughs",
                       "Priority processing"
                     ],
-                    targetUser: "Professionals and detailed projects"
+                    targetUser: "Professionals and detailed projects",
+                    popular: true
                   },
                   {
                     name: "Premium",
-                    price: "$89 AUD",
-                    billing: "one-time",
+                    price: "$116/month",
+                    usdPrice: "$72 USD",
+                    yearlyPrice: "$89 AUD/year",
                     features: [
-                      "80 custom designs",
+                      "80 yard designs",
                       "24-hour turnaround",
-                      "4 presentation videos",
+                      "4 video fly-throughs",
                       "Commercial license",
                       "Priority support",
-                      "Unlimited revisions"
+                      "Customized to your specific yard"
                     ],
                     targetUser: "Commercial users and landscapers"
                   }
-                ]
+                ],
+                moneyBackGuarantee: "100% money-back guarantee",
+                turnaround: "24-48 hour processing"
+              }
               },
               trialAvailable: false,
               enterprisePlan: false
@@ -4436,16 +4443,16 @@ export const categories: Category[] = [
             isPaid: true,
             category: "landscape-design",
             subcategory: "landscape-planning",
-            detailedDescription: "AI Garden Design is a comprehensive landscape transformation platform that enables users to convert ordinary garden photos into professional landscape designs within minutes. The platform offers over 30 distinct design styles including Japanese Zen, English Cottage, and Modern Minimalist, providing users with diverse aesthetic options. With intelligent plant recommendations, realistic visualizations, and multi-view perspectives, AI Garden Design makes professional landscape planning accessible to everyone.",
+            detailedDescription: "AI Garden Design is a professional landscape transformation platform that has designed over 10,000 gardens across 50+ cities. The service converts ordinary garden photos into professional landscape designs in just 2 minutes, offering 35+ garden styles including Japanese Zen, English Cottage, and Modern Minimalist. With new users getting 3 free designs, AI Garden Design provides rapid outdoor space transformation with realistic visualizations and intelligent plant recommendations.",
             keyFeatures: [
-              "30+ professional design styles (Japanese Zen, English Cottage, Modern)",
+              "10,000+ gardens designed across 50+ cities",
+              "35+ professional design styles (Japanese Zen, English Cottage, Modern)",
+              "Transform outdoor spaces in just 2 minutes",
+              "3 free designs for new users",
               "Upload photo and get instant designs",
               "Intelligent plant recommendations",
               "Realistic visualization technology",
-              "Multi-view perspective options",
-              "Customization and personalization tools",
               "Professional quality output",
-              "Fast design generation (minutes)",
               "Mobile-friendly interface",
               "High-resolution design exports"
             ],
