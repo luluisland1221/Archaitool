@@ -3640,18 +3640,18 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging",
-            detailedDescription: "Gepetto is a professional AI-powered home staging platform that transforms property listings with subtle, realistic virtual staging. Developed in Bordeaux, France, Gepetto serves over 30 major real estate agencies including Orpi, Coldwell Banker, Century 21, and Keller Williams. The platform follows a 'Micro-Home Staging' philosophy - less is more, ensuring credibility and desirability without overwhelming potential buyers. With 30+ professionally designed styles and intelligent AI that respects real lighting, materials, and volumes.",
+            detailedDescription: "Gepetto is a professional AI-powered home staging application developed in Bordeaux, France, transforming property listings with subtle, realistic virtual staging. The platform serves major real estate agencies including Orpi, Century 21, Coldwell Banker, and Keller Williams. Gepetto follows a 'Micro-Home Staging' philosophy where less is more, noting that 80% of 'home staged' listings deter more than they attract. The platform offers 30+ interior design styles created by professional interior architects and works with JPEG, PNG, WEBP, and HEIC image formats.",
             keyFeatures: [
-              "30+ professional interior design styles",
-              "Micro-Home Staging philosophy (less is more)",
-              "Smart Staging for automatic furniture placement",
-              "Realistic lighting and volume preservation",
-              "Custom masking tools for targeted changes",
-              "Sky transformation for exterior photos",
-              "AI photo enhancement and correction",
+              "30+ interior design styles by professional architects",
+              "Micro-Home Staging philosophy - 80% of home staging deters buyers",
+              "Multiple modes: Meubler, Re-style, Ensoleiller, Desencombrement",
+              "Supports JPEG, PNG, WEBP, and HEIC image formats",
+              "Interior and exterior photo transformation",
+              "Sky transformation and lighting enhancement",
               "5-second video generation capabilities",
-              "3D sketch to photorealistic renders",
-              "Mobile app available (iOS & Android)"
+              "AI photo enhancement and correction",
+              "Mobile app available (iOS & Android)",
+              "Partnership with 30+ major real estate agencies"
             ],
             pricing: {
               freeTier: {
