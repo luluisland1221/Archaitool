@@ -1245,16 +1245,18 @@ export const categories: Category[] = [
             isPaid: false,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "3D House Planner is a completely free web-based 3D home design application that requires no installation. Built for homeowners and DIY enthusiasts, the platform enables users to build apartments and houses with professional design tools in just a few clicks, while maintaining complete privacy with no login required.",
+            detailedDescription: "3D House Planner is a completely free 3D home design software accessible through any browser with no installation required. The platform supports professional-grade design capabilities including GLB, GLTF, OBJ, and Babylon model imports, PBR materials, terrain modeling, and the ability to design up to 50 floors. Your designs remain completely private with no login required, and the software is free for both personal and commercial purposes, supported by optional donations.",
             keyFeatures: [
-              "Browser-based 3D design (no installation)",
-              "AI-powered floor plan generation from images",
-              "Build walls, floors, roofs, frames instantly",
-              "Import 3D models (GLB, GLTF, OBJ, Babylon)",
-              "Thousands of objects in catalog",
-              "Design up to 50 floors",
+              "Completely free with no installation required",
+              "Browser-based 3D design accessible anywhere",
+              "Supports GLB, GLTF, OBJ, and Babylon 3D models",
+              "Design up to 50 floors for complex buildings",
               "Physically Based Rendering (PBR) materials",
-              "Terrain modeling and painting"
+              "Advanced terrain modeling and painting tools",
+              "Thousands of objects in design catalog",
+              "No login required - complete privacy",
+              "Free for personal and commercial use",
+              "Optional donation support for development"
             ],
             pricing: {
               freeTier: {
@@ -1287,7 +1289,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            detailedDescription: "Arcadium 3D is a comprehensive browser-based 3D design platform that offers fast, intuitive house and interior design capabilities without requiring software installation. Combining clean, simple design tools with powerful AI visualization, Arcadium enables both professionals and DIY enthusiasts to create stunning 3D designs, collaborate in real-time, and generate photorealistic visualizations from any browser.",
+            detailedDescription: "Arcadium 3D is a comprehensive browser-based 3D design platform that has earned an impressive 4.9 rating from 1,043 reviews. Offering fast, intuitive house and interior design capabilities without software installation, Arcadium combines clean design tools with powerful AI visualization. Available in 12 languages and supporting both free and pro plans, the platform enables professionals and DIY enthusiasts to create stunning 3D designs, collaborate in real-time, and generate photorealistic visualizations from any browser.",
             keyFeatures: [
               "Multiple view modes (top-down, floor plan, isometric, first-person)",
               "AI-powered visualization generation",
@@ -3490,34 +3492,36 @@ export const categories: Category[] = [
               "Natural language editing"
             ],
             pricing: {
-              freeTier: {
-                features: ["Limited designs", "Watermark on images", "Basic features"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Starter Pack",
-                    price: "$20 one-time",
-                    features: ["50 image generations", "Access to style reference images", "Premium support", "Advanced AI features", "Video rendering"],
-                    billing: "onetime",
-                    targetUser: "Individual users testing platform"
-                  },
-                  {
-                    name: "Pro Pack",
-                    price: "$30 one-time",
-                    features: ["75 image generations", "Access to style reference images", "Priority support", "Advanced AI features", "Video rendering", "Style with Reality"],
-                    billing: "onetime",
-                    targetUser: "Regular users and professionals"
-                  },
-                  {
-                    name: "Studio Pack",
-                    price: "$60 one-time",
-                    features: ["250 image generations", "Access to style reference images", "Premium support", "Advanced AI features", "Video rendering", "Style with Reality"],
-                    billing: "onetime",
-                    targetUser: "Design agencies and teams"
-                  }
-                ]
-              }
+              hasFreePlan: false,
+              freeTrialAvailable: false,
+              creditBased: true,
+              plans: [
+                {
+                  name: "Starter Pack",
+                  price: "$20",
+                  credits: "50 image generations",
+                  features: ["Real Amazon products integration", "AI-powered room transformation", "Style transfer", "High-resolution exports", "Basic support"],
+                  billing: "onetime",
+                  targetUser: "Individual users testing platform"
+                },
+                {
+                  name: "Pro Pack",
+                  price: "$30",
+                  credits: "75 image generations",
+                  features: ["Enhanced AI capabilities", "Video rendering", "Style reference matching", "Natural language editing", "Priority support"],
+                  billing: "onetime",
+                  targetUser: "Regular users and professionals",
+                  popular: true
+                },
+                {
+                  name: "Studio Pack",
+                  price: "$60",
+                  credits: "250 image generations",
+                  features: ["All Pro features", "Advanced AI inpainting", "4K video exports", "Style with Reality", "Premium support", "API access"],
+                  billing: "onetime",
+                  targetUser: "Design agencies and teams"
+                }
+              ]
             },
             useCases: [
               "Interior design visualization with real products",
@@ -3762,31 +3766,43 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging",
-            detailedDescription: "Paintit.ai is an all-in-one AI interior design solution that revolutionizes spaces through artificial intelligence. The platform combines intuitive design tools with integrated shopping, offering real-time transformations and furniture recommendations tailored to your space and lifestyle needs.",
+            detailedDescription: "Paintit.ai is an AI-powered interior design platform with an impressive 4.8/5 rating from 2,450 users. Founded in 2023 and launching version 2.0 in 2025, the platform generates professional designs in just 1-2 minutes, offering virtual staging and 3D room visualization. Paintit.ai combines intuitive design tools with integrated shopping recommendations, providing real-time transformations and furniture suggestions tailored to your space and lifestyle needs.",
             keyFeatures: [
-              "Real-time design generation in 1-2 minutes",
+              "4.8/5 rating from 2,450 satisfied users",
+              "Professional design generation in just 1-2 minutes",
+              "Advanced virtual staging and 3D room visualization",
+              "Version 2.0 launched in 2025 with enhanced features",
+              "Free plan available with basic functionality",
               "Integrated furniture shopping recommendations",
               "50+ curated design styles",
               "AI chat assistant for personalized advice",
-              "Social media sharing integration",
               "High-resolution render downloads",
-              "Commercial usage license included",
-              "Lifestyle-based design adaptations"
+              "Commercial usage license included"
             ],
             pricing: {
               model: "subscription",
-              startingPrice: "$9.99/week",
-              freeTrial: "3-day guarantee",
+              freeTrialAvailable: true,
               plans: [
                 {
+                  name: "Free",
+                  price: "$0",
+                  features: ["Basic design generation", "Limited styles", "Standard resolution", "Community support"],
+                  targetUser: "Users testing the platform"
+                },
+                {
                   name: "Weekly",
-                  price: "$9.99",
-                  features: ["20 high-res renders", "Unlimited AI chats", "Real furniture suggestions", "Commercial license"]
+                  price: "$6.99",
+                  billing: "weekly",
+                  features: ["20 high-res renders", "Full style access", "Real furniture suggestions", "Commercial license"],
+                  targetUser: "Short-term projects and trials"
                 },
                 {
                   name: "Monthly",
-                  price: "$29.99",
-                  features: ["100 high-res renders", "Unlimited AI chats", "Style mixing", "7-day guarantee"]
+                  price: "$24.99",
+                  billing: "monthly",
+                  features: ["100 high-res renders", "Unlimited AI chats", "Style mixing", "Advanced features", "Priority support"],
+                  targetUser: "Regular users and professionals",
+                  popular: true
                 }
               ]
             },
