@@ -27,7 +27,7 @@ const Home = () => {
   ];
 
   useEffect(() => {
-    document.title = 'Arch AI Tool - Discover AI Tools for Architecture & Design';
+    document.title = 'Arch AI Tool - Discover the Best Architecture AI Tools | Free & Professional Solutions';
 
     // Preload first screen images
     const preloadFirstScreenImages = async () => {
@@ -78,10 +78,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-3 text-white">
-              Discover AI Tools for Architecture & Design
+              Discover the Best Architecture AI Tools
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200">
-              Your gateway to agentic architecture and AI-powered design solutions
+              Complete architecture ai tools list for design, visualization, and planning. Find free ai tools for architecture and professional solutions for architecture plans, portfolio creation, and interior design tools. Your gateway to landscape architecture solutions and comprehensive ai tools for interior design.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {configuredCategories.map((category) => (

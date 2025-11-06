@@ -197,7 +197,7 @@ const Tools = () => {
         
         {!selectedCategory && (
           <>
-            <h1 className="text-4xl font-bold mb-8">Complete AI Architecture & Design Tools Directory</h1>
+            <h1 className="text-4xl font-bold mb-8">Complete Architecture AI Tools Directory - Free & Professional Solutions</h1>
             {renderCategories()}
           </>
         )}
