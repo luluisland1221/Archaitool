@@ -38,8 +38,8 @@ const TitleUpdater = () => {
     // Check if this is a category-based tool URL
     const isCategoryToolUrl = /^\/(architectural-design|interior-design|landscape-design|design-tools|real-estate)\/[^\/]+$/.test(location.pathname);
 
-    // Handle redirects for old tool URLs
-    if (isOldToolUrl(location.pathname)) {
+    // Handle redirects for old tool URLs only in production
+    if (isOldToolUrl(location.pathname) && window.location.hostname === 'archaitool.com') {
       const redirectUrl = generateRedirectUrl(location.pathname);
       if (redirectUrl) {
         window.location.replace(`https://archaitool.com${redirectUrl}`);
