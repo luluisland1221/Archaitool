@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { configuredCategories, Tool } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
+import { generateToolUrl } from '../utils/urlHelper';
 
 const ToolDetail = () => {
   const { id } = useParams();
@@ -641,7 +642,7 @@ const ToolDetail = () => {
                   .map((relatedTool) => (
                     <Link
                       key={relatedTool.id}
-                      to={`/tool/${relatedTool.id}`}
+                      to={generateToolUrl(relatedTool.id)}
                       className="group bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-all duration-300 hover:shadow-md"
                     >
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">

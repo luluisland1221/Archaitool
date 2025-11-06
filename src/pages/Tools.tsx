@@ -4,6 +4,7 @@ import { useSearchParams, useParams, Link, useNavigate } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
+import { generateToolUrl } from '../utils/urlHelper';
 
 const Tools = () => {
   const navigate = useNavigate();
@@ -105,7 +106,7 @@ const Tools = () => {
   const ToolCard = ({ tool }) => {
     const handleCardClick = (e) => {
       e.preventDefault();
-      navigate(`/tool/${tool.id}`);
+      navigate(generateToolUrl(tool.id));
     };
 
     const isNewTool = newToolIds.includes(tool.id);

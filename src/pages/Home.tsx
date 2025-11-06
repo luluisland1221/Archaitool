@@ -5,6 +5,7 @@ import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { screenshotService } from '../services/screenshotService';
+import { generateToolUrl } from '../utils/urlHelper';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ const Home = () => {
   }, []);
 
   const handleCardClick = (toolId: string) => {
-    navigate(`/tool/${toolId}`);
+    navigate(generateToolUrl(toolId));
   };
 
   return (
@@ -133,7 +134,7 @@ const Home = () => {
                       return (
                         <div
                           key={tool.id}
-                          onClick={() => navigate(`/tool/${tool.id}`)}
+                          onClick={() => navigate(generateToolUrl(tool.id))}
                           className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative"
                         >
                           <div className="relative">
