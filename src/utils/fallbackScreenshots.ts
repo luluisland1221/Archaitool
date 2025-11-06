@@ -36,7 +36,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
 
   // Real Estate
   'collov.ai': '/screenshots/collov ai.png',
-  'www.reimaginehome.ai': '/screenshots/www_reimaginehome_ai_.png',
+  'www.reimaginehome.ai': '/screenshots/www_reimaginehome_ai_.webp',
   'aihomedesign.com': '/screenshots/aihomedesign_com_.png'
 };
 
@@ -47,8 +47,10 @@ export function getFallbackScreenshotUrl(toolUrl: string): string | null {
   try {
     const url = new URL(toolUrl);
     const domain = url.hostname.replace(/^www\./, '');
+    const hostname = url.hostname;
 
-    return FALLBACK_SCREENSHOTS[domain] || null;
+    // Try both with and without www
+    return FALLBACK_SCREENSHOTS[domain] || FALLBACK_SCREENSHOTS[hostname] || null;
   } catch {
     return null;
   }
