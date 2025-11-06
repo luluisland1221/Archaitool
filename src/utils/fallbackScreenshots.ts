@@ -62,7 +62,6 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'opal.ai': '/screenshots/www_opal_ai_com_.webp',
   'roomdeco.ai': '/screenshots/www_roomdeco_ai_.webp',
   'roomdesigner.ai': '/screenshots/www_roomdesigner_ai_.webp',
-  'roomgpt.io': '/screenshots/www_roomgpt_io_.webp',
   'spacely.ai': '/screenshots/www_spacely_ai_tools.webp',
   'spatiastudio.com': '/screenshots/www_spatiastudio_com_.webp',
   'zoyo.ai': '/screenshots/www_zoyo_ai_.webp',
