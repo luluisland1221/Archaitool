@@ -245,7 +245,7 @@ const ToolDetail = () => {
                     toolUrl={tool.url}
                     toolName={tool.name}
                     fallbackImage={tool.fallbackImage || tool.image}
-                    alt={tool.name}
+                    alt={tool.image}
                     className="w-full h-full object-contain opacity-100 group-hover:opacity-90 transition-opacity duration-300"
                     useDynamicScreenshot={false}
                     lazy={false}
@@ -692,7 +692,7 @@ const ToolDetail = () => {
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
                         <img
                           src={relatedTool.image}
-                          alt={relatedTool.name}
+                          alt={relatedTool.image}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           loading="lazy"
                         />

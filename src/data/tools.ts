@@ -1,5 +1,3 @@
-import { getFallbackScreenshotUrl } from '../utils/fallbackScreenshots';
-
 export interface Tool {
   id: string;
   name: string;
@@ -5611,7 +5609,7 @@ export const configureToolScreenshots = (categories: Category[]): Category[] => 
         return {
           ...tool,
           useDynamicScreenshot: shouldUseDynamic,
-          fallbackImage: getFallbackScreenshotUrl(tool.url) || tool.image // Use proper fallback path
+          fallbackImage: tool.image // Original image as fallback
         };
       })
     }))
