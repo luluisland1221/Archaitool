@@ -4398,7 +4398,6 @@ export const categories: Category[] = [
                 ],
                 moneyBackGuarantee: "100% money-back guarantee",
                 turnaround: "24-48 hour processing"
-              }
               },
               trialAvailable: false,
               enterprisePlan: false
