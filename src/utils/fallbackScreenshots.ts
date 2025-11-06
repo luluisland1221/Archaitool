@@ -2,6 +2,7 @@
 export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   // Architecture & Spatial Design
   'aitwo.co': '/screenshots/aitwo_co_.webp',
+  '3dhouseplanner.com': '/screenshots/3dhouseplanner_com_.webp',
   'ai-architectures.com': '/screenshots/ai_architectures_com_.webp',
   'arkdesign.ai': '/screenshots/arkdesign_ai_.webp',
   'arcadium3d.com': '/screenshots/arcadium3d_com_.webp',
