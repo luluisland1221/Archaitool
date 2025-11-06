@@ -238,6 +238,30 @@ const ToolDetail = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Breadcrumb Navigation */}
         <div className="mb-8">
+          <nav className="flex flex-wrap items-center space-x-2 text-sm text-gray-600 mb-4">
+            <Link to="/" className="hover:text-black transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/tools" className="hover:text-black transition-colors">Tools</Link>
+            {category && (
+              <>
+                <span>/</span>
+                <Link to={`/tools/${category.id}`} className="hover:text-black transition-colors">
+                  {category.name}
+                </Link>
+              </>
+            )}
+            {subcategory && (
+              <>
+                <span>/</span>
+                <Link to={`/tools/${category.id}/${subcategory.id}`} className="hover:text-black transition-colors">
+                  {subcategory.name}
+                </Link>
+              </>
+            )}
+            <span>/</span>
+            <span className="text-black font-medium">{tool.name}</span>
+          </nav>
+
           <Link
             to="/tools"
             className="inline-flex items-center text-gray-600 hover:text-black"
