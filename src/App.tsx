@@ -35,17 +35,6 @@ const TitleUpdater = () => {
       '/real-estate': 'Real Estate AI Tools | Arch AI Tool'
     };
 
-    // Handle domain redirects to canonical HTTPS non-www version
-    const currentHost = window.location.host;
-    const currentProtocol = window.location.protocol;
-
-    // Redirect to canonical domain: https://archaitool.com
-    if (currentProtocol !== 'https:' || currentHost !== 'archaitool.com') {
-      const canonicalUrl = `https://archaitool.com${location.pathname}${location.search}`;
-      window.location.replace(canonicalUrl);
-      return;
-    }
-
     // Check if this is a category-based tool URL
     const isCategoryToolUrl = /^\/(architectural-design|interior-design|landscape-design|design-tools|real-estate)\/[^\/]+$/.test(location.pathname);
 
