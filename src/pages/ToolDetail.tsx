@@ -68,7 +68,7 @@ const ToolDetail = () => {
         canonicalLink.rel = 'canonical';
         document.head.appendChild(canonicalLink);
       }
-      canonicalLink.href = `https://archaitool.com/tool/${tool.id}`;
+      canonicalLink.href = `https://archaitool.com${generateToolUrl(tool.id)}`;
 
       // Update Open Graph meta tags
       let ogTitle = document.querySelector('meta[property="og:title"]') as HTMLMetaElement;
@@ -93,7 +93,7 @@ const ToolDetail = () => {
         ogUrl.property = 'og:url';
         document.head.appendChild(ogUrl);
       }
-      ogUrl.content = `https://archaitool.com/tool/${tool.id}`;
+      ogUrl.content = `https://archaitool.com${generateToolUrl(tool.id)}`;
 
       // Update Twitter Card meta tags
       let twitterTitle = document.querySelector('meta[name="twitter:title"]') as HTMLMetaElement;
@@ -111,6 +111,50 @@ const ToolDetail = () => {
         document.head.appendChild(twitterDescription);
       }
       twitterDescription.content = metaDescText.substring(0, 160);
+
+      // Add JSON-LD structured data for SEO
+      const existingJsonLd = document.querySelector('script[type="application/ld+json"]');
+      if (existingJsonLd) {
+        existingJsonLd.remove();
+      }
+
+      const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": tool.name,
+        "description": tool.detailedDescription || tool.description,
+        "url": tool.url,
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Web Browser",
+        "offers": tool.isPaid ? {
+          "@type": "Offer",
+          "price": "Paid",
+          "priceCurrency": "USD"
+        } : {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Arch AI Tool Directory"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Arch AI Tool Directory"
+        },
+        "dateModified": tool.lastUpdated || new Date().toISOString().split('T')[0],
+        "aggregateRating": tool.userRating ? {
+          "@type": "AggregateRating",
+          "ratingValue": tool.userRating,
+          "ratingCount": "100+"
+        } : undefined
+      };
+
+      const jsonLdScript = document.createElement('script');
+      jsonLdScript.type = 'application/ld+json';
+      jsonLdScript.textContent = JSON.stringify(structuredData, null, 2);
+      document.head.appendChild(jsonLdScript);
 
     } else {
       document.title = 'Tool Not Found | Arch AI Tool';
