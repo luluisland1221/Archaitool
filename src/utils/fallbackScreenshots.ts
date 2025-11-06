@@ -1,43 +1,43 @@
 // Static screenshot mapping - Use when API quota exhausted
 export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   // Architecture & Spatial Design
-  'aitwo.co': '/screenshots/aitwo_co_.png',
-  'www.maket.ai': '/screenshots/maket_ai_.png',
-  'arkdesign.ai': '/screenshots/arkdesign_ai_.png',
-  'architechtures.com': '/screenshots/architechtures_com_en.png',
+  'aitwo.co': '/screenshots/aitwo_co_.webp',
+  'www.maket.ai': '/screenshots/www_maket_ai_.webp',
+  'arkdesign.ai': '/screenshots/arkdesign_ai_.webp',
+  'architechtures.com': '/screenshots/architechtures_com_en.webp',
   'forma.autodesk.com': '/screenshots/autodesk forma.png',
-  'testfit.io': '/screenshots/testfit_.png',
-  'myarchitectai.com': '/screenshots/myarchitectai_.png',
-  'visualizee.ai': '/screenshots/visualizee-ai.png',
-  'arko.ai': '/screenshots/arko_ai_.png',
-  'evolvelab-veras.com': '/screenshots/evolvelab_veras.png',
-  'airender.studio': '/screenshots/airender_studio_.png',
-  'visoid.com': '/screenshots/www_visoid_com_.png',
+  'testfit.io': '/screenshots/www_testfit_io_product_real_time_ai.png',
+  'myarchitectai.com': '/screenshots/myarchitectai_com_.webp',
+  'visualizee.ai': '/screenshots/visualizee_ai_.webp',
+  'arko.ai': '/screenshots/arko_ai_.webp',
+  'evolvelab-veras.com': '/screenshots/www_evolvelab_io_veras.webp',
+  'airender.studio': '/screenshots/airender_studio__enhanced.webp',
+  'visoid.com': '/screenshots/www_visoid_com_.webp',
   'd5-render.com': '/screenshots/dall-e-3.png',
-  'chaos.group': '/screenshots/chaos.png',
+  'chaos.group': '/screenshots/chaos.webp',
 
   // Interior Design
-  'ainterior.design': '/screenshots/ainterior_design_.png',
-  'arch-e.ai': '/screenshots/arch_e_ai_.png',
-  'archi.ai': '/screenshots/archi_ai_.png',
-  'ai4spaces.com': '/screenshots/ai4spaces_com_.png',
+  'ainterior.design': '/screenshots/ainterior_design_.webp',
+  'arch-e.ai': '/screenshots/arch_e_ai_.webp',
+  'archi.ai': '/screenshots/archi_ai__enhanced.webp',
+  'ai4spaces.com': '/screenshots/ai4spaces_com_.webp',
   'roomgpt.io': '/screenshots/dall-e-3.png',
-  'palette.immo': '/screenshots/palette_immo_.png',
-  'sofabrain.ai': '/screenshots/sofabrain.png',
+  'palette.immo': '/screenshots/palette_immo_.webp',
+  'sofabrain.ai': '/screenshots/sofabrain_com_.webp',
 
   // Landscape Design
-  'landscapedesignsai.com': '/screenshots/landscapedesignsai.png',
-  'www.yardflip.ai': '/screenshots/www_yardflip_ai_.png',
+  'landscapedesignsai.com': '/screenshots/landscapedesignsai_com_.webp',
+  'www.yardflip.ai': '/screenshots/www_yardflip_ai_.webp',
 
   // General Design
-  'midjourney.com': '/screenshots/midjourney.png',
+  'midjourney.com': '/screenshots/midjourney.webp',
   'openai.com': '/screenshots/dall-e-3.png',
   'helpx.adobe.com': '/screenshots/dall-e-3.png',
 
   // Real Estate
-  'collov.ai': '/screenshots/collov ai.png',
+  'collov.ai': '/screenshots/collov ai.webp',
   'www.reimaginehome.ai': '/screenshots/www_reimaginehome_ai_.webp',
-  'aihomedesign.com': '/screenshots/aihomedesign_com_.png'
+  'aihomedesign.com': '/screenshots/aihomedesign_com_.webp'
 };
 
 /**
