@@ -21,7 +21,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'd5render.com': '/screenshots/www_d5render_com_.webp',
   'draftaid.io': '/screenshots/draftaid_io_.webp',
   'evolvelab.io': '/screenshots/www_evolvelab_io_veras.webp',
-  'floorplan.ai': '/screenshots/www_floorplan_ai_com_.webp',
+  'floorplan-ai.com': '/screenshots/www_floorplan_ai_com_.webp',
   'floordesign.ai': '/screenshots/floordesign_ai_.webp',
   'gepettoapp.com': '/screenshots/gepettoapp_com_.webp',
   'lumion.com': '/screenshots/lumion_com_.webp',
