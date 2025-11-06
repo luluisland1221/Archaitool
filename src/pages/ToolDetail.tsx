@@ -245,7 +245,7 @@ const ToolDetail = () => {
                     toolUrl={tool.url}
                     toolName={tool.name}
                     fallbackImage={tool.fallbackImage || tool.image}
-                    alt={tool.image}
+                    alt={tool.name}
                     className="w-full h-full object-contain opacity-100 group-hover:opacity-90 transition-opacity duration-300"
                     useDynamicScreenshot={false}
                     lazy={false}

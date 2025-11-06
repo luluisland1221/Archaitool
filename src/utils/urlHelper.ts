@@ -25,24 +25,11 @@ categories.forEach(category => {
 });
 
 /**
- * Generate SEO-friendly URL for a tool based on its category
- * Format: /category-slug/tool-id
+ * Generate URL for a tool using the original format
+ * Format: /tool/tool-id
  */
 export function generateToolUrl(toolId: string): string {
-  const toolInfo = toolCategoryMap.get(toolId);
-
-  if (!toolInfo) {
-    // Fallback to old pattern if tool not found
-    return `/tool/${toolId}`;
-  }
-
-  const categorySlug = categoryUrlMap[toolInfo.category];
-  if (!categorySlug) {
-    // Fallback to old pattern if category mapping not found
-    return `/tool/${toolId}`;
-  }
-
-  return `/${categorySlug}/${toolId}`;
+  return `/tool/${toolId}`;
 }
 
 /**

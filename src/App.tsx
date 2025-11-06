@@ -116,9 +116,11 @@ function App() {
             <Route path="/tools" element={<Tools />} />
             <Route path="/tools/:category" element={<Tools />} />
             <Route path="/tools/:category/:subcategory" element={<Tools />} />
-            <Route path="/tools/:id" element={<ToolDetail />} />
+            {/* Main tool detail route - using /tool/:id format */}
             <Route path="/tool/:id" element={<ToolDetail />} />
-            {/* New category-based tool URLs */}
+            {/* Legacy support for /tools/:id */}
+            <Route path="/tools/:id" element={<ToolDetail />} />
+            {/* Legacy category-based tool URLs - redirect to main route */}
             <Route path="/architectural-design/:id" element={<ToolDetail />} />
             <Route path="/interior-design/:id" element={<ToolDetail />} />
             <Route path="/landscape-design/:id" element={<ToolDetail />} />

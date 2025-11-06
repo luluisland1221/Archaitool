@@ -122,7 +122,7 @@ const Tools = () => {
               toolUrl={tool.url}
               toolName={tool.name}
               fallbackImage={tool.fallbackImage || tool.image}
-              alt={tool.image}
+              alt={tool.name}
               className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
               useDynamicScreenshot={tool.useDynamicScreenshot}
               lazy={true}
