@@ -9,6 +9,7 @@ import Tools from './pages/Tools';
 import ToolDetail from './pages/ToolDetail';
 import About from './pages/About';
 import ResearchManagement from './pages/ResearchManagement';
+import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
 // Removed redirect imports - not needed for static site
 
 
@@ -91,6 +92,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-50">
+        {/* Add structured data for homepage */}
+        <StructuredData data={generateHomepageStructuredData()} />
         <TitleUpdater />
         <Navbar />
         <main>

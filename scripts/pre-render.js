@@ -151,6 +151,114 @@ const staticPages = {
   ]
 };
 
+// 生成工具详情页面的结构化数据
+function generateToolStructuredData(tool) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": tool.name,
+    "description": `${tool.name} - Professional AI tool for architecture and design. Features, pricing, and detailed review for ${tool.name}.`,
+    "url": `https://archaitool.com/${tool.category}/${tool.id}`,
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Arch AI Tool Directory",
+      "url": "https://archaitool.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Arch AI Tool Directory",
+      "url": "https://archaitool.com"
+    },
+    "dateModified": new Date().toISOString().split('T')[0],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://archaitool.com/${tool.category}/${tool.id}`
+    }
+  };
+}
+
+// 生成分类页面的结构化数据
+function generateCategoryStructuredData(category) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": category.title,
+    "description": category.description,
+    "url": `https://archaitool.com${category.url}`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 10,
+      "itemListElement": staticPages.toolPages
+        .filter(tool => tool.category === category.path.split('/')[1].replace('.html', ''))
+        .slice(0, 10)
+        .map((tool, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": tool.name,
+            "url": `https://archaitool.com/${tool.category}/${tool.id}`,
+            "applicationCategory": "DesignApplication"
+          }
+        }))
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://archaitool.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://archaitool.com/tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": category.title.split(' | ')[0],
+          "item": `https://archaitool.com${category.url}`
+        }
+      ]
+    }
+  };
+}
+
+// 生成主页的结构化数据
+function generateHomepageStructuredData() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Arch AI Tool",
+    "description": "Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more.",
+    "url": "https://archaitool.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://archaitool.com/tools?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Arch AI Tool Directory",
+      "url": "https://archaitool.com"
+    }
+  };
+}
+
 // 生成静态HTML页面
 function generateStaticPages() {
   console.log('🔄 生成所有静态页面...');
@@ -165,6 +273,11 @@ function generateStaticPages() {
   const baseTemplate = fs.readFileSync(indexPath, 'utf8');
   let totalPagesGenerated = 0;
 
+  // 为首页添加结构化数据
+  const homepageStructuredData = generateHomepageStructuredData();
+  const homepageStructuredDataScript = `<script type="application/ld+json">${JSON.stringify(homepageStructuredData)}</script>`;
+  const baseTemplateWithStructuredData = baseTemplate.replace('</head>', `${homepageStructuredDataScript}\n</head>`);
+
   // 2. 生成工具页面
   console.log('\n📋 生成工具详情页面...');
   staticPages.toolPages.forEach(tool => {
@@ -177,12 +290,17 @@ function generateStaticPages() {
       fs.mkdirSync(dirPath, { recursive: true });
     }
 
+    // 生成结构化数据
+    const toolStructuredData = generateToolStructuredData(tool);
+    const structuredDataScript = `<script type="application/ld+json">${JSON.stringify(toolStructuredData)}</script>`;
+
     // 修改页面标题和元数据
-    const toolPageContent = baseTemplate
+    const toolPageContent = baseTemplateWithStructuredData
       .replace('<title>Arch AI Tool - Discover AI Tools for Architecture & Design</title>',
               `<title>${tool.name} - AI Architecture Tool | Arch AI Tool</title>`)
       .replace('<meta name="description" content="Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more." />',
-              `<meta name="description" content="${tool.name} - Professional AI tool for architecture and design. Features, pricing, and detailed review for ${tool.name}." />`);
+              `<meta name="description" content="${tool.name} - Professional AI tool for architecture and design. Features, pricing, and detailed review for ${tool.name}." />`)
+      .replace(/<script type="application\/ld\+json">.*?<\/script>/s, `${structuredDataScript}`);
 
     fs.writeFileSync(toolPagePath, toolPageContent);
     console.log(`✅ 工具页面: ${toolUrl}.html`);
@@ -200,12 +318,17 @@ function generateStaticPages() {
       fs.mkdirSync(dirPath, { recursive: true });
     }
 
+    // 生成结构化数据
+    const categoryStructuredData = generateCategoryStructuredData(category);
+    const structuredDataScript = `<script type="application/ld+json">${JSON.stringify(categoryStructuredData)}</script>`;
+
     // 修改页面标题和元数据
-    const categoryPageContent = baseTemplate
+    const categoryPageContent = baseTemplateWithStructuredData
       .replace('<title>Arch AI Tool - Discover AI Tools for Architecture & Design</title>',
               `<title>${category.title}</title>`)
       .replace('<meta name="description" content="Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more." />',
-              `<meta name="description" content="${category.description}" />`);
+              `<meta name="description" content="${category.description}" />`)
+      .replace(/<script type="application\/ld\+json">.*?<\/script>/s, `${structuredDataScript}`);
 
     fs.writeFileSync(categoryPagePath, categoryPageContent);
     console.log(`✅ 分类页面: ${category.path}`);
@@ -215,19 +338,67 @@ function generateStaticPages() {
   // 4. 生成主工具页面
   console.log('\n📋 生成主工具页面...');
   const toolsPagePath = path.join('dist', staticPages.toolsPage.path);
-  const toolsPageContent = baseTemplate
+  // 生成主工具页面结构化数据
+  const toolsStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": staticPages.toolsPage.title,
+    "description": staticPages.toolsPage.description,
+    "url": "https://archaitool.com/tools",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": staticPages.toolPages.length,
+      "itemListElement": staticPages.toolPages.slice(0, 20).map((tool, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": tool.name,
+          "url": `https://archaitool.com/${tool.category}/${tool.id}`,
+          "applicationCategory": "DesignApplication"
+        }
+      }))
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://archaitool.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://archaitool.com/tools"
+        }
+      ]
+    }
+  };
+
+  const toolsStructuredDataScript = `<script type="application/ld+json">${JSON.stringify(toolsStructuredData)}</script>`;
+
+  const toolsPageContent = baseTemplateWithStructuredData
     .replace('<title>Arch AI Tool - Discover AI Tools for Architecture & Design</title>',
             `<title>${staticPages.toolsPage.title}</title>`)
     .replace('<meta name="description" content="Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more." />',
-            `<meta name="description" content="${staticPages.toolsPage.description}" />`);
+            `<meta name="description" content="${staticPages.toolsPage.description}" />`)
+    .replace(/<script type="application\/ld\+json">.*?<\/script>/s, `${toolsStructuredDataScript}`);
 
   fs.writeFileSync(toolsPagePath, toolsPageContent);
   console.log(`✅ 工具列表: ${staticPages.toolsPage.path}`);
   totalPagesGenerated++;
 
+  // 5. 更新首页结构化数据
+  console.log('\n📋 更新首页结构化数据...');
+  fs.writeFileSync(indexPath, baseTemplateWithStructuredData);
+  console.log(`✅ 首页: index.html (已添加结构化数据)`);
+
   console.log(`\n🎉 静态页面生成完成！总计: ${totalPagesGenerated} 个页面`);
 
-  // 5. 更新 .htaccess 添加重写规则
+  // 6. 更新 .htaccess 添加重写规则
   const htaccessContent = `
 # 启用重写引擎
 RewriteEngine On
