@@ -24,71 +24,130 @@ const staticPages = {
   // 分类页面
   categoryPages: [
     {
-      path: 'tools/architecture-spatial.html',
-      url: '/tools/architecture-spatial',
-      title: 'Architecture & Spatial Design AI Tools | Arch AI Tool',
+      path: 'tools/architectural-design.html',
+      url: '/tools/architectural-design',
+      title: 'Architectural Design AI Tools | Arch AI Tool',
       description: 'Explore AI tools for architectural design, 3D modeling, floor planning, and spatial visualization. Compare features and pricing.'
     },
     {
-      path: 'tools/interior-design.html',
-      url: '/tools/interior-design',
-      title: 'Interior Design AI Tools | Arch AI Tool',
+      path: 'tools/architectural-visualization.html',
+      url: '/tools/architectural-visualization',
+      title: 'Architectural Visualization & Rendering AI Tools | Arch AI Tool',
+      description: 'Discover AI tools for architectural visualization, 3D rendering, and digital construction. Professional rendering solutions for architects.'
+    },
+    {
+      path: 'tools/design-automation.html',
+      url: '/tools/design-automation',
+      title: 'Design Automation AI Tools | Arch AI Tool',
+      description: 'Browse AI tools for design assistance, automation, drafting, and workflow optimization. Streamline your design process with AI.'
+    },
+    {
+      path: 'tools/interior-design-remodeling.html',
+      url: '/tools/interior-design-remodeling',
+      title: 'Interior Design & Remodeling AI Tools | Arch AI Tool',
       description: 'Discover AI tools for interior design, room planning, furniture arrangement, and home decoration. Find the perfect tool for your project.'
     },
     {
-      path: 'tools/landscape-design.html',
-      url: '/tools/landscape-design',
-      title: 'Landscape Design AI Tools | Arch AI Tool',
+      path: 'tools/landscape-planning.html',
+      url: '/tools/landscape-planning',
+      title: 'Landscape Planning & Design AI Tools | Arch AI Tool',
       description: 'Browse AI tools for landscape design, garden planning, outdoor visualization, and sustainable design solutions.'
     },
     {
-      path: 'tools/general-design.html',
-      url: '/tools/general-design',
-      title: 'General Design AI Tools | Arch AI Tool',
-      description: 'Find AI tools for general design, creative work, image generation, and multimedia content creation.'
+      path: 'tools/multi-domain-ai.html',
+      url: '/tools/multi-domain-ai',
+      title: 'Multi-domain AI Design Tools | Arch AI Tool',
+      description: 'Find AI tools for general design, creative work, image generation, and multimedia content creation across multiple domains.'
     },
     {
-      path: 'tools/real-estate.html',
-      url: '/tools/real-estate',
-      title: 'Real Estate AI Tools | Arch AI Tool',
+      path: 'tools/property-visualization.html',
+      url: '/tools/property-visualization',
+      title: 'Property Visualization AI Tools | Arch AI Tool',
       description: 'Explore AI tools for real estate, property visualization, virtual staging, and real estate marketing.'
+    },
+    {
+      path: 'tools/virtual-staging.html',
+      url: '/tools/virtual-staging',
+      title: 'Virtual Staging & Furnishing AI Tools | Arch AI Tool',
+      description: 'Discover AI tools for virtual staging, furniture placement, interior decoration, and real estate presentation.'
     }
   ],
 
   // 工具详情页面
   toolPages: [
     // Architecture & Spatial Design
-    { id: 'aitwo', category: 'architectural-design', name: 'AI TWO' },
     { id: '3d-house-planner', category: 'architectural-design', name: '3D House Planner' },
     { id: 'ai-architectures', category: 'architectural-design', name: 'AI Architectures' },
+    { id: 'aitwo', category: 'architectural-design', name: 'AiTwo' },
+    { id: 'arcadium-3d', category: 'architectural-design', name: 'Arcadium 3D' },
+    { id: 'architechtures', category: 'architectural-design', name: 'Architechtures' },
     { id: 'arkdesign-ai', category: 'architectural-design', name: 'Arkdesign AI' },
     { id: 'autodesk-forma', category: 'architectural-design', name: 'Autodesk Forma' },
+    { id: 'bricsys', category: 'architectural-design', name: 'Bricsys BIM' },
     { id: 'floorplan-ai', category: 'architectural-design', name: 'Floorplan AI' },
     { id: 'maket-ai', category: 'architectural-design', name: 'Maket AI' },
     { id: 'testfit', category: 'architectural-design', name: 'TestFit' },
-    { id: 'visualizee', category: 'architectural-design', name: 'Visualizee AI' },
-    { id: 'visoid', category: 'architectural-design', name: 'Visoid' },
 
-    // Interior Design
-    { id: 'ai4spaces', category: 'interior-design', name: 'AI4Spaces' },
-    { id: 'arch-e', category: 'interior-design', name: 'Arch-E AI' },
-    { id: 'archi-ai', category: 'interior-design', name: 'Archi AI' },
-    { id: 'reimaginehome', category: 'interior-design', name: 'ReimagineHome AI' },
-    { id: 'roomgpt', category: 'interior-design', name: 'RoomGPT' },
-    { id: 'sofabrain', category: 'interior-design', name: 'SofaBrain' },
+    // Architectural Visualization & Rendering
+    { id: 'airender-studio', category: 'architectural-visualization', name: 'AI Render Studio' },
+    { id: 'archsynth', category: 'architectural-visualization', name: 'Archsynth' },
+    { id: 'arko-ai', category: 'architectural-visualization', name: 'Arko AI' },
+    { id: 'chaos', category: 'architectural-visualization', name: 'Chaos' },
+    { id: 'd5-render', category: 'architectural-visualization', name: 'D5 Render' },
+    { id: 'lumion', category: 'architectural-visualization', name: 'Lumion' },
+    { id: 'myarchitectai', category: 'architectural-visualization', name: 'MyArchitect AI' },
+    { id: 'rendera-ai', category: 'architectural-visualization', name: 'Rendera AI' },
+    { id: 'evolvelab-veras', category: 'architectural-visualization', name: 'Veras by EvolveLAB' },
+    { id: 'visoid', category: 'architectural-visualization', name: 'Visoid' },
+    { id: 'visualizee-ai', category: 'architectural-visualization', name: 'Visualizee AI' },
 
-    // Landscape Design
-    { id: 'landscapedesignsai', category: 'landscape-design', name: 'LandscapeDesigns AI' },
-    { id: 'yardflip', category: 'landscape-design', name: 'YardFlip AI' },
+    // Design Automation
+    { id: 'draftaid', category: 'design-automation', name: 'Draftaid' },
+    { id: 'opal-ai', category: 'design-automation', name: 'Opal AI' },
+    { id: 'sketchpro-ai', category: 'design-automation', name: 'Sketchpro AI' },
 
-    // General Design
-    { id: 'midjourney', category: 'design-tools', name: 'Midjourney' },
-    { id: 'dall-e', category: 'design-tools', name: 'DALL-E 3' },
+    // Interior Design - Interior Design & Remodeling
+    { id: 'ai4spaces', category: 'interior-design-remodeling', name: 'AI4Spaces' },
+    { id: 'arch-e-ai', category: 'interior-design-remodeling', name: 'Arch E AI' },
+    { id: 'archi-ai', category: 'interior-design-remodeling', name: 'Archi AI' },
+    { id: 'artevia', category: 'interior-design-remodeling', name: 'Artevia' },
+    { id: 'decorion', category: 'interior-design-remodeling', name: 'Decorion' },
+    { id: 'designai', category: 'interior-design-remodeling', name: 'DesignAI' },
+    { id: 'home-design-ai', category: 'interior-design-remodeling', name: 'Home Design AI' },
+    { id: 'indesignify', category: 'interior-design-remodeling', name: 'Indesignify' },
+    { id: 'madespace', category: 'interior-design-remodeling', name: 'Madespace' },
+    { id: 'renovate-ai', category: 'interior-design-remodeling', name: 'Renovate AI' },
+    { id: 'roomgpt', category: 'interior-design-remodeling', name: 'RoomGPT' },
+    { id: 'vibe3d', category: 'interior-design-remodeling', name: 'Vibe3D' },
 
-    // Real Estate
-    { id: 'aihouse', category: 'real-estate', name: 'AI House Designer' },
-    { id: 'architectgpt', category: 'real-estate', name: 'ArchitectGPT' },
-    { id: 'opal-ai', category: 'real-estate', name: 'Opal AI' }
+    // Landscape Design - Landscape Planning
+    { id: 'ai-garden-design', category: 'landscape-planning', name: 'AI Garden Design' },
+    { id: 'dreamzar', category: 'landscape-planning', name: 'Dreamzar' },
+    { id: 'landscapedesignsai', category: 'landscape-planning', name: 'LandscapeDesignsAI' },
+    { id: 'yardflip', category: 'landscape-planning', name: 'YardFlip AI' },
+
+    // General Design - Multi-domain AI Design
+    { id: 'adobe-firefly', category: 'multi-domain-ai', name: 'Adobe Firefly' },
+    { id: 'midjourney', category: 'multi-domain-ai', name: 'Midjourney' },
+    { id: 'moodboardai', category: 'multi-domain-ai', name: 'Moodboard AI' },
+    { id: 'openai-dalle', category: 'multi-domain-ai', name: 'OpenAI DALL·E 3' },
+    { id: 'rustic-ai', category: 'multi-domain-ai', name: 'Rustic AI' },
+
+    // Real Estate - Property Visualization
+    { id: 'aihomedesign', category: 'property-visualization', name: 'AI Home Design' },
+    { id: 'collov', category: 'property-visualization', name: 'Collov AI' },
+    { id: 'iacrea', category: 'property-visualization', name: 'Iacrea' },
+    { id: 'reimaginehome', category: 'property-visualization', name: 'ReimagineHome AI' },
+
+    // Virtual Staging & Furnishing
+    { id: 'decoratly', category: 'virtual-staging', name: 'Decoratly' },
+    { id: 'floordesign-ai', category: 'virtual-staging', name: 'FloorDesign.ai' },
+    { id: 'gepettoapp', category: 'virtual-staging', name: 'Gepetto App' },
+    { id: 'instantdeco-ai', category: 'virtual-staging', name: 'Instantdeco AI' },
+    { id: 'paintit-ai', category: 'virtual-staging', name: 'Paintit AI' },
+    { id: 'palette-immo', category: 'virtual-staging', name: 'Palette Immo' },
+    { id: 'renovateai', category: 'virtual-staging', name: 'Renovate AI' },
+    { id: 'sofabrain', category: 'virtual-staging', name: 'Sofabrain' }
   ]
 };
 
@@ -180,18 +239,24 @@ RewriteRule ^ - [L]
 
 # 完全静态化 - 所有页面都有对应HTML文件
 RewriteRule ^tools/?$ tools.html [L]
-RewriteRule ^tools/architecture-spatial/?$ tools/architecture-spatial.html [L]
-RewriteRule ^tools/interior-design/?$ tools/interior-design.html [L]
-RewriteRule ^tools/landscape-design/?$ tools/landscape-design.html [L]
-RewriteRule ^tools/general-design/?$ tools/general-design.html [L]
-RewriteRule ^tools/real-estate/?$ tools/real-estate.html [L]
+RewriteRule ^tools/architectural-design/?$ tools/architectural-design.html [L]
+RewriteRule ^tools/architectural-visualization/?$ tools/architectural-visualization.html [L]
+RewriteRule ^tools/design-automation/?$ tools/design-automation.html [L]
+RewriteRule ^tools/interior-design-remodeling/?$ tools/interior-design-remodeling.html [L]
+RewriteRule ^tools/landscape-planning/?$ tools/landscape-planning.html [L]
+RewriteRule ^tools/multi-domain-ai/?$ tools/multi-domain-ai.html [L]
+RewriteRule ^tools/property-visualization/?$ tools/property-visualization.html [L]
+RewriteRule ^tools/virtual-staging/?$ tools/virtual-staging.html [L]
 
 # 工具详情页面重写规则
 RewriteRule ^architectural-design/([^/]+)/?$ architectural-design/$1.html [L]
-RewriteRule ^interior-design/([^/]+)/?$ interior-design/$1.html [L]
-RewriteRule ^landscape-design/([^/]+)/?$ landscape-design/$1.html [L]
-RewriteRule ^design-tools/([^/]+)/?$ design-tools/$1.html [L]
-RewriteRule ^real-estate/([^/]+)/?$ real-estate/$1.html [L]
+RewriteRule ^architectural-visualization/([^/]+)/?$ architectural-visualization/$1.html [L]
+RewriteRule ^design-automation/([^/]+)/?$ design-automation/$1.html [L]
+RewriteRule ^interior-design-remodeling/([^/]+)/?$ interior-design-remodeling/$1.html [L]
+RewriteRule ^landscape-planning/([^/]+)/?$ landscape-planning/$1.html [L]
+RewriteRule ^multi-domain-ai/([^/]+)/?$ multi-domain-ai/$1.html [L]
+RewriteRule ^property-visualization/([^/]+)/?$ property-visualization/$1.html [L]
+RewriteRule ^virtual-staging/([^/]+)/?$ virtual-staging/$1.html [L]
 
 # 设置缓存头
 <FilesMatch "\\.(html|css|js|webp|png|jpg|jpeg|svg)$">

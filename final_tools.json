@@ -1,0 +1,42 @@
+[
+  {
+    "id": "aitwo",
+    "name": "AiTwo",
+    "category": "architecture-spatial"
+  },
+  {
+    "id": "myarchitectai",
+    "name": "MyArchitect AI",
+    "category": "architecture-spatial"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "general-design"
+  },
+  {
+    "id": "sketchpro-ai",
+    "name": "Sketchpro AI",
+    "category": "general-design"
+  },
+  {
+    "id": "arch-e-ai",
+    "name": "Arch E AI",
+    "category": "interior-design"
+  },
+  {
+    "id": "gepettoapp",
+    "name": "Gepetto App",
+    "category": "interior-design"
+  },
+  {
+    "id": "landscapedesignsai",
+    "name": "LandscapeDesignsAI",
+    "category": "landscape-design"
+  },
+  {
+    "id": "collov",
+    "name": "Collov AI",
+    "category": "real-estate"
+  }
+]

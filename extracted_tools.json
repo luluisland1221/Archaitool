@@ -1,0 +1,357 @@
+[
+  {
+    "id": "3d-house-planner",
+    "name": "3D House Planner",
+    "category": "architectural-design"
+  },
+  {
+    "id": "ai-architectures",
+    "name": "AI Architectures",
+    "category": "architectural-design"
+  },
+  {
+    "id": "arcadium-3d",
+    "name": "Arcadium 3D",
+    "category": "architectural-design"
+  },
+  {
+    "id": "architechtures",
+    "name": "Architechtures",
+    "category": "architectural-design"
+  },
+  {
+    "id": "architecture-spatial",
+    "name": "Architecture & Spatial Design",
+    "category": "architectural-design"
+  },
+  {
+    "id": "arkdesign-ai",
+    "name": "Arkdesign AI",
+    "category": "architectural-design"
+  },
+  {
+    "id": "autodesk-forma",
+    "name": "Autodesk Forma",
+    "category": "architectural-design"
+  },
+  {
+    "id": "bricsys",
+    "name": "Bricsys BIM",
+    "category": "architectural-design"
+  },
+  {
+    "id": "floorplan-ai",
+    "name": "Floorplan AI",
+    "category": "architectural-design"
+  },
+  {
+    "id": "maket-ai",
+    "name": "Maket AI",
+    "category": "architectural-design"
+  },
+  {
+    "id": "testfit",
+    "name": "TestFit",
+    "category": "architectural-design"
+  },
+  {
+    "id": "airender-studio",
+    "name": "AI Render Studio",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "architectural-visualization",
+    "name": "Architectural Visualization & Rendering",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "archsynth",
+    "name": "Archsynth",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "arko-ai",
+    "name": "Arko AI",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "chaos",
+    "name": "Chaos",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "d5-render",
+    "name": "D5 Render",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "lumion",
+    "name": "Lumion",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "rendera-ai",
+    "name": "Rendera AI",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "evolvelab-veras",
+    "name": "Veras by EvolveLAB",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "visoid",
+    "name": "Visoid",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "visualizee-ai",
+    "name": "Visualizee AI",
+    "category": "architectural-visualization"
+  },
+  {
+    "id": "aitwo",
+    "name": "AiTwo",
+    "category": "architecture-spatial"
+  },
+  {
+    "id": "architectural-design",
+    "name": "Architectural Design & Generation",
+    "category": "architecture-spatial"
+  },
+  {
+    "id": "myarchitectai",
+    "name": "MyArchitect AI",
+    "category": "architecture-spatial"
+  },
+  {
+    "id": "design-automation",
+    "name": "Design Assistance & Automation",
+    "category": "design-automation"
+  },
+  {
+    "id": "draftaid",
+    "name": "Draftaid",
+    "category": "design-automation"
+  },
+  {
+    "id": "opal-ai",
+    "name": "Opal AI",
+    "category": "design-automation"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "general-design"
+  },
+  {
+    "id": "multi-domain-ai",
+    "name": "Multi-domain AI Design",
+    "category": "general-design"
+  },
+  {
+    "id": "sketchpro-ai",
+    "name": "Sketchpro AI",
+    "category": "general-design"
+  },
+  {
+    "id": "arch-e-ai",
+    "name": "Arch E AI",
+    "category": "interior-design"
+  },
+  {
+    "id": "gepettoapp",
+    "name": "Gepetto App",
+    "category": "interior-design"
+  },
+  {
+    "id": "interior-design-remodeling",
+    "name": "Interior Design & Remodeling",
+    "category": "interior-design"
+  },
+  {
+    "id": "ai4spaces",
+    "name": "AI4Spaces",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "archi-ai",
+    "name": "Archi AI",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "artevia",
+    "name": "Artevia",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "decorion",
+    "name": "Decorion",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "designai",
+    "name": "DesignAI",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "home-design-ai",
+    "name": "Home Design AI",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "indesignify",
+    "name": "Indesignify",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "interior-design",
+    "name": "Interior Design",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "madespace",
+    "name": "Madespace",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "renovate-ai",
+    "name": "Renovate AI",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "roomgpt",
+    "name": "RoomGPT",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "vibe3d",
+    "name": "Vibe3D",
+    "category": "interior-design-remodeling"
+  },
+  {
+    "id": "landscape-planning",
+    "name": "Landscape Planning & Design",
+    "category": "landscape-design"
+  },
+  {
+    "id": "landscapedesignsai",
+    "name": "LandscapeDesignsAI",
+    "category": "landscape-design"
+  },
+  {
+    "id": "ai-garden-design",
+    "name": "AI Garden Design",
+    "category": "landscape-planning"
+  },
+  {
+    "id": "dreamzar",
+    "name": "Dreamzar",
+    "category": "landscape-planning"
+  },
+  {
+    "id": "landscape-design",
+    "name": "Landscape & Exterior Design",
+    "category": "landscape-planning"
+  },
+  {
+    "id": "yardflip",
+    "name": "YardFlip AI",
+    "category": "landscape-planning"
+  },
+  {
+    "id": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "category": "multi-domain-ai"
+  },
+  {
+    "id": "general-design",
+    "name": "General Design Tools",
+    "category": "multi-domain-ai"
+  },
+  {
+    "id": "moodboardai",
+    "name": "Moodboard AI",
+    "category": "multi-domain-ai"
+  },
+  {
+    "id": "openai-dalle",
+    "name": "OpenAI DALL·E 3",
+    "category": "multi-domain-ai"
+  },
+  {
+    "id": "rustic-ai",
+    "name": "Rustic AI",
+    "category": "multi-domain-ai"
+  },
+  {
+    "id": "aihomedesign",
+    "name": "AI Home Design",
+    "category": "property-visualization"
+  },
+  {
+    "id": "iacrea",
+    "name": "Iacrea",
+    "category": "property-visualization"
+  },
+  {
+    "id": "real-estate",
+    "name": "Real Estate & Marketing",
+    "category": "property-visualization"
+  },
+  {
+    "id": "reimaginehome",
+    "name": "ReimagineHome AI",
+    "category": "property-visualization"
+  },
+  {
+    "id": "collov",
+    "name": "Collov AI",
+    "category": "real-estate"
+  },
+  {
+    "id": "property-visualization",
+    "name": "Property Visualization & Enhancement",
+    "category": "real-estate"
+  },
+  {
+    "id": "decoratly",
+    "name": "Decoratly",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "floordesign-ai",
+    "name": "FloorDesign.ai",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "instantdeco-ai",
+    "name": "Instantdeco AI",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "paintit-ai",
+    "name": "Paintit AI",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "palette-immo",
+    "name": "Palette Immo",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "renovateai",
+    "name": "Renovate AI",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "sofabrain",
+    "name": "Sofabrain",
+    "category": "virtual-staging"
+  },
+  {
+    "id": "virtual-staging",
+    "name": "Virtual Staging & Furnishing",
+    "category": "virtual-staging"
+  }
+]
