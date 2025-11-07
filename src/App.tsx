@@ -9,7 +9,7 @@ import Tools from './pages/Tools';
 import ToolDetail from './pages/ToolDetail';
 import About from './pages/About';
 import ResearchManagement from './pages/ResearchManagement';
-import { generateRedirectUrl, isOldToolUrl } from './utils/urlHelper';
+// Removed redirect imports - not needed for static site
 
 
 // Component to handle title updates and canonical URLs
@@ -36,16 +36,10 @@ const TitleUpdater = () => {
     };
 
     // Check if this is a category-based tool URL
-    const isCategoryToolUrl = /^\/(architectural-design|interior-design|landscape-design|design-tools|real-estate)\/[^\/]+$/.test(location.pathname);
+    const isCategoryToolUrl = /^\/(architectural-design|architectural-visualization|design-automation|interior-design-remodeling|landscape-planning|multi-domain-ai|property-visualization|virtual-staging)\/[^\/]+$/.test(location.pathname);
 
-    // Handle redirects for old tool URLs only in production
-    if (isOldToolUrl(location.pathname) && window.location.hostname === 'archaitool.com') {
-      const redirectUrl = generateRedirectUrl(location.pathname);
-      if (redirectUrl) {
-        window.location.replace(`https://archaitool.com${redirectUrl}`);
-        return;
-      }
-    }
+    // NOTE: redirects removed - all pages are now static HTML
+    // No need for JavaScript-based URL redirections
 
     // Update page title
     if (isCategoryToolUrl || location.pathname.startsWith('/tool/')) {
