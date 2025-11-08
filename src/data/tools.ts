@@ -4697,7 +4697,7 @@ export const categories: Category[] = [
             id: "openai-dalle",
             name: "OpenAI DALL·E 3",
             description: "Advanced AI image generation with exceptional accuracy",
-            image: "/screenshots/ai_architectures_com_.webp",
+            image: "/screenshots/dall-e-3.webp",
             url: "https://openai.com/dall-e-3",
             isPaid: true,
             category: "general-design",
