@@ -21,7 +21,9 @@
       "Bash(find:*)",
       "Bash(awk:*)",
       "Bash(sort:*)",
-      "Bash(magick:*)"
+      "Bash(magick:*)",
+      "Bash(copy:*)",
+      "Bash(/dev/null)"
     ],
     "deny": [],
     "ask": []
