@@ -125,9 +125,15 @@ const Contact = () => {
               {/* Other Contact Info */}
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h3 className="font-semibold text-gray-900 mb-3">Other Contact Information</h3>
-                <div className="space-y-2 text-gray-700">
-                  <p><strong>Website:</strong> <a href="https://archaitool.com" className="text-gray-700 hover:text-gray-900 underline">https://archaitool.com</a></p>
-                  <p><strong>Service Area:</strong> Global</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                  <div>
+                    <p><strong>Website:</strong></p>
+                    <a href="https://archaitool.com" className="text-gray-700 hover:text-gray-900 underline">https://archaitool.com</a>
+                  </div>
+                  <div>
+                    <p><strong>Service Area:</strong></p>
+                    <p>Global</p>
+                  </div>
                 </div>
               </div>
             </div>
