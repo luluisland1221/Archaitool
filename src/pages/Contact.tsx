@@ -128,7 +128,6 @@ const Contact = () => {
                 <div className="space-y-2 text-gray-700">
                   <p><strong>Website:</strong> <a href="https://archaitool.com" className="text-gray-700 hover:text-gray-900 underline">https://archaitool.com</a></p>
                   <p><strong>Service Area:</strong> Global</p>
-                  <p><strong>Supported Languages:</strong> English, Chinese</p>
                 </div>
               </div>
             </div>
