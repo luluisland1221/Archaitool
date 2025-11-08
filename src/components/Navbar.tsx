@@ -31,6 +31,9 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black hover:text-gray-600"
+              aria-label={isOpen ? "关闭菜单" : "打开菜单"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
               <Menu className="h-6 w-6" />
             </button>
@@ -39,7 +42,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="sm:hidden border-t border-black">
+        <div id="mobile-menu" className="sm:hidden border-t border-black">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               to="/"

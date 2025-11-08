@@ -68,10 +68,10 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section 
-        className="relative bg-cover bg-center py-12" 
-        style={{ 
+      {/* Hero Section - 简化高效版本 */}
+      <section
+        className="relative bg-cover bg-center py-12"
+        style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=75&dpr=1")',
         }}
       >
