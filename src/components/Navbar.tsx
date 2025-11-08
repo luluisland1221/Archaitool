@@ -25,6 +25,9 @@ const Navbar = () => {
             <Link to="/about" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               About
             </Link>
+            <Link to="/contact" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+              Contact
+            </Link>
           </div>
 
           <div className="sm:hidden flex items-center">
@@ -61,6 +64,12 @@ const Navbar = () => {
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               About
+            </Link>
+            <Link
+              to="/contact"
+              className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
+            >
+              Contact
             </Link>
           </div>
         </div>

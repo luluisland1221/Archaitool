@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useLocation, NavigateFunction } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import FloatingContact from './components/FloatingContact';
 import Home from './pages/Home';
 import Tools from './pages/Tools';
 import ToolDetail from './pages/ToolDetail';
@@ -106,8 +105,7 @@ function App() {
         <StructuredData data={generateHomepageStructuredData()} />
         <TitleUpdater />
         <Navbar />
-        <FloatingContact />
-        <main className="pt-12">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tools" element={<Tools />} />
