@@ -176,8 +176,8 @@ const ToolDetail = () => {
     // Handle anchor scroll after component mounts
     setTimeout(() => {
       const hash = window.location.hash;
-      if (hash === '#tool-content') {
-        const element = document.getElementById('tool-content');
+      if (hash === '#main-content') {
+        const element = document.getElementById('main-content');
         if (element) {
           element.scrollIntoView({
             behavior: 'smooth',
@@ -185,7 +185,7 @@ const ToolDetail = () => {
           });
         }
       }
-    }, 100);
+    }, 1000); // Longer delay to ensure page is fully loaded
   }, [tool]);
 
   const toggleSection = (section: string) => {
@@ -224,7 +224,7 @@ const ToolDetail = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Text and Image side by side */}
-      <div className="bg-white">
+      <div id="main-content" className="bg-white border-b border-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -693,7 +693,7 @@ const ToolDetail = () => {
                   .map((relatedTool) => (
                     <Link
                       key={relatedTool.id}
-                      to={`${generateToolUrl(relatedTool.id)}#tool-content`}
+                      to={`${generateToolUrl(relatedTool.id)}#main-content`}
                       className="group bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 p-6 hover:bg-gray-50"
                     >
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
