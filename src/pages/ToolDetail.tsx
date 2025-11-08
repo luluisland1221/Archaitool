@@ -173,19 +173,10 @@ const ToolDetail = () => {
       }
     }
 
-    // Handle anchor scroll after component mounts
+    // Ensure page scrolls to top when navigating
     setTimeout(() => {
-      const hash = window.location.hash;
-      if (hash === '#main-content') {
-        const element = document.getElementById('main-content');
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      }
-    }, 1000); // Longer delay to ensure page is fully loaded
+      window.scrollTo(0, 0);
+    }, 100);
   }, [tool]);
 
   const toggleSection = (section: string) => {
@@ -693,7 +684,7 @@ const ToolDetail = () => {
                   .map((relatedTool) => (
                     <Link
                       key={relatedTool.id}
-                      to={`${generateToolUrl(relatedTool.id)}#main-content`}
+                      to={generateToolUrl(relatedTool.id)}
                       className="group bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 p-6 hover:bg-gray-50"
                     >
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
