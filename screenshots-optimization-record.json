@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-11-08T03:44:24.942Z",
+  "optimizedFiles": [
+    {
+      "original": "rendera_ai.webp",
+      "sizeKB": "377.6",
+      "optimizedKB": "7.2",
+      "savedKB": "370.4"
+    },
+    {
+      "original": "renovate_ai.webp",
+      "sizeKB": "251.0",
+      "optimizedKB": "7.0",
+      "savedKB": "244.0"
+    }
+  ],
+  "stats": {
+    "originalFiles": 93,
+    "largeFiles": 51,
+    "optimizedCount": 2,
+    "originalSizeMB": "10.58",
+    "optimizedSizeMB": "9.98",
+    "savedMB": "0.60",
+    "compressionRate": "5.7"
+  }
+}

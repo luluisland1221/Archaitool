@@ -18,7 +18,9 @@
       "Bash(explorer:*)",
       "Bash(npm run preview:*)",
       "Bash(git restore:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(awk:*)",
+      "Bash(sort:*)"
     ],
     "deny": [],
     "ask": []
