@@ -76,7 +76,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="flex flex-col space-y-8 h-full">
               {/* Quick Contact */}
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h2>
@@ -139,7 +139,8 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="flex flex-col h-full">
+              <div className="bg-white rounded-xl shadow-lg p-8 flex-grow flex flex-col">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Message</h2>
 
               {submitStatus === 'success' && (
@@ -261,6 +262,7 @@ const Contact = () => {
                   </a>
                   , and will only be used to reply to your inquiries and improve our services.
                 </p>
+              </div>
               </div>
             </div>
           </div>
