@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-11-08T04:03:17.113Z",
+  "websites": [
+    {
+      "name": "Architechtures",
+      "url": "https://architechtures.com/en/",
+      "filename": "architechtures_com_en.webp",
+      "selector": "main, .container, .content, body",
+      "success": false,
+      "error": "Protocol error (Emulation.setTouchEmulationEnabled): Session closed. Most likely the page has been closed."
+    },
+    {
+      "name": "Archi.AI",
+      "url": "https://archi.ai/",
+      "filename": "archi_ai_.webp",
+      "selector": "main, .container, .hero, body",
+      "success": false,
+      "error": "Protocol error (Emulation.setTouchEmulationEnabled): Session closed. Most likely the page has been closed."
+    },
+    {
+      "name": "AI Render Studio",
+      "url": "https://airender.studio/",
+      "filename": "airender_studio_.webp",
+      "selector": "main, .container, .hero, body",
+      "success": false,
+      "error": "Protocol error (Emulation.setTouchEmulationEnabled): Session closed. Most likely the page has been closed."
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "success": 0,
+    "failed": 3,
+    "totalOriginalSizeKB": "0.0",
+    "totalOptimizedSizeKB": "0.0",
+    "totalReduction": 0
+  }
+}

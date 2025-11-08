@@ -20,7 +20,8 @@
       "Bash(git restore:*)",
       "Bash(find:*)",
       "Bash(awk:*)",
-      "Bash(sort:*)"
+      "Bash(sort:*)",
+      "Bash(magick:*)"
     ],
     "deny": [],
     "ask": []
