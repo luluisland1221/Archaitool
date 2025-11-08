@@ -24,7 +24,8 @@
       "Bash(magick:*)",
       "Bash(copy:*)",
       "Bash(/dev/null)",
-      "Bash(del adobe_firefly.webp openai_dalle3.webp veras_evolve_lab.webp autodesk_forma.webp)"
+      "Bash(del adobe_firefly.webp openai_dalle3.webp veras_evolve_lab.webp autodesk_forma.webp)",
+      "Bash(git pull:*)"
     ],
     "deny": [],
     "ask": []
