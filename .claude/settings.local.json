@@ -13,7 +13,12 @@
       "Bash(cat:*)",
       "Bash(npm install:*)",
       "Bash(npm run build:ssg:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(dir:*)",
+      "Bash(explorer:*)",
+      "Bash(npm run preview:*)",
+      "Bash(git restore:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
