@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <img src="/logo.svg" alt="Arch AI Tool" className="h-12" />
+              <img src="/logo-navbar.webp" alt="Arch AI Tool" className="h-12" />
             </Link>
           </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black hover:text-gray-600"
-              aria-label={isOpen ? "关闭菜单" : "打开菜单"}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
             >

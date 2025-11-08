@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src="/logo.svg" alt="Arch AI Tool" className="h-8 mb-4" />
+            <img src="/logo-footer.webp" alt="Arch AI Tool" className="h-8 mb-4" />
             <p className="text-gray-400">
               Your comprehensive guide to AI tools in architecture and design.
             </p>
@@ -55,6 +55,11 @@ const Footer = () => {
                   About
                 </Link>
               </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 hover:text-white">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -64,8 +69,23 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Arch AI Tool. All rights reserved.</p>
+        <div className="mt-8 pt-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400">
+              &copy; {new Date().getFullYear()} Arch AI Tool. All rights reserved.
+            </p>
+            <div className="flex flex-wrap justify-center space-x-6 text-sm">
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
+                Terms of Service
+              </Link>
+              <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
+                Contact Us
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
