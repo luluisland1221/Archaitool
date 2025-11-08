@@ -234,79 +234,79 @@ const TermsOfService = () => {
               </div>
             </section>
 
-            {/* 不可抗力 */}
+            {/* Force Majeure */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">不可抗力</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Force Majeure</h2>
               <p className="text-gray-700 leading-relaxed">
-                我们对因不可抗力事件导致的服务中断或延迟不承担责任，包括但不限于：
-                自然灾害、战争、恐怖活动、政府行为、网络攻击、电力中断或其他我们无法控制的情况。
+                We are not liable for service interruptions or delays caused by force majeure events, including but not limited to:
+                natural disasters, wars, terrorist activities, government actions, cyber attacks, power outages, or other situations beyond our control.
               </p>
             </section>
 
-            {/* 联系信息 */}
+            {/* Contact Information */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">联系我们</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
               <div className="space-y-3">
                 <p className="text-gray-700 leading-relaxed">
-                  如果您对本服务条款有任何问题，请通过以下方式联系我们：
+                  If you have any questions about these terms of service, please contact us through the following methods:
                 </p>
 
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <ul className="space-y-2 text-gray-700">
-                    <li><strong>电子邮件：</strong>contact@archaitool.com</li>
-                    <li><strong>网站：</strong><a href="https://archaitool.com" className="text-blue-600 hover:text-blue-800">https://archaitool.com</a></li>
+                    <li><strong>Email:</strong>contact@archaitool.com</li>
+                    <li><strong>Website:</strong><a href="https://archaitool.com" className="text-gray-700 hover:text-gray-900">https://archaitool.com</a></li>
                   </ul>
                 </div>
               </div>
             </section>
 
-            {/* 条款修改 */}
+            {/* Terms Modification */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">条款修改</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Terms Modification</h2>
               <p className="text-gray-700 leading-relaxed">
-                我们保留随时修改这些条款的权利。修改后的条款将在网站上发布并立即生效。
-                重大修改将通过适当方式通知用户。继续使用我们的服务即表示您接受修改后的条款。
+                We reserve the right to modify these terms at any time. Modified terms will be published on the website and take effect immediately.
+                Significant changes will be notified to users through appropriate means. Continued use of our services indicates your acceptance of the modified terms.
               </p>
               <p className="text-gray-700 leading-relaxed mt-2">
-                建议您定期查看本页面以了解最新的服务条款。
+                We recommend you regularly review this page to stay informed of the latest terms of service.
               </p>
             </section>
 
-            {/* 其他规定 */}
+            {/* Miscellaneous */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">其他规定</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Miscellaneous</h2>
               <div className="space-y-3">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">完整协议</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Entire Agreement</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    本服务条款构成您与我们之间关于使用我们服务的完整协议，
-                    取代之前所有口头或书面的协议、理解或安排。
+                    These terms of service constitute the complete agreement between you and us regarding the use of our services,
+                    superseding all prior oral or written agreements, understandings, or arrangements.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">可分割性</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Severability</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    如果本服务条款的任何条款被认定为无效或不可执行，
-                    其余条款仍然有效并具有完全的法律效力。
+                    If any provision of these terms of service is deemed invalid or unenforceable,
+                    the remaining provisions shall remain valid and have full legal effect.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">不放弃权利</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">No Waiver</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    我们未能行使或执行本服务条款的任何权利，
-                    不构成对该权利的放弃。
+                    Our failure to exercise or enforce any right under these terms of service
+                    does not constitute a waiver of that right.
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* 生效日期 */}
+            {/* Effective Date */}
             <section className="border-t pt-6">
               <div className="text-center">
                 <p className="text-gray-600">
-                  本服务条款自发布之日起生效，最后更新于 {currentDate}。
+                  These terms of service are effective from the date of publication and were last updated on {currentDate}.
                 </p>
               </div>
             </section>
