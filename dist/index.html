@@ -11,19 +11,15 @@
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-14MXMX73J2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Preconnect for Local Assets (Critical Path Optimization) -->
+    <link rel="preconnect" href="/">
+    <link rel="preload" href="/assets/index-C6wEPRpv.js" as="script" importance="high">
+    <link rel="preload" href="/assets/index-DkjGP5Sk.css" as="style" importance="high">
 
-      gtag('config', 'G-14MXMX73J2');
-    </script>
-    <script type="module" crossorigin src="/assets/index-Bc31w_L3.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/react-vendor-D9nl-Vdp.js">
-    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-DQNCCVnY.js">
-    <style>
+      <script type="module" crossorigin src="/assets/index-Bc31w_L3.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/react-vendor-D9nl-Vdp.js">
+      <link rel="modulepreload" crossorigin href="/assets/ui-vendor-DQNCCVnY.js">
+      <style>
 /* Minimal Critical CSS - Safe for all browsers */
 *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid}
 html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:system-ui,sans-serif}
@@ -45,9 +41,29 @@ img,svg,video{display:block;max-width:100%;height:auto}
 <link rel="preload" href="/assets/index-DkjGP5Sk.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/assets/index-DkjGP5Sk.css"></noscript>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Arch AI Tool","description":"Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more.","url":"https://archaitool.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://archaitool.com/tools?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","name":"Arch AI Tool Directory","url":"https://archaitool.com"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Arch AI Tool","description":"Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more.","url":"https://archaitool.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://archaitool.com/tools?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","name":"Arch AI Tool Directory","url":"https://archaitool.com"}}</script>
 </head>
   <body>
     <div id="root"></div>
+
+    <!-- Google tag (gtag.js) - Google Analytics (Delayed Load) -->
+    <script>
+      // 延迟加载Google Analytics，优先加载页面内容
+      window.addEventListener('load', function() {
+        // 确保页面完全加载后再加载Analytics
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-14MXMX73J2';
+          document.head.appendChild(script);
+
+          // 初始化Google Analytics
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-14MXMX73J2');
+        }, 1000); // 延迟1秒加载，确保页面完全交互
+      });
+    </script>
   </body>
 </html>

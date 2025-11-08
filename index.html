@@ -11,18 +11,34 @@
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-14MXMX73J2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Preconnect for Local Assets (Critical Path Optimization) -->
+    <link rel="preconnect" href="/">
+    <link rel="preload" href="/assets/index-C6wEPRpv.js" as="script" importance="high">
+    <link rel="preload" href="/assets/index-DkjGP5Sk.css" as="style" importance="high">
 
-      gtag('config', 'G-14MXMX73J2');
-    </script>
-  </head>
+    </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Google tag (gtag.js) - Google Analytics (Delayed Load) -->
+    <script>
+      // 延迟加载Google Analytics，优先加载页面内容
+      window.addEventListener('load', function() {
+        // 确保页面完全加载后再加载Analytics
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-14MXMX73J2';
+          document.head.appendChild(script);
+
+          // 初始化Google Analytics
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-14MXMX73J2');
+        }, 1000); // 延迟1秒加载，确保页面完全交互
+      });
+    </script>
   </body>
 </html>
