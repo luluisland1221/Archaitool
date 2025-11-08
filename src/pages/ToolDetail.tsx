@@ -172,6 +172,20 @@ const ToolDetail = () => {
         metaDescription.content = 'The AI architecture tool you are looking for was not found. Explore our comprehensive directory of AI-powered architecture and design tools.';
       }
     }
+
+    // Handle anchor scroll after component mounts
+    setTimeout(() => {
+      const hash = window.location.hash;
+      if (hash === '#tool-content') {
+        const element = document.getElementById('tool-content');
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    }, 100);
   }, [tool]);
 
   const toggleSection = (section: string) => {
@@ -273,7 +287,7 @@ const ToolDetail = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div id="tool-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Breadcrumb Navigation */}
         <div className="mb-8">
           <nav className="flex flex-wrap items-center space-x-2 text-sm text-gray-600 mb-4">
@@ -679,7 +693,7 @@ const ToolDetail = () => {
                   .map((relatedTool) => (
                     <Link
                       key={relatedTool.id}
-                      to={generateToolUrl(relatedTool.id)}
+                      to={`${generateToolUrl(relatedTool.id)}#tool-content`}
                       className="group bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 p-6 hover:bg-gray-50"
                     >
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
