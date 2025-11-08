@@ -68,7 +68,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'ai4spaces.com': '/screenshots/ai4spaces_com_.webp',
   'aigardendesign.io': '/screenshots/aigardendesign_io_.webp',
   'arch-e.ai': '/screenshots/arch_e_ai_.webp',
-  'archi.ai': '/screenshots/archi_ai_.webp',
+  'archi.ai': '/screenshots/archi_ai__enhanced.webp',
   'artevia.ai': '/screenshots/artevia_ai_.webp',
   'collov.ai': '/screenshots/collov ai.webp',
   'decorai.xyz': '/screenshots/decorai_xyz_.webp',
