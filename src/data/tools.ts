@@ -1113,7 +1113,7 @@ export const categories: Category[] = [
                   {
                     name: "Basic",
                     price: "$5",
-                    billing: "one-time",
+                    billing: "onetime",
                     features: [
                       "10 AI credits (one-time)",
                       "10 DXF exports",
@@ -1127,7 +1127,7 @@ export const categories: Category[] = [
                     name: "Pro",
                     price: "$39",
                     originalPrice: "$69",
-                    billing: "one-time",
+                    billing: "onetime",
                     specialOffer: "Limited time discount",
                     features: [
                       "100 AI credits (one-time)",
@@ -1846,7 +1846,7 @@ export const categories: Category[] = [
                   {
                     name: "Starter Pack",
                     price: "$12",
-                    billing: "one-time",
+                    billing: "onetime",
                     features: [
                       "30 renders",
                       "High resolution renders",
@@ -1859,7 +1859,7 @@ export const categories: Category[] = [
                   {
                     name: "Professional Pack",
                     price: "$29",
-                    billing: "one-time",
+                    billing: "onetime",
                     features: [
                       "250 renders",
                       "High resolution renders",
@@ -1873,7 +1873,7 @@ export const categories: Category[] = [
                   {
                     name: "Workflow Optimizer",
                     price: "$99",
-                    billing: "one-time",
+                    billing: "onetime",
                     features: [
                       "1,000 renders",
                       "High resolution renders",
@@ -2584,7 +2584,7 @@ export const categories: Category[] = [
             id: "arch-e-ai",
             name: "Arch E AI",
             description: "Transform spaces and shop recommended products",
-            image: "/screenshots/arch_e_ai_.webp",
+            image: "/screenshots/arch_e_ai_.png",
             url: "https://arch-e.ai/",
             isPaid: true,
             category: "interior-design",
@@ -2594,7 +2594,6 @@ export const categories: Category[] = [
               "AI-powered interior design transformation",
               "30+ design styles (Industrial, Mid Century, Minimalist, Bohemian)",
               "Architectural AI for building image generation",
-              "Photorealistic rendering capabilities",
               "Product recommendation engine",
               "Shopping integration for home decor",
               "Under-30-second design generation",
@@ -2646,7 +2645,6 @@ export const categories: Category[] = [
               "Generate photo-like images in seconds",
               "Revolutionary AI model: 'natural, unique and creative'",
               "Interior and exterior space design",
-              "Support for living room, bedroom, kitchen, bathroom, and dining room",
               "Unlimited designs with no watermarks",
               "Commercial usage rights included",
               "AI-powered style recommendations",
@@ -2748,7 +2746,6 @@ export const categories: Category[] = [
               "AI-powered interior redesign in seconds",
               "Vacant to Finished: Furnish empty spaces instantly",
               "Transform Your Room: Apply different styles to existing rooms",
-              "Design from Scratch: Generate from user preferences",
               "8+ room types supported (Living room, Bedroom, Kitchen, Bathroom, Dining Room, Home Office, Kids room, Media Room)",
               "40+ materials available (Wood, Glass, Metal, Marble, Leather, Fabric, Concrete, Brick, Stone, etc.)",
               "10+ color palettes (Soft Neutrals, Coastal Calm, Nordic Lights, Forest Retreat, etc.)",
@@ -2855,7 +2852,6 @@ export const categories: Category[] = [
               "AI virtual assistant for interior design",
               "Instant room remodeling capabilities",
               "Multiple style options (Boho, Industrial, Modern)",
-              "Advanced style preference algorithms",
               "Before/after visualization gallery",
               "Multiple space type support (bedroom, kitchen, restroom, living room, outdoor)",
               "Free account creation",
@@ -2894,7 +2890,6 @@ export const categories: Category[] = [
               "AI-powered interior design generation in 30 seconds",
               "Upload room images and get instant design transformations",
               "Multiple design styles and themes to choose from",
-              "100-1500 image renders depending on selected plan",
               "Mobile app support for on-the-go designing",
               "Three-step simple design process",
               "Professional-quality interior design outputs",
@@ -2994,7 +2989,6 @@ export const categories: Category[] = [
               "AI house design from uploaded photos",
               "Room makeover transformations",
               "Video walkthrough generation",
-              "360° interior view creation",
               "AI image upscaling and enhancement",
               "Precision image editing tools",
               "40+ interior design styles",
@@ -3120,7 +3114,6 @@ export const categories: Category[] = [
               "Single photo room transformation",
               "Multiple design themes and styles",
               "Instant AI-powered redesigns",
-              "Google authentication for easy access",
               "Free trial with 1 generation",
               "Professional-quality results",
               "User-friendly interface",
@@ -4180,7 +4173,7 @@ export const categories: Category[] = [
                   {
                     name: "Creator Package",
                     price: "$19",
-                    billing: "one-time",
+                    billing: "onetime",
                     features: [
                       "150 credits",
                       "8 generations per run",
