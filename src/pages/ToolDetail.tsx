@@ -680,7 +680,7 @@ const ToolDetail = () => {
                     <Link
                       key={relatedTool.id}
                       to={generateToolUrl(relatedTool.id)}
-                      className="group bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-all duration-300 hover:shadow-md"
+                      className="group bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 p-6 hover:bg-gray-50"
                     >
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
                         {relatedTool.image.startsWith('/screenshots/') ? (
