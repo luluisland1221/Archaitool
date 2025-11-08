@@ -1,0 +1,326 @@
+{
+  "timestamp": "2025-11-08T05:57:30.928Z",
+  "totalTools": 58,
+  "fixedTools": 53,
+  "screenshotFiles": 92,
+  "changes": [
+    {
+      "name": "AiTwo",
+      "id": "aitwo",
+      "oldImage": "AiTwo - AI architectural remodeling design tool",
+      "newFile": "aitwo_co_.webp"
+    },
+    {
+      "name": "Maket AI",
+      "id": "maket-ai",
+      "oldImage": "Maket AI - AI residential building planning tool",
+      "newFile": "www_maket_ai_.webp"
+    },
+    {
+      "name": "Arkdesign AI",
+      "id": "arkdesign-ai",
+      "oldImage": "Arkdesign AI - AI architectural floor plan tool",
+      "newFile": "arkdesign_ai_.webp"
+    },
+    {
+      "name": "Bricsys BIM",
+      "id": "bricsys",
+      "oldImage": "Bricsys BIM - AI building information modeling tool",
+      "newFile": "www_bricsys_com_en_eu_bricscad_bim.webp"
+    },
+    {
+      "name": "TestFit",
+      "id": "testfit",
+      "oldImage": "Testfit - AI site optimization tool",
+      "newFile": "www_testfit_io_product_real_time_ai.webp"
+    },
+    {
+      "name": "Floorplan AI",
+      "id": "floorplan-ai",
+      "oldImage": "Floorplan AI - AI floor plan generation tool",
+      "newFile": "www_floorplan_ai_com_.webp"
+    },
+    {
+      "name": "AI Architectures",
+      "id": "ai-architectures",
+      "oldImage": "AI Architectures - AI architectural design tool",
+      "newFile": "ai_architectures_com_.webp"
+    },
+    {
+      "name": "3D House Planner",
+      "id": "3d-house-planner",
+      "oldImage": "3D House Planner - AI architectural 3D house planning tool",
+      "newFile": "3dhouseplanner_com_.webp"
+    },
+    {
+      "name": "Arcadium 3D",
+      "id": "arcadium-3d",
+      "oldImage": "Arcadium 3D - AI interior design tool",
+      "newFile": "arcadium3d_com_.webp"
+    },
+    {
+      "name": "MyArchitect AI",
+      "id": "myarchitectai",
+      "oldImage": "MyArchitect AI - AI architectural rendering tool",
+      "newFile": "myarchitectai_com_.webp"
+    },
+    {
+      "name": "Visualizee AI",
+      "id": "visualizee-ai",
+      "oldImage": "Visualizee AI - AI architectural visualization tool",
+      "newFile": "visualizee_ai_.webp"
+    },
+    {
+      "name": "Arko AI",
+      "id": "arko-ai",
+      "oldImage": "Arko AI - AI architectural rendering plugin tool",
+      "newFile": "arko_ai_.webp"
+    },
+    {
+      "name": "AI Render Studio",
+      "id": "airender-studio",
+      "oldImage": "AI Render Studio - AI architectural rendering studio tool",
+      "newFile": "airender_studio_.webp"
+    },
+    {
+      "name": "Archsynth",
+      "id": "archsynth",
+      "oldImage": "Archsynth - AI architectural rendering tool",
+      "newFile": "www_archsynth_com_.webp"
+    },
+    {
+      "name": "Visoid",
+      "id": "visoid",
+      "oldImage": "Visoid - AI architectural rendering tool",
+      "newFile": "www_visoid_com_.webp"
+    },
+    {
+      "name": "Lumion",
+      "id": "lumion",
+      "oldImage": "Lumion - AI architectural rendering tool",
+      "newFile": "lumion_com_.webp"
+    },
+    {
+      "name": "D5 Render",
+      "id": "d5-render",
+      "oldImage": "D5 Render - AI architectural real-time rendering tool",
+      "newFile": "www_d5render_com_.webp"
+    },
+    {
+      "name": "Chaos",
+      "id": "chaos",
+      "oldImage": "Chaos - AI architectural visualization tool",
+      "newFile": "chaos.webp"
+    },
+    {
+      "name": "Rendera AI",
+      "id": "rendera-ai",
+      "oldImage": "Rendera AI - AI interior exterior design rendering tool",
+      "newFile": "rendera_ai.webp"
+    },
+    {
+      "name": "Arch E AI",
+      "id": "arch-e-ai",
+      "oldImage": "Arch E AI - AI interior design shopping tool",
+      "newFile": "arch_e_ai_.webp"
+    },
+    {
+      "name": "Archi AI",
+      "id": "archi-ai",
+      "oldImage": "Archi AI - AI interior exterior design tool",
+      "newFile": "archi_ai__enhanced.webp"
+    },
+    {
+      "name": "Indesignify",
+      "id": "indesignify",
+      "oldImage": "InDesignify - AI interior design tool",
+      "newFile": "indesignify_com_.webp"
+    },
+    {
+      "name": "DesignAI",
+      "id": "designai",
+      "oldImage": "DesignAI - AI interior design assistant tool",
+      "newFile": "www_designai_us_.webp"
+    },
+    {
+      "name": "Decorion",
+      "id": "decorion",
+      "oldImage": "Decorion - AI interior designer tool",
+      "newFile": "decorion_xyz_.webp"
+    },
+    {
+      "name": "AI4Spaces",
+      "id": "ai4spaces",
+      "oldImage": "AI4Spaces - AI home design tool",
+      "newFile": "ai4spaces_com_.webp"
+    },
+    {
+      "name": "RoomGPT",
+      "id": "roomgpt",
+      "oldImage": "RoomGPT - AI room transformation tool",
+      "newFile": "www_roomgpt_io_.webp"
+    },
+    {
+      "name": "Vibe3D",
+      "id": "vibe3d",
+      "oldImage": "Vibe3D - AI interior design 3D rendering tool",
+      "newFile": "vibe3d_ai_.webp"
+    },
+    {
+      "name": "Home Design AI",
+      "id": "home-design-ai",
+      "oldImage": "Home Design AI - AI home design tool",
+      "newFile": "home_design_ai_.webp"
+    },
+    {
+      "name": "Renovate AI",
+      "id": "renovate-ai",
+      "oldImage": "Renovate AI - AI home renovation design tool",
+      "newFile": "renovateai_app_.webp"
+    },
+    {
+      "name": "Artevia",
+      "id": "artevia",
+      "oldImage": "Artevia - AI interior design tool",
+      "newFile": "artevia_ai_.webp"
+    },
+    {
+      "name": "Madespace",
+      "id": "madespace",
+      "oldImage": "Madespace - AI interior design studio tool",
+      "newFile": "madespace_ai_.webp"
+    },
+    {
+      "name": "Gepetto App",
+      "id": "gepettoapp",
+      "oldImage": "Gepetto App - AI furnishing decoration tool",
+      "newFile": "gepettoapp_com_.webp"
+    },
+    {
+      "name": "Palette Immo",
+      "id": "palette-immo",
+      "oldImage": "Palette Immo - AI interior photo generator tool",
+      "newFile": "palette_immo_.webp"
+    },
+    {
+      "name": "Paintit AI",
+      "id": "paintit-ai",
+      "oldImage": "Paintit AI - AI virtual staging shopping tool",
+      "newFile": "paintit_ai_.webp"
+    },
+    {
+      "name": "Sofabrain",
+      "id": "sofabrain",
+      "oldImage": "Sofabrain - AI room virtual staging tool",
+      "newFile": "sofabrain_com_.webp"
+    },
+    {
+      "name": "Renovate AI",
+      "id": "renovateai",
+      "oldImage": "Renovate AI - Home renovation visualization app tool",
+      "newFile": "renovateai_app_.webp"
+    },
+    {
+      "name": "Instantdeco AI",
+      "id": "instantdeco-ai",
+      "oldImage": "Instantdeco AI - AI virtual staging photo tool",
+      "newFile": "instantdeco_ai_.webp"
+    },
+    {
+      "name": "Decoratly",
+      "id": "decoratly",
+      "oldImage": "Decoratly - AI interior design transformation tool",
+      "newFile": "www_decoratly_com_.webp"
+    },
+    {
+      "name": "FloorDesign.ai",
+      "id": "floordesign-ai",
+      "oldImage": "FloorDesign.ai - AI floor design tool",
+      "newFile": "floordesign_ai_.webp"
+    },
+    {
+      "name": "LandscapeDesignsAI",
+      "id": "landscapedesignsai",
+      "oldImage": "LandscapeDesignsAI - AI landscape design tool",
+      "newFile": "landscapedesignsai_com_.webp"
+    },
+    {
+      "name": "Dreamzar",
+      "id": "dreamzar",
+      "oldImage": "Dreamzar - AI landscape design tool",
+      "newFile": "www_dreamzar_app_.webp"
+    },
+    {
+      "name": "YardFlip AI",
+      "id": "yardflip",
+      "oldImage": "YardFlip AI - AI yard visualization tool",
+      "newFile": "www_yardflip_ai_.webp"
+    },
+    {
+      "name": "AI Garden Design",
+      "id": "ai-garden-design",
+      "oldImage": "AI Garden Design - AI landscape garden design tool",
+      "newFile": "aigardendesign_io_.webp"
+    },
+    {
+      "name": "Midjourney",
+      "id": "midjourney",
+      "oldImage": "Midjourney - AI creative architectural design tool",
+      "newFile": "midjourney.webp"
+    },
+    {
+      "name": "Moodboard AI",
+      "id": "moodboardai",
+      "oldImage": "Moodboard AI - AI design moodboard creation tool",
+      "newFile": "moodboardai_com_.webp"
+    },
+    {
+      "name": "Rustic AI",
+      "id": "rustic-ai",
+      "oldImage": "Rustic AI - AI marketing creative design tool",
+      "newFile": "www_rusticai_art_.webp"
+    },
+    {
+      "name": "Sketchpro AI",
+      "id": "sketchpro-ai",
+      "oldImage": "Sketchpro AI - AI architectural design assistant tool",
+      "newFile": "sketchpro_ai_.webp"
+    },
+    {
+      "name": "Draftaid",
+      "id": "draftaid",
+      "oldImage": "Draftaid - AI architectural drawing tool",
+      "newFile": "draftaid_io_.webp"
+    },
+    {
+      "name": "Opal AI",
+      "id": "opal-ai",
+      "oldImage": "Opal AI - AI spatial intelligence tool",
+      "newFile": "www_opal_ai_com_.webp"
+    },
+    {
+      "name": "Collov AI",
+      "id": "collov",
+      "oldImage": "Collov AI - AI spatial design tool",
+      "newFile": "collov ai.webp"
+    },
+    {
+      "name": "ReimagineHome AI",
+      "id": "reimaginehome",
+      "oldImage": "ReimagineHome AI - AI home redesign tool",
+      "newFile": "www_reimaginehome_ai_.webp"
+    },
+    {
+      "name": "AI Home Design",
+      "id": "aihomedesign",
+      "oldImage": "AI Home Design - Real estate photo editing tool",
+      "newFile": "aihomedesign_com_.webp"
+    },
+    {
+      "name": "Iacrea",
+      "id": "iacrea",
+      "oldImage": "Iacrea - AI real estate visualization tool",
+      "newFile": "www_iacrea_com_.webp"
+    }
+  ]
+}
