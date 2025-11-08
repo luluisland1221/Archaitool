@@ -173,10 +173,15 @@ const ToolDetail = () => {
       }
     }
 
-    // Ensure page scrolls to top when navigating
+    // Force scroll to top when navigating
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    // Double check after a short delay
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 100);
+    }, 50);
   }, [tool]);
 
   const toggleSection = (section: string) => {
