@@ -72,7 +72,7 @@ const Home = () => {
       <section 
         className="relative bg-cover bg-center py-12" 
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=75&dpr=1")',
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
