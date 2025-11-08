@@ -683,12 +683,28 @@ const ToolDetail = () => {
                       className="group bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-all duration-300 hover:shadow-md"
                     >
                       <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img
-                          src={relatedTool.image}
-                          alt={relatedTool.image}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          loading="lazy"
-                        />
+                        {relatedTool.image.startsWith('/screenshots/') ? (
+                          <img
+                            src={relatedTool.image}
+                            alt={relatedTool.name}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                              target.parentElement!.classList.add('flex', 'items-center', 'justify-center');
+                              target.parentElement!.innerHTML = `<div class="text-center text-gray-500 p-4"><div class="text-2xl mb-2">🖼️</div><div class="text-sm">No screenshot available</div><div class="text-xs">${relatedTool.name}</div></div>`;
+                            }}
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center bg-gray-100">
+                            <div className="text-center text-gray-500 p-4">
+                              <div className="text-2xl mb-2">🛠️</div>
+                              <div className="text-sm font-medium">{relatedTool.name}</div>
+                              <div className="text-xs mt-1">No screenshot available</div>
+                            </div>
+                          </div>
+                        )}
                       </div>
                       <h3 className="font-semibold text-lg text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                         {relatedTool.name}

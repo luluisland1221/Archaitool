@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-11-08T06:01:56.902Z",
+  "totalFiles": 2,
+  "successCount": 0,
+  "failureCount": 2,
+  "results": [
+    {
+      "name": "Archi AI",
+      "webpFile": "archi_ai__enhanced.webp",
+      "pngFile": "archi_ai__enhanced.png",
+      "targetWidth": 480,
+      "targetHeight": 200,
+      "success": false
+    },
+    {
+      "name": "AI Render Studio",
+      "webpFile": "airender_studio_.webp",
+      "pngFile": "airender_studio_.png",
+      "targetWidth": 480,
+      "targetHeight": 200,
+      "success": false
+    }
+  ]
+}

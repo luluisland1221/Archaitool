@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-08T06:02:51.882Z",
+  "type": "image-quality-enhancement",
+  "totalFiles": 2,
+  "successCount": 0,
+  "failureCount": 2,
+  "results": [
+    {
+      "name": "Archi AI",
+      "webpFile": "archi_ai__enhanced.webp",
+      "targetWidth": 480,
+      "targetHeight": 200,
+      "currentSize": 14.1,
+      "idealQuality": 85,
+      "success": false,
+      "error": "UNKNOWN: unknown error, open 'G:\\ai编程\\100个网站\\02 建筑生图工具导航站\\bolt new\\project\\public\\screenshots\\archi_ai__enhanced.webp'"
+    },
+    {
+      "name": "AI Render Studio",
+      "webpFile": "airender_studio_.webp",
+      "targetWidth": 480,
+      "targetHeight": 200,
+      "currentSize": 13.9,
+      "idealQuality": 85,
+      "success": false,
+      "error": "UNKNOWN: unknown error, open 'G:\\ai编程\\100个网站\\02 建筑生图工具导航站\\bolt new\\project\\public\\screenshots\\airender_studio_.webp'"
+    }
+  ]
+}

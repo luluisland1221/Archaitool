@@ -4627,7 +4627,7 @@ export const categories: Category[] = [
             id: "adobe-firefly",
             name: "Adobe Firefly",
             description: "Professional Creative AI for design generation",
-            image: "Adobe Firefly - AI creative design tool",
+            image: "/screenshots/helpx.adobe.webp",
             url: "https://helpx.adobe.com/firefly/get-set-up/access-the-app/access-adobe-firefly.html",
             isPaid: true,
             category: "general-design",
