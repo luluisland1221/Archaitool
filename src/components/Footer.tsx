@@ -65,7 +65,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="text-gray-400">
-              Questions? Reach out to us at contact@archaitool.com
+              Questions? Reach out to us at service@archaitool.com
             </p>
           </div>
         </div>

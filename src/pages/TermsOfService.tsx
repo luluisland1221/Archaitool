@@ -253,7 +253,7 @@ const TermsOfService = () => {
 
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <ul className="space-y-2 text-gray-700">
-                    <li><strong>Email:</strong>contact@archaitool.com</li>
+                    <li><strong>Email:</strong>service@archaitool.com</li>
                     <li><strong>Website:</strong><a href="https://archaitool.com" className="text-gray-700 hover:text-gray-900">https://archaitool.com</a></li>
                   </ul>
                 </div>
