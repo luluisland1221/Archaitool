@@ -13,7 +13,7 @@ export const architectAIGuideArticle = `
 
 <p>The question is no longer <em>if</em> architects should adopt AI, but <em>how</em> to integrate these tools effectively into their workflow.</p>
 
-<p>👉 If you're ready to explore current AI architecture tools, visit our comprehensive tool navigation: <a href="/">ArchAITool.com</a></p>
+<p>👉 If you're ready to explore current AI architecture tools, visit our comprehensive tool navigation: <a href="https://archaitool.com" target="_blank">ArchAITool.com</a></p>
 
 <h2>Step 1: Understanding AI's 4 Core Applications in Architecture</h2>
 
@@ -63,7 +63,7 @@ export const architectAIGuideArticle = `
 
 <p>Let's get hands-on immediately. The fastest way to experience AI in architecture is through concept generation tools. Here's a practical 5-minute tutorial using one of the best free tools available:</p>
 
-<h3>Free Tool Recommendation: <a href="https://ai-architectures.com/" target="_blank" rel="noopener noreferrer">AI Architectures</a></h3>
+<h3>Free Tool Recommendation: <a href="https://archaitool.com/architecture-spatial/ai-architectures" target="_blank" rel="noopener noreferrer">AI Architectures</a></h3>
 
 <p><strong>Why AI Architectures?</strong> It's completely free, web-based (no installation), specifically designed for architects, and produces professional-quality results in seconds.</p>
 
