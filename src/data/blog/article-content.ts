@@ -35,7 +35,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Input your requirements (square footage, room types, adjacencies) and the AI generates optimized layout options.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/testfit">TestFit</a>, Floorplan AI, <a href="/tool/ai-architectures">AI Architectures</a></p>
+<p><strong>Available tools:</strong> <a href="/tool/testfit">TestFit</a>, <a href="/tool/floorplan-ai">Floorplan AI</a>, <a href="/tool/ai-architectures">AI Architectures</a></p>
 
 <p><strong>Best for:</strong> Space planning efficiency, feasibility studies, and rapid iteration on building layouts.</p>
 
@@ -45,7 +45,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Upload your design files (sketches, models, or images) and the AI enhances them into professional-quality renders.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, Visualizee AI, Arko AI</p>
+<p><strong>Available tools:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="/tool/visualizee-ai">Visualizee AI</a>, <a href="/tool/arko-ai">Arko AI</a></p>
 
 <p><strong>Best for:</strong> Client presentations, design development, and portfolio creation.</p>
 
@@ -55,7 +55,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Upload room photos or provide descriptions, and the AI generates complete interior design schemes with furniture, materials, and lighting.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/home-design-ai">Home Design AI</a> (Free), RoomGPT, Arch E AI</p>
+<p><strong>Available tools:</strong> <a href="/tool/home-design-ai">Home Design AI</a> (Free), <a href="/tool/roomgpt">RoomGPT</a>, <a href="/tool/arch-e-ai">Arch E AI</a></p>
 
 <p><strong>Best for:</strong> Interior space planning, material selection, and creating complete interior design presentations.</p>
 
@@ -96,17 +96,17 @@ export const architectAIGuideArticle = `
 
 <h3>1. Professional Quality vs. Speed Trade-off</h3>
 
-<p><strong>High Speed (10-60 seconds):</strong> MyArchitect AI, AI Render Studio – Perfect for rapid iteration and client feedback</p>
+<p><strong>High Speed (10-60 seconds):</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, AI Render Studio – Perfect for rapid iteration and client feedback</p>
 
-<p><strong>High Professional Quality:</strong> Arko AI, Autodesk Forma – Best for final presentations and detailed development</p>
+<p><strong>High Professional Quality:</strong> <a href="/tool/arko-ai">Arko AI</a>, Autodesk Forma – Best for final presentations and detailed development</p>
 
 <p><em>Your choice depends on project stage. Use fast tools for exploration, professional tools for final deliverables.</em></p>
 
 <h3>2. Ease of Use vs. Professional Control</h3>
 
-<p><strong>Easy to Use (One-click):</strong> AI Architectures, RoomGPT – Ideal for beginners and rapid concepting</p>
+<p><strong>Easy to Use (One-click):</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/roomgpt">RoomGPT</a> – Ideal for beginners and rapid concepting</p>
 
-<p><strong>Advanced Control:</strong> TestFit, Bricsys BIM – Suitable for experienced professionals needing precise control</p>
+<p><strong>Advanced Control:</strong> <a href="/tool/testfit">TestFit</a>, Bricsys BIM – Suitable for experienced professionals needing precise control</p>
 
 <p><em>Start with easy tools to build confidence, then gradually move to more advanced options as needed.</em></p>
 
@@ -120,7 +120,7 @@ export const architectAIGuideArticle = `
 
 <h3>4. Output Usability</h3>
 
-<p><strong>Presentation-Ready:</strong> MyArchitect AI, Visualizee AI – Direct client presentations</p>
+<p><strong>Presentation-Ready:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="/tool/visualizee-ai">Visualizee AI</a> – Direct client presentations</p>
 
 <p><strong>Development-Ready:</strong> Autodesk Forma, Bricsys BIM – Can be integrated into professional workflows</p>
 
@@ -129,10 +129,10 @@ export const architectAIGuideArticle = `
 <h3>Tool Recommendations by Need:</h3>
 
 <ul>
-<li><strong>For concept exploration:</strong> AI Architectures + Midjourney</li>
-<li><strong>For layout optimization:</strong> <a href="/tool/testfit">TestFit</a> + Floorplan AI</li>
-<li><strong>For final visualization:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a> + Arko AI</li>
-<li><strong>For interior design:</strong> <a href="/tool/home-design-ai">Home Design AI</a> + RoomGPT</li>
+<li><strong>For concept exploration:</strong> <a href="/tool/ai-architectures">AI Architectures</a> + Midjourney</li>
+<li><strong>For layout optimization:</strong> <a href="/tool/testfit">TestFit</a> + <a href="/tool/floorplan-ai">Floorplan AI</a></li>
+<li><strong>For final visualization:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a> + <a href="/tool/arko-ai">Arko AI</a></li>
+<li><strong>For interior design:</strong> <a href="/tool/home-design-ai">Home Design AI</a> + <a href="/tool/roomgpt">RoomGPT</a></li>
 </ul>
 
 <h2>Step 4: Integrating AI into Your Daily Design Workflow</h2>
