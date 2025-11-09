@@ -76,6 +76,16 @@ export const architectAIGuideArticle = `
 <li><strong>Download Your Best Option</strong> – Choose the concept that best fits your vision</li>
 </ol>
 
+<div style="margin: 2rem 0; text-align: center;">
+  <img src="/AI_Architectures_1.webp" alt="AI Architectures Tool Interface - Generating architectural concepts from text prompts" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">AI Architectures interface showing concept generation from text prompts</p>
+</div>
+
+<div style="margin: 2rem 0; text-align: center;">
+  <img src="/AI_Architectures_2.webp" alt="AI Architecture tool results - Multiple architectural design variations generated from AI" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">AI-generated architectural design variations showcasing different styles and approaches</p>
+</div>
+
 <h3>Professional Prompt Template:</h3>
 
 <blockquote><p>"A modern [building type] with [key features], [architectural style], [material emphasis], [special requirements], 16:9 aspect ratio"</p></blockquote>
@@ -275,6 +285,11 @@ export const architectAIGuideArticle = `
 <h2>Step 4: Integrating AI into Your Daily Design Workflow</h2>
 
 <p>The real power of AI comes from integrating it into your existing workflow. Here's a practical example showing how AI can transform a typical architectural project:</p>
+
+<div style="margin: 2rem 0; text-align: center;">
+  <img src="/Traditional_vs_AI_Enhanced_Architectural_Workflow.webp" alt="Traditional vs AI Enhanced Architectural Workflow Comparison" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">Traditional vs AI-Enhanced Architectural Workflow: Time and efficiency comparison</p>
+</div>
 
 <h3>Case Study: Small Office Building Design</h3>
 
