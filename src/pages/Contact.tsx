@@ -74,9 +74,9 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Contact Information */}
-            <div className="flex flex-col space-y-8 h-full">
+            <div className="space-y-8 h-full">
               {/* Quick Contact */}
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h2>
@@ -139,8 +139,8 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="flex flex-col h-full">
-              <div className="bg-white rounded-xl shadow-lg p-8 flex-grow flex flex-col">
+            <div className="h-full">
+              <div className="bg-white rounded-xl shadow-lg p-8 h-full flex flex-col">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Message</h2>
 
               {submitStatus === 'success' && (
@@ -254,7 +254,7 @@ const Contact = () => {
               </form>
 
               {/* Privacy Notice */}
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+              <div className="mt-auto p-4 bg-gray-50 rounded-lg">
                 <p className="text-sm text-gray-600">
                   <strong>Privacy Protection:</strong> Your personal information will be strictly processed in accordance with our{' '}
                   <a href="/privacy-policy" className="text-gray-700 hover:text-gray-900 underline">
