@@ -207,7 +207,7 @@ const Blog: React.FC = () => {
                 {/* Article 1 */}
                 <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
@@ -218,14 +218,14 @@ const Blog: React.FC = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">15 min read</span>
-                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
 
                 {/* Article 2 */}
                 <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
@@ -236,14 +236,14 @@ const Blog: React.FC = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">12 min read</span>
-                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
 
                 {/* Article 3 */}
                 <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
@@ -254,14 +254,14 @@ const Blog: React.FC = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">10 min read</span>
-                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
 
                 {/* Article 4 */}
                 <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
@@ -272,7 +272,7 @@ const Blog: React.FC = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">18 min read</span>
-                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
               </div>
