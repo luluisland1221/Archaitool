@@ -131,7 +131,7 @@ export const architectAIGuideArticle = `
 <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0;">
 <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
   <thead>
-    <tr style="background: #2c3e50; color: white;">
+    <tr style="background: #374151; color: white;">
       <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: left;">Category</th>
       <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">Professional Quality</th>
       <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">Control</th>
