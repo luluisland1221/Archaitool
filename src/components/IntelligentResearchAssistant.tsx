@@ -381,7 +381,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                 onClick={() => setResearchMode('single')}
                 className={`px-4 py-2 rounded-lg font-medium ${
                   researchMode === 'single'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-gray-800 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -391,7 +391,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                 onClick={() => setResearchMode('batch')}
                 className={`px-4 py-2 rounded-lg font-medium ${
                   researchMode === 'batch'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-gray-800 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -410,7 +410,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                 >
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="font-medium text-gray-900">{tool.name}</h4>
-                    <Play className="h-4 w-4 text-blue-600" />
+                    <Play className="h-4 w-4 text-gray-800" />
                   </div>
                   <p className="text-sm text-gray-600">{tool.category} / {tool.subcategory}</p>
                   <div className="mt-2 flex items-center gap-2">
@@ -426,19 +426,19 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
             <div className="space-y-4">
               {batchPlan && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                  <div className="bg-blue-50 rounded-lg p-4">
+                  <div className="bg-gray-50 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <BarChart3 className="h-5 w-5 text-blue-600" />
-                      <span className="font-medium text-blue-900">Total Tools</span>
+                      <BarChart3 className="h-5 w-5 text-gray-800" />
+                      <span className="font-medium text-gray-900">Total Tools</span>
                     </div>
-                    <p className="text-2xl font-bold text-blue-900">{batchPlan.totalTools}</p>
+                    <p className="text-2xl font-bold text-gray-900">{batchPlan.totalTools}</p>
                   </div>
-                  <div className="bg-green-50 rounded-lg p-4">
+                  <div className="bg-gray-50 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="h-5 w-5 text-green-600" />
-                      <span className="font-medium text-green-900">Est. Time</span>
+                      <TrendingUp className="h-5 w-5 text-gray-700" />
+                      <span className="font-medium text-gray-900">Est. Time</span>
                     </div>
-                    <p className="text-2xl font-bold text-green-900">{batchPlan.estimatedTotalTime}</p>
+                    <p className="text-2xl font-bold text-gray-900">{batchPlan.estimatedTotalTime}</p>
                   </div>
                   <div className="bg-purple-50 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
@@ -464,7 +464,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                       </div>
                       <button
                         onClick={() => startSingleToolResearch(tools.find(t => t.id === plan.toolId)!)}
-                        className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+                        className="px-3 py-1 bg-gray-800 text-white rounded hover:bg-black text-sm"
                       >
                         Research
                       </button>
@@ -494,7 +494,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
 
             <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
               <div
-                className="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                className="bg-gray-800 h-2 rounded-full transition-all duration-500"
                 style={{ width: `${((currentStep + 1) / 7) * 100}%` }}
               ></div>
             </div>
@@ -503,11 +503,11 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
               {researchLog.map((log, index) => (
                 <div key={index} className="flex items-start gap-2 text-sm">
                   {log.includes('✅') ? (
-                    <CheckCircle className="h-4 w-4 text-green-600 mt-0.5" />
+                    <CheckCircle className="h-4 w-4 text-gray-700 mt-0.5" />
                   ) : (
-                    <AlertCircle className="h-4 w-4 text-blue-600 mt-0.5" />
+                    <AlertCircle className="h-4 w-4 text-gray-800 mt-0.5" />
                   )}
-                  <span className={log.includes('✅') ? 'text-green-700' : 'text-gray-700'}>
+                  <span className={log.includes('✅') ? 'text-gray-700' : 'text-gray-700'}>
                     {log}
                   </span>
                 </div>
@@ -523,7 +523,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
               <h3 className="text-lg font-semibold text-gray-900">Research Results</h3>
               <button
                 onClick={exportResearchData}
-                className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
+                className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded hover:bg-black text-sm"
               >
                 <Download className="h-4 w-4" />
                 Export Results
@@ -536,8 +536,8 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                   <div className="flex items-center justify-between mb-3">
                     <h4 className="font-medium text-gray-900">{result.toolName}</h4>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      <span className="text-sm text-green-600">Completed</span>
+                      <CheckCircle className="h-4 w-4 text-gray-700" />
+                      <span className="text-sm text-gray-700">Completed</span>
                     </div>
                   </div>
 

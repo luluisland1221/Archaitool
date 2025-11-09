@@ -147,8 +147,8 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Message</h2>
 
               {submitStatus === 'success' && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                  <p className="text-green-800">✅ Message sent successfully! We will reply to you soon.</p>
+                <div className="mb-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                  <p className="text-gray-900">✅ Message sent successfully! We will reply to you soon.</p>
                 </div>
               )}
 

@@ -41,9 +41,9 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
   const getQualityIcon = (level: string) => {
     switch (level) {
       case 'premium':
-        return <CheckCircle className="h-5 w-5 text-green-500" />;
+        return <CheckCircle className="h-5 w-5 text-gray-600" />;
       case 'comprehensive':
-        return <CheckCircle className="h-5 w-5 text-blue-500" />;
+        return <CheckCircle className="h-5 w-5 text-gray-600" />;
       case 'standard':
         return <Clock className="h-5 w-5 text-amber-500" />;
       case 'basic':
@@ -56,9 +56,9 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
   const getQualityColor = (level: string) => {
     switch (level) {
       case 'premium':
-        return 'bg-green-100 text-green-800 border-green-200';
+        return 'bg-gray-100 text-gray-900 border-gray-200';
       case 'comprehensive':
-        return 'bg-blue-100 text-blue-800 border-blue-200';
+        return 'bg-gray-100 text-black border-gray-200';
       case 'standard':
         return 'bg-amber-100 text-amber-800 border-amber-200';
       case 'basic':
@@ -149,9 +149,9 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-gray-600">Complete</p>
-              <p className="text-2xl font-bold text-green-600">{researchPlan.batched.complete.length}</p>
+              <p className="text-2xl font-bold text-gray-700">{researchPlan.batched.complete.length}</p>
             </div>
-            <CheckCircle className="h-8 w-8 text-green-400" />
+            <CheckCircle className="h-8 w-8 text-gray-400" />
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
           <div className="flex items-center gap-2">
             <button
               onClick={exportResearchPlan}
-              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+              className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded hover:bg-black text-sm"
             >
               <Download className="h-4 w-4" />
               Export Plan
@@ -248,7 +248,7 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
                     href={selectedTool.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
+                    className="text-gray-800 hover:text-black"
                   >
                     <ExternalLink className="h-4 w-4" />
                   </a>
@@ -264,7 +264,7 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div
-                      className="bg-blue-600 h-2 rounded-full"
+                      className="bg-gray-800 h-2 rounded-full"
                       style={{ width: `${evaluateToolDataQuality(selectedTool).score}%` }}
                     ></div>
                   </div>
@@ -275,7 +275,7 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
                     <h3 className="text-sm font-medium text-gray-700 mb-1">Available Info:</h3>
                     <div className="flex flex-wrap gap-1">
                       {evaluateToolDataQuality(selectedTool).availableSections.map(section => (
-                        <span key={section} className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
+                        <span key={section} className="text-xs bg-gray-100 text-gray-900 px-2 py-1 rounded">
                           {section}
                         </span>
                       ))}
@@ -298,7 +298,7 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
 
                 <button
                   onClick={() => setShowTemplate(!showTemplate)}
-                  className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+                  className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2 bg-gray-800 text-white rounded hover:bg-black text-sm"
                 >
                   <FileText className="h-4 w-4" />
                   {showTemplate ? 'Hide' : 'Show'} Research Template

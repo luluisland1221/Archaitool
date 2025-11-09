@@ -141,10 +141,10 @@ export const architectAIGuideArticle = `
   </thead>
   <tbody>
     <tr style="background: white;">
-      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Concept Design Generation</td>
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Concept Design Generation</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #27ae60; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
@@ -165,7 +165,7 @@ export const architectAIGuideArticle = `
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Floor Planning & Layout</td>
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Floor Planning & Layout</td>
     </tr>
     <tr style="background: white;">
       <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/testfit">TestFit</a></td>
@@ -182,14 +182,14 @@ export const architectAIGuideArticle = `
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #27ae60; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Visualization & Rendering</td>
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Visualization & Rendering</td>
     </tr>
     <tr style="background: white;">
       <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/myarchitectai">MyArchitect AI</a></td>
@@ -213,10 +213,10 @@ export const architectAIGuideArticle = `
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Interior Design</td>
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Interior Design</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/home-design-ai">Home Design AI</a> <span style="color: #27ae60; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/home-design-ai">Home Design AI</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
@@ -239,9 +239,9 @@ export const architectAIGuideArticle = `
   </tbody>
 </table>
 
-<div style="margin-top: 1rem; padding: 1rem; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 0.25rem;">
-  <h4 style="margin: 0 0 0.5rem 0; color: #856404;">💡 Assessment Criteria:</h4>
-  <ul style="margin: 0; padding-left: 1.5rem; color: #856404; font-size: 0.9rem;">
+<div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-left: 4px solid #6b7280; border-radius: 0.25rem;">
+  <h4 style="margin: 0 0 0.5rem 0; color: #374151;">💡 Assessment Criteria:</h4>
+  <ul style="margin: 0; padding-left: 1.5rem; color: #4b5563; font-size: 0.9rem;">
     <li><strong>Professional Quality:</strong> Architectural accuracy and technical precision</li>
     <li><strong>Control:</strong> User's ability to customize and refine outputs</li>
     <li><strong>Speed:</strong> Time efficiency from input to final result</li>
@@ -249,9 +249,9 @@ export const architectAIGuideArticle = `
   </ul>
 </div>
 
-<div style="margin-top: 1rem; padding: 1rem; background: #d1ecf1; border-left: 4px solid #17a2b8; border-radius: 0.25rem;">
-  <h4 style="margin: 0 0 0.5rem 0; color: #0c5460;">🎯 Selection Recommendations:</h4>
-  <ul style="margin: 0; padding-left: 1.5rem; color: #0c5460; font-size: 0.9rem;">
+<div style="margin-top: 1rem; padding: 1rem; background: #f3f4f6; border-left: 4px solid #374151; border-radius: 0.25rem;">
+  <h4 style="margin: 0 0 0.5rem 0; color: #111827;">🎯 Selection Recommendations:</h4>
+  <ul style="margin: 0; padding-left: 1.5rem; color: #1f2937; font-size: 0.9rem;">
     <li><strong>For Beginners:</strong> AI Architectures + Home Design AI (both free)</li>
     <li><strong>For Efficiency:</strong> MyArchitect AI + TestFit</li>
     <li><strong>For Professional Output:</strong> Arko AI + Arkdesign AI</li>

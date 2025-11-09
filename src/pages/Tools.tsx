@@ -129,7 +129,7 @@ const Tools = () => {
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             {isNewTool && (
-              <div className="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase z-20">
+              <div className="absolute top-4 left-4 bg-gray-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase z-20">
                 NEW
               </div>
             )}
@@ -142,7 +142,7 @@ const Tools = () => {
               {tool.description}
             </p>
             <div className="flex justify-between items-center">
-              <span className={`px-3 py-1 ${tool.isPaid ? 'bg-gray-100' : 'bg-green-50'} text-sm rounded-full`}>
+              <span className={`px-3 py-1 ${tool.isPaid ? 'bg-gray-100' : 'bg-gray-50'} text-sm rounded-full`}>
                 {tool.isPaid ? 'Paid' : 'Free'}
               </span>
             </div>

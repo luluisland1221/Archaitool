@@ -115,7 +115,7 @@ const BlogPost: React.FC = () => {
           }
 
           .blog-content a {
-            color: #0066cc;
+            color: #000;
             text-decoration: underline;
             font-weight: 500;
             transition: all 0.2s ease;
@@ -124,8 +124,8 @@ const BlogPost: React.FC = () => {
           }
 
           .blog-content a:hover {
-            color: #0052a3;
-            text-decoration-color: #0052a3;
+            color: #374151;
+            text-decoration-color: #374151;
           }
 
           .blog-content ul, .blog-content ol {

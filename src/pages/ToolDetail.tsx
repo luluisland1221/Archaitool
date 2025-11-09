@@ -197,7 +197,7 @@ const ToolDetail = () => {
             <p className="text-gray-600 mb-6">The tool you're looking for doesn't exist.</p>
             <Link
               to="/tools"
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center text-gray-800 hover:text-black"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Tools
@@ -231,7 +231,7 @@ const ToolDetail = () => {
                 <div className="flex items-center gap-4">
                   <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name} - AI Tool for Architecture & Design</h1>
                   {isNewTool && (
-                    <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
+                    <span className="bg-gray-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
                       NEW
                     </span>
                   )}
@@ -329,7 +329,7 @@ const ToolDetail = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {tool.keyFeatures.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50">
-                      <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{feature}</span>
                     </div>
                   ))}
@@ -355,7 +355,7 @@ const ToolDetail = () => {
                       <h3 className="font-semibold text-gray-900 mb-2">Supported Formats</h3>
                       <div className="flex flex-wrap gap-2">
                         {tool.technicalSpecs.supportedFormats.map((format, index) => (
-                          <span key={index} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                          <span key={index} className="bg-gray-100 text-black px-3 py-1 rounded-full text-sm">
                             {format}
                           </span>
                         ))}
@@ -368,7 +368,7 @@ const ToolDetail = () => {
                       <h3 className="font-semibold text-gray-900 mb-2">Export Options</h3>
                       <div className="flex flex-wrap gap-2">
                         {tool.technicalSpecs.exportOptions.map((option, index) => (
-                          <span key={index} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                          <span key={index} className="bg-gray-100 text-gray-900 px-3 py-1 rounded-full text-sm">
                             {option}
                           </span>
                         ))}
@@ -390,13 +390,13 @@ const ToolDetail = () => {
                   <div className="grid grid-cols-2 gap-4">
                     {tool.technicalSpecs.collaboration !== undefined && (
                       <div className="flex items-center gap-2">
-                        <Users className="h-5 w-5 text-blue-500" />
+                        <Users className="h-5 w-5 text-gray-600" />
                         <span className="text-gray-700">Collaboration: {tool.technicalSpecs.collaboration ? 'Yes' : 'No'}</span>
                       </div>
                     )}
                     {tool.technicalSpecs.apiAvailable !== undefined && (
                       <div className="flex items-center gap-2">
-                        <Globe className="h-5 w-5 text-green-500" />
+                        <Globe className="h-5 w-5 text-gray-600" />
                         <span className="text-gray-700">API Available: {tool.technicalSpecs.apiAvailable ? 'Yes' : 'No'}</span>
                       </div>
                     )}
@@ -418,7 +418,7 @@ const ToolDetail = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {tool.useCases.map((useCase, index) => (
                     <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
-                      <Award className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                      <Award className="h-5 w-5 text-gray-600 flex-shrink-0" />
                       <span className="text-gray-700">{useCase}</span>
                     </div>
                   ))}
@@ -432,18 +432,18 @@ const ToolDetail = () => {
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Pricing</h2>
 
                 {tool.pricing.freeTier && (
-                  <div className="mb-8 p-6 bg-green-50 rounded-lg border border-green-200">
-                    <h3 className="text-xl font-semibold text-green-800 mb-4">Free Plan</h3>
+                  <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Free Plan</h3>
                     <ul className="space-y-2">
                       {tool.pricing.freeTier.features.map((feature, index) => (
-                        <li key={index} className="flex items-center gap-2 text-green-700">
+                        <li key={index} className="flex items-center gap-2 text-gray-700">
                           <Check className="h-4 w-4" />
                           {feature}
                         </li>
                       ))}
                     </ul>
                     {tool.pricing.freeTier.limitations && (
-                      <div className="mt-4 text-sm text-green-600">
+                      <div className="mt-4 text-sm text-gray-700">
                         <strong>Limitations:</strong>
                         <ul className="mt-1 space-y-1">
                           {tool.pricing.freeTier.limitations.map((limitation, index) => (
@@ -463,13 +463,13 @@ const ToolDetail = () => {
                         <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                           <div className="flex justify-between items-start mb-4">
                             <h4 className="text-lg font-semibold">{plan.name}</h4>
-                            <span className="text-2xl font-bold text-blue-600">{plan.price}</span>
+                            <span className="text-2xl font-bold text-gray-800">{plan.price}</span>
                           </div>
                           <p className="text-sm text-gray-600 mb-4">{plan.targetUser}</p>
                           <ul className="space-y-2 mb-4">
                             {plan.features.map((feature, idx) => (
                               <li key={idx} className="flex items-center gap-2 text-gray-700">
-                                <Check className="h-4 w-4 text-green-500" />
+                                <Check className="h-4 w-4 text-gray-600" />
                                 {feature}
                               </li>
                             ))}
@@ -507,7 +507,7 @@ const ToolDetail = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {tool.integrations.map((integration, index) => (
                     <div key={index} className="flex items-center gap-3 p-3 rounded-lg border border-gray-200">
-                      <Globe className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                      <Globe className="h-5 w-5 text-gray-600 flex-shrink-0" />
                       <span className="text-gray-700">{integration}</span>
                     </div>
                   ))}
@@ -584,13 +584,13 @@ const ToolDetail = () => {
                       <div className="grid grid-cols-3 gap-2 text-center">
                         {tool.companyInfo.userStats.users && (
                           <div>
-                            <p className="text-lg font-bold text-blue-600">{tool.companyInfo.userStats.users}</p>
+                            <p className="text-lg font-bold text-gray-800">{tool.companyInfo.userStats.users}</p>
                             <p className="text-xs text-gray-500">Users</p>
                           </div>
                         )}
                         {tool.companyInfo.userStats.countries && (
                           <div>
-                            <p className="text-lg font-bold text-green-600">{tool.companyInfo.userStats.countries}</p>
+                            <p className="text-lg font-bold text-gray-700">{tool.companyInfo.userStats.countries}</p>
                             <p className="text-xs text-gray-500">Countries</p>
                           </div>
                         )}
@@ -609,7 +609,7 @@ const ToolDetail = () => {
                     <h4 className="font-medium mb-3">Support Options</h4>
                     <div className="space-y-2">
                       {tool.companyInfo?.support?.email && (
-                        <a href={`mailto:${tool.companyInfo?.support?.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600">
+                        <a href={`mailto:${tool.companyInfo?.support?.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-800">
                           <Mail className="h-4 w-4" />
                           Email Support
                         </a>
@@ -621,7 +621,7 @@ const ToolDetail = () => {
                         </div>
                       )}
                       {tool.companyInfo?.support?.documentation && (
-                        <a href={tool.companyInfo.support.documentation} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600">
+                        <a href={tool.companyInfo.support.documentation} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-800">
                           <BookOpen className="h-4 w-4" />
                           Documentation
                         </a>
@@ -635,12 +635,12 @@ const ToolDetail = () => {
                       <h4 className="font-medium mb-3">Follow</h4>
                       <div className="flex gap-2">
                         {tool.companyInfo?.socialMedia?.linkedin && (
-                          <a href={tool.companyInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600">
+                          <a href={tool.companyInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-800">
                             <Globe className="h-5 w-5" />
                           </a>
                         )}
                         {tool.companyInfo?.socialMedia?.twitter && (
-                          <a href={tool.companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400">
+                          <a href={tool.companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-600">
                             <MessageCircle className="h-5 w-5" />
                           </a>
                         )}
@@ -657,11 +657,11 @@ const ToolDetail = () => {
 
               {/* Trust Indicators */}
               {tool.companyInfo?.accreditations && tool.companyInfo.accreditations.length > 0 && (
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
-                  <h3 className="text-lg font-semibold mb-3 text-blue-900">Accreditations</h3>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-gray-200">
+                  <h3 className="text-lg font-semibold mb-3 text-gray-900">Accreditations</h3>
                   <div className="space-y-2">
                     {tool.companyInfo.accreditations.map((accreditation, index) => (
-                      <div key={index} className="flex items-center gap-2 text-sm text-blue-800">
+                      <div key={index} className="flex items-center gap-2 text-sm text-black">
                         <Award className="h-4 w-4" />
                         {accreditation}
                       </div>
@@ -716,7 +716,7 @@ const ToolDetail = () => {
                           </div>
                         )}
                       </div>
-                      <h3 className="font-semibold text-lg text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                      <h3 className="font-semibold text-lg text-gray-900 mb-2 group-hover:text-gray-800 transition-colors">
                         {relatedTool.name}
                       </h3>
                       <p className="text-gray-600 text-sm line-clamp-2">

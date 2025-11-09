@@ -52,7 +52,7 @@ const ToolDetail = () => {
             <p className="text-gray-600 mb-6">The tool you're looking for doesn't exist.</p>
             <Link 
               to="/tools" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center text-gray-800 hover:text-black"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Tools
@@ -105,7 +105,7 @@ const ToolDetail = () => {
                 <div className="flex items-center gap-3">
                   <h1 className="text-4xl font-bold">{tool.name}</h1>
                   {isNewTool && (
-                    <span className="bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
+                    <span className="bg-gray-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
                       NEW
                     </span>
                   )}
@@ -135,7 +135,7 @@ const ToolDetail = () => {
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="bg-gray-50 p-6 rounded-lg">
                       <div className="flex items-center mb-4">
-                        <Building2 className="h-6 w-6 text-blue-500 mr-2" />
+                        <Building2 className="h-6 w-6 text-gray-600 mr-2" />
                         <h3 className="text-lg font-semibold">Architecture</h3>
                       </div>
                       <p className="text-gray-600">
@@ -153,7 +153,7 @@ const ToolDetail = () => {
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
                       <div className="flex items-center mb-4">
-                        <Palette className="h-6 w-6 text-green-500 mr-2" />
+                        <Palette className="h-6 w-6 text-gray-600 mr-2" />
                         <h3 className="text-lg font-semibold">Design</h3>
                       </div>
                       <p className="text-gray-600">
@@ -174,23 +174,23 @@ const ToolDetail = () => {
                   <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                   <ul className="space-y-3">
                     <li className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-2" />
+                      <Check className="h-5 w-5 text-gray-600 mr-2" />
                       Advanced AI-powered visualization and generation
                     </li>
                     <li className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-2" />
+                      <Check className="h-5 w-5 text-gray-600 mr-2" />
                       Intuitive user interface for seamless workflow
                     </li>
                     <li className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-2" />
+                      <Check className="h-5 w-5 text-gray-600 mr-2" />
                       Fast rendering capabilities with high-quality output
                     </li>
                     <li className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-2" />
+                      <Check className="h-5 w-5 text-gray-600 mr-2" />
                       Professional-grade results for architectural projects
                     </li>
                     <li className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-2" />
+                      <Check className="h-5 w-5 text-gray-600 mr-2" />
                       Extensive customization options and style controls
                     </li>
                   </ul>

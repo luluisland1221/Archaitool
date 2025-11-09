@@ -47,7 +47,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Key Features
           {tool.keyFeatures ? (
-            <span className="ml-2 text-sm font-normal text-green-600 bg-green-100 px-2 py-1 rounded-full">
+            <span className="ml-2 text-sm font-normal text-gray-700 bg-gray-100 px-2 py-1 rounded-full">
               Verified
             </span>
           ) : (
@@ -59,7 +59,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {toolData.keyFeatures.map((feature, index) => (
             <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50">
-              <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+              <Check className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
               <span className="text-gray-700">{feature}</span>
             </div>
           ))}
@@ -84,7 +84,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Technical Specifications
           {tool.technicalSpecs ? (
-            <span className="ml-2 text-sm font-normal text-green-600 bg-green-100 px-2 py-1 rounded-full">
+            <span className="ml-2 text-sm font-normal text-gray-700 bg-gray-100 px-2 py-1 rounded-full">
               Verified
             </span>
           ) : (
@@ -99,7 +99,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
               <h3 className="font-semibold text-gray-900 mb-2">Supported Formats</h3>
               <div className="flex flex-wrap gap-2">
                 {toolData.technicalSpecs.supportedFormats.map((format, index) => (
-                  <span key={index} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                  <span key={index} className="bg-gray-100 text-black px-3 py-1 rounded-full text-sm">
                     {format}
                   </span>
                 ))}
@@ -112,7 +112,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
               <h3 className="font-semibold text-gray-900 mb-2">Export Options</h3>
               <div className="flex flex-wrap gap-2">
                 {toolData.technicalSpecs.exportOptions.map((option, index) => (
-                  <span key={index} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                  <span key={index} className="bg-gray-100 text-gray-900 px-3 py-1 rounded-full text-sm">
                     {option}
                   </span>
                 ))}
@@ -134,13 +134,13 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
           <div className="grid grid-cols-2 gap-4">
             {toolData.technicalSpecs.collaboration !== undefined && (
               <div className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-blue-500" />
+                <Users className="h-5 w-5 text-gray-600" />
                 <span className="text-gray-700">Collaboration: {toolData.technicalSpecs.collaboration ? 'Yes' : 'No'}</span>
               </div>
             )}
             {toolData.technicalSpecs.apiAvailable !== undefined && (
               <div className="flex items-center gap-2">
-                <Globe className="h-5 w-5 text-green-500" />
+                <Globe className="h-5 w-5 text-gray-600" />
                 <span className="text-gray-700">API Available: {toolData.technicalSpecs.apiAvailable ? 'Yes' : 'No'}</span>
               </div>
             )}
@@ -159,7 +159,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Use Cases
           {tool.useCases ? (
-            <span className="ml-2 text-sm font-normal text-green-600 bg-green-100 px-2 py-1 rounded-full">
+            <span className="ml-2 text-sm font-normal text-gray-700 bg-gray-100 px-2 py-1 rounded-full">
               Verified
             </span>
           ) : (
@@ -171,7 +171,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {toolData.useCases.map((useCase, index) => (
             <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
-              <Award className="h-5 w-5 text-blue-500 flex-shrink-0" />
+              <Award className="h-5 w-5 text-gray-600 flex-shrink-0" />
               <span className="text-gray-700">{useCase}</span>
             </div>
           ))}
@@ -183,7 +183,7 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Pricing
           {tool.pricing ? (
-            <span className="ml-2 text-sm font-normal text-green-600 bg-green-100 px-2 py-1 rounded-full">
+            <span className="ml-2 text-sm font-normal text-gray-700 bg-gray-100 px-2 py-1 rounded-full">
               Verified
             </span>
           ) : (
@@ -194,18 +194,18 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         </h2>
 
         {toolData.pricing.freeTier && (
-          <div className="mb-8 p-6 bg-green-50 rounded-lg border border-green-200">
-            <h3 className="text-xl font-semibold text-green-800 mb-4">Free Plan</h3>
+          <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Free Plan</h3>
             <ul className="space-y-2">
               {toolData.pricing.freeTier.features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-2 text-green-700">
+                <li key={index} className="flex items-center gap-2 text-gray-700">
                   <Check className="h-4 w-4" />
                   {feature}
                 </li>
               ))}
             </ul>
             {toolData.pricing.freeTier.limitations && (
-              <div className="mt-4 text-sm text-green-600">
+              <div className="mt-4 text-sm text-gray-700">
                 <strong>Limitations:</strong>
                 <ul className="mt-1 space-y-1">
                   {toolData.pricing.freeTier.limitations.map((limitation, index) => (
@@ -225,13 +225,13 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
                 <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                   <div className="flex justify-between items-start mb-4">
                     <h4 className="text-lg font-semibold">{plan.name}</h4>
-                    <span className="text-2xl font-bold text-blue-600">{plan.price}</span>
+                    <span className="text-2xl font-bold text-gray-800">{plan.price}</span>
                   </div>
                   <p className="text-sm text-gray-600 mb-4">{plan.targetUser}</p>
                   <ul className="space-y-2 mb-4">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-gray-700">
-                        <Check className="h-4 w-4 text-green-500" />
+                        <Check className="h-4 w-4 text-gray-600" />
                         {feature}
                       </li>
                     ))}
@@ -266,14 +266,14 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
         <div className="bg-white rounded-xl shadow-lg p-8">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
             Integrations
-            <span className="ml-2 text-sm font-normal text-green-600 bg-green-100 px-2 py-1 rounded-full">
+            <span className="ml-2 text-sm font-normal text-gray-700 bg-gray-100 px-2 py-1 rounded-full">
               Verified
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {toolData.integrations.map((integration, index) => (
               <div key={index} className="flex items-center gap-3 p-3 rounded-lg border border-gray-200">
-                <Globe className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                <Globe className="h-5 w-5 text-gray-600 flex-shrink-0" />
                 <span className="text-gray-700">{integration}</span>
               </div>
             ))}
@@ -283,16 +283,16 @@ export const AdaptiveToolDetail: React.FC<AdaptiveToolDetailProps> = ({ tool }) 
 
       {/* Missing Information Notice */}
       {quality.missingSections.length > 0 && quality.level !== 'premium' && (
-        <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+        <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
           <div className="flex items-start gap-3">
-            <Info className="h-5 w-5 text-blue-600 mt-0.5" />
+            <Info className="h-5 w-5 text-gray-800 mt-0.5" />
             <div>
-              <h3 className="font-semibold text-blue-900 mb-2">Help Us Improve This Page</h3>
-              <p className="text-blue-800 text-sm mb-3">
+              <h3 className="font-semibold text-gray-900 mb-2">Help Us Improve This Page</h3>
+              <p className="text-black text-sm mb-3">
                 We're working to gather more detailed information about {tool.name}.
                 The following sections could use more research: {quality.missingSections.join(', ')}.
               </p>
-              <div className="text-xs text-blue-600">
+              <div className="text-xs text-gray-800">
                 This is a crowdsourced directory. Information accuracy helps the architecture community make better tool decisions.
               </div>
             </div>

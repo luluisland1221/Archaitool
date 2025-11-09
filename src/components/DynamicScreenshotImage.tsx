@@ -158,7 +158,7 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
       {useDynamicScreenshot && (
         <button
           onClick={handleRetry}
-          className="px-3 py-1 bg-blue-500 text-white text-xs rounded hover:bg-blue-600 transition-colors"
+          className="px-3 py-1 bg-gray-700 text-white text-xs rounded hover:bg-gray-800 transition-colors"
         >
           Retry
         </button>
