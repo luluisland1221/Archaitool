@@ -1,6 +1,6 @@
 import { BlogPost } from './types';
 import { blogTags } from './tags';
-import { architectAIGuideArticle } from './article-content';
+import { architectAIGuideArticle, top10AITools2025Article } from './article-content';
 
 export const blogPosts: BlogPost[] = [
   {
@@ -29,8 +29,36 @@ export const blogPosts: BlogPost[] = [
         'AI in architecture 2025'
       ]
     }
+  },
+  {
+    id: 'top-10-ai-tools-2025',
+    title: 'The Ultimate 2025 Guide: 10 AI Tools Every Architect Should Know',
+    slug: 'top-10-ai-tools-every-architect-should-know-2025',
+    excerpt: 'Discover the 10 most impactful AI architecture tools for 2025. From concept generation to visualization, find the perfect tools to enhance your architectural practice.',
+    content: top10AITools2025Article,
+    author: {
+      name: 'ArchAITool Team',
+      bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
+    },
+    publishedDate: '2025-01-10',
+    readTime: 8,
+    tags: [blogTags[1].id, blogTags[0].id], // Tool Reviews, AI Architecture Tutorials
+    seo: {
+      description: 'Comprehensive analysis of the top 10 AI architecture tools for 2025. Compare features, pricing, and use cases to find the perfect AI tools for your practice.',
+      keywords: [
+        'AI architecture tools 2025',
+        'best AI tools for architects',
+        'architectural AI comparison',
+        'AI design software',
+        'AI Architectures',
+        'TestFit',
+        'MyArchitect AI',
+        'Arko AI',
+        'Arkdesign AI',
+        'architectural technology trends'
+      ]
+    }
   }
-  // More blog posts will be added here
 ];
 
 export const getPostBySlug = (slug: string): BlogPost | undefined => {
