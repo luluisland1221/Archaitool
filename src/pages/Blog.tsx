@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Search, BookOpen } from 'lucide-react';
+import { Search, BookOpen, Clock } from 'lucide-react';
 import { blogPosts } from '../data/blog/posts';
 
 const Blog: React.FC = () => {
@@ -195,6 +195,86 @@ const Blog: React.FC = () => {
               >
                 Clear all filters
               </button>
+            </div>
+          )}
+
+          {/* Coming Soon Articles */}
+          {searchQuery === '' && selectedTags.length === 0 && (
+            <div className="mt-16">
+              <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Coming Soon Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* Article 1 */}
+                <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <Clock className="h-4 w-4 text-gray-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    Accelerating Architectural Concept Design with AI: A Step-by-Step Workflow from Sketch to Visualization
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    Learn how to transform your architectural sketches into professional visualizations using AI tools. This comprehensive workflow guide covers everything from initial concept to final presentation.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">15 min read</span>
+                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                  </div>
+                </div>
+
+                {/* Article 2 */}
+                <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <Clock className="h-4 w-4 text-gray-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    From School to Practice: How to Choose Your First AI Tool as an Architect (2025 Guide)
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    Transitioning from architecture school to professional practice? This guide helps emerging architects select the right AI tools to kickstart their career and enhance their design workflow.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">12 min read</span>
+                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                  </div>
+                </div>
+
+                {/* Article 3 */}
+                <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <Clock className="h-4 w-4 text-gray-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    AI Architecture Images Are Getting Unreal—How Architects Can Stay Professional
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    As AI-generated architectural imagery becomes increasingly photorealistic, discover how architects can maintain professional standards while leveraging these powerful visualization tools.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">10 min read</span>
+                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                  </div>
+                </div>
+
+                {/* Article 4 */}
+                <div className="bg-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
+                    <Clock className="h-4 w-4 text-gray-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    How Small Architecture Firms Can Boost Productivity with AI (2025)
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
+                    Practical strategies for small architecture firms to implement AI tools effectively. Learn how to maximize ROI, streamline workflows, and compete with larger firms using smart AI solutions.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">18 min read</span>
+                    <span className="text-yellow-600 font-medium text-sm">Coming Soon</span>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
