@@ -249,6 +249,11 @@ export const architectAIGuideArticle = `
   </tbody>
 </table>
 
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/ai-architecture-tools-comparison-matrix-2025-tech.webp" alt="AI Architecture Tools Comparison Matrix 2025" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Comprehensive comparison matrix of the top 10 AI architecture tools for 2025</p>
+</div>
+
 <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-left: 4px solid #6b7280; border-radius: 0.25rem;">
   <h4 style="margin: 0 0 0.5rem 0; color: #374151;">💡 Assessment Criteria:</h4>
   <ul style="margin: 0; padding-left: 1.5rem; color: #4b5563; font-size: 0.9rem;">
@@ -626,6 +631,11 @@ export const top10AITools2025Article = `
 
 <h3>Real-time Collaboration</h3>
 <p>Cloud-based AI tools will enable real-time collaboration on AI-generated designs, transforming how teams work together.</p>
+
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/ai-architecture-tools-decision-tree.webp" alt="AI Architecture Tools Decision Tree" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Decision tree for choosing the right AI architecture tools based on your specific needs</p>
+</div>
 
 <h2>Conclusion</h2>
 
