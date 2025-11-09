@@ -129,7 +129,11 @@ const Blog: React.FC = () => {
           {filteredPosts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPosts.map((post) => (
-                <div key={post.id} className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <a
+                  key={post.id}
+                  href={`/blog/${post.slug}`}
+                  className="group bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 block"
+                >
                   {post.featuredImage && (
                     <div className="aspect-w-16 aspect-h-9 bg-gray-100">
                       <img
@@ -150,7 +154,7 @@ const Blog: React.FC = () => {
                       <span>{post.readTime} min read</span>
                     </div>
 
-                    <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-black transition-colors">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-black transition-colors">
                       {post.title}
                     </h2>
 
@@ -160,23 +164,20 @@ const Blog: React.FC = () => {
 
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-gray-600">{post.author.name}</span>
-                      <a
-                        href={`/blog/${post.slug}`}
-                        className="text-black hover:text-gray-600 font-medium text-sm inline-flex items-center"
-                      >
+                      <span className="text-black hover:text-gray-600 font-medium text-sm inline-flex items-center">
                         Read More
                         <svg
-                          className="ml-2 w-4 h-4 transform hover:translate-x-1 transition-transform"
+                          className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
                         >
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                      </a>
+                      </span>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           ) : (
