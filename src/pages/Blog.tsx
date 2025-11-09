@@ -185,10 +185,10 @@ const Blog: React.FC = () => {
                     <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-3">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Accelerating Architectural Concept Design with AI: A Step-by-Step Workflow from Sketch to Visualization
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-4">
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Learn how to transform your architectural sketches into professional visualizations using AI tools. This comprehensive workflow guide covers everything from initial concept to final presentation.
                   </p>
                   <div className="flex items-center justify-between">
@@ -203,10 +203,10 @@ const Blog: React.FC = () => {
                     <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-3">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     From School to Practice: How to Choose Your First AI Tool as an Architect (2025 Guide)
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-4">
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Transitioning from architecture school to professional practice? This guide helps emerging architects select the right AI tools to kickstart their career and enhance their design workflow.
                   </p>
                   <div className="flex items-center justify-between">
@@ -221,10 +221,10 @@ const Blog: React.FC = () => {
                     <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-3">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     AI Architecture Images Are Getting Unreal—How Architects Can Stay Professional
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-4">
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     As AI-generated architectural imagery becomes increasingly photorealistic, discover how architects can maintain professional standards while leveraging these powerful visualization tools.
                   </p>
                   <div className="flex items-center justify-between">
@@ -239,10 +239,10 @@ const Blog: React.FC = () => {
                     <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Coming Soon</span>
                     <Clock className="h-4 w-4 text-gray-400" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-3">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     How Small Architecture Firms Can Boost Productivity with AI (2025)
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-4">
+                  <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Practical strategies for small architecture firms to implement AI tools effectively. Learn how to maximize ROI, streamline workflows, and compete with larger firms using smart AI solutions.
                   </p>
                   <div className="flex items-center justify-between">

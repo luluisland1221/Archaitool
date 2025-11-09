@@ -47,7 +47,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, showTags = true }) => {
           {post.title}
         </h2>
 
-        <p className="text-gray-600 mb-4 line-clamp-3">
+        <p className="text-gray-600 mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
           {post.excerpt}
         </p>
 
