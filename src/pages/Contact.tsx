@@ -74,11 +74,11 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12" style={{ alignItems: 'stretch' }}>
             {/* Contact Information */}
-            <div className="flex flex-col h-full space-y-8">
+            <div className="flex flex-col h-full">
               {/* Quick Contact */}
-              <div className="bg-white rounded-xl shadow-lg p-8 flex-shrink-0">
+              <div className="bg-white rounded-xl shadow-lg p-8 flex-shrink-0" style={{ flexBasis: 'auto' }}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h2>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -123,7 +123,7 @@ const Contact = () => {
               </div>
 
               {/* Other Contact Info */}
-              <div className="bg-white rounded-xl shadow-lg p-8 flex-shrink-0">
+              <div className="bg-white rounded-xl shadow-lg p-8 flex-grow">
                 <h3 className="font-semibold text-gray-900 mb-3">Other Contact Information</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
                   <div>
@@ -135,9 +135,10 @@ const Contact = () => {
                     <p>Global</p>
                   </div>
                 </div>
+                <div className="mt-auto pt-8">
+                  <p className="text-sm text-gray-500">We're committed to providing excellent service and support for all your AI architecture and design tool needs.</p>
+                </div>
               </div>
-              {/* Spacer to help with alignment */}
-              <div className="flex-grow"></div>
             </div>
 
             {/* Contact Form */}
