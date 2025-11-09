@@ -26,7 +26,8 @@
       "Bash(/dev/null)",
       "Bash(del adobe_firefly.webp openai_dalle3.webp veras_evolve_lab.webp autodesk_forma.webp)",
       "Bash(git pull:*)",
-      "Bash(npx eslint:*)"
+      "Bash(npx eslint:*)",
+      "Bash(del:*)"
     ],
     "deny": [],
     "ask": []

@@ -127,7 +127,7 @@ function App() {
             <Route path="/landscape-design/:id" element={<ToolDetail />} />
             <Route path="/design-tools/:id" element={<ToolDetail />} />
             <Route path="/real-estate/:id" element={<ToolDetail />} />
-            {/* Blog routes */}
+                {/* Blog routes */}
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
