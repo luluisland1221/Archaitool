@@ -63,7 +63,7 @@ export const architectAIGuideArticle = `
 
 <p>Let's get hands-on immediately. The fastest way to experience AI in architecture is through concept generation tools. Here's a practical 5-minute tutorial using one of the best free tools available:</p>
 
-<h3>Free Tool Recommendation: AI Architectures</h3>
+<h3>Free Tool Recommendation: <a href="https://ai-architectures.com/" target="_blank" rel="noopener noreferrer">AI Architectures</a></h3>
 
 <p><strong>Why AI Architectures?</strong> It's completely free, web-based (no installation), specifically designed for architects, and produces professional-quality results in seconds.</p>
 
@@ -96,9 +96,9 @@ export const architectAIGuideArticle = `
 
 <h3>1. Professional Quality vs. Speed Trade-off</h3>
 
-<p><strong>High Speed (10-60 seconds):</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, AI Render Studio – Perfect for rapid iteration and client feedback</p>
+<p><strong>High Speed (10-60 seconds):</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="https://archaitool.com/architectural-visualization/ai-render-studio" target="_blank" rel="noopener noreferrer">AI Render Studio</a> – Perfect for rapid iteration and client feedback</p>
 
-<p><strong>High Professional Quality:</strong> <a href="/tool/arko-ai">Arko AI</a>, Autodesk Forma – Best for final presentations and detailed development</p>
+<p><strong>High Professional Quality:</strong> <a href="/tool/arko-ai">Arko AI</a>, <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> – Best for final presentations and detailed development</p>
 
 <p><em>Your choice depends on project stage. Use fast tools for exploration, professional tools for final deliverables.</em></p>
 
@@ -106,13 +106,13 @@ export const architectAIGuideArticle = `
 
 <p><strong>Easy to Use (One-click):</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/roomgpt">RoomGPT</a> – Ideal for beginners and rapid concepting</p>
 
-<p><strong>Advanced Control:</strong> <a href="/tool/testfit">TestFit</a>, Bricsys BIM – Suitable for experienced professionals needing precise control</p>
+<p><strong>Advanced Control:</strong> <a href="/tool/testfit">TestFit</a>, <a href="https://archaitool.com/architectural-design/bricsys-bim" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Suitable for experienced professionals needing precise control</p>
 
 <p><em>Start with easy tools to build confidence, then gradually move to more advanced options as needed.</em></p>
 
 <h3>3. Cost Consideration</h3>
 
-<p><strong>Free Options:</strong> AI Architectures, 3D House Planner, Home Design AI, ReimagineHome AI</p>
+<p><strong>Free Options:</strong> <a href="/tool/ai-architectures">AI Architectures</a>, 3D House Planner, <a href="/tool/home-design-ai">Home Design AI</a>, <a href="/tool/reimaginehome">ReimagineHome AI</a></p>
 
 <p><strong>Paid Tools:</strong> Most professional tools require subscription (typically $20-100/month)</p>
 
@@ -122,14 +122,14 @@ export const architectAIGuideArticle = `
 
 <p><strong>Presentation-Ready:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="/tool/visualizee-ai">Visualizee AI</a> – Direct client presentations</p>
 
-<p><strong>Development-Ready:</strong> Autodesk Forma, Bricsys BIM – Can be integrated into professional workflows</p>
+<p><strong>Development-Ready:</strong> <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a>, <a href="https://archaitool.com/architectural-design/bricsys-bim" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Can be integrated into professional workflows</p>
 
 <p><em>Consider whether you need quick presentation images or files that can be integrated into your BIM/CAD workflow.</em></p>
 
 <h3>Tool Recommendations by Need:</h3>
 
 <ul>
-<li><strong>For concept exploration:</strong> <a href="/tool/ai-architectures">AI Architectures</a> + Midjourney</li>
+<li><strong>For concept exploration:</strong> <a href="/tool/ai-architectures">AI Architectures</a> + <a href="https://archaitool.com/multi-domain-ai/midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a></li>
 <li><strong>For layout optimization:</strong> <a href="/tool/testfit">TestFit</a> + <a href="/tool/floorplan-ai">Floorplan AI</a></li>
 <li><strong>For final visualization:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a> + <a href="/tool/arko-ai">Arko AI</a></li>
 <li><strong>For interior design:</strong> <a href="/tool/home-design-ai">Home Design AI</a> + <a href="/tool/roomgpt">RoomGPT</a></li>
@@ -153,10 +153,10 @@ export const architectAIGuideArticle = `
 <p><strong>AI-Enhanced Workflow (4 hours):</strong></p>
 
 <ol>
-<li><strong>AI Architectures</strong> → Generate 5 concept options in 30 minutes</li>
-<li><strong>TestFit</strong> → Optimize floor plan and space efficiency in 1 hour</li>
-<li><strong>Home Design AI</strong> → Design interior spaces and material palette in 45 minutes</li>
-<li><strong>MyArchitect AI</strong> → Create photorealistic exterior renders in 1 hour</li>
+<li><strong><a href="/tool/ai-architectures">AI Architectures</a></strong> → Generate 5 concept options in 30 minutes</li>
+<li><strong><a href="/tool/testfit">TestFit</a></strong> → Optimize floor plan and space efficiency in 1 hour</li>
+<li><strong><a href="/tool/home-design-ai">Home Design AI</a></strong> → Design interior spaces and material palette in 45 minutes</li>
+<li><strong><a href="/tool/myarchitectai">MyArchitect AI</a></strong> → Create photorealistic exterior renders in 1 hour</li>
 <li><strong>Presentation Assembly</strong> → Compile AI outputs into professional presentation in 45 minutes</li>
 <li><em>Total: 4 hours, 90% cost reduction</em></li>
 </ol>
@@ -171,11 +171,11 @@ export const architectAIGuideArticle = `
 
 <h3>Recommended Tool Combinations:</h3>
 
-<p><strong>For Small Projects:</strong> AI Architectures + MyArchitect AI (Free + $29/month)</p>
+<p><strong>For Small Projects:</strong> <a href="/tool/ai-architectures">AI Architectures</a> + <a href="/tool/myarchitectai">MyArchitect AI</a> (Free + $29/month)</p>
 
-<p><strong>For Medium Projects:</strong> Add TestFit + Home Design AI for comprehensive workflow</p>
+<p><strong>For Medium Projects:</strong> Add <a href="/tool/testfit">TestFit</a> + <a href="/tool/home-design-ai">Home Design AI</a> for comprehensive workflow</p>
 
-<p><strong>For Large Projects:</strong> Include Autodesk Forma + Arko AI for professional integration</p>
+<p><strong>For Large Projects:</strong> Include <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> + <a href="/tool/arko-ai">Arko AI</a> for professional integration</p>
 
 <p>👉 <strong>All mentioned tools are available in our comprehensive directory:</strong> <a href="https://archaitool.com" target="_blank">ArchAITool.com</a></p>
 
@@ -197,7 +197,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>The Reality:</strong> Mastering 2-3 core tools is more valuable than superficial familiarity with 10+ tools.</p>
 
-<p><strong>The Solution:</strong> Start with 1-2 free tools (AI Architectures + Home Design AI), master them, then gradually add specialized tools based on project needs.</p>
+<p><strong>The Solution:</strong> Start with 1-2 free tools (<a href="/tool/ai-architectures">AI Architectures</a> + <a href="/tool/home-design-ai">Home Design AI</a>), master them, then gradually add specialized tools based on project needs.</p>
 
 <h3>Mistake 3: Thinking AI Replaces Design Thinking</h3>
 
@@ -228,15 +228,15 @@ export const architectAIGuideArticle = `
 
 <h3>For Architecture Students:</h3>
 
-<p>Start with free tools to build your AI literacy. Focus on AI Architectures and 3D House Planner to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
+<p>Start with free tools to build your AI literacy. Focus on <a href="/tool/ai-architectures">AI Architectures</a> and 3D House Planner to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
 
 <h3>For Small Firm Architects:</h3>
 
-<p>Focus on efficiency and client presentation tools. MyArchitect AI + TestFit combination offers the best ROI for small practices. Start with one paid tool and master it before expanding your toolkit.</p>
+<p>Focus on efficiency and client presentation tools. <a href="/tool/myarchitectai">MyArchitect AI</a> + <a href="/tool/testfit">TestFit</a> combination offers the best ROI for small practices. Start with one paid tool and master it before expanding your toolkit.</p>
 
 <h3>For Large Firm Professionals:</h3>
 
-<p>Emphasize integration with existing BIM workflows. Autodesk Forma and Arko AI offer professional-grade integration with tools you already use. Focus on how AI can enhance team collaboration and deliver better results to clients.</p>
+<p>Emphasize integration with existing BIM workflows. <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> and <a href="/tool/arko-ai">Arko AI</a> offer professional-grade integration with tools you already use. Focus on how AI can enhance team collaboration and deliver better results to clients.</p>
 
 <p><strong>The future of architecture is already here – it's just being adopted unevenly. By starting your AI journey today, you're positioning yourself at the forefront of architectural practice.</strong></p>
 
