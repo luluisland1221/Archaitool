@@ -76,14 +76,14 @@ export const architectAIGuideArticle = `
 <li><strong>Download Your Best Option</strong> – Choose the concept that best fits your vision</li>
 </ol>
 
-<div style="margin: 2rem 0; text-align: center;">
-  <img src="/AI_Architectures_1.webp" alt="AI Architectures Tool Interface - Generating architectural concepts from text prompts" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">AI Architectures interface showing concept generation from text prompts</p>
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/AI_Architectures_1.webp" alt="AI Architectures Tool Interface - Generating architectural concepts from text prompts" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">AI Architectures interface showing concept generation from text prompts</p>
 </div>
 
-<div style="margin: 2rem 0; text-align: center;">
-  <img src="/AI_Architectures_2.webp" alt="AI Architecture tool results - Multiple architectural design variations generated from AI" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">AI-generated architectural design variations showcasing different styles and approaches</p>
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/AI_Architectures_2.webp" alt="AI Architecture tool results - Multiple architectural design variations generated from AI" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">AI-generated architectural design variations showcasing different styles and approaches</p>
 </div>
 
 <h3>Professional Prompt Template:</h3>
@@ -288,7 +288,7 @@ export const architectAIGuideArticle = `
 
 <div style="margin: 2rem auto; text-align: center; max-width: 736px;">
   <img src="/Traditional_vs_AI_Enhanced_Architectural_Workflow.webp" alt="Traditional vs AI Enhanced Architectural Workflow Comparison" style="width: 100%; max-width: 736px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">Traditional vs AI-Enhanced Architectural Workflow: Time and efficiency comparison</p>
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Traditional vs AI-Enhanced Architectural Workflow: Time and efficiency comparison</p>
 </div>
 
 <h3>Case Study: Small Office Building Design</h3>
@@ -428,9 +428,9 @@ export const top10AITools2025Article = `
 <p><strong>Why It Stands Out:</strong> Completely free with professional-quality results, making it the perfect entry point for architects new to AI tools.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/tool/ai-architectures">AI Architectures</a></p>
 
-<div style="margin: 2rem 0; text-align: center;">
-  <img src="/screenshots/ai-architectures.webp" alt="AI Architectures Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">AI Architectures interface showcasing concept generation capabilities</p>
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/ai_architectures_com_.webp" alt="AI Architectures Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">AI Architectures interface showcasing concept generation capabilities</p>
 </div>
 
 <h4>2. Arkdesign AI</h4>
@@ -439,11 +439,21 @@ export const top10AITools2025Article = `
 <p><strong>Why It Stands Out:</strong> Trained specifically on architectural projects, delivering more technically accurate and design-conscious results.</p>
 <p>👉 <strong>Learn more:</strong> <a href="/tool/arkdesign-ai">Arkdesign AI</a></p>
 
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/arkdesign_ai_.webp" alt="Arkdesign AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Arkdesign AI professional concept development interface</p>
+</div>
+
 <h4>3. Maket AI</h4>
 <p><strong>Best For:</strong> Iterative design development</p>
 <p><strong>Key Features:</strong> Real-time collaboration, project management integration, style consistency</p>
 <p><strong>Why It Stands Out:</strong> Balances ease of use with professional control, making it ideal for design teams.</p>
 <p>👉 <strong>Learn more:</strong> <a href="/tool/maket-ai">Maket AI</a></p>
+
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/www_maket_ai_.webp" alt="Maket AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Maket AI collaborative design development platform</p>
+</div>
 
 <h3>Layout Optimization Specialists</h3>
 
@@ -453,9 +463,9 @@ export const top10AITools2025Article = `
 <p><strong>Why It Stands Out:</strong> Industry leader in retail and commercial layout optimization with data-driven insights.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/tool/testfit">TestFit</a></p>
 
-<div style="margin: 2rem 0; text-align: center;">
-  <img src="/screenshots/testfit.webp" alt="TestFit Layout Optimization" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">TestFit demonstrating automated space planning capabilities</p>
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/www_testfit_io_product_real_time_ai.webp" alt="TestFit Layout Optimization" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">TestFit demonstrating automated space planning capabilities</p>
 </div>
 
 <h4>5. Floorplan AI</h4>
@@ -463,6 +473,11 @@ export const top10AITools2025Article = `
 <p><strong>Key Features:</strong> Room optimization, furniture placement, traffic flow analysis</p>
 <p><strong>Why It Stands Out:</strong> Specialized focus on residential layouts with intuitive user experience.</p>
 <p>👉 <strong>Learn more:</strong> <a href="/tool/floorplan-ai">Floorplan AI</a></p>
+
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/www_floorplan_ai_com_.webp" alt="Floorplan AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Floorplan AI residential space planning interface</p>
+</div>
 
 <h3>Visualization Powerhouses</h3>
 
@@ -472,17 +487,32 @@ export const top10AITools2025Article = `
 <p><strong>Why It Stands Out:</strong> Exceptional speed with surprisingly high-quality outputs, perfect for rapid iteration.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a></p>
 
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/myarchitectai_com_.webp" alt="MyArchitect AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">MyArchitect AI one-click rendering interface</p>
+</div>
+
 <h4>7. Arko AI</h4>
 <p><strong>Best For:</strong> Professional visualization</p>
 <p><strong>Key Features:</strong> Photorealistic rendering, material accuracy, lighting simulation</p>
 <p><strong>Why It Stands Out:</strong> Delivers studio-quality renders with minimal input, rivaling traditional rendering studios.</p>
 <p>👉 <strong>Learn more:</strong> <a href="/tool/arko-ai">Arko AI</a></p>
 
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/arko_ai_.webp" alt="Arko AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Arko AI professional visualization interface</p>
+</div>
+
 <h4>8. Visualizee AI</h4>
 <p><strong>Best For:</strong> Design exploration</p>
 <p><strong>Key Features:</strong> Style variations, quick iteration, sketch enhancement</p>
 <p><strong>Why It Stands Out:</strong> Excellent for exploring multiple design directions quickly during the development phase.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/tool/visualizee-ai">Visualizee AI</a></p>
+
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/visualizee_ai_.webp" alt="Visualizee AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Visualizee AI design exploration interface</p>
+</div>
 
 <h3>Interior Design Experts</h3>
 
@@ -492,15 +522,34 @@ export const top10AITools2025Article = `
 <p><strong>Why It Stands Out:</strong> Offers comprehensive interior design capabilities at no cost, making AI accessible to everyone.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/tool/home-design-ai">Home Design AI</a></p>
 
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/home_design_ai_.webp" alt="Home Design AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">Home Design AI free interior planning interface</p>
+</div>
+
 <h4>10. RoomGPT</h4>
 <p><strong>Best For:</strong> Quick room transformations</p>
 <p><strong>Key Features:</strong> Photo-to-design conversion, multiple style options, instant results</p>
 <p><strong>Why It Stands Out:</strong> Simplicity meets effectiveness – perfect for rapid interior design visualization.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/tool/roomgpt">RoomGPT</a></p>
 
-<div style="margin: 2rem auto; text-align: center; max-width: 800px;">
-  <img src="/ai-architecture-tools-comparison-matrix-2025.webp" alt="2025 AI Architecture Tools Comparison Matrix" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">2025 AI Architecture Tools Comparison Matrix: Ease of Use vs Professional Quality</p>
+<div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img src="/screenshots/www_roomgpt_io_.webp" alt="RoomGPT Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic; text-align: center;">RoomGPT quick room transformation interface</p>
+</div>
+
+<div style="margin: 2rem auto; text-align: center; max-width: 800px; background-color: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 8px; padding: 2rem;">
+  <div style="text-align: center; color: #64748b;">
+    <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">📊 AI Architecture Tools Comparison Matrix</div>
+    <div style="font-size: 0.9rem; line-height: 1.5;">
+      <strong>Free Tools (Ease of Use: ⭐⭐⭐⭐⭐):</strong> AI Architectures, Home Design AI<br>
+      <strong>Mid-Range Tools (Ease of Use: ⭐⭐⭐⭐):</strong> TestFit, MyArchitect AI, Maket AI<br>
+      <strong>Professional Tools (Ease of Use: ⭐⭐⭐):</strong> Arko AI, Arkdesign AI, Visualizee AI
+    </div>
+    <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.5rem; font-style: italic;">
+      Professional Quality increases with price, while ease of use may decrease due to advanced features
+    </div>
+  </div>
 </div>
 
 <h2>How to Choose Your AI Tool Stack</h2>

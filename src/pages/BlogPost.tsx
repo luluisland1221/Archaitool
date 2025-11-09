@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen } from 'lucide-react';
+import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Check } from 'lucide-react';
 import { getPostBySlug } from '../data/blog/posts';
 import { getTagById } from '../data/blog/tags';
 import NotFound from './NotFound';
@@ -10,6 +10,7 @@ const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const post = getPostBySlug(slug || '');
+  const [copiedToClipboard, setCopiedToClipboard] = useState(false);
 
   useEffect(() => {
     if (!post) {
@@ -23,17 +24,35 @@ const BlogPost: React.FC = () => {
 
   const postTags = post.tags.map(tagId => getTagById(tagId)).filter(Boolean);
 
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: post.title,
-        text: post.excerpt,
-        url: window.location.href
-      });
-    } else {
-      // Fallback: copy to clipboard
-      navigator.clipboard.writeText(window.location.href);
-      alert('Link copied to clipboard!');
+  const handleShare = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopiedToClipboard(true);
+
+      // Reset the copied state after 3 seconds
+      setTimeout(() => {
+        setCopiedToClipboard(false);
+      }, 3000);
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = window.location.href;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-999999px';
+      textArea.style.top = '-999999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        setCopiedToClipboard(true);
+        setTimeout(() => {
+          setCopiedToClipboard(false);
+        }, 3000);
+      } catch (err) {
+        console.error('Failed to copy text: ', err);
+      }
+      document.body.removeChild(textArea);
     }
   };
 
@@ -274,10 +293,23 @@ const BlogPost: React.FC = () => {
 
               <button
                 onClick={handleShare}
-                className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                className={`flex items-center space-x-2 px-4 py-2 border rounded-lg transition-all duration-200 ${
+                  copiedToClipboard
+                    ? 'border-green-500 bg-green-50 text-green-700 hover:bg-green-100'
+                    : 'border-gray-300 hover:bg-gray-50 text-gray-700'
+                }`}
               >
-                <Share2 className="h-4 w-4" />
-                <span>Share</span>
+                {copiedToClipboard ? (
+                  <>
+                    <Check className="h-4 w-4" />
+                    <span>Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Share2 className="h-4 w-4" />
+                    <span>Share</span>
+                  </>
+                )}
               </button>
             </div>
 
