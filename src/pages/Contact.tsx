@@ -74,11 +74,11 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12" style={{ alignItems: 'stretch' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', alignItems: 'stretch' }}>
             {/* Contact Information */}
-            <div className="flex flex-col h-full">
+            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '600px' }}>
               {/* Quick Contact */}
-              <div className="bg-white rounded-xl shadow-lg p-8 flex-shrink-0" style={{ flexBasis: 'auto' }}>
+              <div className="bg-white rounded-xl shadow-lg p-8" style={{ flexShrink: 0 }}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h2>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -107,7 +107,7 @@ const Contact = () => {
               </div>
 
               {/* Inquiry Types */}
-              <div className="bg-white rounded-xl shadow-lg p-8 flex-shrink-0">
+              <div className="bg-white rounded-xl shadow-lg p-8" style={{ flexShrink: 0 }}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">How We Can Help You</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {inquiryTypes.map((type) => {
@@ -123,7 +123,7 @@ const Contact = () => {
               </div>
 
               {/* Other Contact Info */}
-              <div className="bg-white rounded-xl shadow-lg p-8 flex-grow">
+              <div className="bg-white rounded-xl shadow-lg p-8" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <h3 className="font-semibold text-gray-900 mb-3">Other Contact Information</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
                   <div>
@@ -142,8 +142,8 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="h-full">
-              <div className="bg-white rounded-xl shadow-lg p-8 h-full flex flex-col">
+            <div style={{ minHeight: '600px' }}>
+              <div className="bg-white rounded-xl shadow-lg p-8" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Message</h2>
 
               {submitStatus === 'success' && (
