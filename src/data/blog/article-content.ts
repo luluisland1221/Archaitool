@@ -426,6 +426,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Rapid concept exploration and beginners</p>
 <p><strong>Key Features:</strong> Text-to-image generation, multiple style options, web-based interface</p>
 <p><strong>Why It Stands Out:</strong> Completely free with professional-quality results, making it the perfect entry point for architects new to AI tools.</p>
+<p>👉 <strong>Try it now:</strong> <a href="/tool/ai-architectures">AI Architectures</a></p>
 
 <div style="margin: 2rem 0; text-align: center;">
   <img src="/screenshots/ai-architectures.webp" alt="AI Architectures Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
@@ -436,11 +437,13 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Professional concept development</p>
 <p><strong>Key Features:</strong> Advanced customization, architectural-specific training, high-resolution outputs</p>
 <p><strong>Why It Stands Out:</strong> Trained specifically on architectural projects, delivering more technically accurate and design-conscious results.</p>
+<p>👉 <strong>Learn more:</strong> <a href="/tool/arkdesign-ai">Arkdesign AI</a></p>
 
 <h4>3. Maket AI</h4>
 <p><strong>Best For:</strong> Iterative design development</p>
 <p><strong>Key Features:</strong> Real-time collaboration, project management integration, style consistency</p>
 <p><strong>Why It Stands Out:</strong> Balances ease of use with professional control, making it ideal for design teams.</p>
+<p>👉 <strong>Learn more:</strong> <a href="/tool/maket-ai">Maket AI</a></p>
 
 <h3>Layout Optimization Specialists</h3>
 
@@ -448,6 +451,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Commercial space planning</p>
 <p><strong>Key Features:</strong> Automated space configuration, feasibility analysis, metric calculations</p>
 <p><strong>Why It Stands Out:</strong> Industry leader in retail and commercial layout optimization with data-driven insights.</p>
+<p>👉 <strong>Try it now:</strong> <a href="/tool/testfit">TestFit</a></p>
 
 <div style="margin: 2rem 0; text-align: center;">
   <img src="/screenshots/testfit.webp" alt="TestFit Layout Optimization" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
@@ -458,6 +462,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Residential space planning</p>
 <p><strong>Key Features:</strong> Room optimization, furniture placement, traffic flow analysis</p>
 <p><strong>Why It Stands Out:</strong> Specialized focus on residential layouts with intuitive user experience.</p>
+<p>👉 <strong>Learn more:</strong> <a href="/tool/floorplan-ai">Floorplan AI</a></p>
 
 <h3>Visualization Powerhouses</h3>
 
@@ -465,16 +470,19 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Quick client presentations</p>
 <p><strong>Key Features:</strong> One-click rendering, style transfer, background removal</p>
 <p><strong>Why It Stands Out:</strong> Exceptional speed with surprisingly high-quality outputs, perfect for rapid iteration.</p>
+<p>👉 <strong>Try it now:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a></p>
 
 <h4>7. Arko AI</h4>
 <p><strong>Best For:</strong> Professional visualization</p>
 <p><strong>Key Features:</strong> Photorealistic rendering, material accuracy, lighting simulation</p>
 <p><strong>Why It Stands Out:</strong> Delivers studio-quality renders with minimal input, rivaling traditional rendering studios.</p>
+<p>👉 <strong>Learn more:</strong> <a href="/tool/arko-ai">Arko AI</a></p>
 
 <h4>8. Visualizee AI</h4>
 <p><strong>Best For:</strong> Design exploration</p>
 <p><strong>Key Features:</strong> Style variations, quick iteration, sketch enhancement</p>
 <p><strong>Why It Stands Out:</strong> Excellent for exploring multiple design directions quickly during the development phase.</p>
+<p>👉 <strong>Try it now:</strong> <a href="/tool/visualizee-ai">Visualizee AI</a></p>
 
 <h3>Interior Design Experts</h3>
 
@@ -482,11 +490,13 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Interior space planning</p>
 <p><strong>Key Features:</strong> Room redesign, furniture placement, material selection</p>
 <p><strong>Why It Stands Out:</strong> Offers comprehensive interior design capabilities at no cost, making AI accessible to everyone.</p>
+<p>👉 <strong>Try it now:</strong> <a href="/tool/home-design-ai">Home Design AI</a></p>
 
 <h4>10. RoomGPT</h4>
 <p><strong>Best For:</strong> Quick room transformations</p>
 <p><strong>Key Features:</strong> Photo-to-design conversion, multiple style options, instant results</p>
 <p><strong>Why It Stands Out:</strong> Simplicity meets effectiveness – perfect for rapid interior design visualization.</p>
+<p>👉 <strong>Try it now:</strong> <a href="/tool/roomgpt">RoomGPT</a></p>
 
 <div style="margin: 2rem auto; text-align: center; max-width: 800px;">
   <img src="/ai-architecture-tools-comparison-matrix-2025.webp" alt="2025 AI Architecture Tools Comparison Matrix" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -520,10 +530,6 @@ export const top10AITools2025Article = `
 <p><strong>Enterprise Stack ($300-500/month):</strong> Full suite including Arko AI for premium visualization</p>
 <p>Comprehensive coverage with premium tools and enterprise support for large-scale implementation.</p>
 
-<div style="margin: 2rem auto; text-align: center; max-width: 700px;">
-  <img src="/ai-architecture-tools-decision-tree.webp" alt="AI Architecture Tools Selection Decision Tree" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">AI Architecture Tools Selection Decision Tree: Find your perfect tool combination</p>
-</div>
 
 <h2>Implementation Strategy</h2>
 
