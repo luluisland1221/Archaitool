@@ -22,6 +22,9 @@ const Navbar = () => {
             <Link to="/tools" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Tools
             </Link>
+            <Link to="/blog" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+              Blog
+            </Link>
             <Link to="/about" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               About
             </Link>
@@ -58,6 +61,12 @@ const Navbar = () => {
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               Tools
+            </Link>
+            <Link
+              to="/blog"
+              className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
+            >
+              Blog
             </Link>
             <Link
               to="/about"

@@ -12,6 +12,8 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ResearchManagement from './pages/ResearchManagement';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
 // Removed redirect imports - not needed for static site
 
@@ -24,6 +26,7 @@ const TitleUpdater = () => {
     const titles = {
       '/': 'Arch AI Tool - Discover AI Tools for Architecture & Design',
       '/tools': 'AI Architecture Tools - Browse All Categories | Arch AI Tool',
+      '/blog': 'ArchAI Blog - AI Architecture Tools Insights & Tutorials',
       '/about': 'About Us - Arch AI Tool',
       '/contact': 'Contact Us - Arch AI Tool',
       '/privacy-policy': 'Privacy Policy - Arch AI Tool',
@@ -51,6 +54,8 @@ const TitleUpdater = () => {
     // Update page title
     if (isCategoryToolUrl || location.pathname.startsWith('/tool/')) {
       document.title = 'AI Tool Details | Arch AI Tool';
+    } else if (location.pathname.startsWith('/blog/')) {
+      document.title = 'Blog Article | Arch AI Tool';
     } else {
       document.title = titles[location.pathname] || 'Arch AI Tool';
     }
@@ -76,6 +81,7 @@ const TitleUpdater = () => {
     const descriptions = {
       '/': 'Discover the best AI tools for architecture and design. Explore comprehensive directory of AI-powered architectural generation, visualization, interior design tools and more.',
       '/tools': 'Browse all AI architecture and design tools by category. Find the perfect AI tool for architectural design, visualization, interior design, and real estate.',
+      '/blog': 'Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow.',
       '/about': 'Learn about Arch AI Tool - your comprehensive guide to AI-powered architecture and design tools. Discover how we help professionals find the best AI solutions.',
       '/contact': 'Contact Arch AI Tool team - tool submissions, partnerships, technical support. We help architecture and design professionals discover the best AI tools.',
       '/privacy-policy': 'Read Arch AI Tool\'s privacy policy - learn how we collect, use, and protect your personal information, including cookie policy and data security.',
@@ -121,6 +127,9 @@ function App() {
             <Route path="/landscape-design/:id" element={<ToolDetail />} />
             <Route path="/design-tools/:id" element={<ToolDetail />} />
             <Route path="/real-estate/:id" element={<ToolDetail />} />
+            {/* Blog routes */}
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
