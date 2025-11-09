@@ -75,6 +75,112 @@ const BlogPost: React.FC = () => {
         {postTags.map(tag => (
           <meta key={tag?.id} property="article:tag" content={tag?.name} />
         ))}
+
+        {/* Custom styles for blog content */}
+        <style>{`
+          .blog-content {
+            font-size: 18px;
+            line-height: 1.8;
+          }
+
+          .blog-content h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #000;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+          }
+
+          .blog-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #111827;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+          }
+
+          .blog-content h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+          }
+
+          .blog-content p {
+            margin-bottom: 1.5rem;
+            color: #374151;
+          }
+
+          .blog-content a {
+            color: #0066cc;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+          }
+
+          .blog-content a:hover {
+            color: #0052a3;
+            text-decoration-color: #0052a3;
+          }
+
+          .blog-content ul, .blog-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+          }
+
+          .blog-content li {
+            margin-bottom: 0.75rem;
+            color: #374151;
+          }
+
+          .blog-content li strong {
+            color: #111827;
+            font-weight: 600;
+          }
+
+          .blog-content blockquote {
+            border-left: 4px solid #000;
+            margin: 2rem 0;
+            padding: 1rem 1.5rem;
+            background-color: #f9fafb;
+            font-style: italic;
+            color: #4b5563;
+          }
+
+          .blog-content strong, .blog-content b {
+            color: #111827;
+            font-weight: 600;
+          }
+
+          .blog-content code {
+            background-color: #f3f4f6;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.875rem;
+            color: #1f2937;
+          }
+
+          .blog-content pre {
+            background-color: #1f2937;
+            color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin: 2rem 0;
+          }
+
+          .blog-content pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+          }
+        `}</style>
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
@@ -83,7 +189,7 @@ const BlogPost: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <Link
               to="/blog"
-              className="inline-flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+              className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 text-white font-medium transition-all duration-200 hover:scale-105"
             >
               <ArrowLeft className="h-4 w-4" />
               <span>Back to Blog</span>
@@ -120,7 +226,7 @@ const BlogPost: React.FC = () => {
                     <Link
                       key={tag?.id}
                       to={`/blog?tag=${tag?.slug}`}
-                      className="px-4 py-2 text-sm font-medium rounded-full bg-white/10 hover:bg-white/20 transition-colors border border-white/20"
+                      className="px-4 py-2 text-sm font-medium rounded-full bg-white/10 hover:bg-white/20 transition-all duration-200 border border-white/20 text-white hover:scale-105 hover:shadow-lg"
                     >
                       {tag?.name}
                     </Link>
@@ -178,7 +284,7 @@ const BlogPost: React.FC = () => {
             {/* Article Body */}
             <div className="prose prose-lg max-w-none">
               <div
-                className="text-gray-800 leading-relaxed space-y-6"
+                className="blog-content text-gray-800 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
             </div>
@@ -195,7 +301,7 @@ const BlogPost: React.FC = () => {
                 </p>
                 <Link
                   to="/blog"
-                  className="inline-flex items-center px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+                  className="inline-flex items-center px-8 py-4 bg-black text-white rounded-lg hover:bg-gray-800 transition-all duration-200 hover:scale-105 hover:shadow-lg font-medium"
                 >
                   View All Articles
                   <ArrowLeft className="h-4 w-4 ml-2 rotate-180" />
