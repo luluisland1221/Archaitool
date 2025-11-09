@@ -286,8 +286,8 @@ export const architectAIGuideArticle = `
 
 <p>The real power of AI comes from integrating it into your existing workflow. Here's a practical example showing how AI can transform a typical architectural project:</p>
 
-<div style="margin: 2rem 0; text-align: center;">
-  <img src="/Traditional_vs_AI_Enhanced_Architectural_Workflow.webp" alt="Traditional vs AI Enhanced Architectural Workflow Comparison" style="width: 90%; max-width: 900px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div style="margin: 2rem auto; text-align: center; max-width: 736px;">
+  <img src="/Traditional_vs_AI_Enhanced_Architectural_Workflow.webp" alt="Traditional vs AI Enhanced Architectural Workflow Comparison" style="width: 100%; max-width: 736px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
   <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280; font-style: italic;">Traditional vs AI-Enhanced Architectural Workflow: Time and efficiency comparison</p>
 </div>
 
