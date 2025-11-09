@@ -96,7 +96,7 @@ export const architectAIGuideArticle = `
 
 <h3>1. Professional Quality vs. Speed Trade-off</h3>
 
-<p><strong>High Speed (10-60 seconds):</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="https://archaitool.com/architectural-visualization/ai-render-studio" target="_blank" rel="noopener noreferrer">AI Render Studio</a> – Perfect for rapid iteration and client feedback</p>
+<p><strong>High Speed (10-60 seconds):</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="https://archaitool.com/architectural-design/airender-studio" target="_blank" rel="noopener noreferrer">AI Render Studio</a> – Perfect for rapid iteration and client feedback</p>
 
 <p><strong>High Professional Quality:</strong> <a href="/tool/arko-ai">Arko AI</a>, <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> – Best for final presentations and detailed development</p>
 
@@ -106,13 +106,13 @@ export const architectAIGuideArticle = `
 
 <p><strong>Easy to Use (One-click):</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/roomgpt">RoomGPT</a> – Ideal for beginners and rapid concepting</p>
 
-<p><strong>Advanced Control:</strong> <a href="/tool/testfit">TestFit</a>, <a href="https://archaitool.com/architectural-design/bricsys-bim" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Suitable for experienced professionals needing precise control</p>
+<p><strong>Advanced Control:</strong> <a href="/tool/testfit">TestFit</a>, <a href="https://archaitool.com/architectural-design/bricsys" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Suitable for experienced professionals needing precise control</p>
 
 <p><em>Start with easy tools to build confidence, then gradually move to more advanced options as needed.</em></p>
 
 <h3>3. Cost Consideration</h3>
 
-<p><strong>Free Options:</strong> <a href="/tool/ai-architectures">AI Architectures</a>, 3D House Planner, <a href="/tool/home-design-ai">Home Design AI</a>, <a href="/tool/reimaginehome">ReimagineHome AI</a></p>
+<p><strong>Free Options:</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/home-design-ai">Home Design AI</a>, <a href="/tool/reimaginehome">ReimagineHome AI</a></p>
 
 <p><strong>Paid Tools:</strong> Most professional tools require subscription (typically $20-100/month)</p>
 
@@ -122,9 +122,146 @@ export const architectAIGuideArticle = `
 
 <p><strong>Presentation-Ready:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="/tool/visualizee-ai">Visualizee AI</a> – Direct client presentations</p>
 
-<p><strong>Development-Ready:</strong> <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a>, <a href="https://archaitool.com/architectural-design/bricsys-bim" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Can be integrated into professional workflows</p>
+<p><strong>Development-Ready:</strong> <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a>, <a href="https://archaitool.com/architectural-design/bricsys" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Can be integrated into professional workflows</p>
 
 <p><em>Consider whether you need quick presentation images or files that can be integrated into your BIM/CAD workflow.</em></p>
+
+<h3>AI Architecture Tools: Professional Assessment Matrix</h3>
+
+<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+  <thead>
+    <tr style="background: #2c3e50; color: white;">
+      <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: left;">Category</th>
+      <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">Professional Quality</th>
+      <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">Control</th>
+      <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">Speed</th>
+      <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">Usability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background: white;">
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Concept Design Generation</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #27ae60; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/maket-ai">Maket AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/arkdesign-ai">Arkdesign AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Floor Planning & Layout</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/testfit">TestFit</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/floorplan-ai">Floorplan AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #27ae60; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Visualization & Rendering</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/myarchitectai">MyArchitect AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/arko-ai">Arko AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/visualizee-ai">Visualizee AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #e8f4fd;">Interior Design</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/home-design-ai">Home Design AI</a> <span style="color: #27ae60; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/roomgpt">RoomGPT</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
+    </tr>
+    <tr style="background: white;">
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/arch-e-ai">Arch E AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="margin-top: 1rem; padding: 1rem; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 0.25rem;">
+  <h4 style="margin: 0 0 0.5rem 0; color: #856404;">💡 Assessment Criteria:</h4>
+  <ul style="margin: 0; padding-left: 1.5rem; color: #856404; font-size: 0.9rem;">
+    <li><strong>Professional Quality:</strong> Architectural accuracy and technical precision</li>
+    <li><strong>Control:</strong> User's ability to customize and refine outputs</li>
+    <li><strong>Speed:</strong> Time efficiency from input to final result</li>
+    <li><strong>Usability:</strong> Direct application in professional workflows</li>
+  </ul>
+</div>
+
+<div style="margin-top: 1rem; padding: 1rem; background: #d1ecf1; border-left: 4px solid #17a2b8; border-radius: 0.25rem;">
+  <h4 style="margin: 0 0 0.5rem 0; color: #0c5460;">🎯 Selection Recommendations:</h4>
+  <ul style="margin: 0; padding-left: 1.5rem; color: #0c5460; font-size: 0.9rem;">
+    <li><strong>For Beginners:</strong> AI Architectures + Home Design AI (both free)</li>
+    <li><strong>For Efficiency:</strong> MyArchitect AI + TestFit</li>
+    <li><strong>For Professional Output:</strong> Arko AI + Arkdesign AI</li>
+  </ul>
+</div>
+</div>
+
+<p style="text-align: center; margin-top: 1rem;">
+  <strong>👉 Explore complete tool directory with detailed reviews:</strong> <a href="https://archaitool.com" target="_blank">ArchAITool.com</a>
+</p>
 
 <h3>Tool Recommendations by Need:</h3>
 
@@ -228,7 +365,7 @@ export const architectAIGuideArticle = `
 
 <h3>For Architecture Students:</h3>
 
-<p>Start with free tools to build your AI literacy. Focus on <a href="/tool/ai-architectures">AI Architectures</a> and 3D House Planner to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
+<p>Start with free tools to build your AI literacy. Focus on <a href="/tool/ai-architectures">AI Architectures</a> to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
 
 <h3>For Small Firm Architects:</h3>
 

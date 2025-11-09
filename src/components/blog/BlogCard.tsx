@@ -13,7 +13,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, showTags = true }) => {
   const postTags = post.tags.map(tagId => blogTags.find(t => t.id === tagId)).filter(Boolean);
 
   return (
-    <article className="bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1">
+    <Link
+      to={`/blog/${post.slug}`}
+      className="block bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 group"
+    >
       {post.featuredImage && (
         <div className="aspect-w-16 aspect-h-9 bg-gray-100">
           <img
@@ -40,11 +43,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, showTags = true }) => {
           </div>
         </div>
 
-        <Link to={`/blog/${post.slug}`} className="block">
-          <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-black transition-colors">
-            {post.title}
-          </h2>
-        </Link>
+        <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-black transition-colors">
+          {post.title}
+        </h2>
 
         <p className="text-gray-600 mb-4 line-clamp-3">
           {post.excerpt}
@@ -73,10 +74,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, showTags = true }) => {
             <span className="text-sm text-gray-600">{post.author.name}</span>
           </div>
 
-          <Link
-            to={`/blog/${post.slug}`}
-            className="text-black hover:text-gray-600 font-medium text-sm inline-flex items-center group"
-          >
+          <span className="text-black hover:text-gray-600 font-medium text-sm inline-flex items-center">
             Read More
             <svg
               className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
@@ -86,10 +84,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, showTags = true }) => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </Link>
+          </span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 };
 
