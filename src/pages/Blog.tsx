@@ -216,9 +216,8 @@ const Blog: React.FC = () => {
                   <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Learn how to transform your architectural sketches into professional visualizations using AI tools. This comprehensive workflow guide covers everything from initial concept to final presentation.
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-start">
                     <span className="text-sm text-gray-500">15 min read</span>
-                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
 
@@ -234,9 +233,8 @@ const Blog: React.FC = () => {
                   <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Transitioning from architecture school to professional practice? This guide helps emerging architects select the right AI tools to kickstart their career and enhance their design workflow.
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-start">
                     <span className="text-sm text-gray-500">12 min read</span>
-                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
 
@@ -252,9 +250,8 @@ const Blog: React.FC = () => {
                   <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     As AI-generated architectural imagery becomes increasingly photorealistic, discover how architects can maintain professional standards while leveraging these powerful visualization tools.
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-start">
                     <span className="text-sm text-gray-500">10 min read</span>
-                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
 
@@ -270,9 +267,8 @@ const Blog: React.FC = () => {
                   <p className="text-gray-600 text-sm mb-4 overflow-hidden" style={{display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', textOverflow: 'ellipsis'}}>
                     Practical strategies for small architecture firms to implement AI tools effectively. Learn how to maximize ROI, streamline workflows, and compete with larger firms using smart AI solutions.
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-start">
                     <span className="text-sm text-gray-500">18 min read</span>
-                    <span className="text-gray-600 font-medium text-sm">Coming Soon</span>
                   </div>
                 </div>
               </div>
