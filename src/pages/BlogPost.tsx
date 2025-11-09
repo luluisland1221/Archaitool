@@ -84,29 +84,29 @@ const BlogPost: React.FC = () => {
           }
 
           .blog-content h2 {
-            font-size: 2.25rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #000;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #e5e7eb;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid #e5e7eb;
           }
 
           .blog-content h3 {
-            font-size: 1.75rem;
+            font-size: 1.25rem;
             font-weight: 600;
             color: #111827;
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
           }
 
           .blog-content h4 {
-            font-size: 1.5rem;
+            font-size: 1.125rem;
             font-weight: 600;
             color: #1f2937;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
           }
 
           .blog-content p {

@@ -25,7 +25,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> You provide descriptive text (prompts) about building type, style, materials, and context, and the AI generates multiple visual concepts.</p>
 
-<p><strong>Available tools:</strong> <a href="https://archaitool.com" target="_blank">AI Architectures</a> (Free), Maket AI, Arkdesign AI</p>
+<p><strong>Available tools:</strong> <a href="/tool/ai-architectures">AI Architectures</a> (Free), <a href="/tool/maket-ai">Maket AI</a>, <a href="/tool/arkdesign-ai">Arkdesign AI</a></p>
 
 <p><strong>Best for:</strong> Early-stage concept exploration, client presentations, and design inspiration.</p>
 
@@ -35,7 +35,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Input your requirements (square footage, room types, adjacencies) and the AI generates optimized layout options.</p>
 
-<p><strong>Available tools:</strong> <a href="https://archaitool.com" target="_blank">TestFit</a>, Floorplan AI, AI Architectures</p>
+<p><strong>Available tools:</strong> <a href="/tool/testfit">TestFit</a>, Floorplan AI, <a href="/tool/ai-architectures">AI Architectures</a></p>
 
 <p><strong>Best for:</strong> Space planning efficiency, feasibility studies, and rapid iteration on building layouts.</p>
 
@@ -45,7 +45,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Upload your design files (sketches, models, or images) and the AI enhances them into professional-quality renders.</p>
 
-<p><strong>Available tools:</strong> <a href="https://archaitool.com" target="_blank">MyArchitect AI</a>, Visualizee AI, Arko AI</p>
+<p><strong>Available tools:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, Visualizee AI, Arko AI</p>
 
 <p><strong>Best for:</strong> Client presentations, design development, and portfolio creation.</p>
 
@@ -55,7 +55,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Upload room photos or provide descriptions, and the AI generates complete interior design schemes with furniture, materials, and lighting.</p>
 
-<p><strong>Available tools:</strong> <a href="https://archaitool.com" target="_blank">Home Design AI</a> (Free), RoomGPT, Arch E AI</p>
+<p><strong>Available tools:</strong> <a href="/tool/home-design-ai">Home Design AI</a> (Free), RoomGPT, Arch E AI</p>
 
 <p><strong>Best for:</strong> Interior space planning, material selection, and creating complete interior design presentations.</p>
 
@@ -88,7 +88,7 @@ export const architectAIGuideArticle = `
 <li>"Mixed-use development with retail ground floor, office spaces above, public plaza, green roof design"</li>
 </ul>
 
-<p>👉 Ready to try more concept generation tools? <a href="https://archaitool.com" target="_blank">Explore our complete concept design tools collection</a></p>
+<p>👉 Ready to try more concept generation tools? <a href="/tools/architecture-spatial">Explore our complete concept design tools collection</a></p>
 
 <h2>Step 3: Choosing Tools That Actually Help You</h3>
 
@@ -129,10 +129,10 @@ export const architectAIGuideArticle = `
 <h3>Tool Recommendations by Need:</h3>
 
 <ul>
-<li><strong>For concept exploration:</strong> <a href="https://archaitool.com" target="_blank">AI Architectures + Midjourney</a></li>
-<li><strong>For layout optimization:</strong> <a href="https://archaitool.com" target="_blank">TestFit + Floorplan AI</a></li>
-<li><strong>For final visualization:</strong> <a href="https://archaitool.com" target="_blank">MyArchitect AI + Arko AI</a></li>
-<li><strong>For interior design:</strong> <a href="https://archaitool.com" target="_blank">Home Design AI + RoomGPT</a></li>
+<li><strong>For concept exploration:</strong> AI Architectures + Midjourney</li>
+<li><strong>For layout optimization:</strong> <a href="/tool/testfit">TestFit</a> + Floorplan AI</li>
+<li><strong>For final visualization:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a> + Arko AI</li>
+<li><strong>For interior design:</strong> <a href="/tool/home-design-ai">Home Design AI</a> + RoomGPT</li>
 </ul>
 
 <h2>Step 4: Integrating AI into Your Daily Design Workflow</h2>
@@ -240,5 +240,5 @@ export const architectAIGuideArticle = `
 
 <p><strong>The future of architecture is already here – it's just being adopted unevenly. By starting your AI journey today, you're positioning yourself at the forefront of architectural practice.</strong></p>
 
-<p>👉 <strong>Ready to begin your AI architecture journey? Explore our complete tool directory with detailed reviews, comparisons, and implementation guides:</strong> <a href="https://archaitool.com" target="_blank">ArchAITool.com</a></p>
+<p>👉 <strong>Ready to begin your AI architecture journey? Explore our complete tool directory with detailed reviews, comparisons, and implementation guides:</strong> <a href="/">ArchAITool.com</a></p>
 `;
