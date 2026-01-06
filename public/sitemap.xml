@@ -61,7 +61,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=architecture-spatial&subcategory=architectural-design</loc>
+    <loc>https://archaitool.com/tools?category=architecture-spatial&amp;subcategory=architectural-design</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -139,7 +139,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=architecture-spatial&subcategory=architectural-visualization</loc>
+    <loc>https://archaitool.com/tools?category=architecture-spatial&amp;subcategory=architectural-visualization</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -229,7 +229,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=interior-design&subcategory=interior-design-remodeling</loc>
+    <loc>https://archaitool.com/tools?category=interior-design&amp;subcategory=interior-design-remodeling</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -313,7 +313,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=interior-design&subcategory=virtual-staging</loc>
+    <loc>https://archaitool.com/tools?category=interior-design&amp;subcategory=virtual-staging</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -385,7 +385,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=landscape-design&subcategory=landscape-planning</loc>
+    <loc>https://archaitool.com/tools?category=landscape-design&amp;subcategory=landscape-planning</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -433,7 +433,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=general-design&subcategory=multi-domain-ai</loc>
+    <loc>https://archaitool.com/tools?category=general-design&amp;subcategory=multi-domain-ai</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -475,7 +475,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=general-design&subcategory=design-automation</loc>
+    <loc>https://archaitool.com/tools?category=general-design&amp;subcategory=design-automation</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -517,7 +517,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archaitool.com/tools?category=real-estate&subcategory=property-visualization</loc>
+    <loc>https://archaitool.com/tools?category=real-estate&amp;subcategory=property-visualization</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

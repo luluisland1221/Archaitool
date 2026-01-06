@@ -22,6 +22,15 @@ const CATEGORY_SLUG_MAP = {
   'real-estate': 'real-estate'
 };
 
+function escapeXml(value = '') {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 async function loadTsModule(entryFile) {
   const result = await esbuild.build({
     entryPoints: [entryFile],
@@ -114,7 +123,7 @@ async function generateSitemap() {
 
   urls.forEach(({ loc, lastmod, changefreq, priority }) => {
     sitemapContent.push('  <url>');
-    sitemapContent.push(`    <loc>${loc}</loc>`);
+    sitemapContent.push(`    <loc>${escapeXml(loc)}</loc>`);
     sitemapContent.push(`    <lastmod>${lastmod}</lastmod>`);
     sitemapContent.push(`    <changefreq>${changefreq}</changefreq>`);
     sitemapContent.push(`    <priority>${priority}</priority>`);
