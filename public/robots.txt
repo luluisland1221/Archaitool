@@ -1,5 +1,5 @@
 # AI Architecture Tools - robots.txt
-# https://www.archaitool.com/
+# https://archaitool.com/
 
 User-agent: *
 Allow: /
@@ -39,7 +39,7 @@ Allow: /screenshots/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://www.archaitool.com/sitemap.xml
+Sitemap: https://archaitool.com/sitemap.xml
 
 # Special rules for specific crawlers
 User-agent: Googlebot
