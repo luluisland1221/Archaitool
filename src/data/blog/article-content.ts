@@ -649,3 +649,404 @@ export const top10AITools2025Article = `
 
 <p>👉 <strong>Ready to explore these tools? Visit our comprehensive directory for detailed reviews, tutorials, and implementation guides:</strong> <a href="/">ArchAITool.com</a>
 `;
+
+export const acceleratingConceptDesignArticle = `
+<h2>Why Concept Design Needs AI-Level Speed</h2>
+
+<p>Concept design is where architects win or lose client trust. Unfortunately it is also the phase most constrained by resources: small teams, compressed schedules, and endless requests for alternates. AI concept tools change the math by delivering an iterative loop measured in minutes rather than days.</p>
+
+<p>In this playbook we reproduce the same structure used in our first two blog posts—actionable steps, real tools, measurable KPIs—so you can plug AI directly into your design delivery pipeline. Every example references solutions already cataloged on <a href="/tools">ArchAITool.com</a>, making it simple to test them today.</p>
+
+<h2>Step 1: Establish the Design Intent in Structured Prompts</h2>
+
+<p>AI outputs only become architectural when the inputs match studio terminology. Use a structured prompt made of six fields:</p>
+
+<ol>
+  <li><strong>Building Type:</strong> e.g., mid-rise residential, boutique hotel.</li>
+  <li><strong>Formal Theme:</strong> sculpted facade, modular grid, terraced massing.</li>
+  <li><strong>Material Palette:</strong> recycled aluminum, rammed earth, perforated metal.</li>
+  <li><strong>Program Priorities:</strong> daylight courts, shared amenity decks, biophilic lobbies.</li>
+  <li><strong>Site Conditions:</strong> waterfront, tight urban infill, desert plateau.</li>
+  <li><strong>Deliverable Style:</strong> linework axon, atmospheric dusk render, exploded diagram.</li>
+</ol>
+
+<p>Feed that structure into <a href="/tool/ai-architectures">AI Architectures</a> or <a href="/tool/maket-ai">Maket AI</a> and you instantly receive concept boards that speak the same language as your project brief.</p>
+
+<h2>Step 2: Use Dual-Track Generation (Mass + Narrative)</h2>
+
+<p>Seasoned designers know that a good concept includes both massing logic and storytelling. Create parallel AI tracks:</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.5rem 0;">
+  <div style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;background:#f9fafb;">
+    <h4>Massing Track</h4>
+    <ul>
+      <li><a href="/tool/testfit">TestFit</a> for footprint constraints</li>
+      <li><a href="/tool/floorplan-ai">Floorplan AI</a> for stacking diagrams</li>
+      <li><a href="/tool/arkdesign-ai">Arkdesign AI</a> for facade rhythm</li>
+    </ul>
+  </div>
+  <div style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;background:#fefce8;">
+    <h4>Narrative Track</h4>
+    <ul>
+      <li><a href="/tool/midjourney">Midjourney</a> to set mood</li>
+      <li><a href="/tool/visualizee-ai">Visualizee AI</a> for hero shots</li>
+      <li><a href="/tool/myarchitectai">MyArchitect AI</a> for fast alternates</li>
+    </ul>
+  </div>
+</div>
+
+<p>Combine both outputs into a single Miro board or Figma canvas. Massing provides feasibility, narrative secures client emotion.</p>
+
+<h2>Step 3: Iterate with Objective Metrics</h2>
+
+<p>Architectural judgment remains essential, but AI lets you quantify improvements. After every iteration capture:</p>
+
+<ul>
+  <li><strong>Daylight Hours:</strong> Export geometry from TestFit and run quick solar checks.</li>
+  <li><strong>Envelope Ratio:</strong> Use <a href="/tool/autodesk-forma">Autodesk Forma</a> to verify glazing percentages.</li>
+  <li><strong>Program Fit:</strong> Compare GFA from AI layouts with pro-forma targets.</li>
+</ul>
+
+<p>Logging these metrics keeps AI exploration grounded in performance instead of novelty.</p>
+
+<h2>Step 4: Build an AI Concept Sprint (48 Hours)</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Phase</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Duration</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Primary Tool</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Prompt Lab</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">4 hrs</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">AI Architectures</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">10 massing thumbnails</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Feasibility Loop</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">8 hrs</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">TestFit + Forma</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Validated stacks + metrics</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Narrative Sprint</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">6 hrs</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Visualizee AI</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">3 hero perspectives</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Client Ready Kit</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">4 hrs</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">InDesign + AI assets</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">PDF deck + metrics page</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Teams that follow this sequence consistently deliver three complete options within two days—exactly what developers want during competition phases.</p>
+
+<h2>Step 5: Maintain Design Authorship</h2>
+
+<p>AI should accelerate, not replace, architectural authorship. Document your intervention in every slide:</p>
+
+<ul>
+  <li><strong>Prompt Credit:</strong> Add captions such as “ArchAITool Prompt 02” so clients know you guided the results.</li>
+  <li><strong>Manual Edits:</strong> Highlight where Rhino or Revit edits replaced AI geometry.</li>
+  <li><strong>Compliance Notes:</strong> Include quick bullet points showing how AI imagery was validated against code and climate data.</li>
+</ul>
+
+<p>This transparency builds trust and keeps your studio in control of the narrative.</p>
+
+<h2>Toolkit Checklist</h2>
+
+<p>Download this checklist, stick it next to your workstation, and check off every box on the next concept sprint:</p>
+
+<ul>
+  <li>[ ] Prompt library organized by typology</li>
+  <li>[ ] Benchmark folder of precedent imagery</li>
+  <li>[ ] Shared spreadsheet logging AI iterations + metrics</li>
+  <li>[ ] Template deck that drops AI renders directly into layout</li>
+  <li>[ ] Contract language clarifying AI-assisted deliverables</li>
+</ul>
+
+<p>When every designer follows the same AI-assisted steps, concept design becomes both faster and more consistent. Ready to keep building? Explore the <a href="/tools/architectural-design">full concept tool library</a> on ArchAITool.</p>
+`;
+
+export const schoolToPracticeArticle = `
+<h2>From Studio Crits to Billable Work—Why AI Is Your First Hire</h2>
+
+<p>Every graduating architect faces the same friction: the tools that impressed jury panels rarely survive the jump to fee-driven practice. This guide translates that gap into an actionable AI adoption plan designed specifically for emerging professionals.</p>
+
+<h2>Step 1: Audit Your Existing Skills</h2>
+
+<p>List the workflows you already excel at (concept sketching, diagramming, visualization) and the areas that historically slow you down (documentation, cost studies, visualization). Match each weakness to an AI category:</p>
+
+<ul>
+  <li><strong>Visualization lag?</strong> Pair with <a href="/tool/myarchitectai">MyArchitect AI</a> or <a href="/tool/visualizee-ai">Visualizee AI</a>.</li>
+  <li><strong>Layout guesswork?</strong> Try <a href="/tool/testfit">TestFit</a> for multifamily or <a href="/tool/floorplan-ai">Floorplan AI</a> for residential.</li>
+  <li><strong>Interior styling?</strong> Start with free <a href="/tool/home-design-ai">Home Design AI</a> before presenting to clients.</li>
+</ul>
+
+<p>This mapping ensures your first AI tool reinforces tangible, billable skills instead of novelty.</p>
+
+<h2>Step 2: Build a 30-Day Pilot Timeline</h2>
+
+<div style="margin:1.5rem 0;padding:1rem;border:1px solid #e5e7eb;border-radius:8px;background:#f9fafb;">
+  <h4>Week 1 – Exploration</h4>
+  <p>Spend 30 minutes each day testing prompts, generating outputs, and documenting settings. Share results with classmates or peers for feedback.</p>
+  <h4>Week 2 – Application</h4>
+  <p>Apply the tool to a studio project or a volunteer competition entry. Track time spent vs. hand workflows.</p>
+  <h4>Week 3 – Translation</h4>
+  <p>Adapt outputs for real deliverables (PDF boards, Revit backgrounds, Rhino references). Note where manual cleanup is required.</p>
+  <h4>Week 4 – Presentation</h4>
+  <p>Package lessons learned into a 5-slide deck. Hiring managers love seeing structured experimentation.</p>
+</div>
+
+<h2>Step 3: Evaluate for Practice Readiness</h2>
+
+<p>Before introducing AI at your internship or first job, vet it against four questions:</p>
+
+<ol>
+  <li><strong>Does it save at least 30% time?</strong> If not, refine prompts or try another tool.</li>
+  <li><strong>Is output trustworthy?</strong> Use <a href="/tool/autodesk-forma">Autodesk Forma</a> or BIM exports to double-check proportions.</li>
+  <li><strong>Is licensing compliant?</strong> Screenshot and store EULAs for your manager.</li>
+  <li><strong>Can results be documented?</strong> Keep before/after images that show how AI supported your design intent.</li>
+</ol>
+
+<h2>Step 4: Present AI Value to Your Employer</h2>
+
+<p>New grads often assume they must hide AI experimentation. Instead, bring data:</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#1f2937;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Scenario</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Traditional Time</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">AI-Assisted</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Tool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Concept massing board</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">8 hours</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">2 hours</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/ai-architectures">AI Architectures</a></td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Interior mood board</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">5 hours</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">1 hour</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/home-design-ai">Home Design AI</a></td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Schematic layout options</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">12 hours</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">4 hours</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/testfit">TestFit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bring this table to your project manager and volunteer to run a pilot. Demonstrating initiative builds credibility faster than promising “AI magic.”</p>
+
+<h2>Step 5: Curate Your Personal AI Toolkit</h2>
+
+<p>Pick one tool from each category and keep logins synced on every device:</p>
+
+<ul>
+  <li><strong>Concept:</strong> AI Architectures (free) + <a href="/tool/arkdesign-ai">Arkdesign AI</a> (paid)</li>
+  <li><strong>Visualization:</strong> MyArchitect AI for presentation speed</li>
+  <li><strong>Documentation support:</strong> <a href="/tool/reimaginehome">ReimagineHome</a> to translate client references into buildable palettes</li>
+  <li><strong>Learning:</strong> Bookmark the <a href="/blog">ArchAITool blog</a> to capture new prompts</li>
+</ul>
+
+<h2>Career Checklist</h2>
+
+<p>Before the next job interview, make sure you can answer these AI-specific questions:</p>
+
+<ol>
+  <li>Describe a project where AI saved measurable time or improved quality.</li>
+  <li>Explain how you validated AI output against building code or climate metrics.</li>
+  <li>Show how you organize prompts and train junior teammates.</li>
+  <li>Outline ethical safeguards (copyright, disclosure, dataset bias).</li>
+</ol>
+
+<p>Turn AI literacy into your differentiator. When firms ask “How will you contribute on day one?” you will have a data-backed answer and a ready-to-share workflow kit.</p>
+`;
+
+export const aiArchitectureImagesArticle = `
+<h2>AI Images Look Real—Here’s How Architects Stay Authentic</h2>
+
+<p>Clients now expect renderings that feel indistinguishable from photography. That pressure tempts teams to deliver “perfect” AI images that ignore cost, constructability, or culture. This article outlines a quality-control stack that keeps your visuals aspirational <em>and</em> honest.</p>
+
+<h2>Know Where AI Goes Wrong</h2>
+
+<ul>
+  <li><strong>Physics blind spots:</strong> AI may float slabs, remove structure, or ignore drainage.</li>
+  <li><strong>Context drift:</strong> City skylines, vegetation, and signage can quietly shift continents.</li>
+  <li><strong>Material fiction:</strong> Rare metals or unobtainable glass show up because prompts lacked specification.</li>
+</ul>
+
+<p>Create a shared “AI fails” board so your team recognizes patterns immediately.</p>
+
+<h2>Adopt a three-layer verification flow</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.5rem 0;">
+  <div style="padding:1rem;border:1px solid #d1d5db;border-radius:8px;background:#f9fafb;">
+    <h4>Layer 1 — Prompt Discipline</h4>
+    <p>Embed non-negotiables such as “visible structural columns,” “code-compliant guardrails,” or “rainwater leaders.” Tools: <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/arkdesign-ai">Arkdesign AI</a>.</p>
+  </div>
+  <div style="padding:1rem;border:1px solid #d1d5db;border-radius:8px;background:#fff7ed;">
+    <h4>Layer 2 — Reality Overlay</h4>
+    <p>Export AI imagery into Photoshop and overlay structural grids, human scale bars, or Revit linework. Tools: <a href="/tool/visualizee-ai">Visualizee AI</a>, <a href="/tool/myarchitectai">MyArchitect AI</a>.</p>
+  </div>
+  <div style="padding:1rem;border:1px solid #d1d5db;border-radius:8px;background:#ecfccb;">
+    <h4>Layer 3 — Data Tagging</h4>
+    <p>Add captions referencing energy models, daylight simulations, or cost allowances. Tools: <a href="/tool/autodesk-forma">Autodesk Forma</a>, <a href="/tool/testfit">TestFit</a>.</p>
+  </div>
+</div>
+
+<h2>Build an authenticity checklist</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#0f172a;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Item</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">What to Verify</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Responsible</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Structure</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Column spacing, slab thickness, lateral bracing</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Project engineer</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Code + access</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Handrail height, ADA ramps, fire egress</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Project architect</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Climate fit</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Solar orientation, prevailing wind, planting species</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Sustainability lead</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Disclose AI use without killing trust</h2>
+
+<p>Clients appreciate transparency. Add a footnote on every deliverable:</p>
+
+<blockquote><p>“Visuals generated with AI tools (MyArchitect AI + Visualizee AI) under the direction of ArchAITool Studio. Geometry validated in Revit 2025 and daylight tested in Autodesk Forma.”</p></blockquote>
+
+<p>This wording reinforces that licensed professionals remain in control.</p>
+
+<h2>Create a reference library</h2>
+
+<p>Maintain a shared folder with:</p>
+
+<ul>
+  <li>Approved material palettes with CSI numbers.</li>
+  <li>Local context photo packs to keep vegetation and signage accurate.</li>
+  <li>Prompt snippets that enforce compliance (e.g., “include parapets per IBC 705”).</li>
+</ul>
+
+<p>When combined with the checklist above, your renders stay believable even as AI becomes more surreal.</p>
+
+<p>Remember: authenticity sells. Clients commission architects because they navigate constraints, not because they can dream. Use AI to accelerate storytelling—but anchor every pixel to reality.</p>
+`;
+
+export const smallFirmProductivityArticle = `
+<h2>Small Architecture Firms, Big AI Advantage</h2>
+
+<p>Teams of under 20 people often feel AI disruption the most. You juggle business development, design, documentation, and marketing with limited staff. This article condenses our conversations with boutique studios into a practical roadmap for boosting productivity without bloating headcount.</p>
+
+<h2>Map Your Time Drains</h2>
+
+<p>Audit last quarter’s timesheets and categorize hours into five buckets: concept design, visualization, documentation, coordination, and admin. Highlight the two buckets consuming the most non-billable time. Those are your AI candidates.</p>
+
+<h2>Design a “3-Tool Stack” per Bucket</h2>
+
+<ul>
+  <li><strong>Concept + visualization:</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/visualizee-ai">Visualizee AI</a>, <a href="/tool/myarchitectai">MyArchitect AI</a></li>
+  <li><strong>Documentation:</strong> <a href="/tool/testfit">TestFit</a> for unit mixes, <a href="/tool/autodesk-forma">Autodesk Forma</a> for performance notes, <a href="/tool/reimaginehome">ReimagineHome</a> for interior specs.</li>
+  <li><strong>Marketing:</strong> <a href="/tool/midjourney">Midjourney</a> for mood boards, <a href="/tool/home-design-ai">Home Design AI</a> for before/after transformations, <a href="/tool/arkdesign-ai">Arkdesign AI</a> for hero imagery.</li>
+</ul>
+
+<p>Limit each workflow to three core tools to keep training and subscriptions manageable.</p>
+
+<h2>Implement the 18-Minute Daily Ritual</h2>
+
+<div style="margin:1.5rem 0;padding:1rem;border:1px dashed #d1d5db;border-radius:8px;background:#f8fafc;">
+  <ol>
+    <li><strong>Minute 0-6:</strong> Update your AI task board. Log prompts that worked and assign new ones to teammates.</li>
+    <li><strong>Minute 6-12:</strong> Batch-generate assets (renders, layouts, text summaries). Export everything into a shared “AI inbox.”</li>
+    <li><strong>Minute 12-18:</strong> Review outputs, mark what moves forward, and capture insights for tomorrow.</li>
+  </ol>
+</div>
+
+<p>Short, consistent sessions beat massive “AI hack days” that never stick.</p>
+
+<h2>Quantify ROI in a Single Dashboard</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Metric</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">How to Measure</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Concept cycle time</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Hours from kickoff to 3 options</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">&lt; 48 hours</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Visualization cost</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">External render spend per project</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Reduce by 60%</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Proposal win rate</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Proposals won / submitted</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">+15% within 6 months</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Review the dashboard at every weekly leadership meeting. Tie AI subscription renewals to these numbers.</p>
+
+<h2>Document processes for the whole office</h2>
+
+<p>Small firms can’t afford knowledge silos. Store everything in a shared Notion or Confluence space:</p>
+
+<ul>
+  <li>Prompt templates organized by typology.</li>
+  <li>“Pass/Fail” galleries that show acceptable vs. unacceptable AI output.</li>
+  <li>Client-ready boilerplate explaining how AI assists (not replaces) design expertise.</li>
+</ul>
+
+<h2>Turn AI into a marketing story</h2>
+
+<p>Prospective clients love hearing how their project will move faster. Add a slide in every pitch deck summarizing:</p>
+
+<ul>
+  <li>Your AI stack and how it shortens iterations.</li>
+  <li>Quality controls (human review, Forma metrics, cost checks).</li>
+  <li>Case study showing hours saved on a recent project.</li>
+</ul>
+
+<p>By owning the narrative, you position AI as a premium service rather than a behind-the-scenes experiment.</p>
+
+<p>Small firms win by being decisive. Start with one workflow, deploy the three-tool stack, measure results, and share them loudly. Visit <a href="/">ArchAITool.com</a> whenever you need fresh tools or prompts to keep the momentum going.</p>
+`;
