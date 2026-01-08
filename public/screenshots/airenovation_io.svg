@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="aiRenoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#aiRenoGradient)" />
+  <rect x="150" y="160" width="900" height="310" rx="26" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.35)" stroke-width="2" />
+  <text x="600" y="280" fill="#fee2e2" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="66" font-weight="600" text-anchor="middle">
+    AI Renovation
+  </text>
+  <text x="600" y="345" fill="#fecdd3" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="34" text-anchor="middle">
+    Renovation Visualization & Virtual Staging
+  </text>
+  <text x="600" y="402" fill="#ffe4e6" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="26" text-anchor="middle">
+    Clutter removal · Material previews · 30+ styles
+  </text>
+</svg>

@@ -22,6 +22,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'd5render.com': '/screenshots/www_d5render_com_.webp',
   'draftaid.io': '/screenshots/draftaid_io_.webp',
   'evolvelab.io': '/screenshots/www_evolvelab_io_veras.webp',
+  'floor-plan.ai': '/screenshots/floor-plan_ai.svg',
   'floorplan-ai.com': '/screenshots/www_floorplan_ai_com_.webp',
   'floordesign.ai': '/screenshots/floordesign_ai_.webp',
   'gepettoapp.com': '/screenshots/gepettoapp_com_.webp',
@@ -71,6 +72,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'archi.ai': '/screenshots/archi_ai__enhanced.webp',
   'artevia.ai': '/screenshots/artevia_ai_.webp',
   'collov.ai': '/screenshots/collov ai.webp',
+  'dehome.ai': '/screenshots/dehome_ai.svg',
   'decorai.xyz': '/screenshots/decorai_xyz_.webp',
   'decorion.xyz': '/screenshots/decorion_xyz_.webp',
   'home-design.ai': '/screenshots/home_design_ai_.webp',
@@ -79,6 +81,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'kitchengpt.io': '/screenshots/kitchengpt_io_.webp',
   'luw.ai': '/screenshots/luw_ai_.webp',
   'palette.immo': '/screenshots/palette_immo_.webp',
+  'roomlab.app': '/screenshots/roomlab_app.svg',
   'reimaginehome.ai': '/screenshots/www_reimaginehome_ai_.webp',
   'www.reimaginehome.ai': '/screenshots/www_reimaginehome_ai_.webp',
   'aihomedesign.com': '/screenshots/aihomedesign_com_.webp',
@@ -100,7 +103,8 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
 
   // Architectural Rendering & Visualization
   'airender.studio': '/screenshots/airender_studio_.webp',
-  'arko.ai': '/screenshots/arko_ai_.webp'
+  'arko.ai': '/screenshots/arko_ai_.webp',
+  'airenovation.io': '/screenshots/airenovation_io.svg'
 };
 
 /**

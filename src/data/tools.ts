@@ -1183,6 +1183,69 @@ export const categories: Category[] = [
             lastUpdated: "2025-10-30"
           },
           {
+            id: "floor-plan-ai",
+            name: "Floor-Plan.ai",
+            description: "Free AI floor plan generator with real-time collaboration and encryption",
+            image: "/screenshots/floor-plan_ai.svg",
+            url: "https://floor-plan.ai/",
+            isPaid: false,
+            category: "architecture-spatial",
+            subcategory: "architectural-design",
+            detailedDescription: "Floor-Plan.ai is a browser-based AI platform that turns room descriptions, sketches, or uploaded layouts into professional floor plans within seconds. Designed for architects, builders, and design teams, the tool offers multiple layout suggestions, advanced spatial reasoning, and enterprise-grade security with end-to-end encryption and GDPR compliance. Built-in collaboration lets teams co-edit layouts in real time, leave comments, and manage versions—all without installing desktop software.",
+            keyFeatures: [
+              "AI-powered layout generation from text prompts or room uploads",
+              "Multiple design options with instant refinements",
+              "Professional measurement logic and spatial reasoning",
+              "Real-time team collaboration with comments and version history",
+              "End-to-end encryption and GDPR-ready workflows",
+              "Cloud backup with automatic redundancy",
+              "Mobile-responsive interface (desktop, tablet, mobile)",
+              "Enterprise-ready security and compliance controls"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["PNG exports", "PDF exports"],
+              exportOptions: ["High-resolution floor plans", "Shareable project links"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Completely free access to AI floor plan generation",
+                  "Unlimited layout iterations",
+                  "Team collaboration workspace",
+                  "Version control and comments"
+                ],
+                limitations: [
+                  "No premium SLA",
+                  "Advanced enterprise controls available on request"
+                ]
+              }
+            },
+            useCases: [
+              "Apartment and house floor planning",
+              "Architectural drafts and schematic design",
+              "Commercial space planning",
+              "Renovation and remodel planning",
+              "Interior layout optimization",
+              "Contractor collaboration and handoff"
+            ],
+            integrations: [
+              "Shared cloud workspace for teams and clients",
+              "Import of reference sketches or outlines",
+              "Download-ready files for CAD/BIM pipelines"
+            ],
+            companyInfo: {
+              support: {
+                email: "hello@floor-plan.ai",
+                documentation: "https://floor-plan.ai/help",
+                tutorials: "In-app tips and onboarding"
+              }
+            },
+            lastUpdated: "2026-01-07"
+          },
+          {
             id: "ai-architectures",
             name: "AI Architectures",
             description: "AI-powered architecture design platform for professional designs, plans, and renderings in seconds",
@@ -3353,6 +3416,280 @@ export const categories: Category[] = [
             },
             userRating: 4.7,
             lastUpdated: "2025-10-30"
+          },
+          {
+            id: "dehome-ai",
+            name: "Dehome.ai",
+            description: "All-in-one AI design platform for interiors, exteriors, landscapes, and BIM workflows",
+            image: "/screenshots/dehome_ai.svg",
+            url: "https://dehome.ai/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Dehome.ai unifies architectural, interior, landscape, and exterior design workflows into a single AI-assisted platform. Users upload a photo or provide a text brief and receive photorealistic results in seconds across 40+ design styles. The platform reduces consultation costs by up to 70%, supports BIM-friendly exports, and offers guided AI assistance for furniture, lighting, and material selections. Professionals can cover entire property scopes—from facade upgrades to garden planning—without juggling multiple apps.",
+            keyFeatures: [
+              "Interiors, exteriors, landscapes, and architecture handled in one interface",
+              "40+ professionally curated design styles",
+              "AI assistant for furniture, color palettes, and lighting",
+              "Photorealistic rendering engine optimized for client presentations",
+              "BIM-friendly output ready for downstream workflows",
+              "Smart recommendations for cost-optimized redesigns",
+              "7-day free trial with no credit card required",
+              "Team-ready workspace with project history"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG", "WebP"],
+              exportOptions: ["High-resolution renders", "Side-by-side comparisons"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "7-day free trial",
+                  "Full-quality generations during trial",
+                  "Access to core design styles"
+                ],
+                limitations: ["Trial limited to one user", "Exports watermarked after trial"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Premium Monthly",
+                    price: "Custom pricing",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited design generations",
+                      "Full-resolution downloads",
+                      "Landscape and BIM-ready exports",
+                      "Priority processing"
+                    ],
+                    targetUser: "Individual designers and boutique studios"
+                  },
+                  {
+                    name: "Premium Annual",
+                    price: "Custom pricing",
+                    billing: "yearly",
+                    features: [
+                      "All monthly features",
+                      "Team collaboration and shared libraries",
+                      "Extended storage retention",
+                      "Dedicated success manager"
+                    ],
+                    targetUser: "Professional agencies and multi-disciplinary firms"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Interior design and remodeling concepts",
+              "Exterior facade refresh and curb appeal planning",
+              "Landscape and garden design visualization",
+              "Virtual staging for real estate marketing",
+              "Architectural concept development with BIM alignment",
+              "Furniture arrangement and lighting studies"
+            ],
+            integrations: [
+              "Photo upload workflow",
+              "Text prompt based ideation",
+              "BIM-friendly exports for professional pipelines",
+              "Client-ready presentation links"
+            ],
+            companyInfo: {
+              support: {
+                email: "support@dehome.ai",
+                documentation: "https://dehome.ai/resources",
+                tutorials: "Guided onboarding available in-app"
+              },
+              userStats: {
+                users: "Trusted by real estate developers, designers, and homeowners worldwide"
+              }
+            },
+            userRating: 4.6,
+            lastUpdated: "2026-01-07"
+          },
+          {
+            id: "roomlab-app",
+            name: "Roomlab.app",
+            description: "Hyperrealistic AI interior editor with precision material swapping and commercial licensing",
+            image: "/screenshots/roomlab_app.svg",
+            url: "https://roomlab.app/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Roomlab.app delivers studio-grade interior transformations with granular control over fixtures, finishes, and materials. Designers can replace a single tile, vanity, or light fitting while preserving the rest of the scene thanks to precision masking and generative fill. Virtual staging, custom generation modes, and HD exports make Roomlab.app ideal for agencies that need convincing visuals with commercial usage rights.",
+            keyFeatures: [
+              "Material-level replacements for tiles, fixtures, and textiles",
+              "Generative fill for extending or completing empty spaces",
+              "Virtual staging for unfurnished interiors",
+              "HD output with commercial license on higher tiers",
+              "Iterative design mode for rapid refinements",
+              "Custom generation controls to match client briefs",
+              "Data retention options up to 3 months on Premium",
+              "Credit refill support for high-volume workflows"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG"],
+              exportOptions: ["HD image downloads", "Before/after comparisons"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "£149/year",
+                    billing: "yearly",
+                    features: [
+                      "400 credits per month",
+                      "1-month data retention",
+                      "Standard material editing tools",
+                      "Personal and limited commercial use"
+                    ],
+                    targetUser: "Solo designers and real estate agents"
+                  },
+                  {
+                    name: "Ultra",
+                    price: "£399/year",
+                    billing: "yearly",
+                    features: [
+                      "1,100 credits per month",
+                      "Commercial license included",
+                      "Priority processing for HD outputs",
+                      "All Pro features plus advanced editing controls"
+                    ],
+                    targetUser: "Professional studios and agencies"
+                  },
+                  {
+                    name: "Premium",
+                    price: "£899/year",
+                    billing: "yearly",
+                    features: [
+                      "3,000 credits per month",
+                      "Commercial license + priority support",
+                      "3-month data retention",
+                      "Fastest rendering SLA"
+                    ],
+                    targetUser: "High-volume agencies and enterprise teams"
+                  }
+                ],
+                enterprisePlan: true
+              }
+            },
+            useCases: [
+              "Bathroom and kitchen remodeling previews",
+              "High-end real estate virtual staging",
+              "Iterative interior concept development",
+              "Material and finish experimentation",
+              "Client-ready mood boards and presentation assets",
+              "Before/after storytelling for marketing"
+            ],
+            integrations: [
+              "Direct photo upload workflow",
+              "Commercial usage rights on Ultra and Premium",
+              "Credit refill add-ons for active subscribers"
+            ],
+            companyInfo: {
+              support: {
+                documentation: "https://roomlab.app/faq",
+                email: "support@roomlab.app"
+              }
+            },
+            userRating: 4.7,
+            lastUpdated: "2026-01-07"
+          },
+          {
+            id: "ai-renovation",
+            name: "AI Renovation",
+            description: "Renovation visualization and virtual staging platform specialized for real estate",
+            image: "/screenshots/airenovation_io.svg",
+            url: "https://www.airenovation.io/",
+            isPaid: true,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "AI Renovation (airenovation.io) helps homeowners, interior designers, and real estate professionals visualize complete renovations from a single photo. The platform recognizes walls, floors, furniture, and fixtures automatically, then offers 30+ professional design styles, clutter removal, and material previews. Built-in virtual staging and paint visualization tools make it easy to test multiple looks before investing in construction or staging.",
+            keyFeatures: [
+              "Automatic space geometry recognition for walls, floors, and furniture",
+              "30+ interior design styles plus renovation-ready prompts",
+              "Virtual staging with furniture placement and clutter removal",
+              "Paint color and flooring visualization",
+              "Material previews for cabinets, benchtops, and textiles",
+              "Before/after comparison slider for sharing results",
+              "Image quality enhancement for low-light or blurry inputs",
+              "2D to photorealistic visualization conversion"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["JPG", "PNG"],
+              exportOptions: ["High-resolution downloads", "Interactive comparison slider"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "3 credits free trial",
+                  "Access to core design styles",
+                  "Standard resolution outputs"
+                ],
+                limitations: ["Credits required after trial", "Watermark on free exports"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$50/month",
+                    billing: "monthly",
+                    features: [
+                      "50 credits per month",
+                      "Full design style library",
+                      "Standard resolution outputs",
+                      "Email support"
+                    ],
+                    targetUser: "Homeowners and small teams"
+                  },
+                  {
+                    name: "Professional",
+                    price: "$250/month",
+                    billing: "monthly",
+                    features: [
+                      "250 credits per month",
+                      "Priority rendering speeds",
+                      "Commercial usage rights",
+                      "Advanced editing tools",
+                      "Priority support"
+                    ],
+                    targetUser: "Agencies and real estate marketing teams"
+                  }
+                ],
+                trialAvailable: true
+              }
+            },
+            useCases: [
+              "Home renovation planning and visualization",
+              "Virtual staging for property listings",
+              "Kitchen and bathroom redesign previews",
+              "Paint color and flooring comparisons",
+              "Interior design concept generation",
+              "Real estate marketing collateral"
+            ],
+            integrations: [
+              "Photo upload workflow",
+              "Before/after comparison links for clients",
+              "High-resolution export for print or web listings"
+            ],
+            companyInfo: {
+              support: {
+                email: "support@airenovation.io",
+                documentation: "https://www.airenovation.io/",
+                tutorials: "Guided onboarding via help center"
+              }
+            },
+            userRating: 4.6,
+            lastUpdated: "2026-01-07"
           },
           {
             id: "renovate-ai",

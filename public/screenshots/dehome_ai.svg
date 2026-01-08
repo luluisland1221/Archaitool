@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="dehomeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#dehomeGradient)" />
+  <rect x="140" y="150" width="920" height="330" rx="28" fill="rgba(4,9,20,0.5)" stroke="rgba(14,165,233,0.35)" stroke-width="3" />
+  <text x="600" y="275" fill="#e0f2fe" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="72" font-weight="600" text-anchor="middle">
+    Dehome.ai
+  </text>
+  <text x="600" y="340" fill="#bae6fd" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="34" text-anchor="middle">
+    All-in-one AI Interiors · Exteriors · Landscapes
+  </text>
+  <text x="600" y="400" fill="#cbd5f5" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="26" text-anchor="middle">
+    BIM-ready · 40+ styles · 7-day free trial
+  </text>
+</svg>

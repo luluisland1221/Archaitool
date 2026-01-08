@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="roomlabGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#roomlabGradient)" />
+  <rect x="160" y="160" width="880" height="310" rx="30" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+  <text x="600" y="280" fill="#ede9fe" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="68" font-weight="600" text-anchor="middle">
+    Roomlab.app
+  </text>
+  <text x="600" y="350" fill="#ddd6fe" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="34" text-anchor="middle">
+    Hyperrealistic Interior Material Swaps
+  </text>
+  <text x="600" y="405" fill="#c4b5fd" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="26" text-anchor="middle">
+    Precision fixtures · Generative fill · Virtual staging
+  </text>
+</svg>
