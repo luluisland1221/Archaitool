@@ -13,7 +13,6 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy - Arch AI Tool</title>
         <meta name="description" content="Arch AI Tool's privacy policy - Learn how we collect, use, and protect your personal information, including cookie policy, data processing, and user rights." />
-        <link rel="canonical" href="https://archaitool.com/privacy-policy" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Privacy Policy - Arch AI Tool" />
         <meta property="og:description" content="Learn how Arch AI Tool protects your privacy and data security" />

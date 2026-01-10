@@ -9,6 +9,7 @@ import {
 import { configuredCategories, Tool } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
+import { setCanonicalUrl } from '../utils/seo';
 
 // 简化工具卡片样式
 const toolVisitCard = "bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1";
@@ -69,13 +70,7 @@ const ToolDetail = () => {
       metaDescription.content = metaDescText.substring(0, 160);
 
       // Update or create canonical URL
-      let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-      if (!canonicalLink) {
-        canonicalLink = document.createElement('link');
-        canonicalLink.rel = 'canonical';
-        document.head.appendChild(canonicalLink);
-      }
-      canonicalLink.href = `https://archaitool.com${generateToolUrl(tool.id)}`;
+      setCanonicalUrl(generateToolUrl(tool.id));
 
       // Update Open Graph meta tags
       let ogTitle = document.querySelector('meta[property="og:title"]') as HTMLMetaElement;

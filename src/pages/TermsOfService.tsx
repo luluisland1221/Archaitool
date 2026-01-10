@@ -13,7 +13,6 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service - Arch AI Tool</title>
         <meta name="description" content="Arch AI Tool's terms of service - Learn about the rules, conditions, liability limitations, and user obligations for using our website and services." />
-        <link rel="canonical" href="https://archaitool.com/terms-of-service" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Terms of Service - Arch AI Tool" />
         <meta property="og:description" content="Read Arch AI Tool's terms of service and usage rules" />

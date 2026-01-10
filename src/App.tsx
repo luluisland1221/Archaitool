@@ -15,6 +15,7 @@ import ResearchManagement from './pages/ResearchManagement';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
+import { setCanonicalUrl } from './utils/seo';
 // Removed redirect imports - not needed for static site
 
 
@@ -61,14 +62,8 @@ const TitleUpdater = () => {
     }
 
     // Set canonical URL to avoid redirect chains
-    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.rel = 'canonical';
-      document.head.appendChild(canonicalLink);
-    }
-    // Always point to the non-www HTTPS version to avoid redirect chains
-    canonicalLink.href = `https://archaitool.com${location.pathname}${location.search}`;
+    // Always point to the non-www HTTPS version without duplicate parameters
+    setCanonicalUrl(location.pathname);
 
     // Set meta description for non-tool pages
     let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;

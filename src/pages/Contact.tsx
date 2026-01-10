@@ -55,7 +55,6 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us - Arch AI Tool</title>
         <meta name="description" content="Contact the Arch AI Tool team - tool submissions, business partnerships, technical support. We are dedicated to providing the best AI tool navigation service for architecture and design professionals." />
-        <link rel="canonical" href="https://archaitool.com/contact" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Contact Us - Arch AI Tool" />
         <meta property="og:description" content="Contact us to discover more AI architecture tools" />
