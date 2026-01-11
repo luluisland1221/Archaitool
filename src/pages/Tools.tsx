@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useSearchParams, useParams, Link } from 'react-router-dom';
+import { useSearchParams, useParams, Link, useLocation, Navigate } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
@@ -183,6 +183,7 @@ const subcategoryInsights: Record<string, Insight> = {
 const Tools = () => {
   const [searchParams] = useSearchParams();
   const params = useParams();
+  const location = useLocation();
 
   // List of newly added tool IDs
   const newToolIds = [
@@ -223,6 +224,24 @@ const Tools = () => {
 
   const categoryInsight = selectedCategory ? categoryInsights[selectedCategory.id] : null;
   const subcategoryInsight = selectedSubcategory ? subcategoryInsights[selectedSubcategory.id] : null;
+
+  const queryCategory = searchParams.get('category');
+  const querySubcategory = searchParams.get('subcategory');
+  const canonicalSegments = [];
+  if (finalCategoryId) canonicalSegments.push(finalCategoryId);
+  if (finalSubcategoryId) canonicalSegments.push(finalSubcategoryId);
+  const canonicalPath = canonicalSegments.length
+    ? `/tools/${canonicalSegments.join('/')}`
+    : '/tools';
+  const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
+  const shouldRedirectQuery =
+    normalizedPath === '/tools' &&
+    (queryCategory || querySubcategory) &&
+    canonicalPath !== '/tools';
+
+  if (shouldRedirectQuery) {
+    return <Navigate to={canonicalPath} replace />;
+  }
 
   useEffect(() => {
     let title = 'AI Architecture Tools - Browse All Categories | Arch AI Tool';

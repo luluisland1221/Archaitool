@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation, Navigate } from 'react-router-dom';
 import {
   ExternalLink, ArrowLeft, Check, Building2, Cpu, Palette, Clock,
   Star, Users, Globe, Zap, Award, FileText, Download, Play,
@@ -20,6 +20,7 @@ const toolVisitCardButton = "w-full bg-black text-white px-8 py-4 rounded-full h
 
 const ToolDetail = () => {
   const { id } = useParams();
+  const location = useLocation();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
   // List of newly added tool IDs
@@ -201,6 +202,12 @@ const ToolDetail = () => {
         </div>
       </div>
     );
+  }
+
+  const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
+  const canonicalPath = tool ? generateToolUrl(tool.id) : null;
+  if (tool && canonicalPath && normalizedPath !== canonicalPath) {
+    return <Navigate to={canonicalPath} replace />;
   }
 
   // Find the category and subcategory
