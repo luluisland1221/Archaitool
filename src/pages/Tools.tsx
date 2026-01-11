@@ -1,13 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useSearchParams, useParams, Link, useNavigate } from 'react-router-dom';
+import { useSearchParams, useParams, Link } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
 
 const Tools = () => {
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const params = useParams();
 
@@ -88,38 +87,33 @@ const Tools = () => {
   const renderCategories = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {configuredCategories.map((category) => (
-        <div
+        <Link
           key={category.id}
-          onClick={() => navigate(`/tools/${category.id}`)}
-          className="bg-gray-200 p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-gray-100 cursor-pointer"
+          to={`/tools/${category.id}`}
+          className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
-          <h2 className="text-2xl font-bold mb-3">{category.name}</h2>
-          <p className="text-gray-600 mb-4">{category.description}</p>
-          <div className="space-y-2 bg-white p-4 rounded-lg">
-            {category.subcategories.map((sub) => (
-              <div key={sub.id} className="text-sm text-gray-500">
-                • {sub.name}
-              </div>
-            ))}
-          </div>
-        </div>
+          <article className="bg-gray-200 p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-gray-100">
+            <h2 className="text-2xl font-bold mb-3">{category.name}</h2>
+            <p className="text-gray-600 mb-4">{category.description}</p>
+            <div className="space-y-2 bg-white p-4 rounded-lg">
+              {category.subcategories.map((sub) => (
+                <div key={sub.id} className="text-sm text-gray-500">
+                  &middot;{sub.name}
+                </div>
+              ))}
+            </div>
+          </article>
+        </Link>
       ))}
     </div>
   );
 
   const ToolCard = ({ tool }) => {
-    const handleCardClick = (e) => {
-      e.preventDefault();
-      navigate(generateToolUrl(tool.id));
-    };
-
     const isNewTool = newToolIds.includes(tool.id);
+    const toolDetailUrl = generateToolUrl(tool.id);
 
     return (
-      <div
-        onClick={handleCardClick}
-        className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative"
-      >
+      <article className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative">
         <div className="relative">
           <div className="relative overflow-hidden">
             <DynamicScreenshotImage
@@ -152,16 +146,23 @@ const Tools = () => {
             </div>
           </div>
         </div>
+        <Link
+          to={toolDetailUrl}
+          className="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          aria-label={`View ${tool.name} AI tool details`}
+        >
+          <span className="sr-only">View {tool.name} details</span>
+        </Link>
         <a
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          className="absolute top-4 right-4 z-20 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           onClick={(e) => e.stopPropagation()}
         >
           <ExternalLink className="h-4 w-4 text-gray-600" />
         </a>
-      </div>
+      </article>
     );
   };
 

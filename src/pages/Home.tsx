@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
@@ -8,8 +8,6 @@ import { screenshotService } from '../services/screenshotService';
 import { generateToolUrl } from '../utils/urlHelper';
 
 const Home = () => {
-  const navigate = useNavigate();
-
   // List of newly added tool IDs
   const newToolIds = [
     'ai-architectures',
@@ -65,10 +63,6 @@ const Home = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-  const handleCardClick = (toolId: string) => {
-    navigate(generateToolUrl(toolId));
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -135,10 +129,10 @@ const Home = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {subcategory.tools.slice(0, 3).map((tool) => {
                       const isNewTool = newToolIds.includes(tool.id);
+                      const toolDetailUrl = generateToolUrl(tool.id);
                       return (
-                        <div
+                        <article
                           key={tool.id}
-                          onClick={() => navigate(generateToolUrl(tool.id))}
                           className="group bg-white shadow-lg hover:shadow-2xl transition-all duration-300 relative"
                         >
                           <div className="relative">
@@ -173,16 +167,23 @@ const Home = () => {
                               </div>
                             </div>
                           </div>
+                          <Link
+                            to={toolDetailUrl}
+                            className="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                            aria-label={`View ${tool.name} AI tool details`}
+                          >
+                            <span className="sr-only">View {tool.name} details</span>
+                          </Link>
                           <a
                             href={tool.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            className="absolute top-4 right-4 z-20 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <ExternalLink className="h-4 w-4 text-gray-600" />
                           </a>
-                        </div>
+                        </article>
                       );
                     })}
                   </div>
