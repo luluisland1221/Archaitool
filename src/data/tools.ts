@@ -4235,7 +4235,81 @@ export const categories: Category[] = [
             url: "https://renovateai.app/",
             isPaid: true,
             category: "interior-design",
-            subcategory: "virtual-staging"
+            subcategory: "virtual-staging",
+            detailedDescription: "Renovate AI is a mobile and desktop renovation studio that lets homeowners, contractors, and agents upload any room or exterior photo, apply more than 75 curated looks, recolor finishes, and add new furniture arrangements in seconds. The platform includes Renovate AI Studio for pro-level rendering where users can remove clutter, change wall materials, upscale imagery to 4K, and keep multiple versions synced across devices.",
+            keyFeatures: [
+              "Upload or capture any room and restyle it instantly with 75+ curated looks including modern, Victorian, and mid-century palettes",
+              "Renovate AI Studio workspace for clutter removal, material swaps, fixture updates, and 4K upscaling",
+              "1,000 free visualization credits for new users plus flexible credit packs for teams",
+              "Supports interiors, exteriors, landscaping concepts, and paint studies so entire properties can be refreshed in one workflow",
+              "Mobile app (4.8 rating) and desktop experience with seamless project syncing for contractors on the go",
+              "Style Transfer mode to apply community-generated looks and share before/after stories with clients",
+              "Detailed export controls for agencies needing consistent aspect ratios across web, social, and presentation decks"
+            ],
+            pricing: {
+              freeTier: {
+                features: [
+                  "1,000 visualization credits to test workflows",
+                  "Access to curated style library and clutter removal tools",
+                  "Project syncing between mobile and desktop apps"
+                ]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Studio Pro",
+                    price: "Custom subscription",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited access to Renovate AI Studio",
+                      "4K exports and video-ready renders",
+                      "Advanced paint/material editing",
+                      "Priority roadmap updates for agencies"
+                    ],
+                    targetUser: "Professional renovators, stagers, and marketing teams"
+                  },
+                  {
+                    name: "Enterprise",
+                    price: "Contact sales",
+                    billing: "monthly",
+                    features: [
+                      "Seat management for large brokerages or contractors",
+                      "Dedicated success manager and training sessions",
+                      "API access for automated content creation",
+                      "Centralized asset libraries and compliance reviews"
+                    ],
+                    targetUser: "National brokerages and renovation platforms"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: true
+            },
+            useCases: [
+              "Listing agents stage vacant or outdated rooms with multiple moods for MLS, social media, and print mailers",
+              "Contractors present kitchen, bathroom, and exterior remodel options to clients before demolition begins",
+              "Homeowners test material palettes, landscaping ideas, and lighting changes before ordering finishes",
+              "Short-term rental operators refresh visuals for high-season marketing without scheduling full photo shoots"
+            ],
+            companyInfo: {
+              name: "Renovate AI",
+              industry: "Home design technology",
+              description: "Trusted by more than 20,000 contractors, agents, and renovators to visualize interiors, exteriors, and landscapes with AI-powered staging.",
+              support: {
+                documentation: "https://renovateai.app/blog"
+              }
+            },
+            userStats: {
+              description: "Highlights from the Renovate AI website",
+              stats: [
+                "20,000+ contractors, real estate agents, and renovators referenced as active users",
+                "4.8 Apple App Store rating for the mobile experience",
+                "More than 75 curated looks covering modern to Victorian interiors",
+                "1,000 free visualization credits when new accounts get started"
+              ]
+            },
+            userRating: 4.8,
+            lastUpdated: "2026-01-11"
           },
           {
             id: "instantdeco-ai",

@@ -212,6 +212,47 @@ const ToolDetail = () => {
     s.tools.some(t => t.id === id)
   );
 
+  const highlightParagraphs: string[] = [];
+  if (tool.keyFeatures?.length) {
+    const sample = tool.keyFeatures.slice(0, 4).join(', ');
+    highlightParagraphs.push(
+      `${tool.name} advertises key functions such as ${sample}. These capabilities are pulled directly from the vendor’s public materials so your team can gauge how the platform copes with everyday project requests.`
+    );
+  }
+  if (tool.useCases?.length) {
+    highlightParagraphs.push(
+      `Teams typically deploy ${tool.name} for workflows like ${tool.useCases.slice(0, 3).join(', ')}. Mapping these scenarios to your current pipeline makes it easier to justify pilot budgets and set measurable KPIs.`
+    );
+  }
+  if (tool.companyInfo?.description) {
+    highlightParagraphs.push(
+      `${tool.companyInfo.description} This context helps you understand the operating maturity behind ${tool.name} before committing sensitive client work to the platform.`
+    );
+  }
+
+  const evaluationChecklist: string[] = [];
+  if (tool.pricing?.freeTier) {
+    evaluationChecklist.push(
+      'Start with the free allocation to validate output quality and confirm the UI works on the hardware your team carries into the field.'
+    );
+  }
+  if (tool.pricing?.paid?.plans?.length) {
+    const planNames = tool.pricing.paid.plans.map(plan => plan.name).join(', ');
+    evaluationChecklist.push(
+      `Paid options such as ${planNames} unlock higher resolution exports and support commitments—use these tiers when client deliverables demand consistent turnarounds.`
+    );
+  }
+  if (tool.technicalSpecs?.supportedFormats?.length) {
+    evaluationChecklist.push(
+      `Document the supported formats (${tool.technicalSpecs.supportedFormats.join(', ')}) so your downstream BIM, DCC, or marketing tools can stay in sync without additional conversion steps.`
+    );
+  }
+  if (tool.companyInfo?.support?.email) {
+    evaluationChecklist.push(
+      `Save the vendor’s support channel (${tool.companyInfo.support.email}) in your runbook to escalate blockers quickly during time-sensitive submissions.`
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Text and Image side by side */}
@@ -339,6 +380,27 @@ const ToolDetail = () => {
                 {tool.detailedDescription || tool.description}
               </p>
             </div>
+
+            {(highlightParagraphs.length > 0 || evaluationChecklist.length > 0) && (
+              <div className="bg-white rounded-xl shadow-lg p-8">
+                <h2 className="text-3xl font-bold mb-6 text-gray-900">Research Highlights &amp; Evaluation Tips</h2>
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  {highlightParagraphs.map((paragraph, index) => (
+                    <p key={`highlight-${index}`}>{paragraph}</p>
+                  ))}
+                </div>
+                {evaluationChecklist.length > 0 && (
+                  <div className="mt-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Implementation checklist</h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                      {evaluationChecklist.map((item, index) => (
+                        <li key={`check-${index}`}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Technical Specifications */}
             {tool.technicalSpecs && (
