@@ -16,6 +16,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
 import { setCanonicalUrl } from './utils/seo';
+import { truncateWithEllipsis } from './utils/text';
 // Removed redirect imports - not needed for static site
 
 
@@ -91,7 +92,10 @@ const TitleUpdater = () => {
     if (location.pathname.startsWith('/tool/')) {
       metaDescription.content = 'Discover detailed information about AI architecture and design tools. Read reviews, compare features, and find the perfect AI solution for your project.';
     } else {
-      metaDescription.content = descriptions[location.pathname] || descriptions['/'];
+      metaDescription.content = truncateWithEllipsis(
+        descriptions[location.pathname] || descriptions['/'],
+        155
+      );
     }
   }, [location]);
 

@@ -10,6 +10,7 @@ import { configuredCategories, Tool } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
 import { setCanonicalUrl } from '../utils/seo';
+import { truncateWithEllipsis } from '../utils/text';
 
 // 简化工具卡片样式
 const toolVisitCard = "bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1";
@@ -68,7 +69,7 @@ const ToolDetail = () => {
       const features = tool.keyFeatures?.slice(0, 3).join(', ') || '';
       const pricingInfo = tool.isPaid ? 'Paid tool' : 'Free tool available';
       const metaDescText = `${tool.name}: ${description}. Key features: ${features}. ${pricingInfo}. Read reviews and explore this AI architecture tool.`;
-      metaDescription.content = metaDescText.substring(0, 160);
+      metaDescription.content = truncateWithEllipsis(metaDescText, 155);
 
       // Update or create canonical URL
       setCanonicalUrl(generateToolUrl(tool.id));
@@ -88,7 +89,7 @@ const ToolDetail = () => {
         ogDescription.property = 'og:description';
         document.head.appendChild(ogDescription);
       }
-      ogDescription.content = metaDescText.substring(0, 160);
+      ogDescription.content = truncateWithEllipsis(metaDescText, 155);
 
       let ogUrl = document.querySelector('meta[property="og:url"]') as HTMLMetaElement;
       if (!ogUrl) {
@@ -113,7 +114,7 @@ const ToolDetail = () => {
         twitterDescription.name = 'twitter:description';
         document.head.appendChild(twitterDescription);
       }
-      twitterDescription.content = metaDescText.substring(0, 160);
+      twitterDescription.content = truncateWithEllipsis(metaDescText, 155);
 
       // Add JSON-LD structured data for SEO
       const existingJsonLd = document.querySelector('script[type="application/ld+json"]');
