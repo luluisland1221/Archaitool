@@ -1050,3 +1050,232 @@ export const smallFirmProductivityArticle = `
 
 <p>Small firms win by being decisive. Start with one workflow, deploy the three-tool stack, measure results, and share them loudly. Visit <a href="/">ArchAITool.com</a> whenever you need fresh tools or prompts to keep the momentum going.</p>
 `;
+
+export const realtorFieldGuideArticle = `
+<h2>Why a 20-Minute Listing Launch Matters in 2025</h2>
+
+<p>In every North American brokerage we interviewed this winter, the same pressure surfaced: listings must be refreshed and distributed faster than the next agent can produce a Reel. That means tapping AI platforms that respect MLS rules, keep materials code-compliant, and still feel authentic to buyers who can spot an over-filtered render from a mile away.</p>
+
+<p>This playbook pairs <a href="/tool/rendera-ai">Rendera.ai</a> for climate-aware exterior updates with <a href="/tool/ai-renovation">AI Renovation</a> for photoreal interior staging. Together they let agents and architect partners move from raw shoot files to multi-channel marketing assets before the seller has even left the driveway.</p>
+
+<h2>Rendera.ai vs. AI Renovation: Which Tool Owns Each Phase?</h2>
+
+<table style="width:100%;border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Workflow Moment</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Best Tool</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Why It Wins</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Deliverable in 5 Minutes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Curb appeal refresh</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;"><a href="/tool/rendera-ai">Rendera.ai</a></td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Understands local climate, light angle, and plant species so visuals read as believable to regional buyers.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Side-by-side exterior elevation with landscaping notes.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Kitchen + living room staging</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;"><a href="/tool/ai-renovation">AI Renovation</a></td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Automatic wall detection plus clutter removal keeps base geometry intact for code references.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Before/after slider with colorway tags.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Marketing captions</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Either tool + MLS copy template</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Use Rendera.ai scene metadata or AI Renovation finish schedules to auto-fill spec bullets.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">60-word caption for Instagram, LinkedIn, and the MLS remarks field.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>The 20-Minute Listing Sprint</h2>
+
+<ol>
+  <li><strong>Minute 0-3:</strong> Drop the photographer’s RAW exports into <a href="/tool/rendera-ai">Rendera.ai</a>. Choose the correct Hardiness Zone and reference palette.</li>
+  <li><strong>Minute 3-8:</strong> Export two hero elevations plus a dusk version. Copy the vegetation + materials notes for future captions.</li>
+  <li><strong>Minute 8-15:</strong> Upload the kitchen, living room, and primary suite to <a href="/tool/ai-renovation">AI Renovation</a>. Remove clutter, test two styles, and pin the SKU-level finishes it suggests.</li>
+  <li><strong>Minute 15-18:</strong> Assemble a three-frame carousel (Exterior, Living, Kitchen) in Canva or Adobe Express. Paste captions pulled from the tool metadata.</li>
+  <li><strong>Minute 18-20:</strong> Publish to MLS, Instagram, and the brokerage newsletter simultaneously. Store the assets in your Google Drive folder for appraisers and buyer agents.</li>
+</ol>
+
+<div style="background:#F3F4F6;border-radius:0.75rem;padding:1.5rem;margin:1.5rem 0;">
+  <p style="margin:0;"><strong>Pro tip:</strong> Keep a shared prompt doc with language like “retain original chimney” or “respect front setback.” Both platforms allow guardrails so you stay compliant with municipal design guidelines.</p>
+</div>
+
+<h2>Playbooks for Your Team</h2>
+
+<ul>
+  <li><strong>Move-up buyers:</strong> Use <a href="/tool/rendera-ai">Rendera.ai</a> to show how an older colonial can take on a soft contemporary palette without losing its Georgian proportions.</li>
+  <li><strong>Flippers + GC partners:</strong> Run <a href="/tool/ai-renovation">AI Renovation</a> to visualize new cabinet runs, flooring, and appliance layouts directly from site photos. The SKU tags double as punch-list language.</li>
+  <li><strong>Luxury leasing teams:</strong> Combine both outputs into a single pitch deck for corporate relocation clients. The ability to spin culturally tailored interiors within minutes wins executive approvals faster.</li>
+</ul>
+
+<h2>Distribution Checklist</h2>
+
+<p>Each finished listing should include:</p>
+
+<ul>
+  <li>MLS upload with both the original and AI-enhanced photos clearly labeled.</li>
+  <li>15-second Reel that cross-fades the <a href="/tool/rendera-ai">Rendera.ai</a> exterior into the staged living room.</li>
+  <li>Agent FAQ doc referencing the fact that AI Renovation keeps structural elements untouched—critical for compliance conversations.</li>
+  <li>Link back to the property microsite plus a credit line like “Visual refresh via ArchAITool.com picks: Rendera.ai + AI Renovation.”</li>
+</ul>
+
+<p>When architecture consultants and real estate agents operate from the same template, you deliver buyer-ready assets before lunch and stay ahead of competing listings.</p>
+`;
+
+export const renovationNavigatorArticle = `
+<h2>Homeowners Need Better Roadmaps Than Mood Boards</h2>
+
+<p>Every renovation conversation now starts with homeowner screenshots, Pinterest boards, or scans. Translating those inputs into a plan that builders trust is where AI shines. Pair <a href="/tool/floor-plan-ai">Floor-Plan.ai</a> (for digitizing and optimizing the footprint) with <a href="/tool/ai-renovation">AI Renovation</a> (for immersive visuals). You move from existing conditions to cost-aware design in days instead of weeks.</p>
+
+<h2>Step 1: Capture and Clean As-Builts with Floor-Plan.ai</h2>
+
+<p><a href="/tool/floor-plan-ai">Floor-Plan.ai</a> accepts messy scans, smartphone photos, or even text-based room notes. The platform outputs dimensionally accurate floor plans plus multiple layout variations. Because it is cloud-based and fully collaborative, homeowners, architects, and contractors can leave comments directly on the same draft.</p>
+
+<ul>
+  <li><strong>Upload:</strong> PDFs, JPEGs, or quick sketches from site walks.</li>
+  <li><strong>Generate:</strong> 3-5 plan options with annotated adjacencies, code notes, and circulation tests.</li>
+  <li><strong>Share:</strong> Send a link to the GC so they can verify mechanical chases or stair geometry before demolition.</li>
+</ul>
+
+<div style="background:#EFF6FF;border-left:4px solid #2563EB;padding:1rem;margin:1.25rem 0;">
+  <p style="margin:0;"><strong>North American standard to remember:</strong> Always confirm minimum corridor widths (36 in.) and guardrail placements. Drop these guardrails into your Floor-Plan.ai prompt so layouts comply with residential codes across the U.S. and Canada.</p>
+</div>
+
+<h2>Step 2: Spin Buildable Visuals with AI Renovation</h2>
+
+<p>Once the plan is locked, move the best “after” layout into <a href="/tool/ai-renovation">AI Renovation</a>. Its object detection keeps structural walls, windows, and utilities untouched while refreshing finishes. Homeowners see instant ROI, and contractors receive realistic expectations for millwork, lighting, and appliance swaps.</p>
+
+<table style="width:100%;border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Input</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">AI Renovation Output</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Next Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Existing kitchen photo + Floor-Plan.ai layout</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Before/after slider with new cabinet run, backsplash, and island alignment.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Send to cabinet supplier for quote and lead times.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Bathroom panorama</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Tile + plumbing fixture recommendations with finish schedule.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Attach to permit set notes so inspectors understand intent.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Living room video walkthrough</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Furniture plan and lighting layers that respect window placement.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Hand off to interior stylist for sourcing list.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Keep Budget and Schedule Reality in View</h2>
+
+<ul>
+  <li><strong>Budget overlays:</strong> Pull square footage directly from <a href="/tool/floor-plan-ai">Floor-Plan.ai</a> to estimate finish quantities. Attach target cost ranges (low/mid/high) next to each AI Renovation slide.</li>
+  <li><strong>Permit readiness:</strong> Export the final plan to PDF and add the AI Renovation visuals as appendices. Building officials appreciate seeing intent even when renderings are AI-generated.</li>
+  <li><strong>Trade buy-in:</strong> Share logins with the millworker, electrician, and plumber. Because AI Renovation labels cabinetry fronts, lighting layers, and plumbing fixture finishes, trades can flag issues earlier.</li>
+</ul>
+
+<h2>One Shared Timeline</h2>
+
+<p>Use this cadence with clients and contractors:</p>
+
+<ol>
+  <li><strong>Week 0:</strong> Site visit + capture measurements.</li>
+  <li><strong>Week 1:</strong> Floor-Plan.ai options shared, comments resolved by Day 5.</li>
+  <li><strong>Week 2:</strong> AI Renovation scenes approved, finish schedule exported to Google Sheets.</li>
+  <li><strong>Week 3:</strong> Permit drawings updated, procurement orders placed.</li>
+</ol>
+
+<p>Every stakeholder sees the same data, and the homeowner watches their project progress from file uploads to real budgets in under a month.</p>
+
+<p>Bookmark <a href="/">ArchAITool.com</a> whenever you need additional visualization partners—Rendera.ai for exterior massing, Vibe3D for large remodels, or FloorDesign.ai for flooring mockups. The right combo keeps your renovation pipeline humming.</p>
+`;
+
+export const boutiqueStudioWorkflowArticle = `
+<h2>Boutique Studios Need Bulletproof One-Review Packages</h2>
+
+<p>Clients hire small architecture and interior studios for decisiveness. To keep that promise you have to land near-final interiors in the very first review meeting. This workflow pairs <a href="/tool/vibe3d">Vibe3D</a> for model-to-render speed, <a href="/tool/roomlab-app">Roomlab</a> for targeted material swaps, and <a href="/tool/floordesign-ai">FloorDesign.ai</a> for studio-grade flooring boards.</p>
+
+<h2>Phase 1 – Model Refinement with Vibe3D</h2>
+
+<p>Create one shared scene that drives every deliverable:</p>
+
+<ul>
+  <li>Import SketchUp, Revit, or Rhino geometry directly into <a href="/tool/vibe3d">Vibe3D</a>. The platform retains layers, UV mapping, and light settings.</li>
+  <li>Assign camera presets for hero shots, detail vignettes, and compliance documentation.</li>
+  <li>Batch render 4K stills or short fly-throughs in under 60 seconds per view so the team can react the same day.</li>
+</ul>
+
+<div style="background:#FDF2F8;border-left:4px solid #DB2777;padding:1rem;margin:1.25rem 0;">
+  <p style="margin:0;"><strong>Tip for Canadian studios:</strong> Use Vibe3D’s HDRI lighting to simulate winter vs. summer daylight so glazing performance discussions happen before you finalize FF&E.</p>
+</div>
+
+<h2>Phase 2 – Material Precision with Roomlab</h2>
+
+<p>Instead of repainting an entire scene, <a href="/tool/roomlab-app">Roomlab</a> lets you target specific fixtures or surfaces. Upload the Vibe3D still, mask cabinets, tiles, or plumbing trims, and iterate styles without rebuilding geometry.</p>
+
+<table style="width:100%;border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Component</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Roomlab Move</th>
+      <th style="border:1px solid #e5e7eb;padding:0.75rem;text-align:left;">Meeting Artifact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Millwork</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Swap stain, pulls, or door styles while locking proportions.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">PDF comparing Option A vs. B with procurement notes.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Stone + tile</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Drop in supplier swatches and adjust grout thickness.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Spec sheet referencing real SKUs.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Lighting</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Test warm vs. cool temperature scenarios over the same image.</td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;">Annotated screenshot embedded in your presentation deck.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Phase 3 – Flooring Boards with FloorDesign.ai</h2>
+
+<p>Flooring decisions derail many reviews because stakeholders can’t visualize seams, direction, or the way a rug interacts with the rest of the furnishings. <a href="/tool/floordesign-ai">FloorDesign.ai</a> specializes in that gap:</p>
+
+<ul>
+  <li>Upload the Roomlab-refined still and test 25+ flooring materials—from engineered oak to terrazzo—without repainting the entire space.</li>
+  <li>Use version control to track client comments (“Option 2 but with matte oil finish”).</li>
+  <li>Export a side-by-side board that includes plank size, cost tier, and maintenance notes.</li>
+</ul>
+
+<h2>Hosting One Killer Review</h2>
+
+<ol>
+  <li><strong>Storyboard:</strong> Begin with the Vibe3D fly-through, pause on each vignette, and overlay Roomlab and FloorDesign.ai alternates.</li>
+  <li><strong>Decision tracker:</strong> Embed a Notion or Airtable sheet that links the chosen visual back to SKUs and lead times.</li>
+  <li><strong>Next steps:</strong> Assign procurement tasks while the client is still on the call. Because every selection has a corresponding visual, there’s no ambiguity.</li>
+</ol>
+
+<div style="background:#ECFDF5;border-left:4px solid #10B981;padding:1rem;margin:1.25rem 0;">
+  <p style="margin:0;"><strong>Success metric:</strong> Aim for a 90% approval rate on the first review. Track rework hours in Harvest or Toggl to prove how this stack adds margin.</p>
+</div>
+
+<h2>Make It Repeatable</h2>
+
+<p>Document the prompts, HDRI settings, supplier lists, and export specs inside your studio wiki. New designers can jump into the process without derailing QA. Clients appreciate the speed, permitting teams respect the accuracy, and your studio protects its boutique reputation.</p>
+
+<p>Need to swap in landscaping or exterior partners? Browse <a href="/">ArchAITool.com</a> for additional tools such as Rendera.ai and Dehome.ai. The more intentional your stack, the easier it is to deliver presentation-ready packages in one painless meeting.</p>
+`;
