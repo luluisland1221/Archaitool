@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-29',
+    publishedDate: '2026-01-17',
     readTime: 14,
     tags: [blogTags[1].id, blogTags[0].id],
     seo: {
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-02-01',
+    publishedDate: '2026-01-15',
     readTime: 16,
     tags: [blogTags[0].id, blogTags[1].id],
     seo: {
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-02-05',
+    publishedDate: '2026-01-13',
     readTime: 15,
     tags: [blogTags[0].id, blogTags[1].id],
     seo: {
@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-09',
+    publishedDate: '2026-01-10',
     readTime: 12,
     tags: [blogTags[2].id, blogTags[0].id], // Beginner Guides, AI Architecture Tutorials
     seo: {
@@ -123,7 +123,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-10',
+    publishedDate: '2026-01-09',
     readTime: 8,
     tags: [blogTags[1].id, blogTags[0].id], // Tool Reviews, AI Architecture Tutorials
     seo: {
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-15',
+    publishedDate: '2026-01-08',
     readTime: 15,
     tags: [blogTags[0].id, blogTags[1].id],
     seo: {
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-18',
+    publishedDate: '2026-01-07',
     readTime: 12,
     tags: [blogTags[2].id, blogTags[0].id],
     seo: {
@@ -200,7 +200,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-22',
+    publishedDate: '2026-01-06',
     readTime: 10,
     tags: [blogTags[1].id, blogTags[0].id],
     seo: {
@@ -224,7 +224,7 @@ export const blogPosts: BlogPost[] = [
       name: 'ArchAITool Team',
       bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
     },
-    publishedDate: '2025-01-26',
+    publishedDate: '2026-01-05',
     readTime: 18,
     tags: [blogTags[1].id, blogTags[2].id],
     seo: {
