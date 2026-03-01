@@ -5,9 +5,12 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
     return new Response('Method Not Allowed', { status: 405 });
   }
 
+  // Some clients (or curl on Windows) may send bodies that parse5 rejects via request.json().
+  // Read raw text first, then JSON.parse manually for better compatibility.
+  const raw = await request.text();
   let body: any;
   try {
-    body = await request.json();
+    body = raw ? JSON.parse(raw) : {};
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid JSON body' }), {
       status: 400,
