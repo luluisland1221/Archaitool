@@ -31,6 +31,9 @@ const Navbar = () => {
             <Link to="/contact" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Contact
             </Link>
+            <Link to="/submit" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+              Submit a Tool
+            </Link>
           </div>
 
           <div className="sm:hidden flex items-center">
@@ -79,6 +82,12 @@ const Navbar = () => {
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               Contact
+            </Link>
+            <Link
+              to="/submit"
+              className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
+            >
+              Submit a Tool
             </Link>
           </div>
         </div>

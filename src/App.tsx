@@ -14,6 +14,7 @@ import TermsOfService from './pages/TermsOfService';
 import ResearchManagement from './pages/ResearchManagement';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import SubmitTool from './pages/SubmitTool';
 import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
 import { setCanonicalUrl } from './utils/seo';
 import { truncateWithEllipsis } from './utils/text';
@@ -133,6 +134,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/submit" element={<SubmitTool />} />
             {/* Admin routes for research management */}
             <Route path="/admin/research" element={<ResearchManagement />} />
           </Routes>
