@@ -2,73 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="/logo.webp" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+    <link rel="icon" type="image/png" href="/book-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more." />
-    <link rel="canonical" href="https://archaitool.com/" data-dynamic-canonical />
-    <script>
-      (function() {
-        var baseUrl = 'https://archaitool.com';
-        var path = window.location.pathname || '/';
-        if (path.length > 1 && path.endsWith('/')) {
-          path = path.replace(/\/+$/, '');
-        }
-        if (path === '') {
-          path = '/';
-        }
-        var canonicalUrl = baseUrl + path;
-        var canonicalLink = document.querySelector('link[rel="canonical"]');
-        if (!canonicalLink) {
-          canonicalLink = document.createElement('link');
-          canonicalLink.rel = 'canonical';
-          document.head.appendChild(canonicalLink);
-        }
-        canonicalLink.setAttribute('href', canonicalUrl);
-      })();
-    </script>
-    <title>Arch AI Tool - Discover AI Tools for Architecture & Design</title>
-
-    <!-- LCP图片优先加载 - 减少元素渲染延迟 -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=75&dpr=1&fm=webp" fetchPriority="high">
-
-    <!-- Preconnect for Unsplash Images (LCP Optimization) -->
-    <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="dns-prefetch" href="https://images.unsplash.com">
-
-    <!-- Preconnect for Local Assets (Critical Path Optimization) -->
-    <link rel="preconnect" href="/">
-    <link rel="preload" href="/assets/index-C6wEPRpv.js" as="script" importance="high">
-    <link rel="preload" href="/assets/index-DkjGP5Sk.css" as="style" importance="high">
-
-    </head>
+    <title>Arch AI Tool</title>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-
-    <!-- Google tag (gtag.js) - Google Analytics (Delayed Load) -->
-    <script>
-      // 延迟加载Google Analytics，优先加载页面内容
-      window.addEventListener('load', function() {
-        // 确保页面完全加载后再加载Analytics
-        setTimeout(function() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-14MXMX73J2';
-          document.head.appendChild(script);
-
-          // 初始化Google Analytics
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-14MXMX73J2');
-        }, 1000); // 延迟1秒加载，确保页面完全交互
-      });
-    </script>
   </body>
 </html>
