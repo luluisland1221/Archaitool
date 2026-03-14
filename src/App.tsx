@@ -9,6 +9,7 @@ import Tools from './pages/Tools';
 import ToolDetail from './pages/ToolDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ContactSubmissions from './pages/ContactSubmissions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ResearchManagement from './pages/ResearchManagement';
@@ -32,6 +33,7 @@ const TitleUpdater = () => {
       '/blog': 'ArchAI Blog - AI Architecture Tools Insights & Tutorials',
       '/about': 'About Us - Arch AI Tool',
       '/contact': 'Contact Us - Arch AI Tool',
+      '/contact/submissions': 'Submission Inbox - Arch AI Tool',
       '/privacy-policy': 'Privacy Policy - Arch AI Tool',
       '/terms-of-service': 'Terms of Service - Arch AI Tool',
       '/tools/architecture-spatial': 'Architecture & Spatial Design Tools | Arch AI Tool',
@@ -81,6 +83,7 @@ const TitleUpdater = () => {
       '/blog': 'Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow.',
       '/about': 'Learn about Arch AI Tool - your comprehensive guide to AI-powered architecture and design tools. Discover how we help professionals find the best AI solutions.',
       '/contact': 'Contact Arch AI Tool team - tool submissions, partnerships, technical support. We help architecture and design professionals discover the best AI tools.',
+      '/contact/submissions': 'Private submissions inbox for Arch AI Tool.',
       '/privacy-policy': 'Read Arch AI Tool\'s privacy policy - learn how we collect, use, and protect your personal information, including cookie policy and data security.',
       '/terms-of-service': 'Review Arch AI Tool\'s terms of service - understand your rights and responsibilities when using our AI tools directory platform.',
       '/tools/architecture-spatial': 'Explore AI tools for architectural design and spatial planning. Discover cutting-edge AI solutions for building design, floor planning, and architectural visualization.',
@@ -132,6 +135,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/submissions" element={<ContactSubmissions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/submit" element={<SubmitTool />} />

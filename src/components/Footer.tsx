@@ -84,6 +84,9 @@ const Footer = () => {
               <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
                 Contact Us
               </Link>
+              <Link to="/contact/submissions" className="text-gray-400 hover:text-white transition-colors">
+                Admin Inbox
+              </Link>
             </div>
           </div>
         </div>
