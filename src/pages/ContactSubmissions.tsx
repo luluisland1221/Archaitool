@@ -60,7 +60,7 @@ const ContactSubmissions = () => {
       }
       params.set('limit', String(limit || DEFAULT_LIMIT));
 
-      const res = await fetch(`/api/admin/submissions?${params.toString()}`, {
+      const res = await fetch(`/api/admin-submissions?${params.toString()}`, {
         headers: {
           Authorization: `Bearer ${token.trim()}`,
         },
