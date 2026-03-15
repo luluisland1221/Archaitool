@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img src="/logo-footer.webp" alt="Arch AI Tool" className="h-8 mb-4" />
             <p className="text-gray-400">
@@ -67,6 +67,61 @@ const Footer = () => {
             <p className="text-gray-400">
               Questions? Reach out to us at service@archaitool.com
             </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4">Friend Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://consistentcharacterai.pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Consistent Character AI
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://deepseekv4.network/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  DeepSeek V4 Network
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://klingo1.site/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Klingo1
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://seedance2.page/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Seedance2
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://videoprompt.info/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Video Prompt
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800">
