@@ -1463,3 +1463,143 @@ export const bestAiArchitectureImageGenerators2026Article = `
 
 <p>Ready to test these tools? Browse the full directory and save your stack at <a href="/">ArchAITool.com</a>.</p>
 `;
+
+export const architecturePromptLibraryArticle = `
+<h2>50 AI Prompts for Architecture Rendering (2026 Update)</h2>
+
+<p>This guide is built for architects who want usable renders, not just pretty images. You will get a clear prompt framework, tool-specific tips, and 50 copy-ready prompts organized by category. Use them in Midjourney, DALL-E, Stable Diffusion, or any architecture-first tools listed on <a href="/">ArchAITool.com</a>.</p>
+
+<h2>Why Prompts Matter in Architecture Rendering</h2>
+
+<p>Architecture images fail when the prompt is vague. A good prompt locks in building type, massing, material logic, lighting, and viewpoint. That is what preserves spatial intent while still letting AI explore style and atmosphere.</p>
+
+<h2>The Prompt Formula (Use This Every Time)</h2>
+
+<p><strong>Content type + Architectural style + Building type + Key features + Materials + Lighting + Context + Camera</strong></p>
+
+<p>Example:</p>
+
+<blockquote><p>High-resolution architectural rendering of a neo-futurist university library, double-height atrium, exposed timber structure, glass curtain wall, rainforest campus, golden hour light, 24mm wide-angle perspective</p></blockquote>
+
+<h2>Prompt Essentials Checklist</h2>
+
+<ul>
+  <li>Architectural style (brutalist, modern, organic, neo-futurist)</li>
+  <li>Building type (museum, villa, mixed-use, campus)</li>
+  <li>Key features (atrium, cantilever, courtyard, skylight)</li>
+  <li>Materials (concrete, timber, glass, stone)</li>
+  <li>Lighting (golden hour, blue hour, overcast, interior glow)</li>
+  <li>Context (urban street, forest, desert, coastal)</li>
+  <li>Camera (eye-level, aerial, 24mm, 35mm)</li>
+</ul>
+
+<h2>50 Copy-Ready Prompts (Organized by Category)</h2>
+
+<h3>Category 1: Exterior Architecture (10 prompts)</h3>
+<ol>
+  <li>Minimalist retail storefront, monochrome facade, oversized glazing, warm concrete texture, dusk lighting, street-level 35mm photo, architectural visualization</li>
+  <li>Modern cliffside villa with cantilevered concrete volumes, glass infinity pool, stormy ocean backdrop, cinematic lighting, 8K render</li>
+  <li>Two-story family residence, burned cedar cladding, floor-to-ceiling glass, birch forest context, golden hour light, eye-level perspective</li>
+  <li>Parametric skyscraper with reflective glass skin, dense city skyline, neon reflections, night rain, ultra-detailed render</li>
+  <li>Brutalist office block with deep shadowed terraces, raw concrete texture, cloudy sky, wide-angle shot, architectural photography style</li>
+  <li>Prefab mountain cabin, timber structure, snow landscape, soft morning fog, photorealistic exterior render</li>
+  <li>Coastal museum pavilion with lightweight steel canopy, sand dunes, bright midday sun, aerial drone view</li>
+  <li>Urban townhouse row, red brick facade, black metal balconies, rainy street reflections, cinematic mood</li>
+  <li>Public library with stepped green roof, large timber beams, soft daylight, people on terrace, wide lens rendering</li>
+  <li>Mixed-use courtyard block, terracotta facade, shaded arcades, lively street scene, blue hour lighting</li>
+</ol>
+
+<h3>Category 2: Interior Architecture (10 prompts)</h3>
+<ol>
+  <li>Industrial loft living room, exposed concrete beams, warm oak flooring, hanging gardens, morning light through factory windows, 24mm wide-angle</li>
+  <li>Luxury hotel lobby, travertine reception desk, double-height atrium, brass details, warm indirect lighting, blue hour outside</li>
+  <li>Contemporary library interior, perforated metal stair, skylight zenithal light, people reading quietly, soft shadows</li>
+  <li>Spa interior, parametric wood ceiling, shallow water pond, warm mist, LED cove lighting, tranquil atmosphere</li>
+  <li>Gallery space with white walls, polished concrete floor, linear skylights, minimal art installations, architectural photo style</li>
+  <li>Modern kitchen, matte black cabinetry, marble island, skylight glow, cinematic mood, 35mm lens</li>
+  <li>Residential atrium, indoor trees, stone floor, sunlight shafts, open staircase, photorealistic interior</li>
+  <li>Co-working space, exposed steel trusses, large windows, natural daylight, plants and soft seating, wide-angle view</li>
+  <li>Meditation room, tatami floor, soft paper screens, warm ambient light, serene atmosphere</li>
+  <li>Conference room, glass walls, timber ceiling, city skyline night view, subtle reflections, realistic render</li>
+</ol>
+
+<h3>Category 3: Civic, Campus, and Public Spaces (10 prompts)</h3>
+<ol>
+  <li>Neo-futurist student dormitory with central atrium, timber structure, rainforest campus, soft daylight, wide-angle perspective</li>
+  <li>University innovation hub, shaded courtyard, perforated metal facade, students walking, overcast sky, street-level view</li>
+  <li>Urban cultural center with parametric roof canopy, public plaza, warm interior glow at blue hour</li>
+  <li>Community library in desert town, thick rammed-earth walls, deep window reveals, strong sun and shadows</li>
+  <li>Transit station, large-span steel roof, glass walls, commuters in motion blur, cinematic lighting</li>
+  <li>City hall plaza, stone steps, reflecting pool, sculptural canopy, late afternoon light, wide lens</li>
+  <li>Science museum with curved glass facade, integrated landscape berms, families walking, bright summer day</li>
+  <li>Public market hall, timber arches, open ventilation, hanging lights, lively vendors, realistic render</li>
+  <li>Healthcare campus entry, shaded drop-off canopy, greenery, soft morning light, clean architectural lines</li>
+  <li>School courtyard, colorful facades, outdoor learning pods, children playing, warm sunlight</li>
+</ol>
+
+<h3>Category 4: Style and Concept Exploration (10 prompts)</h3>
+<ol>
+  <li>Brutalist chapel on foggy hill, sculptural concrete, rooftop trees, cinematic 8K render</li>
+  <li>Curvilinear timber house inspired by land art, sweeping organic roof, open grassland, photorealistic render</li>
+  <li>Neo-futurist research campus with floating bridges, translucent materials, twilight atmosphere, drone perspective</li>
+  <li>Adaptive reuse factory to design studio, exposed brick, steel trusses, indoor trees, warm daylight</li>
+  <li>Organic waterfront pavilion, shell-like roof, timber ribs, soft morning mist, architectural photography</li>
+  <li>High-tech museum with exposed steel frame, glazed skin, reflective pool, overcast sky</li>
+  <li>Desert eco-resort, rammed earth walls, shaded courtyards, solar panels, golden hour light</li>
+  <li>Glass house in tropical rainforest, elevated platform, lush vegetation, bright afternoon, photorealistic</li>
+  <li>Retro-futurist airport terminal, sweeping roofline, neon lighting, rainy night reflections</li>
+  <li>Mountain lodge, heavy stone base, timber roof, snow falling, warm interior glow</li>
+</ol>
+
+<h3>Category 5: Technical + Diagrammatic Outputs (10 prompts)</h3>
+<ol>
+  <li>Line drawing of a modern indoor pool elevation, Art Nouveau arches, black ink on white background</li>
+  <li>Axonometric exploded diagram of a compact apartment building, color-coded systems, clean vector style</li>
+  <li>Conceptual massing model of a mixed-use tower, white foam model look, soft shadows, orthographic view</li>
+  <li>Hand-sketched site plan for a coastal resort, pencil and watercolor wash, annotations</li>
+  <li>Black-and-white section drawing of a library, detailed shelving, people silhouettes, hatching for materials</li>
+  <li>Isometric structural diagram of a timber pavilion, labeled joints, minimal background</li>
+  <li>Facade study panel, six material variations, neutral lighting, diagrammatic layout</li>
+  <li>Exploded axon showing roof, structure, and interior layers of a museum, clean presentation style</li>
+  <li>Interior elevation of a hotel lobby, linework and subtle shading, scale figures included</li>
+  <li>Program zoning diagram of a community center, color blocks, clean typography, white background</li>
+</ol>
+
+<h2>Tool-Specific Tips (Midjourney, DALL-E, Stable Diffusion)</h2>
+
+<ul>
+  <li><strong>Midjourney:</strong> Keep prompts compact, add lens cues (24mm, 35mm), and finish with aspect ratio.</li>
+  <li><strong>DALL-E:</strong> Use clear building types and materials, avoid overly long style chains.</li>
+  <li><strong>Stable Diffusion:</strong> Use structured prompts plus negative prompts for geometry control.</li>
+  <li><strong>Architecture-first tools:</strong> Try <a href="/tool/nano-banana-pro">Nano Banana Pro</a>, <a href="/tool/flux-2">Flux 2</a>, <a href="/tool/archfine-ai">Archfine AI</a>, <a href="/tool/lookx">LookX</a>, and <a href="/tool/rendair-ai">Rendair AI</a> for faster architecture-ready outputs.</li>
+</ul>
+
+<h2>Negative Prompt Template</h2>
+
+<blockquote><p>deformed geometry, warped perspective, floating stairs, uneven windows, cluttered cables, blurry image, low resolution, distorted proportions</p></blockquote>
+
+<h2>Structured Prompt vs Generic Prompt</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Prompt Type</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Generic</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">modern house in the woods at sunset</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Structured</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Two-level villa with cantilevered concrete volumes, burned cedar cladding, birch forest, thinning morning fog, golden hour light, human-eye 35mm view, photorealistic architectural rendering</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Next Steps</h2>
+
+<p>Copy the prompts above and test them in your preferred tool. If you want more architecture-focused generators and workflows, browse the directory at <a href="/">ArchAITool.com</a> and build a prompt stack that matches your studio.</p>
+`;

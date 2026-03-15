@@ -10,10 +10,38 @@ import {
   realtorFieldGuideArticle,
   renovationNavigatorArticle,
   boutiqueStudioWorkflowArticle,
-  bestAiArchitectureImageGenerators2026Article
+  bestAiArchitectureImageGenerators2026Article,
+  architecturePromptLibraryArticle
 } from './article-content';
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: '50-ai-prompts-architecture-rendering-2026',
+    title: '50 AI Prompts for Architecture Rendering (2026 Update)',
+    slug: '50-ai-prompts-architecture-rendering-2026',
+    excerpt: 'Copy-ready architecture prompts plus a practical framework for better AI renders across Midjourney, DALL-E, Stable Diffusion, and architecture-first tools.',
+    content: architecturePromptLibraryArticle,
+    author: {
+      name: 'ArchAITool Team',
+      bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
+    },
+    publishedDate: '2026-03-15',
+    readTime: 11,
+    tags: [blogTags[0].id, blogTags[2].id],
+    seo: {
+      description: 'A 2026 prompt library with 50 architecture rendering prompts, structured prompt formulas, and workflow tips for AI visualization tools.',
+      keywords: [
+        'AI prompts for architecture rendering',
+        'architecture rendering prompts',
+        'midjourney architecture prompts',
+        'AI architecture prompts',
+        'architecture AI prompt formula',
+        'AI interior rendering prompts',
+        'AI exterior rendering prompts',
+        'architecture visualization prompts'
+      ]
+    }
+  },
   {
     id: 'best-ai-architecture-image-generators-2026',
     title: 'Best AI Architecture Image Generators in 2026 (Tested & Ranked)',
