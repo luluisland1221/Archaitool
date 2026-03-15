@@ -9,10 +9,40 @@ import {
   smallFirmProductivityArticle,
   realtorFieldGuideArticle,
   renovationNavigatorArticle,
-  boutiqueStudioWorkflowArticle
+  boutiqueStudioWorkflowArticle,
+  bestAiArchitectureImageGenerators2026Article
 } from './article-content';
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 'best-ai-architecture-image-generators-2026',
+    title: 'Best AI Architecture Image Generators in 2026 (Tested & Ranked)',
+    slug: 'best-ai-architecture-image-generators-2026-tested-ranked',
+    excerpt: 'A ranked 2026 guide to architecture image generators, highlighting prompt fidelity, workflow fit, and the best stacks for studios.',
+    content: bestAiArchitectureImageGenerators2026Article,
+    author: {
+      name: 'ArchAITool Team',
+      bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
+    },
+    publishedDate: '2026-03-15',
+    readTime: 12,
+    tags: [blogTags[1].id, blogTags[0].id],
+    seo: {
+      description: 'Ranked 2026 list of AI architecture image generators with practical guidance on prompt fidelity, workflow fit, and studio-ready tool stacks.',
+      keywords: [
+        'best AI architecture image generators 2026',
+        'architecture AI rendering tools',
+        'Nano Banana Pro',
+        'Flux 2',
+        'Archfine AI',
+        'Rendair AI',
+        'LookX',
+        'Midjourney architecture',
+        'architecture AI workflow',
+        'AI rendering stack'
+      ]
+    }
+  },
   {
     id: 'realtor-field-guide-rendera-vs-ai-renovation',
     title: 'Realtor Field Guide: Launch Listings in 20 Minutes with Rendera.ai vs. AI Renovation',

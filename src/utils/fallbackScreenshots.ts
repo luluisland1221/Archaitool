@@ -8,6 +8,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'arcadium3d.com': '/screenshots/arcadium3d_com_.webp',
   'architechtures.com': '/screenshots/architechtures_com_en.webp',
   'architectai.app': '/screenshots/architectai_app_.webp',
+  'archfine.com': '/screenshots/archfine_com_.webp',
   'archonet.co': '/screenshots/archonet_co.webp',
   'autodesk.com': '/screenshots/autodesk forma.webp',
   'bricsys.com': '/screenshots/www_bricsys_com_en_eu_bricscad_bim.webp',
@@ -39,6 +40,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'renovateai.app': '/screenshots/renovateai_app_.webp',
   'renovateai.ai': '/screenshots/renovate_ai.webp',
   'rendera.ai': '/screenshots/rendera_ai.webp',
+  'rendair.ai': '/screenshots/rendair_ai_.webp',
   'renderai.app': '/screenshots/renderai_app_.webp',
   'roomdesigner.ai': '/screenshots/www_roomdesigner_ai_.webp',
   'rusticai.art': '/screenshots/www_rusticai_art_.webp',
@@ -95,6 +97,8 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'www.yardflip.ai': '/screenshots/www_yardflip_ai_.webp',
 
   // General Design
+  'bfl.ai': '/screenshots/bfl_ai_.webp',
+  'gemini.google.com': '/screenshots/gemini_google_com_app.webp',
   'midjourney.com': '/screenshots/midjourney.webp',
   'openai.com': '/screenshots/dall-e-3.webp',
   'helpx.adobe.com': '/screenshots/helpx.adobe.webp',

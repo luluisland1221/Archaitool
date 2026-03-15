@@ -2628,6 +2628,133 @@ export const categories: Category[] = [
             ],
             userRating: 4.1,
             lastUpdated: "2025-10-28"
+          },
+          {
+            id: "archfine-ai",
+            name: "Archfine AI",
+            description: "Cloud-based architectural rendering from sketches and CAD exports",
+            image: "/screenshots/archfine_com_.webp",
+            url: "https://archfine.com/",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-visualization",
+            detailedDescription: "Archfine AI is a cloud-based visualization platform built for architects who need fast renders without heavy hardware. It turns sketches, CAD outputs, and rough models into presentation-ready interiors and exteriors with minimal setup.",
+            keyFeatures: [
+              "Cloud rendering with no GPU setup",
+              "Sketch-to-render and CAD-to-render workflows",
+              "Interior and exterior visualization presets",
+              "Fast iteration for client reviews",
+              "Browser-based collaboration"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Subscription",
+                    price: "Subscription plans",
+                    billing: "monthly",
+                    features: [
+                      "Cloud rendering credits",
+                      "Project-based organization",
+                      "High-resolution exports"
+                    ],
+                    targetUser: "Studios and freelancers"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Quick architectural visualization",
+              "Interior and exterior concept renders",
+              "Client presentation imagery",
+              "Small studio workflows"
+            ],
+            lastUpdated: "2026-03-14"
+          },
+          {
+            id: "rendair-ai",
+            name: "Rendair AI",
+            description: "Architecture-focused rendering with fast style-controlled outputs",
+            image: "/screenshots/rendair_ai_.webp",
+            url: "https://rendair.ai/",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-visualization",
+            detailedDescription: "Rendair AI focuses on rapid architectural visualization with consistent styles. It helps teams move from sketches and massing studies to polished renders for proposals, reviews, and marketing materials.",
+            keyFeatures: [
+              "Sketch-to-render workflow",
+              "Style reference controls",
+              "Fast batch generation",
+              "Interior and exterior visualization",
+              "Presentation-ready outputs"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Studio",
+                    price: "Subscription plans",
+                    billing: "monthly",
+                    features: [
+                      "Batch rendering",
+                      "Higher-resolution exports",
+                      "Priority processing"
+                    ],
+                    targetUser: "Studios and agencies"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural render production",
+              "Design option comparisons",
+              "Client pitch decks",
+              "Fast visualization for competitions"
+            ],
+            lastUpdated: "2026-03-14"
+          },
+          {
+            id: "lookx",
+            name: "LookX",
+            description: "Architecture-trained AI rendering with style guidance",
+            image: "/screenshots/www_lookx_ai_.webp",
+            url: "https://www.lookx.ai/",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-visualization",
+            detailedDescription: "LookX is an architecture-trained AI rendering tool that focuses on preserving spatial intent while allowing style and material exploration. It is designed for quick design iterations and presentation-quality imagery.",
+            keyFeatures: [
+              "Architecture-trained rendering model",
+              "Style reference and material control",
+              "Fast concept-to-render pipeline",
+              "Suitable for interiors and exteriors",
+              "Iteration-friendly workflow"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Subscription",
+                    price: "Subscription plans",
+                    billing: "monthly",
+                    features: [
+                      "Style-controlled rendering",
+                      "High-resolution exports",
+                      "Commercial usage options"
+                    ],
+                    targetUser: "Architects and visualization teams"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural visualization",
+              "Material and style studies",
+              "Design option exploration",
+              "Client presentation imagery"
+            ],
+            lastUpdated: "2026-03-14"
           }
         ]
       }
@@ -5026,6 +5153,94 @@ export const categories: Category[] = [
             integrations: ["Discord", "API access", "Third-party tools"],
             userRating: 4.8,
             lastUpdated: "2025-10-30"
+          },
+          {
+            id: "nano-banana-pro",
+            name: "Nano Banana Pro",
+            description: "High-fidelity image generation with strong prompt adherence",
+            image: "/screenshots/gemini_google_com_app.webp",
+            url: "https://gemini.google.com/app",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            detailedDescription: "Nano Banana Pro is a high-fidelity image generation model accessed through Gemini, known for strong prompt adherence and realistic architectural visuals. It works well for early-stage massing, material studies, and atmosphere exploration where fast iteration matters.",
+            keyFeatures: [
+              "Strong prompt adherence for complex scenes",
+              "Photorealistic architectural output",
+              "Fast iteration for concept exploration",
+              "Image-to-image variations and refinements",
+              "Browser-based workflow with no install"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Limited free generations", "Standard quality outputs"],
+                limitations: ["Limited credits", "Lower priority"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "Paid plan available",
+                    billing: "monthly",
+                    features: [
+                      "Higher generation limits",
+                      "Priority processing",
+                      "Commercial usage options"
+                    ],
+                    targetUser: "Professionals and studios"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural concept exploration",
+              "Material and lighting studies",
+              "Early-stage design ideation",
+              "Marketing and presentation visuals"
+            ],
+            lastUpdated: "2026-03-14"
+          },
+          {
+            id: "flux-2",
+            name: "Flux 2",
+            description: "Control-friendly image generation for rapid design iteration",
+            image: "/screenshots/bfl_ai_.webp",
+            url: "https://bfl.ai/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            detailedDescription: "Flux 2 is a control-oriented image generation model focused on fast iteration and reliable style transfer. It is commonly used to explore architectural style variations and urban visualization concepts with consistent creative control.",
+            keyFeatures: [
+              "Strong control over style and composition",
+              "Rapid iteration for design variations",
+              "Consistent output for reference-driven prompts",
+              "Works well with architectural styles",
+              "Web-based access through BFL"
+            ],
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Creator",
+                    price: "Paid plan available",
+                    billing: "monthly",
+                    features: [
+                      "Fast generation credits",
+                      "Higher-resolution outputs",
+                      "Commercial usage options"
+                    ],
+                    targetUser: "Designers and creators"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Architectural style exploration",
+              "Urban concept visualization",
+              "Design variation studies",
+              "Mood and atmosphere testing"
+            ],
+            lastUpdated: "2026-03-14"
           },
           {
             id: "adobe-firefly",
