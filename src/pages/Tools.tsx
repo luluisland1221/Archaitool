@@ -203,8 +203,33 @@ const Tools = () => {
     'rustic-ai',
     'ai-garden-design',
     'landscapingai',
-    'arcadium3d'
+    'arcadium3d',
+    'nano-banana-pro',
+    'flux-2',
+    'archfine-ai',
+    'rendair-ai',
+    'lookx'
   ];
+
+  const featuredNewToolIds = [
+    'nano-banana-pro',
+    'flux-2',
+    'archfine-ai',
+    'rendair-ai',
+    'lookx'
+  ];
+
+  const prioritizeTools = (tools) => {
+    const featuredSet = new Set(featuredNewToolIds);
+    return [...tools].sort((a, b) => {
+      const aFeatured = featuredSet.has(a.id);
+      const bFeatured = featuredSet.has(b.id);
+      if (aFeatured !== bFeatured) {
+        return aFeatured ? -1 : 1;
+      }
+      return 0;
+    });
+  };
   
   // Support both old query params and new path params
   const categoryId = searchParams.get('category');
@@ -410,7 +435,7 @@ const Tools = () => {
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             {isNewTool && (
-              <div className="absolute top-4 left-4 bg-gray-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase z-20">
+              <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase shadow-lg ring-2 ring-white z-20">
                 NEW
               </div>
             )}
@@ -458,7 +483,7 @@ const Tools = () => {
             <p className="text-gray-600">{subcategory.description}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {subcategory.tools.map((tool) => (
+            {prioritizeTools(subcategory.tools).map((tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))}
           </div>
@@ -472,7 +497,7 @@ const Tools = () => {
       <h1 className="text-3xl font-bold mb-4">{subcategory.name} - AI Tools Directory</h1>
       <p className="text-gray-600 mb-8">{subcategory.description}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {subcategory.tools.map((tool) => (
+        {prioritizeTools(subcategory.tools).map((tool) => (
           <ToolCard key={tool.id} tool={tool} />
         ))}
       </div>
