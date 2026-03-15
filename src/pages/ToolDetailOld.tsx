@@ -141,6 +141,14 @@ const ToolDetail = () => {
                 <div className="prose max-w-none">
                   <h2 className="text-2xl font-bold mb-4">About {tool.name}</h2>
                   <p className="text-gray-600 mb-6">{tool.description}</p>
+                  {tool.searchAliases && tool.searchAliases.length > 0 && (
+                    <p className="text-sm text-gray-500 mb-6">
+                      Also searched as:{' '}
+                      <span className="font-medium text-gray-700">
+                        {tool.searchAliases.join(', ')}
+                      </span>
+                    </p>
+                  )}
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="bg-gray-50 p-6 rounded-lg">

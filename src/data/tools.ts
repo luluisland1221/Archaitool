@@ -11,6 +11,7 @@ export interface Tool {
   subcategory: string;
   useDynamicScreenshot?: boolean;
   fallbackImage?: string;
+  searchAliases?: string[];
 
   // Enhanced fields for detailed information
   detailedDescription?: string;
@@ -358,6 +359,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
+            searchAliases: ["arkdesign ai", "arkdesign ai architecture tool"],
             detailedDescription: "Arkdesign AI is the pioneering AI platform specifically designed for architectural schematic design, focusing on multi-family and mixed-use development projects. With over 19,609 users across 126 countries and 29,399 projects created, the platform leverages patented AI technology (US Patent No. 11,972,174) to automate floor plan generation, feasibility studies, and unit mix optimization while ensuring compliance with US building codes and ordinances.",
             keyFeatures: [
               "Patented AI technology (US Patent No. 11,972,174) for schematic design",
@@ -496,6 +498,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
+            searchAliases: ["architectures", "architechtures", "architectures ai", "architechtures ai"],
             detailedDescription: "Architechtures is a leading generative AI-powered building design platform that serves over 170+ countries worldwide, processing 110k+ units and 12M+ square meters monthly. The platform revolutionizes residential design processes by enabling architects and developers to generate optimal building designs in minutes rather than months. With real-time AI architecture generation and seamless BIM workflow integration, Architechtures maintains full compatibility with traditional design processes while dramatically accelerating project development cycles.",
             keyFeatures: [
               "Real-time generative AI building design in seconds",
@@ -1254,6 +1257,7 @@ export const categories: Category[] = [
             isPaid: false,
             category: "architecture-spatial",
             subcategory: "architectural-design",
+            searchAliases: ["ai architectures", "architectures ai"],
             detailedDescription: "AI Architectures is a revolutionary AI-powered platform that generates professional architectural designs in just 30 seconds with a single click. Serving over 10,000 happy architects and having created 50,000+ designs, the platform eliminates manual drafting while delivering professional-grade designs, floor plans, and photorealistic renderings that meet industry standards.",
             keyFeatures: [
               "AI Architecture Generator (30-second designs)",
@@ -1412,6 +1416,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-visualization",
+            searchAliases: ["myarchitect ai", "my architect ai", "myarchitectai"],
             detailedDescription: "MyArchitect AI is a revolutionary AI-powered rendering platform that transforms architectural and interior designs into photorealistic renders in under 10 seconds. Used by hundreds of architects and interior designers worldwide, the platform has generated over 1,500,000 renders to date. With cloud-based processing, no hardware requirements, and zero learning curve, it democratizes high-quality architectural visualization.",
             keyFeatures: [
               "Photorealistic AI rendering in under 10 seconds",
@@ -2886,6 +2891,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
+            searchAliases: ["archi ai", "archi.ai"],
             detailedDescription: "Archi AI is a revolutionary AI-powered interior and exterior design tool that generates photo-like renders in seconds, featuring 'an AI model that is nothing like you've seen before: natural, unique and creative.' The platform enables both professionals and individuals to transform uploaded photos of any space into stunning design visualizations, offering unlimited designs with no watermarks and commercial usage rights. Archi AI eliminates the need for traditional 3D modeling expertise while delivering professional-quality results for living rooms, bedrooms, kitchens, bathrooms, and dining rooms.",
             keyFeatures: [
               "Generate photo-like images in seconds",
@@ -3994,6 +4000,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
+            searchAliases: ["artevia ai", "artevia.ai"],
             detailedDescription: "Artevia is a revolutionary AI-powered interior design platform that transforms rooms using real Amazon products, creating a seamless bridge between digital design inspiration and real-world shopping. The platform enables users to upload any room design and watch AI decorate it with authentic Amazon furniture and decor items. With advanced AI video rendering capabilities, style transfer technology, and intelligent inpainting features, Artevia makes it possible to see, design, and shop real products instantly.",
             keyFeatures: [
               "Real Amazon products integration",
@@ -4231,6 +4238,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "interior-design",
             subcategory: "virtual-staging",
+            searchAliases: ["palette immo", "palette.immo"],
             detailedDescription: "Palette Immo is the #1 AI Interior Photo Generator that transforms spaces in minutes with fast turnaround times. The platform offers 30+ design styles and specializes in virtual staging, interior redesign, and sketch-to-photo conversion, serving over 198 real estate agents and designers who joined weekly.",
             keyFeatures: [
               "30+ professional interior design styles",
@@ -4731,6 +4739,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "landscape-design",
             subcategory: "landscape-planning",
+            searchAliases: ["landscapedesignsai", "landscape designs ai", "landscapedesigns ai"],
             detailedDescription: "LandscapeDesignsAI is an advanced AI-powered landscape design platform that transforms outdoor spaces through intelligent design generation. Users can upload photos of their existing landscapes and leverage multiple specialized tools including the Transform feature for complete redesigns, Replace tool for adding specific elements like benches or pools, and a Design Assistant for custom creations. The platform generates 8 design variations per run, offering homeowners and professionals comprehensive visualization options.",
             keyFeatures: [
               "Transform tool for complete outdoor space redesigns",
@@ -4910,6 +4919,7 @@ export const categories: Category[] = [
             isPaid: true,
             category: "landscape-design",
             subcategory: "landscape-planning",
+            searchAliases: ["yardflip", "yardflip ai"],
             detailedDescription: "YardFlip AI is a professional AI-powered landscape visualization service founded by Regan Kirk in 2024, rated 5/5 by homeowners internationally. The platform 'transforms your yard in 24 hours' using advanced inpainting technology to convert ordinary yard photos into stunning photorealistic designs. Serving US, AU, and NZ markets, YardFlip AI offers a 100% money-back guarantee and eliminates the need for expensive landscape contractors by providing multiple design options customized to your specific yard.",
             keyFeatures: [
               "Photorealistic yard transformations",

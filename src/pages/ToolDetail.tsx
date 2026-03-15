@@ -305,6 +305,14 @@ const ToolDetail = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
                 {tool.detailedDescription || tool.description}
               </p>
+              {tool.searchAliases && tool.searchAliases.length > 0 && (
+                <p className="text-sm text-gray-500 mt-3">
+                  Also searched as:{' '}
+                  <span className="font-medium text-gray-700">
+                    {tool.searchAliases.join(', ')}
+                  </span>
+                </p>
+              )}
             </div>
 
             {/* Right: Tool Card - spans 1 column */}

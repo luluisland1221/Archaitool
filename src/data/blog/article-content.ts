@@ -1496,7 +1496,7 @@ export const architecturePromptLibraryArticle = `
 <h2>50 Copy-Ready Prompts (Organized by Category)</h2>
 
 <h3>Category 1: Exterior Architecture (10 prompts)</h3>
-<ol>
+<ol style="list-style: decimal; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
   <li>Minimalist retail storefront, monochrome facade, oversized glazing, warm concrete texture, dusk lighting, street-level 35mm photo, architectural visualization</li>
   <li>Modern cliffside villa with cantilevered concrete volumes, glass infinity pool, stormy ocean backdrop, cinematic lighting, 8K render</li>
   <li>Two-story family residence, burned cedar cladding, floor-to-ceiling glass, birch forest context, golden hour light, eye-level perspective</li>
@@ -1510,7 +1510,7 @@ export const architecturePromptLibraryArticle = `
 </ol>
 
 <h3>Category 2: Interior Architecture (10 prompts)</h3>
-<ol>
+<ol style="list-style: decimal; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
   <li>Industrial loft living room, exposed concrete beams, warm oak flooring, hanging gardens, morning light through factory windows, 24mm wide-angle</li>
   <li>Luxury hotel lobby, travertine reception desk, double-height atrium, brass details, warm indirect lighting, blue hour outside</li>
   <li>Contemporary library interior, perforated metal stair, skylight zenithal light, people reading quietly, soft shadows</li>
@@ -1524,7 +1524,7 @@ export const architecturePromptLibraryArticle = `
 </ol>
 
 <h3>Category 3: Civic, Campus, and Public Spaces (10 prompts)</h3>
-<ol>
+<ol style="list-style: decimal; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
   <li>Neo-futurist student dormitory with central atrium, timber structure, rainforest campus, soft daylight, wide-angle perspective</li>
   <li>University innovation hub, shaded courtyard, perforated metal facade, students walking, overcast sky, street-level view</li>
   <li>Urban cultural center with parametric roof canopy, public plaza, warm interior glow at blue hour</li>
@@ -1538,7 +1538,7 @@ export const architecturePromptLibraryArticle = `
 </ol>
 
 <h3>Category 4: Style and Concept Exploration (10 prompts)</h3>
-<ol>
+<ol style="list-style: decimal; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
   <li>Brutalist chapel on foggy hill, sculptural concrete, rooftop trees, cinematic 8K render</li>
   <li>Curvilinear timber house inspired by land art, sweeping organic roof, open grassland, photorealistic render</li>
   <li>Neo-futurist research campus with floating bridges, translucent materials, twilight atmosphere, drone perspective</li>
@@ -1552,7 +1552,7 @@ export const architecturePromptLibraryArticle = `
 </ol>
 
 <h3>Category 5: Technical + Diagrammatic Outputs (10 prompts)</h3>
-<ol>
+<ol style="list-style: decimal; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
   <li>Line drawing of a modern indoor pool elevation, Art Nouveau arches, black ink on white background</li>
   <li>Axonometric exploded diagram of a compact apartment building, color-coded systems, clean vector style</li>
   <li>Conceptual massing model of a mixed-use tower, white foam model look, soft shadows, orthographic view</li>
@@ -1572,6 +1572,19 @@ export const architecturePromptLibraryArticle = `
   <li><strong>DALL-E:</strong> Use clear building types and materials, avoid overly long style chains.</li>
   <li><strong>Stable Diffusion:</strong> Use structured prompts plus negative prompts for geometry control.</li>
   <li><strong>Architecture-first tools:</strong> Try <a href="/tool/nano-banana-pro">Nano Banana Pro</a>, <a href="/tool/flux-2">Flux 2</a>, <a href="/tool/archfine-ai">Archfine AI</a>, <a href="/tool/lookx">LookX</a>, and <a href="/tool/rendair-ai">Rendair AI</a> for faster architecture-ready outputs.</li>
+</ul>
+
+<h2>Popular Tool Pages People Search For</h2>
+
+<ul style="list-style: disc; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
+  <li><a href="/tool/archi-ai">Archi AI</a> (archi ai)</li>
+  <li><a href="/tool/myarchitectai">MyArchitect AI</a> (myarchitect ai)</li>
+  <li><a href="/tool/landscapedesignsai">LandscapeDesignsAI</a> (landscapedesignsai)</li>
+  <li><a href="/tool/ai-architectures">AI Architectures</a> (architectures)</li>
+  <li><a href="/tool/arkdesign-ai">Arkdesign AI</a> (arkdesign ai architecture tool)</li>
+  <li><a href="/tool/yardflip">YardFlip AI</a> (yardflip)</li>
+  <li><a href="/tool/palette-immo">Palette Immo</a> (palette immo)</li>
+  <li><a href="/tool/artevia">Artevia</a> (artevia.ai)</li>
 </ul>
 
 <h2>Negative Prompt Template</h2>
@@ -1685,6 +1698,14 @@ export const sketchupAiPluginsArticle = `
   <li>Final permit documents that require exact geometry.</li>
   <li>Detailed construction visualizations where components must be measurable.</li>
   <li>Marketing renders that need precise product branding or fixtures.</li>
+</ul>
+
+<h2>Related Tools to Explore</h2>
+
+<ul style="list-style: disc; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
+  <li><a href="/tool/myarchitectai">MyArchitect AI</a> for ultra-fast presentation renders.</li>
+  <li><a href="/tool/archi-ai">Archi AI</a> for interior and exterior style variations.</li>
+  <li><a href="/tool/landscapedesignsai">LandscapeDesignsAI</a> for quick site and yard concepts.</li>
 </ul>
 
 <h2>Final Takeaway</h2>
