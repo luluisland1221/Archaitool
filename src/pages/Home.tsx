@@ -26,8 +26,33 @@ const Home = () => {
     'rustic-ai',
     'ai-garden-design',
     'landscapingai',
-    'arcadium3d'
+    'arcadium3d',
+    'nano-banana-pro',
+    'flux-2',
+    'archfine-ai',
+    'rendair-ai',
+    'lookx'
   ];
+
+  const featuredNewToolIds = [
+    'nano-banana-pro',
+    'flux-2',
+    'archfine-ai',
+    'rendair-ai',
+    'lookx'
+  ];
+
+  const prioritizeTools = (tools) => {
+    const featuredSet = new Set(featuredNewToolIds);
+    return [...tools].sort((a, b) => {
+      const aFeatured = featuredSet.has(a.id);
+      const bFeatured = featuredSet.has(b.id);
+      if (aFeatured !== bFeatured) {
+        return aFeatured ? -1 : 1;
+      }
+      return 0;
+    });
+  };
 
   useEffect(() => {
     document.title = 'Arch AI Tool - Discover the Best Architecture AI Tools | Free & Professional Solutions';
@@ -39,7 +64,7 @@ const Home = () => {
         const firstScreenUrls = [];
         for (const category of configuredCategories) {
           for (const subcategory of category.subcategories) {
-            for (const tool of subcategory.tools.slice(0, 2)) { // First 2 tools per category
+            for (const tool of prioritizeTools(subcategory.tools).slice(0, 2)) { // First 2 tools per category
               if (tool.useDynamicScreenshot && firstScreenUrls.length < 6) {
                 firstScreenUrls.push(tool.url);
               }
@@ -127,7 +152,7 @@ const Home = () => {
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {subcategory.tools.slice(0, 3).map((tool) => {
+                    {prioritizeTools(subcategory.tools).slice(0, 3).map((tool) => {
                       const isNewTool = newToolIds.includes(tool.id);
                       const toolDetailUrl = generateToolUrl(tool.id);
                       return (
@@ -148,7 +173,7 @@ const Home = () => {
                               />
                               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                               {isNewTool && (
-                                <div className="absolute top-4 left-4 bg-gray-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase z-20">
+                                <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase shadow-lg ring-2 ring-white z-20">
                                   NEW
                                 </div>
                               )}
