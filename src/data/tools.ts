@@ -1868,6 +1868,62 @@ export const categories: Category[] = [
             lastUpdated: "2025-10-30"
           },
           {
+            id: "sketchup-diffusion",
+            name: "SketchUp Diffusion",
+            description: "SketchUp Labs AI Render that turns live viewports into concept visuals",
+            image: "/screenshots/help_sketchup_com_en_sketchup-ai-render.webp",
+            url: "https://help.sketchup.com/en/sketchup-ai-render",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-visualization",
+            detailedDescription: "SketchUp Diffusion (AI Render) is a SketchUp Labs generative AI feature that combines the active SketchUp viewport with a text prompt or preset style to create concept images directly inside SketchUp. It is designed for fast massing-to-visual workflows, giving teams a quick way to test style directions, lighting moods, and material intent without exporting to a separate renderer.",
+            keyFeatures: [
+              "Combine the active SketchUp viewport with a text prompt or preset style",
+              "Adjust prompt influence to balance geometry fidelity and creativity",
+              "Mask areas to erase, regenerate, or add elements",
+              "Reference image support for stylistic direction",
+              "Overlay AI output on the model for iterative studies",
+              "Save AI-generated images for presentations",
+              "Available on SketchUp Desktop, Web, and iPad"
+            ],
+            technicalSpecs: {
+              supportedPlatforms: ["SketchUp Desktop", "SketchUp for Web", "SketchUp for iPad"],
+              collaboration: false,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "SketchUp Subscription",
+                    price: "Check SketchUp plans",
+                    billing: "monthly",
+                    features: [
+                      "Access to SketchUp Labs AI Render",
+                      "Prompt-based concept visualization",
+                      "Style presets and prompt controls",
+                      "AI credit-based usage"
+                    ],
+                    targetUser: "SketchUp subscribers exploring AI concept rendering"
+                  }
+                ]
+              }
+            },
+            useCases: [
+              "Early-stage massing visualization",
+              "Rapid style exploration for client reviews",
+              "Concept mood boards from SketchUp scenes",
+              "Design iteration before detailed rendering"
+            ],
+            integrations: [
+              "SketchUp Desktop",
+              "SketchUp for Web",
+              "SketchUp for iPad"
+            ],
+            lastUpdated: "2026-03-15"
+          },
+          {
             id: "airender-studio",
             name: "AI Render Studio",
             description: "Photorealistic architecture and interior renders in seconds with pay-as-you-use pricing",

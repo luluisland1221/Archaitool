@@ -13,8 +13,12 @@ const ToolDetail = () => {
     'ai-architectures',
     'vibe3d',
     '3d-house-planner',
+    'floor-plan-ai',
     'floordesign-ai',
     'home-design-ai',
+    'dehome-ai',
+    'roomlab-app',
+    'ai-renovation',
     'rendera-ai',
     'renovate-ai',
     'artevia',
@@ -22,7 +26,13 @@ const ToolDetail = () => {
     'rustic-ai',
     'ai-garden-design',
     'landscapingai',
-    'arcadium3d'
+    'arcadium3d',
+    'nano-banana-pro',
+    'flux-2',
+    'archfine-ai',
+    'rendair-ai',
+    'lookx',
+    'sketchup-diffusion'
   ];
 
   // Find the tool in our data

@@ -11,10 +11,38 @@ import {
   renovationNavigatorArticle,
   boutiqueStudioWorkflowArticle,
   bestAiArchitectureImageGenerators2026Article,
-  architecturePromptLibraryArticle
+  architecturePromptLibraryArticle,
+  sketchupAiPluginsArticle
 } from './article-content';
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 'sketchup-ai-3-plugins-massing-to-client-ready-renders',
+    title: 'SketchUp + AI: 3 Plugins That Turn Massing Models into Client-Ready Renders in Seconds',
+    slug: 'sketchup-ai-3-plugins-massing-to-client-ready-renders',
+    excerpt: 'A workflow-focused guide to Veras, SketchUp Diffusion, and Arko AI, with a bonus D5 Lite path for rapid client visuals.',
+    content: sketchupAiPluginsArticle,
+    author: {
+      name: 'ArchAITool Team',
+      bio: 'AI architecture tools specialists helping architects integrate artificial intelligence into their design workflow.'
+    },
+    publishedDate: '2026-03-15',
+    readTime: 10,
+    tags: [blogTags[1].id, blogTags[0].id],
+    seo: {
+      description: 'Learn how SketchUp massing models become client-ready renders using Veras, SketchUp Diffusion, and Arko AI, plus a D5 Lite workflow.',
+      keywords: [
+        'SketchUp AI render',
+        'SketchUp rendering plugin',
+        'SketchUp Diffusion',
+        'Veras SketchUp',
+        'Arko AI SketchUp',
+        'D5 Lite SketchUp',
+        'AI massing render workflow',
+        'architecture AI plugins'
+      ]
+    }
+  },
   {
     id: '50-ai-prompts-architecture-rendering-2026',
     title: '50 AI Prompts for Architecture Rendering (2026 Update)',

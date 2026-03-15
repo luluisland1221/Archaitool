@@ -102,6 +102,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'midjourney.com': '/screenshots/midjourney.webp',
   'openai.com': '/screenshots/dall-e-3.webp',
   'helpx.adobe.com': '/screenshots/helpx.adobe.webp',
+  'help.sketchup.com': '/screenshots/help_sketchup_com_en_sketchup-ai-render.webp',
 
   // Real Estate (covered above)
 

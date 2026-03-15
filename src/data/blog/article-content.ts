@@ -1603,3 +1603,93 @@ export const architecturePromptLibraryArticle = `
 
 <p>Copy the prompts above and test them in your preferred tool. If you want more architecture-focused generators and workflows, browse the directory at <a href="/">ArchAITool.com</a> and build a prompt stack that matches your studio.</p>
 `;
+
+export const sketchupAiPluginsArticle = `
+<h2>SketchUp + AI: 3 Plugins That Turn Massing Models into Client-Ready Renders in Seconds</h2>
+
+<p>SketchUp is the fastest way to block out massing and iterate on form, but it has always struggled to deliver client-ready renders without a heavy rendering pipeline. AI plugins change that. With the right tools, you can move from a clean massing model to a presentable visual in minutes, not days.</p>
+
+<h2>Why SketchUp + AI Is a Power Workflow</h2>
+
+<p>The traditional flow is slow: SketchUp massing, export to a renderer, rebuild materials, tweak lighting, and wait for output. AI plugins shorten that loop. You keep the model inside SketchUp, generate multiple directions quickly, and bring clients into the design conversation earlier.</p>
+
+<div style="margin: 1.5rem 0; padding: 1rem; border: 1px dashed #d1d5db; border-radius: 8px; background: #f8fafc;">
+  <p style="margin: 0;"><strong>Old workflow:</strong> SketchUp → Export → Render setup → Wait</p>
+  <p style="margin: 0.5rem 0 0;"><strong>New workflow:</strong> SketchUp massing → AI plugin → Multiple client-ready options</p>
+</div>
+
+<h2>Plugin #1: Veras by EvolveLAB</h2>
+
+<p><strong>Best for:</strong> Geometry-accurate AI visualization across SketchUp, Revit, and Rhino.</p>
+<p>Veras is the most reliable AI visualization plugin for architects. It preserves geometry, supports render selection, and includes a geometry override slider to control how closely the AI follows your massing. It is built for concept acceleration, not just pretty images.</p>
+<p><strong>Explore:</strong> <a href="/tool/evolvelab-veras">Veras by EvolveLAB</a></p>
+
+<h2>Plugin #2: SketchUp Diffusion (AI Render)</h2>
+
+<p><strong>Best for:</strong> One-click concept visuals directly from your current SketchUp view.</p>
+<p>SketchUp Diffusion is SketchUp Labs' native AI Render tool. It uses your active viewport plus a text prompt or preset style to generate concept visuals without leaving SketchUp. It is ideal for early-stage options, mood studies, and quick client alignment.</p>
+<p><strong>Explore:</strong> <a href="/tool/sketchup-diffusion">SketchUp Diffusion</a></p>
+
+<h2>Plugin #3: Arko AI</h2>
+
+<p><strong>Best for:</strong> Lighting and material realism, especially for interior perspectives.</p>
+<p>Arko AI plugs directly into SketchUp and focuses on quick, realistic renders. It is a strong option when you need polished interiors or close-up material studies without setting up a full render scene.</p>
+<p><strong>Explore:</strong> <a href="/tool/arko-ai">Arko AI</a></p>
+
+<h2>Bonus Option: D5 Lite Inside D5 Render</h2>
+
+<p>If you want a hybrid approach with real-time control, D5 Lite provides AI-assisted rendering inside the D5 ecosystem. It is not a pure diffusion tool, but it offers a fast bridge between SketchUp and client-ready visuals.</p>
+<p><strong>Explore:</strong> <a href="/tool/d5-render">D5 Render</a></p>
+
+<h2>Quick Comparison</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Tool</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Best At</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Ideal Stage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Veras</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Geometry fidelity + style control</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Concept to client review</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">SketchUp Diffusion</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Fast concept visuals from current view</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Early massing exploration</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Arko AI</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Material realism and interior shots</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Client-ready interiors</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Pro Tips for Better Results</h2>
+
+<ul>
+  <li><strong>Color your massing:</strong> Even basic material blocks help AI understand glass, ground, and facade breaks.</li>
+  <li><strong>Frame intentionally:</strong> Match 16:9 or 4:3 in SketchUp so AI output does not crop awkwardly.</li>
+  <li><strong>Use shadows:</strong> Directional shadows help AI generate believable lighting and depth.</li>
+  <li><strong>Finish with light post:</strong> A quick pass in Photoshop or Firefly can clean edges and add realism.</li>
+</ul>
+
+<h2>When Not to Use AI Rendering</h2>
+
+<ul>
+  <li>Final permit documents that require exact geometry.</li>
+  <li>Detailed construction visualizations where components must be measurable.</li>
+  <li>Marketing renders that need precise product branding or fixtures.</li>
+</ul>
+
+<h2>Final Takeaway</h2>
+
+<p>The fastest workflow is not about replacing full renderers. It is about using AI plugins to shorten feedback cycles during massing and concept phases. Start with SketchUp Diffusion for fast options, use Veras for geometry-accurate visuals, and deploy Arko AI when interiors need polish.</p>
+
+<p>Need more AI visualization tools? Browse the full directory at <a href="/">ArchAITool.com</a>.</p>
+`;

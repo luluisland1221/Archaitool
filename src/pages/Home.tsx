@@ -31,7 +31,8 @@ const Home = () => {
     'flux-2',
     'archfine-ai',
     'rendair-ai',
-    'lookx'
+    'lookx',
+    'sketchup-diffusion'
   ];
 
   const featuredNewToolIds = [
@@ -39,7 +40,8 @@ const Home = () => {
     'flux-2',
     'archfine-ai',
     'rendair-ai',
-    'lookx'
+    'lookx',
+    'sketchup-diffusion'
   ];
 
   const prioritizeTools = (tools) => {
