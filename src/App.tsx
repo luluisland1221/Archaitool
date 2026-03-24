@@ -79,7 +79,7 @@ const TitleUpdater = () => {
 
     const descriptions = {
       '/': 'Discover the best AI tools for architecture and design. Explore comprehensive directory of AI-powered architectural generation, visualization, interior design tools and more.',
-      '/tools': 'Browse all AI architecture and design tools by category. Find the perfect AI tool for architectural design, visualization, interior design, and real estate.',
+      '/tools': 'Compare AI architecture tools by category with free tiers, trials, and paid options. Find rendering, floor plan, and BIM workflow tools faster.',
       '/blog': 'Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow.',
       '/about': 'Learn about Arch AI Tool - your comprehensive guide to AI-powered architecture and design tools. Discover how we help professionals find the best AI solutions.',
       '/contact': 'Contact Arch AI Tool team - tool submissions, partnerships, technical support. We help architecture and design professionals discover the best AI tools.',

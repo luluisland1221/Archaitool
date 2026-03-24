@@ -514,6 +514,32 @@ const Tools = () => {
         {!selectedCategory && (
           <>
             <h1 className="text-4xl font-bold mb-8">Complete Architecture AI Tools Directory - Free & Professional Solutions</h1>
+            <section className="bg-white rounded-xl shadow-lg p-6 mb-8">
+              <p className="text-sm text-gray-500 mb-4">Updated: 2026-03-24</p>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Quick picks to start fast</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                <div>
+                  <strong>Floor plan automation:</strong>{' '}
+                  <Link to="/architectural-design/arkdesign-ai" className="text-black underline">Arkdesign AI</Link>
+                  {' '}or{' '}
+                  <Link to="/architectural-design/floorplan-ai" className="text-black underline">Floorplan AI</Link>
+                </div>
+                <div>
+                  <strong>Site planning + feasibility:</strong>{' '}
+                  <Link to="/architectural-design/testfit" className="text-black underline">TestFit</Link>
+                </div>
+                <div>
+                  <strong>Fast client renders:</strong>{' '}
+                  <Link to="/architectural-design/myarchitectai" className="text-black underline">MyArchitect AI</Link>
+                </div>
+                <div>
+                  <strong>Free starter stack:</strong>{' '}
+                  <Link to="/architectural-design/ai-architectures" className="text-black underline">AI Architectures</Link>
+                  {' '}+{' '}
+                  <Link to="/interior-design/home-design-ai" className="text-black underline">Home Design AI</Link>
+                </div>
+              </div>
+            </section>
             {renderDirectoryIntro()}
             {renderCategories()}
           </>
