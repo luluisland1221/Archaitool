@@ -12,6 +12,8 @@ export interface Tool {
   useDynamicScreenshot?: boolean;
   fallbackImage?: string;
   searchAliases?: string[];
+  seoTitle?: string;
+  seoDescription?: string;
 
   // Enhanced fields for detailed information
   detailedDescription?: string;
@@ -243,6 +245,8 @@ export const categories: Category[] = [
             id: "maket-ai",
             name: "Maket AI",
             description: "Democratizing architecture with generative AI for build planning",
+            seoTitle: "Maket AI Pricing & Floor Plan Generator | Arch AI Tool",
+            seoDescription: "Compare Maket AI pricing, free tier, and floor plan generation features. DXF/PDF exports, collaboration, and residential design workflows.",
             image: "/screenshots/www_maket_ai_.webp",
             url: "https://www.maket.ai/",
             isPaid: true,
@@ -354,6 +358,8 @@ export const categories: Category[] = [
             id: "arkdesign-ai",
             name: "Arkdesign AI",
             description: "AI solution for architectural schematic design and floor plans",
+            seoTitle: "Arkdesign AI Floor Plan Generator & Pricing | Arch AI Tool",
+            seoDescription: "Arkdesign AI for schematic design and floor plan generation. Review pricing, code compliance, DWG/DXF/PDF exports, and feasibility tools.",
             image: "/screenshots/arkdesign_ai_.webp",
             url: "https://arkdesign.ai/",
             isPaid: true,
@@ -493,6 +499,8 @@ export const categories: Category[] = [
             id: "architechtures",
             name: "Architechtures",
             description: "Innovative residential design process with Generative AI",
+            seoTitle: "Architechtures AI Pricing & Residential Design Platform | Arch AI Tool",
+            seoDescription: "Architechtures AI for residential design and BIM outputs. See pricing, IFC/DXF/XLSX exports, compliance checks, and feasibility workflows.",
             image: "/screenshots/architechtures_com_en.webp",
             url: "https://architechtures.com/",
             isPaid: true,
@@ -1411,6 +1419,8 @@ export const categories: Category[] = [
             id: "myarchitectai",
             name: "MyArchitect AI",
             description: "Create photorealistic AI renders in under 10 seconds",
+            seoTitle: "MyArchitect AI Rendering Pricing & 10-Second Renders | Arch AI Tool",
+            seoDescription: "MyArchitect AI for fast architectural rendering. Compare pricing, free tier limits, integrations, and 4K export workflow.",
             image: "/screenshots/myarchitectai_com_.webp",
             url: "https://myarchitectai.com/",
             isPaid: true,
@@ -1736,6 +1746,8 @@ export const categories: Category[] = [
             id: "evolvelab-veras",
             name: "Veras by EvolveLAB",
             description: "AI-powered visualization app for SketchUp, Revit, Rhino, Vectorworks, and Web with geometry override and selection rendering",
+            seoTitle: "EvolveLAB Veras Pricing & Revit/Rhino/SketchUp Plugin | Arch AI Tool",
+            seoDescription: "Veras by EvolveLAB is an AI rendering plugin for Revit, Rhino, and SketchUp. See pricing, trial info, and workflow features.",
             image: "Veras - AI architectural visualization tool",
             url: "https://www.evolvelab.io/veras",
             isPaid: true,

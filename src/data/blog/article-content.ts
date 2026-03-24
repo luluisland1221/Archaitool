@@ -25,7 +25,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> You provide descriptive text (prompts) about building type, style, materials, and context, and the AI generates multiple visual concepts.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/ai-architectures">AI Architectures</a> (Free), <a href="/tool/maket-ai">Maket AI</a>, <a href="/tool/arkdesign-ai">Arkdesign AI</a></p>
+<p><strong>Available tools:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> (Free), <a href="/architectural-design/maket-ai">Maket AI</a>, <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></p>
 
 <p><strong>Best for:</strong> Early-stage concept exploration, client presentations, and design inspiration.</p>
 
@@ -35,7 +35,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Input your requirements (square footage, room types, adjacencies) and the AI generates optimized layout options.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/testfit">TestFit</a>, <a href="/tool/floorplan-ai">Floorplan AI</a>, <a href="/tool/ai-architectures">AI Architectures</a></p>
+<p><strong>Available tools:</strong> <a href="/architectural-design/testfit">TestFit</a>, <a href="/architectural-design/floorplan-ai">Floorplan AI</a>, <a href="/architectural-design/ai-architectures">AI Architectures</a></p>
 
 <p><strong>Best for:</strong> Space planning efficiency, feasibility studies, and rapid iteration on building layouts.</p>
 
@@ -45,7 +45,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Upload your design files (sketches, models, or images) and the AI enhances them into professional-quality renders.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="/tool/visualizee-ai">Visualizee AI</a>, <a href="/tool/arko-ai">Arko AI</a></p>
+<p><strong>Available tools:</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a>, <a href="/architectural-design/visualizee-ai">Visualizee AI</a>, <a href="/architectural-design/arko-ai">Arko AI</a></p>
 
 <p><strong>Best for:</strong> Client presentations, design development, and portfolio creation.</p>
 
@@ -55,7 +55,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Upload room photos or provide descriptions, and the AI generates complete interior design schemes with furniture, materials, and lighting.</p>
 
-<p><strong>Available tools:</strong> <a href="/tool/home-design-ai">Home Design AI</a> (Free), <a href="/tool/roomgpt">RoomGPT</a>, <a href="/tool/arch-e-ai">Arch E AI</a></p>
+<p><strong>Available tools:</strong> <a href="/interior-design/home-design-ai">Home Design AI</a> (Free), <a href="/interior-design/roomgpt">RoomGPT</a>, <a href="/interior-design/arch-e-ai">Arch E AI</a></p>
 
 <p><strong>Best for:</strong> Interior space planning, material selection, and creating complete interior design presentations.</p>
 
@@ -106,23 +106,23 @@ export const architectAIGuideArticle = `
 
 <h3>1. Professional Quality vs. Speed Trade-off</h3>
 
-<p><strong>High Speed (10-60 seconds):</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="https://archaitool.com/architectural-design/airender-studio" target="_blank" rel="noopener noreferrer">AI Render Studio</a> – Perfect for rapid iteration and client feedback</p>
+<p><strong>High Speed (10-60 seconds):</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a>, <a href="https://archaitool.com/architectural-design/airender-studio" target="_blank" rel="noopener noreferrer">AI Render Studio</a> – Perfect for rapid iteration and client feedback</p>
 
-<p><strong>High Professional Quality:</strong> <a href="/tool/arko-ai">Arko AI</a>, <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> – Best for final presentations and detailed development</p>
+<p><strong>High Professional Quality:</strong> <a href="/architectural-design/arko-ai">Arko AI</a>, <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> – Best for final presentations and detailed development</p>
 
 <p><em>Your choice depends on project stage. Use fast tools for exploration, professional tools for final deliverables.</em></p>
 
 <h3>2. Ease of Use vs. Professional Control</h3>
 
-<p><strong>Easy to Use (One-click):</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/roomgpt">RoomGPT</a> – Ideal for beginners and rapid concepting</p>
+<p><strong>Easy to Use (One-click):</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a>, <a href="/interior-design/roomgpt">RoomGPT</a> – Ideal for beginners and rapid concepting</p>
 
-<p><strong>Advanced Control:</strong> <a href="/tool/testfit">TestFit</a>, <a href="https://archaitool.com/architectural-design/bricsys" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Suitable for experienced professionals needing precise control</p>
+<p><strong>Advanced Control:</strong> <a href="/architectural-design/testfit">TestFit</a>, <a href="https://archaitool.com/architectural-design/bricsys" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Suitable for experienced professionals needing precise control</p>
 
 <p><em>Start with easy tools to build confidence, then gradually move to more advanced options as needed.</em></p>
 
 <h3>3. Cost Consideration</h3>
 
-<p><strong>Free Options:</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/home-design-ai">Home Design AI</a>, <a href="/tool/reimaginehome">ReimagineHome AI</a></p>
+<p><strong>Free Options:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a>, <a href="/interior-design/home-design-ai">Home Design AI</a>, <a href="/real-estate/reimaginehome">ReimagineHome AI</a></p>
 
 <p><strong>Paid Tools:</strong> Most professional tools require subscription (typically $20-100/month)</p>
 
@@ -130,7 +130,7 @@ export const architectAIGuideArticle = `
 
 <h3>4. Output Usability</h3>
 
-<p><strong>Presentation-Ready:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a>, <a href="/tool/visualizee-ai">Visualizee AI</a> – Direct client presentations</p>
+<p><strong>Presentation-Ready:</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a>, <a href="/architectural-design/visualizee-ai">Visualizee AI</a> – Direct client presentations</p>
 
 <p><strong>Development-Ready:</strong> <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a>, <a href="https://archaitool.com/architectural-design/bricsys" target="_blank" rel="noopener noreferrer">Bricsys BIM</a> – Can be integrated into professional workflows</p>
 
@@ -154,21 +154,21 @@ export const architectAIGuideArticle = `
       <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Concept Design Generation</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/maket-ai">Maket AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/maket-ai">Maket AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/arkdesign-ai">Arkdesign AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
@@ -178,21 +178,21 @@ export const architectAIGuideArticle = `
       <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Floor Planning & Layout</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/testfit">TestFit</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/testfit">TestFit</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/floorplan-ai">Floorplan AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/floorplan-ai">Floorplan AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
@@ -202,21 +202,21 @@ export const architectAIGuideArticle = `
       <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Visualization & Rendering</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/myarchitectai">MyArchitect AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/myarchitectai">MyArchitect AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/arko-ai">Arko AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/arko-ai">Arko AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/visualizee-ai">Visualizee AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/visualizee-ai">Visualizee AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
@@ -226,21 +226,21 @@ export const architectAIGuideArticle = `
       <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Interior Design</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/home-design-ai">Home Design AI</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/interior-design/home-design-ai">Home Design AI</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/roomgpt">RoomGPT</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/interior-design/roomgpt">RoomGPT</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/tool/arch-e-ai">Arch E AI</a></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/interior-design/arch-e-ai">Arch E AI</a></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
@@ -283,10 +283,10 @@ export const architectAIGuideArticle = `
 <h3>Tool Recommendations by Need:</h3>
 
 <ul>
-<li><strong>For concept exploration:</strong> <a href="/tool/ai-architectures">AI Architectures</a> + <a href="https://archaitool.com/multi-domain-ai/midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a></li>
-<li><strong>For layout optimization:</strong> <a href="/tool/testfit">TestFit</a> + <a href="/tool/floorplan-ai">Floorplan AI</a></li>
-<li><strong>For final visualization:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a> + <a href="/tool/arko-ai">Arko AI</a></li>
-<li><strong>For interior design:</strong> <a href="/tool/home-design-ai">Home Design AI</a> + <a href="/tool/roomgpt">RoomGPT</a></li>
+<li><strong>For concept exploration:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="https://archaitool.com/multi-domain-ai/midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a></li>
+<li><strong>For layout optimization:</strong> <a href="/architectural-design/testfit">TestFit</a> + <a href="/architectural-design/floorplan-ai">Floorplan AI</a></li>
+<li><strong>For final visualization:</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a> + <a href="/architectural-design/arko-ai">Arko AI</a></li>
+<li><strong>For interior design:</strong> <a href="/interior-design/home-design-ai">Home Design AI</a> + <a href="/interior-design/roomgpt">RoomGPT</a></li>
 </ul>
 
 <h2>Step 4: Integrating AI into Your Daily Design Workflow</h2>
@@ -312,10 +312,10 @@ export const architectAIGuideArticle = `
 <p><strong>AI-Enhanced Workflow (4 hours):</strong></p>
 
 <ol>
-<li><strong><a href="/tool/ai-architectures">AI Architectures</a></strong> → Generate 5 concept options in 30 minutes</li>
-<li><strong><a href="/tool/testfit">TestFit</a></strong> → Optimize floor plan and space efficiency in 1 hour</li>
-<li><strong><a href="/tool/home-design-ai">Home Design AI</a></strong> → Design interior spaces and material palette in 45 minutes</li>
-<li><strong><a href="/tool/myarchitectai">MyArchitect AI</a></strong> → Create photorealistic exterior renders in 1 hour</li>
+<li><strong><a href="/architectural-design/ai-architectures">AI Architectures</a></strong> → Generate 5 concept options in 30 minutes</li>
+<li><strong><a href="/architectural-design/testfit">TestFit</a></strong> → Optimize floor plan and space efficiency in 1 hour</li>
+<li><strong><a href="/interior-design/home-design-ai">Home Design AI</a></strong> → Design interior spaces and material palette in 45 minutes</li>
+<li><strong><a href="/architectural-design/myarchitectai">MyArchitect AI</a></strong> → Create photorealistic exterior renders in 1 hour</li>
 <li><strong>Presentation Assembly</strong> → Compile AI outputs into professional presentation in 45 minutes</li>
 <li><em>Total: 4 hours, 90% cost reduction</em></li>
 </ol>
@@ -330,11 +330,11 @@ export const architectAIGuideArticle = `
 
 <h3>Recommended Tool Combinations:</h3>
 
-<p><strong>For Small Projects:</strong> <a href="/tool/ai-architectures">AI Architectures</a> + <a href="/tool/myarchitectai">MyArchitect AI</a> (Free + $29/month)</p>
+<p><strong>For Small Projects:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/architectural-design/myarchitectai">MyArchitect AI</a> (Free + $29/month)</p>
 
-<p><strong>For Medium Projects:</strong> Add <a href="/tool/testfit">TestFit</a> + <a href="/tool/home-design-ai">Home Design AI</a> for comprehensive workflow</p>
+<p><strong>For Medium Projects:</strong> Add <a href="/architectural-design/testfit">TestFit</a> + <a href="/interior-design/home-design-ai">Home Design AI</a> for comprehensive workflow</p>
 
-<p><strong>For Large Projects:</strong> Include <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> + <a href="/tool/arko-ai">Arko AI</a> for professional integration</p>
+<p><strong>For Large Projects:</strong> Include <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> + <a href="/architectural-design/arko-ai">Arko AI</a> for professional integration</p>
 
 <p>👉 <strong>All mentioned tools are available in our comprehensive directory:</strong> <a href="https://archaitool.com" target="_blank">ArchAITool.com</a></p>
 
@@ -356,7 +356,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>The Reality:</strong> Mastering 2-3 core tools is more valuable than superficial familiarity with 10+ tools.</p>
 
-<p><strong>The Solution:</strong> Start with 1-2 free tools (<a href="/tool/ai-architectures">AI Architectures</a> + <a href="/tool/home-design-ai">Home Design AI</a>), master them, then gradually add specialized tools based on project needs.</p>
+<p><strong>The Solution:</strong> Start with 1-2 free tools (<a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/interior-design/home-design-ai">Home Design AI</a>), master them, then gradually add specialized tools based on project needs.</p>
 
 <h3>Mistake 3: Thinking AI Replaces Design Thinking</h3>
 
@@ -387,15 +387,15 @@ export const architectAIGuideArticle = `
 
 <h3>For Architecture Students:</h3>
 
-<p>Start with free tools to build your AI literacy. Focus on <a href="/tool/ai-architectures">AI Architectures</a> to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
+<p>Start with free tools to build your AI literacy. Focus on <a href="/architectural-design/ai-architectures">AI Architectures</a> to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
 
 <h3>For Small Firm Architects:</h3>
 
-<p>Focus on efficiency and client presentation tools. <a href="/tool/myarchitectai">MyArchitect AI</a> + <a href="/tool/testfit">TestFit</a> combination offers the best ROI for small practices. Start with one paid tool and master it before expanding your toolkit.</p>
+<p>Focus on efficiency and client presentation tools. <a href="/architectural-design/myarchitectai">MyArchitect AI</a> + <a href="/architectural-design/testfit">TestFit</a> combination offers the best ROI for small practices. Start with one paid tool and master it before expanding your toolkit.</p>
 
 <h3>For Large Firm Professionals:</h3>
 
-<p>Emphasize integration with existing BIM workflows. <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> and <a href="/tool/arko-ai">Arko AI</a> offer professional-grade integration with tools you already use. Focus on how AI can enhance team collaboration and deliver better results to clients.</p>
+<p>Emphasize integration with existing BIM workflows. <a href="https://archaitool.com/architectural-design/autodesk-forma" target="_blank" rel="noopener noreferrer">Autodesk Forma</a> and <a href="/architectural-design/arko-ai">Arko AI</a> offer professional-grade integration with tools you already use. Focus on how AI can enhance team collaboration and deliver better results to clients.</p>
 
 <p><strong>The future of architecture is already here – it's just being adopted unevenly. By starting your AI journey today, you're positioning yourself at the forefront of architectural practice.</strong></p>
 
@@ -433,7 +433,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Rapid concept exploration and beginners</p>
 <p><strong>Key Features:</strong> Text-to-image generation, multiple style options, web-based interface</p>
 <p><strong>Why It Stands Out:</strong> Completely free with professional-quality results, making it the perfect entry point for architects new to AI tools.</p>
-<p>👉 <strong>Try it now:</strong> <a href="/tool/ai-architectures">AI Architectures</a></p>
+<p>👉 <strong>Try it now:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/ai_architectures_com_.webp" alt="AI Architectures Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -444,7 +444,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Professional concept development</p>
 <p><strong>Key Features:</strong> Advanced customization, architectural-specific training, high-resolution outputs</p>
 <p><strong>Why It Stands Out:</strong> Trained specifically on architectural projects, delivering more technically accurate and design-conscious results.</p>
-<p>👉 <strong>Learn more:</strong> <a href="/tool/arkdesign-ai">Arkdesign AI</a></p>
+<p>👉 <strong>Learn more:</strong> <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/arkdesign_ai_.webp" alt="Arkdesign AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -455,7 +455,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Iterative design development</p>
 <p><strong>Key Features:</strong> Real-time collaboration, project management integration, style consistency</p>
 <p><strong>Why It Stands Out:</strong> Balances ease of use with professional control, making it ideal for design teams.</p>
-<p>👉 <strong>Learn more:</strong> <a href="/tool/maket-ai">Maket AI</a></p>
+<p>👉 <strong>Learn more:</strong> <a href="/architectural-design/maket-ai">Maket AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/www_maket_ai_.webp" alt="Maket AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -468,7 +468,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Commercial space planning</p>
 <p><strong>Key Features:</strong> Automated space configuration, feasibility analysis, metric calculations</p>
 <p><strong>Why It Stands Out:</strong> Industry leader in retail and commercial layout optimization with data-driven insights.</p>
-<p>👉 <strong>Try it now:</strong> <a href="/tool/testfit">TestFit</a></p>
+<p>👉 <strong>Try it now:</strong> <a href="/architectural-design/testfit">TestFit</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/www_testfit_io_product_real_time_ai.webp" alt="TestFit Layout Optimization" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -479,7 +479,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Residential space planning</p>
 <p><strong>Key Features:</strong> Room optimization, furniture placement, traffic flow analysis</p>
 <p><strong>Why It Stands Out:</strong> Specialized focus on residential layouts with intuitive user experience.</p>
-<p>👉 <strong>Learn more:</strong> <a href="/tool/floorplan-ai">Floorplan AI</a></p>
+<p>👉 <strong>Learn more:</strong> <a href="/architectural-design/floorplan-ai">Floorplan AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/www_floorplan_ai_com_.webp" alt="Floorplan AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -492,7 +492,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Quick client presentations</p>
 <p><strong>Key Features:</strong> One-click rendering, style transfer, background removal</p>
 <p><strong>Why It Stands Out:</strong> Exceptional speed with surprisingly high-quality outputs, perfect for rapid iteration.</p>
-<p>👉 <strong>Try it now:</strong> <a href="/tool/myarchitectai">MyArchitect AI</a></p>
+<p>👉 <strong>Try it now:</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/myarchitectai_com_.webp" alt="MyArchitect AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -503,7 +503,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Professional visualization</p>
 <p><strong>Key Features:</strong> Photorealistic rendering, material accuracy, lighting simulation</p>
 <p><strong>Why It Stands Out:</strong> Delivers studio-quality renders with minimal input, rivaling traditional rendering studios.</p>
-<p>👉 <strong>Learn more:</strong> <a href="/tool/arko-ai">Arko AI</a></p>
+<p>👉 <strong>Learn more:</strong> <a href="/architectural-design/arko-ai">Arko AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/arko_ai_.webp" alt="Arko AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -514,7 +514,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Design exploration</p>
 <p><strong>Key Features:</strong> Style variations, quick iteration, sketch enhancement</p>
 <p><strong>Why It Stands Out:</strong> Excellent for exploring multiple design directions quickly during the development phase.</p>
-<p>👉 <strong>Try it now:</strong> <a href="/tool/visualizee-ai">Visualizee AI</a></p>
+<p>👉 <strong>Try it now:</strong> <a href="/architectural-design/visualizee-ai">Visualizee AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/visualizee_ai_.webp" alt="Visualizee AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -527,7 +527,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Interior space planning</p>
 <p><strong>Key Features:</strong> Room redesign, furniture placement, material selection</p>
 <p><strong>Why It Stands Out:</strong> Offers comprehensive interior design capabilities at no cost, making AI accessible to everyone.</p>
-<p>👉 <strong>Try it now:</strong> <a href="/tool/home-design-ai">Home Design AI</a></p>
+<p>👉 <strong>Try it now:</strong> <a href="/interior-design/home-design-ai">Home Design AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/home_design_ai_.webp" alt="Home Design AI Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -538,7 +538,7 @@ export const top10AITools2025Article = `
 <p><strong>Best For:</strong> Quick room transformations</p>
 <p><strong>Key Features:</strong> Photo-to-design conversion, multiple style options, instant results</p>
 <p><strong>Why It Stands Out:</strong> Simplicity meets effectiveness – perfect for rapid interior design visualization.</p>
-<p>👉 <strong>Try it now:</strong> <a href="/tool/roomgpt">RoomGPT</a></p>
+<p>👉 <strong>Try it now:</strong> <a href="/interior-design/roomgpt">RoomGPT</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/www_roomgpt_io_.webp" alt="RoomGPT Interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -670,7 +670,7 @@ export const acceleratingConceptDesignArticle = `
   <li><strong>Deliverable Style:</strong> linework axon, atmospheric dusk render, exploded diagram.</li>
 </ol>
 
-<p>Feed that structure into <a href="/tool/ai-architectures">AI Architectures</a> or <a href="/tool/maket-ai">Maket AI</a> and you instantly receive concept boards that speak the same language as your project brief.</p>
+<p>Feed that structure into <a href="/architectural-design/ai-architectures">AI Architectures</a> or <a href="/architectural-design/maket-ai">Maket AI</a> and you instantly receive concept boards that speak the same language as your project brief.</p>
 
 <h2>Step 2: Use Dual-Track Generation (Mass + Narrative)</h2>
 
@@ -680,17 +680,17 @@ export const acceleratingConceptDesignArticle = `
   <div style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;background:#f9fafb;">
     <h4>Massing Track</h4>
     <ul>
-      <li><a href="/tool/testfit">TestFit</a> for footprint constraints</li>
-      <li><a href="/tool/floorplan-ai">Floorplan AI</a> for stacking diagrams</li>
-      <li><a href="/tool/arkdesign-ai">Arkdesign AI</a> for facade rhythm</li>
+      <li><a href="/architectural-design/testfit">TestFit</a> for footprint constraints</li>
+      <li><a href="/architectural-design/floorplan-ai">Floorplan AI</a> for stacking diagrams</li>
+      <li><a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> for facade rhythm</li>
     </ul>
   </div>
   <div style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;background:#fefce8;">
     <h4>Narrative Track</h4>
     <ul>
-      <li><a href="/tool/midjourney">Midjourney</a> to set mood</li>
-      <li><a href="/tool/visualizee-ai">Visualizee AI</a> for hero shots</li>
-      <li><a href="/tool/myarchitectai">MyArchitect AI</a> for fast alternates</li>
+      <li><a href="/design-tools/midjourney">Midjourney</a> to set mood</li>
+      <li><a href="/architectural-design/visualizee-ai">Visualizee AI</a> for hero shots</li>
+      <li><a href="/architectural-design/myarchitectai">MyArchitect AI</a> for fast alternates</li>
     </ul>
   </div>
 </div>
@@ -703,7 +703,7 @@ export const acceleratingConceptDesignArticle = `
 
 <ul>
   <li><strong>Daylight Hours:</strong> Export geometry from TestFit and run quick solar checks.</li>
-  <li><strong>Envelope Ratio:</strong> Use <a href="/tool/autodesk-forma">Autodesk Forma</a> to verify glazing percentages.</li>
+  <li><strong>Envelope Ratio:</strong> Use <a href="/architectural-design/autodesk-forma">Autodesk Forma</a> to verify glazing percentages.</li>
   <li><strong>Program Fit:</strong> Compare GFA from AI layouts with pro-forma targets.</li>
 </ul>
 
@@ -787,9 +787,9 @@ export const schoolToPracticeArticle = `
 <p>List the workflows you already excel at (concept sketching, diagramming, visualization) and the areas that historically slow you down (documentation, cost studies, visualization). Match each weakness to an AI category:</p>
 
 <ul>
-  <li><strong>Visualization lag?</strong> Pair with <a href="/tool/myarchitectai">MyArchitect AI</a> or <a href="/tool/visualizee-ai">Visualizee AI</a>.</li>
-  <li><strong>Layout guesswork?</strong> Try <a href="/tool/testfit">TestFit</a> for multifamily or <a href="/tool/floorplan-ai">Floorplan AI</a> for residential.</li>
-  <li><strong>Interior styling?</strong> Start with free <a href="/tool/home-design-ai">Home Design AI</a> before presenting to clients.</li>
+  <li><strong>Visualization lag?</strong> Pair with <a href="/architectural-design/myarchitectai">MyArchitect AI</a> or <a href="/architectural-design/visualizee-ai">Visualizee AI</a>.</li>
+  <li><strong>Layout guesswork?</strong> Try <a href="/architectural-design/testfit">TestFit</a> for multifamily or <a href="/architectural-design/floorplan-ai">Floorplan AI</a> for residential.</li>
+  <li><strong>Interior styling?</strong> Start with free <a href="/interior-design/home-design-ai">Home Design AI</a> before presenting to clients.</li>
 </ul>
 
 <p>This mapping ensures your first AI tool reinforces tangible, billable skills instead of novelty.</p>
@@ -813,7 +813,7 @@ export const schoolToPracticeArticle = `
 
 <ol>
   <li><strong>Does it save at least 30% time?</strong> If not, refine prompts or try another tool.</li>
-  <li><strong>Is output trustworthy?</strong> Use <a href="/tool/autodesk-forma">Autodesk Forma</a> or BIM exports to double-check proportions.</li>
+  <li><strong>Is output trustworthy?</strong> Use <a href="/architectural-design/autodesk-forma">Autodesk Forma</a> or BIM exports to double-check proportions.</li>
   <li><strong>Is licensing compliant?</strong> Screenshot and store EULAs for your manager.</li>
   <li><strong>Can results be documented?</strong> Keep before/after images that show how AI supported your design intent.</li>
 </ol>
@@ -836,19 +836,19 @@ export const schoolToPracticeArticle = `
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Concept massing board</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">8 hours</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">2 hours</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/ai-architectures">AI Architectures</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/ai-architectures">AI Architectures</a></td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Interior mood board</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">5 hours</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">1 hour</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/home-design-ai">Home Design AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/interior-design/home-design-ai">Home Design AI</a></td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Schematic layout options</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">12 hours</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">4 hours</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/testfit">TestFit</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/testfit">TestFit</a></td>
     </tr>
   </tbody>
 </table>
@@ -860,9 +860,9 @@ export const schoolToPracticeArticle = `
 <p>Pick one tool from each category and keep logins synced on every device:</p>
 
 <ul>
-  <li><strong>Concept:</strong> AI Architectures (free) + <a href="/tool/arkdesign-ai">Arkdesign AI</a> (paid)</li>
+  <li><strong>Concept:</strong> AI Architectures (free) + <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> (paid)</li>
   <li><strong>Visualization:</strong> MyArchitect AI for presentation speed</li>
-  <li><strong>Documentation support:</strong> <a href="/tool/reimaginehome">ReimagineHome</a> to translate client references into buildable palettes</li>
+  <li><strong>Documentation support:</strong> <a href="/real-estate/reimaginehome">ReimagineHome</a> to translate client references into buildable palettes</li>
   <li><strong>Learning:</strong> Bookmark the <a href="/blog">ArchAITool blog</a> to capture new prompts</li>
 </ul>
 
@@ -900,15 +900,15 @@ export const aiArchitectureImagesArticle = `
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.5rem 0;">
   <div style="padding:1rem;border:1px solid #d1d5db;border-radius:8px;background:#f9fafb;">
     <h4>Layer 1 — Prompt Discipline</h4>
-    <p>Embed non-negotiables such as “visible structural columns,” “code-compliant guardrails,” or “rainwater leaders.” Tools: <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/arkdesign-ai">Arkdesign AI</a>.</p>
+    <p>Embed non-negotiables such as “visible structural columns,” “code-compliant guardrails,” or “rainwater leaders.” Tools: <a href="/architectural-design/ai-architectures">AI Architectures</a>, <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a>.</p>
   </div>
   <div style="padding:1rem;border:1px solid #d1d5db;border-radius:8px;background:#fff7ed;">
     <h4>Layer 2 — Reality Overlay</h4>
-    <p>Export AI imagery into Photoshop and overlay structural grids, human scale bars, or Revit linework. Tools: <a href="/tool/visualizee-ai">Visualizee AI</a>, <a href="/tool/myarchitectai">MyArchitect AI</a>.</p>
+    <p>Export AI imagery into Photoshop and overlay structural grids, human scale bars, or Revit linework. Tools: <a href="/architectural-design/visualizee-ai">Visualizee AI</a>, <a href="/architectural-design/myarchitectai">MyArchitect AI</a>.</p>
   </div>
   <div style="padding:1rem;border:1px solid #d1d5db;border-radius:8px;background:#ecfccb;">
     <h4>Layer 3 — Data Tagging</h4>
-    <p>Add captions referencing energy models, daylight simulations, or cost allowances. Tools: <a href="/tool/autodesk-forma">Autodesk Forma</a>, <a href="/tool/testfit">TestFit</a>.</p>
+    <p>Add captions referencing energy models, daylight simulations, or cost allowances. Tools: <a href="/architectural-design/autodesk-forma">Autodesk Forma</a>, <a href="/architectural-design/testfit">TestFit</a>.</p>
   </div>
 </div>
 
@@ -976,9 +976,9 @@ export const smallFirmProductivityArticle = `
 <h2>Design a “3-Tool Stack” per Bucket</h2>
 
 <ul>
-  <li><strong>Concept + visualization:</strong> <a href="/tool/ai-architectures">AI Architectures</a>, <a href="/tool/visualizee-ai">Visualizee AI</a>, <a href="/tool/myarchitectai">MyArchitect AI</a></li>
-  <li><strong>Documentation:</strong> <a href="/tool/testfit">TestFit</a> for unit mixes, <a href="/tool/autodesk-forma">Autodesk Forma</a> for performance notes, <a href="/tool/reimaginehome">ReimagineHome</a> for interior specs.</li>
-  <li><strong>Marketing:</strong> <a href="/tool/midjourney">Midjourney</a> for mood boards, <a href="/tool/home-design-ai">Home Design AI</a> for before/after transformations, <a href="/tool/arkdesign-ai">Arkdesign AI</a> for hero imagery.</li>
+  <li><strong>Concept + visualization:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a>, <a href="/architectural-design/visualizee-ai">Visualizee AI</a>, <a href="/architectural-design/myarchitectai">MyArchitect AI</a></li>
+  <li><strong>Documentation:</strong> <a href="/architectural-design/testfit">TestFit</a> for unit mixes, <a href="/architectural-design/autodesk-forma">Autodesk Forma</a> for performance notes, <a href="/real-estate/reimaginehome">ReimagineHome</a> for interior specs.</li>
+  <li><strong>Marketing:</strong> <a href="/design-tools/midjourney">Midjourney</a> for mood boards, <a href="/interior-design/home-design-ai">Home Design AI</a> for before/after transformations, <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> for hero imagery.</li>
 </ul>
 
 <p>Limit each workflow to three core tools to keep training and subscriptions manageable.</p>
@@ -1056,7 +1056,7 @@ export const realtorFieldGuideArticle = `
 
 <p>In every North American brokerage we interviewed this winter, the same pressure surfaced: listings must be refreshed and distributed faster than the next agent can produce a Reel. That means tapping AI platforms that respect MLS rules, keep materials code-compliant, and still feel authentic to buyers who can spot an over-filtered render from a mile away.</p>
 
-<p>This playbook pairs <a href="/tool/rendera-ai">Rendera.ai</a> for climate-aware exterior updates with <a href="/tool/ai-renovation">AI Renovation</a> for photoreal interior staging. Together they let agents and architect partners move from raw shoot files to multi-channel marketing assets before the seller has even left the driveway.</p>
+<p>This playbook pairs <a href="/architectural-design/rendera-ai">Rendera.ai</a> for climate-aware exterior updates with <a href="/interior-design/ai-renovation">AI Renovation</a> for photoreal interior staging. Together they let agents and architect partners move from raw shoot files to multi-channel marketing assets before the seller has even left the driveway.</p>
 
 <h2>Rendera.ai vs. AI Renovation: Which Tool Owns Each Phase?</h2>
 
@@ -1072,13 +1072,13 @@ export const realtorFieldGuideArticle = `
   <tbody>
     <tr>
       <td style="border:1px solid #e5e7eb;padding:0.75rem;">Curb appeal refresh</td>
-      <td style="border:1px solid #e5e7eb;padding:0.75rem;"><a href="/tool/rendera-ai">Rendera.ai</a></td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;"><a href="/architectural-design/rendera-ai">Rendera.ai</a></td>
       <td style="border:1px solid #e5e7eb;padding:0.75rem;">Understands local climate, light angle, and plant species so visuals read as believable to regional buyers.</td>
       <td style="border:1px solid #e5e7eb;padding:0.75rem;">Side-by-side exterior elevation with landscaping notes.</td>
     </tr>
     <tr>
       <td style="border:1px solid #e5e7eb;padding:0.75rem;">Kitchen + living room staging</td>
-      <td style="border:1px solid #e5e7eb;padding:0.75rem;"><a href="/tool/ai-renovation">AI Renovation</a></td>
+      <td style="border:1px solid #e5e7eb;padding:0.75rem;"><a href="/interior-design/ai-renovation">AI Renovation</a></td>
       <td style="border:1px solid #e5e7eb;padding:0.75rem;">Automatic wall detection plus clutter removal keeps base geometry intact for code references.</td>
       <td style="border:1px solid #e5e7eb;padding:0.75rem;">Before/after slider with colorway tags.</td>
     </tr>
@@ -1094,9 +1094,9 @@ export const realtorFieldGuideArticle = `
 <h2>The 20-Minute Listing Sprint</h2>
 
 <ol>
-  <li><strong>Minute 0-3:</strong> Drop the photographer’s RAW exports into <a href="/tool/rendera-ai">Rendera.ai</a>. Choose the correct Hardiness Zone and reference palette.</li>
+  <li><strong>Minute 0-3:</strong> Drop the photographer’s RAW exports into <a href="/architectural-design/rendera-ai">Rendera.ai</a>. Choose the correct Hardiness Zone and reference palette.</li>
   <li><strong>Minute 3-8:</strong> Export two hero elevations plus a dusk version. Copy the vegetation + materials notes for future captions.</li>
-  <li><strong>Minute 8-15:</strong> Upload the kitchen, living room, and primary suite to <a href="/tool/ai-renovation">AI Renovation</a>. Remove clutter, test two styles, and pin the SKU-level finishes it suggests.</li>
+  <li><strong>Minute 8-15:</strong> Upload the kitchen, living room, and primary suite to <a href="/interior-design/ai-renovation">AI Renovation</a>. Remove clutter, test two styles, and pin the SKU-level finishes it suggests.</li>
   <li><strong>Minute 15-18:</strong> Assemble a three-frame carousel (Exterior, Living, Kitchen) in Canva or Adobe Express. Paste captions pulled from the tool metadata.</li>
   <li><strong>Minute 18-20:</strong> Publish to MLS, Instagram, and the brokerage newsletter simultaneously. Store the assets in your Google Drive folder for appraisers and buyer agents.</li>
 </ol>
@@ -1108,8 +1108,8 @@ export const realtorFieldGuideArticle = `
 <h2>Playbooks for Your Team</h2>
 
 <ul>
-  <li><strong>Move-up buyers:</strong> Use <a href="/tool/rendera-ai">Rendera.ai</a> to show how an older colonial can take on a soft contemporary palette without losing its Georgian proportions.</li>
-  <li><strong>Flippers + GC partners:</strong> Run <a href="/tool/ai-renovation">AI Renovation</a> to visualize new cabinet runs, flooring, and appliance layouts directly from site photos. The SKU tags double as punch-list language.</li>
+  <li><strong>Move-up buyers:</strong> Use <a href="/architectural-design/rendera-ai">Rendera.ai</a> to show how an older colonial can take on a soft contemporary palette without losing its Georgian proportions.</li>
+  <li><strong>Flippers + GC partners:</strong> Run <a href="/interior-design/ai-renovation">AI Renovation</a> to visualize new cabinet runs, flooring, and appliance layouts directly from site photos. The SKU tags double as punch-list language.</li>
   <li><strong>Luxury leasing teams:</strong> Combine both outputs into a single pitch deck for corporate relocation clients. The ability to spin culturally tailored interiors within minutes wins executive approvals faster.</li>
 </ul>
 
@@ -1119,7 +1119,7 @@ export const realtorFieldGuideArticle = `
 
 <ul>
   <li>MLS upload with both the original and AI-enhanced photos clearly labeled.</li>
-  <li>15-second Reel that cross-fades the <a href="/tool/rendera-ai">Rendera.ai</a> exterior into the staged living room.</li>
+  <li>15-second Reel that cross-fades the <a href="/architectural-design/rendera-ai">Rendera.ai</a> exterior into the staged living room.</li>
   <li>Agent FAQ doc referencing the fact that AI Renovation keeps structural elements untouched—critical for compliance conversations.</li>
   <li>Link back to the property microsite plus a credit line like “Visual refresh via ArchAITool.com picks: Rendera.ai + AI Renovation.”</li>
 </ul>
@@ -1130,11 +1130,11 @@ export const realtorFieldGuideArticle = `
 export const renovationNavigatorArticle = `
 <h2>Homeowners Need Better Roadmaps Than Mood Boards</h2>
 
-<p>Every renovation conversation now starts with homeowner screenshots, Pinterest boards, or scans. Translating those inputs into a plan that builders trust is where AI shines. Pair <a href="/tool/floor-plan-ai">Floor-Plan.ai</a> (for digitizing and optimizing the footprint) with <a href="/tool/ai-renovation">AI Renovation</a> (for immersive visuals). You move from existing conditions to cost-aware design in days instead of weeks.</p>
+<p>Every renovation conversation now starts with homeowner screenshots, Pinterest boards, or scans. Translating those inputs into a plan that builders trust is where AI shines. Pair <a href="/architectural-design/floor-plan-ai">Floor-Plan.ai</a> (for digitizing and optimizing the footprint) with <a href="/interior-design/ai-renovation">AI Renovation</a> (for immersive visuals). You move from existing conditions to cost-aware design in days instead of weeks.</p>
 
 <h2>Step 1: Capture and Clean As-Builts with Floor-Plan.ai</h2>
 
-<p><a href="/tool/floor-plan-ai">Floor-Plan.ai</a> accepts messy scans, smartphone photos, or even text-based room notes. The platform outputs dimensionally accurate floor plans plus multiple layout variations. Because it is cloud-based and fully collaborative, homeowners, architects, and contractors can leave comments directly on the same draft.</p>
+<p><a href="/architectural-design/floor-plan-ai">Floor-Plan.ai</a> accepts messy scans, smartphone photos, or even text-based room notes. The platform outputs dimensionally accurate floor plans plus multiple layout variations. Because it is cloud-based and fully collaborative, homeowners, architects, and contractors can leave comments directly on the same draft.</p>
 
 <ul>
   <li><strong>Upload:</strong> PDFs, JPEGs, or quick sketches from site walks.</li>
@@ -1148,7 +1148,7 @@ export const renovationNavigatorArticle = `
 
 <h2>Step 2: Spin Buildable Visuals with AI Renovation</h2>
 
-<p>Once the plan is locked, move the best “after” layout into <a href="/tool/ai-renovation">AI Renovation</a>. Its object detection keeps structural walls, windows, and utilities untouched while refreshing finishes. Homeowners see instant ROI, and contractors receive realistic expectations for millwork, lighting, and appliance swaps.</p>
+<p>Once the plan is locked, move the best “after” layout into <a href="/interior-design/ai-renovation">AI Renovation</a>. Its object detection keeps structural walls, windows, and utilities untouched while refreshing finishes. Homeowners see instant ROI, and contractors receive realistic expectations for millwork, lighting, and appliance swaps.</p>
 
 <table style="width:100%;border-collapse:collapse;">
   <thead>
@@ -1180,7 +1180,7 @@ export const renovationNavigatorArticle = `
 <h2>Keep Budget and Schedule Reality in View</h2>
 
 <ul>
-  <li><strong>Budget overlays:</strong> Pull square footage directly from <a href="/tool/floor-plan-ai">Floor-Plan.ai</a> to estimate finish quantities. Attach target cost ranges (low/mid/high) next to each AI Renovation slide.</li>
+  <li><strong>Budget overlays:</strong> Pull square footage directly from <a href="/architectural-design/floor-plan-ai">Floor-Plan.ai</a> to estimate finish quantities. Attach target cost ranges (low/mid/high) next to each AI Renovation slide.</li>
   <li><strong>Permit readiness:</strong> Export the final plan to PDF and add the AI Renovation visuals as appendices. Building officials appreciate seeing intent even when renderings are AI-generated.</li>
   <li><strong>Trade buy-in:</strong> Share logins with the millworker, electrician, and plumber. Because AI Renovation labels cabinetry fronts, lighting layers, and plumbing fixture finishes, trades can flag issues earlier.</li>
 </ul>
@@ -1204,14 +1204,14 @@ export const renovationNavigatorArticle = `
 export const boutiqueStudioWorkflowArticle = `
 <h2>Boutique Studios Need Bulletproof One-Review Packages</h2>
 
-<p>Clients hire small architecture and interior studios for decisiveness. To keep that promise you have to land near-final interiors in the very first review meeting. This workflow pairs <a href="/tool/vibe3d">Vibe3D</a> for model-to-render speed, <a href="/tool/roomlab-app">Roomlab</a> for targeted material swaps, and <a href="/tool/floordesign-ai">FloorDesign.ai</a> for studio-grade flooring boards.</p>
+<p>Clients hire small architecture and interior studios for decisiveness. To keep that promise you have to land near-final interiors in the very first review meeting. This workflow pairs <a href="/interior-design/vibe3d">Vibe3D</a> for model-to-render speed, <a href="/interior-design/roomlab-app">Roomlab</a> for targeted material swaps, and <a href="/interior-design/floordesign-ai">FloorDesign.ai</a> for studio-grade flooring boards.</p>
 
 <h2>Phase 1 – Model Refinement with Vibe3D</h2>
 
 <p>Create one shared scene that drives every deliverable:</p>
 
 <ul>
-  <li>Import SketchUp, Revit, or Rhino geometry directly into <a href="/tool/vibe3d">Vibe3D</a>. The platform retains layers, UV mapping, and light settings.</li>
+  <li>Import SketchUp, Revit, or Rhino geometry directly into <a href="/interior-design/vibe3d">Vibe3D</a>. The platform retains layers, UV mapping, and light settings.</li>
   <li>Assign camera presets for hero shots, detail vignettes, and compliance documentation.</li>
   <li>Batch render 4K stills or short fly-throughs in under 60 seconds per view so the team can react the same day.</li>
 </ul>
@@ -1222,7 +1222,7 @@ export const boutiqueStudioWorkflowArticle = `
 
 <h2>Phase 2 – Material Precision with Roomlab</h2>
 
-<p>Instead of repainting an entire scene, <a href="/tool/roomlab-app">Roomlab</a> lets you target specific fixtures or surfaces. Upload the Vibe3D still, mask cabinets, tiles, or plumbing trims, and iterate styles without rebuilding geometry.</p>
+<p>Instead of repainting an entire scene, <a href="/interior-design/roomlab-app">Roomlab</a> lets you target specific fixtures or surfaces. Upload the Vibe3D still, mask cabinets, tiles, or plumbing trims, and iterate styles without rebuilding geometry.</p>
 
 <table style="width:100%;border-collapse:collapse;">
   <thead>
@@ -1253,7 +1253,7 @@ export const boutiqueStudioWorkflowArticle = `
 
 <h2>Phase 3 – Flooring Boards with FloorDesign.ai</h2>
 
-<p>Flooring decisions derail many reviews because stakeholders can’t visualize seams, direction, or the way a rug interacts with the rest of the furnishings. <a href="/tool/floordesign-ai">FloorDesign.ai</a> specializes in that gap:</p>
+<p>Flooring decisions derail many reviews because stakeholders can’t visualize seams, direction, or the way a rug interacts with the rest of the furnishings. <a href="/interior-design/floordesign-ai">FloorDesign.ai</a> specializes in that gap:</p>
 
 <ul>
   <li>Upload the Roomlab-refined still and test 25+ flooring materials—from engineered oak to terrazzo—without repainting the entire space.</li>
@@ -1309,61 +1309,61 @@ export const bestAiArchitectureImageGenerators2026Article = `
   <tbody>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">1</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/nano-banana-pro">Nano Banana Pro</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/design-tools/nano-banana-pro">Nano Banana Pro</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Prompt fidelity + realism</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Concept exploration, exterior mood studies</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">2</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/flux-2">Flux 2</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/design-tools/flux-2">Flux 2</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Control and iteration speed</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Style transfer and urban variations</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">3</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/midjourney">Midjourney</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/design-tools/midjourney">Midjourney</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Mood and atmosphere</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Competition concepts and visual storytelling</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">4</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/archfine-ai">Archfine AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/archfine-ai">Archfine AI</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Cloud rendering from CAD or sketches</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Studio-ready visualization without GPU</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">5</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/lookx">LookX</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/lookx">LookX</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Architecture-trained rendering</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Style-controlled interiors and exteriors</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">6</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/rendair-ai">Rendair AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/rendair-ai">Rendair AI</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Speed and consistency</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Client-ready render batches</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">7</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/arko-ai">Arko AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/arko-ai">Arko AI</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">BIM plugin visualization</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Revit-driven design reviews</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">8</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/evolvelab-veras">Veras</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/evolvelab-veras">Veras</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Geometry-aware AI rendering</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">In-model visualization workflows</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">9</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/chaos">Chaos</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/chaos">Chaos</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">AI enhancer + render ecosystem</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">High-fidelity marketing visuals</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">10</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/tool/testfit">TestFit</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/testfit">TestFit</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Site planning visuals</td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Feasibility studies and massing options</td>
     </tr>
@@ -1376,7 +1376,7 @@ export const bestAiArchitectureImageGenerators2026Article = `
 <p><strong>Best For:</strong> Prompt-faithful architectural renders with high realism.</p>
 <p><strong>Why It Ranks #1:</strong> Consistent structure and lighting with minimal prompt drift, making it reliable for client-facing concept studies.</p>
 <p><strong>Best Use Case:</strong> Early concept exploration, exterior mood studies, and fast options for client reviews.</p>
-<p><strong>Explore:</strong> <a href="/tool/nano-banana-pro">Nano Banana Pro</a></p>
+<p><strong>Explore:</strong> <a href="/design-tools/nano-banana-pro">Nano Banana Pro</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/gemini_google_com_app.webp" alt="Nano Banana Pro on Gemini interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -1387,7 +1387,7 @@ export const bestAiArchitectureImageGenerators2026Article = `
 <p><strong>Best For:</strong> Controlled variations and style transfer.</p>
 <p><strong>Why It Ranks #2:</strong> Strong control tools and fast iteration make it ideal for exploring multiple design directions quickly.</p>
 <p><strong>Best Use Case:</strong> Facade style tests, urban context explorations, and consistent visual series.</p>
-<p><strong>Explore:</strong> <a href="/tool/flux-2">Flux 2</a></p>
+<p><strong>Explore:</strong> <a href="/design-tools/flux-2">Flux 2</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/bfl_ai_.webp" alt="Flux 2 interface on BFL" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -1398,7 +1398,7 @@ export const bestAiArchitectureImageGenerators2026Article = `
 <p><strong>Best For:</strong> Cloud rendering from sketches, CAD outputs, or rough models.</p>
 <p><strong>Why It Ranks #3:</strong> Removes GPU bottlenecks and keeps iteration cycles short for small teams.</p>
 <p><strong>Best Use Case:</strong> Fast visualization for studio reviews and client pitch decks.</p>
-<p><strong>Explore:</strong> <a href="/tool/archfine-ai">Archfine AI</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/archfine-ai">Archfine AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/archfine_com_.webp" alt="Archfine AI interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -1409,7 +1409,7 @@ export const bestAiArchitectureImageGenerators2026Article = `
 <p><strong>Best For:</strong> Architecture-trained rendering with style guidance.</p>
 <p><strong>Why It Ranks #4:</strong> Consistent architecture-aware outputs while still allowing mood and material control.</p>
 <p><strong>Best Use Case:</strong> Interior and exterior exploration with stable spatial intent.</p>
-<p><strong>Explore:</strong> <a href="/tool/lookx">LookX</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/lookx">LookX</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/www_lookx_ai_.webp" alt="LookX AI interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -1420,7 +1420,7 @@ export const bestAiArchitectureImageGenerators2026Article = `
 <p><strong>Best For:</strong> Fast, consistent render batches.</p>
 <p><strong>Why It Ranks #5:</strong> Balances speed and quality without heavy setup, making it a strong option for rapid client updates.</p>
 <p><strong>Best Use Case:</strong> Option sets, marketing visuals, and proposal imagery.</p>
-<p><strong>Explore:</strong> <a href="/tool/rendair-ai">Rendair AI</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/rendair-ai">Rendair AI</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <img src="/screenshots/rendair_ai_.webp" alt="Rendair AI interface" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;">
@@ -1430,25 +1430,25 @@ export const bestAiArchitectureImageGenerators2026Article = `
 <h2>Other Strong Options Worth Keeping in Your Stack</h2>
 
 <ul>
-  <li><strong>Midjourney:</strong> Best-in-class mood and atmosphere for competition concepts. <a href="/tool/midjourney">Explore Midjourney</a></li>
-  <li><strong>Arko AI:</strong> Revit-first workflows for BIM-driven visualization. <a href="/tool/arko-ai">Explore Arko AI</a></li>
-  <li><strong>Veras:</strong> Geometry-aware AI rendering directly inside CAD workflows. <a href="/tool/evolvelab-veras">Explore Veras</a></li>
-  <li><strong>Chaos:</strong> AI Enhancer and a full visualization ecosystem for premium renders. <a href="/tool/chaos">Explore Chaos</a></li>
-  <li><strong>TestFit:</strong> Site planning visuals and massing studies for feasibility. <a href="/tool/testfit">Explore TestFit</a></li>
+  <li><strong>Midjourney:</strong> Best-in-class mood and atmosphere for competition concepts. <a href="/design-tools/midjourney">Explore Midjourney</a></li>
+  <li><strong>Arko AI:</strong> Revit-first workflows for BIM-driven visualization. <a href="/architectural-design/arko-ai">Explore Arko AI</a></li>
+  <li><strong>Veras:</strong> Geometry-aware AI rendering directly inside CAD workflows. <a href="/architectural-design/evolvelab-veras">Explore Veras</a></li>
+  <li><strong>Chaos:</strong> AI Enhancer and a full visualization ecosystem for premium renders. <a href="/architectural-design/chaos">Explore Chaos</a></li>
+  <li><strong>TestFit:</strong> Site planning visuals and massing studies for feasibility. <a href="/architectural-design/testfit">Explore TestFit</a></li>
 </ul>
 
 <h2>Recommended 2026 Tool Stacks</h2>
 
 <h3>Solo architect or student</h3>
-<p><strong>Stack:</strong> <a href="/tool/nano-banana-pro">Nano Banana Pro</a> + <a href="/tool/midjourney">Midjourney</a> + <a href="/tool/archfine-ai">Archfine AI</a></p>
+<p><strong>Stack:</strong> <a href="/design-tools/nano-banana-pro">Nano Banana Pro</a> + <a href="/design-tools/midjourney">Midjourney</a> + <a href="/architectural-design/archfine-ai">Archfine AI</a></p>
 <p>Use Nano Banana Pro for prompt-faithful concept renders, Midjourney for mood studies, and Archfine AI when you need fast cloud renders without heavy hardware.</p>
 
 <h3>Small studio (2-10 people)</h3>
-<p><strong>Stack:</strong> <a href="/tool/flux-2">Flux 2</a> + <a href="/tool/lookx">LookX</a> + <a href="/tool/rendair-ai">Rendair AI</a></p>
+<p><strong>Stack:</strong> <a href="/design-tools/flux-2">Flux 2</a> + <a href="/architectural-design/lookx">LookX</a> + <a href="/architectural-design/rendair-ai">Rendair AI</a></p>
 <p>This trio keeps iteration fast while preserving spatial intent across option sets and client presentations.</p>
 
 <h3>BIM-centric firm</h3>
-<p><strong>Stack:</strong> <a href="/tool/arko-ai">Arko AI</a> + <a href="/tool/evolvelab-veras">Veras</a> + <a href="/tool/chaos">Chaos</a></p>
+<p><strong>Stack:</strong> <a href="/architectural-design/arko-ai">Arko AI</a> + <a href="/architectural-design/evolvelab-veras">Veras</a> + <a href="/architectural-design/chaos">Chaos</a></p>
 <p>Stay inside Revit and related CAD tools while still producing marketing-grade renders.</p>
 
 <h2>Prompt Template for Architecture Images</h2>
@@ -1571,20 +1571,20 @@ export const architecturePromptLibraryArticle = `
   <li><strong>Midjourney:</strong> Keep prompts compact, add lens cues (24mm, 35mm), and finish with aspect ratio.</li>
   <li><strong>DALL-E:</strong> Use clear building types and materials, avoid overly long style chains.</li>
   <li><strong>Stable Diffusion:</strong> Use structured prompts plus negative prompts for geometry control.</li>
-  <li><strong>Architecture-first tools:</strong> Try <a href="/tool/nano-banana-pro">Nano Banana Pro</a>, <a href="/tool/flux-2">Flux 2</a>, <a href="/tool/archfine-ai">Archfine AI</a>, <a href="/tool/lookx">LookX</a>, and <a href="/tool/rendair-ai">Rendair AI</a> for faster architecture-ready outputs.</li>
+  <li><strong>Architecture-first tools:</strong> Try <a href="/design-tools/nano-banana-pro">Nano Banana Pro</a>, <a href="/design-tools/flux-2">Flux 2</a>, <a href="/architectural-design/archfine-ai">Archfine AI</a>, <a href="/architectural-design/lookx">LookX</a>, and <a href="/architectural-design/rendair-ai">Rendair AI</a> for faster architecture-ready outputs.</li>
 </ul>
 
 <h2>Popular Tool Pages People Search For</h2>
 
 <ul style="list-style: disc; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
-  <li><a href="/tool/archi-ai">Archi AI</a> (archi ai)</li>
-  <li><a href="/tool/myarchitectai">MyArchitect AI</a> (myarchitect ai)</li>
-  <li><a href="/tool/landscapedesignsai">LandscapeDesignsAI</a> (landscapedesignsai)</li>
-  <li><a href="/tool/ai-architectures">AI Architectures</a> (architectures)</li>
-  <li><a href="/tool/arkdesign-ai">Arkdesign AI</a> (arkdesign ai architecture tool)</li>
-  <li><a href="/tool/yardflip">YardFlip AI</a> (yardflip)</li>
-  <li><a href="/tool/palette-immo">Palette Immo</a> (palette immo)</li>
-  <li><a href="/tool/artevia">Artevia</a> (artevia.ai)</li>
+  <li><a href="/interior-design/archi-ai">Archi AI</a> (archi ai)</li>
+  <li><a href="/architectural-design/myarchitectai">MyArchitect AI</a> (myarchitect ai)</li>
+  <li><a href="/landscape-design/landscapedesignsai">LandscapeDesignsAI</a> (landscapedesignsai)</li>
+  <li><a href="/architectural-design/ai-architectures">AI Architectures</a> (architectures)</li>
+  <li><a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> (arkdesign ai architecture tool)</li>
+  <li><a href="/landscape-design/yardflip">YardFlip AI</a> (yardflip)</li>
+  <li><a href="/interior-design/palette-immo">Palette Immo</a> (palette immo)</li>
+  <li><a href="/interior-design/artevia">Artevia</a> (artevia.ai)</li>
 </ul>
 
 <h2>Negative Prompt Template</h2>
@@ -1635,24 +1635,24 @@ export const sketchupAiPluginsArticle = `
 
 <p><strong>Best for:</strong> Geometry-accurate AI visualization across SketchUp, Revit, and Rhino.</p>
 <p>Veras is the most reliable AI visualization plugin for architects. It preserves geometry, supports render selection, and includes a geometry override slider to control how closely the AI follows your massing. It is built for concept acceleration, not just pretty images.</p>
-<p><strong>Explore:</strong> <a href="/tool/evolvelab-veras">Veras by EvolveLAB</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/evolvelab-veras">Veras by EvolveLAB</a></p>
 
 <h2>Plugin #2: SketchUp Diffusion (AI Render)</h2>
 
 <p><strong>Best for:</strong> One-click concept visuals directly from your current SketchUp view.</p>
 <p>SketchUp Diffusion is SketchUp Labs' native AI Render tool. It uses your active viewport plus a text prompt or preset style to generate concept visuals without leaving SketchUp. It is ideal for early-stage options, mood studies, and quick client alignment.</p>
-<p><strong>Explore:</strong> <a href="/tool/sketchup-diffusion">SketchUp Diffusion</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/sketchup-diffusion">SketchUp Diffusion</a></p>
 
 <h2>Plugin #3: Arko AI</h2>
 
 <p><strong>Best for:</strong> Lighting and material realism, especially for interior perspectives.</p>
 <p>Arko AI plugs directly into SketchUp and focuses on quick, realistic renders. It is a strong option when you need polished interiors or close-up material studies without setting up a full render scene.</p>
-<p><strong>Explore:</strong> <a href="/tool/arko-ai">Arko AI</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/arko-ai">Arko AI</a></p>
 
 <h2>Bonus Option: D5 Lite Inside D5 Render</h2>
 
 <p>If you want a hybrid approach with real-time control, D5 Lite provides AI-assisted rendering inside the D5 ecosystem. It is not a pure diffusion tool, but it offers a fast bridge between SketchUp and client-ready visuals.</p>
-<p><strong>Explore:</strong> <a href="/tool/d5-render">D5 Render</a></p>
+<p><strong>Explore:</strong> <a href="/architectural-design/d5-render">D5 Render</a></p>
 
 <h2>Quick Comparison</h2>
 
@@ -1703,9 +1703,9 @@ export const sketchupAiPluginsArticle = `
 <h2>Related Tools to Explore</h2>
 
 <ul style="list-style: disc; padding-left: 1.5rem; margin: 0.75rem 0 1.75rem;">
-  <li><a href="/tool/myarchitectai">MyArchitect AI</a> for ultra-fast presentation renders.</li>
-  <li><a href="/tool/archi-ai">Archi AI</a> for interior and exterior style variations.</li>
-  <li><a href="/tool/landscapedesignsai">LandscapeDesignsAI</a> for quick site and yard concepts.</li>
+  <li><a href="/architectural-design/myarchitectai">MyArchitect AI</a> for ultra-fast presentation renders.</li>
+  <li><a href="/interior-design/archi-ai">Archi AI</a> for interior and exterior style variations.</li>
+  <li><a href="/landscape-design/landscapedesignsai">LandscapeDesignsAI</a> for quick site and yard concepts.</li>
 </ul>
 
 <h2>Final Takeaway</h2>

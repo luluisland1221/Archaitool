@@ -64,7 +64,8 @@ const ToolDetail = () => {
   useEffect(() => {
     if (tool) {
       // Update page title
-      document.title = `${tool.name} - ${tool.description} | Arch AI Tool`;
+      const seoTitle = tool.seoTitle || `${tool.name} - ${tool.description} | Arch AI Tool`;
+      document.title = seoTitle;
 
       // Update or create meta description
       let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
@@ -78,7 +79,8 @@ const ToolDetail = () => {
       const description = tool.detailedDescription || tool.description;
       const features = tool.keyFeatures?.slice(0, 3).join(', ') || '';
       const pricingInfo = tool.isPaid ? 'Paid tool' : 'Free tool available';
-      const metaDescText = `${tool.name}: ${description}. Key features: ${features}. ${pricingInfo}. Read reviews and explore this AI architecture tool.`;
+      const fallbackMeta = `${tool.name}: ${description}. Key features: ${features}. ${pricingInfo}. Read reviews and explore this AI architecture tool.`;
+      const metaDescText = tool.seoDescription || fallbackMeta;
       metaDescription.content = truncateWithEllipsis(metaDescText, 155);
 
       // Update or create canonical URL
@@ -91,7 +93,7 @@ const ToolDetail = () => {
         ogTitle.property = 'og:title';
         document.head.appendChild(ogTitle);
       }
-      ogTitle.content = `${tool.name} - ${tool.description}`;
+      ogTitle.content = tool.seoTitle || `${tool.name} - ${tool.description}`;
 
       let ogDescription = document.querySelector('meta[property="og:description"]') as HTMLMetaElement;
       if (!ogDescription) {
@@ -116,7 +118,7 @@ const ToolDetail = () => {
         twitterTitle.name = 'twitter:title';
         document.head.appendChild(twitterTitle);
       }
-      twitterTitle.content = `${tool.name} - ${tool.description}`;
+      twitterTitle.content = tool.seoTitle || `${tool.name} - ${tool.description}`;
 
       let twitterDescription = document.querySelector('meta[name="twitter:description"]') as HTMLMetaElement;
       if (!twitterDescription) {
