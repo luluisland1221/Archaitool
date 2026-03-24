@@ -1,12 +1,14 @@
-﻿# 鍩熷悕閲嶅畾鍚戦厤缃?- 浠呭鐞嗗煙鍚嶉噸瀹氬悜锛屼繚鐣欐煡璇㈠弬鏁板拰璺緞
+﻿# Domain redirects (preserve query params and path)
 
-# HTTP -> HTTPS 閲嶅畾鍚戯紙淇濈暀鎵€鏈夋煡璇㈠弬鏁板拰璺緞锛?http://archaitool.com/*  https://archaitool.com/:splat  301!
+# HTTP -> HTTPS (preserve query params and path)
+http://archaitool.com/*  https://archaitool.com/:splat  301!
 http://www.archaitool.com/*  https://archaitool.com/:splat  301!
 
-# HTTPS www 閲嶅畾鍚戯紙淇濈暀鎵€鏈夋煡璇㈠弬鏁板拰璺緞锛?https://www.archaitool.com/*  https://archaitool.com/:splat  301!
+# HTTPS www -> non-www (preserve query params and path)
+https://www.archaitool.com/*  https://archaitool.com/:splat  301!
 
 # === AUTO-GENERATED TOOL REDIRECTS START ===
-# (璇疯繍琛?scripts/update-tool-redirects.cjs 閲嶆柊鐢熸垚)
+# (Run scripts/update-tool-redirects.cjs to regenerate)
 /architectural-design/adobe-firefly  https://archaitool.com/design-tools/adobe-firefly  301!
 /architectural-design/ai-garden-design  https://archaitool.com/landscape-design/ai-garden-design  301!
 /architectural-design/ai4spaces  https://archaitool.com/interior-design/ai4spaces  301!
