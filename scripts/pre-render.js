@@ -3,6 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 import puppeteer from 'puppeteer';
 import { preview } from 'vite';
 
@@ -37,6 +38,26 @@ async function launchPreviewServer() {
   return { server, baseUrl };
 }
 
+async function launchBrowser() {
+  const launchOptions = {
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  };
+
+  try {
+    return await puppeteer.launch(launchOptions);
+  } catch (error) {
+    const message = String(error);
+    if (!message.includes('Could not find Chrome')) {
+      throw error;
+    }
+
+    console.log('Chrome not found. Installing browser for Puppeteer...');
+    execSync('npx puppeteer browsers install chrome', { stdio: 'inherit' });
+    return await puppeteer.launch(launchOptions);
+  }
+}
+
 async function prerender() {
   if (!fs.existsSync(DIST_DIR)) {
     console.error('❌ dist 目录不存在，请先运行 `npm run build`');
@@ -50,7 +71,15 @@ async function prerender() {
   console.log('🚀 开始预渲染，共', uniqueRoutes.length, '个路由\n');
 
   const { server, baseUrl } = await launchPreviewServer();
-  const browser = await puppeteer.launch({ headless: 'new' });
+  let browser;
+  try {
+    browser = await launchBrowser();
+  } catch (error) {
+    console.error('Failed to launch browser for prerender:', error);
+    process.exitCode = 1;
+    await new Promise(resolve => server.httpServer.close(resolve));
+    return;
+  }
   const page = await browser.newPage();
 
   try {

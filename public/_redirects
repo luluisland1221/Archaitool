@@ -301,3 +301,6 @@ https://www.archaitool.com/*  https://archaitool.com/:splat  301!
 /tool/yardflip  https://archaitool.com/landscape-design/yardflip  301!
 # === AUTO-GENERATED TOOL REDIRECTS END ===
 
+# SPA fallback for non-prerendered routes
+/*  /index.html  200
+

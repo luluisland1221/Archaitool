@@ -2286,8 +2286,7 @@ export const categories: Category[] = [
                     name: "Pro",
                     price: "$29",
                     billing: "monthly",
-                    discountedPrice: "$20",
-                    billing: "billed annually",
+                    discountedPrice: "$20 (billed annually)",
                     features: [
                       "1000 renders per month",
                       "Medium resolution up to 2k",
@@ -2300,8 +2299,7 @@ export const categories: Category[] = [
                     name: "Premium",
                     price: "$59",
                     billing: "monthly",
-                    discountedPrice: "$41",
-                    billing: "billed annually",
+                    discountedPrice: "$41 (billed annually)",
                     features: [
                       "3000 renders per month",
                       "High resolution up to 4k",
