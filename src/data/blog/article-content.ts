@@ -403,11 +403,88 @@ export const architectAIGuideArticle = `
 `;
 
 export const top10AITools2025Article = `
-<h2>The Ultimate 2025 Guide: 10 AI Tools Every Architect Should Know</h2>
+<h2>Best AI Tools for Architects in 2025 (Top 10, Free + Paid)</h2>
 
-<p>The architectural landscape is evolving at an unprecedented pace. As we move deeper into 2025, artificial intelligence has transformed from a novel technology into an essential tool for architects. The question is no longer whether to adopt AI, but which tools deliver real value in practice.</p>
+<p><strong>Updated:</strong> 2026-03-24</p>
 
-<p>This comprehensive guide analyzes the 10 most impactful AI architecture tools available today, helping you make informed decisions about which solutions deserve your time and investment.</p>
+<p>This is a decision-first list for architects who need fast answers. The tools below are organized so you can pick the right stack by workflow, budget, and output quality—without reading a 40-minute essay.</p>
+
+<div style="margin: 1.75rem 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb;">
+  <h3 style="margin-top: 0;">Quick picks (fast answers)</h3>
+  <ul>
+    <li><strong>Best free starter:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/interior-design/home-design-ai">Home Design AI</a></li>
+    <li><strong>Best floor plan automation:</strong> <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> or <a href="/architectural-design/floorplan-ai">Floorplan AI</a></li>
+    <li><strong>Best feasibility + site planning:</strong> <a href="/architectural-design/testfit">TestFit</a></li>
+    <li><strong>Fastest client-ready renders:</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a></li>
+    <li><strong>Best BIM/CAD plugin workflow:</strong> <a href="/architectural-design/arko-ai">Arko AI</a></li>
+  </ul>
+</div>
+
+<h2>Top 10 Quick Comparison (Free/Trial/Paid)</h2>
+
+<p>Access info is based on publicly listed plans and can change. Always confirm on the vendor site.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Tool</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Best For</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Access</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/ai-architectures">AI Architectures</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Rapid concept exploration</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Floor plans + feasibility</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/maket-ai">Maket AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Iterative design development</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/testfit">TestFit</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Site planning + pro formas</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free trial</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/floorplan-ai">Floorplan AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Residential layouts</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/myarchitectai">MyArchitect AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Fast client renders</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/arko-ai">Arko AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Revit/Rhino/SketchUp plugin</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/visualizee-ai">Visualizee AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Style exploration</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/interior-design/home-design-ai">Home Design AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free interior concepts</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free (no signup)</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/interior-design/roomgpt">RoomGPT</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Instant room makeovers</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free trial</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>The 4 Core AI Applications in Architecture</h2>
 
@@ -1281,9 +1358,77 @@ export const boutiqueStudioWorkflowArticle = `
 `;
 
 export const bestAiArchitectureImageGenerators2026Article = `
-<h2>Best AI Architecture Image Generators in 2026 (Tested & Ranked)</h2>
+<h2>Best AI Architecture Image Generators in 2026 (Ranked List)</h2>
 
-<p>Architects no longer pick AI image tools based on novelty. In 2026 the winners are the models that keep geometry believable, follow prompts precisely, and fit into real project workflows. This ranking blends architecture-focused benchmarks with hands-on tests to highlight the generators that consistently deliver usable visuals.</p>
+<p><strong>Updated:</strong> 2026-03-24</p>
+
+<p>Architects no longer pick AI image tools based on novelty. In 2026 the winners are the models that keep geometry believable, follow prompts precisely, and fit into real project workflows. This ranking blends architecture-focused criteria with workflow fit and published examples to highlight the generators that consistently deliver usable visuals.</p>
+
+<div style="margin: 1.75rem 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb;">
+  <h3 style="margin-top: 0;">Quick picks by goal</h3>
+  <ul>
+    <li><strong>Best prompt fidelity:</strong> <a href="/design-tools/nano-banana-pro">Nano Banana Pro</a></li>
+    <li><strong>Best control + iteration:</strong> <a href="/design-tools/flux-2">Flux 2</a></li>
+    <li><strong>Best mood/atmosphere:</strong> <a href="/design-tools/midjourney">Midjourney</a></li>
+    <li><strong>Best CAD-to-render speed:</strong> <a href="/architectural-design/archfine-ai">Archfine AI</a></li>
+    <li><strong>Best BIM/CAD plugin workflow:</strong> <a href="/architectural-design/arko-ai">Arko AI</a> or <a href="/architectural-design/evolvelab-veras">Veras</a></li>
+  </ul>
+</div>
+
+<h2>Access Snapshot (Free/Trial/Paid)</h2>
+
+<p>Access info is based on publicly listed plans and can change. Always confirm on the vendor site.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Tool</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Access</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/design-tools/nano-banana-pro">Nano Banana Pro</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/design-tools/flux-2">Flux 2</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Paid plans</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/design-tools/midjourney">Midjourney</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Paid plans</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/archfine-ai">Archfine AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Paid plans + trial</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/lookx">LookX</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Paid plans</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/rendair-ai">Rendair AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Paid plans</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/arko-ai">Arko AI</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/evolvelab-veras">Veras</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/chaos">Chaos</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free trial</td>
+    </tr>
+    <tr>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/testfit">TestFit</a></td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free trial</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>How We Ranked the Tools</h2>
 

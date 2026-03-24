@@ -72,9 +72,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'best-ai-architecture-image-generators-2026',
-    title: 'Best AI Architecture Image Generators in 2026 (Tested & Ranked)',
+    title: 'Best AI Architecture Image Generators in 2026 (Ranked List)',
     slug: 'best-ai-architecture-image-generators-2026-tested-ranked',
-    excerpt: 'A ranked 2026 guide to architecture image generators, highlighting prompt fidelity, workflow fit, and the best stacks for studios.',
+    excerpt: 'A ranked 2026 list of architecture image generators with quick picks, access snapshot, and workflow fit guidance.',
     content: bestAiArchitectureImageGenerators2026Article,
     author: {
       name: 'ArchAITool Team',
@@ -84,7 +84,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 12,
     tags: [blogTags[1].id, blogTags[0].id],
     seo: {
-      description: 'Ranked 2026 list of AI architecture image generators with practical guidance on prompt fidelity, workflow fit, and studio-ready tool stacks.',
+      description: 'Ranked 2026 list of AI architecture image generators with quick picks, access snapshot, and workflow fit guidance.',
       keywords: [
         'best AI architecture image generators 2026',
         'architecture AI rendering tools',
@@ -201,9 +201,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'top-10-ai-tools-2025',
-    title: 'The Ultimate 2025 Guide: 10 AI Tools Every Architect Should Know',
+    title: 'Best AI Tools for Architects in 2025 (Top 10, Free + Paid)',
     slug: 'top-10-ai-tools-every-architect-should-know-2025',
-    excerpt: 'Discover the 10 most impactful AI architecture tools for 2025. From concept generation to visualization, find the perfect tools to enhance your architectural practice.',
+    excerpt: 'Top 10 AI tools for architects in 2025 with a quick comparison of free trials, free tiers, and paid plans.',
     content: top10AITools2025Article,
     author: {
       name: 'ArchAITool Team',
@@ -213,10 +213,11 @@ export const blogPosts: BlogPost[] = [
     readTime: 8,
     tags: [blogTags[1].id, blogTags[0].id], // Tool Reviews, AI Architecture Tutorials
     seo: {
-      description: 'Comprehensive analysis of the top 10 AI architecture tools for 2025. Compare features, pricing, and use cases to find the perfect AI tools for your practice.',
+      description: 'Top 10 AI tools for architects in 2025 with a quick comparison of free tiers, trials, and paid plans.',
       keywords: [
+        'best AI tools for architects 2025',
         'AI architecture tools 2025',
-        'best AI tools for architects',
+        'free AI tools for architects',
         'architectural AI comparison',
         'AI design software',
         'AI Architectures',
