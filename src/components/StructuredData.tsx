@@ -17,6 +17,18 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ data }) => {
 
 // 生成工具详情页面的结构化数据
 export function generateToolStructuredData(tool: any) {
+  const offers = tool.pricing?.freeTier || tool.isPaid === false ? {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  } : undefined;
+
+  const aggregateRating = tool.userRating && tool.reviewCount && tool.reviewCount > 0 ? {
+    "@type": "AggregateRating",
+    "ratingValue": tool.userRating,
+    "ratingCount": tool.reviewCount
+  } : undefined;
+
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -25,15 +37,7 @@ export function generateToolStructuredData(tool: any) {
     "url": tool.url,
     "applicationCategory": "DesignApplication",
     "operatingSystem": "Web Browser",
-    "offers": tool.isPaid ? {
-      "@type": "Offer",
-      "price": "Paid",
-      "priceCurrency": "USD"
-    } : {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
+    "offers": offers,
     "creator": {
       "@type": "Organization",
       "name": "Arch AI Tool Directory",
@@ -45,11 +49,7 @@ export function generateToolStructuredData(tool: any) {
       "url": "https://archaitool.com"
     },
     "dateModified": tool.lastUpdated || new Date().toISOString().split('T')[0],
-    "aggregateRating": tool.userRating ? {
-      "@type": "AggregateRating",
-      "ratingValue": tool.userRating,
-      "ratingCount": "100+"
-    } : undefined,
+    "aggregateRating": aggregateRating,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `https://archaitool.com/${tool.category}/${tool.id}`

@@ -134,6 +134,18 @@ const ToolDetail = () => {
         existingJsonLd.remove();
       }
 
+      const offers = tool.pricing?.freeTier || tool.isPaid === false ? {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      } : undefined;
+
+      const aggregateRating = tool.userRating && tool.reviewCount && tool.reviewCount > 0 ? {
+        "@type": "AggregateRating",
+        "ratingValue": tool.userRating,
+        "ratingCount": tool.reviewCount
+      } : undefined;
+
       const structuredData = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -142,15 +154,7 @@ const ToolDetail = () => {
         "url": tool.url,
         "applicationCategory": "DesignApplication",
         "operatingSystem": "Web Browser",
-        "offers": tool.isPaid ? {
-          "@type": "Offer",
-          "price": "Paid",
-          "priceCurrency": "USD"
-        } : {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
+        "offers": offers,
         "creator": {
           "@type": "Organization",
           "name": "Arch AI Tool Directory"
@@ -160,11 +164,7 @@ const ToolDetail = () => {
           "name": "Arch AI Tool Directory"
         },
         "dateModified": tool.lastUpdated || new Date().toISOString().split('T')[0],
-        "aggregateRating": tool.userRating ? {
-          "@type": "AggregateRating",
-          "ratingValue": tool.userRating,
-          "ratingCount": "100+"
-        } : undefined
+        "aggregateRating": aggregateRating
       };
 
       const jsonLdScript = document.createElement('script');
