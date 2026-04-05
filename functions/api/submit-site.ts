@@ -38,65 +38,6 @@ const withCors = (response: Response, corsHeaders: Record<string, string> | null
   return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
 };
 
-type SubmissionPayload = {
-  id: string;
-  title: string;
-  url: string;
-  desc: string;
-  tags: string;
-  email: string;
-  submissionIp: string | null;
-  createdAt: string;
-};
-
-const getStringEnv = (env: Record<string, unknown>, key: string) =>
-  typeof env[key] === 'string' ? String(env[key]).trim() : '';
-
-const sendNotificationEmail = async (env: Record<string, unknown>, submission: SubmissionPayload) => {
-  const apiKey = getStringEnv(env, 'RESEND_API_KEY');
-  const toRaw = getStringEnv(env, 'NOTIFY_EMAIL_TO');
-  const from = getStringEnv(env, 'NOTIFY_EMAIL_FROM');
-
-  if (!apiKey || !toRaw || !from) {
-    return;
-  }
-
-  const to = toRaw.includes(',')
-    ? toRaw
-        .split(',')
-        .map((value) => value.trim())
-        .filter(Boolean)
-    : toRaw;
-
-  const subject = `New tool submission: ${submission.title}`;
-  const text = [
-    `Title: ${submission.title}`,
-    `URL: ${submission.url}`,
-    `Description: ${submission.desc}`,
-    `Tags: ${submission.tags || '-'}`,
-    `Email: ${submission.email || '-'}`,
-    `IP: ${submission.submissionIp || '-'}`,
-    `Created: ${submission.createdAt}`,
-    `ID: ${submission.id}`,
-  ].join('\n');
-
-  const res = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-      'User-Agent': 'archaitool/1.0',
-      'Idempotency-Key': submission.id,
-    },
-    body: JSON.stringify({ from, to, subject, text }),
-  });
-
-  if (!res.ok) {
-    const errText = await res.text().catch(() => '');
-    throw new Error(`Email send failed: ${res.status} ${res.statusText} ${errText}`.trim());
-  }
-};
-
 export const onRequest: PagesFunction = async ({ request, env }) => {
   const corsHeaders = buildCorsHeaders(request, env as Record<string, unknown>);
   if (corsHeaders === null) {
@@ -146,7 +87,6 @@ export const onRequest: PagesFunction = async ({ request, env }) => {
   const submissionIp = request.headers.get('CF-Connecting-IP') ?? null;
   const id = crypto.randomUUID();
   const db = env.DB as D1Database;
-  const createdAt = new Date().toISOString();
 
   try {
     await db
@@ -165,21 +105,6 @@ export const onRequest: PagesFunction = async ({ request, env }) => {
       }),
       corsHeaders
     );
-  }
-
-  try {
-    await sendNotificationEmail(env as Record<string, unknown>, {
-      id,
-      title,
-      url,
-      desc,
-      tags,
-      email,
-      submissionIp,
-      createdAt,
-    });
-  } catch (error) {
-    console.error('Email notification failed:', error);
   }
 
   return withCors(
