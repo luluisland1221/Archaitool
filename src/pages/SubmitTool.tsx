@@ -20,20 +20,27 @@ const SubmitTool = () => {
       email: form.get('email')?.toString().trim(),
     };
 
-    const res = await fetch(submitEndpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
+    try {
+      const res = await fetch(submitEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
 
-    if (res.ok) {
-      setMessage('Thanks! Your tool was submitted and is pending review.');
-      e.currentTarget.reset();
-    } else {
-      const err = await res.json().catch(() => ({}));
-      setMessage(`Submission failed: ${err.error || res.statusText}`);
+      if (res.ok) {
+        setMessage('Thanks! Your tool was submitted and is pending review.');
+        e.currentTarget.reset();
+      } else {
+        const err = await res.json().catch(() => ({}));
+        setMessage(`Submission failed: ${err.error || res.statusText}`);
+      }
+    } catch (error) {
+      setMessage('Submission failed: network error (see browser console).');
+      // Surface the underlying error for debugging.
+      console.error('Submit request failed:', error);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
