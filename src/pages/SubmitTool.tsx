@@ -11,7 +11,8 @@ const SubmitTool = () => {
     setMessage(null);
     setLoading(true);
 
-    const form = new FormData(e.currentTarget);
+    const formEl = e.currentTarget;
+    const form = new FormData(formEl);
     const payload = {
       title: form.get('title')?.toString().trim(),
       url: form.get('url')?.toString().trim(),
@@ -29,13 +30,14 @@ const SubmitTool = () => {
 
       if (res.ok) {
         setMessage('Thanks! Your tool was submitted and is pending review.');
-        e.currentTarget.reset();
+        formEl.reset();
       } else {
         const err = await res.json().catch(() => ({}));
         setMessage(`Submission failed: ${err.error || res.statusText}`);
       }
     } catch (error) {
-      setMessage('Submission failed: network error (see browser console).');
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      setMessage(`Submission failed: ${message}`);
       // Surface the underlying error for debugging.
       console.error('Submit request failed:', error);
     } finally {
