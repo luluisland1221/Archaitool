@@ -1,8 +1,55 @@
 /// <reference types="@cloudflare/workers-types" />
 
-export const onRequestPost: PagesFunction = async ({ request, env }) => {
+const DEFAULT_ALLOWED_ORIGINS = ['https://archaitool.com', 'https://www.archaitool.com'];
+
+const getAllowedOrigins = (env: Record<string, unknown>) => {
+  const raw = typeof env.ALLOWED_ORIGINS === 'string' ? env.ALLOWED_ORIGINS : '';
+  const parsed = raw
+    .split(',')
+    .map((value) => value.trim())
+    .filter(Boolean);
+  return parsed.length ? parsed : DEFAULT_ALLOWED_ORIGINS;
+};
+
+const buildCorsHeaders = (request: Request, env: Record<string, unknown>) => {
+  const origin = request.headers.get('Origin');
+  if (!origin) {
+    return {};
+  }
+  const allowedOrigins = getAllowedOrigins(env);
+  if (!allowedOrigins.includes(origin)) {
+    return null;
+  }
+  return {
+    'Access-Control-Allow-Origin': origin,
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Max-Age': '86400',
+    Vary: 'Origin',
+  };
+};
+
+const withCors = (response: Response, corsHeaders: Record<string, string> | null) => {
+  if (!corsHeaders) {
+    return response;
+  }
+  const headers = new Headers(response.headers);
+  Object.entries(corsHeaders).forEach(([key, value]) => headers.set(key, value));
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+};
+
+export const onRequest: PagesFunction = async ({ request, env }) => {
+  const corsHeaders = buildCorsHeaders(request, env as Record<string, unknown>);
+  if (corsHeaders === null) {
+    return new Response('Forbidden', { status: 403 });
+  }
+
+  if (request.method === 'OPTIONS') {
+    return new Response(null, { status: 204, headers: corsHeaders });
+  }
+
   if (request.method !== 'POST') {
-    return new Response('Method Not Allowed', { status: 405 });
+    return withCors(new Response('Method Not Allowed', { status: 405 }), corsHeaders);
   }
 
   // Some clients (or curl on Windows) may send bodies that parse5 rejects via request.json().
@@ -12,10 +59,13 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
   try {
     body = raw ? JSON.parse(raw) : {};
   } catch {
-    return new Response(JSON.stringify({ error: 'Invalid JSON body' }), {
-      status: 400,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return withCors(
+      new Response(JSON.stringify({ error: 'Invalid JSON body' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      }),
+      corsHeaders
+    );
   }
 
   const title = (body.title || '').trim();
@@ -25,10 +75,13 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
   const email = (body.email || '').trim();
 
   if (!title || !url || !desc) {
-    return new Response(JSON.stringify({ error: 'title, url, desc are required' }), {
-      status: 400,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return withCors(
+      new Response(JSON.stringify({ error: 'title, url, desc are required' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      }),
+      corsHeaders
+    );
   }
 
   const submissionIp = request.headers.get('CF-Connecting-IP') ?? null;
@@ -45,14 +98,20 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
       .bind(id, title, url, desc, tags, email, submissionIp)
       .run();
   } catch (error: any) {
-    return new Response(JSON.stringify({ error: error.message ?? 'DB insert failed' }), {
-      status: 400,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return withCors(
+      new Response(JSON.stringify({ error: error.message ?? 'DB insert failed' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      }),
+      corsHeaders
+    );
   }
 
-  return new Response(JSON.stringify({ id, message: 'ok' }), {
-    status: 200,
-    headers: { 'Content-Type': 'application/json' },
-  });
+  return withCors(
+    new Response(JSON.stringify({ id, message: 'ok' }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    }),
+    corsHeaders
+  );
 };
