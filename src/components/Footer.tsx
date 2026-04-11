@@ -26,6 +26,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/sbti" className="text-gray-400 hover:text-white">
+                  SBTI Personality Test
+                </Link>
+              </li>
+              <li>
                 <Link to="/tools/architecture-spatial" className="text-gray-400 hover:text-white">
                   Architecture & Design
                 </Link>

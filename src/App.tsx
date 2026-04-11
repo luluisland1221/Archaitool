@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import ContactSubmissions from './pages/ContactSubmissions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import Sbti from './pages/Sbti';
 import ResearchManagement from './pages/ResearchManagement';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
@@ -41,6 +42,7 @@ const TitleUpdater = () => {
       '/tools/landscape-design': 'Landscape Design Tools | Arch AI Tool',
       '/tools/general-design': 'General Design Tools | Arch AI Tool',
       '/tools/real-estate': 'Real Estate Tools | Arch AI Tool',
+      '/sbti': 'SBTI Personality Test | Arch AI Tool',
       '/admin/research': 'Research Management | Arch AI Tool',
       // New category-based tool URLs
       '/architectural-design': 'Architectural Design AI Tools | Arch AI Tool',
@@ -91,6 +93,7 @@ const TitleUpdater = () => {
       '/tools/landscape-design': 'Discover AI tools for landscape design and garden planning. Create stunning outdoor spaces with AI-powered landscape architecture and design solutions.',
       '/tools/general-design': 'Explore multi-domain AI design tools. Find versatile AI solutions for various design disciplines including architectural visualization and creative design.',
       '/tools/real-estate': 'Find AI tools for real estate visualization and property marketing. Enhance property listings with AI-powered virtual staging, 3D tours, and design visualization.',
+      '/sbti': 'Take the SBTI personality test - a playful 15-dimension profile for architecture and design teams. For entertainment only.',
     };
 
     if (location.pathname.startsWith('/tool/')) {
@@ -138,6 +141,7 @@ function App() {
             <Route path="/contact/submissions" element={<ContactSubmissions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/sbti" element={<Sbti />} />
             <Route path="/submit" element={<SubmitTool />} />
             {/* Admin routes for research management */}
             <Route path="/admin/research" element={<ResearchManagement />} />
