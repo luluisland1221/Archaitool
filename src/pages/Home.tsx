@@ -132,26 +132,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="border-t border-gray-200 bg-gray-50 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-6 rounded-xl border border-gray-200 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
-            <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-gray-500">Fun break</p>
-              <h2 className="mt-2 text-2xl font-bold text-gray-900">SBTI Personality Test</h2>
-              <p className="mt-2 text-gray-600">
-                A playful 15-dimension personality test with chaotic energy and surprisingly sharp notes. Take it for fun only.
-              </p>
-            </div>
-            <Link
-              to="/sbti"
-              className="inline-flex items-center justify-center rounded-xl bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-900"
-            >
-              Take the SBTI test
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Tools by Category */}
       {configuredCategories.map((category) => (
         <section key={category.id} className="py-16 border-t border-gray-200">
