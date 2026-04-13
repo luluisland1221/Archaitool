@@ -70,7 +70,8 @@ async function generateSitemap() {
     { path: '/contact', changefreq: 'monthly', priority: '0.8' },
     { path: '/privacy-policy', changefreq: 'yearly', priority: '0.6' },
     { path: '/terms-of-service', changefreq: 'yearly', priority: '0.6' },
-    { path: '/blog', changefreq: 'weekly', priority: '0.8' }
+    { path: '/blog', changefreq: 'weekly', priority: '0.8' },
+    { path: '/links.html', changefreq: 'monthly', priority: '0.5' }
   ];
 
   staticPages.forEach(page =>
