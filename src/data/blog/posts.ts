@@ -14,8 +14,10 @@ import {
   architecturePromptLibraryArticle,
   sketchupAiPluginsArticle
 } from './article-content';
+import { autoBlogPosts } from './auto-posts';
 
 export const blogPosts: BlogPost[] = [
+  ...autoBlogPosts,
   {
     id: 'sketchup-ai-3-plugins-massing-to-client-ready-renders',
     title: 'SketchUp + AI: 3 Plugins That Turn Massing Models into Client-Ready Renders in Seconds',
