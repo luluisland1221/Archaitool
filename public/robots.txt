@@ -54,6 +54,98 @@ User-agent: BaiduSpider
 Allow: /
 Crawl-delay: 2
 
+# AI crawlers (explicitly allowed, same rules as default)
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /.well-known/
+Disallow: /*?
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+
 # Block unwanted crawlers
 User-agent: AhrefsBot
 Disallow: /

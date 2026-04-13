@@ -107,7 +107,7 @@ const Home = () => {
               Discover the Best Architecture AI Tools
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200">
-              Complete architecture ai tools list for design, visualization, and planning. Find free ai tools for architecture and professional solutions for architecture plans, portfolio creation, and interior design tools. Your gateway to landscape architecture solutions and comprehensive ai tools for interior design.
+              Arch AI Tool is a curated directory of AI software for architecture, interior design, landscape planning, and real estate visualization. Compare rendering, floor plan, and staging tools with use cases, pricing signals, and workflow notes so you can shortlist the right stack fast.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {configuredCategories.map((category) => (

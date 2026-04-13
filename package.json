@@ -9,7 +9,9 @@
     "build:ssg": "npm run build && node scripts/pre-render.js",
     "preview": "vite preview",
     "lint": "eslint .",
-    "indexnow": "node scripts/indexnow-submit.mjs"
+    "indexnow": "node scripts/indexnow-submit.mjs",
+    "generate:sitemap": "node generate-sitemap.cjs",
+    "generate:tools-json": "node generate-tools-json.cjs"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

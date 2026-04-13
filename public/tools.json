@@ -1,0 +1,3441 @@
+{
+  "generatedAt": "2026-04-13",
+  "site": "https://archaitool.com",
+  "totalTools": 68,
+  "categories": [
+    {
+      "id": "architecture-spatial",
+      "name": "Architecture & Spatial Design",
+      "description": "AI-powered architectural generation and BIM integration tools",
+      "subcategories": [
+        {
+          "id": "architectural-design",
+          "name": "Architectural Design & Generation",
+          "description": "AI platforms for architectural design and building generation",
+          "tools": [
+            {
+              "id": "aitwo",
+              "name": "AiTwo",
+              "description": "AiTwo is a comprehensive AI-powered design platform that revolutionizes interior, exterior, and architectural design using cutting-edge artificial intelligence technology. With over 306,000 users and 1.6 million designs generated, AiTwo enables both professionals and homeowners to transform spaces in minutes rather than months. The platform offers 5000+ AI tools including exterior remodeling, interior design, virtual staging, and architectural visualization.",
+              "vendorUrl": "https://aitwo.co/",
+              "directoryUrl": "https://archaitool.com/architectural-design/aitwo",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$4.99/week",
+                    "billing": "weekly"
+                  },
+                  {
+                    "name": "AITwo Plus",
+                    "price": "$29/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "AITwo Mini",
+                    "price": "$10/month",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "5000+ AI design tools included",
+                "Interior and exterior remodeling AI",
+                "Virtual staging for real estate",
+                "Sketch to reality conversion",
+                "AI house painter and color suggestions",
+                "Landscaping and yard design AI",
+                "Architecture design AI",
+                "Real-time design generation in 30 seconds",
+                "Works on all devices",
+                "Cancel anytime subscription model"
+              ],
+              "useCases": [
+                "Home remodeling and renovation projects",
+                "Interior design for residential and commercial spaces",
+                "Exterior home design and curb appeal improvement",
+                "Virtual staging for real estate listings",
+                "Architectural concept visualization",
+                "Landscape and garden design planning",
+                "Real estate marketing materials",
+                "Design inspiration and ideation"
+              ],
+              "integrations": [
+                "Image upload for style reference",
+                "Multiple device compatibility",
+                "Social media sharing integration"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "maket-ai",
+              "name": "Maket AI",
+              "description": "Maket AI is a specialized generative AI platform for residential design that helps architects, developers, and homeowners quickly generate multiple housing design solutions. By inputting room quantities, dimension requirements, or natural language descriptions, the platform can generate hundreds of floor layout options that comply with local regulations within seconds, significantly improving design efficiency and solution diversity.",
+              "vendorUrl": "https://www.maket.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/maket-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$30/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Annual Plan",
+                    "price": "$288/year",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered residential floor plan generation - creates hundreds of layout options in seconds",
+                "Customizable room dimensions and adjacency constraints",
+                "Real-time collaboration - share designs with clients and team members",
+                "Virtual design assistant - professional guidance on materials and costs",
+                "Regulatory compliance assistant - checks local building codes and zoning requirements",
+                "Virtual designer - switch between different architectural and design styles instantly",
+                "Multi-format export - supports DXF, PDF, PNG formats",
+                "Natural language design input - describe design needs in plain text (coming soon)"
+              ],
+              "useCases": [
+                "Residential architectural design",
+                "Multi-family housing planning",
+                "Renovation and remodeling projects",
+                "Pre-design feasibility studies",
+                "Client presentations and iterations",
+                "Zoning compliance verification"
+              ],
+              "integrations": [
+                "AutoCAD (via DXF export)",
+                "BIM software workflows",
+                "PDF documentation pipelines"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-27"
+            },
+            {
+              "id": "arkdesign-ai",
+              "name": "Arkdesign AI",
+              "description": "Arkdesign AI is the pioneering AI platform specifically designed for architectural schematic design, focusing on multi-family and mixed-use development projects. With over 19,609 users across 126 countries and 29,399 projects created, the platform leverages patented AI technology (US Patent No. 11,972,174) to automate floor plan generation, feasibility studies, and unit mix optimization while ensuring compliance with US building codes and ordinances.",
+              "vendorUrl": "https://arkdesign.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/arkdesign-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Lite",
+                    "price": "Free",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$399",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Premium",
+                    "price": "$3,600",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Patented AI technology (US Patent No. 11,972,174) for schematic design",
+                "Automated floor plan generation for multi-family and mixed-use projects",
+                "Real-time feasibility studies and unit mix optimization",
+                "US building code and ordinance compliance verification",
+                "Profitability analysis with real-time financial metrics",
+                "Density optimization algorithms for maximum efficiency",
+                "Lot editor for precise site constraints and boundary conditions",
+                "Automated unit configuration and layout suggestions",
+                "Interactive design iteration and modification tools",
+                "Export capabilities to industry-standard formats (DWG, DXF, PDF)"
+              ],
+              "useCases": [
+                "Multi-family residential building design and optimization",
+                "Mixed-use development planning and feasibility analysis",
+                "Urban density optimization and space efficiency studies",
+                "Pre-development feasibility studies for real estate projects",
+                "Unit mix analysis and profitability optimization",
+                "Building code compliance verification and documentation",
+                "Large-scale residential project planning and design",
+                "Architectural schematic design automation for professionals",
+                "Real estate development project assessment and planning"
+              ],
+              "integrations": [
+                "AutoCAD and Revit workflows",
+                "BIM software integration",
+                "Excel reporting pipelines",
+                "Custom API for enterprise clients"
+              ],
+              "searchAliases": [
+                "arkdesign ai",
+                "arkdesign ai architecture tool"
+              ],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "architechtures",
+              "name": "Architechtures",
+              "description": "Architechtures is a leading generative AI-powered building design platform that serves over 170+ countries worldwide, processing 110k+ units and 12M+ square meters monthly. The platform revolutionizes residential design processes by enabling architects and developers to generate optimal building designs in minutes rather than months. With real-time AI architecture generation and seamless BIM workflow integration, Architechtures maintains full compatibility with traditional design processes while dramatically accelerating project development cycles.",
+              "vendorUrl": "https://architechtures.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/architechtures",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$49",
+                    "billing": "monthly (billed yearly at $588)"
+                  },
+                  {
+                    "name": "Business",
+                    "price": "$294",
+                    "billing": "monthly (billed yearly at $3,528)"
+                  },
+                  {
+                    "name": "Enterprise",
+                    "price": "Custom",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Real-time generative AI building design in seconds",
+                "2D/3D modeling and visualization with cloud-based editing",
+                "BIM solution creation and export (IFC, DXF, XLSX formats)",
+                "Cost estimation and real-time financial analysis",
+                "Regulatory compliance checking and urban parameter verification",
+                "Environment integration via OpenStreetMap (OSM)",
+                "Dynamic terrain adaptation and topography analysis",
+                "Assisted below-grade parking generation",
+                "Custom presets and templates for design parameters",
+                "Collaborative design sharing with view/edit modes",
+                "Unlimited AI-assisted generations and iterations"
+              ],
+              "useCases": [
+                "Feasibility studies and conceptual design for residential developments",
+                "Real-time architectural iteration and optimization",
+                "Building code compliance verification and urban planning",
+                "Cost estimation and financial feasibility analysis",
+                "Multi-family housing design and unit mix optimization",
+                "Terrain adaptation and environmental integration analysis",
+                "Below-grade parking layout design and optimization",
+                "BIM model generation for downstream workflow integration",
+                "Real estate development planning and client presentations",
+                "Collaborative design review and team coordination"
+              ],
+              "integrations": [
+                "BIM standards (IFC export)",
+                "DXF format support",
+                "XLSX data export",
+                "OpenStreetMap integration"
+              ],
+              "searchAliases": [
+                "architectures",
+                "architechtures",
+                "architectures ai",
+                "architechtures ai"
+              ],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "autodesk-forma",
+              "name": "Autodesk Forma",
+              "description": "Autodesk Forma is a comprehensive AI-powered cloud software specifically designed for data-driven planning in architecture and real estate development. As part of the Autodesk AEC Collection, Forma combines sophisticated AI automations with contextual site data to help architects, urban planners, and developers make informed decisions faster. The platform delivers 90% efficiency improvements through task consolidation and enables teams to save up to 70% time on volume studies while maintaining seamless integration with existing BIM workflows.",
+              "vendorUrl": "https://www.autodesk.com/products/forma/overview",
+              "directoryUrl": "https://archaitool.com/architectural-design/autodesk-forma",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Annual Subscription",
+                    "price": "$307",
+                    "billing": "monthly (billed annually at $3,675/year)"
+                  },
+                  {
+                    "name": "Monthly Subscription",
+                    "price": "$460",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "AEC Collection",
+                    "price": "Included at no extra cost",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered generative design with rapid site optioneering",
+                "Real-time environmental analysis (noise, wind, embodied carbon, sunlight)",
+                "Intuitive 3D modeling and massing concept creation tools",
+                "Contextual site data integration with geolocated project setup",
+                "Automatic area metrics generation and real-time calculations",
+                "Forma Board for team collaboration and client presentations",
+                "Seamless geolocated Revit project conversion workflow",
+                "Cloud-based processing with generous monthly generation limits",
+                "Comprehensive API and extension ecosystem for customization",
+                "Multi-format integration (Revit, Rhino, Dynamo, ACC, AutoCAD)",
+                "Below-grade terrain adaptation and topography analysis",
+                "Automated design workflow consolidation and optimization"
+              ],
+              "useCases": [
+                "Pre-design feasibility studies with data-driven insights",
+                "Site context analysis and environmental assessment",
+                "Urban planning and large-scale development projects",
+                "Real-time environmental analysis (noise, wind, carbon, sunlight)",
+                "Rapid concept design and massing iteration studies",
+                "Zoning compliance and urban parameter verification",
+                "Real estate development planning and optimization",
+                "Multi-family housing and mixed-use development design",
+                "Terrain adaptation and topography integration studies",
+                "Collaborative design review with Forma Board presentations"
+              ],
+              "integrations": [
+                "Revit with seamless workflow",
+                "Rhino/Grasshopper integration",
+                "Dynamo for automation",
+                "Autodesk Construction Cloud (ACC)",
+                "AutoCAD compatibility",
+                "Custom API development"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "bricsys",
+              "name": "Bricsys BIM",
+              "description": "Bricsys BIM is an AI-driven Building Information Modeling solution built on a DWG-compatible CAD platform, rated 4.6/5 by 133 users. As part of the BricsCAD family and Hexagon ecosystem, it offers the easiest path for CAD users to deliver BIM data with pricing starting from $1,060/year. The platform combines familiar 2D drafting tools with powerful 3D modeling and BIM capabilities, enabling professionals to transition seamlessly to BIM workflows while maintaining full DWG compatibility and industry-standard IFC support.",
+              "vendorUrl": "https://www.bricsys.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/bricsys",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "BIM",
+                    "price": "$1,060",
+                    "billing": "yearly"
+                  },
+                  {
+                    "name": "Ultimate",
+                    "price": "$1,180",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-driven scan-to-BIM tools for building scan processing",
+                "Automatic conversion of 2D/3D assets to BIM data",
+                "Building documentation and detailing with AI assistance",
+                "Native point cloud processing and modeling capabilities",
+                "DWG-based BIM platform with full compatibility",
+                "Industry-standard IFC format support and sharing",
+                "Model-based quantity takeoff for cost estimation",
+                "Automated detailing tools reducing errors and oversights",
+                "Seamless 2D to 3D workflow transition",
+                "Single platform for modeling and documentation",
+                "30-day free trial with no credit card required"
+              ],
+              "useCases": [
+                "Scan-to-BIM workflows with AI-powered processing",
+                "Building documentation and automated detailing generation",
+                "Model-based quantity takeoff for accurate cost estimation",
+                "Seamless 2D to 3D BIM conversion and workflow transition",
+                "Shop drawing production from BIM models",
+                "Point cloud modeling and analysis for existing structures",
+                "Architectural design documentation and detailing",
+                "Engineering design and fabrication workflows",
+                "Construction planning and project management",
+                "Facility management and maintenance documentation"
+              ],
+              "integrations": [
+                "DWG format (full compatibility)",
+                "IFC (Industry Foundation Classes)",
+                "Point cloud data processing",
+                "Third-party applications via API"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "testfit",
+              "name": "TestFit",
+              "description": "TestFit is a revolutionary real estate feasibility platform that transforms the site planning and development process with AI-powered optimization. Used by over 3,300 professionals, TestFit enables architects, developers, and urban planners to validate pro formas against actual layouts, generate optimized solutions instantly, and make data-driven decisions. The platform has helped users save an average of $90,000 per year on feasibility studies and win significant project fees.",
+              "vendorUrl": "https://www.testfit.io/",
+              "directoryUrl": "https://archaitool.com/architectural-design/testfit",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Urban Planner",
+                    "price": "$100/month",
+                    "billing": "yearly"
+                  },
+                  {
+                    "name": "Data Maps",
+                    "price": "$250/month",
+                    "billing": "yearly"
+                  },
+                  {
+                    "name": "Site Solver",
+                    "price": "Starting at $8,000/year",
+                    "billing": "yearly"
+                  },
+                  {
+                    "name": "Enterprise",
+                    "price": "Custom pricing",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Automated massing layouts in hours, not days",
+                "Instant cost models and quantity takeoffs",
+                "Real-time deal prototyping and comparison",
+                "Generative design with building optimization",
+                "3D context visualization with terrain data",
+                "Zoning and environmental data integration",
+                "Parking layout with custom stalls",
+                "Direct Revit, CAD, and SketchUp integrations",
+                "Live feasibility reports and collaboration",
+                "Multi-tenant typology solutions"
+              ],
+              "useCases": [
+                "Real estate feasibility analysis",
+                "Site planning and optimization",
+                "Multi-family housing design",
+                "Mixed-use development planning",
+                "Pro forma validation",
+                "Zoning compliance studies",
+                "Parking layout optimization",
+                "Environmental impact assessment"
+              ],
+              "integrations": [
+                "Revit with direct push functionality",
+                "AutoCAD for detailed documentation",
+                "SketchUp for conceptual modeling",
+                "Excel for financial analysis",
+                "PDF for presentations",
+                "Custom API for enterprise solutions"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "floorplan-ai",
+              "name": "Floorplan AI",
+              "description": "Floorplan AI is a specialized AI-powered platform that enables users to generate floor plan ideas quickly and efficiently. With the tagline 'Get Inspired. Personalize. Integrate,' the platform offers a complete workflow from AI generation to customization and professional export. Users can create personalized floor plans through an exclusive web editor and export them in DXF format for seamless integration into their projects, significantly reducing time spent on architectural planning.",
+              "vendorUrl": "https://www.floorplan-ai.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/floorplan-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$5",
+                    "billing": "onetime"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$39",
+                    "billing": "onetime"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered floor plan generation with custom requirements",
+                "Exclusive web-based editor for easy customization",
+                "Professional DXF export for CAD software integration",
+                "Multiple room types and configurations (bedrooms, kitchens, living rooms, bathrooms, garages)",
+                "Real-time floor plan assistance and chat support",
+                "Show dimensions and measurement tools",
+                "Design elements library for enhanced customization",
+                "PNG export for sharing and presentations",
+                "Sample DXF files available for quality preview"
+              ],
+              "useCases": [
+                "Residential home design and remodeling",
+                "Real estate property visualization and marketing",
+                "Architectural planning and concept development",
+                "Construction project planning and documentation",
+                "Interior design layout optimization",
+                "Space planning and furniture arrangement",
+                "Quick prototyping for client presentations"
+              ],
+              "integrations": [
+                "DXF format for AutoCAD and other CAD software",
+                "PNG format for presentations and sharing",
+                "Web-based platform accessible from any browser"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "floor-plan-ai",
+              "name": "Floor-Plan.ai",
+              "description": "Floor-Plan.ai is a browser-based AI platform that turns room descriptions, sketches, or uploaded layouts into professional floor plans within seconds. Designed for architects, builders, and design teams, the tool offers multiple layout suggestions, advanced spatial reasoning, and enterprise-grade security with end-to-end encryption and GDPR compliance. Built-in collaboration lets teams co-edit layouts in real time, leave comments, and manage versions—all without installing desktop software.",
+              "vendorUrl": "https://floor-plan.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/floor-plan-ai",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "AI-powered layout generation from text prompts or room uploads",
+                "Multiple design options with instant refinements",
+                "Professional measurement logic and spatial reasoning",
+                "Real-time team collaboration with comments and version history",
+                "End-to-end encryption and GDPR-ready workflows",
+                "Cloud backup with automatic redundancy",
+                "Mobile-responsive interface (desktop, tablet, mobile)",
+                "Enterprise-ready security and compliance controls"
+              ],
+              "useCases": [
+                "Apartment and house floor planning",
+                "Architectural drafts and schematic design",
+                "Commercial space planning",
+                "Renovation and remodel planning",
+                "Interior layout optimization",
+                "Contractor collaboration and handoff"
+              ],
+              "integrations": [
+                "Shared cloud workspace for teams and clients",
+                "Import of reference sketches or outlines",
+                "Download-ready files for CAD/BIM pipelines"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2026-01-07"
+            },
+            {
+              "id": "ai-architectures",
+              "name": "AI Architectures",
+              "description": "AI Architectures is a revolutionary AI-powered platform that generates professional architectural designs in just 30 seconds with a single click. Serving over 10,000 happy architects and having created 50,000+ designs, the platform eliminates manual drafting while delivering professional-grade designs, floor plans, and photorealistic renderings that meet industry standards.",
+              "vendorUrl": "https://ai-architectures.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/ai-architectures",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Professional",
+                    "price": "Contact for pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI Architecture Generator (30-second designs)",
+                "Professional floor plan generation",
+                "Photorealistic architectural rendering",
+                "Hand sketch to digital conversion",
+                "Code compliance suggestions",
+                "Image editor and enhancement tools",
+                "Style libraries and prompt recipes",
+                "Multiple export formats (DXF, PDF, PNG)"
+              ],
+              "useCases": [
+                "Residential design projects",
+                "Commercial and retail spaces",
+                "Mixed-use developments",
+                "Industrial architecture",
+                "Urban planning concepts",
+                "Rapid prototyping and iterations"
+              ],
+              "integrations": [
+                "Sketch to digital conversion",
+                "DXF export for CAD integration",
+                "PDF export for documentation"
+              ],
+              "searchAliases": [
+                "ai architectures",
+                "architectures ai"
+              ],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "3d-house-planner",
+              "name": "3D House Planner",
+              "description": "3D House Planner is a completely free 3D home design software accessible through any browser with no installation required. The platform supports professional-grade design capabilities including GLB, GLTF, OBJ, and Babylon model imports, PBR materials, terrain modeling, and the ability to design up to 50 floors. Your designs remain completely private with no login required, and the software is free for both personal and commercial purposes, supported by optional donations.",
+              "vendorUrl": "https://3dhouseplanner.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/3d-house-planner",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Completely free with no installation required",
+                "Browser-based 3D design accessible anywhere",
+                "Supports GLB, GLTF, OBJ, and Babylon 3D models",
+                "Design up to 50 floors for complex buildings",
+                "Physically Based Rendering (PBR) materials",
+                "Advanced terrain modeling and painting tools",
+                "Thousands of objects in design catalog",
+                "No login required - complete privacy",
+                "Free for personal and commercial use",
+                "Optional donation support for development"
+              ],
+              "useCases": [
+                "Home design and renovation planning",
+                "DIY home improvement projects",
+                "Apartment layout design",
+                "Interior space planning",
+                "Real estate visualization",
+                "Educational purposes and learning"
+              ],
+              "integrations": [
+                "3D model import (GLB, GLTF, OBJ, Babylon)",
+                "Scene export for continued work",
+                "Image-based AI floor plan generation"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "arcadium-3d",
+              "name": "Arcadium 3D",
+              "description": "Arcadium 3D is a comprehensive browser-based 3D design platform that has earned an impressive 4.9 rating from 1,043 reviews. Offering fast, intuitive house and interior design capabilities without software installation, Arcadium combines clean design tools with powerful AI visualization. Available in 12 languages and supporting both free and pro plans, the platform enables professionals and DIY enthusiasts to create stunning 3D designs, collaborate in real-time, and generate photorealistic visualizations from any browser.",
+              "vendorUrl": "https://arcadium3d.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/arcadium-3d",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "Contact for pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Multiple view modes (top-down, floor plan, isometric, first-person)",
+                "AI-powered visualization generation",
+                "Large 3D model library (furniture, plants, kitchen elements)",
+                "Parametric components (stairs, windows, doors)",
+                "Millimeter-level precision tools",
+                "Realistic lighting controls",
+                "Instant cloud-based collaboration",
+                "Virtual tour capabilities"
+              ],
+              "useCases": [
+                "Interior design mock-ups",
+                "Home renovation planning",
+                "Kitchen and bathroom design",
+                "Landscape and garden design",
+                "Architectural concept visualization",
+                "Client presentations and virtual tours"
+              ],
+              "integrations": [
+                "URL-based sharing for collaboration",
+                "2D floor plan exports",
+                "Elevation drawings for builders",
+                "Mobile device compatibility"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            }
+          ]
+        },
+        {
+          "id": "architectural-visualization",
+          "name": "Architectural Visualization & Rendering",
+          "description": "AI-powered visualization and rendering solutions",
+          "tools": [
+            {
+              "id": "myarchitectai",
+              "name": "MyArchitect AI",
+              "description": "MyArchitect AI is a revolutionary AI-powered rendering platform that transforms architectural and interior designs into photorealistic renders in under 10 seconds. Used by hundreds of architects and interior designers worldwide, the platform has generated over 1,500,000 renders to date. With cloud-based processing, no hardware requirements, and zero learning curve, it democratizes high-quality architectural visualization.",
+              "vendorUrl": "https://myarchitectai.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/myarchitectai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$29/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro Annual",
+                    "price": "$249/year",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Photorealistic AI rendering in under 10 seconds",
+                "One-click rendering engine for instant results",
+                "Style transfer for endless design variations",
+                "AI render editing for material and object replacement",
+                "AI enhancer for improving low-resolution renders",
+                "Compatible with any CAD or 3D modeling software",
+                "Runs entirely in browser - no installation needed",
+                "Supports JPG, PNG, and WEBP formats",
+                "Private and secure cloud processing",
+                "Works on any device (desktop, mobile, tablet)"
+              ],
+              "useCases": [
+                "Architectural visualization and concept development",
+                "Interior design rendering and presentation",
+                "Furniture product visualization",
+                "Real estate marketing materials",
+                "Client presentations and design approvals",
+                "Sketch to render conversion",
+                "Design iteration and style exploration",
+                "Virtual staging and furnishing"
+              ],
+              "integrations": [
+                "SketchUp",
+                "Archicad",
+                "Revit",
+                "Rhino",
+                "Chief Architect",
+                "Vectorworks",
+                "API for custom integrations"
+              ],
+              "searchAliases": [
+                "myarchitect ai",
+                "my architect ai",
+                "myarchitectai"
+              ],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "visualizee-ai",
+              "name": "Visualizee AI",
+              "description": "Visualizee AI is a powerful AI-powered visualization platform that transforms ideas into photorealistic renders in seconds, not minutes. Trusted by over 10,000 users worldwide with an impressive 4.8/5 rating, the platform eliminates complex software learning curves by offering multiple AI models for converting sketches, wireframes, and concepts into stunning visualizations. Visualizee AI supports professionals across architecture, interior design, product development, and marketing industries with features like AI rendering, text-to-image generation, 4K upscaling, motion mode, and comprehensive project organization.",
+              "vendorUrl": "https://visualizee.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/visualizee-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Hobby",
+                    "price": "$15/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$35/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Max",
+                    "price": "$80/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered rendering from text prompts",
+                "Sketch-to-photorealistic conversion",
+                "Text-to-image generation",
+                "4K upscaling for professional presentations",
+                "Motion mode for dynamic visualizations",
+                "Project organization capabilities",
+                "Multiple rendering modes (Inspiration, Render, Motion)",
+                "Infinite canvas workspace (Figma-like interface)",
+                "Chat-based prompting assistance",
+                "Real-time processing in seconds",
+                "Trusted by 10,000+ users with 4.8/5 rating"
+              ],
+              "useCases": [
+                "Architectural visualization",
+                "Interior design concepts",
+                "Urban planning presentations",
+                "Product design iterations",
+                "Marketing campaign visuals",
+                "Real estate development previews",
+                "Automotive and furniture design"
+              ],
+              "integrations": [
+                "PNG/JPG image input",
+                "FBX/OBJ/GLTF 3D model support",
+                "Web-based standalone platform",
+                "4K image export"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-01-31"
+            },
+            {
+              "id": "arko-ai",
+              "name": "Arko AI",
+              "description": "Arko AI is a revolutionary AI rendering plugin that enables architects and designers to 'Reimagine the rendering process with the click of a button.' The platform seamlessly integrates with major CAD software including SketchUp, Rhino3D, and Revit, bringing AI-powered visualization directly into familiar design environments. With automatic monthly or yearly billing starting at $39/month, Arko AI eliminates complex rendering workflows while delivering professional quality output through a cloud-based platform.",
+              "vendorUrl": "https://arko.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/arko-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro License",
+                    "price": "$39",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI rendering plugin for SketchUp (2020-2023, Windows & Mac)",
+                "Rhino3D integration (Rhino7, Coming Soon Rhino8, Windows)",
+                "Revit plugin support (2021-2024, Windows)",
+                "One-click AI rendering process",
+                "Unlimited renderings with Pro license",
+                "High-quality image resolution (768px height vs 608px free)",
+                "30+ additional rendering categories for accuracy",
+                "Seed setting for consistent rendering styles",
+                "Negative prompts for precise control",
+                "Free trial available",
+                "Automatic billing system with monthly/yearly options"
+              ],
+              "useCases": [
+                "Architectural visualization and presentation",
+                "Design concept development",
+                "Client visualization delivery",
+                "Rapid iteration rendering",
+                "Professional portfolio creation",
+                "Real estate development previews",
+                "Construction documentation visualization"
+              ],
+              "integrations": [
+                "SketchUp (2020, 2021, 2022, 2023)",
+                "Rhino3D (Rhino7 currently, Rhino8 coming soon)",
+                "Revit (2021, 2022, 2023, 2024)",
+                "Direct plugin integration within CAD environments",
+                "Cloud-based processing"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "evolvelab-veras",
+              "name": "Veras by EvolveLAB",
+              "description": "Veras by EvolveLAB is a comprehensive AI-powered visualization application that 'uses your substrate for creativity and inspiration' across multiple platforms including SketchUp®, Revit®, Rhinoceros®, Vectorworks®, Archicad®, and Web. Recently acquired by Chaos ecosystem, Veras offers innovative features like the Geometry Override Slider for creative control, Render Selection for specific area editing, and Same Seed rendering for design consistency. The platform provides professional AI visualization capabilities directly within familiar CAD environments and as a standalone web application.",
+              "vendorUrl": "https://www.evolvelab.io/veras",
+              "directoryUrl": "https://archaitool.com/architectural-design/evolvelab-veras",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Named License",
+                    "price": "$59",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Floating License",
+                    "price": "$51",
+                    "billing": "monthly (billed annually at $612/year)"
+                  },
+                  {
+                    "name": "Student License",
+                    "price": "$12.42",
+                    "billing": "monthly (billed annually at $149/year)"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Geometry Override Slider for creative precision control",
+                "Render Selection feature for specific area editing",
+                "Render Same Seed for design consistency across iterations",
+                "Image-to-Image web app functionality",
+                "Multi-platform CAD integration (SketchUp, Revit, Rhino, Vectorworks, Archicad)",
+                "AI-powered visualization and rendering enhancement",
+                "Web-based version without software limitations",
+                "Professional quality rendering output",
+                "30-day free trial with 30 renders",
+                "Part of Chaos ecosystem for enhanced reliability"
+              ],
+              "useCases": [
+                "Architectural visualization and rendering",
+                "Design concept exploration and iteration",
+                "Professional presentations and client visualization",
+                "Real-time design adjustments with Render Selection",
+                "Consistent design variations with Same Seed",
+                "Creative design exploration with Geometry Override",
+                "Educational projects and student work",
+                "Web-based visualization without CAD software requirements"
+              ],
+              "integrations": [
+                "SketchUp (2021-2025, Windows & Mac)",
+                "Autodesk Revit (2021-2026)",
+                "Rhinoceros (7 and 8)",
+                "Autodesk Forma (Web platform)",
+                "Archicad (28, Windows & Mac)",
+                "Vectorworks (2024-2025, Windows & Mac)",
+                "Standalone web application",
+                "Chaos ecosystem integration"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "sketchup-diffusion",
+              "name": "SketchUp Diffusion",
+              "description": "SketchUp Diffusion (AI Render) is a SketchUp Labs generative AI feature that combines the active SketchUp viewport with a text prompt or preset style to create concept images directly inside SketchUp. It is designed for fast massing-to-visual workflows, giving teams a quick way to test style directions, lighting moods, and material intent without exporting to a separate renderer.",
+              "vendorUrl": "https://help.sketchup.com/en/sketchup-ai-render",
+              "directoryUrl": "https://archaitool.com/architectural-design/sketchup-diffusion",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "SketchUp Subscription",
+                    "price": "Check SketchUp plans",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Combine the active SketchUp viewport with a text prompt or preset style",
+                "Adjust prompt influence to balance geometry fidelity and creativity",
+                "Mask areas to erase, regenerate, or add elements",
+                "Reference image support for stylistic direction",
+                "Overlay AI output on the model for iterative studies",
+                "Save AI-generated images for presentations",
+                "Available on SketchUp Desktop, Web, and iPad"
+              ],
+              "useCases": [
+                "Early-stage massing visualization",
+                "Rapid style exploration for client reviews",
+                "Concept mood boards from SketchUp scenes",
+                "Design iteration before detailed rendering"
+              ],
+              "integrations": [
+                "SketchUp Desktop",
+                "SketchUp for Web",
+                "SketchUp for iPad"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2026-03-15"
+            },
+            {
+              "id": "airender-studio",
+              "name": "AI Render Studio",
+              "description": "AI Render Studio delivers 'Photorealistic architecture and interior renders in seconds using AI,' offering both sketch-to-render and render enhancement capabilities. The platform enables users to 'Enhance your 3d renderings and 1-click sketch to render using the power of AI' with a pay-as-you-use pricing model. Compatible with basic SketchUp, Blender, Revit, and CAD drawings, AI Render Studio serves architects, interior designers, real estate developers, and students with instant professional-quality visualizations.",
+              "vendorUrl": "https://airender.studio/",
+              "directoryUrl": "https://archaitool.com/architectural-design/airender-studio",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Starter Pack",
+                    "price": "$12",
+                    "billing": "onetime"
+                  },
+                  {
+                    "name": "Professional Pack",
+                    "price": "$29",
+                    "billing": "onetime"
+                  },
+                  {
+                    "name": "Workflow Optimizer",
+                    "price": "$99",
+                    "billing": "onetime"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Sketch-to-render conversion in seconds",
+                "3D rendering enhancement and upscaling",
+                "Interior and exterior architecture rendering",
+                "4K upscaling capability",
+                "High-resolution output generation",
+                "Commercial use licensing",
+                "Web-based platform (no installation required)",
+                "Pay-as-you-use pricing model",
+                "New Year Sale: 15% OFF with code RENDER24",
+                "Compatible with SketchUp, Blender, Revit, CAD drawings"
+              ],
+              "useCases": [
+                "Architectural visualization and presentation",
+                "Interior design sketch conversion",
+                "Real estate development marketing",
+                "Student project enhancement",
+                "3D art portfolio improvement",
+                "Home renovation visualization",
+                "Design workflow optimization",
+                "Client presentation preparation"
+              ],
+              "integrations": [
+                "SketchUp drawing enhancement",
+                "Blender render improvement",
+                "Revit CAD drawing processing",
+                "General CAD file enhancement",
+                "Web-based accessibility"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "archsynth",
+              "name": "Archsynth",
+              "description": "Archsynth is 'The Most Comprehensive AI solution for Architecture and Interior design' that enables users to 'Quadruple your outputs' and 'Create polished Visuals, CAD files, 3D models and renderings in a fraction of the time.' Trusted by 176,582+ users worldwide with 15,698,726+ renders created, Archsynth offers revolutionary features including sketch-to-render in 14 seconds, 2D to 3D conversion, image-to-CAD transformation, and moodboard rendering capabilities that help users 'work at the speed of your ideas' and potentially 'double your rates.'",
+              "vendorUrl": "https://www.archsynth.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/archsynth",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Student Plan",
+                    "price": "$10",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro Plan",
+                    "price": "$24",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Studio Plan",
+                    "price": "$49",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Business Plan",
+                    "price": "$199",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Sketch to Render in 14 seconds",
+                "2D to 3D model conversion",
+                "Image to CAD transformation",
+                "Render with moodboards capability",
+                "AI assistant for image analysis",
+                "Generate from moodboards (exclusive feature)",
+                "Maintain colors from input (exclusive)",
+                "Image to 3D conversion (exclusive)",
+                "AI Inpainting and Upscaling",
+                "Text to Image generation",
+                "Edit with Words functionality",
+                "Background Removal technology",
+                "Fast Rendering speed",
+                "Tileable Textures generation",
+                "Create Beautiful Illustrations for presentations"
+              ],
+              "useCases": [
+                "Architectural visualization and presentation",
+                "Interior design concept development",
+                "2D sketch to 3D model conversion",
+                "CAD file generation from images",
+                "Professional presentations and client proposals",
+                "Educational projects and student work",
+                "Real estate development visualization",
+                "Design portfolio enhancement",
+                "Texture creation for 3D models",
+                "Virtual staging and interior decoration"
+              ],
+              "integrations": [
+                "SketchUp (3D model export)",
+                "Rhino (3D model compatibility)",
+                "Revit (3D model support)",
+                "3ds Max (3D model integration)",
+                "Various CAD software compatibility",
+                "Web-based platform access"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "visoid",
+              "name": "Visoid",
+              "description": "Visoid is 'Quick and easy rendering software for architects, powered by AI' that enables users to 'Render your 3D models with ease' and 'Bring your 3D models to life' in seconds. Developed by an Oslo-based team with backgrounds in both architecture and technology, Visoid delivers 'coherent, high quality visualizations in a matter of seconds' while cutting visualization time by up to 90%. The platform offers flexible plugin or image-based inputs, making it compatible with any 3D design application on the market and enabling architects to 'create content in a matter of hours that would have cost thousands of dollars and weeks to create.'",
+              "vendorUrl": "https://www.visoid.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/visoid",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$29",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Premium",
+                    "price": "$59",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Simple and fast 3D model rendering in seconds",
+                "Material experimentation and design alternatives testing",
+                "Lighting and seasonal variations for project showcasing",
+                "Flexible plugin or image-based input compatibility",
+                "Works with any 3D design application on the market",
+                "Alternative workflows: enhance existing renderings, render collages",
+                "3-step rendering process: Set up → Export → Render",
+                "Video export capabilities (Premium plan)",
+                "3D model upload functionality",
+                "Multi-prompt support for creative exploration",
+                "MaterialID control for precise material adjustments",
+                "Post-production enhancement for Twinmotion, Enscape, 3ds Max"
+              ],
+              "useCases": [
+                "Architectural visualization and concept development",
+                "Design iteration and material exploration",
+                "Client presentations and convincing visualizations",
+                "Early-stage storytelling for projects",
+                "Marketing materials and portfolio enhancement",
+                "Post-production enhancement of existing renderings",
+                "Site photo integration and collage rendering",
+                "Educational projects and student work"
+              ],
+              "integrations": [
+                "Any 3D design application via image input",
+                "Plugin integration for direct import",
+                "Twinmotion enhancement workflow",
+                "Enscape post-production",
+                "3ds Max rendering improvement",
+                "Photoshop collage rendering"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "lumion",
+              "name": "Lumion",
+              "description": "Lumion is industry-leading 3D rendering software that transforms architectural design workflows with real-time rendering capabilities, making high-end visualization fast, intuitive, and stress-free for architects, landscape architects, interior designers, and urban planners worldwide. With over 25 years of pioneering real-time 3D visualization technology, Lumion integrates seamlessly with all major CAD and BIM tools, including the revolutionary AI image upscaler in Lumion Pro 2025 that renders up to 5x faster. The platform serves professionals across architecture, landscape design, interior design, and urban planning with its comprehensive Lumion Cloud collaboration platform included free with all subscriptions.",
+              "vendorUrl": "https://lumion.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/lumion",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Lumion View",
+                    "price": "$229/year"
+                  },
+                  {
+                    "name": "Lumion Pro",
+                    "price": "$1,149/year"
+                  },
+                  {
+                    "name": "Lumion Studio",
+                    "price": "$1,499/year"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Real-time ray tracing technology in modeling tools",
+                "AI image upscaler in Lumion Pro 2025 (renders up to 5x faster)",
+                "Lumion Cloud collaboration platform (free with all subscriptions)",
+                "Seamless integration with all major CAD and BIM software",
+                "High-quality asset library with thousands of objects",
+                "Customizable FX stacks and post-processing",
+                "Atmospheric controls (lighting, weather, seasons)",
+                "4K to 8K resolution rendering",
+                "360° panoramic visualization",
+                "LiveSync integration with major CAD/BIM tools"
+              ],
+              "useCases": [
+                "Architectural visualization and presentations",
+                "Interior design renderings",
+                "Landscape architecture visualization",
+                "Urban planning and development presentations",
+                "Real estate marketing materials",
+                "Construction progress visualization"
+              ],
+              "integrations": [
+                "SketchUp (LiveSync plugin)",
+                "Autodesk Revit (LiveSync plugin)",
+                "ArchiCAD (LiveSync plugin)",
+                "Rhinoceros (LiveSync plugin)",
+                "AutoCAD (DWG import)",
+                "Vectorworks (file import)",
+                "3ds Max (file import)"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "d5-render",
+              "name": "D5 Render",
+              "description": "D5 Render is the industry-leading real-time rendering solution with built-in AI capabilities, delivering 10X faster output while maintaining the same amazing quality as traditional offline renderers. Recognized as G2 Best Architectural Rendering Software 2025 with a 4.9/5 rating, D5 Render serves architecture, landscape, and interior design professionals with comprehensive visualization tools and an extensive asset library.",
+              "vendorUrl": "https://www.d5render.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/d5-render",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Real-time rendering with 10X faster output",
+                "Built-in AI capabilities and automation",
+                "LiveSync workflow for model inspection",
+                "14,000+ ready-to-use 3D assets",
+                "One-click weather creation",
+                "VR and panorama support",
+                "Handy tools (Path, Brush, Fill, Scatter)",
+                "Windows-based desktop application"
+              ],
+              "useCases": [
+                "Architectural visualization",
+                "Landscape design rendering",
+                "Interior design presentations",
+                "Animation creation",
+                "Client presentations with VR tours",
+                "Real-time design iteration"
+              ],
+              "integrations": [
+                "SketchUp LiveSync",
+                "Rhino integration",
+                "Revit compatibility",
+                "3ds Max support",
+                "Blender connection",
+                "Archicad workflow",
+                "Cinema 4D compatibility",
+                "Vectorworks integration"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "chaos",
+              "name": "Chaos",
+              "description": "Chaos is the industry-leading provider of world-class visualization solutions, helping professionals share ideas, optimize workflows, and create immersive experiences with Academy Award-winning technology. Their AI-enhanced ecosystem delivers unmatched realism and storytelling capabilities, trusted by top architecture firms like Foster Partners and Hassell worldwide for achieving photorealistic results without sacrificing performance.",
+              "vendorUrl": "https://www.chaos.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/chaos",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "V-Ray: Industry-standard photorealistic rendering",
+                "AI Enhancer for realistic people assets",
+                "AI Upscaler (2x/4x render enhancement)",
+                "AI Material Generator from photos",
+                "Veras AI animation transformation",
+                "Enscape real-time rendering",
+                "Chaos Cosmos asset library (7,000+ assets)",
+                "Multi-platform integration"
+              ],
+              "useCases": [
+                "Architectural visualization",
+                "Interior design rendering",
+                "Product design visualization",
+                "Automotive design",
+                "Media and entertainment",
+                "Advertising and marketing",
+                "Real estate development presentations"
+              ],
+              "integrations": [
+                "SketchUp",
+                "Revit",
+                "Rhino",
+                "Archicad",
+                "Vectorworks",
+                "3ds Max",
+                "Maya",
+                "Cinema 4D",
+                "Houdini",
+                "Unreal Engine",
+                "Blender"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "rendera-ai",
+              "name": "Rendera AI",
+              "description": "Rendera AI is an innovative AI-powered interior, exterior, and landscape design tool that transforms spaces into beautiful, professionally-styled renders in seconds. Trusted by homeowners, architects, and designers worldwide, the platform offers a simple three-step process: upload photos, describe desired styles, and generate stunning redesigns in 30 seconds. Rendera AI provides localized design results based on regional climate and architecture, with flexible pay-per-use pricing and no subscription commitments. The tool features sketch-to-render transformations and serves both residential and commercial design needs.",
+              "vendorUrl": "https://www.rendera.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/rendera-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pay-per-use",
+                    "price": "Credit-based pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Photo-to-design transformation",
+                "Interior, exterior, and landscape design",
+                "30-second AI generation",
+                "Simple 3-step process: upload, describe, generate",
+                "Custom design instructions and style guidance",
+                "Region-specific climate-based designs",
+                "Localized design results",
+                "Sketch-to-render transformation",
+                "Before/after visualization",
+                "Pay-per-use credit system (no subscriptions)",
+                "Trusted by homeowners, architects, and designers"
+              ],
+              "useCases": [
+                "Virtual staging and home styling",
+                "Design exploration and concept development",
+                "Real estate property enhancement",
+                "Client presentations and visualizations",
+                "Sketch enhancement and rendering",
+                "Pre-construction design preview"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "archfine-ai",
+              "name": "Archfine AI",
+              "description": "Archfine AI is a cloud-based visualization platform built for architects who need fast renders without heavy hardware. It turns sketches, CAD outputs, and rough models into presentation-ready interiors and exteriors with minimal setup.",
+              "vendorUrl": "https://archfine.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/archfine-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Subscription",
+                    "price": "Subscription plans",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Cloud rendering with no GPU setup",
+                "Sketch-to-render and CAD-to-render workflows",
+                "Interior and exterior visualization presets",
+                "Fast iteration for client reviews",
+                "Browser-based collaboration"
+              ],
+              "useCases": [
+                "Quick architectural visualization",
+                "Interior and exterior concept renders",
+                "Client presentation imagery",
+                "Small studio workflows"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-03-14"
+            },
+            {
+              "id": "rendair-ai",
+              "name": "Rendair AI",
+              "description": "Rendair AI focuses on rapid architectural visualization with consistent styles. It helps teams move from sketches and massing studies to polished renders for proposals, reviews, and marketing materials.",
+              "vendorUrl": "https://rendair.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/rendair-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Studio",
+                    "price": "Subscription plans",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Sketch-to-render workflow",
+                "Style reference controls",
+                "Fast batch generation",
+                "Interior and exterior visualization",
+                "Presentation-ready outputs"
+              ],
+              "useCases": [
+                "Architectural render production",
+                "Design option comparisons",
+                "Client pitch decks",
+                "Fast visualization for competitions"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-03-14"
+            },
+            {
+              "id": "lookx",
+              "name": "LookX",
+              "description": "LookX is an architecture-trained AI rendering tool that focuses on preserving spatial intent while allowing style and material exploration. It is designed for quick design iterations and presentation-quality imagery.",
+              "vendorUrl": "https://www.lookx.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/lookx",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Subscription",
+                    "price": "Subscription plans",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Architecture-trained rendering model",
+                "Style reference and material control",
+                "Fast concept-to-render pipeline",
+                "Suitable for interiors and exteriors",
+                "Iteration-friendly workflow"
+              ],
+              "useCases": [
+                "Architectural visualization",
+                "Material and style studies",
+                "Design option exploration",
+                "Client presentation imagery"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-03-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interior-design",
+      "name": "Interior Design",
+      "description": "Transform and visualize interior spaces with AI",
+      "subcategories": [
+        {
+          "id": "interior-design-remodeling",
+          "name": "Interior Design & Remodeling",
+          "description": "AI-powered interior design and remodeling tools",
+          "tools": [
+            {
+              "id": "arch-e-ai",
+              "name": "Arch E AI",
+              "description": "Arch E AI is an innovative AI-powered platform that combines interior design transformation with product shopping recommendations, enabling homeowners and designers to redesign spaces and shop recommended products in a seamless workflow. Using advanced computer vision and machine learning, the platform understands room contents and reimagines spaces in selected styles while providing curated shopping lists to recreate the new look.",
+              "vendorUrl": "https://arch-e.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/arch-e-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Premium",
+                    "price": "Contact for pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered interior design transformation",
+                "30+ design styles (Industrial, Mid Century, Minimalist, Bohemian)",
+                "Architectural AI for building image generation",
+                "Product recommendation engine",
+                "Shopping integration for home decor",
+                "Under-30-second design generation",
+                "Room analysis and style matching"
+              ],
+              "useCases": [
+                "Room redesign (living room, bathroom, bedroom)",
+                "Interior design inspiration and planning",
+                "Home redecoration projects",
+                "Furniture and decor shopping assistance",
+                "Architectural visualization",
+                "Decor planning and budgeting"
+              ],
+              "integrations": [
+                "Photo upload and analysis",
+                "E-commerce product integration",
+                "Mobile and web platform access",
+                "Shopping cart functionality"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "archi-ai",
+              "name": "Archi AI",
+              "description": "Archi AI is a revolutionary AI-powered interior and exterior design tool that generates photo-like renders in seconds, featuring 'an AI model that is nothing like you've seen before: natural, unique and creative.' The platform enables both professionals and individuals to transform uploaded photos of any space into stunning design visualizations, offering unlimited designs with no watermarks and commercial usage rights. Archi AI eliminates the need for traditional 3D modeling expertise while delivering professional-quality results for living rooms, bedrooms, kitchens, bathrooms, and dining rooms.",
+              "vendorUrl": "https://archi.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/archi-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$19/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Unlimited",
+                    "price": "$29/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Generate photo-like images in seconds",
+                "Revolutionary AI model: 'natural, unique and creative'",
+                "Interior and exterior space design",
+                "Unlimited designs with no watermarks",
+                "Commercial usage rights included",
+                "AI-powered style recommendations",
+                "Simple 3-step design process",
+                "No design experience required",
+                "Mobile-friendly interface"
+              ],
+              "useCases": [
+                "Interior design visualization",
+                "Exterior home design",
+                "Room remodeling and renovation",
+                "Real estate staging",
+                "Design concept exploration",
+                "Client presentations",
+                "Home improvement planning",
+                "Furniture arrangement visualization"
+              ],
+              "integrations": [
+                "Image upload and processing",
+                "Social media sharing",
+                "Cloud-based storage"
+              ],
+              "searchAliases": [
+                "archi ai",
+                "archi.ai"
+              ],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "indesignify",
+              "name": "Indesignify",
+              "description": "Indesignify is an innovative AI-powered interior design platform that enables users to 'Transform Your Space with AI-Powered Design' and 'Create stunning room transformations in seconds.' With the tagline 'Redesign your interior in seconds using AI,' Indesignify offers three core transformation modes: 'Vacant to Finished' for furnishing empty spaces, 'Transform Your Room' for style changes, and 'Design from Scratch' for complete customization. The platform supports 8+ room types and 40+ materials, delivering photorealistic renders with construction maintenance.",
+              "vendorUrl": "https://indesignify.com/",
+              "directoryUrl": "https://archaitool.com/interior-design/indesignify",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pay as you go",
+                    "price": "€0.070",
+                    "billing": "per generation"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered interior redesign in seconds",
+                "Vacant to Finished: Furnish empty spaces instantly",
+                "Transform Your Room: Apply different styles to existing rooms",
+                "8+ room types supported (Living room, Bedroom, Kitchen, Bathroom, Dining Room, Home Office, Kids room, Media Room)",
+                "40+ materials available (Wood, Glass, Metal, Marble, Leather, Fabric, Concrete, Brick, Stone, etc.)",
+                "10+ color palettes (Soft Neutrals, Coastal Calm, Nordic Lights, Forest Retreat, etc.)",
+                "Photorealistic renders that maintain construction elements",
+                "High resolution output quality",
+                "Sketch and SketchUp to photorealistic renders transformation",
+                "User-friendly interface requiring no design experience"
+              ],
+              "useCases": [
+                "Interior space redesign and transformation",
+                "Empty room furnishing and decoration",
+                "Style changes and room makeovers",
+                "Photorealistic rendering for presentations",
+                "Home decoration planning and visualization",
+                "Real estate property enhancement",
+                "Interior design prototyping and concept development",
+                "Professional design consultation support"
+              ],
+              "integrations": [
+                "Sketch to photorealistic renders",
+                "SketchUp model transformation",
+                "Image upload and processing",
+                "Web-based accessibility from any device"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "designai",
+              "name": "DesignAI",
+              "description": "DesignAI is an AI-powered virtual assistant that provides effortless living space transformation by understanding unique user style preferences and recreating rooms with class. The platform enables homeowners and renters to instantly remodel various spaces using advanced algorithms that deliver professional-quality interior design transformations. With a free account creation process and an inspiration gallery showcasing before/after transformations, DesignAI offers multiple style options including Boho, Industrial, and Modern aesthetics for bedrooms, kitchens, restrooms, living areas, and even outdoor spaces.",
+              "vendorUrl": "https://www.designai.us/",
+              "directoryUrl": "https://archaitool.com/interior-design/designai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "AI virtual assistant for interior design",
+                "Instant room remodeling capabilities",
+                "Multiple style options (Boho, Industrial, Modern)",
+                "Before/after visualization gallery",
+                "Multiple space type support (bedroom, kitchen, restroom, living room, outdoor)",
+                "Free account creation",
+                "Regular gallery updates with new design transformations",
+                "Professional-quality output tailored to individual tastes"
+              ],
+              "useCases": [
+                "Home interior redesign",
+                "Living room transformation",
+                "Bedroom style updates",
+                "Kitchen and dining area remodeling",
+                "Bathroom redesign",
+                "Front and backyard transformation",
+                "Street view enhancement",
+                "Interior design inspiration"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "decorion",
+              "name": "Decorion",
+              "description": "Decorion is an innovative AI-powered interior design assistant that helps users visualize interior design concepts before implementation, significantly reducing errors, time, and unnecessary costs. The platform transforms the traditional interior design process by enabling users to upload room images, choose from multiple design styles, and generate stunning interior design options in just 30 seconds. With mobile apps available and a three-step simple process, Decorion makes personalized interior design efficient, affordable, and hassle-free for everyone.",
+              "vendorUrl": "https://decorion.xyz/",
+              "directoryUrl": "https://archaitool.com/interior-design/decorion",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "AI-powered interior design generation in 30 seconds",
+                "Upload room images and get instant design transformations",
+                "Multiple design styles and themes to choose from",
+                "Mobile app support for on-the-go designing",
+                "Three-step simple design process",
+                "Professional-quality interior design outputs",
+                "Cost-effective visualization before implementation"
+              ],
+              "useCases": [
+                "Homeowners visualizing design concepts before implementation",
+                "Interior designers creating quick client presentations",
+                "Real estate agents staging properties virtually",
+                "Design enthusiasts experimenting with different styles",
+                "Renovation planning with before/after visualizations",
+                "Space planning and layout optimization",
+                "Budget-conscious design exploration",
+                "Mobile on-the-go design consultations"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "ai4spaces",
+              "name": "AI4Spaces",
+              "description": "AI4Spaces is a comprehensive AI-powered interior design platform that enables users to create their dream homes through advanced artificial intelligence. The platform transforms uploaded room photos into photorealistic AI room makeovers within 10-30 seconds, offering over 40 interior styles and supporting both residential and commercial space design with professional-grade visualization quality.",
+              "vendorUrl": "https://ai4spaces.com/",
+              "directoryUrl": "https://archaitool.com/interior-design/ai4spaces",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "AI house design from uploaded photos",
+                "Room makeover transformations",
+                "Video walkthrough generation",
+                "AI image upscaling and enhancement",
+                "Precision image editing tools",
+                "40+ interior design styles",
+                "Custom style creation based on landscapes/emotions/artists"
+              ],
+              "useCases": [
+                "Virtual staging for real estate listings",
+                "Interior design planning and visualization",
+                "Architectural concept development",
+                "Home renovation planning",
+                "Commercial space design (offices, restaurants, hotels)",
+                "Design portfolio creation",
+                "Client presentations and approvals"
+              ],
+              "integrations": [
+                "Photo upload from multiple sources",
+                "Sketch and 3D render support",
+                "Video and 360° output formats",
+                "HD image export capabilities"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "roomgpt",
+              "name": "RoomGPT",
+              "description": "RoomGPT is a revolutionary AI-powered interior design platform that has transformed the way over 2 million users approach home redesign. With its slogan 'Your personal AI interior designer,' the platform enables users to completely transform any room using just a single photograph. The system eliminates the need for professional interior designers by providing instant AI-generated room makeovers in various themes and styles, helping users overcome indecisiveness when decorating their spaces.",
+              "vendorUrl": "https://www.roomgpt.io/",
+              "directoryUrl": "https://archaitool.com/interior-design/roomgpt",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Single photo room transformation",
+                "Multiple design themes and styles",
+                "Instant AI-powered redesigns",
+                "Free trial with 1 generation",
+                "Professional-quality results",
+                "User-friendly interface",
+                "Mobile and desktop compatible"
+              ],
+              "useCases": [
+                "Home renovation planning",
+                "Interior design visualization",
+                "Real estate staging",
+                "Room layout experimentation",
+                "Decor style testing",
+                "Before/after comparisons",
+                "Design inspiration gathering",
+                "Client presentations"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "vibe3d",
+              "name": "Vibe3D",
+              "description": "Vibe3D is a revolutionary AI-powered platform that creates photorealistic 3D renders in seconds, cutting hours of manual work and accelerating the rendering workflow for interior designers and architects. Trusted by over 12,000 professionals worldwide, the platform transforms 3D models into stunning visuals with 100% accuracy, offering true realism 10x faster than traditional methods. With smart prompt suggestions and one-click AI-powered edits, Vibe3D eliminates technical barriers and enables instant iterations based on natural language commands.",
+              "vendorUrl": "https://vibe3d.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/vibe3d",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Trial",
+                    "price": "$9 one-time",
+                    "billing": "onetime"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$39 $59 (33% off)",
+                    "billing": "onetime"
+                  },
+                  {
+                    "name": "Studio",
+                    "price": "$99 $149 (33% off)",
+                    "billing": "onetime"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Photorealistic renders in seconds",
+                "100% accurate materials and textures",
+                "Smart prompt suggestions",
+                "One-click AI-powered edits",
+                "Natural language editing",
+                "Compatible with SketchUp, 3ds Max, and more",
+                "Multiple resolution options (HD, 2K, 4K)",
+                "Pay-as-you-go pricing model"
+              ],
+              "useCases": [
+                "Interior design visualization",
+                "Architectural rendering",
+                "Client presentations",
+                "Design iteration and feedback",
+                "Real estate marketing",
+                "Student portfolio development",
+                "Commercial space visualization",
+                "Product design rendering"
+              ],
+              "integrations": [
+                "SketchUp import",
+                "3ds Max compatibility",
+                "Multiple 3D format support",
+                "Cloud-based rendering",
+                "Direct export capabilities"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "home-design-ai",
+              "name": "Home Design AI",
+              "description": "Home Design AI is a completely free AI-powered interior design platform that revolutionizes home design with professional-grade tools accessible to everyone. Supporting both image-to-image transformation and text-to-image generation, the platform enables users to create stunning home designs without any signup or cost. With over 50,000 happy homeowners and 500,000+ designs created, the tool combines cutting-edge AI technology with professional interior design principles to deliver unprecedented house design experiences in just 30 seconds.",
+              "vendorUrl": "https://home-design.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/home-design-ai",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "100% free to use with no signup required",
+                "Image-to-image transformation",
+                "Text-to-image creation",
+                "20+ interior design styles",
+                "60+ room types supported",
+                "30-second generation time",
+                "Professional quality results",
+                "Privacy protection guaranteed"
+              ],
+              "useCases": [
+                "Home renovation planning",
+                "Interior design visualization",
+                "Real estate staging",
+                "Professional design concept development",
+                "Client presentations",
+                "Design inspiration gathering",
+                "Room makeovers",
+                "Commercial space design"
+              ],
+              "integrations": [
+                "Image upload (PNG, JPG, JPEG up to 10MB)",
+                "Multiple room types",
+                "Style customization",
+                "High-resolution download"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "dehome-ai",
+              "name": "Dehome.ai",
+              "description": "Dehome.ai unifies architectural, interior, landscape, and exterior design workflows into a single AI-assisted platform. Users upload a photo or provide a text brief and receive photorealistic results in seconds across 40+ design styles. The platform reduces consultation costs by up to 70%, supports BIM-friendly exports, and offers guided AI assistance for furniture, lighting, and material selections. Professionals can cover entire property scopes—from facade upgrades to garden planning—without juggling multiple apps.",
+              "vendorUrl": "https://dehome.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/dehome-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Premium Monthly",
+                    "price": "Custom pricing",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Premium Annual",
+                    "price": "Custom pricing",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Interiors, exteriors, landscapes, and architecture handled in one interface",
+                "40+ professionally curated design styles",
+                "AI assistant for furniture, color palettes, and lighting",
+                "Photorealistic rendering engine optimized for client presentations",
+                "BIM-friendly output ready for downstream workflows",
+                "Smart recommendations for cost-optimized redesigns",
+                "7-day free trial with no credit card required",
+                "Team-ready workspace with project history"
+              ],
+              "useCases": [
+                "Interior design and remodeling concepts",
+                "Exterior facade refresh and curb appeal planning",
+                "Landscape and garden design visualization",
+                "Virtual staging for real estate marketing",
+                "Architectural concept development with BIM alignment",
+                "Furniture arrangement and lighting studies"
+              ],
+              "integrations": [
+                "Photo upload workflow",
+                "Text prompt based ideation",
+                "BIM-friendly exports for professional pipelines",
+                "Client-ready presentation links"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2026-01-07"
+            },
+            {
+              "id": "roomlab-app",
+              "name": "Roomlab.app",
+              "description": "Roomlab.app delivers studio-grade interior transformations with granular control over fixtures, finishes, and materials. Designers can replace a single tile, vanity, or light fitting while preserving the rest of the scene thanks to precision masking and generative fill. Virtual staging, custom generation modes, and HD exports make Roomlab.app ideal for agencies that need convincing visuals with commercial usage rights.",
+              "vendorUrl": "https://roomlab.app/",
+              "directoryUrl": "https://archaitool.com/interior-design/roomlab-app",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "£149/year",
+                    "billing": "yearly"
+                  },
+                  {
+                    "name": "Ultra",
+                    "price": "£399/year",
+                    "billing": "yearly"
+                  },
+                  {
+                    "name": "Premium",
+                    "price": "£899/year",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Material-level replacements for tiles, fixtures, and textiles",
+                "Generative fill for extending or completing empty spaces",
+                "Virtual staging for unfurnished interiors",
+                "HD output with commercial license on higher tiers",
+                "Iterative design mode for rapid refinements",
+                "Custom generation controls to match client briefs",
+                "Data retention options up to 3 months on Premium",
+                "Credit refill support for high-volume workflows"
+              ],
+              "useCases": [
+                "Bathroom and kitchen remodeling previews",
+                "High-end real estate virtual staging",
+                "Iterative interior concept development",
+                "Material and finish experimentation",
+                "Client-ready mood boards and presentation assets",
+                "Before/after storytelling for marketing"
+              ],
+              "integrations": [
+                "Direct photo upload workflow",
+                "Commercial usage rights on Ultra and Premium",
+                "Credit refill add-ons for active subscribers"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2026-01-07"
+            },
+            {
+              "id": "ai-renovation",
+              "name": "AI Renovation",
+              "description": "AI Renovation (airenovation.io) helps homeowners, interior designers, and real estate professionals visualize complete renovations from a single photo. The platform recognizes walls, floors, furniture, and fixtures automatically, then offers 30+ professional design styles, clutter removal, and material previews. Built-in virtual staging and paint visualization tools make it easy to test multiple looks before investing in construction or staging.",
+              "vendorUrl": "https://www.airenovation.io/",
+              "directoryUrl": "https://archaitool.com/interior-design/ai-renovation",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$50/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Professional",
+                    "price": "$250/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Automatic space geometry recognition for walls, floors, and furniture",
+                "30+ interior design styles plus renovation-ready prompts",
+                "Virtual staging with furniture placement and clutter removal",
+                "Paint color and flooring visualization",
+                "Material previews for cabinets, benchtops, and textiles",
+                "Before/after comparison slider for sharing results",
+                "Image quality enhancement for low-light or blurry inputs",
+                "2D to photorealistic visualization conversion"
+              ],
+              "useCases": [
+                "Home renovation planning and visualization",
+                "Virtual staging for property listings",
+                "Kitchen and bathroom redesign previews",
+                "Paint color and flooring comparisons",
+                "Interior design concept generation",
+                "Real estate marketing collateral"
+              ],
+              "integrations": [
+                "Photo upload workflow",
+                "Before/after comparison links for clients",
+                "High-resolution export for print or web listings"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2026-01-07"
+            },
+            {
+              "id": "renovate-ai",
+              "name": "Renovate AI",
+              "description": "Renovate AI is a revolutionary home design application that uses advanced artificial intelligence and generative models to help users get inspired, visualize, and plan their home renovation projects. The app transforms how homeowners, real estate agents, and designers approach interior and exterior remodeling by providing instant, photorealistic design visualizations. With over 8,400 App Store ratings and a 4.7-star rating, Renovate AI has become one of the most trusted home design tools on the market. The platform serves thousands of daily renovators across 50+ design styles, making professional-quality design accessible to everyone regardless of their design experience.",
+              "vendorUrl": "https://www.renovateai.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/renovate-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Instant AI-powered room renovations using your phone's camera or photos",
+                "50+ design styles including Modern, Rustic, Traditional, Farmhouse, and Contemporary",
+                "AI virtual staging for empty rooms and property listings",
+                "Exterior home renovation visualization with curb appeal enhancements",
+                "Landscape design and outdoor renovation capabilities",
+                "Interior elevation transformations and wall color changes",
+                "Sketch rendering technology for architectural-style visualizations",
+                "AI image upscaling to 4K and 8K resolution for high-quality outputs",
+                "Custom material applications including flooring, walls, furniture",
+                "Before-and-after comparison tools for design presentation"
+              ],
+              "useCases": [
+                "Real estate agents virtually staging properties to increase buyer interest",
+                "Homeowners planning renovations and visualizing design possibilities before construction",
+                "Interior designers creating quick client presentations and design concepts",
+                "Contractors showing clients potential renovation outcomes during bidding",
+                "Architects adding visualization capabilities to their design workflow",
+                "Property investors improving home aesthetics before listing sales",
+                "DIY home renovators exploring design options without expensive software",
+                "Furniture retailers showcasing products in client room contexts"
+              ],
+              "integrations": [
+                "Photo upload from multiple sources",
+                "High-resolution export capabilities",
+                "Cloud storage for designs",
+                "Mobile and web compatibility"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "artevia",
+              "name": "Artevia",
+              "description": "Artevia is a revolutionary AI-powered interior design platform that transforms rooms using real Amazon products, creating a seamless bridge between digital design inspiration and real-world shopping. The platform enables users to upload any room design and watch AI decorate it with authentic Amazon furniture and decor items. With advanced AI video rendering capabilities, style transfer technology, and intelligent inpainting features, Artevia makes it possible to see, design, and shop real products instantly.",
+              "vendorUrl": "https://artevia.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/artevia",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Real Amazon products integration",
+                "AI-powered room transformation",
+                "Style transfer and customization",
+                "Furniture preview and placement",
+                "AI inpainting and detail refinement",
+                "Video rendering capabilities",
+                "Style reference matching",
+                "High-resolution 4K exports",
+                "Natural language editing"
+              ],
+              "useCases": [
+                "Interior design visualization with real products",
+                "Real estate staging with purchasable items",
+                "Furniture testing and placement before buying",
+                "Home renovation planning with shopping lists",
+                "Client presentations with product specifications",
+                "Style exploration and experimentation",
+                "E-commerce integration for design workflows",
+                "Video content creation for marketing"
+              ],
+              "integrations": [
+                "Amazon products database",
+                "Style reference libraries",
+                "High-resolution export (4K)",
+                "Video rendering technology",
+                "AI inpainting and enhancement",
+                "Cloud storage for designs"
+              ],
+              "searchAliases": [
+                "artevia ai",
+                "artevia.ai"
+              ],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "madespace",
+              "name": "Madespace",
+              "description": "Madespace is an autonomous interior design studio that brings professional AI-powered design solutions to everyone. Built by interior designers from sunny Southern California, the platform offers custom AI trained by professionals to create beautiful interiors without the need for text prompting. The app allows users to design visually, blend styles to create unique combinations, and shop designs instantly with on-demand shopping tailored to their rooms.",
+              "vendorUrl": "https://madespace.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/madespace",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Premium",
+                    "price": "Contact for pricing",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Visual design without text prompting",
+                "Style blending and customization",
+                "Professionally trained AI styles",
+                "On-demand shopping integration",
+                "Expert human help via video chat",
+                "Mobile app available",
+                "Custom AI by interior designers",
+                "Instant room transformations"
+              ],
+              "useCases": [
+                "Room redesign and makeovers",
+                "Style exploration and blending",
+                "Professional interior design consultations",
+                "Shopping for furniture and decor",
+                "Home renovation planning",
+                "Client presentations",
+                "Design concept development"
+              ],
+              "integrations": [
+                "Mobile app (iOS)",
+                "Shopping integration",
+                "Video chat consultations",
+                "Social media sharing"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            }
+          ]
+        },
+        {
+          "id": "virtual-staging",
+          "name": "Virtual Staging & Furnishing",
+          "description": "AI tools for virtual staging and furniture visualization",
+          "tools": [
+            {
+              "id": "gepettoapp",
+              "name": "Gepetto App",
+              "description": "Gepetto is a professional AI-powered home staging application developed in Bordeaux, France, transforming property listings with subtle, realistic virtual staging. The platform serves major real estate agencies including Orpi, Century 21, Coldwell Banker, and Keller Williams. Gepetto follows a 'Micro-Home Staging' philosophy where less is more, noting that 80% of 'home staged' listings deter more than they attract. The platform offers 30+ interior design styles created by professional interior architects and works with JPEG, PNG, WEBP, and HEIC image formats.",
+              "vendorUrl": "https://gepettoapp.com/",
+              "directoryUrl": "https://archaitool.com/interior-design/gepettoapp",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro Plan",
+                    "price": "Contact for pricing",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "30+ interior design styles by professional architects",
+                "Micro-Home Staging philosophy - 80% of home staging deters buyers",
+                "Multiple modes: Meubler, Re-style, Ensoleiller, Desencombrement",
+                "Supports JPEG, PNG, WEBP, and HEIC image formats",
+                "Interior and exterior photo transformation",
+                "Sky transformation and lighting enhancement",
+                "5-second video generation capabilities",
+                "AI photo enhancement and correction",
+                "Mobile app available (iOS & Android)",
+                "Partnership with 30+ major real estate agencies"
+              ],
+              "useCases": [
+                "Real estate virtual staging",
+                "Property listing enhancement",
+                "Empty room furniture placement",
+                "Exterior renovation visualization",
+                "Sky and lighting improvement",
+                "3D model to photorealistic conversion",
+                "Marketing video generation",
+                "Photo quality enhancement"
+              ],
+              "integrations": [
+                "Mobile apps (iOS & Android)",
+                "API for integration",
+                "Multiple image formats (JPEG, PNG, WEBP, HEIC)",
+                "Real estate CRM compatibility"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "palette-immo",
+              "name": "Palette Immo",
+              "description": "Palette Immo is the #1 AI Interior Photo Generator that transforms spaces in minutes with fast turnaround times. The platform offers 30+ design styles and specializes in virtual staging, interior redesign, and sketch-to-photo conversion, serving over 198 real estate agents and designers who joined weekly.",
+              "vendorUrl": "https://palette.immo/",
+              "directoryUrl": "https://archaitool.com/interior-design/palette-immo",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "30+ professional interior design styles",
+                "Batch rendering for multiple photos",
+                "Virtual furnishing for empty spaces",
+                "Sketch-to-photorealistic render conversion",
+                "Team collaboration up to 25 members",
+                "Sky replacement and photo enhancement",
+                "Clutter removal and cleanup tools",
+                "Real-time generation in seconds"
+              ],
+              "useCases": [
+                "Real estate virtual staging",
+                "Interior design visualization",
+                "Property marketing materials",
+                "Furniture placement testing",
+                "Home renovation planning",
+                "Sketch-to-design conversion",
+                "Photo enhancement for listings"
+              ],
+              "integrations": [],
+              "searchAliases": [
+                "palette immo",
+                "palette.immo"
+              ],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "paintit-ai",
+              "name": "Paintit AI",
+              "description": "Paintit.ai is an AI-powered interior design platform with an impressive 4.8/5 rating from 2,450 users. Founded in 2023 and launching version 2.0 in 2025, the platform generates professional designs in just 1-2 minutes, offering virtual staging and 3D room visualization. Paintit.ai combines intuitive design tools with integrated shopping recommendations, providing real-time transformations and furniture suggestions tailored to your space and lifestyle needs.",
+              "vendorUrl": "https://paintit.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/paintit-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "4.8/5 rating from 2,450 satisfied users",
+                "Professional design generation in just 1-2 minutes",
+                "Advanced virtual staging and 3D room visualization",
+                "Version 2.0 launched in 2025 with enhanced features",
+                "Free plan available with basic functionality",
+                "Integrated furniture shopping recommendations",
+                "50+ curated design styles",
+                "AI chat assistant for personalized advice",
+                "High-resolution render downloads",
+                "Commercial usage license included"
+              ],
+              "useCases": [
+                "Virtual home staging for real estate",
+                "Interior design visualization",
+                "Furniture shopping and placement",
+                "Room renovation planning",
+                "Content creation for social media",
+                "Commercial space design",
+                "Personal home decoration"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "sofabrain",
+              "name": "Sofabrain",
+              "description": "SofaBrain is an advanced AI interior design app serving 253,438+ professionals with over 1,376,850 spaces redesigned. The platform offers instant virtual staging, room redesign, and walkthrough video generation with an impressive 5.0 rating from 4,800+ reviews. Trusted by major real estate companies including Redfin, Zillow, and Century 21, SofaBrain provides clutter removal, style switching across 27+ design options, and professional-grade results for real estate agents, interior designers, and homeowners.",
+              "vendorUrl": "https://sofabrain.com/",
+              "directoryUrl": "https://archaitool.com/interior-design/sofabrain",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "5.0 rating with 4,800+ reviews",
+                "253,438+ professional users worldwide",
+                "1,376,850+ spaces successfully redesigned",
+                "Trusted by Redfin, Zillow, and Century 21",
+                "Generate walkthrough videos",
+                "27+ different interior design styles",
+                "Clutter removal for clean presentations",
+                "Style switching and customization",
+                "Real-time transformation preview",
+                "Smart room advice and recommendations",
+                "Furniture swapping and customization",
+                "Wall color and texture changes",
+                "Exterior and interior redesign",
+                "3 free renders to start"
+              ],
+              "useCases": [
+                "Real estate virtual staging",
+                "Interior design client presentations",
+                "Home renovation visualization",
+                "Property marketing materials",
+                "Furniture arrangement planning",
+                "Room makeover testing",
+                "Walkthrough video creation"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-01-31"
+            },
+            {
+              "id": "renovateai",
+              "name": "Renovate AI",
+              "description": "Renovate AI is a mobile and desktop renovation studio that lets homeowners, contractors, and agents upload any room or exterior photo, apply more than 75 curated looks, recolor finishes, and add new furniture arrangements in seconds. The platform includes Renovate AI Studio for pro-level rendering where users can remove clutter, change wall materials, upscale imagery to 4K, and keep multiple versions synced across devices.",
+              "vendorUrl": "https://renovateai.app/",
+              "directoryUrl": "https://archaitool.com/interior-design/renovateai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": true,
+                "paidPlans": [
+                  {
+                    "name": "Studio Pro",
+                    "price": "Custom subscription",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Enterprise",
+                    "price": "Contact sales",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Upload or capture any room and restyle it instantly with 75+ curated looks including modern, Victorian, and mid-century palettes",
+                "Renovate AI Studio workspace for clutter removal, material swaps, fixture updates, and 4K upscaling",
+                "1,000 free visualization credits for new users plus flexible credit packs for teams",
+                "Supports interiors, exteriors, landscaping concepts, and paint studies so entire properties can be refreshed in one workflow",
+                "Mobile app (4.8 rating) and desktop experience with seamless project syncing for contractors on the go",
+                "Style Transfer mode to apply community-generated looks and share before/after stories with clients",
+                "Detailed export controls for agencies needing consistent aspect ratios across web, social, and presentation decks"
+              ],
+              "useCases": [
+                "Listing agents stage vacant or outdated rooms with multiple moods for MLS, social media, and print mailers",
+                "Contractors present kitchen, bathroom, and exterior remodel options to clients before demolition begins",
+                "Homeowners test material palettes, landscaping ideas, and lighting changes before ordering finishes",
+                "Short-term rental operators refresh visuals for high-season marketing without scheduling full photo shoots"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-01-11"
+            },
+            {
+              "id": "instantdeco-ai",
+              "name": "Instantdeco AI",
+              "description": "InstantDecoAI is a specialized AI photo editing software built exclusively for real estate professionals. The platform transforms vacant or outdated spaces into buyer-ready visuals in under 30 seconds, offering unlimited designs for $39/month compared to traditional staging costs of $30-300 per photo.",
+              "vendorUrl": "https://instantdeco.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/instantdeco-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "30-second processing time",
+                "50+ ultra-realistic design styles",
+                "4K high-quality downloads",
+                "Automatic exposure and color correction",
+                "Decluttering and photo retouching",
+                "Low-light photo enhancement",
+                "Real estate video generation",
+                "Proprietary AI trained for interiors"
+              ],
+              "useCases": [
+                "Real estate virtual staging",
+                "Property photo enhancement",
+                "Vacant home furnishing",
+                "Low-light photo correction",
+                "Real estate marketing materials",
+                "Decluttering for listings",
+                "Facade upgrades and lighting"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "decoratly",
+              "name": "Decoratly",
+              "description": "Decoratly is a leading AI-powered interior design platform that transforms any room in just 30 seconds with professional-quality results. With over 50,000+ happy users and a 4.9/5 star rating, Decoratly has become the go-to solution for homeowners and interior designers seeking instant room makeovers. The platform combines sophisticated AI technology developed by former interior designers and computer vision experts with over 20 years of combined experience, offering 127,000+ design transformations to date.",
+              "vendorUrl": "https://www.decoratly.com/",
+              "directoryUrl": "https://archaitool.com/interior-design/decoratly",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "30-second room transformations",
+                "50+ professional design styles",
+                "AI chat design assistant",
+                "Google Shopping integration",
+                "Makeover and Enhance modes",
+                "Style Builder for custom designs",
+                "4K quality export",
+                "Precision controls for customization"
+              ],
+              "useCases": [
+                "Home renovation planning",
+                "Furniture testing before purchase",
+                "Interior design visualization",
+                "Real estate staging",
+                "Room makeover testing",
+                "Professional design consultation",
+                "Shopping confidence building"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "floordesign-ai",
+              "name": "FloorDesign.ai",
+              "description": "FloorDesign.ai is a completely free AI floor design tool with no signup required, offering professional-grade floor design capabilities with 25+ design styles. Trusted by 150K+ design projects with an impressive 98% satisfaction rate, the platform provides three design studios in one comprehensive solution. FloorDesign.ai delivers photorealistic rendering with smart recommendations and advanced customization, making professional floor design accessible to everyone without any upfront commitment.",
+              "vendorUrl": "https://floordesign.ai/",
+              "directoryUrl": "https://archaitool.com/interior-design/floordesign-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "150K+ completed design projects with 98% satisfaction",
+                "Completely free with no signup required",
+                "Three design studios in one platform",
+                "25+ professional design styles",
+                "Photorealistic ray-tracing rendering",
+                "Smart furniture placement recommendations",
+                "Advanced customization controls",
+                "Collaboration tools and sharing",
+                "Design library with brand furniture",
+                "Professional-grade capabilities at zero cost"
+              ],
+              "useCases": [
+                "Floor plan visualization",
+                "Interior space planning",
+                "Furniture arrangement testing",
+                "Professional design presentations",
+                "Contractor communication",
+                "Real estate property visualization",
+                "Personal home design projects"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landscape-design",
+      "name": "Landscape & Exterior Design",
+      "description": "AI-powered outdoor and landscape visualization",
+      "subcategories": [
+        {
+          "id": "landscape-planning",
+          "name": "Landscape Planning & Design",
+          "description": "AI tools for landscape architecture and planning",
+          "tools": [
+            {
+              "id": "landscapedesignsai",
+              "name": "LandscapeDesignsAI",
+              "description": "LandscapeDesignsAI is an advanced AI-powered landscape design platform that transforms outdoor spaces through intelligent design generation. Users can upload photos of their existing landscapes and leverage multiple specialized tools including the Transform feature for complete redesigns, Replace tool for adding specific elements like benches or pools, and a Design Assistant for custom creations. The platform generates 8 design variations per run, offering homeowners and professionals comprehensive visualization options.",
+              "vendorUrl": "https://landscapedesignsai.com/",
+              "directoryUrl": "https://archaitool.com/landscape-design/landscapedesignsai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Creator Package",
+                    "price": "$19",
+                    "billing": "onetime"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Transform tool for complete outdoor space redesigns",
+                "Replace tool for adding specific elements (benches, pools, walkways)",
+                "Design Assistant for custom landscape creations",
+                "Image Generator for creating new designs from scratch",
+                "300+ design styles and themes",
+                "8 design generations per run for variety",
+                "Roast My Landscape feature for design feedback",
+                "Free inspiration gallery",
+                "Front yard, backyard, and patio design options",
+                "High-resolution design downloads"
+              ],
+              "useCases": [
+                "Front yard landscape transformations",
+                "Backyard garden redesigns",
+                "Patio and outdoor living space design",
+                "Adding specific landscape elements (pools, benches, fences)",
+                "Design style exploration and visualization",
+                "Professional landscape design presentations",
+                "DIY landscape planning before construction",
+                "Commercial landscape design projects"
+              ],
+              "integrations": [
+                "Photo upload processing",
+                "High-resolution image export",
+                "Social media sharing capabilities",
+                "Design gallery integration"
+              ],
+              "searchAliases": [
+                "landscapedesignsai",
+                "landscape designs ai",
+                "landscapedesigns ai"
+              ],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "dreamzar",
+              "name": "Dreamzar",
+              "description": "DreamzAR is an innovative AI landscape design app designed for both homeowners and landscaping professionals. The app enables users to create stunning outdoor transformations and professional landscape designs using just an iPhone or iPad. With comprehensive tools including 2D Design with Photos, 3D Design with AR, AI Landscape Design Stylist, and AI Landscape Design Idea Generator, DreamzAR makes professional landscape design accessible at a fraction of traditional costs.",
+              "vendorUrl": "https://www.dreamzar.app/",
+              "directoryUrl": "https://archaitool.com/landscape-design/dreamzar",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Premium",
+                    "price": "Mobile app pricing",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "2D Design with Photos for quick transformations",
+                "3D Design with Augmented Reality",
+                "AI Landscape Design Stylist",
+                "AI Landscape Design Idea Generator",
+                "2000+ plant options and varieties",
+                "iPhone and iPad compatibility",
+                "Professional-grade design tools",
+                "Share designs with clients and contractors",
+                "Cost-effective solution for outdoor transformations",
+                "User-friendly mobile interface"
+              ],
+              "useCases": [
+                "Backyard landscape design",
+                "Front yard transformation planning",
+                "Garden design and plant selection",
+                "Outdoor living space visualization",
+                "Professional landscape presentations",
+                "Client design consultations",
+                "DIY landscape projects",
+                "Commercial landscape planning"
+              ],
+              "integrations": [
+                "Mobile camera integration",
+                "AR technology",
+                "Photo processing",
+                "Social media sharing"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "yardflip",
+              "name": "YardFlip AI",
+              "description": "YardFlip AI is a professional AI-powered landscape visualization service founded by Regan Kirk in 2024, rated 5/5 by homeowners internationally. The platform 'transforms your yard in 24 hours' using advanced inpainting technology to convert ordinary yard photos into stunning photorealistic designs. Serving US, AU, and NZ markets, YardFlip AI offers a 100% money-back guarantee and eliminates the need for expensive landscape contractors by providing multiple design options customized to your specific yard.",
+              "vendorUrl": "https://www.yardflip.ai/",
+              "directoryUrl": "https://archaitool.com/landscape-design/yardflip",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$45/month"
+                  },
+                  {
+                    "name": "Plus",
+                    "price": "$77/month"
+                  },
+                  {
+                    "name": "Premium",
+                    "price": "$116/month"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Photorealistic yard transformations",
+                "24-48 hour turnaround time",
+                "Multiple design variations per project",
+                "High-resolution downloadable designs",
+                "Commercial video generation options",
+                "Professional landscape visualization",
+                "Multiple pricing tiers for different needs",
+                "Upload and transform existing photos",
+                "Custom design solutions",
+                "Video creation for marketing presentations"
+              ],
+              "useCases": [
+                "Pre-construction yard visualization",
+                "Landscape design presentations",
+                "Real estate property marketing",
+                "Home renovation planning",
+                "Professional landscaper client presentations",
+                "Outdoor living space design",
+                "Garden transformation planning",
+                "Commercial landscape proposals"
+              ],
+              "integrations": [
+                "Photo upload processing",
+                "Email delivery system",
+                "High-resolution image export",
+                "Video generation and export"
+              ],
+              "searchAliases": [
+                "yardflip",
+                "yardflip ai"
+              ],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "ai-garden-design",
+              "name": "AI Garden Design",
+              "description": "AI Garden Design is a professional landscape transformation platform that has designed over 10,000 gardens across 50+ cities. The service converts ordinary garden photos into professional landscape designs in just 2 minutes, offering 35+ garden styles including Japanese Zen, English Cottage, and Modern Minimalist. With new users getting 3 free designs, AI Garden Design provides rapid outdoor space transformation with realistic visualizations and intelligent plant recommendations.",
+              "vendorUrl": "https://aigardendesign.io/",
+              "directoryUrl": "https://archaitool.com/landscape-design/ai-garden-design",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Starter",
+                    "price": "$9.9/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Professional",
+                    "price": "$19.9/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "10,000+ gardens designed across 50+ cities",
+                "35+ professional design styles (Japanese Zen, English Cottage, Modern)",
+                "Transform outdoor spaces in just 2 minutes",
+                "3 free designs for new users",
+                "Upload photo and get instant designs",
+                "Intelligent plant recommendations",
+                "Realistic visualization technology",
+                "Professional quality output",
+                "Mobile-friendly interface",
+                "High-resolution design exports"
+              ],
+              "useCases": [
+                "Residential garden transformations",
+                "Japanese Zen garden design",
+                "English cottage garden planning",
+                "Modern minimalist landscapes",
+                "Plant selection and placement",
+                "Backyard renovation planning",
+                "Professional landscape design",
+                "Garden style exploration"
+              ],
+              "integrations": [
+                "Photo upload processing",
+                "High-resolution image export",
+                "Plant database integration",
+                "Style library system"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general-design",
+      "name": "General Design Tools",
+      "description": "Cross-domain AI design assistants and automation",
+      "subcategories": [
+        {
+          "id": "multi-domain-ai",
+          "name": "Multi-domain AI Design",
+          "description": "AI tools for various design domains",
+          "tools": [
+            {
+              "id": "midjourney",
+              "name": "Midjourney",
+              "description": "Midjourney is a leading AI image generation platform that creates stunning visuals from text prompts through Discord-based interface. Founded in 2022, the platform has grown to over 19 million users and generates approximately $500 million in revenue. Midjourney excels at artistic interpretation, style variation, and creating imaginative compositions that bridge the gap between concept and visual reality.",
+              "vendorUrl": "https://midjourney.com/",
+              "directoryUrl": "https://archaitool.com/design-tools/midjourney",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$10/month"
+                  },
+                  {
+                    "name": "Standard",
+                    "price": "$30/month"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$60/month"
+                  },
+                  {
+                    "name": "Mega",
+                    "price": "$120/month"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Discord-based interface for easy collaboration",
+                "Advanced style transfer and artistic interpretation",
+                "Multiple aspect ratios and resolution options",
+                "Image upscaling and variation generation",
+                "Commercial license for paid subscribers",
+                "Community-driven prompt engineering"
+              ],
+              "useCases": [
+                "Concept art and creative illustration",
+                "Product design visualization",
+                "Marketing material creation",
+                "Architectural concept development",
+                "Social media content generation",
+                "Storyboarding and narrative visualization"
+              ],
+              "integrations": [
+                "Discord",
+                "API access",
+                "Third-party tools"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "nano-banana-pro",
+              "name": "Nano Banana Pro",
+              "description": "Nano Banana Pro is a high-fidelity image generation model accessed through Gemini, known for strong prompt adherence and realistic architectural visuals. It works well for early-stage massing, material studies, and atmosphere exploration where fast iteration matters.",
+              "vendorUrl": "https://gemini.google.com/app",
+              "directoryUrl": "https://archaitool.com/design-tools/nano-banana-pro",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "Paid plan available",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Strong prompt adherence for complex scenes",
+                "Photorealistic architectural output",
+                "Fast iteration for concept exploration",
+                "Image-to-image variations and refinements",
+                "Browser-based workflow with no install"
+              ],
+              "useCases": [
+                "Architectural concept exploration",
+                "Material and lighting studies",
+                "Early-stage design ideation",
+                "Marketing and presentation visuals"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-03-14"
+            },
+            {
+              "id": "flux-2",
+              "name": "Flux 2",
+              "description": "Flux 2 is a control-oriented image generation model focused on fast iteration and reliable style transfer. It is commonly used to explore architectural style variations and urban visualization concepts with consistent creative control.",
+              "vendorUrl": "https://bfl.ai/",
+              "directoryUrl": "https://archaitool.com/design-tools/flux-2",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Creator",
+                    "price": "Paid plan available",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Strong control over style and composition",
+                "Rapid iteration for design variations",
+                "Consistent output for reference-driven prompts",
+                "Works well with architectural styles",
+                "Web-based access through BFL"
+              ],
+              "useCases": [
+                "Architectural style exploration",
+                "Urban concept visualization",
+                "Design variation studies",
+                "Mood and atmosphere testing"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-03-14"
+            },
+            {
+              "id": "adobe-firefly",
+              "name": "Adobe Firefly",
+              "description": "Adobe Firefly is a comprehensive generative AI platform designed specifically for creative professionals, offering text-to-image, text effects, and generative capabilities integrated seamlessly into Adobe's creative ecosystem. Built on commercially safe training data, Firefly ensures that generated content is legally cleared for commercial use, making it ideal for professional creative workflows. The platform continues to expand with groundbreaking features including AI audio, video, and advanced batch production capabilities.",
+              "vendorUrl": "https://helpx.adobe.com/firefly/get-set-up/access-the-app/access-adobe-firefly.html",
+              "directoryUrl": "https://archaitool.com/design-tools/adobe-firefly",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Standard",
+                    "price": "$9.99/month"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$19.99/month"
+                  },
+                  {
+                    "name": "Premium",
+                    "price": "$199.99/month"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Text-to-image generation with commercial-safe training data",
+                "Generative fill and expand in Photoshop integration",
+                "Text effects and font generation",
+                "Vector and color pattern generation",
+                "AI video and audio generation (latest features)",
+                "Batch editing with Firefly Creative Production",
+                "Adobe Creative Cloud integration",
+                "Industry-leading content ethics standards"
+              ],
+              "useCases": [
+                "Marketing content creation and advertising",
+                "Social media graphics and campaigns",
+                "Product design and packaging visualization",
+                "Brand identity development",
+                "Digital artwork and illustration",
+                "Video content creation and editing"
+              ],
+              "integrations": [
+                "Photoshop",
+                "Illustrator",
+                "Express",
+                "After Effects",
+                "Premiere Pro",
+                "Adobe Stock"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "openai-dalle",
+              "name": "OpenAI DALL·E 3",
+              "description": "OpenAI DALL·E 3 represents the pinnacle of AI image generation technology, offering unprecedented accuracy in interpreting complex text prompts and creating coherent, detailed images. Integrated seamlessly into ChatGPT Plus and available through OpenAI's API, DALL·E 3 excels at understanding nuanced descriptions and maintaining visual consistency across generations. The model has been trained with improved safety measures and content safeguards, making it suitable for both creative and professional applications.",
+              "vendorUrl": "https://openai.com/dall-e-3",
+              "directoryUrl": "https://archaitool.com/design-tools/openai-dalle",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "ChatGPT Plus",
+                    "price": "$20/month"
+                  },
+                  {
+                    "name": "ChatGPT Pro",
+                    "price": "$200/month"
+                  },
+                  {
+                    "name": "API Pay-as-you-go",
+                    "price": "Per-use pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Exceptional text prompt comprehension and accuracy",
+                "Seamless ChatGPT integration for conversational creation",
+                "API access for developers and enterprises",
+                "Built-in content safety and ethical safeguards",
+                "High-resolution image generation up to 1024x1024",
+                "Improved text rendering within images",
+                "Style consistency across multiple generations",
+                "Commercial use license for paid users"
+              ],
+              "useCases": [
+                "Concept art and creative visualization",
+                "Marketing and advertising imagery",
+                "Product design and prototyping",
+                "Educational content and illustrations",
+                "Social media graphics and posts",
+                "Architectural and design visualization"
+              ],
+              "integrations": [
+                "ChatGPT",
+                "OpenAI API",
+                "Microsoft Copilot",
+                "Third-party applications"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "moodboardai",
+              "name": "Moodboard AI",
+              "description": "Moodboard AI is a specialized platform that leverages artificial intelligence to transform the moodboard creation process, enabling designers, marketers, and creative professionals to generate visually cohesive inspiration boards in minutes. The platform analyzes design requirements, color schemes, and style preferences to curate and generate moodboards that effectively communicate design intent. With focus on interior design, fashion, and branding applications, Moodboard AI streamlines the creative ideation phase.",
+              "vendorUrl": "https://moodboardai.com/",
+              "directoryUrl": "https://archaitool.com/design-tools/moodboardai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$19.99/month"
+                  },
+                  {
+                    "name": "Studio",
+                    "price": "$49.99/month"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered visual curation and generation",
+                "Style recognition and color palette extraction",
+                "Interior design and room-specific moodboards",
+                "Fashion and clothing collection boards",
+                "Brand identity and marketing campaign boards",
+                "Customizable templates and layouts",
+                "Image enhancement and style matching",
+                "Export capabilities for presentations"
+              ],
+              "useCases": [
+                "Interior design project visualization",
+                "Fashion collection planning",
+                "Brand identity development",
+                "Wedding and event planning",
+                "Marketing campaign conceptualization",
+                "Product design inspiration"
+              ],
+              "integrations": [
+                "Pinterest",
+                "Instagram",
+                "Design software",
+                "Cloud storage"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "rustic-ai",
+              "name": "Rustic AI",
+              "description": "Rustic AI is a comprehensive AI-powered design editor that specializes in creating marketing assets including advertisements, social media creatives, YouTube thumbnails, and promotional materials. The platform combines advanced AI generation capabilities with intuitive editing tools, enabling marketers, content creators, and businesses to produce professional-quality visual content at scale. With focus on commercial applications, Rustic AI offers templates and features specifically designed for digital marketing campaigns.",
+              "vendorUrl": "https://www.rusticai.art/",
+              "directoryUrl": "https://archaitool.com/design-tools/rustic-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Creator",
+                    "price": "$29/month"
+                  },
+                  {
+                    "name": "Business",
+                    "price": "$99/month"
+                  },
+                  {
+                    "name": "Lifetime Deal",
+                    "price": "$99 (one-time)"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered ad creative generation",
+                "YouTube thumbnail optimization",
+                "Social media post templates",
+                "Brand kit integration and consistency",
+                "A/B testing design variations",
+                "Background removal and replacement",
+                "Text overlay and typography tools",
+                "Export formats for all platforms"
+              ],
+              "useCases": [
+                "YouTube channel thumbnail creation",
+                "Facebook and Instagram advertising",
+                "Social media content creation",
+                "Email marketing visual assets",
+                "Blog post featured images",
+                "Product launch promotional materials"
+              ],
+              "integrations": [
+                "Social media platforms",
+                "Email marketing tools",
+                "CMS platforms",
+                "Design software"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            }
+          ]
+        },
+        {
+          "id": "design-automation",
+          "name": "Design Assistance & Automation",
+          "description": "AI-powered design automation tools",
+          "tools": [
+            {
+              "id": "sketchpro-ai",
+              "name": "Sketchpro AI",
+              "description": "SketchPro AI is a revolutionary AI-powered platform designed as a copilot for architects and designers, offering instant renders and AI-driven tools that transform the design visualization process. The platform accepts multiple input formats including sketches, elevations, 3D models, and images, providing designers with unprecedented flexibility in their workflow. With its advanced style reference capabilities and accurate visualization features, SketchPro AI has become an essential tool for thousands of design professionals seeking to enhance their creative process.",
+              "vendorUrl": "https://sketchpro.ai/",
+              "directoryUrl": "https://archaitool.com/design-tools/sketchpro-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "$29/month"
+                  },
+                  {
+                    "name": "Studio",
+                    "price": "$99/month"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered instant rendering capabilities",
+                "Multiple input formats (sketch, elevation, 3D model, image)",
+                "Style reference and design consistency",
+                "Real-time visualization and iteration",
+                "Web-based platform with no installation required",
+                "Professional-quality output generation",
+                "Design exploration and variation creation",
+                "Cloud-based processing and collaboration"
+              ],
+              "useCases": [
+                "Architectural concept visualization",
+                "Design iteration and exploration",
+                "Client presentation and communication",
+                "Rapid prototyping and development",
+                "Style transfer and design variation",
+                "Educational and academic projects"
+              ],
+              "integrations": [
+                "CAD software",
+                "3D modeling tools",
+                "Cloud storage",
+                "Presentation platforms"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "draftaid",
+              "name": "Draftaid",
+              "description": "DraftAid is an innovative AI-powered CAD drawing automation platform that transforms the engineering and design workflow by instantly generating accurate 2D fabrication drawings from 3D models. The platform specializes in automating repetitive drafting tasks, enabling professionals to create faster, more consistent drawings while maintaining precision and compliance with industry standards. With seamless integration into existing CAD workflows, DraftAid has become an essential tool for engineers, fabricators, and manufacturers seeking to streamline their design-to-production processes.",
+              "vendorUrl": "https://draftaid.io/",
+              "directoryUrl": "https://archaitool.com/design-tools/draftaid",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Professional",
+                    "price": "$79/month"
+                  },
+                  {
+                    "name": "Enterprise",
+                    "price": "Custom pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered 2D drawing generation from 3D models",
+                "Automated fabrication drawing creation",
+                "CAD platform integration and compatibility",
+                "Standard compliance checking",
+                "Batch processing capabilities",
+                "Customizable drawing templates",
+                "Dimension and annotation automation",
+                "Quality assurance and validation tools"
+              ],
+              "useCases": [
+                "Engineering fabrication drawings",
+                "Manufacturing production documentation",
+                "Architectural construction drawings",
+                "Product design documentation",
+                "Quality control and inspection drawings",
+                "Technical illustration and manuals"
+              ],
+              "integrations": [
+                "AutoCAD",
+                "SolidWorks",
+                "Inventor",
+                "Fusion 360",
+                "Revit"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "opal-ai",
+              "name": "Opal AI",
+              "description": "Opal AI is a pioneering platform specializing in spatial intelligence AI tools designed specifically for commercial and government applications. The company's flagship technologies include Scan to BIM conversion, ScanTo3D applications, and Urbanomy for urban planning analysis. By leveraging advanced computer vision and machine learning algorithms, Opal AI transforms physical spaces into intelligent digital assets, enabling organizations to make data-driven decisions about built environments. Their solutions are particularly valuable for facilities management, construction, and urban planning sectors.",
+              "vendorUrl": "https://www.opal-ai.com/",
+              "directoryUrl": "https://archaitool.com/design-tools/opal-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Business",
+                    "price": "Custom pricing"
+                  },
+                  {
+                    "name": "Government",
+                    "price": "Custom pricing"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Scan to BIM conversion with AI accuracy",
+                "3D model generation from 2D scans and images",
+                "Urban planning and analysis tools (Urbanomy)",
+                "Spatial data processing and analysis",
+                "Government and commercial compliance standards",
+                "Cloud-based processing and storage",
+                "Integration with existing BIM workflows",
+                "Automated quality assurance and validation"
+              ],
+              "useCases": [
+                "Building Information Modeling (BIM) creation",
+                "Facilities management and space planning",
+                "Urban development and city planning",
+                "Construction progress monitoring",
+                "Asset documentation and management",
+                "Regulatory compliance and reporting"
+              ],
+              "integrations": [
+                "BIM software",
+                "GIS platforms",
+                "Facilities management systems",
+                "Government databases"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-estate",
+      "name": "Real Estate & Marketing",
+      "description": "AI tools for property enhancement and visualization",
+      "subcategories": [
+        {
+          "id": "property-visualization",
+          "name": "Property Visualization & Enhancement",
+          "description": "AI-powered tools for property visualization and improvement",
+          "tools": [
+            {
+              "id": "collov",
+              "name": "Collov AI",
+              "description": "Collov AI is a cutting-edge virtual staging platform that transforms empty spaces into stunning, market-ready homes using advanced artificial intelligence technology. With pricing as low as $0.23 per image, Collov delivers professional-grade virtual staging results that save real estate agents significant costs compared to traditional staging methods. The platform's proprietary AI technology generates photorealistic furniture placement and interior design in seconds, enabling agents to enhance property listings and attract more potential buyers.",
+              "vendorUrl": "https://collov.ai/",
+              "directoryUrl": "https://archaitool.com/real-estate/collov",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Standard",
+                    "price": "$16/month"
+                  },
+                  {
+                    "name": "Advanced",
+                    "price": "$39/month"
+                  },
+                  {
+                    "name": "Enterprise",
+                    "price": "$225/month"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "AI-powered virtual staging in under 1 second",
+                "Professional results at $0.23-$0.27 per image",
+                "60 high-quality images included in base plan",
+                "Multiple design styles and furniture options",
+                "3D virtual tours and immersive experiences",
+                "Outdoor AI virtual staging for curb appeal",
+                "Unlimited regeneration and modifications",
+                "No watermark on final images",
+                "API integration for bulk processing",
+                "Real estate agent collaboration tools"
+              ],
+              "useCases": [
+                "Virtual staging for vacant property listings",
+                "Real estate marketing material enhancement",
+                "Property listing photo optimization",
+                "Interior design visualization for clients",
+                "Curb appeal improvement with outdoor staging",
+                "Bulk processing for real estate agencies",
+                "3D virtual tour creation",
+                "Furniture style experimentation"
+              ],
+              "integrations": [
+                "MLS integration compatibility",
+                "CRM software integration",
+                "API for custom workflows",
+                "Cloud storage platforms",
+                "Real estate photography platforms"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "reimaginehome",
+              "name": "ReimagineHome AI",
+              "description": "ReimagineHome AI is a leading AI-powered virtual staging and interior design platform developed by Styldod, Inc., transforming real estate and home design visualization across 190+ countries worldwide. With over 1.5 million registered users and 23 million+ designs generated, the platform has become an essential tool for real estate professionals, homeowners, and interior designers. The platform's innovative 'one photo, one prompt, total transformation' approach enables users to virtually stage empty rooms, redesign furnished spaces, enhance landscapes, and visualize home renovations with remarkable speed and realism.",
+              "vendorUrl": "https://www.reimaginehome.ai/",
+              "directoryUrl": "https://archaitool.com/real-estate/reimaginehome",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "AI-powered virtual staging with realistic furniture",
+                "Interior redesign and remodeling visualization",
+                "AI landscaping for outdoor spaces",
+                "Home renovation and remodeling previews",
+                "Multiple furniture styles and color schemes",
+                "One-click photo enhancement",
+                "Property listing optimization tools",
+                "Customizable design elements",
+                "Fast processing under 30 seconds",
+                "Watermark-free images on paid plans"
+              ],
+              "useCases": [
+                "Virtual staging for empty properties",
+                "Real estate listing photo enhancement",
+                "Home renovation visualization",
+                "Landscape design preview",
+                "Interior design proposals",
+                "Property marketing materials",
+                "Before/after comparison presentations",
+                "Multi-style property showcasing"
+              ],
+              "integrations": [
+                "Real estate photography platforms",
+                "MLS listing integration",
+                "Social media sharing tools",
+                "Cloud storage services",
+                "Email marketing platforms"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "aihomedesign",
+              "name": "AI Home Design",
+              "description": "AI HomeDesign is a fast, intuitive AI-powered platform that revolutionizes real estate photo editing by transforming property photos into professional MLS-ready visuals in approximately 30 seconds. Designed specifically for real estate agents, photographers, stagers, interior designers, and contractors, the platform uses advanced artificial intelligence to deliver photo-realistic results without requiring technical skills or design experience. The platform accepts multiple file formats (JPG, JPEG, PNG, WEBP, HEIC) up to 50MB and provides users with full rights to download and use edited images for real estate marketing across major platforms including MLS, Zillow, Realtor.com, and Redfin.",
+              "vendorUrl": "https://aihomedesign.com/",
+              "directoryUrl": "https://archaitool.com/real-estate/aihomedesign",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "10+ AI-powered real estate photo editing tools",
+                "AI virtual staging with realistic furniture",
+                "Smart item removal and decluttering",
+                "AI image enhancement and color correction",
+                "Day to Dusk conversion for dramatic effects",
+                "Interior design style suggestions",
+                "Instant MLS-ready photo processing",
+                "Batch processing capabilities",
+                "Unlimited storage and regenerations",
+                "No credit card required for free trial"
+              ],
+              "useCases": [
+                "Real estate photo enhancement and editing",
+                "Virtual staging for vacant properties",
+                "Item removal and decluttering",
+                "Day to Dusk conversion for dramatic listings",
+                "Interior design visualization",
+                "Property marketing optimization",
+                "MLS photo compliance and improvement",
+                "Before/after transformation presentations"
+              ],
+              "integrations": [
+                "MLS platform integration",
+                "Real estate CRM systems",
+                "Photography editing workflows",
+                "Cloud storage synchronization",
+                "Social media automation"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            },
+            {
+              "id": "iacrea",
+              "name": "Iacrea",
+              "description": "IACrea is a revolutionary AI-powered virtual staging platform founded in 2023 by French engineers, designed to help users envision themselves in real estate properties through rapid interior and exterior transformations. Delivering professional-quality results in just 30 seconds, IACrea serves over 3,000 real estate professionals with its innovative approach to virtual home staging. The platform combines advanced artificial intelligence with an intuitive interface, enabling users to redecorate, renovate, furnish interiors and beautify exteriors with remarkable speed and realism, featuring over 25,000 unique exterior design options.",
+              "vendorUrl": "https://www.iacrea.com/en",
+              "directoryUrl": "https://archaitool.com/real-estate/iacrea",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Virtual staging in 30 seconds or less",
+                "Interior and exterior home staging",
+                "AI-powered furnishing and redecoration",
+                "Smart decluttering and space optimization",
+                "Kitchen and bathroom redesign capabilities",
+                "Exterior modification and landscaping",
+                "Video creation from static photos",
+                "Multiple design styles and themes",
+                "Realistic furniture placement and lighting",
+                "Professional quality outputs"
+              ],
+              "useCases": [
+                "Professional virtual staging for real estate listings",
+                "Interior design visualization and proposals",
+                "Exterior home improvement previews",
+                "Property marketing video creation",
+                "Real estate photography enhancement",
+                "Home renovation planning",
+                "Space optimization and decluttering",
+                "Before/after transformation presentations"
+              ],
+              "integrations": [
+                "Real estate listing platforms",
+                "Social media sharing tools",
+                "Cloud storage services",
+                "Email marketing integration",
+                "Video hosting platforms"
+              ],
+              "searchAliases": [],
+              "lastUpdated": "2025-10-30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

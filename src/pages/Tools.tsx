@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useSearchParams, useParams, Link, useLocation, Navigate } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
+import { StructuredData } from '../components/StructuredData';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
 import { truncateWithEllipsis } from '../utils/text';
@@ -15,9 +16,12 @@ type Insight = {
   steps?: string[];
 };
 
+const BASE_URL = 'https://archaitool.com';
+const DIRECTORY_LAST_UPDATED = '2026-04-13';
+
 const directoryNarrative = {
   hero:
-    'Arch AI Tool tracks more than 400 design, construction, and property technology AI experiments every quarter. This directory condenses that research into practical buying notes so studios, developers, and in-house innovation teams can jump straight to the workflows that already ship results.',
+    'Arch AI Tool tracks hundreds of design, construction, and property technology AI experiments on a rolling basis. This directory condenses that research into practical buying notes so studios, developers, and in-house innovation teams can jump straight to the workflows that already ship results.',
   usage: [
     'Start with the category that mirrors your current deliverable—feasibility studies, marketing collateral, tenant-fit plans, or landscaping proposals—and skim the overview to understand what outputs to expect.',
     'Open the relevant subcategory for a deeper explanation of the workflow, such as virtual staging or design automation, and note the interlinked tools to compare turnaround time, export fidelity, and collaboration features.',
@@ -42,6 +46,53 @@ const directoryNarrative = {
     }
   ]
 };
+
+const researchSources = [
+  'Vendor websites, documentation, and pricing pages.',
+  'Official release notes and changelogs when available.',
+  'Public demos, case studies, and integration guides.',
+  'Direct submissions verified against public sources.'
+];
+
+const researchMethodologyNote =
+  'We cross-check tool details against public vendor sources. When information conflicts, we default to official documentation and pricing pages.';
+
+const buildFaqSchema = (faqs: { question: string; answer: string }[], pageUrl: string) => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(faq => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer
+    }
+  })),
+  url: pageUrl
+});
+
+const buildItemListSchema = (
+  name: string,
+  description: string,
+  pageUrl: string,
+  items: any[],
+  mapItem: (item: any) => any
+) => ({
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name,
+  description,
+  url: pageUrl,
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: mapItem(item)
+    }))
+  }
+});
 
 const categoryInsights: Record<string, Insight> = {
   'real-estate': {
@@ -321,6 +372,70 @@ const Tools = () => {
     ensurePropertyTag('og:url', `https://archaitool.com${canonicalPath}`);
   }, [selectedCategory, selectedSubcategory, canonicalPath]);
 
+  const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+  const structuredDataBlocks: object[] = [];
+
+  if (!selectedCategory) {
+    structuredDataBlocks.push(
+      buildItemListSchema(
+        'AI Architecture Tool Categories | Arch AI Tool',
+        'Browse AI architecture tool categories across architecture, interior, landscape, and real estate workflows.',
+        canonicalUrl,
+        configuredCategories,
+        (category) => ({
+          '@type': 'CollectionPage',
+          name: category.name,
+          url: `${BASE_URL}/tools/${category.id}`
+        })
+      )
+    );
+
+    if (directoryNarrative.faqs.length > 0) {
+      structuredDataBlocks.push(buildFaqSchema(directoryNarrative.faqs, canonicalUrl));
+    }
+  }
+
+  if (selectedCategory && !selectedSubcategory) {
+    structuredDataBlocks.push(
+      buildItemListSchema(
+        `${selectedCategory.name} AI Tools | Arch AI Tool`,
+        selectedCategory.description,
+        canonicalUrl,
+        selectedCategory.subcategories,
+        (subcategory) => ({
+          '@type': 'CollectionPage',
+          name: subcategory.name,
+          url: `${BASE_URL}/tools/${selectedCategory.id}/${subcategory.id}`
+        })
+      )
+    );
+
+    if (categoryInsight?.faqs && categoryInsight.faqs.length > 0) {
+      structuredDataBlocks.push(buildFaqSchema(categoryInsight.faqs, canonicalUrl));
+    }
+  }
+
+  if (selectedCategory && selectedSubcategory) {
+    structuredDataBlocks.push(
+      buildItemListSchema(
+        `${selectedSubcategory.name} AI Tools | Arch AI Tool`,
+        selectedSubcategory.description,
+        canonicalUrl,
+        selectedSubcategory.tools,
+        (tool) => ({
+          '@type': 'SoftwareApplication',
+          name: tool.name,
+          url: `${BASE_URL}${generateToolUrl(tool.id)}`,
+          applicationCategory: 'DesignApplication'
+        })
+      )
+    );
+
+    if (subcategoryInsight?.faqs && subcategoryInsight.faqs.length > 0) {
+      structuredDataBlocks.push(buildFaqSchema(subcategoryInsight.faqs, canonicalUrl));
+    }
+  }
+
   const renderBreadcrumbs = () => (
     <div className="flex items-center gap-2 mb-8 text-sm">
       <Link to="/tools" className="text-gray-600 hover:text-black">
@@ -429,6 +544,18 @@ const Tools = () => {
             </div>
           ))}
         </div>
+      </section>
+      <section className="bg-white rounded-xl shadow-lg p-8">
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">Research methodology</h3>
+        <p className="text-gray-700 leading-relaxed mb-6">{researchMethodologyNote}</p>
+        <ul className="space-y-2 list-disc list-inside text-gray-700">
+          {researchSources.map((source, index) => (
+            <li key={index}>{source}</li>
+          ))}
+        </ul>
+        <p className="text-sm text-gray-500 mt-6">
+          Last reviewed: {DIRECTORY_LAST_UPDATED}. Rolling updates at least every two weeks.
+        </p>
       </section>
     </div>
   );
@@ -547,6 +674,9 @@ const Tools = () => {
 
   return (
     <div className="min-h-screen py-12 bg-gray-50">
+      {structuredDataBlocks.map((data, index) => (
+        <StructuredData key={`tools-structured-${index}`} data={data} />
+      ))}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {renderBreadcrumbs()}
         
@@ -554,7 +684,7 @@ const Tools = () => {
           <>
             <h1 className="text-4xl font-bold mb-8">Complete Architecture AI Tools Directory - Free & Professional Solutions</h1>
             <section className="bg-white rounded-xl shadow-lg p-6 mb-8">
-              <p className="text-sm text-gray-500 mb-4">Updated: 2026-03-24</p>
+              <p className="text-sm text-gray-500 mb-4">Updated: {DIRECTORY_LAST_UPDATED}</p>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Quick picks to start fast</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
                 <div>

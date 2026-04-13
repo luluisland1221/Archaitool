@@ -4,6 +4,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Check } from 'lucide-react';
 import { getPostBySlug } from '../data/blog/posts';
 import { getTagById } from '../data/blog/tags';
+import { StructuredData } from '../components/StructuredData';
 import NotFound from './NotFound';
 
 const BlogPost: React.FC = () => {
@@ -23,6 +24,38 @@ const BlogPost: React.FC = () => {
   }
 
   const postTags = post.tags.map(tagId => getTagById(tagId)).filter(Boolean);
+  const pageUrl = `https://archaitool.com/blog/${post.slug}`;
+  const articleSections = postTags.map(tag => tag?.name).filter(Boolean);
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.seo.description,
+    datePublished: post.publishedDate,
+    dateModified: post.publishedDate,
+    author: {
+      '@type': 'Person',
+      name: post.author.name
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Arch AI Tool',
+      url: 'https://archaitool.com'
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': pageUrl
+    },
+    image: post.featuredImage ? [post.featuredImage] : undefined,
+    keywords: post.seo.keywords?.join(', '),
+    articleSection: articleSections.length ? articleSections : undefined,
+    isPartOf: {
+      '@type': 'Blog',
+      name: 'ArchAI Blog',
+      url: 'https://archaitool.com/blog'
+    }
+  };
 
   const handleShare = async () => {
     try {
@@ -66,6 +99,7 @@ const BlogPost: React.FC = () => {
 
   return (
     <>
+      <StructuredData data={articleJsonLd} />
       <Helmet>
         <title>{post.title} | ArchAI Blog</title>
         <meta name="description" content={post.seo.description} />
