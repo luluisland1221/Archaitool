@@ -71,6 +71,27 @@ const TitleUpdater = () => {
     // Always point to the non-www HTTPS version without duplicate parameters
     setCanonicalUrl(location.pathname);
 
+    const helmetRoutes = [
+      '/blog',
+      '/contact',
+      '/contact/submissions',
+      '/privacy-policy',
+      '/terms-of-service'
+    ];
+    const isHelmetRoute =
+      helmetRoutes.includes(location.pathname) ||
+      location.pathname.startsWith('/blog/');
+
+    if (isHelmetRoute) {
+      const metaTags = document.querySelectorAll('meta[name="description"]');
+      metaTags.forEach((tag) => {
+        if (!tag.hasAttribute('data-rh')) {
+          tag.remove();
+        }
+      });
+      return;
+    }
+
     // Set meta description for non-tool pages
     let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
     if (!metaDescription) {
