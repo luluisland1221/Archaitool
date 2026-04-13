@@ -43,14 +43,131 @@ const buildArticle = (config: {
   sections: Section[];
   closing: string;
 }) => `
+${(() => {
+  const pickNames = config.picks?.map(item => item.label).join(', ');
+  const primaryPick = config.picks?.[0]?.label ?? 'a primary tool';
+  const secondaryPick = config.picks?.[1]?.label ?? 'a secondary tool';
+  const sectionFocus = config.sections.length
+    ? config.sections.map(section => section.title).join(', ')
+    : 'workflow fit, pricing, and output quality';
+  const toolContext = pickNames
+    ? `Tools referenced here include ${pickNames}.`
+    : 'Use the related links below to explore the full directory.';
+  const useCaseList =
+    config.picks && config.picks.length
+      ? renderList(
+          config.picks.map(
+            item =>
+              `Use ${item.label} when you need ${item.note.toLowerCase()} and want fast feedback.`
+          )
+        )
+      : '';
+  const outputSpec = renderList([
+    'Define the exact deliverable (renders, plans, or staged photos).',
+    'Lock the aspect ratio and target resolution early.',
+    'Set a review cadence so feedback is consistent.',
+    'Decide which files must be exportable for downstream edits.',
+    'Assign ownership for prompts, presets, and naming conventions.'
+  ]);
+  const checklist = renderList([
+    'Confirm the deliverable: concept images, floor plans, or staged listings.',
+    'Check export formats and resolution requirements.',
+    'Verify pricing tiers, usage limits, and commercial rights.',
+    'Test one real project brief before scaling.',
+    'Document prompts or settings so results are repeatable.'
+  ]);
+  const implementationTips = renderList([
+    `Start with ${primaryPick} as the baseline so the team shares a common reference.`,
+    `Keep ${secondaryPick} as a second opinion tool for style validation.`,
+    'Create a short prompt library and reuse it on every pilot.',
+    'Save one gold-standard example to benchmark every new output.',
+    'Track revisions so you know when the AI saved real time.'
+  ]);
+  const risks = renderList([
+    'AI outputs can ignore zoning, adjacency, or code constraints.',
+    'Over-stylized visuals may mislead client expectations.',
+    'Plan limits or credit caps can break a weekly production cadence.',
+    'Some tools restrict commercial usage or public marketing rights.',
+    'Inconsistent prompts can create noisy deliverables that are hard to compare.'
+  ]);
+  const metrics = renderList([
+    'Time to first usable output',
+    'Revision count per deliverable',
+    'Cost per final render or plan',
+    'Stakeholder approval rate',
+    'Rework required in CAD, BIM, or post-production'
+  ]);
+  const workflow = `
+<ol>
+  <li>Define the project goal and output format.</li>
+  <li>Select 1-2 tools to pilot based on the quick picks.</li>
+  <li>Run a short pilot with consistent inputs.</li>
+  <li>Compare outputs for realism, speed, and team feedback.</li>
+  <li>Lock the tool stack and document the workflow.</li>
+</ol>`;
+  const faq = `
+<div>
+  <p><strong>How should I test these tools?</strong></p>
+  <p>Start with a real brief, reuse the same inputs across tools, and measure speed, realism, and client feedback.</p>
+  <p><strong>Do I need more than one tool?</strong></p>
+  <p>Most teams use at least two: one fast optioning tool and one higher fidelity renderer or staging tool.</p>
+  <p><strong>How do I compare outputs quickly?</strong></p>
+  <p>Export the same aspect ratio, place results in a single board, and score them on realism, clarity, and approval speed.</p>
+  <p><strong>Can I use AI outputs for permits?</strong></p>
+  <p>Use AI for concept and marketing visuals. Final permit documents should still be produced in CAD/BIM.</p>
+  <p><strong>How often should I re-evaluate?</strong></p>
+  <p>Review the stack quarterly or whenever pricing or model quality shifts materially.</p>
+</div>`;
+  return `
 <h2>Overview</h2>
 <p>${config.intro}</p>
 ${config.picks && config.picks.length ? `<h2>Quick picks</h2>${renderPickList(config.picks)}` : ''}
+${config.picks && config.picks.length ? `
+<h2>Decision matrix</h2>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+  <thead>
+    <tr style="background:#111827;color:#fff;">
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Tool</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Best for</th>
+      <th style="padding:0.75rem;border:1px solid #e5e7eb;text-align:left;">Why it matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    ${config.picks.map(item => `
+      <tr>
+        <td style="padding:0.75rem;border:1px solid #e5e7eb;">${item.label}</td>
+        <td style="padding:0.75rem;border:1px solid #e5e7eb;">${item.note}</td>
+        <td style="padding:0.75rem;border:1px solid #e5e7eb;">Use this when speed and clarity matter for ${item.label} workflows.</td>
+      </tr>
+    `).join('')}
+  </tbody>
+</table>` : ''}
+<h2>How to use this guide</h2>
+<p>This guide focuses on ${sectionFocus}. Start by defining the deliverable, then map tools to the output you need most often.</p>
 ${renderSections(config.sections)}
+${config.picks && config.picks.length ? `<h2>Use case map</h2><p>Match each tool to the deliverable it supports best.</p>${useCaseList}` : ''}
+<h2>Define the output spec</h2>
+<p>Clear output specs reduce revisions and make tool tests comparable. Use this checklist before running pilots.</p>
+${outputSpec}
+<h2>Who this is for</h2>
+<p>This guide is built for architects, visualization teams, and real estate marketers who need repeatable AI outputs. ${toolContext}</p>
+<h2>Evaluation checklist</h2>
+${checklist}
+<h2>Pilot workflow</h2>
+${workflow}
+<h2>Implementation tips</h2>
+${implementationTips}
+<h2>Risks and limitations</h2>
+${risks}
+<h2>Metrics to track</h2>
+${metrics}
 <h2>Related links</h2>
 ${relatedLinks}
+<h2>FAQ</h2>
+${faq}
 <h2>Next step</h2>
 <p>${config.closing}</p>
+`; })()}
 `;
 
 export const bestAiToolsArchitecture2026Article = buildArticle({
