@@ -5,6 +5,7 @@ import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
+import { truncateWithEllipsis } from '../utils/text';
 
 type Insight = {
   overview: string;
@@ -280,7 +281,45 @@ const Tools = () => {
     }
     
     document.title = title;
-  }, [selectedCategory, selectedSubcategory]);
+
+    if (!selectedCategory && !selectedSubcategory) {
+      return;
+    }
+
+    const descriptionSource = selectedSubcategory || selectedCategory;
+    if (!descriptionSource) {
+      return;
+    }
+
+    const baseDescription = `${descriptionSource.name} tools for architecture and design. ${descriptionSource.description}`;
+    const metaDescriptionText = truncateWithEllipsis(baseDescription, 155);
+
+    const ensureMetaTag = (name: string, content: string) => {
+      let tag = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.name = name;
+        document.head.appendChild(tag);
+      }
+      tag.content = content;
+    };
+
+    const ensurePropertyTag = (property: string, content: string) => {
+      let tag = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.setAttribute('property', property);
+        document.head.appendChild(tag);
+      }
+      tag.content = content;
+    };
+
+    ensureMetaTag('description', metaDescriptionText);
+    ensurePropertyTag('og:title', title);
+    ensurePropertyTag('og:description', metaDescriptionText);
+    ensurePropertyTag('og:type', 'website');
+    ensurePropertyTag('og:url', `https://archaitool.com${canonicalPath}`);
+  }, [selectedCategory, selectedSubcategory, canonicalPath]);
 
   const renderBreadcrumbs = () => (
     <div className="flex items-center gap-2 mb-8 text-sm">

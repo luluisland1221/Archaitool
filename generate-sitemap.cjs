@@ -82,7 +82,6 @@ async function generateSitemap() {
 
   categories.forEach(category => {
     addUrl(urls, `${SITE_URL}/tools/${category.id}`, { changefreq: 'weekly', priority: '0.8' });
-    addUrl(urls, `${SITE_URL}/tools?category=${category.id}`, { changefreq: 'weekly', priority: '0.8' });
 
     const categorySlug = CATEGORY_SLUG_MAP[category.id] || category.id;
 
@@ -91,11 +90,6 @@ async function generateSitemap() {
         changefreq: 'weekly',
         priority: '0.7'
       });
-      addUrl(
-        urls,
-        `${SITE_URL}/tools?category=${category.id}&subcategory=${subcategory.id}`,
-        { changefreq: 'weekly', priority: '0.7' }
-      );
 
       subcategory.tools.forEach(tool => {
         const toolPath = `${SITE_URL}/${categorySlug}/${tool.id}`;

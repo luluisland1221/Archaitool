@@ -2,67 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://archaitool.com/</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://archaitool.com/about</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/contact</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/privacy-policy</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://archaitool.com/terms-of-service</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://archaitool.com/blog</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools/architecture-spatial</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=architecture-spatial</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools/architecture-spatial/architectural-design</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=architecture-spatial&amp;subcategory=architectural-design</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -140,13 +128,7 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/architecture-spatial/architectural-visualization</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=architecture-spatial&amp;subcategory=architectural-visualization</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -242,25 +224,13 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/interior-design</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=interior-design</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools/interior-design/interior-design-remodeling</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=interior-design&amp;subcategory=interior-design-remodeling</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -356,13 +326,7 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/interior-design/virtual-staging</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=interior-design&amp;subcategory=virtual-staging</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -416,25 +380,13 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/landscape-design</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=landscape-design</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools/landscape-design/landscape-planning</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=landscape-design&amp;subcategory=landscape-planning</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -464,25 +416,13 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/general-design</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=general-design</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools/general-design/multi-domain-ai</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=general-design&amp;subcategory=multi-domain-ai</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -530,13 +470,7 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/general-design/design-automation</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=general-design&amp;subcategory=design-automation</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -560,25 +494,13 @@
   </url>
   <url>
     <loc>https://archaitool.com/tools/real-estate</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=real-estate</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://archaitool.com/tools/real-estate/property-visualization</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://archaitool.com/tools?category=real-estate&amp;subcategory=property-visualization</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

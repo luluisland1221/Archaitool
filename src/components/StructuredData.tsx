@@ -113,14 +113,6 @@ export function generateHomepageStructuredData() {
     "name": "Arch AI Tool",
     "description": "Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more.",
     "url": "https://archaitool.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://archaitool.com/tools?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    },
     "publisher": {
       "@type": "Organization",
       "name": "Arch AI Tool Directory",

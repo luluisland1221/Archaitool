@@ -86,6 +86,12 @@ const ToolDetail = () => {
       // Update or create canonical URL
       setCanonicalUrl(generateToolUrl(tool.id));
 
+      const pageUrl = `https://archaitool.com${generateToolUrl(tool.id)}`;
+      const rawImagePath = tool.fallbackImage || tool.image;
+      const absoluteImageUrl = rawImagePath
+        ? (rawImagePath.startsWith('http') ? rawImagePath : `https://archaitool.com${rawImagePath}`)
+        : '';
+
       // Update Open Graph meta tags
       let ogTitle = document.querySelector('meta[property="og:title"]') as HTMLMetaElement;
       if (!ogTitle) {
@@ -109,7 +115,17 @@ const ToolDetail = () => {
         ogUrl.property = 'og:url';
         document.head.appendChild(ogUrl);
       }
-      ogUrl.content = `https://archaitool.com${generateToolUrl(tool.id)}`;
+      ogUrl.content = pageUrl;
+
+      if (absoluteImageUrl) {
+        let ogImage = document.querySelector('meta[property="og:image"]') as HTMLMetaElement;
+        if (!ogImage) {
+          ogImage = document.createElement('meta');
+          ogImage.property = 'og:image';
+          document.head.appendChild(ogImage);
+        }
+        ogImage.content = absoluteImageUrl;
+      }
 
       // Update Twitter Card meta tags
       let twitterTitle = document.querySelector('meta[name="twitter:title"]') as HTMLMetaElement;
@@ -120,6 +136,14 @@ const ToolDetail = () => {
       }
       twitterTitle.content = tool.seoTitle || `${tool.name} - ${tool.description}`;
 
+      let twitterCard = document.querySelector('meta[name="twitter:card"]') as HTMLMetaElement;
+      if (!twitterCard) {
+        twitterCard = document.createElement('meta');
+        twitterCard.name = 'twitter:card';
+        document.head.appendChild(twitterCard);
+      }
+      twitterCard.content = 'summary_large_image';
+
       let twitterDescription = document.querySelector('meta[name="twitter:description"]') as HTMLMetaElement;
       if (!twitterDescription) {
         twitterDescription = document.createElement('meta');
@@ -127,6 +151,16 @@ const ToolDetail = () => {
         document.head.appendChild(twitterDescription);
       }
       twitterDescription.content = truncateWithEllipsis(metaDescText, 155);
+
+      if (absoluteImageUrl) {
+        let twitterImage = document.querySelector('meta[name="twitter:image"]') as HTMLMetaElement;
+        if (!twitterImage) {
+          twitterImage = document.createElement('meta');
+          twitterImage.name = 'twitter:image';
+          document.head.appendChild(twitterImage);
+        }
+        twitterImage.content = absoluteImageUrl;
+      }
 
       // Add JSON-LD structured data for SEO
       const existingJsonLd = document.querySelector('script[type="application/ld+json"]');
@@ -151,7 +185,7 @@ const ToolDetail = () => {
         "@type": "SoftwareApplication",
         "name": tool.name,
         "description": tool.detailedDescription || tool.description,
-        "url": tool.url,
+        "url": pageUrl,
         "applicationCategory": "DesignApplication",
         "operatingSystem": "Web Browser",
         "offers": offers,
@@ -164,7 +198,13 @@ const ToolDetail = () => {
           "name": "Arch AI Tool Directory"
         },
         "dateModified": tool.lastUpdated || new Date().toISOString().split('T')[0],
-        "aggregateRating": aggregateRating
+        "aggregateRating": aggregateRating,
+        "sameAs": tool.url ? [tool.url] : undefined,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": pageUrl
+        },
+        "image": absoluteImageUrl ? [absoluteImageUrl] : undefined
       };
 
       const jsonLdScript = document.createElement('script');
