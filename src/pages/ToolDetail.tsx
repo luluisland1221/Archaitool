@@ -19,10 +19,34 @@ const toolVisitCardContent = "p-6 bg-white hover:bg-gray-50 transition-colors du
 
 const toolVisitCardButton = "w-full bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all transform hover:scale-105 font-semibold inline-flex items-center justify-center shadow-lg hover:shadow-xl text-lg border-2 border-white";
 
+const TITLE_MAX_LENGTH = 70;
+const BRAND_SUFFIX = ' | Arch AI Tool';
+
+const truncatePlain = (value: string, maxLength: number) => {
+  if (!value) return '';
+  if (value.length <= maxLength) return value;
+  if (maxLength <= 3) return value.slice(0, maxLength);
+  return `${value.slice(0, maxLength - 3).trim()}...`;
+};
+
+const buildToolTitle = (tool: Tool) => {
+  const rawCore = (tool.seoTitle || `${tool.name} AI Tool`).replace(/\s+/g, ' ').trim();
+  const hasBrand = /arch ai tool/i.test(rawCore);
+
+  if (hasBrand) {
+    return truncatePlain(rawCore, TITLE_MAX_LENGTH);
+  }
+
+  const allowedCoreLength = TITLE_MAX_LENGTH - BRAND_SUFFIX.length;
+  const core = truncatePlain(rawCore, allowedCoreLength);
+  return `${core}${BRAND_SUFFIX}`;
+};
+
 const ToolDetail = () => {
   const { id } = useParams();
   const location = useLocation();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [supportEmail, setSupportEmail] = useState<string | null>(null);
 
   // List of newly added tool IDs
   const newToolIds = [
@@ -64,8 +88,8 @@ const ToolDetail = () => {
   useEffect(() => {
     if (tool) {
       // Update page title
-      const seoTitle = tool.seoTitle || `${tool.name} - ${tool.description} | Arch AI Tool`;
-      document.title = seoTitle;
+      document.title = buildToolTitle(tool);
+      setSupportEmail(tool.companyInfo?.support?.email || null);
 
       // Update or create meta description
       let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
@@ -99,7 +123,7 @@ const ToolDetail = () => {
         ogTitle.property = 'og:title';
         document.head.appendChild(ogTitle);
       }
-      ogTitle.content = tool.seoTitle || `${tool.name} - ${tool.description}`;
+      ogTitle.content = buildToolTitle(tool);
 
       let ogDescription = document.querySelector('meta[property="og:description"]') as HTMLMetaElement;
       if (!ogDescription) {
@@ -134,7 +158,7 @@ const ToolDetail = () => {
         twitterTitle.name = 'twitter:title';
         document.head.appendChild(twitterTitle);
       }
-      twitterTitle.content = tool.seoTitle || `${tool.name} - ${tool.description}`;
+      twitterTitle.content = buildToolTitle(tool);
 
       let twitterCard = document.querySelector('meta[name="twitter:card"]') as HTMLMetaElement;
       if (!twitterCard) {
@@ -214,6 +238,7 @@ const ToolDetail = () => {
 
     } else {
       document.title = 'Tool Not Found | Arch AI Tool';
+      setSupportEmail(null);
 
       // Set default meta description for 404 page
       let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
@@ -309,7 +334,7 @@ const ToolDetail = () => {
   }
   if (tool.companyInfo?.support?.email) {
     evaluationChecklist.push(
-      `Save the vendor’s support channel (${tool.companyInfo.support.email}) in your runbook to escalate blockers quickly during time-sensitive submissions.`
+      'Save the vendor’s support channel in your runbook to escalate blockers quickly during time-sensitive submissions.'
     );
   }
 
@@ -734,10 +759,18 @@ const ToolDetail = () => {
                     <h4 className="font-medium mb-3">Support Options</h4>
                     <div className="space-y-2">
                       {tool.companyInfo?.support?.email && (
-                        <a href={`mailto:${tool.companyInfo?.support?.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-800">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (supportEmail) {
+                              window.location.href = `mailto:${supportEmail}`;
+                            }
+                          }}
+                          className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-800"
+                        >
                           <Mail className="h-4 w-4" />
                           Email Support
-                        </a>
+                        </button>
                       )}
                       {tool.companyInfo?.support?.chat && (
                         <div className="flex items-center gap-2 text-sm text-gray-600">

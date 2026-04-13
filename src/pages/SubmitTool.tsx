@@ -95,7 +95,7 @@ const SubmitTool = () => {
             name="email"
             type="email"
             className="w-full border border-gray-300 rounded px-3 py-2"
-            placeholder="you@example.com"
+            placeholder="you [at] example.com"
           />
         </div>
         <button

@@ -58,7 +58,7 @@ const About = () => {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-3">How to collaborate</h2>
             <p className="mb-2">
-              Have a tool to recommend or a case study to share? Reach out via service@archaitool.com or the submission form on the Contact page. Provide:
+              Have a tool to recommend or a case study to share? Reach out via service [at] archaitool.com or the submission form on the Contact page. Provide:
             </p>
             <ol className="list-decimal list-inside space-y-2">
               <li>The official product URL and a short summary of what the AI delivers.</li>

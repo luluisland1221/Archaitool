@@ -86,7 +86,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">service@archaitool.com</p>
+                      <p className="text-gray-600">service [at] archaitool.com</p>
                       <p className="text-sm text-gray-500 mt-1">We will reply to you within 24 hours</p>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ const Contact = () => {
 
               {submitStatus === 'error' && (
                 <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-800">❌ Sending failed, please try again later or send email directly to service@archaitool.com</p>
+                  <p className="text-red-800">❌ Sending failed, please try again later or email service [at] archaitool.com</p>
                 </div>
               )}
 
@@ -186,7 +186,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-                    placeholder="your@email.com"
+                    placeholder="you [at] example.com"
                   />
                 </div>
 
