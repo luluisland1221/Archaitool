@@ -131,6 +131,26 @@ const Footer = () => {
                   Video Prompt
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://nemotron3.online/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Nemotron3
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://veo31lite.space/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Veo31Lite
+                </a>
+              </li>
             </ul>
           </div>
         </div>
