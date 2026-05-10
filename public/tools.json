@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-13",
+  "generatedAt": "2026-05-10",
   "site": "https://archaitool.com",
-  "totalTools": 68,
+  "totalTools": 76,
   "categories": [
     {
       "id": "architecture-spatial",
@@ -2860,6 +2860,435 @@
               "integrations": [],
               "searchAliases": [],
               "lastUpdated": "2026-03-14"
+            },
+            {
+              "id": "consistent-character-ai",
+              "name": "Consistent Character AI",
+              "description": "Consistent Character AI is a browser-based character consistency studio for creators who need the same identity to hold across images, multi-angle views, edits, and video outputs. The workflow lets teams create named character profiles, refine outfits or expressions with natural language, and reuse character references across comics, visual novels, storyboards, ads, and social media series.",
+              "vendorUrl": "https://consistentcharacterai.pro/",
+              "directoryUrl": "https://archaitool.com/design-tools/consistent-character-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Creator",
+                    "price": "Credit-based plans",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Identity memory for consistent character faces and details",
+                "Text and image inputs for character creation",
+                "Multi-angle character sheet workflow",
+                "Natural language character editing",
+                "Video builder for character-based clips",
+                "Prompt and credit ledger for team visibility",
+                "Commercial-ready generated assets"
+              ],
+              "useCases": [
+                "Comic and webtoon character sheets",
+                "Visual novel and game character assets",
+                "Virtual influencer content",
+                "Storyboard character continuity",
+                "Brand mascot image and video creation",
+                "Children's book illustration workflows"
+              ],
+              "integrations": [
+                "Image upload",
+                "Browser-based generation",
+                "Video export workflow"
+              ],
+              "searchAliases": [
+                "consistent character ai",
+                "consistent character generator",
+                "ai character consistency"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "deepseek-v4-network",
+              "name": "DeepSeek V4 Network",
+              "description": "DeepSeek V4 Network is a model access and research hub for teams evaluating DeepSeek V4, V4 Flash, V4 Pro, V3.1, DeepSeek R1, Math-7B, Janus-Pro-7B, and VL2. It combines a playground, API key management, model list, rollout updates, benchmark notes, and practical guidance for code, math, multimodal, knowledge-base, and research workflows.",
+              "vendorUrl": "https://deepseekv4.network/",
+              "directoryUrl": "https://archaitool.com/design-tools/deepseek-v4-network",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "API Usage",
+                    "price": "Usage-based pricing",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Unified access to DeepSeek text, reasoning, math, and multimodal models",
+                "Playground for comparing V4 Flash, V4 Pro, V3.1, and R1 outputs",
+                "API key management for developer workflows",
+                "Rollout and benchmark signal tracking",
+                "Long-context and agentic workflow guidance",
+                "Official source and model resource links"
+              ],
+              "useCases": [
+                "Code generation and refactoring",
+                "Math and scientific reasoning",
+                "Multimodal document and chart analysis",
+                "Knowledge-base question answering",
+                "Research synthesis",
+                "Enterprise copilot prototyping"
+              ],
+              "integrations": [
+                "API access",
+                "DeepSeek model lineup",
+                "Official research sources"
+              ],
+              "searchAliases": [
+                "deepseek v4",
+                "deepseek v4 network",
+                "deepseek playground"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "kling-o1",
+              "name": "Kling O1",
+              "description": "Kling O1 is a multimodal AI video creation platform focused on text-to-video, image-to-video, natural language video editing, and shot extension from one workflow. The platform emphasizes cinematic 1080p output, character identity consistency from reference images, first/last-frame transition control, and physics-aware motion for film previz, product showcases, social clips, and game asset references.",
+              "vendorUrl": "https://klingo1.site/",
+              "directoryUrl": "https://archaitool.com/design-tools/kling-o1",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$9.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Starter",
+                    "price": "$19.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Creator",
+                    "price": "$49.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$99.90/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Unified text-to-video and image-to-video generation",
+                "Reference image workflow for character identity consistency",
+                "Natural language video editing without masks or keyframes",
+                "First and last frame control for smooth transitions",
+                "Cinematic 1080p output",
+                "Multiple aspect ratios for social and presentation formats",
+                "Shot extension workflow for longer sequences"
+              ],
+              "useCases": [
+                "Film and advertising previz",
+                "E-commerce product videos",
+                "Social media shorts",
+                "Game animation and cutscene references",
+                "Natural language video edits",
+                "Character-consistent video sequences"
+              ],
+              "integrations": [
+                "Reference image uploads",
+                "fal.ai API channel",
+                "Web-based video generator"
+              ],
+              "searchAliases": [
+                "kling o1",
+                "kling omni one",
+                "video o1",
+                "kling ai video"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "seedance-2",
+              "name": "Seedance 2.0",
+              "description": "Seedance 2.0 is an AI video generator for turning text, images, storyboards, clips, and audio references into cinematic video outputs. The platform focuses on multimodal input mixing, synchronized audio and visuals, natural-language camera control, character and style consistency, realistic motion, and 1080p production-ready exports for marketing, education, product explainers, and indie filmmaking.",
+              "vendorUrl": "https://seedance2.page/",
+              "directoryUrl": "https://archaitool.com/design-tools/seedance-2",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Starter",
+                    "price": "$9.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$29/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Studio",
+                    "price": "$79/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Text, image, video, storyboard, and audio reference inputs",
+                "Up to 12 reference assets per request",
+                "Native audio-visual sync",
+                "Natural language camera, lighting, and composition control",
+                "Character and style consistency across shots",
+                "Physics-aware motion generation",
+                "720p and 1080p output options",
+                "API access on higher plans"
+              ],
+              "useCases": [
+                "Product explainers",
+                "Marketing and ad variants",
+                "Training and education clips",
+                "Indie film storyboards",
+                "VFX and social video ideation",
+                "Brand-consistent campaign videos"
+              ],
+              "integrations": [
+                "App generator",
+                "API access",
+                "Reference asset uploads"
+              ],
+              "searchAliases": [
+                "seedance 2",
+                "seedance 2.0",
+                "seedance video generator"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "video-prompt-generator",
+              "name": "Video Prompt Generator",
+              "description": "Video Prompt Generator converts rough creative ideas into structured prompts for AI video models. Its guided workflow captures the concept, visual style, and control level, then produces model-friendly prompt text with camera, lighting, atmosphere, and technical instructions. It also includes prompt examples, style templates, and a library aimed at creators, marketers, agencies, and filmmakers.",
+              "vendorUrl": "https://videoprompt.info/",
+              "directoryUrl": "https://archaitool.com/design-tools/video-prompt-generator",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Premium",
+                    "price": "Premium plan available",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Four-step prompt generation workflow",
+                "Optimized prompt formats for Sora, Veo, Kling, Runway, and other video models",
+                "Style templates for cinematic, sci-fi, nature, product, and 3D animation content",
+                "Light control and deep control prompt modes",
+                "Prompt library with curated examples",
+                "One-click copy workflow",
+                "Professional tips for camera, lighting, and scene detail"
+              ],
+              "useCases": [
+                "Sora and Veo prompt writing",
+                "Kling and Runway video prompt preparation",
+                "Product video concepts",
+                "Cinematic b-roll prompts",
+                "Social media video scripts",
+                "Agency prompt workflow standardization"
+              ],
+              "integrations": [
+                "Clipboard copy",
+                "Prompt library",
+                "AI video model guides"
+              ],
+              "searchAliases": [
+                "video prompt generator",
+                "ai video prompt generator",
+                "sora prompt generator",
+                "veo prompt generator"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "nemotron-3-online",
+              "name": "Nemotron 3 Online",
+              "description": "Nemotron 3 Online is an evaluation hub for NVIDIA Nemotron 3 Super and Nano. It provides an online playground, model switching, benchmark summaries, architecture notes, official paper and Hugging Face links, and practical evaluation paths for long-document synthesis, code analysis, agent workflows, retrieval experiments, local deployment planning, and multilingual testing.",
+              "vendorUrl": "https://nemotron3.online/",
+              "directoryUrl": "https://archaitool.com/design-tools/nemotron-3-online",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": []
+              },
+              "keyFeatures": [
+                "Nemotron 3 Super and Nano playground",
+                "Model switching for quick behavior comparisons",
+                "Long-context reasoning evaluation notes",
+                "Benchmark and architecture visuals",
+                "Official paper, Hugging Face, and NVIDIA resource links",
+                "Evaluation paths for code, documents, agents, and RAG"
+              ],
+              "useCases": [
+                "Long-document synthesis",
+                "Multi-file code analysis",
+                "Agentic tool workflow evaluation",
+                "Retrieval and 1M context comparisons",
+                "Local deployment planning",
+                "Multilingual model evaluation"
+              ],
+              "integrations": [
+                "NVIDIA research resources",
+                "arXiv paper",
+                "Hugging Face model cards",
+                "GitHub resource links"
+              ],
+              "searchAliases": [
+                "nemotron 3",
+                "nemotron 3 online",
+                "nemotron 3 super",
+                "nemotron 3 nano"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "veo-3-1-lite",
+              "name": "Veo 3.1 Lite",
+              "description": "Veo 3.1 Lite is an AI video creation platform built around cost-effective short clip generation. It supports text-to-video, image-to-video, frames-to-video, and reference-driven workflows, with practical controls for aspect ratio, character consistency, safety filter handling, and predictable credit-based pricing for creators and teams.",
+              "vendorUrl": "https://veo31lite.space/",
+              "directoryUrl": "https://archaitool.com/design-tools/veo-3-1-lite",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Basic",
+                    "price": "$9/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$79/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Ultimate",
+                    "price": "$99/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Text-to-video generation",
+                "Image-to-video workflow",
+                "Frames-to-video and reference-to-video options",
+                "Short clip generation for 4, 6, and 8 second outputs",
+                "Vertical and horizontal video support",
+                "Credit-based pricing",
+                "Commercial-use plan options",
+                "Email support"
+              ],
+              "useCases": [
+                "Short AI video ads",
+                "Text-to-video experiments",
+                "Image-to-video motion tests",
+                "Vertical social clips",
+                "Reference-frame video transitions",
+                "Cost-controlled video production"
+              ],
+              "integrations": [
+                "Text-to-video generator",
+                "Image-to-video generator",
+                "API access on paid plans"
+              ],
+              "searchAliases": [
+                "veo 3.1 lite",
+                "veo31lite",
+                "veo lite",
+                "veo video generator"
+              ],
+              "lastUpdated": "2026-05-10"
+            },
+            {
+              "id": "gpt-image-2",
+              "name": "GPT Image 2",
+              "description": "GPT Image 2 is a prompt-to-image generator for turning structured prompts into production-ready visual assets. It focuses on prompt fidelity, readable text rendering, consistent layouts, and fast iteration for ad creative, e-commerce visuals, product mockups, UI concepts, infographics, campaign variants, thumbnails, and brand visuals.",
+              "vendorUrl": "https://gptimage2.today/",
+              "directoryUrl": "https://archaitool.com/design-tools/gpt-image-2",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": false,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Starter",
+                    "price": "$19/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$39/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Studio",
+                    "price": "$79/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Prompt-to-image generation",
+                "Strong prompt fidelity for layered scene instructions",
+                "Readable text rendering for ads, posters, UI, and infographic visuals",
+                "Production consistency across repeated outputs",
+                "Editorial gallery and prompt examples",
+                "Workflow guidance for prompt blocks and review steps",
+                "Pricing plans for creators, teams, and studios"
+              ],
+              "useCases": [
+                "Text-heavy ads and posters",
+                "Product mockups",
+                "UI and infographic visuals",
+                "Campaign variant production",
+                "E-commerce listing visuals",
+                "Creator covers and illustrations"
+              ],
+              "integrations": [
+                "Prompt examples",
+                "Blog workflow guides",
+                "Pricing and support pages"
+              ],
+              "searchAliases": [
+                "gpt image 2",
+                "gptimage2",
+                "gpt image generator",
+                "prompt to image generator"
+              ],
+              "lastUpdated": "2026-05-10"
             },
             {
               "id": "adobe-firefly",

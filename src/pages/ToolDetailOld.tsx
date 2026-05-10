@@ -4,36 +4,10 @@ import { useParams, Link } from 'react-router-dom';
 import { ExternalLink, ArrowLeft, Check, Building2, Cpu, Palette, Clock } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
+import { isNewToolId } from '../data/newTools';
 
 const ToolDetail = () => {
   const { id } = useParams();
-
-  // List of newly added tool IDs
-  const newToolIds = [
-    'ai-architectures',
-    'vibe3d',
-    '3d-house-planner',
-    'floor-plan-ai',
-    'floordesign-ai',
-    'home-design-ai',
-    'dehome-ai',
-    'roomlab-app',
-    'ai-renovation',
-    'rendera-ai',
-    'renovate-ai',
-    'artevia',
-    'madespace',
-    'rustic-ai',
-    'ai-garden-design',
-    'landscapingai',
-    'arcadium3d',
-    'nano-banana-pro',
-    'flux-2',
-    'archfine-ai',
-    'rendair-ai',
-    'lookx',
-    'sketchup-diffusion'
-  ];
 
   // Find the tool in our data
   const tool = configuredCategories.flatMap(category =>
@@ -43,7 +17,7 @@ const ToolDetail = () => {
   ).find(t => t.id === id);
 
   // Check if this is a new tool
-  const isNewTool = newToolIds.includes(id);
+  const isNewTool = isNewToolId(id);
 
   useEffect(() => {
     if (tool) {

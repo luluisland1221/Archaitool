@@ -11,6 +11,7 @@ import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
 import { setCanonicalUrl } from '../utils/seo';
 import { truncateWithEllipsis } from '../utils/text';
+import { isNewToolId } from '../data/newTools';
 
 // 简化工具卡片样式
 const toolVisitCard = "bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1";
@@ -48,33 +49,6 @@ const ToolDetail = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [supportEmail, setSupportEmail] = useState<string | null>(null);
 
-  // List of newly added tool IDs
-  const newToolIds = [
-    'ai-architectures',
-    'vibe3d',
-    '3d-house-planner',
-    'floor-plan-ai',
-    'floordesign-ai',
-    'home-design-ai',
-    'dehome-ai',
-    'roomlab-app',
-    'ai-renovation',
-    'rendera-ai',
-    'renovate-ai',
-    'artevia',
-    'madespace',
-    'rustic-ai',
-    'ai-garden-design',
-    'landscapingai',
-    'arcadium3d',
-    'nano-banana-pro',
-    'flux-2',
-    'archfine-ai',
-    'rendair-ai',
-    'lookx',
-    'sketchup-diffusion'
-  ];
-
   // Find the tool in our data
   const tool = configuredCategories.flatMap(category =>
     category.subcategories.flatMap(subcategory =>
@@ -83,7 +57,7 @@ const ToolDetail = () => {
   ).find(t => t.id === id) as Tool | undefined;
 
   // Check if this is a new tool
-  const isNewTool = newToolIds.includes(id);
+  const isNewTool = isNewToolId(id);
 
   useEffect(() => {
     if (tool) {

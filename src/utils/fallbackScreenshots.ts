@@ -98,9 +98,17 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
 
   // General Design
   'bfl.ai': '/screenshots/bfl_ai_.webp',
+  'consistentcharacterai.pro': '/screenshots/consistentcharacterai_pro_.webp',
+  'deepseekv4.network': '/screenshots/deepseekv4_network_.webp',
   'gemini.google.com': '/screenshots/gemini_google_com_app.webp',
+  'gptimage2.today': '/screenshots/gptimage2_today_.webp',
+  'klingo1.site': '/screenshots/klingo1_site_.webp',
   'midjourney.com': '/screenshots/midjourney.webp',
+  'nemotron3.online': '/screenshots/nemotron3_online_.webp',
   'openai.com': '/screenshots/dall-e-3.webp',
+  'seedance2.page': '/screenshots/seedance2_page_.webp',
+  'veo31lite.space': '/screenshots/veo31lite_space_.webp',
+  'videoprompt.info': '/screenshots/videoprompt_info_.webp',
   'helpx.adobe.com': '/screenshots/helpx.adobe.webp',
   'help.sketchup.com': '/screenshots/help_sketchup_com_en_sketchup-ai-render.webp',
 

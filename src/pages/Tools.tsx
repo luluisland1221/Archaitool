@@ -7,6 +7,7 @@ import { StructuredData } from '../components/StructuredData';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
 import { truncateWithEllipsis } from '../utils/text';
+import { getFeaturedNewToolRank, isNewToolId } from '../data/newTools';
 
 type Insight = {
   overview: string;
@@ -237,53 +238,30 @@ const Tools = () => {
   const params = useParams();
   const location = useLocation();
 
-  // List of newly added tool IDs
-  const newToolIds = [
-    'ai-architectures',
-    'vibe3d',
-    '3d-house-planner',
-    'floor-plan-ai',
-    'floordesign-ai',
-    'home-design-ai',
-    'dehome-ai',
-    'roomlab-app',
-    'ai-renovation',
-    'rendera-ai',
-    'renovate-ai',
-    'artevia',
-    'madespace',
-    'rustic-ai',
-    'ai-garden-design',
-    'landscapingai',
-    'arcadium3d',
-    'nano-banana-pro',
-    'flux-2',
-    'archfine-ai',
-    'rendair-ai',
-    'lookx',
-    'sketchup-diffusion'
-  ];
-
-  const featuredNewToolIds = [
-    'nano-banana-pro',
-    'flux-2',
-    'archfine-ai',
-    'rendair-ai',
-    'lookx',
-    'sketchup-diffusion'
-  ];
-
   const prioritizeTools = (tools) => {
-    const featuredSet = new Set(featuredNewToolIds);
     return [...tools].sort((a, b) => {
-      const aFeatured = featuredSet.has(a.id);
-      const bFeatured = featuredSet.has(b.id);
-      if (aFeatured !== bFeatured) {
-        return aFeatured ? -1 : 1;
+      const aRank = getFeaturedNewToolRank(a.id);
+      const bRank = getFeaturedNewToolRank(b.id);
+      if (aRank !== bRank) {
+        return aRank - bRank;
       }
       return 0;
     });
   };
+
+  const categoryHasNewTools = (category) =>
+    category.subcategories.some((subcategory) =>
+      subcategory.tools.some((tool) => isNewToolId(tool.id))
+    );
+
+  const subcategoryHasNewTools = (subcategory) =>
+    subcategory.tools.some((tool) => isNewToolId(tool.id));
+
+  const NewBadge = ({ className = '' }) => (
+    <span className={`bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase shadow-sm ${className}`}>
+      NEW
+    </span>
+  );
   
   // Support both old query params and new path params
   const categoryId = searchParams.get('category');
@@ -568,13 +546,15 @@ const Tools = () => {
           to={`/tools/${category.id}`}
           className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
-          <article className="bg-gray-200 p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-gray-100">
-            <h2 className="text-2xl font-bold mb-3">{category.name}</h2>
+          <article className="relative bg-gray-200 p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-gray-100">
+            {categoryHasNewTools(category) && <NewBadge className="absolute top-4 right-4" />}
+            <h2 className="text-2xl font-bold mb-3 pr-14">{category.name}</h2>
             <p className="text-gray-600 mb-4">{category.description}</p>
             <div className="space-y-2 bg-white p-4 rounded-lg">
               {category.subcategories.map((sub) => (
-                <div key={sub.id} className="text-sm text-gray-500">
-                  &middot;{sub.name}
+                <div key={sub.id} className="flex items-center gap-2 text-sm text-gray-500">
+                  <span>&middot;{sub.name}</span>
+                  {subcategoryHasNewTools(sub) && <NewBadge />}
                 </div>
               ))}
             </div>
@@ -585,7 +565,7 @@ const Tools = () => {
   );
 
   const ToolCard = ({ tool }) => {
-    const isNewTool = newToolIds.includes(tool.id);
+    const isNewTool = isNewToolId(tool.id);
     const toolDetailUrl = generateToolUrl(tool.id);
 
     return (
@@ -647,7 +627,10 @@ const Tools = () => {
       {category.subcategories.map((subcategory) => (
         <div key={subcategory.id}>
           <div className="border-b border-gray-200 pb-4 mb-8">
-            <h2 className="text-2xl font-bold mb-3">{subcategory.name}</h2>
+            <div className="flex flex-wrap items-center gap-3 mb-3">
+              <h2 className="text-2xl font-bold">{subcategory.name}</h2>
+              {subcategoryHasNewTools(subcategory) && <NewBadge />}
+            </div>
             <p className="text-gray-600">{subcategory.description}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -662,7 +645,10 @@ const Tools = () => {
 
   const renderTools = (subcategory) => (
     <div>
-      <h1 className="text-3xl font-bold mb-4">{subcategory.name} - AI Tools Directory</h1>
+      <div className="flex flex-wrap items-center gap-3 mb-4">
+        <h1 className="text-3xl font-bold">{subcategory.name} - AI Tools Directory</h1>
+        {subcategoryHasNewTools(subcategory) && <NewBadge />}
+      </div>
       <p className="text-gray-600 mb-8">{subcategory.description}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {prioritizeTools(subcategory.tools).map((tool) => (
@@ -716,7 +702,10 @@ const Tools = () => {
 
         {selectedCategory && !selectedSubcategory && (
           <>
-            <h1 className="text-4xl font-bold mb-8">{selectedCategory.name} - AI Tools & Software</h1>
+            <div className="flex flex-wrap items-center gap-3 mb-8">
+              <h1 className="text-4xl font-bold">{selectedCategory.name} - AI Tools & Software</h1>
+              {categoryHasNewTools(selectedCategory) && <NewBadge />}
+            </div>
             {renderInsightPanel(selectedCategory.name, categoryInsight)}
             {renderSubconfiguredCategories(selectedCategory)}
           </>

@@ -5325,6 +5325,624 @@ export const categories: Category[] = [
             lastUpdated: "2026-03-14"
           },
           {
+            id: "consistent-character-ai",
+            name: "Consistent Character AI",
+            description: "Create identity-consistent characters for stories, comics, games, and videos",
+            image: "/screenshots/consistentcharacterai_pro_.webp",
+            url: "https://consistentcharacterai.pro/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["consistent character ai", "consistent character generator", "ai character consistency"],
+            seoTitle: "Consistent Character AI - Character Generator",
+            seoDescription: "Consistent Character AI creates reusable character profiles for text-to-image, multi-angle sheets, editing, and video workflows.",
+            detailedDescription: "Consistent Character AI is a browser-based character consistency studio for creators who need the same identity to hold across images, multi-angle views, edits, and video outputs. The workflow lets teams create named character profiles, refine outfits or expressions with natural language, and reuse character references across comics, visual novels, storyboards, ads, and social media series.",
+            keyFeatures: [
+              "Identity memory for consistent character faces and details",
+              "Text and image inputs for character creation",
+              "Multi-angle character sheet workflow",
+              "Natural language character editing",
+              "Video builder for character-based clips",
+              "Prompt and credit ledger for team visibility",
+              "Commercial-ready generated assets"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Reference images", "Generated images"],
+              exportOptions: ["Character images", "Multi-angle sheets", "HD video clips"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: ["100 free credits", "Character creation trial", "Browser-based access"],
+                limitations: ["Credit limits apply", "Login required for generation"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Creator",
+                    price: "Credit-based plans",
+                    billing: "monthly",
+                    features: [
+                      "More generation credits",
+                      "Multi-angle outputs",
+                      "Character edits",
+                      "Video creation workflow"
+                    ],
+                    targetUser: "Comic artists, storytellers, and content creators"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Comic and webtoon character sheets",
+              "Visual novel and game character assets",
+              "Virtual influencer content",
+              "Storyboard character continuity",
+              "Brand mascot image and video creation",
+              "Children's book illustration workflows"
+            ],
+            integrations: [
+              "Image upload",
+              "Browser-based generation",
+              "Video export workflow"
+            ],
+            companyInfo: {
+              name: "Consistent Character AI",
+              support: {
+                documentation: "Workflow and pricing pages",
+                chat: false
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "deepseek-v4-network",
+            name: "DeepSeek V4 Network",
+            description: "DeepSeek model playground, API access, and V4 rollout tracker",
+            image: "/screenshots/deepseekv4_network_.webp",
+            url: "https://deepseekv4.network/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["deepseek v4", "deepseek v4 network", "deepseek playground"],
+            seoTitle: "DeepSeek V4 Network - Model Playground",
+            seoDescription: "DeepSeek V4 Network provides DeepSeek model access, playground comparisons, API keys, and V4 rollout tracking for builders.",
+            detailedDescription: "DeepSeek V4 Network is a model access and research hub for teams evaluating DeepSeek V4, V4 Flash, V4 Pro, V3.1, DeepSeek R1, Math-7B, Janus-Pro-7B, and VL2. It combines a playground, API key management, model list, rollout updates, benchmark notes, and practical guidance for code, math, multimodal, knowledge-base, and research workflows.",
+            keyFeatures: [
+              "Unified access to DeepSeek text, reasoning, math, and multimodal models",
+              "Playground for comparing V4 Flash, V4 Pro, V3.1, and R1 outputs",
+              "API key management for developer workflows",
+              "Rollout and benchmark signal tracking",
+              "Long-context and agentic workflow guidance",
+              "Official source and model resource links"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Image inputs", "API requests"],
+              exportOptions: ["Chat responses", "API outputs", "Research notes"],
+              apiAvailable: true,
+              collaboration: false,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: ["Launch promo for legacy models", "Model browsing", "Public rollout tracking"],
+                limitations: ["Usage limits and login requirements may apply"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "API Usage",
+                    price: "Usage-based pricing",
+                    billing: "monthly",
+                    features: [
+                      "DeepSeek model access",
+                      "API keys",
+                      "Model switching",
+                      "Usage controls"
+                    ],
+                    targetUser: "Developers, research teams, and AI product builders"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Code generation and refactoring",
+              "Math and scientific reasoning",
+              "Multimodal document and chart analysis",
+              "Knowledge-base question answering",
+              "Research synthesis",
+              "Enterprise copilot prototyping"
+            ],
+            integrations: [
+              "API access",
+              "DeepSeek model lineup",
+              "Official research sources"
+            ],
+            companyInfo: {
+              name: "DeepSeek V4 Network",
+              support: {
+                email: "support@deepseekv4.network",
+                documentation: "Model, API, and release pages"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "kling-o1",
+            name: "Kling O1",
+            description: "Unified multimodal AI video generation and editing with cinematic motion control",
+            image: "/screenshots/klingo1_site_.webp",
+            url: "https://klingo1.site/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["kling o1", "kling omni one", "video o1", "kling ai video"],
+            seoTitle: "Kling O1 - Cinematic AI Video Creation",
+            seoDescription: "Kling O1 supports text-to-video, image-to-video, natural language video editing, and first/last-frame control.",
+            detailedDescription: "Kling O1 is a multimodal AI video creation platform focused on text-to-video, image-to-video, natural language video editing, and shot extension from one workflow. The platform emphasizes cinematic 1080p output, character identity consistency from reference images, first/last-frame transition control, and physics-aware motion for film previz, product showcases, social clips, and game asset references.",
+            keyFeatures: [
+              "Unified text-to-video and image-to-video generation",
+              "Reference image workflow for character identity consistency",
+              "Natural language video editing without masks or keyframes",
+              "First and last frame control for smooth transitions",
+              "Cinematic 1080p output",
+              "Multiple aspect ratios for social and presentation formats",
+              "Shot extension workflow for longer sequences"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Reference images", "Video uploads", "Start frames", "End frames"],
+              exportOptions: ["1080p video", "Vertical video", "Square video", "4K upgrade option"],
+              renderSpeed: "30-60 seconds for standard 5-second generations",
+              apiAvailable: true,
+              collaboration: false,
+              mobileSupport: true
+            },
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$9.90/month",
+                    billing: "monthly",
+                    features: ["600 credits per month", "3 high-quality videos", "Standard generation speed"],
+                    targetUser: "Users trying Kling O1 video generation"
+                  },
+                  {
+                    name: "Starter",
+                    price: "$19.90/month",
+                    billing: "monthly",
+                    features: ["1,000 credits per month", "5 high-quality videos", "Standard generation speed"],
+                    targetUser: "Creators getting started"
+                  },
+                  {
+                    name: "Creator",
+                    price: "$49.90/month",
+                    billing: "monthly",
+                    features: ["3,200 credits per month", "16 high-quality videos", "Priority processing"],
+                    targetUser: "Active creators and social media teams"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$99.90/month",
+                    billing: "monthly",
+                    features: ["7,000 credits per month", "35 high-quality videos", "Fastest generation speed", "Commercial license"],
+                    targetUser: "Professional studios and power users"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Film and advertising previz",
+              "E-commerce product videos",
+              "Social media shorts",
+              "Game animation and cutscene references",
+              "Natural language video edits",
+              "Character-consistent video sequences"
+            ],
+            integrations: [
+              "Reference image uploads",
+              "fal.ai API channel",
+              "Web-based video generator"
+            ],
+            companyInfo: {
+              name: "Kling O1",
+              support: {
+                documentation: "Feature, pricing, and FAQ pages"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "seedance-2",
+            name: "Seedance 2.0",
+            description: "Cinema-quality AI video generator for text, image, and audio guided clips",
+            image: "/screenshots/seedance2_page_.webp",
+            url: "https://seedance2.page/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["seedance 2", "seedance 2.0", "seedance video generator"],
+            seoTitle: "Seedance 2.0 - AI Video Generator",
+            seoDescription: "Seedance 2.0 generates cinematic AI videos from text, images, and audio with 1080p output, camera control, and audio sync.",
+            detailedDescription: "Seedance 2.0 is an AI video generator for turning text, images, storyboards, clips, and audio references into cinematic video outputs. The platform focuses on multimodal input mixing, synchronized audio and visuals, natural-language camera control, character and style consistency, realistic motion, and 1080p production-ready exports for marketing, education, product explainers, and indie filmmaking.",
+            keyFeatures: [
+              "Text, image, video, storyboard, and audio reference inputs",
+              "Up to 12 reference assets per request",
+              "Native audio-visual sync",
+              "Natural language camera, lighting, and composition control",
+              "Character and style consistency across shots",
+              "Physics-aware motion generation",
+              "720p and 1080p output options",
+              "API access on higher plans"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Images", "Storyboards", "Short clips", "Audio references"],
+              exportOptions: ["720p video", "1080p video"],
+              apiAvailable: true,
+              collaboration: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: ["20 credits on signup", "One starter video", "720p output", "Community support"],
+                limitations: ["Credit limits apply", "Monthly points reset"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Starter",
+                    price: "$9.90/month",
+                    billing: "monthly",
+                    features: ["300 credits per month", "720p and 1080p output", "No watermark", "Priority queue"],
+                    targetUser: "Creators starting with AI video"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$29/month",
+                    billing: "monthly",
+                    features: ["1,000 credits per month", "No watermark", "Priority queue", "API access", "Email support"],
+                    targetUser: "Active content creators"
+                  },
+                  {
+                    name: "Studio",
+                    price: "$79/month",
+                    billing: "monthly",
+                    features: ["3,000 credits per month", "API access", "3 team seats", "Dedicated support"],
+                    targetUser: "Teams and power users"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Product explainers",
+              "Marketing and ad variants",
+              "Training and education clips",
+              "Indie film storyboards",
+              "VFX and social video ideation",
+              "Brand-consistent campaign videos"
+            ],
+            integrations: [
+              "App generator",
+              "API access",
+              "Reference asset uploads"
+            ],
+            companyInfo: {
+              name: "Seedance 2.0",
+              support: {
+                documentation: "Guides, comparison pages, and case studies"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "video-prompt-generator",
+            name: "Video Prompt Generator",
+            description: "Generate structured prompts for Sora, Veo, Kling, Runway, and other AI video models",
+            image: "/screenshots/videoprompt_info_.webp",
+            url: "https://videoprompt.info/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["video prompt generator", "ai video prompt generator", "sora prompt generator", "veo prompt generator"],
+            seoTitle: "Video Prompt Generator for AI Video Models",
+            seoDescription: "Video Prompt Generator turns creative ideas into structured prompts for Sora, Veo, Kling, Runway, and other AI video tools.",
+            detailedDescription: "Video Prompt Generator converts rough creative ideas into structured prompts for AI video models. Its guided workflow captures the concept, visual style, and control level, then produces model-friendly prompt text with camera, lighting, atmosphere, and technical instructions. It also includes prompt examples, style templates, and a library aimed at creators, marketers, agencies, and filmmakers.",
+            keyFeatures: [
+              "Four-step prompt generation workflow",
+              "Optimized prompt formats for Sora, Veo, Kling, Runway, and other video models",
+              "Style templates for cinematic, sci-fi, nature, product, and 3D animation content",
+              "Light control and deep control prompt modes",
+              "Prompt library with curated examples",
+              "One-click copy workflow",
+              "Professional tips for camera, lighting, and scene detail"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text ideas", "Style selections", "Prompt library examples"],
+              exportOptions: ["Copy-ready text prompts"],
+              apiAvailable: false,
+              collaboration: false,
+              mobileSupport: true,
+              renderSpeed: "Prompt generation in seconds"
+            },
+            pricing: {
+              freeTier: {
+                features: ["Up to 3 prompts per day", "Core prompt generator", "Public prompt examples"],
+                limitations: ["Daily prompt limits", "Premium library features may require upgrade"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Premium",
+                    price: "Premium plan available",
+                    billing: "monthly",
+                    features: [
+                      "Unlimited generations",
+                      "Prompt history",
+                      "Custom templates",
+                      "Priority support"
+                    ],
+                    targetUser: "Video creators, marketers, and agencies"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Sora and Veo prompt writing",
+              "Kling and Runway video prompt preparation",
+              "Product video concepts",
+              "Cinematic b-roll prompts",
+              "Social media video scripts",
+              "Agency prompt workflow standardization"
+            ],
+            integrations: [
+              "Clipboard copy",
+              "Prompt library",
+              "AI video model guides"
+            ],
+            companyInfo: {
+              name: "Video Prompt Generator",
+              support: {
+                email: "support@videoprompt.ai",
+                documentation: "Prompt library and AI video model pages"
+              },
+              socialMedia: {
+                twitter: "https://x.com/videopromptai"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "nemotron-3-online",
+            name: "Nemotron 3 Online",
+            description: "Playground and benchmark hub for Nemotron 3 Super and Nano models",
+            image: "/screenshots/nemotron3_online_.webp",
+            url: "https://nemotron3.online/",
+            isPaid: false,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["nemotron 3", "nemotron 3 online", "nemotron 3 super", "nemotron 3 nano"],
+            seoTitle: "Nemotron 3 Online - Super and Nano Playground",
+            seoDescription: "Nemotron 3 Online lets users test Nemotron 3 Super and Nano, compare long-context reasoning, and review benchmark resources.",
+            detailedDescription: "Nemotron 3 Online is an evaluation hub for NVIDIA Nemotron 3 Super and Nano. It provides an online playground, model switching, benchmark summaries, architecture notes, official paper and Hugging Face links, and practical evaluation paths for long-document synthesis, code analysis, agent workflows, retrieval experiments, local deployment planning, and multilingual testing.",
+            keyFeatures: [
+              "Nemotron 3 Super and Nano playground",
+              "Model switching for quick behavior comparisons",
+              "Long-context reasoning evaluation notes",
+              "Benchmark and architecture visuals",
+              "Official paper, Hugging Face, and NVIDIA resource links",
+              "Evaluation paths for code, documents, agents, and RAG"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Long-context evaluation prompts"],
+              exportOptions: ["Model responses", "Benchmark references", "Resource links"],
+              apiAvailable: false,
+              collaboration: false,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: ["Online playground", "Benchmark pages", "Official resource links"],
+                limitations: ["Public playground limits may apply"]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Long-document synthesis",
+              "Multi-file code analysis",
+              "Agentic tool workflow evaluation",
+              "Retrieval and 1M context comparisons",
+              "Local deployment planning",
+              "Multilingual model evaluation"
+            ],
+            integrations: [
+              "NVIDIA research resources",
+              "arXiv paper",
+              "Hugging Face model cards",
+              "GitHub resource links"
+            ],
+            companyInfo: {
+              name: "Nemotron 3 Online",
+              support: {
+                documentation: "Benchmark, Super, Nano, and Ultra resource pages"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "veo-3-1-lite",
+            name: "Veo 3.1 Lite",
+            description: "Cost-focused short AI video generation for text, image, and reference-frame workflows",
+            image: "/screenshots/veo31lite_space_.webp",
+            url: "https://veo31lite.space/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["veo 3.1 lite", "veo31lite", "veo lite", "veo video generator"],
+            seoTitle: "Veo 3.1 Lite - AI Video Generator",
+            seoDescription: "Veo 3.1 Lite helps creators generate short AI video clips with text-to-video, image-to-video, and reference-frame workflows.",
+            detailedDescription: "Veo 3.1 Lite is an AI video creation platform built around cost-effective short clip generation. It supports text-to-video, image-to-video, frames-to-video, and reference-driven workflows, with practical controls for aspect ratio, character consistency, safety filter handling, and predictable credit-based pricing for creators and teams.",
+            keyFeatures: [
+              "Text-to-video generation",
+              "Image-to-video workflow",
+              "Frames-to-video and reference-to-video options",
+              "Short clip generation for 4, 6, and 8 second outputs",
+              "Vertical and horizontal video support",
+              "Credit-based pricing",
+              "Commercial-use plan options",
+              "Email support"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Image references", "Start frames", "End frames"],
+              exportOptions: ["Short video clips", "Vertical video", "Horizontal video"],
+              renderSpeed: "2-5 minutes typical generation window",
+              apiAvailable: true,
+              collaboration: false,
+              mobileSupport: true
+            },
+            pricing: {
+              freeTier: {
+                features: ["2 free credits", "No credit card required", "Starter video generation"],
+                limitations: ["Limited credits"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Basic",
+                    price: "$9/month",
+                    billing: "monthly",
+                    features: ["HD video generation", "No watermark", "Commercial use license"],
+                    targetUser: "Casual creators"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$79/month",
+                    billing: "monthly",
+                    features: ["1,250 credits", "Fast generation speed", "Priority support", "API access"],
+                    targetUser: "Professionals"
+                  },
+                  {
+                    name: "Ultimate",
+                    price: "$99/month",
+                    billing: "monthly",
+                    features: ["1,650 credits", "HD video generation", "Priority support", "API access"],
+                    targetUser: "Teams and studios"
+                  }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: [
+              "Short AI video ads",
+              "Text-to-video experiments",
+              "Image-to-video motion tests",
+              "Vertical social clips",
+              "Reference-frame video transitions",
+              "Cost-controlled video production"
+            ],
+            integrations: [
+              "Text-to-video generator",
+              "Image-to-video generator",
+              "API access on paid plans"
+            ],
+            companyInfo: {
+              name: "Veo 3.1 Lite",
+              support: {
+                email: "support@veo31lite.space",
+                documentation: "Product, guide, pricing, and FAQ pages"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
+            id: "gpt-image-2",
+            name: "GPT Image 2",
+            description: "Prompt-to-image generator for production-ready marketing, product, UI, and infographic visuals",
+            image: "/screenshots/gptimage2_today_.webp",
+            url: "https://gptimage2.today/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["gpt image 2", "gptimage2", "gpt image generator", "prompt to image generator"],
+            seoTitle: "GPT Image 2 - Prompt-to-Image Generator",
+            seoDescription: "GPT Image 2 generates production-ready image assets with strong prompt fidelity, text rendering, and consistent outputs.",
+            detailedDescription: "GPT Image 2 is a prompt-to-image generator for turning structured prompts into production-ready visual assets. It focuses on prompt fidelity, readable text rendering, consistent layouts, and fast iteration for ad creative, e-commerce visuals, product mockups, UI concepts, infographics, campaign variants, thumbnails, and brand visuals.",
+            keyFeatures: [
+              "Prompt-to-image generation",
+              "Strong prompt fidelity for layered scene instructions",
+              "Readable text rendering for ads, posters, UI, and infographic visuals",
+              "Production consistency across repeated outputs",
+              "Editorial gallery and prompt examples",
+              "Workflow guidance for prompt blocks and review steps",
+              "Pricing plans for creators, teams, and studios"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Structured prompt blocks"],
+              exportOptions: ["Generated images", "Ad-ready visuals", "Portrait image outputs"],
+              apiAvailable: false,
+              collaboration: false,
+              mobileSupport: true
+            },
+            pricing: {
+              paid: {
+                plans: [
+                  {
+                    name: "Starter",
+                    price: "$19/month",
+                    billing: "monthly",
+                    features: ["1,200 credits", "Priority generation queue", "Faster prompt iteration", "Email support"],
+                    targetUser: "Solo creators"
+                  },
+                  {
+                    name: "Pro",
+                    price: "$39/month",
+                    billing: "monthly",
+                    features: ["3,000 credits", "Advanced workflow presets", "Commercial production usage"],
+                    targetUser: "Small teams"
+                  },
+                  {
+                    name: "Studio",
+                    price: "$79/month",
+                    billing: "monthly",
+                    features: ["6,200 credits", "Highest queue priority", "Structured prompt workflows", "Priority support"],
+                    targetUser: "Design and marketing teams"
+                  }
+                ]
+              },
+              trialAvailable: false
+            },
+            useCases: [
+              "Text-heavy ads and posters",
+              "Product mockups",
+              "UI and infographic visuals",
+              "Campaign variant production",
+              "E-commerce listing visuals",
+              "Creator covers and illustrations"
+            ],
+            integrations: [
+              "Prompt examples",
+              "Blog workflow guides",
+              "Pricing and support pages"
+            ],
+            companyInfo: {
+              name: "GPT Image 2",
+              support: {
+                email: "support@gptimage2.today",
+                documentation: "Prompt framework, workflow, and pricing pages"
+              }
+            },
+            lastUpdated: "2026-05-10"
+          },
+          {
             id: "adobe-firefly",
             name: "Adobe Firefly",
             description: "Professional Creative AI for design generation",
