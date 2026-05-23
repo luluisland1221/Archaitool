@@ -2,6 +2,7 @@
 export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   // Architecture & Spatial Design
   'aitwo.co': '/screenshots/aitwo_co_.webp',
+  'gosafety.ai': '/screenshots/gosafety_ai_.webp',
   '3dhouseplanner.com': '/screenshots/3dhouseplanner_com_.webp',
   'ai-architectures.com': '/screenshots/ai_architectures_com_.webp',
   'arkdesign.ai': '/screenshots/arkdesign_ai_.webp',
@@ -108,6 +109,7 @@ export const FALLBACK_SCREENSHOTS: Record<string, string> = {
   'openai.com': '/screenshots/dall-e-3.webp',
   'seedance2.page': '/screenshots/seedance2_page_.webp',
   'veo31lite.space': '/screenshots/veo31lite_space_.webp',
+  'veo4free.net': '/screenshots/veo4free_net_.webp',
   'videoprompt.info': '/screenshots/videoprompt_info_.webp',
   'helpx.adobe.com': '/screenshots/helpx.adobe.webp',
   'help.sketchup.com': '/screenshots/help_sketchup_com_en_sketchup-ai-render.webp',

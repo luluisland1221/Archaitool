@@ -7,18 +7,49 @@ import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { screenshotService } from '../services/screenshotService';
 import { generateToolUrl } from '../utils/urlHelper';
 import { getFeaturedNewToolRank, isNewToolId } from '../data/newTools';
+import { NewBadge } from '../components/NewBadge';
 
 const Home = () => {
   const prioritizeTools = (tools) => {
-    return [...tools].sort((a, b) => {
-      const aRank = getFeaturedNewToolRank(a.id);
-      const bRank = getFeaturedNewToolRank(b.id);
+    return tools.map((tool, index) => ({ tool, index })).sort((a, b) => {
+      const aNew = isNewToolId(a.tool.id);
+      const bNew = isNewToolId(b.tool.id);
+      if (aNew !== bNew) {
+        return aNew ? -1 : 1;
+      }
+
+      if (!aNew && !bNew) {
+        return a.index - b.index;
+      }
+
+      const aRank = getFeaturedNewToolRank(a.tool.id);
+      const bRank = getFeaturedNewToolRank(b.tool.id);
       if (aRank !== bRank) {
         return aRank - bRank;
       }
-      return 0;
-    });
+      return a.index - b.index;
+    }).map(({ tool }) => tool);
   };
+
+  const prioritizeSubcategories = (subcategories) =>
+    subcategories.map((subcategory, index) => ({ subcategory, index })).sort((a, b) => {
+      const aHasNew = subcategoryHasNewTools(a.subcategory);
+      const bHasNew = subcategoryHasNewTools(b.subcategory);
+      if (aHasNew !== bHasNew) {
+        return aHasNew ? -1 : 1;
+      }
+      return a.index - b.index;
+    }).map(({ subcategory }) => subcategory);
+
+  const prioritizeCategories = (categories) =>
+    categories.map((category, index) => ({ category, index })).sort((a, b) => {
+      const aHasNew = categoryHasNewTools(a.category);
+      const bHasNew = categoryHasNewTools(b.category);
+      if (aHasNew !== bHasNew) {
+        return aHasNew ? -1 : 1;
+      }
+      return a.index - b.index;
+    }).map(({ category }) => category);
 
   const categoryHasNewTools = (category) =>
     category.subcategories.some((subcategory) =>
@@ -27,12 +58,6 @@ const Home = () => {
 
   const subcategoryHasNewTools = (subcategory) =>
     subcategory.tools.some((tool) => isNewToolId(tool.id));
-
-  const NewBadge = ({ className = '' }) => (
-    <span className={`bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase shadow-sm ${className}`}>
-      NEW
-    </span>
-  );
 
   useEffect(() => {
     document.title = 'Arch AI Tool - Discover the Best Architecture AI Tools | Free & Professional Solutions';
@@ -88,13 +113,13 @@ const Home = () => {
               Arch AI Tool is a curated directory of AI software for architecture, interior design, landscape planning, and real estate visualization. Compare rendering, floor plan, and staging tools with use cases, pricing signals, and workflow notes so you can shortlist the right stack fast.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {configuredCategories.map((category) => (
+              {prioritizeCategories(configuredCategories).map((category) => (
                 <Link
                   to={`/tools/${category.id}`}
                   key={category.id}
                   className="group relative bg-black/30 border-[1.5px] border-white/50 py-4 px-6 text-white hover:bg-black/50 hover:border-white hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 flex items-center justify-center min-h-[80px]"
                 >
-                  {categoryHasNewTools(category) && <NewBadge className="absolute top-2 right-2 ring-1 ring-white/70" />}
+                  {categoryHasNewTools(category) && <NewBadge variant="inverted" className="absolute top-2 right-2" />}
                   <h3 className="font-medium text-sm md:text-base leading-tight">
                     {category.id === 'interior-design' ? (
                       <>
@@ -112,7 +137,7 @@ const Home = () => {
       </section>
 
       {/* Featured Tools by Category */}
-      {configuredCategories.map((category) => (
+      {prioritizeCategories(configuredCategories).map((category) => (
         <section key={category.id} className="py-16 border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Primary Category Header */}
@@ -126,7 +151,7 @@ const Home = () => {
             
             {/* Subcategories */}
             <div className="space-y-16">
-              {category.subcategories.map((subcategory) => (
+              {prioritizeSubcategories(category.subcategories).map((subcategory) => (
                 <div key={subcategory.id} className="mb-12">
                   <div className="border-b border-gray-200 pb-4 mb-8">
                     <div className="flex flex-wrap items-center gap-3">
@@ -160,9 +185,7 @@ const Home = () => {
                               />
                               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                               {isNewTool && (
-                                <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full uppercase shadow-lg ring-2 ring-white z-20">
-                                  NEW
-                                </div>
+                                <NewBadge variant="floating" className="absolute top-4 left-4 z-20" />
                               )}
                             </div>
                             <div className="p-6 relative z-10">

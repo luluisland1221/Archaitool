@@ -1,4 +1,6 @@
 export const newToolIds = [
+  'veo4free',
+  'gosafety-ai',
   'consistent-character-ai',
   'deepseek-v4-network',
   'kling-o1',
@@ -33,6 +35,8 @@ export const newToolIds = [
 ];
 
 export const featuredNewToolIds = [
+  'veo4free',
+  'gosafety-ai',
   'consistent-character-ai',
   'deepseek-v4-network',
   'kling-o1',
@@ -53,6 +57,13 @@ export const isNewToolId = (toolId?: string | null) =>
   Boolean(toolId && newToolIds.includes(toolId));
 
 export const getFeaturedNewToolRank = (toolId: string) => {
-  const rank = featuredNewToolIds.indexOf(toolId);
-  return rank === -1 ? Number.MAX_SAFE_INTEGER : rank;
+  const featuredRank = featuredNewToolIds.indexOf(toolId);
+  if (featuredRank !== -1) {
+    return featuredRank;
+  }
+
+  const newRank = newToolIds.indexOf(toolId);
+  return newRank === -1
+    ? Number.MAX_SAFE_INTEGER
+    : featuredNewToolIds.length + newRank;
 };

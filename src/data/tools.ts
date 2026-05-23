@@ -2834,6 +2834,123 @@ export const categories: Category[] = [
             lastUpdated: "2026-03-14"
           }
         ]
+      },
+      {
+        id: "construction-safety",
+        name: "Construction Safety & Field Operations",
+        description: "AI and mobile tools for jobsite safety forms, field records, and construction compliance",
+        tools: [
+          {
+            id: "gosafety-ai",
+            name: "GoSafety",
+            description: "Offline construction safety forms, time cards, injury reports, and OSHA logs",
+            image: "/screenshots/gosafety_ai_.webp",
+            url: "https://gosafety.ai/",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "construction-safety",
+            searchAliases: ["gosafety", "go safety", "gosafety ai", "construction safety forms"],
+            seoTitle: "GoSafety Construction Safety Forms & OSHA Logs | Arch AI Tool",
+            seoDescription: "GoSafety gives contractors offline iPhone and iPad forms, time cards, injury reports, OSHA logs, and QuickBooks Online hours export.",
+            detailedDescription: "GoSafety is a construction field-operations platform built for contractors that need crews to finish safety paperwork without rebuilding records from paper. The product combines offline iPhone and iPad capture, daily construction safety forms, PDF forms and signatures, time cards, injury records, OSHA 300 / 301 / 300A management, photo and weather capture, web office review, and QuickBooks Online approved-hours export. It is designed for jobsite teams working in poor reception areas while giving office staff clean submission history, signatures, location data, worker-level hours, and exportable records.",
+            keyFeatures: [
+              "Offline iPhone and iPad app for field crews working in poor reception areas",
+              "Daily construction safety forms with weather, photos, notes, diagrams, and worker-level hours",
+              "PDF form workflows with fillable PDFs, dictation, graphical signatures, and location stamps",
+              "Time cards with optional pre-shift or post-shift safety questions",
+              "Injury reporting that carries incident details into OSHA logs",
+              "OSHA 300, 301, and 300A form management with annual tracking",
+              "QuickBooks Online export for approved hours",
+              "AI-assisted or white-glove onboarding for existing PDFs, checklists, diagrams, and signatures"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["PDF forms", "Photos", "Signatures", "Time entries", "OSHA logs"],
+              exportOptions: ["PDF records", "QuickBooks Online TimeActivity records", "Submission history"],
+              collaboration: true,
+              apiAvailable: false,
+              mobileSupport: true,
+              systemRequirements: ["iPhone or iPad for field capture", "Web browser for office review"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "14-day free trial",
+                  "No credit card required",
+                  "Core workflows for forms, PDFs, time cards, injuries, OSHA logs, and offline capture"
+                ],
+                limitations: ["Trial limited to 14 days"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Up to 15 users",
+                    price: "$50/month",
+                    billing: "monthly",
+                    features: [
+                      "Daily forms",
+                      "PDF forms and signatures",
+                      "Time cards",
+                      "Injury forms",
+                      "OSHA logs",
+                      "Offline capture"
+                    ],
+                    targetUser: "Small construction crews"
+                  },
+                  {
+                    name: "Up to 75 users",
+                    price: "$100/month",
+                    billing: "monthly",
+                    features: [
+                      "All core construction safety workflows",
+                      "Office review",
+                      "Approved-hours review",
+                      "QuickBooks Online export",
+                      "Flat company-size pricing"
+                    ],
+                    targetUser: "Larger crews and contractors"
+                  },
+                  {
+                    name: "Forms Onboarding",
+                    price: "$300",
+                    billing: "onetime",
+                    features: [
+                      "AI-assisted or hands-on setup",
+                      "Existing PDFs and checklists imported",
+                      "Diagram and signature workflow setup"
+                    ],
+                    targetUser: "Companies moving existing paperwork into GoSafety"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Daily jobsite safety forms",
+              "Construction PDF forms and signatures",
+              "Worker time cards and payroll review",
+              "Injury reports and OSHA recordkeeping",
+              "Offline field capture on remote jobsites",
+              "QuickBooks Online approved-hours export",
+              "Office review of photos, signatures, weather, and submission history"
+            ],
+            integrations: [
+              "iPhone and iPad app",
+              "Web office review",
+              "QuickBooks Online",
+              "PDF form workflows",
+              "App Store distribution"
+            ],
+            companyInfo: {
+              name: "GoSafety",
+              support: {
+                documentation: "https://gosafety.ai/docs/",
+                tutorials: "https://gosafety.ai/docs/"
+              }
+            },
+            lastUpdated: "2026-05-23"
+          }
+        ]
       }
     ]
   },
@@ -5167,6 +5284,134 @@ export const categories: Category[] = [
         name: "Multi-domain AI Design",
         description: "AI tools for various design domains",
         tools: [
+          {
+            id: "veo4free",
+            name: "Veo4Free",
+            description: "AI video generator for cinematic text-to-video and image-to-video clips",
+            image: "/screenshots/veo4free_net_.webp",
+            url: "https://veo4free.net/",
+            isPaid: true,
+            category: "general-design",
+            subcategory: "multi-domain-ai",
+            searchAliases: ["veo4free", "veo 4 free", "veo 4 ai video generator", "veofree"],
+            seoTitle: "Veo4Free AI Video Generator | Arch AI Tool",
+            seoDescription: "Veo4Free offers text-to-video and image-to-video generation with cinematic prompts, native audio workflows, 720p/1080p exports, and paid credit plans.",
+            detailedDescription: "Veo4Free is a browser-based AI video generation studio built around cinematic text-to-video and image-to-video workflows. The platform positions itself as a creator-first interface for Veo 4 style video generation, with controls for prompts, aspect ratio, duration, audio mode, reference consistency, and social publishing formats. It is aimed at creators, brand teams, filmmakers, educators, and marketers who need fast concept clips, campaign assets, pre-visualization, product demos, and short-form social videos without a full production crew.",
+            keyFeatures: [
+              "Text-to-video generation from natural language scene prompts",
+              "Image-to-video workflow for animating still references",
+              "Native audio workflow for dialogue, Foley, ambience, and music texture",
+              "Aspect ratio and resolution controls for social and presentation formats",
+              "Reference-based character and brand-element consistency",
+              "Start/end frame and camera-language controls for director-style prompting",
+              "Scene chaining for longer narrative workflows",
+              "Commercial use license on paid plans"
+            ],
+            technicalSpecs: {
+              supportedFormats: ["Text prompts", "Image references", "Start frames", "End frames"],
+              exportOptions: ["720p video", "1080p video", "No-watermark downloads on paid plans"],
+              renderSpeed: "About 90 seconds cited for generation on the public site",
+              apiAvailable: true,
+              collaboration: false,
+              mobileSupport: true,
+              systemRequirements: ["Modern web browser", "Internet connection"]
+            },
+            pricing: {
+              freeTier: {
+                features: [
+                  "Start creating for free",
+                  "No credit card required",
+                  "Access to the browser-based generator"
+                ],
+                limitations: ["Free usage limits may apply"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Starter",
+                    price: "$9.90/month",
+                    billing: "monthly",
+                    features: [
+                      "100 credits included",
+                      "HD text-to-video or image-to-video clips",
+                      "720p export",
+                      "No watermark download",
+                      "Commercial use license",
+                      "Email support"
+                    ],
+                    targetUser: "Creators testing AI video workflows"
+                  },
+                  {
+                    name: "Basic",
+                    price: "$29.90/month",
+                    billing: "monthly",
+                    features: [
+                      "350 credits included",
+                      "Text to Video and Image to Video with native audio",
+                      "1080p export",
+                      "No watermark download",
+                      "Priority queue speed"
+                    ],
+                    targetUser: "Daily content creators"
+                  },
+                  {
+                    name: "Plus",
+                    price: "$49.90/month",
+                    billing: "monthly",
+                    features: [
+                      "600 credits included",
+                      "Priority queue",
+                      "Up to 5 concurrent jobs",
+                      "1080p export",
+                      "Priority support"
+                    ],
+                    targetUser: "Active social and brand teams"
+                  },
+                  {
+                    name: "Professional",
+                    price: "$99.90/month",
+                    billing: "monthly",
+                    features: [
+                      "1,250 credits included",
+                      "Fastest queue",
+                      "Up to 10 concurrent jobs",
+                      "Full effects pack",
+                      "Bulk processing",
+                      "API access coming soon"
+                    ],
+                    targetUser: "High-volume creators, agencies, and studios"
+                  }
+                ]
+              },
+              trialAvailable: true,
+              enterprisePlan: false
+            },
+            useCases: [
+              "Short-form social videos for TikTok, Reels, and YouTube Shorts",
+              "Product demos and campaign video concepts",
+              "Film pre-visualization and animatics",
+              "Education and corporate training clips",
+              "Brand storytelling and ad variants",
+              "Architecture or real estate concept video mood studies"
+            ],
+            integrations: [
+              "Browser-based generator",
+              "Reference image uploads",
+              "YouTube, Instagram, and TikTok sharing workflow",
+              "Stripe-powered checkout"
+            ],
+            companyInfo: {
+              name: "Veo4Free",
+              userStats: {
+                users: "10,000+ creators cited on the public site"
+              },
+              support: {
+                documentation: "https://veo4free.net/features",
+                tutorials: "https://veo4free.net/blog"
+              }
+            },
+            lastUpdated: "2026-05-23"
+          },
           {
             id: "midjourney",
             name: "Midjourney",

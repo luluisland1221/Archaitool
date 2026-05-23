@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-10",
+  "generatedAt": "2026-05-23",
   "site": "https://archaitool.com",
-  "totalTools": 76,
+  "totalTools": 78,
   "categories": [
     {
       "id": "architecture-spatial",
@@ -1451,6 +1451,76 @@
               "lastUpdated": "2026-03-14"
             }
           ]
+        },
+        {
+          "id": "construction-safety",
+          "name": "Construction Safety & Field Operations",
+          "description": "AI and mobile tools for jobsite safety forms, field records, and construction compliance",
+          "tools": [
+            {
+              "id": "gosafety-ai",
+              "name": "GoSafety",
+              "description": "GoSafety is a construction field-operations platform built for contractors that need crews to finish safety paperwork without rebuilding records from paper. The product combines offline iPhone and iPad capture, daily construction safety forms, PDF forms and signatures, time cards, injury records, OSHA 300 / 301 / 300A management, photo and weather capture, web office review, and QuickBooks Online approved-hours export. It is designed for jobsite teams working in poor reception areas while giving office staff clean submission history, signatures, location data, worker-level hours, and exportable records.",
+              "vendorUrl": "https://gosafety.ai/",
+              "directoryUrl": "https://archaitool.com/architectural-design/gosafety-ai",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Up to 15 users",
+                    "price": "$50/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Up to 75 users",
+                    "price": "$100/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Forms Onboarding",
+                    "price": "$300",
+                    "billing": "onetime"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Offline iPhone and iPad app for field crews working in poor reception areas",
+                "Daily construction safety forms with weather, photos, notes, diagrams, and worker-level hours",
+                "PDF form workflows with fillable PDFs, dictation, graphical signatures, and location stamps",
+                "Time cards with optional pre-shift or post-shift safety questions",
+                "Injury reporting that carries incident details into OSHA logs",
+                "OSHA 300, 301, and 300A form management with annual tracking",
+                "QuickBooks Online export for approved hours",
+                "AI-assisted or white-glove onboarding for existing PDFs, checklists, diagrams, and signatures"
+              ],
+              "useCases": [
+                "Daily jobsite safety forms",
+                "Construction PDF forms and signatures",
+                "Worker time cards and payroll review",
+                "Injury reports and OSHA recordkeeping",
+                "Offline field capture on remote jobsites",
+                "QuickBooks Online approved-hours export",
+                "Office review of photos, signatures, weather, and submission history"
+              ],
+              "integrations": [
+                "iPhone and iPad app",
+                "Web office review",
+                "QuickBooks Online",
+                "PDF form workflows",
+                "App Store distribution"
+              ],
+              "searchAliases": [
+                "gosafety",
+                "go safety",
+                "gosafety ai",
+                "construction safety forms"
+              ],
+              "lastUpdated": "2026-05-23"
+            }
+          ]
         }
       ]
     },
@@ -2735,6 +2805,72 @@
           "name": "Multi-domain AI Design",
           "description": "AI tools for various design domains",
           "tools": [
+            {
+              "id": "veo4free",
+              "name": "Veo4Free",
+              "description": "Veo4Free is a browser-based AI video generation studio built around cinematic text-to-video and image-to-video workflows. The platform positions itself as a creator-first interface for Veo 4 style video generation, with controls for prompts, aspect ratio, duration, audio mode, reference consistency, and social publishing formats. It is aimed at creators, brand teams, filmmakers, educators, and marketers who need fast concept clips, campaign assets, pre-visualization, product demos, and short-form social videos without a full production crew.",
+              "vendorUrl": "https://veo4free.net/",
+              "directoryUrl": "https://archaitool.com/design-tools/veo4free",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Starter",
+                    "price": "$9.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Basic",
+                    "price": "$29.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Plus",
+                    "price": "$49.90/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Professional",
+                    "price": "$99.90/month",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Text-to-video generation from natural language scene prompts",
+                "Image-to-video workflow for animating still references",
+                "Native audio workflow for dialogue, Foley, ambience, and music texture",
+                "Aspect ratio and resolution controls for social and presentation formats",
+                "Reference-based character and brand-element consistency",
+                "Start/end frame and camera-language controls for director-style prompting",
+                "Scene chaining for longer narrative workflows",
+                "Commercial use license on paid plans"
+              ],
+              "useCases": [
+                "Short-form social videos for TikTok, Reels, and YouTube Shorts",
+                "Product demos and campaign video concepts",
+                "Film pre-visualization and animatics",
+                "Education and corporate training clips",
+                "Brand storytelling and ad variants",
+                "Architecture or real estate concept video mood studies"
+              ],
+              "integrations": [
+                "Browser-based generator",
+                "Reference image uploads",
+                "YouTube, Instagram, and TikTok sharing workflow",
+                "Stripe-powered checkout"
+              ],
+              "searchAliases": [
+                "veo4free",
+                "veo 4 free",
+                "veo 4 ai video generator",
+                "veofree"
+              ],
+              "lastUpdated": "2026-05-23"
+            },
             {
               "id": "midjourney",
               "name": "Midjourney",

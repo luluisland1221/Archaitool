@@ -5,6 +5,7 @@ import { ExternalLink, ArrowLeft, Check, Building2, Cpu, Palette, Clock } from '
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { isNewToolId } from '../data/newTools';
+import { NewBadge } from '../components/NewBadge';
 
 const ToolDetail = () => {
   const { id } = useParams();
@@ -88,11 +89,7 @@ const ToolDetail = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <h1 className="text-4xl font-bold">{tool.name}</h1>
-                  {isNewTool && (
-                    <span className="bg-gray-500 text-white text-sm font-bold px-3 py-1 rounded-full uppercase">
-                      NEW
-                    </span>
-                  )}
+                  {isNewTool && <NewBadge variant="floating" />}
                 </div>
                 <a
                   href={tool.url}
