@@ -11,8 +11,6 @@ import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { generateToolUrl } from '../utils/urlHelper';
 import { setCanonicalUrl } from '../utils/seo';
 import { truncateWithEllipsis } from '../utils/text';
-import { isNewToolId } from '../data/newTools';
-import { NewBadge } from '../components/NewBadge';
 
 // 简化工具卡片样式
 const toolVisitCard = "bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1";
@@ -56,9 +54,6 @@ const ToolDetail = () => {
       subcategory.tools
     )
   ).find(t => t.id === id) as Tool | undefined;
-
-  // Check if this is a new tool
-  const isNewTool = isNewToolId(id);
 
   useEffect(() => {
     if (tool) {
@@ -326,7 +321,6 @@ const ToolDetail = () => {
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
                   <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{tool.name} - AI Tool for Architecture & Design</h1>
-                  {isNewTool && <NewBadge />}
                   {tool.userRating && (
                     <div className="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">
                       <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />

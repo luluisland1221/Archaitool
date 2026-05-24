@@ -4,8 +4,6 @@ import { useParams, Link } from 'react-router-dom';
 import { ExternalLink, ArrowLeft, Check, Building2, Cpu, Palette, Clock } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
-import { isNewToolId } from '../data/newTools';
-import { NewBadge } from '../components/NewBadge';
 
 const ToolDetail = () => {
   const { id } = useParams();
@@ -16,9 +14,6 @@ const ToolDetail = () => {
       subcategory.tools
     )
   ).find(t => t.id === id);
-
-  // Check if this is a new tool
-  const isNewTool = isNewToolId(id);
 
   useEffect(() => {
     if (tool) {
@@ -89,7 +84,6 @@ const ToolDetail = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <h1 className="text-4xl font-bold">{tool.name}</h1>
-                  {isNewTool && <NewBadge variant="floating" />}
                 </div>
                 <a
                   href={tool.url}

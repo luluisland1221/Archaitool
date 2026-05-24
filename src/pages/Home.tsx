@@ -119,7 +119,6 @@ const Home = () => {
                   key={category.id}
                   className="group relative bg-black/30 border-[1.5px] border-white/50 py-4 px-6 text-white hover:bg-black/50 hover:border-white hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 flex items-center justify-center min-h-[80px]"
                 >
-                  {categoryHasNewTools(category) && <NewBadge variant="inverted" className="absolute top-2 right-2" />}
                   <h3 className="font-medium text-sm md:text-base leading-tight">
                     {category.id === 'interior-design' ? (
                       <>
@@ -144,7 +143,6 @@ const Home = () => {
             <div className="bg-gray-200 p-8 mb-12 border-l-4 border-black">
               <div className="flex flex-wrap items-center gap-3">
                 <h2 className="text-3xl font-bold text-black">{category.name}</h2>
-                {categoryHasNewTools(category) && <NewBadge />}
               </div>
               <p className="text-gray-700 mt-2">{category.description}</p>
             </div>
@@ -158,7 +156,6 @@ const Home = () => {
                       <h3 className="text-2xl font-semibold text-black">
                         {subcategory.name}
                       </h3>
-                      {subcategoryHasNewTools(subcategory) && <NewBadge />}
                     </div>
                     <p className="text-gray-600 mt-2">{subcategory.description}</p>
                   </div>

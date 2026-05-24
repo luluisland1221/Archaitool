@@ -572,14 +572,12 @@ const Tools = () => {
           className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           <article className="relative bg-gray-200 p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-gray-100">
-            {categoryHasNewTools(category) && <NewBadge className="absolute top-4 right-4" />}
             <h2 className="text-2xl font-bold mb-3 pr-14">{category.name}</h2>
             <p className="text-gray-600 mb-4">{category.description}</p>
             <div className="space-y-2 bg-white p-4 rounded-lg">
               {prioritizeSubcategories(category.subcategories).map((sub) => (
                 <div key={sub.id} className="flex items-center gap-2 text-sm text-gray-500">
                   <span>&middot;{sub.name}</span>
-                  {subcategoryHasNewTools(sub) && <NewBadge />}
                 </div>
               ))}
             </div>
@@ -652,7 +650,6 @@ const Tools = () => {
           <div className="border-b border-gray-200 pb-4 mb-8">
             <div className="flex flex-wrap items-center gap-3 mb-3">
               <h2 className="text-2xl font-bold">{subcategory.name}</h2>
-              {subcategoryHasNewTools(subcategory) && <NewBadge />}
             </div>
             <p className="text-gray-600">{subcategory.description}</p>
           </div>
@@ -670,7 +667,6 @@ const Tools = () => {
     <div>
       <div className="flex flex-wrap items-center gap-3 mb-4">
         <h1 className="text-3xl font-bold">{subcategory.name} - AI Tools Directory</h1>
-        {subcategoryHasNewTools(subcategory) && <NewBadge />}
       </div>
       <p className="text-gray-600 mb-8">{subcategory.description}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -727,7 +723,6 @@ const Tools = () => {
           <>
             <div className="flex flex-wrap items-center gap-3 mb-8">
               <h1 className="text-4xl font-bold">{selectedCategory.name} - AI Tools & Software</h1>
-              {categoryHasNewTools(selectedCategory) && <NewBadge />}
             </div>
             {renderInsightPanel(selectedCategory.name, categoryInsight)}
             {renderSubconfiguredCategories(selectedCategory)}
