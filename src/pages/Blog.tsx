@@ -1,19 +1,26 @@
 import React, { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Search, BookOpen, Clock } from 'lucide-react';
+import { useParams } from 'react-router-dom';
+import { Search, BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blog/posts';
+import { getTagBySlug } from '../data/blog/tags';
+import { withTrailingSlash } from '../utils/urlHelper';
 
 const Blog: React.FC = () => {
+  const { tagSlug } = useParams<{ tagSlug?: string }>();
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const selectedRouteTag = tagSlug ? getTagBySlug(tagSlug) : undefined;
 
   const filteredPosts = useMemo(() => {
     let posts = blogPosts;
+    const activeTags = selectedRouteTag ? [selectedRouteTag.id, ...selectedTags] : selectedTags;
+    const uniqueActiveTags = [...new Set(activeTags)];
 
     // Filter by selected tags
-    if (selectedTags.length > 0) {
+    if (uniqueActiveTags.length > 0) {
       posts = posts.filter(post =>
-        selectedTags.some(tagId => post.tags.includes(tagId))
+        uniqueActiveTags.some(tagId => post.tags.includes(tagId))
       );
     }
 
@@ -31,39 +38,37 @@ const Blog: React.FC = () => {
     return posts.sort((a, b) =>
       new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
     );
-  }, [selectedTags, searchQuery]);
+  }, [searchQuery, selectedRouteTag, selectedTags]);
 
-  const handleTagToggle = (tagId: string) => {
-    setSelectedTags(prev =>
-      prev.includes(tagId)
-        ? prev.filter(id => id !== tagId)
-        : [...prev, tagId]
-    );
-  };
-
-  const handleClearAll = () => {
-    setSelectedTags([]);
-  };
-
-  const featuredPosts = blogPosts.slice(0, 3);
+  const activeTopicCount = (selectedRouteTag ? 1 : 0) + selectedTags.length;
+  const canonicalPath = selectedRouteTag
+    ? withTrailingSlash(`/blog/tag/${selectedRouteTag.slug}`)
+    : '/blog/';
+  const pageTitle = selectedRouteTag
+    ? `${selectedRouteTag.name} | ArchAI Blog`
+    : 'ArchAI Blog - AI Architecture Tools Insights & Tutorials';
+  const pageDescription = selectedRouteTag
+    ? `Browse ${selectedRouteTag.name.toLowerCase()} on ArchAI Blog.`
+    : 'Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow.';
 
   return (
     <>
       <Helmet>
-        <title>ArchAI Blog - AI Architecture Tools Insights & Tutorials</title>
-        <meta name="description" content="Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow." />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
         <meta name="keywords" content="AI architecture blog, architecture tutorials, AI design tools, architectural technology, AI workflow" />
+        <link rel="canonical" href={`https://archaitool.com${canonicalPath}`} />
 
         {/* Open Graph */}
-        <meta property="og:title" content="ArchAI Blog - AI Architecture Tools Insights & Tutorials" />
-        <meta property="og:description" content="Discover the latest insights, tutorials, and reviews for AI architecture tools." />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://archaitool.com/blog" />
+        <meta property="og:url" content={`https://archaitool.com${canonicalPath}`} />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="ArchAI Blog - AI Architecture Tools Insights & Tutorials" />
-        <meta name="twitter:description" content="Discover the latest insights, tutorials, and reviews for AI architecture tools." />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
@@ -110,17 +115,17 @@ const Blog: React.FC = () => {
                 Search Results for "{searchQuery}"
               </h2>
             )}
-            {selectedTags.length > 0 && !searchQuery && (
+            {activeTopicCount > 0 && !searchQuery && (
               <h2 className="text-2xl font-bold text-gray-900">
-                Articles in {selectedTags.length} topic{selectedTags.length > 1 ? 's' : ''}
+                Articles in {activeTopicCount} topic{activeTopicCount > 1 ? 's' : ''}
               </h2>
             )}
-            {searchQuery && selectedTags.length > 0 && (
+            {searchQuery && activeTopicCount > 0 && (
               <h2 className="text-2xl font-bold text-gray-900">
                 Filtered Results
               </h2>
             )}
-            {searchQuery === '' && selectedTags.length === 0 && (
+            {searchQuery === '' && activeTopicCount === 0 && (
               <h2 className="text-2xl font-bold text-gray-900">Latest Articles</h2>
             )}
           </div>
@@ -131,7 +136,7 @@ const Blog: React.FC = () => {
               {filteredPosts.map((post) => (
                 <a
                   key={post.id}
-                  href={`/blog/${post.slug}`}
+                  href={withTrailingSlash(`/blog/${post.slug}`)}
                   className="group bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 block"
                 >
                   {post.featuredImage && (

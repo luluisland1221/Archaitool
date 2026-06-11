@@ -5,6 +5,7 @@ import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Check } from 'lucid
 import { getPostBySlug } from '../data/blog/posts';
 import { getTagById } from '../data/blog/tags';
 import { StructuredData } from '../components/StructuredData';
+import { normalizeInternalHtmlLinks, withTrailingSlash } from '../utils/urlHelper';
 import NotFound from './NotFound';
 
 const BlogPost: React.FC = () => {
@@ -24,8 +25,9 @@ const BlogPost: React.FC = () => {
   }
 
   const postTags = post.tags.map(tagId => getTagById(tagId)).filter(Boolean);
-  const pageUrl = `https://archaitool.com/blog/${post.slug}`;
+  const pageUrl = `https://archaitool.com${withTrailingSlash(`/blog/${post.slug}`)}`;
   const articleSections = postTags.map(tag => tag?.name).filter(Boolean);
+  const normalizedContent = normalizeInternalHtmlLinks(post.content);
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -104,12 +106,13 @@ const BlogPost: React.FC = () => {
         <title>{post.title} | ArchAI Blog</title>
         <meta name="description" content={post.seo.description} />
         <meta name="keywords" content={post.seo.keywords.join(', ')} />
+        <link rel="canonical" href={pageUrl} />
 
         {/* Open Graph */}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.seo.description} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://archaitool.com/blog/${post.slug}`} />
+        <meta property="og:url" content={pageUrl} />
         {post.featuredImage && (
           <meta property="og:image" content={post.featuredImage} />
         )}
@@ -276,11 +279,11 @@ const BlogPost: React.FC = () => {
               {postTags.length > 0 && (
                 <div className="flex flex-wrap justify-center gap-3 mb-8">
                   {postTags.map((tag) => (
-                    <Link
-                      key={tag?.id}
-                      to={`/blog?tag=${tag?.slug}`}
-                      className="px-4 py-2 text-sm font-medium rounded-full bg-white/10 hover:bg-white/20 transition-all duration-200 border border-white/20 text-white hover:scale-105 hover:shadow-lg"
-                    >
+                  <Link
+                    key={tag?.id}
+                    to={withTrailingSlash(`/blog/tag/${tag?.slug || ''}`)}
+                    className="px-4 py-2 text-sm font-medium rounded-full bg-white/10 hover:bg-white/20 transition-all duration-200 border border-white/20 text-white hover:scale-105 hover:shadow-lg"
+                  >
                       {tag?.name}
                     </Link>
                   ))}
@@ -351,7 +354,7 @@ const BlogPost: React.FC = () => {
             <div className="prose prose-lg max-w-none">
               <div
                 className="blog-content text-gray-800 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: post.content }}
+                dangerouslySetInnerHTML={{ __html: normalizedContent }}
               />
             </div>
 

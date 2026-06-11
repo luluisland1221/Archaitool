@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useLocation, NavigateFunction } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -20,7 +20,7 @@ import SubmitTool from './pages/SubmitTool';
 import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
 import { setCanonicalUrl } from './utils/seo';
 import { truncateWithEllipsis } from './utils/text';
-// Removed redirect imports - not needed for static site
+import { withTrailingSlash } from './utils/urlHelper';
 
 
 // Component to handle title updates and canonical URLs
@@ -28,6 +28,7 @@ const TitleUpdater = () => {
   const location = useLocation();
 
   useEffect(() => {
+    const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
     const titles = {
       '/': 'Arch AI Tool - Discover AI Tools for Architecture & Design',
       '/tools': 'AI Architecture Tools - Browse All Categories | Arch AI Tool',
@@ -53,23 +54,18 @@ const TitleUpdater = () => {
     };
 
     // Check if this is a category-based tool URL
-    const isCategoryToolUrl = /^\/(architectural-design|architectural-visualization|design-automation|interior-design-remodeling|landscape-planning|multi-domain-ai|property-visualization|virtual-staging)\/[^\/]+$/.test(location.pathname);
-
-    // NOTE: redirects removed - all pages are now static HTML
-    // No need for JavaScript-based URL redirections
+    const isCategoryToolUrl = /^\/(architectural-design|architectural-visualization|design-automation|interior-design-remodeling|landscape-planning|multi-domain-ai|property-visualization|virtual-staging)\/[^/]+$/.test(normalizedPath);
 
     // Update page title
-    if (isCategoryToolUrl || location.pathname.startsWith('/tool/')) {
+    if (isCategoryToolUrl || normalizedPath.startsWith('/tool/')) {
       document.title = 'AI Tool Details | Arch AI Tool';
-    } else if (location.pathname.startsWith('/blog/')) {
+    } else if (normalizedPath.startsWith('/blog/')) {
       document.title = 'Blog Article | Arch AI Tool';
     } else {
-      document.title = titles[location.pathname] || 'Arch AI Tool';
+      document.title = titles[normalizedPath] || 'Arch AI Tool';
     }
 
-    // Set canonical URL to avoid redirect chains
-    // Always point to the non-www HTTPS version without duplicate parameters
-    setCanonicalUrl(location.pathname);
+    setCanonicalUrl(withTrailingSlash(location.pathname));
 
     const helmetRoutes = [
       '/blog',
@@ -79,8 +75,8 @@ const TitleUpdater = () => {
       '/terms-of-service'
     ];
     const isHelmetRoute =
-      helmetRoutes.includes(location.pathname) ||
-      location.pathname.startsWith('/blog/');
+      helmetRoutes.includes(normalizedPath) ||
+      normalizedPath.startsWith('/blog/');
 
     if (isHelmetRoute) {
       const metaTags = document.querySelectorAll('meta[name="description"]');
@@ -117,11 +113,11 @@ const TitleUpdater = () => {
       '/sbti': 'Take the SBTI personality test - a playful 15-dimension profile for architecture and design teams. For entertainment only.',
     };
 
-    if (location.pathname.startsWith('/tool/')) {
+    if (normalizedPath.startsWith('/tool/')) {
       metaDescription.content = 'Discover detailed information about AI architecture and design tools. Read reviews, compare features, and find the perfect AI solution for your project.';
     } else {
       metaDescription.content = truncateWithEllipsis(
-        descriptions[location.pathname] || descriptions['/'],
+        descriptions[normalizedPath] || descriptions['/'],
         155
       );
     }
@@ -156,6 +152,7 @@ function App() {
             <Route path="/real-estate/:id" element={<ToolDetail />} />
                 {/* Blog routes */}
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/tag/:tagSlug" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

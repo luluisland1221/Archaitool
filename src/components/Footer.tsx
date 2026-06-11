@@ -21,47 +21,47 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/tools" className="text-gray-400 hover:text-white">
+                <Link to="/tools/" className="text-gray-400 hover:text-white">
                   All Tools
                 </Link>
               </li>
               <li>
-                <Link to="/sbti" className="text-gray-400 hover:text-white">
+                <Link to="/sbti/" className="text-gray-400 hover:text-white">
                   SBTI Personality Test
                 </Link>
               </li>
               <li>
-                <Link to="/tools/architecture-spatial" className="text-gray-400 hover:text-white">
+                <Link to="/tools/architecture-spatial/" className="text-gray-400 hover:text-white">
                   Architecture & Design
                 </Link>
               </li>
               <li>
-                <Link to="/tools/interior-design" className="text-gray-400 hover:text-white">
+                <Link to="/tools/interior-design/" className="text-gray-400 hover:text-white">
                   Interior Design
                 </Link>
               </li>
               <li>
-                <Link to="/tools/landscape-design" className="text-gray-400 hover:text-white">
+                <Link to="/tools/landscape-design/" className="text-gray-400 hover:text-white">
                   Landscape Design
                 </Link>
               </li>
               <li>
-                <Link to="/tools/general-design" className="text-gray-400 hover:text-white">
+                <Link to="/tools/general-design/" className="text-gray-400 hover:text-white">
                   General AI Tools
                 </Link>
               </li>
               <li>
-                <Link to="/tools/real-estate" className="text-gray-400 hover:text-white">
+                <Link to="/tools/real-estate/" className="text-gray-400 hover:text-white">
                   Real Estate
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-white">
+                <Link to="/about/" className="text-gray-400 hover:text-white">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white">
+                <Link to="/contact/" className="text-gray-400 hover:text-white">
                   Contact
                 </Link>
               </li>
@@ -160,16 +160,16 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Arch AI Tool. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center space-x-6 text-sm">
-              <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/privacy-policy/" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/terms-of-service/" className="text-gray-400 hover:text-white transition-colors">
                 Terms of Service
               </Link>
-              <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/contact/" className="text-gray-400 hover:text-white transition-colors">
                 Contact Us
               </Link>
-              <Link to="/contact/submissions" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/contact/submissions/" className="text-gray-400 hover:text-white transition-colors">
                 Admin Inbox
               </Link>
             </div>

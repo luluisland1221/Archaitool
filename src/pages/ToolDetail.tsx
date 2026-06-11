@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { configuredCategories, Tool } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
-import { generateToolUrl } from '../utils/urlHelper';
+import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
 import { setCanonicalUrl } from '../utils/seo';
 import { truncateWithEllipsis } from '../utils/text';
 
@@ -240,7 +240,7 @@ const ToolDetail = () => {
             <h1 className="text-4xl font-bold mb-4">Tool not found</h1>
             <p className="text-gray-600 mb-6">The tool you're looking for doesn't exist.</p>
             <Link
-              to="/tools"
+              to="/tools/"
               className="inline-flex items-center text-gray-800 hover:text-black"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
@@ -254,7 +254,8 @@ const ToolDetail = () => {
 
   const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
   const canonicalPath = tool ? generateToolUrl(tool.id) : null;
-  if (tool && canonicalPath && normalizedPath !== canonicalPath) {
+  const normalizedCanonicalPath = canonicalPath ? canonicalPath.replace(/\/+$/, '') || '/' : null;
+  if (tool && normalizedCanonicalPath && normalizedPath !== normalizedCanonicalPath) {
     return <Navigate to={canonicalPath} replace />;
   }
 
@@ -383,11 +384,11 @@ const ToolDetail = () => {
           <nav className="flex flex-wrap items-center space-x-2 text-sm text-gray-600 mb-4">
             <Link to="/" className="hover:text-black transition-colors">Home</Link>
             <span>/</span>
-            <Link to="/tools" className="hover:text-black transition-colors">Tools</Link>
+            <Link to="/tools/" className="hover:text-black transition-colors">Tools</Link>
             {category && (
               <>
                 <span>/</span>
-                <Link to={`/tools/${category.id}`} className="hover:text-black transition-colors">
+                <Link to={withTrailingSlash(`/tools/${category.id}`)} className="hover:text-black transition-colors">
                   {category.name}
                 </Link>
               </>
@@ -395,7 +396,7 @@ const ToolDetail = () => {
             {subcategory && (
               <>
                 <span>/</span>
-                <Link to={`/tools/${category.id}/${subcategory.id}`} className="hover:text-black transition-colors">
+                <Link to={withTrailingSlash(`/tools/${category.id}/${subcategory.id}`)} className="hover:text-black transition-colors">
                   {subcategory.name}
                 </Link>
               </>
@@ -405,7 +406,7 @@ const ToolDetail = () => {
           </nav>
 
           <Link
-            to="/tools"
+            to="/tools/"
             className="inline-flex items-center text-gray-600 hover:text-black"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -858,7 +859,7 @@ const ToolDetail = () => {
               {/* View All Tools Button */}
               <div className="text-center mt-8">
                 <Link
-                  to={`/tools/${category.id}/${subcategory.id}`}
+                  to={withTrailingSlash(`/tools/${category.id}/${subcategory.id}`)}
                   className="inline-flex items-center bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
                 >
                   View All {subcategory.name} Tools

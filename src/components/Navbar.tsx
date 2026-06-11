@@ -19,19 +19,19 @@ const Navbar = () => {
             <Link to="/" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Home
             </Link>
-            <Link to="/tools" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/tools/" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Tools
             </Link>
-            <Link to="/blog" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/blog/" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Blog
             </Link>
-            <Link to="/about" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/about/" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               About
             </Link>
-            <Link to="/contact" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/contact/" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Contact
             </Link>
-            <Link to="/submit" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/submit/" className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium">
               Submit a Tool
             </Link>
           </div>
@@ -60,31 +60,31 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/tools"
+              to="/tools/"
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               Tools
             </Link>
             <Link
-              to="/blog"
+              to="/blog/"
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               Blog
             </Link>
             <Link
-              to="/about"
+              to="/about/"
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               About
             </Link>
             <Link
-              to="/contact"
+              to="/contact/"
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               Contact
             </Link>
             <Link
-              to="/submit"
+              to="/submit/"
               className="block px-3 py-2 text-black hover:bg-black hover:text-white text-base font-medium"
             >
               Submit a Tool

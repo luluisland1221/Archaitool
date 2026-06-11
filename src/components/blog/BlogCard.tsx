@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Clock, User, Calendar } from 'lucide-react';
 import { BlogPost } from '../../data/blog/types';
 import { blogTags } from '../../data/blog/tags';
+import { withTrailingSlash } from '../../utils/urlHelper';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -14,7 +15,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, showTags = true }) => {
 
   return (
     <Link
-      to={`/blog/${post.slug}`}
+      to={withTrailingSlash(`/blog/${post.slug}`)}
       className="block bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 group"
     >
       {post.featuredImage && (

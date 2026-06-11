@@ -5,7 +5,7 @@ import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
 import { screenshotService } from '../services/screenshotService';
-import { generateToolUrl } from '../utils/urlHelper';
+import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
 import { getFeaturedNewToolRank, isNewToolId } from '../data/newTools';
 import { NewBadge } from '../components/NewBadge';
 
@@ -115,7 +115,7 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {prioritizeCategories(configuredCategories).map((category) => (
                 <Link
-                  to={`/tools/${category.id}`}
+                  to={withTrailingSlash(`/tools/${category.id}`)}
                   key={category.id}
                   className="group relative bg-black/30 border-[1.5px] border-white/50 py-4 px-6 text-white hover:bg-black/50 hover:border-white hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 flex items-center justify-center min-h-[80px]"
                 >
@@ -222,7 +222,7 @@ const Home = () => {
                   
                   <div className="mt-8 text-center">
                     <Link
-                      to={`/tools/${category.id}/${subcategory.id}`}
+                      to={withTrailingSlash(`/tools/${category.id}/${subcategory.id}`)}
                       className="inline-block px-6 py-3 border-2 border-black text-black hover:bg-black hover:text-white transition-colors transform hover:-translate-y-1 hover:shadow-xl duration-300"
                     >
                       View All {subcategory.name} Tools ({subcategory.tools.length})
@@ -246,7 +246,7 @@ const Home = () => {
               we curate the most innovative AI agent architecture solutions to enhance your creative process.
             </p>
             <Link
-              to="/tools"
+              to="/tools/"
               className="border-2 border-white text-white px-8 py-3 hover:bg-white hover:text-black transition-colors inline-block transform hover:-translate-y-1 hover:shadow-xl duration-300"
             >
               Explore All Tools

@@ -5,7 +5,7 @@ import { ExternalLink } from 'lucide-react';
 import { configuredCategories } from '../data/tools';
 import { StructuredData } from '../components/StructuredData';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
-import { generateToolUrl } from '../utils/urlHelper';
+import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
 import { truncateWithEllipsis } from '../utils/text';
 import { getFeaturedNewToolRank, isNewToolId } from '../data/newTools';
 import { NewBadge } from '../components/NewBadge';
@@ -313,8 +313,8 @@ const Tools = () => {
   if (finalCategoryId) canonicalSegments.push(finalCategoryId);
   if (finalSubcategoryId) canonicalSegments.push(finalSubcategoryId);
   const canonicalPath = canonicalSegments.length
-    ? `/tools/${canonicalSegments.join('/')}`
-    : '/tools';
+    ? withTrailingSlash(`/tools/${canonicalSegments.join('/')}`)
+    : '/tools/';
   const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
   const shouldRedirectQuery =
     normalizedPath === '/tools' &&
@@ -388,7 +388,7 @@ const Tools = () => {
         (category) => ({
           '@type': 'CollectionPage',
           name: category.name,
-          url: `${BASE_URL}/tools/${category.id}`
+          url: withTrailingSlash(`${BASE_URL}/tools/${category.id}`)
         })
       )
     );
@@ -408,7 +408,7 @@ const Tools = () => {
         (subcategory) => ({
           '@type': 'CollectionPage',
           name: subcategory.name,
-          url: `${BASE_URL}/tools/${selectedCategory.id}/${subcategory.id}`
+          url: withTrailingSlash(`${BASE_URL}/tools/${selectedCategory.id}/${subcategory.id}`)
         })
       )
     );
@@ -441,14 +441,14 @@ const Tools = () => {
 
   const renderBreadcrumbs = () => (
     <div className="flex items-center gap-2 mb-8 text-sm">
-      <Link to="/tools" className="text-gray-600 hover:text-black">
+      <Link to="/tools/" className="text-gray-600 hover:text-black">
         All Categories
       </Link>
       {selectedCategory && (
         <>
           <span className="text-gray-400">/</span>
           <Link 
-            to={`/tools/${selectedCategory.id}`}
+            to={withTrailingSlash(`/tools/${selectedCategory.id}`)}
             className="text-gray-600 hover:text-black"
           >
             {selectedCategory.name}
@@ -568,7 +568,7 @@ const Tools = () => {
       {prioritizeCategories(configuredCategories).map((category) => (
         <Link
           key={category.id}
-          to={`/tools/${category.id}`}
+          to={withTrailingSlash(`/tools/${category.id}`)}
           className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           <article className="relative bg-gray-200 p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-gray-100">
@@ -694,23 +694,23 @@ const Tools = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
                 <div>
                   <strong>Floor plan automation:</strong>{' '}
-                  <Link to="/architectural-design/arkdesign-ai" className="text-black underline">Arkdesign AI</Link>
+                  <Link to="/architectural-design/arkdesign-ai/" className="text-black underline">Arkdesign AI</Link>
                   {' '}or{' '}
-                  <Link to="/architectural-design/floorplan-ai" className="text-black underline">Floorplan AI</Link>
+                  <Link to="/architectural-design/floorplan-ai/" className="text-black underline">Floorplan AI</Link>
                 </div>
                 <div>
                   <strong>Site planning + feasibility:</strong>{' '}
-                  <Link to="/architectural-design/testfit" className="text-black underline">TestFit</Link>
+                  <Link to="/architectural-design/testfit/" className="text-black underline">TestFit</Link>
                 </div>
                 <div>
                   <strong>Fast client renders:</strong>{' '}
-                  <Link to="/architectural-design/myarchitectai" className="text-black underline">MyArchitect AI</Link>
+                  <Link to="/architectural-design/myarchitectai/" className="text-black underline">MyArchitect AI</Link>
                 </div>
                 <div>
                   <strong>Free starter stack:</strong>{' '}
-                  <Link to="/architectural-design/ai-architectures" className="text-black underline">AI Architectures</Link>
+                  <Link to="/architectural-design/ai-architectures/" className="text-black underline">AI Architectures</Link>
                   {' '}+{' '}
-                  <Link to="/interior-design/home-design-ai" className="text-black underline">Home Design AI</Link>
+                  <Link to="/interior-design/home-design-ai/" className="text-black underline">Home Design AI</Link>
                 </div>
               </div>
             </section>

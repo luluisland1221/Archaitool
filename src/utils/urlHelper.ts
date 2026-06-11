@@ -1,5 +1,9 @@
 import { categories } from '../data/tools';
 
+const SITE_ORIGIN = 'https://archaitool.com';
+const ABSOLUTE_URL_PATTERN = /^https?:\/\//i;
+const FILE_PATH_PATTERN = /\/[^/?#]+\.[a-z0-9]+$/i;
+
 // Map category IDs to SEO-friendly URL slugs
 export const categoryUrlMap: { [key: string]: string } = {
   'architecture-spatial': 'architectural-design',
@@ -24,6 +28,61 @@ categories.forEach(category => {
   });
 });
 
+export function withTrailingSlash(path = '/'): string {
+  if (!path || path === '/') {
+    return '/';
+  }
+
+  const pathnameMatch = path.match(/^[^?#]+/);
+  const pathnamePart = pathnameMatch?.[0] || path;
+  const suffix = path.slice(pathnamePart.length);
+
+  let pathname = pathnamePart.startsWith('/') ? pathnamePart : `/${pathnamePart}`;
+  pathname = pathname.replace(/\/+$/, '');
+
+  if (!pathname || pathname === '/') {
+    return `/${suffix}`;
+  }
+
+  if (FILE_PATH_PATTERN.test(pathname)) {
+    return `${pathname}${suffix}`;
+  }
+
+  return `${pathname}/${suffix}`;
+}
+
+export function normalizeInternalHref(href: string): string {
+  if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+    return href;
+  }
+
+  if (ABSOLUTE_URL_PATTERN.test(href)) {
+    const url = new URL(href);
+    if (url.origin !== SITE_ORIGIN) {
+      return href;
+    }
+
+    url.pathname = withTrailingSlash(url.pathname);
+    return url.toString();
+  }
+
+  if (href.startsWith('/')) {
+    return withTrailingSlash(href);
+  }
+
+  return href;
+}
+
+export function normalizeInternalHtmlLinks(html: string): string {
+  if (!html) {
+    return html;
+  }
+
+  return html.replace(/href=(["'])([^"']+)\1/gi, (_match, quote: string, href: string) => {
+    return `href=${quote}${normalizeInternalHref(href)}${quote}`;
+  });
+}
+
 /**
  * Generate URL for a tool using category-based format
  * Format: /category-slug/tool-id
@@ -32,10 +91,10 @@ export function generateToolUrl(toolId: string): string {
   const categoryInfo = getToolCategory(toolId);
   if (categoryInfo) {
     const categorySlug = categoryUrlMap[categoryInfo.category];
-    return `/${categorySlug}/${toolId}`;
+    return withTrailingSlash(`/${categorySlug}/${toolId}`);
   }
   // Fallback to /tool/tool-id if category not found
-  return `/tool/${toolId}`;
+  return withTrailingSlash(`/tool/${toolId}`);
 }
 
 /**

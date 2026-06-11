@@ -10,6 +10,7 @@ const esbuild = require('esbuild');
 
 const SITE_URL = 'https://archaitool.com';
 const TODAY = new Date().toISOString().split('T')[0];
+const FILE_PATH_PATTERN = /\/[^/?#]+\.[a-z0-9]+$/i;
 
 const CATEGORY_SLUG_MAP = {
   'architecture-spatial': 'architectural-design',
@@ -48,7 +49,12 @@ async function loadTsModule(entryFile) {
 }
 
 function linkItem(href, label) {
-  return `    <li><a href="${href}">${escapeHtml(label)}</a></li>`;
+  const url = new URL(href);
+  if (url.pathname !== '/' && !FILE_PATH_PATTERN.test(url.pathname)) {
+    url.pathname = `${url.pathname.replace(/\/+$/, '')}/`;
+  }
+
+  return `    <li><a href="${url.toString()}">${escapeHtml(label)}</a></li>`;
 }
 
 async function generateLinks() {

@@ -1,3 +1,5 @@
+import { withTrailingSlash } from './urlHelper';
+
 const CANONICAL_BASE_URL = 'https://archaitool.com';
 
 const ABSOLUTE_URL_PATTERN = /^https?:\/\//i;
@@ -7,12 +9,7 @@ function normalizePath(path?: string): string {
     return '/';
   }
 
-  let normalizedPath = path.startsWith('/') ? path : `/${path}`;
-  if (normalizedPath !== '/' && normalizedPath.endsWith('/')) {
-    normalizedPath = normalizedPath.replace(/\/+$/, '');
-  }
-
-  return normalizedPath || '/';
+  return withTrailingSlash(path.startsWith('/') ? path : `/${path}`);
 }
 
 export function buildCanonicalUrl(pathOrUrl?: string): string {
@@ -21,6 +18,11 @@ export function buildCanonicalUrl(pathOrUrl?: string): string {
   }
 
   if (ABSOLUTE_URL_PATTERN.test(pathOrUrl)) {
+    const url = new URL(pathOrUrl);
+    if (url.origin === CANONICAL_BASE_URL) {
+      url.pathname = normalizePath(url.pathname);
+      return url.toString();
+    }
     return pathOrUrl;
   }
 

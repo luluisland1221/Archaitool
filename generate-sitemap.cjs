@@ -12,6 +12,7 @@ const esbuild = require('esbuild');
 
 const SITE_URL = 'https://archaitool.com';
 const TODAY = new Date().toISOString().split('T')[0];
+const FILE_PATH_PATTERN = /\/[^/?#]+\.[a-z0-9]+$/i;
 
 // Map internal category IDs to the pretty slugs used across the site.
 const CATEGORY_SLUG_MAP = {
@@ -51,7 +52,12 @@ async function loadTsModule(entryFile) {
 }
 
 function addUrl(urls, loc, { lastmod = TODAY, changefreq = 'monthly', priority = '0.7' } = {}) {
-  urls.push({ loc, lastmod, changefreq, priority });
+  const url = new URL(loc);
+  if (url.pathname !== '/' && !FILE_PATH_PATTERN.test(url.pathname)) {
+    url.pathname = `${url.pathname.replace(/\/+$/, '')}/`;
+  }
+
+  urls.push({ loc: url.toString(), lastmod, changefreq, priority });
 }
 
 async function generateSitemap() {
