@@ -9,6 +9,62 @@ import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
 import { getFeaturedNewToolRank, isNewToolId } from '../data/newTools';
 import { NewBadge } from '../components/NewBadge';
 
+const crawlPriorityLinks = [
+  {
+    title: 'AI architectural visualization tools',
+    href: '/tools/architecture-spatial/architectural-visualization/',
+    description: 'Compare render, BIM-to-image, and client presentation tools for architecture teams.'
+  },
+  {
+    title: 'Design automation tools',
+    href: '/tools/general-design/design-automation/',
+    description: 'Explore AI assistants for repeatable prompts, concept production, and workflow automation.'
+  },
+  {
+    title: 'GPT Image 2 for architecture prompts',
+    href: '/design-tools/gpt-image-2/',
+    description: 'Use image generation workflows for mood boards, material studies, and early concept visuals.'
+  },
+  {
+    title: 'Kling O1 video workflow',
+    href: '/design-tools/kling-o1/',
+    description: 'Turn architectural scenes and marketing concepts into short-form video explorations.'
+  },
+  {
+    title: 'Veo 3.1 Lite video prompts',
+    href: '/design-tools/veo-3-1-lite/',
+    description: 'Evaluate lightweight AI video generation for real estate and design storytelling.'
+  },
+  {
+    title: 'Video Prompt Generator',
+    href: '/design-tools/video-prompt-generator/',
+    description: 'Build repeatable cinematic prompt structures for walkthroughs and campaign clips.'
+  }
+];
+
+const featuredGuides = [
+  {
+    title: '50 AI Prompts for Architecture Rendering',
+    href: '/blog/50-ai-prompts-architecture-rendering-2026/',
+    description: 'Copy-ready prompts for exterior, interior, facade, and competition-style renders.'
+  },
+  {
+    title: 'SketchUp + AI Rendering Plugins',
+    href: '/blog/sketchup-ai-3-plugins-massing-to-client-ready-renders/',
+    description: 'A workflow guide for turning SketchUp massing models into client-ready imagery.'
+  },
+  {
+    title: 'AI Image Authenticity Checklist',
+    href: '/blog/ai-architecture-images-authenticity/',
+    description: 'A practical quality-control guide for keeping AI architecture images believable.'
+  },
+  {
+    title: 'Small Firm AI Productivity',
+    href: '/blog/small-architecture-firms-ai-productivity/',
+    description: 'A playbook for small studios that need measurable time savings from AI tools.'
+  }
+];
+
 const Home = () => {
   const prioritizeTools = (tools) => {
     return tools.map((tool, index) => ({ tool, index })).sort((a, b) => {
@@ -234,6 +290,46 @@ const Home = () => {
           </div>
         </section>
       ))}
+
+      <section className="py-16 bg-gray-100 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-10">
+            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">Priority resources</p>
+            <h2 className="text-3xl font-bold text-gray-900">Fresh AI Architecture Workflows to Crawl Next</h2>
+            <p className="text-gray-700 mt-3 max-w-3xl">
+              These pages collect newer video, image generation, visualization, and automation workflows that are useful
+              starting points for architects comparing fast AI production stacks.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {crawlPriorityLinks.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="block bg-white border border-gray-200 p-6 shadow-sm hover:shadow-lg hover:border-black transition-all"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.description}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="bg-black text-white p-8">
+            <h3 className="text-2xl font-bold mb-6">Guides that support these workflows</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {featuredGuides.map((guide) => (
+                <Link
+                  key={guide.href}
+                  to={guide.href}
+                  className="block border border-white/20 p-5 hover:bg-white hover:text-black transition-colors"
+                >
+                  <span className="font-semibold">{guide.title}</span>
+                  <span className="block text-sm opacity-80 mt-2">{guide.description}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="py-16 bg-black text-white">

@@ -170,6 +170,29 @@ const categoryInsights: Record<string, Insight> = {
 };
 
 const subcategoryInsights: Record<string, Insight> = {
+  'architectural-visualization': {
+    overview:
+      'Architectural visualization AI tools help teams move from BIM, massing, sketches, or reference imagery into client-ready render studies. This page groups tools that support exterior renders, concept visualization, Revit or SketchUp-assisted workflows, and presentation imagery for architects who need faster iteration without losing design intent.',
+    useCases: [
+      'Concept teams can test facade mood, lighting, entourage, and material direction before committing to high-effort production renders.',
+      'Studios using SketchUp, Revit, or Rhino can compare AI-assisted visualization against traditional rendering pipelines for early client reviews.',
+      'Marketing teams can generate option sets for competitions, leasing decks, social campaigns, or stakeholder presentations while architects keep control of the core geometry.'
+    ],
+    selectionTips:
+      'Choose tools based on the source input you trust most: BIM geometry, SketchUp massing, text prompts, reference images, or a hybrid workflow. Then compare output consistency, resolution, editability, commercial rights, and whether the tool preserves scale, structure, and material logic.',
+    faqs: [
+      {
+        question: 'Are AI architectural visualization tools a replacement for rendering software?',
+        answer:
+          'They are strongest during concept design, mood exploration, and rapid option studies. Final production work may still require renderer, BIM, or post-production tools to validate geometry, lighting, dimensions, and client deliverables.'
+      },
+      {
+        question: 'How should architects test visualization tools fairly?',
+        answer:
+          'Run each tool on the same model, sketch, or prompt set. Compare realism, geometry retention, material accuracy, revision speed, and whether the export can be annotated or edited by the rest of your team.'
+      }
+    ]
+  },
   'design-automation': {
     overview:
       'Design automation tools interpret constraints—site setbacks, daylight quotas, circulation ratios—and propose spatial solutions automatically. They are perfect for feasibility studies or repetitious plan types where teams need data-backed options in minutes.',

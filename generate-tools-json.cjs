@@ -41,7 +41,7 @@ async function loadToolsModule(entryFile) {
 
 function buildToolDirectoryUrl(categoryId, toolId) {
   const slug = CATEGORY_SLUG_MAP[categoryId] || categoryId;
-  return `${SITE_URL}/${slug}/${toolId}`;
+  return `${SITE_URL}/${slug}/${toolId}/`;
 }
 
 function summarizePricing(pricing, isPaid) {

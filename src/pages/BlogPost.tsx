@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Check } from 'lucide-react';
-import { getPostBySlug } from '../data/blog/posts';
+import { blogPosts, getPostBySlug } from '../data/blog/posts';
 import { getTagById } from '../data/blog/tags';
 import { StructuredData } from '../components/StructuredData';
 import { normalizeInternalHtmlLinks, withTrailingSlash } from '../utils/urlHelper';
@@ -28,6 +28,15 @@ const BlogPost: React.FC = () => {
   const pageUrl = `https://archaitool.com${withTrailingSlash(`/blog/${post.slug}`)}`;
   const articleSections = postTags.map(tag => tag?.name).filter(Boolean);
   const normalizedContent = normalizeInternalHtmlLinks(post.content);
+  const relatedPosts = blogPosts
+    .filter(candidate => candidate.slug !== post.slug)
+    .map(candidate => ({
+      post: candidate,
+      score: candidate.tags.filter(tagId => post.tags.includes(tagId)).length
+    }))
+    .sort((a, b) => b.score - a.score || new Date(b.post.publishedDate).getTime() - new Date(a.post.publishedDate).getTime())
+    .slice(0, 3)
+    .map(item => item.post);
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -358,6 +367,31 @@ const BlogPost: React.FC = () => {
               />
             </div>
 
+            {relatedPosts.length > 0 && (
+              <section className="mt-16 pt-8 border-t border-gray-200">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Related architecture AI guides</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                  {relatedPosts.map((relatedPost) => (
+                    <Link
+                      key={relatedPost.slug}
+                      to={withTrailingSlash(`/blog/${relatedPost.slug}`)}
+                      className="block rounded-xl border border-gray-200 p-5 hover:border-black hover:shadow-md transition-all"
+                    >
+                      <span className="text-xs text-gray-500">
+                        {new Date(relatedPost.publishedDate).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </span>
+                      <h3 className="text-lg font-semibold text-gray-900 mt-2 mb-3">{relatedPost.title}</h3>
+                      <p className="text-sm text-gray-600">{relatedPost.excerpt}</p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Related Posts */}
             <div className="mt-16 pt-8 border-t border-gray-200">
               <div className="text-center">
@@ -369,7 +403,7 @@ const BlogPost: React.FC = () => {
                   Explore more articles about AI architecture tools and design workflows.
                 </p>
                 <Link
-                  to="/blog"
+                  to="/blog/"
                   className="inline-flex items-center px-8 py-4 bg-black text-white rounded-lg hover:bg-gray-800 transition-all duration-200 hover:scale-105 hover:shadow-lg font-medium"
                 >
                   View All Articles

@@ -96,7 +96,7 @@ async function generateLinks() {
   lines.push('  <h2>Categories</h2>');
   lines.push('  <ul>');
   categories.forEach(category => {
-    lines.push(`    <li><a href="${SITE_URL}/tools/${category.id}">${escapeHtml(category.name)}</a></li>`);
+    lines.push(linkItem(`${SITE_URL}/tools/${category.id}`, category.name));
   });
   lines.push('  </ul>');
 
@@ -105,7 +105,7 @@ async function generateLinks() {
   categories.forEach(category => {
     category.subcategories.forEach(subcategory => {
       const href = `${SITE_URL}/tools/${category.id}/${subcategory.id}`;
-      lines.push(`    <li><a href="${href}">${escapeHtml(category.name)}: ${escapeHtml(subcategory.name)}</a></li>`);
+      lines.push(linkItem(href, `${category.name}: ${subcategory.name}`));
     });
   });
   lines.push('  </ul>');
@@ -117,7 +117,7 @@ async function generateLinks() {
     category.subcategories.forEach(subcategory => {
       subcategory.tools.forEach(tool => {
         const href = `${SITE_URL}/${slug}/${tool.id}`;
-        lines.push(`    <li><a href="${href}">${escapeHtml(tool.name)}</a></li>`);
+        lines.push(linkItem(href, tool.name));
       });
     });
   });
@@ -127,7 +127,7 @@ async function generateLinks() {
     lines.push('  <h2>Blog</h2>');
     lines.push('  <ul>');
     blogPosts.forEach(post => {
-      lines.push(`    <li><a href="${SITE_URL}/blog/${post.slug}">${escapeHtml(post.title)}</a></li>`);
+      lines.push(linkItem(`${SITE_URL}/blog/${post.slug}`, post.title));
     });
     lines.push('  </ul>');
   }
