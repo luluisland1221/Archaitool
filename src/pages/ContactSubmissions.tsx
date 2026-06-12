@@ -86,7 +86,8 @@ const ContactSubmissions = () => {
       <Helmet>
         <title>Submission Inbox - Arch AI Tool</title>
         <meta name="description" content="Private submissions inbox for Arch AI Tool." />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://archaitool.com/contact/submissions/" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
