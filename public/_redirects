@@ -7,6 +7,16 @@ http://www.archaitool.com/*  https://archaitool.com/:splat  301!
 # HTTPS www -> non-www (preserve query params and path)
 https://www.archaitool.com/*  https://archaitool.com/:splat  301!
 
+# GSC malformed URL cleanup
+/cdn-cgi/l/email-protection  https://archaitool.com/contact/  301!
+/tools/architectural-design  https://archaitool.com/tools/architecture-spatial/architectural-design/  301!
+/tools/architectural-design/  https://archaitool.com/tools/architecture-spatial/architectural-design/  301!
+/interior-design/archi-ai/*  https://archaitool.com/interior-design/archi-ai/  301!
+/design-tools/seedance-2/*  https://archaitool.com/design-tools/seedance-2/  301!
+/architectural-design/testfit/*  https://archaitool.com/architectural-design/testfit/  301!
+/landscape-design/ai-garden-design/*  https://archaitool.com/landscape-design/ai-garden-design/  301!
+/landscape-design/dreamzar/*  https://archaitool.com/landscape-design/dreamzar/  301!
+
 # === AUTO-GENERATED TOOL REDIRECTS START ===
 # (Run scripts/update-tool-redirects.cjs to regenerate)
 /architectural-design/adobe-firefly  https://archaitool.com/design-tools/adobe-firefly  301!
