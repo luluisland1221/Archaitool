@@ -309,6 +309,61 @@ const ToolDetail = () => {
     );
   }
 
+  const bestFitScenarios: string[] = [];
+  if (subcategory?.name) {
+    bestFitScenarios.push(
+      `${tool.name} is most relevant when your team is actively comparing ${subcategory.name.toLowerCase()} options rather than browsing a generic AI directory.`
+    );
+  }
+  if (tool.technicalSpecs?.renderSpeed) {
+    bestFitScenarios.push(
+      `Shortlist it for deadlines where turnaround speed matters: the listed workflow expectation is ${tool.technicalSpecs.renderSpeed}.`
+    );
+  }
+  if (tool.pricing?.freeTier) {
+    bestFitScenarios.push(
+      'Use the free tier first to test output quality, prompt control, and export constraints before adding it to a client-facing workflow.'
+    );
+  } else if (tool.isPaid) {
+    bestFitScenarios.push(
+      'Treat this as a paid workflow candidate and validate commercial terms before using outputs in proposals, listings, or client presentations.'
+    );
+  }
+  if (tool.integrations?.length) {
+    bestFitScenarios.push(
+      `It is especially useful if your pipeline already touches ${tool.integrations.slice(0, 3).join(', ')}.`
+    );
+  }
+
+  const decisionQuestions: string[] = [
+    `Does ${tool.name} support the deliverable you need this week, such as ${tool.useCases?.slice(0, 2).join(' or ') || `${subcategory?.name || 'design'} output`}?`,
+    'Can the exported files, resolution, and licensing terms survive review by your project lead, broker, or client?',
+    'Is there a clear owner on your team who will maintain prompts, before/after examples, and accepted output standards?'
+  ];
+
+  const relatedAlternatives = subcategory?.tools
+    .filter(relatedTool => relatedTool.id !== tool.id)
+    .slice(0, 3) || [];
+
+  const faqItems = [
+    {
+      question: `What is ${tool.name} best for?`,
+      answer: `${tool.name} is best evaluated for ${tool.useCases?.slice(0, 3).join(', ') || `${subcategory?.name || 'architecture and design'} workflows`}. Compare it against your required deliverable, export quality, and review process before adoption.`
+    },
+    {
+      question: `Is ${tool.name} free or paid?`,
+      answer: tool.pricing?.freeTier
+        ? `${tool.name} offers a free option or free starting allocation, but teams should review credit limits, export restrictions, and paid tiers before production use.`
+        : `${tool.name} is listed as a ${tool.isPaid ? 'paid' : 'free'} tool in this directory. Check the vendor site for current pricing because AI tool pricing changes frequently.`
+    },
+    {
+      question: `What should I compare ${tool.name} with?`,
+      answer: relatedAlternatives.length
+        ? `Compare ${tool.name} with ${relatedAlternatives.map(relatedTool => relatedTool.name).join(', ')} if you want alternatives in the same ${subcategory?.name || 'workflow'} category.`
+        : `Compare ${tool.name} with tools in the same ${subcategory?.name || 'workflow'} category and test them on the same source image, brief, or floor plan.`
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Text and Image side by side */}
@@ -460,6 +515,45 @@ const ToolDetail = () => {
                 )}
               </div>
             )}
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Best Fit, Tradeoffs, and Alternatives</h2>
+              {bestFitScenarios.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">When to shortlist {tool.name}</h3>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    {bestFitScenarios.map((scenario, index) => (
+                      <li key={`fit-${index}`}>{scenario}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Questions before adoption</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  {decisionQuestions.map((question, index) => (
+                    <li key={`question-${index}`}>{question}</li>
+                  ))}
+                </ul>
+              </div>
+              {relatedAlternatives.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Closest alternatives to compare</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {relatedAlternatives.map((alternative) => (
+                      <Link
+                        key={alternative.id}
+                        to={generateToolUrl(alternative.id)}
+                        className="block rounded-lg border border-gray-200 p-4 hover:border-gray-400 hover:bg-gray-50 transition-colors"
+                      >
+                        <span className="font-semibold text-gray-900">{alternative.name}</span>
+                        <span className="block text-sm text-gray-600 mt-2">{alternative.description}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* Technical Specifications */}
             {tool.technicalSpecs && (
@@ -630,6 +724,18 @@ const ToolDetail = () => {
                 </div>
               </div>
             )}
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">{tool.name} FAQ</h2>
+              <div className="space-y-5">
+                {faqItems.map((faq, index) => (
+                  <div key={`faq-${index}`} className="border-b border-gray-100 pb-5 last:border-b-0 last:pb-0">
+                    <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
+                    <p className="mt-2 text-gray-700 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Sidebar */}
