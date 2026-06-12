@@ -17,7 +17,8 @@ const PrivacyPolicy = () => {
         <meta property="og:title" content="Privacy Policy - Arch AI Tool" />
         <meta property="og:description" content="Learn how Arch AI Tool protects your privacy and data security" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://archaitool.com/privacy-policy" />
+        <meta property="og:url" content="https://archaitool.com/privacy-policy/" />
+        <link rel="canonical" href="https://archaitool.com/privacy-policy/" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

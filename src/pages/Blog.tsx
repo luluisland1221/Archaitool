@@ -50,6 +50,11 @@ const Blog: React.FC = () => {
   const pageDescription = selectedRouteTag
     ? `Browse ${selectedRouteTag.name.toLowerCase()} on ArchAI Blog.`
     : 'Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow.';
+  const tagTopicLinks = [
+    { label: 'AI tutorials', href: '/blog/tag/ai-tutorials/' },
+    { label: 'Beginner guides', href: '/blog/tag/beginner-guides/' },
+    { label: 'Tool reviews', href: '/blog/tag/tool-reviews/' }
+  ];
 
   return (
     <>
@@ -86,6 +91,19 @@ const Blog: React.FC = () => {
                 Expert insights, tutorials, and reviews for AI architecture tools.
                 Learn how to leverage artificial intelligence to transform your design workflow.
               </p>
+              {!selectedRouteTag && (
+                <div className="flex flex-wrap justify-center gap-3">
+                  {tagTopicLinks.map((topic) => (
+                    <a
+                      key={topic.href}
+                      href={topic.href}
+                      className="px-4 py-2 border border-white/30 rounded-full text-sm text-white hover:bg-white hover:text-black transition-colors"
+                    >
+                      {topic.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>

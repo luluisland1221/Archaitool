@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -126,6 +126,26 @@ const TitleUpdater = () => {
   return null;
 };
 
+const LegacyQueryRedirects = () => {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const tag = params.get('tag');
+
+  if (location.pathname.replace(/\/+$/, '') === '/blog' && tag) {
+    return <Navigate to={withTrailingSlash(`/blog/tag/${tag}`)} replace />;
+  }
+
+  if (location.pathname.replace(/\/+$/, '') === '/tools' && params.has('q')) {
+    return <Navigate to="/tools/" replace />;
+  }
+
+  if (location.pathname === '/' && params.has('ref')) {
+    return <Navigate to="/" replace />;
+  }
+
+  return null;
+};
+
 function App() {
   return (
     <BrowserRouter>
@@ -133,6 +153,7 @@ function App() {
         {/* Add structured data for homepage */}
         <StructuredData data={generateHomepageStructuredData()} />
         <TitleUpdater />
+        <LegacyQueryRedirects />
         <Navbar />
         <main>
           <Routes>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
 
 interface StructuredDataProps {
   data: object;
@@ -17,6 +18,7 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ data }) => {
 
 // 生成工具详情页面的结构化数据
 export function generateToolStructuredData(tool: any) {
+  const pageUrl = `https://archaitool.com${generateToolUrl(tool.id)}`;
   const offers = tool.pricing?.freeTier || tool.isPaid === false ? {
     "@type": "Offer",
     "price": "0",
@@ -52,7 +54,7 @@ export function generateToolStructuredData(tool: any) {
     "aggregateRating": aggregateRating,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://archaitool.com/${tool.category}/${tool.id}`
+      "@id": pageUrl
     }
   };
 }
@@ -74,7 +76,7 @@ export function generateCategoryStructuredData(category: any, tools: any[]) {
         "item": {
           "@type": "SoftwareApplication",
           "name": tool.name,
-          "url": `https://archaitool.com/${tool.category}/${tool.id}`,
+          "url": `https://archaitool.com${generateToolUrl(tool.id)}`,
           "applicationCategory": "DesignApplication"
         }
       }))
@@ -86,19 +88,19 @@ export function generateCategoryStructuredData(category: any, tools: any[]) {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://archaitool.com"
+          "item": "https://archaitool.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Tools",
-          "item": "https://archaitool.com/tools"
+          "item": "https://archaitool.com/tools/"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": category.title.split(' | ')[0],
-          "item": `https://archaitool.com${category.url}`
+          "item": `https://archaitool.com${withTrailingSlash(category.url)}`
         }
       ]
     }
@@ -112,11 +114,11 @@ export function generateHomepageStructuredData() {
     "@type": "WebSite",
     "name": "Arch AI Tool",
     "description": "Discover the best AI tools for architecture and design. Your comprehensive guide to AI-powered architectural generation, visualization, interior design, and more.",
-    "url": "https://archaitool.com",
+    "url": "https://archaitool.com/",
     "publisher": {
       "@type": "Organization",
       "name": "Arch AI Tool Directory",
-      "url": "https://archaitool.com"
+      "url": "https://archaitool.com/"
     }
   };
 }
@@ -128,7 +130,7 @@ export function generateToolsPageStructuredData(tools: any[]) {
     "@type": "CollectionPage",
     "name": "All AI Architecture Tools - Browse Categories | Arch AI Tool",
     "description": "Browse all AI architecture tools by category. Find the perfect AI tool for architectural design, interior design, landscape design, and more.",
-    "url": "https://archaitool.com/tools",
+    "url": "https://archaitool.com/tools/",
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": tools.length,
@@ -138,7 +140,7 @@ export function generateToolsPageStructuredData(tools: any[]) {
         "item": {
           "@type": "SoftwareApplication",
           "name": tool.name,
-          "url": `https://archaitool.com/${tool.category}/${tool.id}`,
+          "url": `https://archaitool.com${generateToolUrl(tool.id)}`,
           "applicationCategory": "DesignApplication"
         }
       }))
@@ -150,13 +152,13 @@ export function generateToolsPageStructuredData(tools: any[]) {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://archaitool.com"
+          "item": "https://archaitool.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Tools",
-          "item": "https://archaitool.com/tools"
+          "item": "https://archaitool.com/tools/"
         }
       ]
     }

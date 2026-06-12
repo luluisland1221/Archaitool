@@ -59,7 +59,8 @@ const Contact = () => {
         <meta property="og:title" content="Contact Us - Arch AI Tool" />
         <meta property="og:description" content="Contact us to discover more AI architecture tools" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://archaitool.com/contact" />
+        <meta property="og:url" content="https://archaitool.com/contact/" />
+        <link rel="canonical" href="https://archaitool.com/contact/" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

@@ -68,7 +68,7 @@ async function generateRedirectLines() {
   const lines = new Set();
 
   mappings.forEach(({ id, canonicalSlug }) => {
-    const canonicalUrl = `${SITE_URL}/${canonicalSlug}/${id}`;
+    const canonicalUrl = `${SITE_URL}/${canonicalSlug}/${id}/`;
     lines.add(`/tool/${id}  ${canonicalUrl}  301!`);
 
     ALL_SLUGS.forEach(slug => {
@@ -92,7 +92,7 @@ async function updateRedirectFile() {
 
   const newBlock = [
     START_MARKER,
-    '# (请运行 scripts/update-tool-redirects.cjs 重新生成)',
+    '# (Run scripts/update-tool-redirects.cjs to regenerate)',
     ...redirectLines,
     END_MARKER
   ].join('\n');
