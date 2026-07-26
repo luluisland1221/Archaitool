@@ -1,0 +1,4 @@
+Contact: mailto:hebringstherain@gmail.com
+Expires: 2027-07-01T00:00:00Z
+Preferred-Languages: en, zh
+Canonical: https://archaitool.com/.well-known/security.txt
