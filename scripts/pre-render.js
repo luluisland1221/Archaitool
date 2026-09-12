@@ -63,7 +63,8 @@ async function buildRouteList() {
     '/blog',
     '/sbti',
     '/submit',
-    '/admin/research'
+    '/admin/research',
+    '/owner/mail'
   ];
 
   staticRoutes.forEach(route => routes.add(route));
