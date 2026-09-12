@@ -12,6 +12,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitError, setSubmitError] = useState('');
 
   const inquiryTypes = [
     { value: 'general', label: 'General Inquiry', icon: HelpCircle },
@@ -24,11 +25,16 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError('');
 
     try {
-      // Here you can integrate actual form submission logic
-      // For example, sending to backend API or using third-party service like Formspree
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate submission
+      const response = await fetch('/api/contact-messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Sending failed');
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', type: 'general', subject: '', message: '' });
@@ -36,6 +42,7 @@ const Contact = () => {
       // Reset status after 3 seconds
       setTimeout(() => setSubmitStatus('idle'), 3000);
     } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : 'Sending failed');
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 3000);
     } finally {
@@ -154,7 +161,7 @@ const Contact = () => {
 
               {submitStatus === 'error' && (
                 <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-800">❌ Sending failed, please try again later or email service@archaitool.com</p>
+                  <p className="text-red-800">Sending failed: {submitError || 'please try again later or email service@archaitool.com'}</p>
                 </div>
               )}
 

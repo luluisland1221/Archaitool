@@ -17,6 +17,7 @@ import ResearchManagement from './pages/ResearchManagement';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import SubmitTool from './pages/SubmitTool';
+import AdminMailCenter from './pages/AdminMailCenter';
 import { StructuredData, generateHomepageStructuredData } from './components/StructuredData';
 import { setCanonicalUrl } from './utils/seo';
 import { truncateWithEllipsis } from './utils/text';
@@ -147,14 +148,15 @@ const LegacyQueryRedirects = () => {
 };
 
 function App() {
+  const isPrivateMail = window.location.pathname.replace(/\/+$/, '') === '/owner/mail';
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-50">
         {/* Add structured data for homepage */}
-        <StructuredData data={generateHomepageStructuredData()} />
+        {!isPrivateMail && <StructuredData data={generateHomepageStructuredData()} />}
         <TitleUpdater />
         <LegacyQueryRedirects />
-        <Navbar />
+        {!isPrivateMail && <Navbar />}
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -184,9 +186,10 @@ function App() {
             <Route path="/submit" element={<SubmitTool />} />
             {/* Admin routes for research management */}
             <Route path="/admin/research" element={<ResearchManagement />} />
+            <Route path="/owner/mail" element={<AdminMailCenter />} />
           </Routes>
         </main>
-        <Footer />
+        {!isPrivateMail && <Footer />}
       </div>
     </BrowserRouter>
   );
