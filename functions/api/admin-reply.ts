@@ -12,14 +12,17 @@ export const onRequestPost: PagesFunction<MailEnv> = async ({ request, env }) =>
     return json({ error: 'Plunk secret key or sender is not configured' }, 503);
   }
   const body = await request.json().catch(() => ({})) as Record<string, unknown>;
-  const threadId = cleanText(body.threadId, 64);
+  const requestedThreadId = cleanText(body.threadId, 64);
   const to = cleanText(body.to, 254).toLowerCase();
   const subject = cleanText(body.subject, 240);
   const message = cleanText(body.message, 10000);
-  if (!threadId || !to || !subject || !message) return json({ error: 'Reply is incomplete' }, 400);
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to) || !subject || !message) {
+    return json({ error: 'Recipient, subject, and message are required' }, 400);
+  }
 
   const fromName = cleanText(env.MAIL_FROM_NAME || 'Arch AI Tool', 120);
   const id = crypto.randomUUID();
+  const threadId = requestedThreadId || id;
   const response = await fetch('https://next-api.useplunk.com/v1/send', {
     method: 'POST',
     headers: {
@@ -50,7 +53,9 @@ export const onRequestPost: PagesFunction<MailEnv> = async ({ request, env }) =>
     INSERT INTO contact_messages (id, thread_id, direction, name, email, subject, body, status, provider_id)
     VALUES (?, ?, 'outbound', ?, ?, ?, ?, 'sent', ?)
   `).bind(id, threadId, fromName, to, subject, message, providerId).run();
-  await env.DB.prepare("UPDATE contact_messages SET status = 'replied' WHERE id = ?")
-    .bind(threadId).run();
+  if (requestedThreadId) {
+    await env.DB.prepare("UPDATE contact_messages SET status = 'replied' WHERE id = ?")
+      .bind(requestedThreadId).run();
+  }
   return json({ ok: true, id });
 };
