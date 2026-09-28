@@ -1,4 +1,4 @@
-import { Tool } from '../data/tools';
+import { CompanyInfo, PricingInfo, TechnicalSpecs, Tool } from '../data/tools';
 
 /**
  * Utility functions to handle varying levels of tool information
@@ -117,7 +117,14 @@ export function getToolsNeedingResearch(tools: Tool[], section: keyof Tool): Too
 /**
  * Create a fallback for missing information
  */
-export function createFallbackInfo(tool: Tool, section: string): any {
+export function createFallbackInfo(tool: Tool, section: 'keyFeatures' | 'useCases'): string[];
+export function createFallbackInfo(tool: Tool, section: 'technicalSpecs'): TechnicalSpecs;
+export function createFallbackInfo(tool: Tool, section: 'pricing'): PricingInfo;
+export function createFallbackInfo(tool: Tool, section: 'companyInfo'): CompanyInfo;
+export function createFallbackInfo(
+  tool: Tool,
+  section: 'keyFeatures' | 'useCases' | 'technicalSpecs' | 'pricing' | 'companyInfo'
+): string[] | TechnicalSpecs | PricingInfo | CompanyInfo | null {
   switch (section) {
     case 'keyFeatures':
       return getDefaultFeatures(tool);

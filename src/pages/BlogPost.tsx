@@ -77,7 +77,7 @@ const BlogPost: React.FC = () => {
       setTimeout(() => {
         setCopiedToClipboard(false);
       }, 3000);
-    } catch (err) {
+    } catch {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
       textArea.value = window.location.href;

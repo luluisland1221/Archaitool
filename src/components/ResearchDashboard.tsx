@@ -3,8 +3,7 @@ import { Tool } from '../data/tools';
 import {
   evaluateToolDataQuality,
   createResearchPlan,
-  generateResearchTemplate,
-  getToolsByQuality
+  generateResearchTemplate
 } from '../utils/toolDataUtils';
 import {
   CheckCircle,
@@ -29,8 +28,6 @@ export const ResearchDashboard: React.FC<ResearchDashboardProps> = ({ tools }) =
   const [showTemplate, setShowTemplate] = useState(false);
 
   const researchPlan = createResearchPlan(tools);
-  const toolsByQuality = getToolsByQuality(tools);
-
   // Filter tools based on quality level
   const filteredTools = tools.filter(tool => {
     const quality = evaluateToolDataQuality(tool);

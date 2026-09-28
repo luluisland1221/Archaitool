@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { screenshotService, ScreenshotCache } from '../services/screenshotService';
+import { screenshotService } from '../services/screenshotService';
 
 interface DynamicScreenshotImageProps {
   toolUrl: string;
@@ -68,7 +68,10 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
     return () => {
       observerRef.current?.disconnect();
     };
-  }, [toolUrl, useDynamicScreenshot, lazy]);
+    // loadDynamicScreenshot is intentionally scoped to the current render; these
+    // values fully describe when a new capture should start.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [toolUrl, useDynamicScreenshot, lazy, fallbackImage]);
 
   const loadDynamicScreenshot = async () => {
     try {
@@ -122,49 +125,6 @@ export const DynamicScreenshotImage: React.FC<DynamicScreenshotImageProps> = ({
       onError?.(error);
     }
   };
-
-  const handleRetry = () => {
-    setRetryCount(0);
-    loadDynamicScreenshot();
-  };
-
-  // Skeleton component
-  const Skeleton = () => (
-    <div
-      className={`bg-gray-200 animate-pulse flex items-center justify-center ${className}`}
-      style={{
-        width: style?.width || '100%',
-        height: style?.height || '192px',
-        ...style
-      }}
-    >
-      <div className="text-gray-400 text-sm">
-        {loadingState === 'loading' ? 'Loading...' : 'Retry'}
-      </div>
-    </div>
-  );
-
-  // Error state component
-  const ErrorState = () => (
-    <div
-      className={`bg-gray-100 border border-gray-300 flex flex-col items-center justify-center ${className}`}
-      style={{
-        width: style?.width || '100%',
-        height: style?.height || '192px',
-        ...style
-      }}
-    >
-      <div className="text-gray-500 text-sm mb-2">Screenshot unavailable</div>
-      {useDynamicScreenshot && (
-        <button
-          onClick={handleRetry}
-          className="px-3 py-1 bg-gray-700 text-white text-xs rounded hover:bg-gray-800 transition-colors"
-        >
-          Retry
-        </button>
-      )}
-    </div>
-  );
 
   // Loading state component
   const LoadingState = () => (

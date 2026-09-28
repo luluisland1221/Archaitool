@@ -43,9 +43,14 @@ class ScreenshotService {
   /**
    * Check if quota exhausted error
    */
-  private isQuotaExceededError(error: any): boolean {
-    const errorMessage = error?.message?.toLowerCase() || '';
-    const responseMessage = error?.responseMessage?.toLowerCase() || '';
+  private isQuotaExceededError(error: unknown): boolean {
+    const errorRecord = typeof error === 'object' && error !== null
+      ? error as Record<string, unknown>
+      : {};
+    const errorMessage = typeof errorRecord.message === 'string' ? errorRecord.message.toLowerCase() : '';
+    const responseMessage = typeof errorRecord.responseMessage === 'string'
+      ? errorRecord.responseMessage.toLowerCase()
+      : '';
     const fullErrorText = `${errorMessage} ${responseMessage}`;
 
     return fullErrorText.includes('quota') ||

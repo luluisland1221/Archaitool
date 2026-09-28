@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { BlogTag } from '../../data/blog/types';
 

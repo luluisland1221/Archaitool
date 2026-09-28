@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams, Link, useLocation, Navigate } from 'react-router-dom';
 import {
-  ExternalLink, ArrowLeft, Check, Building2, Cpu, Palette, Clock,
-  Star, Users, Globe, Zap, Award, FileText, Download, Play,
-  ChevronDown, ChevronUp, Mail, MessageCircle, BookOpen
+  ExternalLink, ArrowLeft, Check, Building2,
+  Star, Users, Globe, Zap, Award, Play,
+  Mail, MessageCircle, BookOpen
 } from 'lucide-react';
 import { configuredCategories, Tool } from '../data/tools';
 import { DynamicScreenshotImage } from '../components/DynamicScreenshotImage';
@@ -45,7 +45,6 @@ const buildToolTitle = (tool: Tool) => {
 const ToolDetail = () => {
   const { id } = useParams();
   const location = useLocation();
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [supportEmail, setSupportEmail] = useState<string | null>(null);
 
   // Find the tool in our data
@@ -211,7 +210,7 @@ const ToolDetail = () => {
       setSupportEmail(null);
 
       // Set default meta description for 404 page
-      let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
+      const metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
       if (metaDescription) {
         metaDescription.content = 'The AI architecture tool you are looking for was not found. Explore our comprehensive directory of AI-powered architecture and design tools.';
       }
@@ -227,10 +226,6 @@ const ToolDetail = () => {
       window.scrollTo(0, 0);
     }, 50);
   }, [tool]);
-
-  const toggleSection = (section: string) => {
-    setExpandedSection(expandedSection === section ? null : section);
-  };
 
   if (!tool) {
     return (
@@ -915,7 +910,7 @@ const ToolDetail = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {subcategory.tools
                   .filter(t => t.id !== tool.id) // Exclude current tool
-                  .slice(0, 6) // Show up to 6 related tools
+                  .slice(0, 8) // Keep related tools well connected
                   .map((relatedTool) => (
                     <Link
                       key={relatedTool.id}

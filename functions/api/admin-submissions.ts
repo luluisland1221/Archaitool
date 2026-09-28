@@ -46,8 +46,9 @@ export const onRequestGet: PagesFunction = async ({ request, env }) => {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
-  } catch (error: any) {
-    return new Response(JSON.stringify({ error: error.message ?? 'Query failed' }), {
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Query failed';
+    return new Response(JSON.stringify({ error: message }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });

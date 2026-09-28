@@ -2,8 +2,7 @@ import React from 'react';
 import { Tool } from '../data/tools';
 import { evaluateToolDataQuality, createFallbackInfo } from '../utils/toolDataUtils';
 import {
-  Check, Award, Globe, Users, Zap, Building2, Cpu, Palette, Clock,
-  Mail, MessageCircle, BookOpen, Star, AlertCircle, Info
+  Check, Award, Globe, Users, Zap, Building2, AlertCircle, Info
 } from 'lucide-react';
 
 interface AdaptiveToolDetailProps {

@@ -1,5 +1,12 @@
 import React from 'react';
 import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
+import { Tool } from '../data/tools';
+
+interface CategorySchemaInput {
+  title: string;
+  description: string;
+  url: string;
+}
 
 interface StructuredDataProps {
   data: object;
@@ -17,7 +24,7 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ data }) => {
 };
 
 // 生成工具详情页面的结构化数据
-export function generateToolStructuredData(tool: any) {
+export function generateToolStructuredData(tool: Tool) {
   const pageUrl = `https://archaitool.com${generateToolUrl(tool.id)}`;
   const offers = tool.pricing?.freeTier || tool.isPaid === false ? {
     "@type": "Offer",
@@ -60,7 +67,7 @@ export function generateToolStructuredData(tool: any) {
 }
 
 // 生成分类页面的结构化数据
-export function generateCategoryStructuredData(category: any, tools: any[]) {
+export function generateCategoryStructuredData(category: CategorySchemaInput, tools: Tool[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -124,7 +131,7 @@ export function generateHomepageStructuredData() {
 }
 
 // 生成工具列表页面的结构化数据
-export function generateToolsPageStructuredData(tools: any[]) {
+export function generateToolsPageStructuredData(tools: Tool[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

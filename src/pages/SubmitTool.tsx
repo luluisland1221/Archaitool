@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const SubmitTool = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
-  const submitBaseUrl = String((import.meta as any).env?.VITE_SUBMIT_BASE_URL || '').replace(/\/$/, '');
+  const submitBaseUrl = String(import.meta.env.VITE_SUBMIT_BASE_URL || '').replace(/\/$/, '');
   const submitEndpoint = submitBaseUrl ? `${submitBaseUrl}/api/submit-site` : '/api/submit-site';
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

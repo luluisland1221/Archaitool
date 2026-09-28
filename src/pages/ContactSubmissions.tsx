@@ -67,15 +67,22 @@ const ContactSubmissions = () => {
       });
 
       if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        throw new Error(err.error || res.statusText);
+        const errorBody: unknown = await res.json().catch(() => ({}));
+        const message = typeof errorBody === 'object' && errorBody !== null &&
+          typeof (errorBody as Record<string, unknown>).error === 'string'
+          ? (errorBody as Record<string, string>).error
+          : res.statusText;
+        throw new Error(message);
       }
 
-      const data = await res.json();
-      setItems(Array.isArray(data.items) ? data.items : []);
+      const data: unknown = await res.json();
+      const dataRecord = typeof data === 'object' && data !== null
+        ? data as Record<string, unknown>
+        : {};
+      setItems(Array.isArray(dataRecord.items) ? dataRecord.items as Submission[] : []);
       setLastLoadedAt(new Date().toISOString());
-    } catch (err: any) {
-      setError(err.message || 'Failed to load submissions.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Failed to load submissions.');
     } finally {
       setLoading(false);
     }

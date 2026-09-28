@@ -6,7 +6,7 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
     return new Response('Method Not Allowed', { status: 405 });
   }
 
-  let payload: any;
+  let payload: unknown;
   try {
     payload = await request.json();
   } catch {
@@ -16,9 +16,12 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
     });
   }
 
-  const priceId = (payload.priceId || '').trim();
-  const submissionId = (payload.submissionId || '').trim();
-  const email = (payload.email || '').trim();
+  const body = typeof payload === 'object' && payload !== null
+    ? payload as Record<string, unknown>
+    : {};
+  const priceId = typeof body.priceId === 'string' ? body.priceId.trim() : '';
+  const submissionId = typeof body.submissionId === 'string' ? body.submissionId.trim() : '';
+  const email = typeof body.email === 'string' ? body.email.trim() : '';
 
   if (!priceId || !submissionId) {
     return new Response(JSON.stringify({ error: 'priceId and submissionId are required' }), {

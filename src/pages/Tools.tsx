@@ -73,12 +73,12 @@ const buildFaqSchema = (faqs: { question: string; answer: string }[], pageUrl: s
   url: pageUrl
 });
 
-const buildItemListSchema = (
+const buildItemListSchema = <T,>(
   name: string,
   description: string,
   pageUrl: string,
-  items: any[],
-  mapItem: (item: any) => any
+  items: T[],
+  mapItem: (item: T) => object
 ) => ({
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -344,10 +344,6 @@ const Tools = () => {
     (queryCategory || querySubcategory) &&
     canonicalPath !== '/tools';
 
-  if (shouldRedirectQuery) {
-    return <Navigate to={canonicalPath} replace />;
-  }
-
   useEffect(() => {
     let title = 'AI Architecture Tools - Browse All Categories | Arch AI Tool';
     
@@ -397,6 +393,10 @@ const Tools = () => {
     ensurePropertyTag('og:type', 'website');
     ensurePropertyTag('og:url', `https://archaitool.com${canonicalPath}`);
   }, [selectedCategory, selectedSubcategory, canonicalPath]);
+
+  if (shouldRedirectQuery) {
+    return <Navigate to={canonicalPath} replace />;
+  }
 
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
   const structuredDataBlocks: object[] = [];

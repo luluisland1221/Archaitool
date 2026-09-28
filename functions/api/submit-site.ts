@@ -55,7 +55,7 @@ export const onRequest: PagesFunction = async ({ request, env }) => {
   // Some clients (or curl on Windows) may send bodies that parse5 rejects via request.json().
   // Read raw text first, then JSON.parse manually for better compatibility.
   const raw = await request.text();
-  let body: any;
+  let body: unknown;
   try {
     body = raw ? JSON.parse(raw) : {};
   } catch {
@@ -68,11 +68,15 @@ export const onRequest: PagesFunction = async ({ request, env }) => {
     );
   }
 
-  const title = (body.title || '').trim();
-  const url = (body.url || '').trim();
-  const desc = (body.desc || '').trim();
-  const tags = (body.tags || '').trim();
-  const email = (body.email || '').trim();
+  const fields = typeof body === 'object' && body !== null
+    ? body as Record<string, unknown>
+    : {};
+  const readString = (value: unknown) => typeof value === 'string' ? value.trim() : '';
+  const title = readString(fields.title);
+  const url = readString(fields.url);
+  const desc = readString(fields.desc);
+  const tags = readString(fields.tags);
+  const email = readString(fields.email);
 
   if (!title || !url || !desc) {
     return withCors(
@@ -97,9 +101,10 @@ export const onRequest: PagesFunction = async ({ request, env }) => {
       )
       .bind(id, title, url, desc, tags, email, submissionIp)
       .run();
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'DB insert failed';
     return withCors(
-      new Response(JSON.stringify({ error: error.message ?? 'DB insert failed' }), {
+      new Response(JSON.stringify({ error: message }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       }),

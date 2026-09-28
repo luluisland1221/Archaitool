@@ -1,21 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { Tool } from '../data/tools';
+import { CompanyInfo, PricingInfo, TechnicalSpecs, Tool } from '../data/tools';
 import { toolResearcher, ResearchPlan, BatchResearchPlan } from '../utils/toolResearcher';
 import {
-  Search, Globe, Clock, Target, Play, Pause, CheckCircle, AlertCircle,
-  FileText, Download, ExternalLink, Zap, TrendingUp, BarChart3
+  Clock, Target, Play, Pause, CheckCircle, AlertCircle,
+  Download, Zap, TrendingUp, BarChart3
 } from 'lucide-react';
+
+interface ResearchResult {
+  toolId: string;
+  toolName: string;
+  data: {
+    detailedDescription: string;
+    keyFeatures: string[];
+    pricing: PricingInfo;
+    technicalSpecs: TechnicalSpecs;
+    useCases: string[];
+    integrations: string[];
+    companyInfo: CompanyInfo;
+  };
+  sources: Array<{ timestamp: string }>;
+  confidence: number;
+}
 
 interface IntelligentResearchAssistantProps {
   tools: Tool[];
-  onResearchComplete?: (results: any[]) => void;
+  onResearchComplete?: (results: ResearchResult[]) => void;
 }
 
 export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistantProps> = ({
   tools,
   onResearchComplete
 }) => {
-  const [selectedTools, setSelectedTools] = useState<Tool[]>([]);
   const [researchMode, setResearchMode] = useState<'single' | 'batch'>('single');
   const [currentTool, setCurrentTool] = useState<Tool | null>(null);
   const [researchPlan, setResearchPlan] = useState<ResearchPlan | null>(null);
@@ -23,7 +38,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
   const [isResearching, setIsResearching] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [researchLog, setResearchLog] = useState<string[]>([]);
-  const [results, setResults] = useState<any[]>([]);
+  const [results, setResults] = useState<ResearchResult[]>([]);
 
   useEffect(() => {
     if (researchMode === 'batch' && tools.length > 0) {
@@ -41,10 +56,10 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
     setResearchLog([`Starting research for ${tool.name}...`]);
 
     // Simulate research process
-    simulateResearch(tool, plan);
+    simulateResearch(tool);
   };
 
-  const simulateResearch = async (tool: Tool, plan: ResearchPlan) => {
+  const simulateResearch = async (tool: Tool) => {
     const steps = [
       `Analyzing ${tool.name} website structure...`,
       `Checking pricing page availability...`,
@@ -307,7 +322,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
     ];
   };
 
-  const generateRealisticCompanyInfo = (tool: Tool): any => {
+  const generateRealisticCompanyInfo = (tool: Tool): CompanyInfo => {
     return {
       name: `${tool.name} Technologies`,
       founded: '2019',
@@ -340,7 +355,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
     const data = {
       researchSession: {
         date: new Date().toISOString(),
-        totalTools: selectedTools.length,
+        totalTools: tools.length,
         completedResearch: results.length,
         researchLog
       },
@@ -425,6 +440,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
           ) : (
             <div className="space-y-4">
               {batchPlan && (
+                <>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                   <div className="bg-gray-50 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
@@ -471,6 +487,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                     </div>
                   ))}
                 </div>
+                </>
               )}
             </div>
           )}
@@ -507,7 +524,7 @@ export const IntelligentResearchAssistant: React.FC<IntelligentResearchAssistant
                   ) : (
                     <AlertCircle className="h-4 w-4 text-gray-800 mt-0.5" />
                   )}
-                  <span className={log.includes('✅') ? 'text-gray-700' : 'text-gray-700'}>
+                  <span className="text-gray-700">
                     {log}
                   </span>
                 </div>

@@ -537,10 +537,10 @@ export class ToolResearcher {
 
     // Check for social media links
     const socialPatterns = {
-      linkedin: /linkedin\.com\/[^\/\s]+/i,
-      twitter: /twitter\.com\/[^\/\s]+/i,
-      youtube: /youtube\.com\/[^\/\s]+/i,
-      instagram: /instagram\.com\/[^\/\s]+/i
+      linkedin: /linkedin\.com\/[^/\s]+/i,
+      twitter: /twitter\.com\/[^/\s]+/i,
+      youtube: /youtube\.com\/[^/\s]+/i,
+      instagram: /instagram\.com\/[^/\s]+/i
     };
 
     const socialMedia = {};

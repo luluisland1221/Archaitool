@@ -24,8 +24,9 @@ export const onRequestPost: PagesFunction = async ({ request, env }) => {
       undefined,
       cryptoProvider
     );
-  } catch (err: any) {
-    return new Response(`Webhook error: ${err.message}`, { status: 400 });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Invalid webhook payload';
+    return new Response(`Webhook error: ${message}`, { status: 400 });
   }
 
   if (event.type === 'checkout.session.completed') {
