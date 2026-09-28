@@ -9,22 +9,22 @@ type NewBadgeProps = {
 
 const badgeClasses: Record<NewBadgeVariant, string> = {
   default:
-    'border-amber-200 bg-amber-50 text-amber-950 shadow-[0_4px_12px_rgba(180,120,0,0.16)]',
+    'border-violet-200/80 bg-white/95 text-violet-700 shadow-[0_5px_18px_rgba(109,40,217,0.14)]',
   floating:
-    'border-amber-200 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-amber-950 shadow-[0_10px_24px_rgba(180,120,0,0.28)] ring-1 ring-white/70',
+    'border-white/70 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-rose-500 text-white shadow-[0_10px_28px_rgba(124,58,237,0.35)] ring-1 ring-black/5',
   inverted:
-    'border-amber-200 bg-amber-100 text-amber-950 shadow-[0_4px_12px_rgba(180,120,0,0.16)]'
+    'border-violet-300/50 bg-violet-500/15 text-violet-100 shadow-[0_5px_18px_rgba(109,40,217,0.2)]'
 };
 
 const dotClasses: Record<NewBadgeVariant, string> = {
-  default: 'bg-amber-700',
-  floating: 'bg-amber-950',
-  inverted: 'bg-amber-700'
+  default: 'bg-violet-500',
+  floating: 'bg-white shadow-[0_0_0_3px_rgba(255,255,255,0.18)]',
+  inverted: 'bg-violet-200'
 };
 
 export const NewBadge = ({ className = '', variant = 'default' }: NewBadgeProps) => (
   <span
-    className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase leading-none ${badgeClasses[variant]} ${className}`}
+    className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] font-extrabold uppercase leading-none tracking-[0.14em] backdrop-blur-md ${badgeClasses[variant]} ${className}`}
     aria-label="New tool"
   >
     <span className={`h-1.5 w-1.5 rounded-full ${dotClasses[variant]}`} />

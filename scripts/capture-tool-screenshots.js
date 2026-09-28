@@ -7,30 +7,45 @@ import sharp from 'sharp';
 
 const websites = [
   {
-    name: 'Nano Banana Pro (Gemini)',
-    url: 'https://gemini.google.com/app',
-    filename: 'gemini_google_com_app.webp'
+    name: 'MiniMax M3 Online',
+    url: 'https://minimaxm3.online/',
+    filename: 'minimaxm3_online_.webp'
   },
   {
-    name: 'Flux 2',
-    url: 'https://bfl.ai/',
-    filename: 'bfl_ai_.webp'
+    name: 'GLM 5.2',
+    url: 'https://glm52.site/',
+    filename: 'glm52_site_.webp'
   },
   {
-    name: 'Archfine AI',
-    url: 'https://archfine.com/',
-    filename: 'archfine_com_.webp'
+    name: 'LongCat 2.0',
+    url: 'https://longcat20.online/',
+    filename: 'longcat20_online_.webp'
   },
   {
-    name: 'Rendair AI',
-    url: 'https://rendair.ai/',
-    filename: 'rendair_ai_.webp'
+    name: 'Kimi K3',
+    url: 'https://kimik3.online/',
+    filename: 'kimik3_online_.webp'
   },
   {
-    name: 'LookX',
-    url: 'https://www.lookx.ai/',
-    filename: 'www_lookx_ai_.webp'
-  }
+    name: 'MiniMax H3',
+    url: 'https://minimaxh3.pro/',
+    filename: 'minimaxh3_pro_.webp'
+  },
+  {
+    name: 'GLM 5.3',
+    url: 'https://glm53.online/',
+    filename: 'glm53_online_.webp'
+  },
+  {
+    name: 'H3 Max',
+    url: 'https://h3max.site/',
+    filename: 'h3max_site_.webp'
+  },
+  {
+    name: 'HY 4',
+    url: 'https://hy4.online/',
+    filename: 'hy4_online_.webp'
+  },
 ];
 
 const screenshotsDir = path.join(process.cwd(), 'public', 'screenshots');
