@@ -1,306 +1,60 @@
-import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Mail, MessageSquare, Users, Building2, HelpCircle, Send } from 'lucide-react';
+import { ArrowUpRight, Mail } from 'lucide-react';
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    type: 'general',
-    subject: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [submitError, setSubmitError] = useState('');
+const Contact = () => (
+  <>
+    <Helmet>
+      <title>Contact Us - Arch AI Tool</title>
+      <meta name="description" content="Email service@archaitool.com for listing corrections, tool recommendations, partnerships and support from Arch AI Tool." />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content="Contact Us - Arch AI Tool" />
+      <meta property="og:description" content="Get in touch with Arch AI Tool at service@archaitool.com." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://archaitool.com/contact/" />
+      <link rel="canonical" href="https://archaitool.com/contact/" />
+    </Helmet>
 
-  const inquiryTypes = [
-    { value: 'general', label: 'General Inquiry', icon: HelpCircle },
-    { value: 'tool-submission', label: 'Tool Submission', icon: Building2 },
-    { value: 'partnership', label: 'Business Partnership', icon: Users },
-    { value: 'technical', label: 'Technical Support', icon: MessageSquare },
-    { value: 'feedback', label: 'Feedback', icon: MessageSquare }
-  ];
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-5">Get in touch</p>
+        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-gray-900 mb-6">Contact Us</h1>
+        <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
+          Have a listing correction, a tool to recommend, or a question? Email us directly.
+        </p>
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitError('');
-
-    try {
-      const response = await fetch('/api/contact-messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(result.error || 'Sending failed');
-
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', type: 'general', subject: '', message: '' });
-
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus('idle'), 3000);
-    } catch (error) {
-      setSubmitError(error instanceof Error ? error.message : 'Sending failed');
-      setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus('idle'), 3000);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
-
-  return (
-    <>
-      <Helmet>
-        <title>Contact Us - Arch AI Tool</title>
-        <meta name="description" content="Contact the Arch AI Tool team - tool submissions, business partnerships, technical support. We are dedicated to providing the best AI tool navigation service for architecture and design professionals." />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Contact Us - Arch AI Tool" />
-        <meta property="og:description" content="Contact us to discover more AI architecture tools" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://archaitool.com/contact/" />
-        <link rel="canonical" href="https://archaitool.com/contact/" />
-      </Helmet>
-
-      <div className="min-h-screen bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          {/* Page Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We are dedicated to providing the best AI tool navigation service for architecture and design professionals.
-              If you have any questions, suggestions, or cooperation intentions, please feel free to contact us.
-            </p>
+        <section aria-labelledby="email-heading" className="mt-10 sm:mt-12 bg-white border border-gray-200 p-6 sm:p-10">
+          <div className="flex items-center gap-3 mb-5">
+            <Mail className="h-5 w-5 text-gray-700" aria-hidden="true" />
+            <h2 id="email-heading" className="text-sm font-semibold text-gray-600">Our contact email</h2>
           </div>
+          <a
+            href="mailto:service@archaitool.com"
+            className="inline-block max-w-full break-all text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 underline decoration-gray-300 underline-offset-8 hover:decoration-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-gray-900"
+          >
+            service@archaitool.com
+          </a>
+          <p className="mt-7 text-gray-600 leading-relaxed">Click the address to open your email app, or copy it into your preferred email service.</p>
+          <a
+            href="mailto:service@archaitool.com"
+            className="mt-7 inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-3 font-medium hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+          >
+            Email us <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          </a>
+        </section>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', alignItems: 'stretch' }}>
-            {/* Contact Information */}
-            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '600px' }}>
-              {/* Quick Contact */}
-              <div className="bg-white rounded-xl shadow-lg p-8" style={{ flexShrink: 0 }}>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h2>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-gray-100 p-3 rounded-lg">
-                      <Mail className="h-6 w-6 text-gray-700" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">service@archaitool.com</p>
-                      <p className="text-sm text-gray-500 mt-1">We will reply to you within 24 hours</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-gray-100 p-3 rounded-lg">
-                      <Send className="h-6 w-6 text-gray-700" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">Response Time</h3>
-                      <p className="text-gray-600">General inquiries: within 24 hours</p>
-                      <p className="text-gray-600">Urgent matters: within 4 hours</p>
-                      <p className="text-gray-600">Business partnerships: within 48 hours</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Inquiry Types */}
-              <div className="bg-white rounded-xl shadow-lg p-8" style={{ flexShrink: 0 }}>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">How We Can Help You</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {inquiryTypes.map((type) => {
-                    const IconComponent = type.icon;
-                    return (
-                      <div key={type.value} className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 hover:border-gray-400 hover:bg-gray-50 transition-colors">
-                        <IconComponent className="h-5 w-5 text-gray-700" />
-                        <span className="text-gray-700">{type.label}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Other Contact Info */}
-              <div className="bg-white rounded-xl shadow-lg p-8" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <h3 className="font-semibold text-gray-900 mb-3">Other Contact Information</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
-                  <div>
-                    <p><strong>Website:</strong></p>
-                    <a href="https://archaitool.com" className="text-gray-700 hover:text-gray-900 underline">https://archaitool.com</a>
-                  </div>
-                  <div>
-                    <p><strong>Service Area:</strong></p>
-                    <p>Global</p>
-                  </div>
-                </div>
-                <div className="mt-auto pt-8">
-                  <p className="text-sm text-gray-500">We're committed to providing excellent service and support for all your AI architecture and design tool needs.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div style={{ minHeight: '600px' }}>
-              <div className="bg-white rounded-xl shadow-lg p-8" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Message</h2>
-
-              {submitStatus === 'success' && (
-                <div className="mb-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
-                  <p className="text-gray-900">✅ Message sent successfully! We will reply to you soon.</p>
-                </div>
-              )}
-
-              {submitStatus === 'error' && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-800">Sending failed: {submitError || 'please try again later or email service@archaitool.com'}</p>
-                </div>
-              )}
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-                    placeholder="you [at] example.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="type" className="block text-sm font-medium text-gray-700 mb-1">
-                    Inquiry Type *
-                  </label>
-                  <select
-                    id="type"
-                    name="type"
-                    value={formData.type}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-                  >
-                    {inquiryTypes.map((type) => (
-                      <option key={type.value} value={type.value}>
-                        {type.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-                    placeholder="Please briefly describe your question or needs"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Detailed Description *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
-                    placeholder="Please describe your question, suggestion, or cooperation needs in detail..."
-                  />
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <p className="text-sm text-gray-500">
-                    Fields marked with * are required
-                  </p>
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="bg-gray-800 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                  >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                  </button>
-                </div>
-              </form>
-
-              {/* Privacy Notice */}
-              <div className="mt-auto p-4 bg-gray-50 rounded-lg">
-                <p className="text-sm text-gray-600">
-                  <strong>Privacy Protection:</strong> Your personal information will be strictly processed in accordance with our{' '}
-                  <a href="/privacy-policy" className="text-gray-700 hover:text-gray-900 underline">
-                    privacy policy
-                  </a>
-                  , and will only be used to reply to your inquiries and improve our services.
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Tool Submission Special Notice */}
-          <div className="mt-12 bg-white rounded-xl shadow-lg p-8">
-            <h3 className="font-semibold text-gray-900 mb-3">🚀 Want to Submit an AI Tool?</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <p className="text-gray-700 mb-3">We welcome excellent AI architecture and design tools to join our directory!</p>
-                <p className="text-gray-700">Please select "Tool Submission" type in the contact form and provide the following information:</p>
-              </div>
-              <div>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Tool name and official website</li>
-                  <li>• Tool features and characteristics</li>
-                  <li>• Target user groups</li>
-                  <li>• Pricing model</li>
-                  <li>• Why this tool should be included</li>
-                </ul>
-                <p className="text-sm mt-3 text-gray-600">We will review your submission as soon as possible and inform you of the review result via email.</p>
-              </div>
-            </div>
-          </div>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
+          <section aria-labelledby="corrections-heading">
+            <h2 id="corrections-heading" className="text-xl font-semibold text-gray-900 mb-3">Listing corrections &amp; feedback</h2>
+            <p className="text-gray-600 leading-relaxed">Include the page URL, the details that need updating, and links to official sources so we can verify your correction.</p>
+          </section>
+          <section aria-labelledby="recommendations-heading">
+            <h2 id="recommendations-heading" className="text-xl font-semibold text-gray-900 mb-3">Tool recommendations &amp; partnerships</h2>
+            <p className="text-gray-600 leading-relaxed">Send the tool name, official website, key features and pricing. For partnership or support inquiries, describe how we can help.</p>
+          </section>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default Contact;

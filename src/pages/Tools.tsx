@@ -44,7 +44,7 @@ const directoryNarrative = {
     {
       question: 'Can I request coverage for a missing tool?',
       answer:
-        'Yes. Use the contact form to submit the product name, official website, and a short explanation of the workflow. The research desk prioritizes tools with public demos, transparent pricing, and verifiable case studies.'
+        'Yes. Email service@archaitool.com with the product name, official website, and a short explanation of the workflow. The research desk prioritizes tools with public demos, transparent pricing, and verifiable case studies.'
     }
   ]
 };

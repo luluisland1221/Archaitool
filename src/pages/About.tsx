@@ -52,13 +52,13 @@ const About = () => {
               Transparency matters. We cite the official source for every feature description, indicate when pricing is invite-only, and flag any limitations we encounter during testing. Sponsored placements are not allowed, and vendors cannot pay to be included or to influence rankings. If a tool removes critical functionality or receives sustained user complaints, we annotate the listing and may archive it until the issues are resolved.
             </p>
             <p>
-              Because AI tooling moves quickly, we encourage readers to share their field notes. When you submit feedback through the contact form, it is reviewed by the same research team that curates the site. Verified insights—positive or negative—inform the next update cycle so the community benefits from collective experience.
+              Because AI tooling moves quickly, we encourage readers to share their field notes. When you email feedback to service@archaitool.com, it is reviewed by the same research team that curates the site. Verified insights—positive or negative—inform the next update cycle so the community benefits from collective experience.
             </p>
           </section>
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-3">How to collaborate</h2>
             <p className="mb-2">
-              Have a tool to recommend or a case study to share? Reach out via service@archaitool.com or the submission form on the Contact page. Provide:
+              Have a tool to recommend or a case study to share? Email us at service@archaitool.com. Provide:
             </p>
             <ol className="list-decimal list-inside space-y-2">
               <li>The official product URL and a short summary of what the AI delivers.</li>
