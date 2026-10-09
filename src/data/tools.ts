@@ -1261,59 +1261,89 @@ export const categories: Category[] = [
           {
             id: "ai-architectures",
             name: "AI Architectures",
-            description: "AI-powered architecture design platform for professional designs, plans, and renderings in seconds",
+            description: "Paid AI image tools for remodel previews, architectural renders, virtual staging and listing photos",
             image: "/screenshots/ai_architectures_com_.webp",
             url: "https://ai-architectures.com/",
-            isPaid: false,
+            isPaid: true,
             category: "architecture-spatial",
             subcategory: "architectural-design",
-            searchAliases: ["ai architectures", "architectures ai"],
-            detailedDescription: "AI Architectures is a revolutionary AI-powered platform that generates professional architectural designs in just 30 seconds with a single click. Serving over 10,000 happy architects and having created 50,000+ designs, the platform eliminates manual drafting while delivering professional-grade designs, floor plans, and photorealistic renderings that meet industry standards.",
+            searchAliases: [
+              "ai architectures",
+              "architectures ai"
+            ],
+            detailedDescription: "AI Architectures by 20Vision GmbH in Vienna creates home remodel previews from your own photos, photorealistic renders from sketches and model views, and virtual staging and Listing Kit images for real estate agents. Preview a pergola, deck, porch or wall removal. There is no free allocation, free tier or free trial. Floor plans are separate products: AI Architectures Floor Plans (https://floorplan.ai-architectures.com) redraws sketches, photos or scans as clean 2D plan images; Plan Chat (https://plans.ai-architectures.com) creates measured plans edited by chat, with PDF, DXF and IFC exports. All plans and images are concepts, not permit or construction documents. These tools do not perform structural or building-code checks; professional review is required before construction.",
             keyFeatures: [
-              "AI Architecture Generator (30-second designs)",
-              "Professional floor plan generation",
-              "Photorealistic architectural rendering",
-              "Hand sketch to digital conversion",
-              "Code compliance suggestions",
-              "Image editor and enhancement tools",
-              "Style libraries and prompt recipes",
-              "Multiple export formats (DXF, PDF, PNG)"
+              "Photo-based home remodel previews: pergolas, decks, porches and wall removal",
+              "Sketch, elevation and model-view to photorealistic render",
+              "Architectural image generation from text descriptions",
+              "Virtual staging and Listing Kit for real estate agents",
+              "2K PNG/JPG downloads; 4K available with the 4K pack",
+              "Concept visualization only; no structural or building-code checks"
             ],
             pricing: {
-              freeTier: {
-                features: ["Basic design generation", "Limited credits"]
-              },
+              trialAvailable: false,
               paid: {
                 plans: [
                   {
-                    name: "Professional",
-                    price: "Contact for pricing",
-                    features: ["Unlimited designs", "HD renders", "Commercial use"]
+                    name: "Starter",
+                    price: "$29/month",
+                    billing: "monthly",
+                    targetUser: "Individuals exploring remodels and architectural visualization",
+                    features: [
+                      "50 generations per month",
+                      "$14.50 for the first month",
+                      "$19/month when billed yearly",
+                      "Commercial use included",
+                      "No free tier or free trial"
+                    ]
+                  },
+                  {
+                    name: "Pro",
+                    price: "$79/month",
+                    billing: "monthly",
+                    targetUser: "Professionals with regular visualization needs",
+                    features: [
+                      "200 generations per month",
+                      "$59/month when billed yearly",
+                      "Commercial use included"
+                    ]
+                  },
+                  {
+                    name: "Studio",
+                    price: "$199/month",
+                    billing: "monthly",
+                    targetUser: "Studios with higher image-generation volumes",
+                    features: [
+                      "Unlimited 2K generations",
+                      "500 4K renders",
+                      "$149/month when billed yearly",
+                      "Commercial use included"
+                    ]
                   }
                 ]
               }
             },
             useCases: [
-              "Residential design projects",
-              "Commercial and retail spaces",
-              "Mixed-use developments",
-              "Industrial architecture",
-              "Urban planning concepts",
-              "Rapid prototyping and iterations"
+              "Previewing a home remodel before talking to a contractor",
+              "Turning sketches into client presentation renders",
+              "Virtually staging empty rooms for real estate listings",
+              "Preparing listing photos with the Listing Kit",
+              "Exploring early design concepts for professional review"
             ],
             integrations: [
-              "Sketch to digital conversion",
-              "DXF export for CAD integration",
-              "PDF export for documentation"
+              "PNG/JPG downloads for presentations and listings",
+              "Separate Floor Plans product: https://floorplan.ai-architectures.com",
+              "Separate Plan Chat product with PDF, DXF and IFC: https://plans.ai-architectures.com",
+              "One account, plan and credits across the three products"
             ],
             companyInfo: {
-              userStats: {
-                users: "10,000+ Happy Architects",
-                designs: "50,000+ Designs Created"
+              name: "20Vision GmbH",
+              headquarters: "Vienna, Austria",
+              support: {
+                documentation: "https://ai-architectures.com/facts"
               }
             },
-            userRating: 4.4,
-            lastUpdated: "2025-10-28"
+            lastUpdated: "2026-10-09"
           },
           {
             id: "3d-house-planner",

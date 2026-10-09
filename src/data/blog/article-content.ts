@@ -25,7 +25,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> You provide descriptive text (prompts) about building type, style, materials, and context, and the AI generates multiple visual concepts.</p>
 
-<p><strong>Available tools:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> (Free), <a href="/architectural-design/maket-ai">Maket AI</a>, <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></p>
+<p><strong>Available tools:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> (paid, from $29/month), <a href="/architectural-design/maket-ai">Maket AI</a>, <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></p>
 
 <p><strong>Best for:</strong> Early-stage concept exploration, client presentations, and design inspiration.</p>
 
@@ -35,7 +35,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>How it works:</strong> Input your requirements (square footage, room types, adjacencies) and the AI generates optimized layout options.</p>
 
-<p><strong>Available tools:</strong> <a href="/architectural-design/testfit">TestFit</a>, <a href="/architectural-design/floorplan-ai">Floorplan AI</a>, <a href="/architectural-design/ai-architectures">AI Architectures</a></p>
+<p><strong>Available tools:</strong> <a href="/architectural-design/testfit">TestFit</a>, <a href="/architectural-design/floorplan-ai">Floorplan AI</a>, <a href="https://floorplan.ai-architectures.com" target="_blank" rel="noopener noreferrer">AI Architectures Floor Plans</a></p>
 
 <p><strong>Best for:</strong> Space planning efficiency, feasibility studies, and rapid iteration on building layouts.</p>
 
@@ -61,18 +61,18 @@ export const architectAIGuideArticle = `
 
 <h2>Step 2: Starting with Concept Generation (5-Minute Tutorial)</h2>
 
-<p>Let's get hands-on immediately. The fastest way to experience AI in architecture is through concept generation tools. Here's a practical 5-minute tutorial using one of the best free tools available:</p>
+<p>Let's get hands-on immediately. The fastest way to experience AI in architecture is through concept generation tools. Here's a practical 5-minute tutorial using a paid architectural visualization tool:</p>
 
-<h3>Free Tool Recommendation: <a href="https://ai-architectures.com/" target="_blank" rel="noopener noreferrer">AI Architectures</a></h3>
+<h3>Paid Tool Example: <a href="https://ai-architectures.com/" target="_blank" rel="noopener noreferrer">AI Architectures</a></h3>
 
-<p><strong>Why AI Architectures?</strong> It's completely free, web-based (no installation), specifically designed for architects, and produces professional-quality results in seconds.</p>
+<p><strong>Why AI Architectures?</strong> It is a browser-based image tool for remodel previews, architectural renders and virtual staging. Starter costs $29/month ($14.50 for the first month) for 50 generations, with no free tier or trial. Images are concepts, not permit or construction documents.</p>
 
 <h3>5-Minute Workflow:</h3>
 
 <ol>
 <li><strong>Visit AI Architectures</strong> – Open your browser and navigate to the platform</li>
 <li><strong>Write Your First Prompt</strong> – Example: "Modern office building with glass curtain wall, sustainable design, 5 floors, minimalist aesthetic, natural lighting integration"</li>
-<li><strong>Generate Concepts</strong> – Click generate and receive multiple design options within 10 seconds</li>
+<li><strong>Generate Concepts</strong> – Generate an architectural concept image, usually in about 30 seconds</li>
 <li><strong>Download Your Best Option</strong> – Choose the concept that best fits your vision</li>
 </ol>
 
@@ -122,7 +122,7 @@ export const architectAIGuideArticle = `
 
 <h3>3. Cost Consideration</h3>
 
-<p><strong>Free Options:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a>, <a href="/interior-design/home-design-ai">Home Design AI</a>, <a href="/real-estate/reimaginehome">ReimagineHome AI</a></p>
+<p><strong>Free Options:</strong> <a href="/interior-design/home-design-ai">Home Design AI</a>, <a href="/real-estate/reimaginehome">ReimagineHome AI</a></p>
 
 <p><strong>Paid Tools:</strong> Most professional tools require subscription (typically $20-100/month)</p>
 
@@ -154,7 +154,7 @@ export const architectAIGuideArticle = `
       <td colspan="5" style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold; background: #f3f4f6;">Concept Design Generation</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Paid, from $29/month)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
@@ -192,7 +192,7 @@ export const architectAIGuideArticle = `
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
     </tr>
     <tr style="background: white;">
-      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="/architectural-design/ai-architectures">AI Architectures</a> <span style="color: #6b7280; font-size: 0.8rem;">(Free)</span></td>
+      <td style="padding: 0.5rem; border: 1px solid #ddd;"><a href="https://floorplan.ai-architectures.com" target="_blank" rel="noopener noreferrer">AI Architectures Floor Plans</a> <span style="color: #6b7280; font-size: 0.8rem;">(Paid, from $29/month)</span></td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐</td>
       <td style="padding: 0.5rem; border: 1px solid #ddd; text-align: center;">⭐⭐⭐⭐⭐</td>
@@ -269,7 +269,7 @@ export const architectAIGuideArticle = `
 <div style="margin-top: 1rem; padding: 1rem; background: #f3f4f6; border-left: 4px solid #374151; border-radius: 0.25rem;">
   <h4 style="margin: 0 0 0.5rem 0; color: #111827;">🎯 Selection Recommendations:</h4>
   <ul style="margin: 0; padding-left: 1.5rem; color: #1f2937; font-size: 0.9rem;">
-    <li><strong>For Beginners:</strong> AI Architectures + Home Design AI (both free)</li>
+    <li><strong>For Beginners:</strong> AI Architectures (paid, from $29/month) + Home Design AI</li>
     <li><strong>For Efficiency:</strong> MyArchitect AI + TestFit</li>
     <li><strong>For Professional Output:</strong> Arko AI + Arkdesign AI</li>
   </ul>
@@ -330,7 +330,7 @@ export const architectAIGuideArticle = `
 
 <h3>Recommended Tool Combinations:</h3>
 
-<p><strong>For Small Projects:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/architectural-design/myarchitectai">MyArchitect AI</a> (Free + $29/month)</p>
+<p><strong>For Small Projects:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/architectural-design/myarchitectai">MyArchitect AI</a> (AI Architectures from $29/month; check each vendor for current pricing)</p>
 
 <p><strong>For Medium Projects:</strong> Add <a href="/architectural-design/testfit">TestFit</a> + <a href="/interior-design/home-design-ai">Home Design AI</a> for comprehensive workflow</p>
 
@@ -356,7 +356,7 @@ export const architectAIGuideArticle = `
 
 <p><strong>The Reality:</strong> Mastering 2-3 core tools is more valuable than superficial familiarity with 10+ tools.</p>
 
-<p><strong>The Solution:</strong> Start with 1-2 free tools (<a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/interior-design/home-design-ai">Home Design AI</a>), master them, then gradually add specialized tools based on project needs.</p>
+<p><strong>The Solution:</strong> Start with a small tool stack (<a href="/architectural-design/ai-architectures">AI Architectures</a>, paid from $29/month, + <a href="/interior-design/home-design-ai">Home Design AI</a>), master them, then gradually add specialized tools based on project needs.</p>
 
 <h3>Mistake 3: Thinking AI Replaces Design Thinking</h3>
 
@@ -387,7 +387,7 @@ export const architectAIGuideArticle = `
 
 <h3>For Architecture Students:</h3>
 
-<p>Start with free tools to build your AI literacy. Focus on <a href="/architectural-design/ai-architectures">AI Architectures</a> to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
+<p>Build your AI literacy with tools that fit your budget. AI Architectures is paid, from $29/month, with no free tier or trial. Explore <a href="/architectural-design/ai-architectures">AI Architectures</a> to understand how AI can enhance your design process. Use AI to create impressive portfolio pieces that demonstrate your understanding of cutting-edge technology.</p>
 
 <h3>For Small Firm Architects:</h3>
 
@@ -412,7 +412,7 @@ export const top10AITools2025Article = `
 <div style="margin: 1.75rem 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb;">
   <h3 style="margin-top: 0;">Quick picks (fast answers)</h3>
   <ul>
-    <li><strong>Best free starter:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/interior-design/home-design-ai">Home Design AI</a></li>
+    <li><strong>Visualization starter stack (includes a paid tool):</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a> + <a href="/interior-design/home-design-ai">Home Design AI</a></li>
     <li><strong>Best floor plan automation:</strong> <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> or <a href="/architectural-design/floorplan-ai">Floorplan AI</a></li>
     <li><strong>Best feasibility + site planning:</strong> <a href="/architectural-design/testfit">TestFit</a></li>
     <li><strong>Fastest client-ready renders:</strong> <a href="/architectural-design/myarchitectai">MyArchitect AI</a></li>
@@ -436,7 +436,7 @@ export const top10AITools2025Article = `
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/ai-architectures">AI Architectures</a></td>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;">Rapid concept exploration</td>
-      <td style="padding:0.75rem;border:1px solid #e5e7eb;">Free tier</td>
+      <td style="padding:0.75rem;border:1px solid #e5e7eb;">From $29/month; no free tier or trial</td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #e5e7eb;"><a href="/architectural-design/arkdesign-ai">Arkdesign AI</a></td>
@@ -506,10 +506,10 @@ export const top10AITools2025Article = `
 
 <h3>Concept Design Leaders</h3>
 
-<h4>1. AI Architectures (Free)</h4>
+<h4>1. AI Architectures (Paid, from $29/month)</h4>
 <p><strong>Best For:</strong> Rapid concept exploration and beginners</p>
 <p><strong>Key Features:</strong> Text-to-image generation, multiple style options, web-based interface</p>
-<p><strong>Why It Stands Out:</strong> Completely free with professional-quality results, making it the perfect entry point for architects new to AI tools.</p>
+<p><strong>Why It Stands Out:</strong> Photo-based remodel previews, sketch-to-photoreal renders and virtual staging in one paid image product. Starter includes 50 generations for $29/month ($14.50 for the first month); there is no free tier or trial.</p>
 <p>👉 <strong>Try it now:</strong> <a href="/architectural-design/ai-architectures">AI Architectures</a></p>
 
 <div style="margin: 2rem 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -626,8 +626,8 @@ export const top10AITools2025Article = `
   <div style="text-align: center; color: #64748b;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">📊 AI Architecture Tools Comparison Matrix</div>
     <div style="font-size: 0.9rem; line-height: 1.5;">
-      <strong>Free Tools (Ease of Use: ⭐⭐⭐⭐⭐):</strong> AI Architectures, Home Design AI<br>
-      <strong>Mid-Range Tools (Ease of Use: ⭐⭐⭐⭐):</strong> TestFit, MyArchitect AI, Maket AI<br>
+      <strong>Free Tools (Ease of Use: ⭐⭐⭐⭐⭐):</strong> Home Design AI<br>
+      <strong>Mid-Range Tools (Ease of Use: ⭐⭐⭐⭐):</strong> AI Architectures (from $29/month), TestFit, MyArchitect AI, Maket AI<br>
       <strong>Professional Tools (Ease of Use: ⭐⭐⭐):</strong> Arko AI, Arkdesign AI, Visualizee AI
     </div>
     <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.5rem; font-style: italic;">
@@ -652,8 +652,8 @@ export const top10AITools2025Article = `
 <h3>Recommended Combinations by Practice Size</h3>
 
 <h4>For Individual Architects:</h4>
-<p><strong>Starter Stack (Free):</strong> AI Architectures + Home Design AI</p>
-<p>This combination covers both exterior concept generation and interior design without any cost, perfect for building AI proficiency.</p>
+<p><strong>Starter Stack (includes a paid tool):</strong> AI Architectures (from $29/month) + Home Design AI</p>
+<p>This combination covers exterior concept visualization and interior design. Budget for the AI Architectures subscription and check current pricing with each vendor.</p>
 
 <h4>For Small Firms (2-10 Architects):</h4>
 <p><strong>Efficiency Stack ($50-100/month):</strong> Arkdesign AI + TestFit + MyArchitect AI</p>
@@ -668,7 +668,7 @@ export const top10AITools2025Article = `
 
 <h3>Phase 1: Experimentation (1-2 weeks)</h3>
 <ul>
-<li>Start with free tools (AI Architectures, Home Design AI)</li>
+<li>Start with tools that fit your budget (AI Architectures is paid, from $29/month; Home Design AI is another option)</li>
 <li>Test on non-critical projects</li>
 <li>Establish quality benchmarks</li>
 </ul>
@@ -937,7 +937,7 @@ export const schoolToPracticeArticle = `
 <p>Pick one tool from each category and keep logins synced on every device:</p>
 
 <ul>
-  <li><strong>Concept:</strong> AI Architectures (free) + <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> (paid)</li>
+  <li><strong>Concept:</strong> AI Architectures (paid, from $29/month) + <a href="/architectural-design/arkdesign-ai">Arkdesign AI</a> (paid)</li>
   <li><strong>Visualization:</strong> MyArchitect AI for presentation speed</li>
   <li><strong>Documentation support:</strong> <a href="/real-estate/reimaginehome">ReimagineHome</a> to translate client references into buildable palettes</li>
   <li><strong>Learning:</strong> Bookmark the <a href="/blog">ArchAITool blog</a> to capture new prompts</li>

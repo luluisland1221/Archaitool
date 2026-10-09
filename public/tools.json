@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12",
+  "generatedAt": "2026-10-09",
   "site": "https://archaitool.com",
   "totalTools": 78,
   "categories": [
@@ -539,49 +539,58 @@
             {
               "id": "ai-architectures",
               "name": "AI Architectures",
-              "description": "AI Architectures is a revolutionary AI-powered platform that generates professional architectural designs in just 30 seconds with a single click. Serving over 10,000 happy architects and having created 50,000+ designs, the platform eliminates manual drafting while delivering professional-grade designs, floor plans, and photorealistic renderings that meet industry standards.",
+              "description": "AI Architectures by 20Vision GmbH in Vienna creates home remodel previews from your own photos, photorealistic renders from sketches and model views, and virtual staging and Listing Kit images for real estate agents. Preview a pergola, deck, porch or wall removal. There is no free allocation, free tier or free trial. Floor plans are separate products: AI Architectures Floor Plans (https://floorplan.ai-architectures.com) redraws sketches, photos or scans as clean 2D plan images; Plan Chat (https://plans.ai-architectures.com) creates measured plans edited by chat, with PDF, DXF and IFC exports. All plans and images are concepts, not permit or construction documents. These tools do not perform structural or building-code checks; professional review is required before construction.",
               "vendorUrl": "https://ai-architectures.com/",
               "directoryUrl": "https://archaitool.com/architectural-design/ai-architectures/",
-              "isPaid": false,
+              "isPaid": true,
               "pricing": {
-                "freeTier": true,
+                "freeTier": false,
                 "trialAvailable": false,
                 "enterprisePlan": false,
                 "paidPlans": [
                   {
-                    "name": "Professional",
-                    "price": "Contact for pricing"
+                    "name": "Starter",
+                    "price": "$29/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro",
+                    "price": "$79/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Studio",
+                    "price": "$199/month",
+                    "billing": "monthly"
                   }
                 ]
               },
               "keyFeatures": [
-                "AI Architecture Generator (30-second designs)",
-                "Professional floor plan generation",
-                "Photorealistic architectural rendering",
-                "Hand sketch to digital conversion",
-                "Code compliance suggestions",
-                "Image editor and enhancement tools",
-                "Style libraries and prompt recipes",
-                "Multiple export formats (DXF, PDF, PNG)"
+                "Photo-based home remodel previews: pergolas, decks, porches and wall removal",
+                "Sketch, elevation and model-view to photorealistic render",
+                "Architectural image generation from text descriptions",
+                "Virtual staging and Listing Kit for real estate agents",
+                "2K PNG/JPG downloads; 4K available with the 4K pack",
+                "Concept visualization only; no structural or building-code checks"
               ],
               "useCases": [
-                "Residential design projects",
-                "Commercial and retail spaces",
-                "Mixed-use developments",
-                "Industrial architecture",
-                "Urban planning concepts",
-                "Rapid prototyping and iterations"
+                "Previewing a home remodel before talking to a contractor",
+                "Turning sketches into client presentation renders",
+                "Virtually staging empty rooms for real estate listings",
+                "Preparing listing photos with the Listing Kit",
+                "Exploring early design concepts for professional review"
               ],
               "integrations": [
-                "Sketch to digital conversion",
-                "DXF export for CAD integration",
-                "PDF export for documentation"
+                "PNG/JPG downloads for presentations and listings",
+                "Separate Floor Plans product: https://floorplan.ai-architectures.com",
+                "Separate Plan Chat product with PDF, DXF and IFC: https://plans.ai-architectures.com",
+                "One account, plan and credits across the three products"
               ],
               "searchAliases": [
                 "ai architectures",
                 "architectures ai"
               ],
-              "lastUpdated": "2025-10-28"
+              "lastUpdated": "2026-10-09"
             },
             {
               "id": "3d-house-planner",

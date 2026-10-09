@@ -730,7 +730,7 @@ const Tools = () => {
                   <Link to="/architectural-design/myarchitectai/" className="text-black underline">MyArchitect AI</Link>
                 </div>
                 <div>
-                  <strong>Free starter stack:</strong>{' '}
+                  <strong>Starter stack (includes a paid tool):</strong>{' '}
                   <Link to="/architectural-design/ai-architectures/" className="text-black underline">AI Architectures</Link>
                   {' '}+{' '}
                   <Link to="/interior-design/home-design-ai/" className="text-black underline">Home Design AI</Link>
