@@ -8,19 +8,26 @@ http://www.archaitool.com/*  https://archaitool.com/:splat  301!
 https://www.archaitool.com/*  https://archaitool.com/:splat  301!
 
 # GSC malformed URL cleanup
-/  ref=producthunt  https://archaitool.com/  301!
+# NOTE: never point a rule at its own path. Cloudflare appends the original
+# query string to the destination, so self-referencing rules loop forever.
 /blog  tag=ai-tutorials  https://archaitool.com/blog/tag/ai-tutorials/  301!
 /blog  tag=beginner-guides  https://archaitool.com/blog/tag/beginner-guides/  301!
 /blog  tag=tool-reviews  https://archaitool.com/blog/tag/tool-reviews/  301!
-/tools  q=:query  https://archaitool.com/tools/  301!
 /cdn-cgi/l/email-protection  https://archaitool.com/contact/  301!
 /tools/architectural-design  https://archaitool.com/tools/architecture-spatial/architectural-design/  301!
 /tools/architectural-design/  https://archaitool.com/tools/architecture-spatial/architectural-design/  301!
-/interior-design/archi-ai/*  https://archaitool.com/interior-design/archi-ai/  301!
-/design-tools/seedance-2/*  https://archaitool.com/design-tools/seedance-2/  301!
-/architectural-design/testfit/*  https://archaitool.com/architectural-design/testfit/  301!
-/landscape-design/ai-garden-design/*  https://archaitool.com/landscape-design/ai-garden-design/  301!
-/landscape-design/dreamzar/*  https://archaitool.com/landscape-design/dreamzar/  301!
+# Use a placeholder instead of a splat here: a splat also matches the empty
+# suffix, which turned the canonical tool pages into redirect loops.
+/interior-design/archi-ai/:junk  https://archaitool.com/interior-design/archi-ai/  301!
+/interior-design/archi-ai/:junk/*  https://archaitool.com/interior-design/archi-ai/  301!
+/design-tools/seedance-2/:junk  https://archaitool.com/design-tools/seedance-2/  301!
+/design-tools/seedance-2/:junk/*  https://archaitool.com/design-tools/seedance-2/  301!
+/architectural-design/testfit/:junk  https://archaitool.com/architectural-design/testfit/  301!
+/architectural-design/testfit/:junk/*  https://archaitool.com/architectural-design/testfit/  301!
+/landscape-design/ai-garden-design/:junk  https://archaitool.com/landscape-design/ai-garden-design/  301!
+/landscape-design/ai-garden-design/:junk/*  https://archaitool.com/landscape-design/ai-garden-design/  301!
+/landscape-design/dreamzar/:junk  https://archaitool.com/landscape-design/dreamzar/  301!
+/landscape-design/dreamzar/:junk/*  https://archaitool.com/landscape-design/dreamzar/  301!
 /links  https://archaitool.com/links.html  301!
 /tool/Available%20on%20website  https://archaitool.com/tools/  301!
 /tool/Available on website  https://archaitool.com/tools/  301!

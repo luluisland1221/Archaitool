@@ -50,6 +50,9 @@ async function buildRouteList() {
   const blogModule = await loadTsModule(path.resolve('src/data/blog/posts.ts'));
   const blogPosts = blogModule.blogPosts || [];
 
+  const tagsModule = await loadTsModule(path.resolve('src/data/blog/tags.ts'));
+  const blogTags = tagsModule.blogTags || [];
+
   const routes = new Set();
 
   const staticRoutes = [
@@ -85,6 +88,12 @@ async function buildRouteList() {
   blogPosts.forEach(post => {
     if (post?.slug) {
       routes.add(`/blog/${post.slug}`);
+    }
+  });
+
+  blogTags.forEach(tag => {
+    if (tag?.slug) {
+      routes.add(`/blog/tag/${tag.slug}`);
     }
   });
 

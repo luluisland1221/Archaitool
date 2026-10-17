@@ -206,7 +206,7 @@ const TermsOfService = () => {
                 Using our services indicates your agreement to the practices described in our privacy policy.
               </p>
               <p className="text-gray-700 leading-relaxed mt-2">
-                <a href="/privacy-policy" className="text-gray-700 hover:text-gray-900 underline">
+                <a href="/privacy-policy/" className="text-gray-700 hover:text-gray-900 underline">
                   View our privacy policy
                 </a>
               </p>

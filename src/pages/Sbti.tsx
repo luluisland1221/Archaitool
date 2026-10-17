@@ -294,7 +294,7 @@ const Sbti = () => {
                   Start the test
                 </button>
                 <Link
-                  to="/tools"
+                  to="/tools/"
                   className="rounded-xl border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-700 transition hover:border-gray-400"
                 >
                   Explore AI tools

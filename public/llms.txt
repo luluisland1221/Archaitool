@@ -45,10 +45,10 @@
 
 ## Important Pages
 - https://archaitool.com/
-- https://archaitool.com/tools
-- https://archaitool.com/blog
-- https://archaitool.com/about
-- https://archaitool.com/contact
+- https://archaitool.com/tools/
+- https://archaitool.com/blog/
+- https://archaitool.com/about/
+- https://archaitool.com/contact/
 - https://archaitool.com/sitemap.xml
 - https://archaitool.com/tools.json
 

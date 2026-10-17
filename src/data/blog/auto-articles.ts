@@ -30,11 +30,11 @@ const renderSections = (sections: Section[]) =>
     .join('');
 
 const relatedLinks = renderList([
-  '<a href="/tools">AI tools directory</a>',
-  '<a href="/tools/architecture-spatial">Architecture &amp; spatial tools</a>',
-  '<a href="/tools/interior-design">Interior design tools</a>',
-  '<a href="/tools/landscape-design">Landscape design tools</a>',
-  '<a href="/tools/real-estate">Real estate tools</a>'
+  '<a href="/tools/">AI tools directory</a>',
+  '<a href="/tools/architecture-spatial/">Architecture &amp; spatial tools</a>',
+  '<a href="/tools/interior-design/">Interior design tools</a>',
+  '<a href="/tools/landscape-design/">Landscape design tools</a>',
+  '<a href="/tools/real-estate/">Real estate tools</a>'
 ]);
 
 const buildArticle = (config: {

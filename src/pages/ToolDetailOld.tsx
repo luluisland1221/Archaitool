@@ -31,7 +31,7 @@ const ToolDetail = () => {
             <h1 className="text-4xl font-bold mb-4">Tool not found</h1>
             <p className="text-gray-600 mb-6">The tool you're looking for doesn't exist.</p>
             <Link 
-              to="/tools" 
+              to="/tools/"
               className="inline-flex items-center text-gray-800 hover:text-black"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
@@ -58,7 +58,7 @@ const ToolDetail = () => {
         {/* Breadcrumb Navigation */}
         <div className="mb-8">
           <Link 
-            to="/tools" 
+            to="/tools/"
             className="inline-flex items-center text-gray-600 hover:text-black"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
