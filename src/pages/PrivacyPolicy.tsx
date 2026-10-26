@@ -2,11 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const PrivacyPolicy = () => {
-  const currentDate = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
+  const currentDate = 'June 12, 2026';
 
   return (
     <>

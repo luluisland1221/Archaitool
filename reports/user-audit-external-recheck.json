@@ -1,0 +1,306 @@
+[
+  {
+    "url": "https://www.yardflip.ai/",
+    "status": 404,
+    "finalUrl": "https://www.yardflip.ai/"
+  },
+  {
+    "url": "https://myarchitectai.com/",
+    "status": 200,
+    "finalUrl": "https://www.myarchitectai.com/"
+  },
+  {
+    "url": "https://www.reimaginehome.ai/",
+    "status": 200,
+    "finalUrl": "https://www.reimaginehome.ai/"
+  },
+  {
+    "url": "https://collov.ai/",
+    "status": 200,
+    "finalUrl": "https://collov.ai/"
+  },
+  {
+    "url": "https://draftaid.io/",
+    "status": 200,
+    "finalUrl": "https://draftaid.io/"
+  },
+  {
+    "url": "https://aihomedesign.com/",
+    "status": 200,
+    "finalUrl": "https://aihomedesign.com/"
+  },
+  {
+    "url": "https://www.dreamzar.app/",
+    "status": 200,
+    "finalUrl": "https://dreamzar.app/"
+  },
+  {
+    "url": "https://klingo1.site/",
+    "status": 200,
+    "finalUrl": "https://klingo1.site/"
+  },
+  {
+    "url": "https://seedance2.page/",
+    "status": 200,
+    "finalUrl": "https://seedance2.page/"
+  },
+  {
+    "url": "https://videoprompt.info/",
+    "status": 200,
+    "finalUrl": "https://videoprompt.info/"
+  },
+  {
+    "url": "https://space.bilibili.com/417038183",
+    "status": 200,
+    "finalUrl": "https://space.bilibili.com/417038183"
+  },
+  {
+    "url": "https://consistentcharacterai.pro/",
+    "status": 200,
+    "finalUrl": "https://consistentcharacterai.pro/"
+  },
+  {
+    "url": "https://deepseekv4.network/",
+    "status": 200,
+    "finalUrl": "https://deepseekv4.network/"
+  },
+  {
+    "url": "https://www.linkedin.com/company/aitwo",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/aitwo"
+  },
+  {
+    "url": "https://nemotron3.online/",
+    "status": 200,
+    "finalUrl": "https://nemotron3.online/"
+  },
+  {
+    "url": "https://aitwo.co/use-cases",
+    "status": 200,
+    "finalUrl": "https://aitwo.co/use-cases"
+  },
+  {
+    "url": "https://veo31lite.space/",
+    "status": 200,
+    "finalUrl": "https://veo31lite.space/"
+  },
+  {
+    "url": "https://www.autodesk.com/products/forma/overview",
+    "status": 200,
+    "finalUrl": "https://www.autodesk.com/products/forma-site-design/overview"
+  },
+  {
+    "url": "https://architechtures.com/",
+    "status": 200,
+    "finalUrl": "https://architechtures.com/en"
+  },
+  {
+    "url": "https://floor-plan.ai/",
+    "status": 200,
+    "finalUrl": "https://floor-plan.ai/"
+  },
+  {
+    "url": "https://www.testfit.io/",
+    "status": 200,
+    "finalUrl": "https://www.testfit.io/"
+  },
+  {
+    "url": "https://www.floorplan-ai.com/",
+    "status": 200,
+    "finalUrl": "https://www.floorplan-ai.com/"
+  },
+  {
+    "url": "https://3dhouseplanner.com/",
+    "status": 200,
+    "finalUrl": "https://3dhouseplanner.com/"
+  },
+  {
+    "url": "https://ai-architectures.com/",
+    "status": 200,
+    "finalUrl": "https://ai-architectures.com/"
+  },
+  {
+    "url": "https://www.linkedin.com/company/maket-ai",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/maket-ai"
+  },
+  {
+    "url": "https://www.maket.ai/features",
+    "status": 200,
+    "finalUrl": "https://www.maket.ai/features"
+  },
+  {
+    "url": "https://arcadium3d.com/",
+    "status": 200,
+    "finalUrl": "https://arcadium3d.com/"
+  },
+  {
+    "url": "https://twitter.com/usamaClick",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://www.linkedin.com/company/ark-design-ai/",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/ark-design-ai/"
+  },
+  {
+    "url": "https://www.youtube.com/@AITwo_co/",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://arkdesign.ai/how-it-works/",
+    "status": 200,
+    "finalUrl": "https://arkdesign.ai/ark-design-school/"
+  },
+  {
+    "url": "https://www.linkedin.com/company/architechtures",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/architechtures"
+  },
+  {
+    "url": "https://architechtures.com/en/tutorials",
+    "status": 200,
+    "finalUrl": "https://architechtures.com/en/tutorials"
+  },
+  {
+    "url": "https://help.autodesk.com/en/support/forma",
+    "status": 404,
+    "finalUrl": "https://help.autodesk.com/en/support/forma"
+  },
+  {
+    "url": "https://www.linkedin.com/company/autodesk/",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/autodesk/"
+  },
+  {
+    "url": "https://twitter.com/maketplans",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://www.linkedin.com/company/bricsys",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/bricsys"
+  },
+  {
+    "url": "https://www.youtube.com/@Maketplans",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://www.youtube.com/@Arkdesign-rb1dx",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://help.bricsys.com/",
+    "status": 200,
+    "finalUrl": "https://help.bricsys.com/"
+  },
+  {
+    "url": "https://www.d5render.com/",
+    "status": 200,
+    "finalUrl": "https://www.d5render.com/"
+  },
+  {
+    "url": "https://www.linkedin.com/company/arkoai/",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/arkoai/"
+  },
+  {
+    "url": "https://www.youtube.com/@architechtures-english",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://twitter.com/autodesk",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://www.linkedin.com/company/evolvelabio",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/evolvelabio"
+  },
+  {
+    "url": "https://www.designai.us/",
+    "status": 404,
+    "finalUrl": "https://www.designai.us/"
+  },
+  {
+    "url": "https://twitter.com/bricsys",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://twitter.com/myarchitectai",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://www.x.com/ArkoAI_",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://twitter.com/EvolveLABio",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://dehome.ai/resources",
+    "status": 404,
+    "finalUrl": "https://dehome.ai/resources"
+  },
+  {
+    "url": "https://www.linkedin.com/company/madespace-ai/",
+    "status": 451,
+    "finalUrl": "https://www.linkedin.cn/incareer/company/madespace-ai/"
+  },
+  {
+    "url": "https://roomlab.app/faq",
+    "status": 404,
+    "finalUrl": "https://roomlab.app/en/faq"
+  },
+  {
+    "url": "https://midjourney.com/",
+    "status": 403,
+    "finalUrl": "https://midjourney.com/"
+  },
+  {
+    "url": "https://www.youtube.com/@EvolveLABio",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://helpx.adobe.com/firefly/get-set-up/access-the-app/access-adobe-firefly.html",
+    "status": 200,
+    "finalUrl": "https://helpx.adobe.com/firefly/web/get-started/access-the-app/access-adobe-firefly.html"
+  },
+  {
+    "url": "https://openai.com/dall-e-3",
+    "status": 403,
+    "finalUrl": "https://openai.com/dall-e-3"
+  },
+  {
+    "url": "https://twitter.com/nutlope",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://glm52.site/api",
+    "status": 404,
+    "finalUrl": "https://glm52.site/api"
+  },
+  {
+    "url": "https://x.com/vibe3dai",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://kimik3.online/api",
+    "status": 404,
+    "finalUrl": "https://kimik3.online/api"
+  },
+  {
+    "url": "https://www.rusticai.art/",
+    "status": 200,
+    "finalUrl": "https://www.rusticai.art/"
+  },
+  {
+    "url": "https://twitter.com/gepettoai",
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://x.com/videopromptai",
+    "error": "fetch failed"
+  }
+]

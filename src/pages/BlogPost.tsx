@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Check } from 'lucide-react';
 import { blogPosts, getPostBySlug } from '../data/blog/posts';
 import { getTagById } from '../data/blog/tags';
@@ -10,15 +10,8 @@ import NotFound from './NotFound';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
   const post = getPostBySlug(slug || '');
   const [copiedToClipboard, setCopiedToClipboard] = useState(false);
-
-  useEffect(() => {
-    if (!post) {
-      navigate('/blog', { replace: true });
-    }
-  }, [post, navigate]);
 
   if (!post) {
     return <NotFound />;
@@ -266,7 +259,7 @@ const BlogPost: React.FC = () => {
         <div className="bg-black text-white pb-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <div className="flex items-center justify-center space-x-4 text-sm text-gray-300 mb-6">
+              <div className="flex flex-wrap gap-y-3 items-center justify-center space-x-4 text-sm text-gray-300 mb-6">
                 <div className="flex items-center space-x-1">
                   <Calendar className="h-4 w-4" />
                   <span>{formatDate(post.publishedDate)}</span>
@@ -316,7 +309,7 @@ const BlogPost: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="bg-white rounded-xl shadow-lg p-8 lg:p-12">
             {/* Author Bio */}
-            <div className="flex items-start justify-between mb-8 pb-6 border-b border-gray-200">
+            <div className="flex flex-col sm:flex-row items-start justify-between gap-4 mb-8 pb-6 border-b border-gray-200">
               <div className="flex items-center space-x-4">
                 {post.author.avatar ? (
                   <img

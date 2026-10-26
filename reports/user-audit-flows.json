@@ -1,0 +1,8 @@
+[
+  "Mobile navigation changes route and closes menu",
+  "24 responsive page/viewport combinations have no horizontal overflow",
+  "Blog search shows an empty state",
+  "Submission validation, failure/retry, and success/reset verified with intercepted responses; no real submission sent",
+  "Five invalid route types show a 404 page",
+  "AI Renovation SVG renders"
+]

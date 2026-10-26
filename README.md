@@ -4,6 +4,10 @@ A comprehensive directory and showcase platform for AI-powered architecture and 
 
 🌐 **Live Site**: [https://archaitool.com](https://archaitool.com)
 
+## User journey audit (October 26, 2026)
+
+Public pages, internal and external links, responsive layouts, submission states, and the SBTI flow were audited. Fixes include invalid support links, unavailable vendor notices, navigation and 404 behavior, accessible form labels, page titles, and copy corrections. See [the audit report](reports/user-audit-2026-10-26.md) for coverage, evidence, verification commands, and remaining limits. Changes require deployment to appear on the live site.
+
 ## Overview
 
 Arch AI Tool serves as a centralized hub for discovering AI tools in the architecture and design industry. Users can:

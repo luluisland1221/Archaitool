@@ -5,6 +5,7 @@ import { Search, BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blog/posts';
 import { getTagBySlug } from '../data/blog/tags';
 import { withTrailingSlash } from '../utils/urlHelper';
+import NotFound from './NotFound';
 
 const Blog: React.FC = () => {
   const { tagSlug } = useParams<{ tagSlug?: string }>();
@@ -35,7 +36,7 @@ const Blog: React.FC = () => {
     }
 
     // Sort by publication date (newest first)
-    return posts.sort((a, b) =>
+    return [...posts].sort((a, b) =>
       new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
     );
   }, [searchQuery, selectedRouteTag, selectedTags]);
@@ -55,6 +56,8 @@ const Blog: React.FC = () => {
     { label: 'Beginner guides', href: '/blog/tag/beginner-guides/' },
     { label: 'Tool reviews', href: '/blog/tag/tool-reviews/' }
   ];
+
+  if (tagSlug && !selectedRouteTag) return <NotFound />;
 
   return (
     <>
@@ -115,7 +118,9 @@ const Blog: React.FC = () => {
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search articles..."
+                aria-label="Search articles"
+                name="search"
+                placeholder="Search articles…"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"

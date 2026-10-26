@@ -250,7 +250,7 @@ const Home = () => {
                               </p>
                               <div className="flex justify-between items-center">
                                 <span className={`px-3 py-1 ${tool.isPaid ? 'bg-gray-100' : 'bg-gray-50'} text-sm rounded-full`}>
-                                  {tool.isPaid ? 'Paid' : 'Free'}
+                                  {tool.websiteUnavailable ? 'Website unavailable' : tool.isPaid ? 'Paid' : 'Free'}
                                 </span>
                               </div>
                             </div>
@@ -258,19 +258,20 @@ const Home = () => {
                           <Link
                             to={toolDetailUrl}
                             className="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                            aria-label={`View ${tool.name} AI tool details`}
+                            aria-label={`View ${tool.name} details`}
                           >
                             <span className="sr-only">View {tool.name} details</span>
                           </Link>
-                          <a
+                          {!tool.websiteUnavailable && (<a
                             href={tool.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="absolute top-4 right-4 z-20 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            aria-label={`Visit ${tool.name} website (opens in a new tab)`}
+ className="absolute top-4 right-4 z-20 bg-white p-2 rounded-full shadow-lg opacity-100 md:opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 focus:opacity-100 transition-opacity duration-300"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <ExternalLink className="h-4 w-4 text-gray-600" />
-                          </a>
+                          </a>)}
                         </article>
                       );
                     })}
@@ -294,8 +295,8 @@ const Home = () => {
       <section className="py-16 bg-gray-100 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">Priority resources</p>
-            <h2 className="text-3xl font-bold text-gray-900">Fresh AI Architecture Workflows to Crawl Next</h2>
+            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">Featured workflows</p>
+            <h2 className="text-3xl font-bold text-gray-900">Explore AI Workflows for Architecture</h2>
             <p className="text-gray-700 mt-3 max-w-3xl">
               These pages collect newer video, image generation, visualization, and automation workflows that are useful
               starting points for architects comparing fast AI production stacks.
@@ -337,9 +338,7 @@ const Home = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Transforming Architecture with AI</h2>
             <p className="text-lg text-gray-300 mb-8">
-              Welcome to the future of architectural design. Our platform showcases the latest agentic AI architecture tools, 
-              helping professionals humanize AI in their workflow. From Building design to medallion architecture, 
-              we curate the most innovative AI agent architecture solutions to enhance your creative process.
+              Find tools for concept design, floor planning, architectural rendering, and interior visualization. Compare features and pricing, explore practical guides, and choose tools that fit your next project.
             </p>
             <Link
               to="/tools/"

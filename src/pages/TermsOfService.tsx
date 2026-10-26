@@ -2,11 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const TermsOfService = () => {
-  const currentDate = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
+  const currentDate = 'October 17, 2026';
 
   return (
     <>

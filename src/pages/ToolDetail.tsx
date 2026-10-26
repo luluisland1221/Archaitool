@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useEffect } from 'react';
 import { useParams, Link, useLocation, Navigate } from 'react-router-dom';
 import {
@@ -45,7 +45,6 @@ const buildToolTitle = (tool: Tool) => {
 const ToolDetail = () => {
   const { id } = useParams();
   const location = useLocation();
-  const [supportEmail, setSupportEmail] = useState<string | null>(null);
 
   // Find the tool in our data
   const tool = configuredCategories.flatMap(category =>
@@ -58,7 +57,6 @@ const ToolDetail = () => {
     if (tool) {
       // Update page title
       document.title = buildToolTitle(tool);
-      setSupportEmail(tool.companyInfo?.support?.email || null);
 
       // Update or create meta description
       let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
@@ -413,7 +411,7 @@ const ToolDetail = () => {
 
               {/* CTA Button */}
               <div className={toolVisitCardContent}>
-                <a
+                {tool.websiteUnavailable ? <p role="status" className="p-4 bg-amber-50 text-amber-900">The vendor website was unavailable when checked on October 26, 2026. Browse the related tools below for alternatives. This listing may contain historical information.</p> : (<a
                   href={tool.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -421,7 +419,7 @@ const ToolDetail = () => {
                 >
                   Visit Website
                   <ExternalLink className="h-5 w-5 ml-2" />
-                </a>
+                </a>)}
               </div>
             </div>
           </div>
@@ -760,14 +758,14 @@ const ToolDetail = () => {
                   )}
                 </div>
 
-                <a
+                {tool.websiteUnavailable ? <p role="status" className="p-4 bg-amber-50 text-amber-900">The vendor website was unavailable when checked on October 26, 2026. Browse the related tools below for alternatives. This listing may contain historical information.</p> : (<a
                   href={tool.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-black text-white text-center py-3 rounded-lg hover:bg-gray-800 transition-colors mt-6 font-semibold"
                 >
                   Try {tool.name}
-                </a>
+                </a>)}
               </div>
 
               {/* Company Information */}
@@ -825,27 +823,22 @@ const ToolDetail = () => {
                   <div className="border-t pt-4">
                     <h4 className="font-medium mb-3">Support Options</h4>
                     <div className="space-y-2">
-                      {tool.companyInfo?.support?.email && (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            if (supportEmail) {
-                              window.location.href = `mailto:${supportEmail}`;
-                            }
-                          }}
+                      {tool.companyInfo?.support?.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(tool.companyInfo.support.email) && (
+                        <a
+                          href={`mailto:${tool.companyInfo.support.email}`}
                           className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-800"
                         >
                           <Mail className="h-4 w-4" />
                           Email Support
-                        </button>
+                        </a>
                       )}
                       {tool.companyInfo?.support?.chat && (
                         <div className="flex items-center gap-2 text-sm text-gray-600">
                           <MessageCircle className="h-4 w-4" />
-                          Live Chat
+                          Live chat via vendor website
                         </div>
                       )}
-                      {tool.companyInfo?.support?.documentation && (
+                      {tool.companyInfo?.support?.documentation && /^https?:\/\//i.test(tool.companyInfo.support.documentation) && (
                         <a href={tool.companyInfo.support.documentation} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-800">
                           <BookOpen className="h-4 w-4" />
                           Documentation
@@ -859,18 +852,18 @@ const ToolDetail = () => {
                     <div className="border-t pt-4 mt-4">
                       <h4 className="font-medium mb-3">Follow</h4>
                       <div className="flex gap-2">
-                        {tool.companyInfo?.socialMedia?.linkedin && (
-                          <a href={tool.companyInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-800">
+                        {tool.companyInfo?.socialMedia?.linkedin && /^https?:\/\//i.test(tool.companyInfo.socialMedia.linkedin) && (
+                          <a href={tool.companyInfo.socialMedia.linkedin} aria-label={`${tool.name} on LinkedIn (opens in a new tab)`} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-800">
                             <Globe className="h-5 w-5" />
                           </a>
                         )}
-                        {tool.companyInfo?.socialMedia?.twitter && (
-                          <a href={tool.companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-600">
+                        {tool.companyInfo?.socialMedia?.twitter && /^https?:\/\//i.test(tool.companyInfo.socialMedia.twitter) && (
+                          <a href={tool.companyInfo.socialMedia.twitter} aria-label={`${tool.name} on X (opens in a new tab)`} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-600">
                             <MessageCircle className="h-5 w-5" />
                           </a>
                         )}
-                        {tool.companyInfo?.socialMedia?.youtube && (
-                          <a href={tool.companyInfo.socialMedia.youtube} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-red-600">
+                        {tool.companyInfo?.socialMedia?.youtube && /^https?:\/\//i.test(tool.companyInfo.socialMedia.youtube) && (
+                          <a href={tool.companyInfo.socialMedia.youtube} aria-label={`${tool.name} on YouTube (opens in a new tab)`} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-red-600">
                             <Play className="h-5 w-5" />
                           </a>
                         )}

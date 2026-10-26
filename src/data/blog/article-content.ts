@@ -283,7 +283,7 @@ export const architectAIGuideArticle = `
 <h3>Tool Recommendations by Need:</h3>
 
 <ul>
-<li><strong>For concept exploration:</strong> <a href="/architectural-design/ai-architectures/">AI Architectures</a> + <a href="https://archaitool.com/multi-domain-ai/midjourney/" target="_blank" rel="noopener noreferrer">Midjourney</a></li>
+<li><strong>For concept exploration:</strong> <a href="/architectural-design/ai-architectures/">AI Architectures</a> + <a href="/design-tools/midjourney/" target="_blank" rel="noopener noreferrer">Midjourney</a></li>
 <li><strong>For layout optimization:</strong> <a href="/architectural-design/testfit/">TestFit</a> + <a href="/architectural-design/floorplan-ai/">Floorplan AI</a></li>
 <li><strong>For final visualization:</strong> <a href="/architectural-design/myarchitectai/">MyArchitect AI</a> + <a href="/architectural-design/arko-ai/">Arko AI</a></li>
 <li><strong>For interior design:</strong> <a href="/interior-design/home-design-ai/">Home Design AI</a> + <a href="/interior-design/roomgpt/">RoomGPT</a></li>
@@ -851,7 +851,7 @@ export const acceleratingConceptDesignArticle = `
   <li>[ ] Contract language clarifying AI-assisted deliverables</li>
 </ul>
 
-<p>When every designer follows the same AI-assisted steps, concept design becomes both faster and more consistent. Ready to keep building? Explore the <a href="/tools/architectural-design/">full concept tool library</a> on ArchAITool.</p>
+<p>When every designer follows the same AI-assisted steps, concept design becomes both faster and more consistent. Ready to keep building? Explore the <a href="/tools/architecture-spatial/architectural-design/">full concept tool library</a> on ArchAITool.</p>
 `;
 
 export const schoolToPracticeArticle = `

@@ -7,6 +7,7 @@ export interface Tool {
   image: string;
   url: string;
   isPaid: boolean;
+  websiteUnavailable?: boolean;
   category: string;
   subcategory: string;
   useDynamicScreenshot?: boolean;
@@ -769,7 +770,7 @@ export const categories: Category[] = [
               support: {
                 email: "Available through Autodesk support portal",
                 chat: true,
-                documentation: "https://help.autodesk.com/en/support/forma",
+                documentation: "https://help.autodesk.com/view/SPCMKR/ENU/",
                 tutorials: "https://www.autodesk.com/support/forma/learn-discover",
                 phone: "Regional support centers available"
               },
@@ -1900,7 +1901,7 @@ export const categories: Category[] = [
                 subscriptionManagement: "https://my.chaos.com/"
               },
               socialMedia: {
-                youtube: "https://www.youtube.com/@EvolveLABio",
+
                 linkedin: "https://www.linkedin.com/company/evolvelabio",
                 twitter: "https://twitter.com/EvolveLABio",
                 instagram: "https://www.instagram.com/evolvelabio/",
@@ -3259,6 +3260,7 @@ export const categories: Category[] = [
             description: "Virtual assistant for effortless living space transformation",
             image: "/screenshots/www_designai_us_.webp",
             url: "https://www.designai.us/",
+            websiteUnavailable: true,
             isPaid: true,
             category: "interior-design",
             subcategory: "interior-design-remodeling",
@@ -3646,9 +3648,6 @@ export const categories: Category[] = [
               "Pay-as-you-go pricing model"
             ],
             pricing: {
-              freeTier: {
-                features: ["No free tier available", "Pay-as-you-go only"]
-              },
               paid: {
                 plans: [
                   {
@@ -3851,7 +3850,7 @@ export const categories: Category[] = [
             companyInfo: {
               support: {
                 email: "support@dehome.ai",
-                documentation: "https://dehome.ai/resources",
+
                 tutorials: "Guided onboarding available in-app"
               },
               userStats: {
@@ -3946,7 +3945,7 @@ export const categories: Category[] = [
             ],
             companyInfo: {
               support: {
-                documentation: "https://roomlab.app/faq",
+
                 email: "support@roomlab.app"
               }
             },
@@ -5074,126 +5073,32 @@ export const categories: Category[] = [
             lastUpdated: "2025-10-28"
           },
           {
-            id: "yardflip",
-            name: "YardFlip AI",
-            description: "AI-powered yard visualization with photorealistic transformations in 24 hours",
-            image: "/screenshots/www_yardflip_ai_.webp",
-            url: "https://www.yardflip.ai/",
-            isPaid: true,
-            category: "landscape-design",
-            subcategory: "landscape-planning",
-            searchAliases: ["yardflip", "yardflip ai"],
-            detailedDescription: "YardFlip AI is a professional AI-powered landscape visualization service founded by Regan Kirk in 2024, rated 5/5 by homeowners internationally. The platform 'transforms your yard in 24 hours' using advanced inpainting technology to convert ordinary yard photos into stunning photorealistic designs. Serving US, AU, and NZ markets, YardFlip AI offers a 100% money-back guarantee and eliminates the need for expensive landscape contractors by providing multiple design options customized to your specific yard.",
-            keyFeatures: [
-              "Photorealistic yard transformations",
-              "24-48 hour turnaround time",
-              "Multiple design variations per project",
-              "High-resolution downloadable designs",
-              "Commercial video generation options",
-              "Professional landscape visualization",
-              "Multiple pricing tiers for different needs",
-              "Upload and transform existing photos",
-              "Custom design solutions",
-              "Video creation for marketing presentations"
+            "id": "yardflip",
+            "name": "YardFlip AI",
+            "description": "AI landscape design app with photo-based concepts and plant and material shopping lists",
+            "image": "/screenshots/www_yardflip_ai_.webp",
+            "url": "https://apps.apple.com/au/app/yardflip/id6743827897",
+            "isPaid": true,
+            "category": "landscape-design",
+            "subcategory": "landscape-planning",
+            "searchAliases": [
+              "yardflip",
+              "yardflip ai"
             ],
-            technicalSpecs: {
-              supportedFormats: ["Photo uploads (JPG, PNG)", "High-resolution downloads", "Video exports (MP4)"],
-              exportOptions: ["High-quality images", "Presentation videos", "Multiple design variations"],
-              collaboration: false,
-              apiAvailable: false,
-              mobileSupport: true,
-              renderSpeed: "24-48 hours processing time",
-              systemRequirements: ["Photo upload capability", "Email for delivery"]
-            },
-            pricing: {
-              freeTier: {
-                features: [
-                  "No free tier available"
-                ],
-                limitations: ["Service requires payment", "No trial option"]
-              },
-              paid: {
-                plans: [
-                  {
-                    name: "Basic",
-                    price: "$45/month",
-                    usdPrice: "$29 USD",
-                    features: [
-                      "20 yard designs",
-                      "48-hour turnaround",
-                      "One area with one style",
-                      "High-resolution downloads",
-                      "Email delivery"
-                    ],
-                    targetUser: "Homeowners with basic needs"
-                  },
-                  {
-                    name: "Plus",
-                    price: "$77/month",
-                    usdPrice: "$51 USD",
-                    yearlyPrice: "$59 AUD/year",
-                    features: [
-                      "50 yard designs",
-                      "24-hour turnaround",
-                      "Multiple areas and styles",
-                      "2 video fly-throughs",
-                      "Priority processing"
-                    ],
-                    targetUser: "Professionals and detailed projects",
-                    popular: true
-                  },
-                  {
-                    name: "Premium",
-                    price: "$116/month",
-                    usdPrice: "$72 USD",
-                    yearlyPrice: "$89 AUD/year",
-                    features: [
-                      "80 yard designs",
-                      "24-hour turnaround",
-                      "4 video fly-throughs",
-                      "Commercial license",
-                      "Priority support",
-                      "Customized to your specific yard"
-                    ],
-                    targetUser: "Commercial users and landscapers"
-                  }
-                ],
-                moneyBackGuarantee: "100% money-back guarantee",
-                turnaround: "24-48 hour processing"
-              },
-              trialAvailable: false,
-              enterprisePlan: false
-            },
-            useCases: [
-              "Pre-construction yard visualization",
-              "Landscape design presentations",
-              "Real estate property marketing",
-              "Home renovation planning",
-              "Professional landscaper client presentations",
-              "Outdoor living space design",
-              "Garden transformation planning",
-              "Commercial landscape proposals"
+            "detailedDescription": "YardFlip is an AI landscape design app for exploring changes to a yard from a photo. Its App Store listing describes site analysis, budget and maintenance preferences, landscape styles, design concepts, and plant and material shopping lists. The former website returned 404 during our October 26, 2026 review, so the main link now opens the App Store listing. Check that listing for current device requirements and in-app purchase prices. Generated concepts require professional review before construction.",
+            "keyFeatures": [
+              "Photo-based landscape concepts",
+              "Budget and maintenance preferences",
+              "Plant and material shopping lists",
+              "Before-and-after comparisons",
+              "High-resolution concept exports"
             ],
-            integrations: [
-              "Photo upload processing",
-              "Email delivery system",
-              "High-resolution image export",
-              "Video generation and export"
+            "useCases": [
+              "Explore backyard renovation ideas",
+              "Compare landscape styles",
+              "Plan outdoor living spaces"
             ],
-            companyInfo: {
-              name: "YardFlip AI",
-              founded: "2023",
-              headquarters: "Australia",
-              teamSize: "5-20",
-              userBase: "10,000+ projects completed",
-              support: {
-                email: "support@yardflip.ai",
-                documentation: "Service guidelines",
-                tutorials: "Upload instructions and design tips"
-              }
-            },
-            rating: 4.5,
-            lastUpdated: "2025-10-30"
+            "lastUpdated": "2026-10-26"
           },
           {
             id: "ai-garden-design",
@@ -5351,7 +5256,7 @@ export const categories: Category[] = [
             technicalSpecs: { supportedFormats: ["Text prompts", "Code", "Long-form context"], exportOptions: ["Copyable streamed responses"], apiAvailable: true, collaboration: false, mobileSupport: true, systemRequirements: ["Modern web browser", "Account for live runs"] },
             useCases: ["Software development", "Front-end prototyping", "Long repository analysis", "Agent loop evaluation", "Technical research"],
             integrations: ["Web playground", "Server-side API delivery"],
-            companyInfo: { name: "GLM 5.2", support: { documentation: "https://glm52.site/api" } },
+            companyInfo: { name: "GLM 5.2", support: { documentation: "https://glm52.site/" } },
             lastUpdated: "2026-09-28"
           },
           {
@@ -5391,7 +5296,7 @@ export const categories: Category[] = [
             technicalSpecs: { supportedFormats: ["Text prompts", "Code", "Long-form documents"], exportOptions: ["Copyable responses"], apiAvailable: true, collaboration: false, mobileSupport: true, systemRequirements: ["Modern web browser", "Internet connection"] },
             useCases: ["Coding assistance", "Complex reasoning", "Research synthesis", "Content drafting", "API evaluation"],
             integrations: ["Web playground", "API access workflow"],
-            companyInfo: { name: "Kimi K3 Online", support: { documentation: "https://kimik3.online/api" } },
+            companyInfo: { name: "Kimi K3 Online", support: { documentation: "https://kimik3.online/" } },
             lastUpdated: "2026-09-28"
           },
           {

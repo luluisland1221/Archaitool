@@ -1,10 +1,10 @@
-import React from 'react';
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 import Tools from './pages/Tools';
 import ToolDetail from './pages/ToolDetail';
 import About from './pages/About';
@@ -30,12 +30,13 @@ const TitleUpdater = () => {
 
   useEffect(() => {
     const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
-    const titles = {
+    const titles: Record<string, string> = {
       '/': 'Arch AI Tool - Discover AI Tools for Architecture & Design',
       '/tools': 'AI Architecture Tools - Browse All Categories | Arch AI Tool',
       '/blog': 'ArchAI Blog - AI Architecture Tools Insights & Tutorials',
       '/about': 'About Us - Arch AI Tool',
       '/contact': 'Contact Us - Arch AI Tool',
+      '/submit': 'Submit an AI Tool | Arch AI Tool',
       '/contact/submissions': 'Submission Inbox - Arch AI Tool',
       '/privacy-policy': 'Privacy Policy - Arch AI Tool',
       '/terms-of-service': 'Terms of Service - Arch AI Tool',
@@ -55,14 +56,13 @@ const TitleUpdater = () => {
     };
 
     // Check if this is a category-based tool URL
-    const isCategoryToolUrl = /^\/(architectural-design|architectural-visualization|design-automation|interior-design-remodeling|landscape-planning|multi-domain-ai|property-visualization|virtual-staging)\/[^/]+$/.test(normalizedPath);
 
     // Update page title
-    if (isCategoryToolUrl || normalizedPath.startsWith('/tool/')) {
-      document.title = 'AI Tool Details | Arch AI Tool';
-    } else if (normalizedPath.startsWith('/blog/')) {
-      document.title = 'Blog Article | Arch AI Tool';
-    } else {
+    const hasPageTitle = normalizedPath === '/' || normalizedPath === '/about' ||
+      /^\/(tools|tool|blog)(\/|$)/.test(normalizedPath) ||
+      /^\/(architectural-design|interior-design|landscape-design|design-tools|real-estate)\//.test(normalizedPath) ||
+      ['/contact', '/contact/submissions', '/privacy-policy', '/terms-of-service', '/sbti'].includes(normalizedPath);
+    if (!hasPageTitle && titles[normalizedPath]) {
       document.title = titles[normalizedPath] || 'Arch AI Tool';
     }
 
@@ -97,12 +97,13 @@ const TitleUpdater = () => {
       document.head.appendChild(metaDescription);
     }
 
-    const descriptions = {
+    const descriptions: Record<string, string> = {
       '/': 'Discover the best AI tools for architecture and design. Explore comprehensive directory of AI-powered architectural generation, visualization, interior design tools and more.',
       '/tools': 'Compare AI architecture tools by category with free tiers, trials, and paid options. Find rendering, floor plan, and BIM workflow tools faster.',
       '/blog': 'Discover the latest insights, tutorials, and reviews for AI architecture tools. Learn how to integrate artificial intelligence into your architectural design workflow.',
       '/about': 'Learn about Arch AI Tool - your comprehensive guide to AI-powered architecture and design tools. Discover how we help professionals find the best AI solutions.',
       '/contact': 'Contact Arch AI Tool team - tool submissions, partnerships, technical support. We help architecture and design professionals discover the best AI tools.',
+      '/submit': 'Recommend an AI tool for architecture and design. Share the website, features, and pricing for editorial review by Arch AI Tool.',
       '/contact/submissions': 'Private submissions inbox for Arch AI Tool.',
       '/privacy-policy': 'Read Arch AI Tool\'s privacy policy - learn how we collect, use, and protect your personal information, including cookie policy and data security.',
       '/terms-of-service': 'Review Arch AI Tool\'s terms of service - understand your rights and responsibilities when using our AI tools directory platform.',
@@ -147,6 +148,19 @@ const LegacyQueryRedirects = () => {
   return null;
 };
 
+// 从长目录或文章跳转后，从新页面顶部开始阅读；保留页内锚点。
+const RouteScroll = () => {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+  return null;
+};
+
 function App() {
   const isPrivateMail = window.location.pathname.replace(/\/+$/, '') === '/owner/mail';
   return (
@@ -155,9 +169,10 @@ function App() {
         {/* Add structured data for homepage */}
         {!isPrivateMail && <StructuredData data={generateHomepageStructuredData()} />}
         <TitleUpdater />
+        <RouteScroll />
         <LegacyQueryRedirects />
         {!isPrivateMail && <Navbar />}
-        <main>
+        <main id="page-content" tabIndex={-1}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tools" element={<Tools />} />
@@ -187,6 +202,7 @@ function App() {
             {/* Admin routes for research management */}
             <Route path="/admin/research" element={<ResearchManagement />} />
             <Route path="/owner/mail" element={<AdminMailCenter />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         {!isPrivateMail && <Footer />}

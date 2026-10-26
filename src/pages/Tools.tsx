@@ -9,6 +9,7 @@ import { generateToolUrl, withTrailingSlash } from '../utils/urlHelper';
 import { truncateWithEllipsis } from '../utils/text';
 import { getFeaturedNewToolRank, isNewToolId } from '../data/newTools';
 import { NewBadge } from '../components/NewBadge';
+import NotFound from './NotFound';
 
 type Insight = {
   overview: string;
@@ -19,11 +20,11 @@ type Insight = {
 };
 
 const BASE_URL = 'https://archaitool.com';
-const DIRECTORY_LAST_UPDATED = '2026-04-13';
+const DIRECTORY_LAST_UPDATED = '2026-10-26';
 
 const directoryNarrative = {
   hero:
-    'Arch AI Tool tracks hundreds of design, construction, and property technology AI experiments on a rolling basis. This directory condenses that research into practical buying notes so studios, developers, and in-house innovation teams can jump straight to the workflows that already ship results.',
+    'Browse AI tools for architecture, interiors, landscaping, and property marketing. Start with a category, compare tool descriptions and listed pricing options, then visit the vendor website to confirm the features you need.',
   usage: [
     'Start with the category that mirrors your current deliverable—feasibility studies, marketing collateral, tenant-fit plans, or landscaping proposals—and skim the overview to understand what outputs to expect.',
     'Open the relevant subcategory for a deeper explanation of the workflow, such as virtual staging or design automation, and note the interlinked tools to compare turnaround time, export fidelity, and collaboration features.',
@@ -39,7 +40,7 @@ const directoryNarrative = {
     {
       question: 'How often is the directory updated?',
       answer:
-        'We refresh the dataset every two weeks. New tools are vetted manually, and major feature launches from existing vendors are annotated on their detail pages once we verify them through official releases or documentation.'
+        'Listings are updated as tools are added and corrections are reviewed. Features and prices can change between updates; confirm current details on the vendor website.'
     },
     {
       question: 'Can I request coverage for a missing tool?',
@@ -398,6 +399,10 @@ const Tools = () => {
     return <Navigate to={canonicalPath} replace />;
   }
 
+  if ((finalCategoryId && !selectedCategory) || (finalSubcategoryId && !selectedSubcategory)) {
+    return <NotFound />;
+  }
+
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
   const structuredDataBlocks: object[] = [];
 
@@ -580,7 +585,7 @@ const Tools = () => {
           ))}
         </ul>
         <p className="text-sm text-gray-500 mt-6">
-          Last reviewed: {DIRECTORY_LAST_UPDATED}. Rolling updates at least every two weeks.
+          Directory page updated: {DIRECTORY_LAST_UPDATED}. Individual listings may have different review dates.
         </p>
       </section>
     </div>
@@ -641,7 +646,7 @@ const Tools = () => {
             </p>
             <div className="flex justify-between items-center">
               <span className={`px-3 py-1 ${tool.isPaid ? 'bg-gray-100' : 'bg-gray-50'} text-sm rounded-full`}>
-                {tool.isPaid ? 'Paid' : 'Free'}
+                {tool.websiteUnavailable ? 'Website unavailable' : tool.isPaid ? 'Paid' : 'Free'}
               </span>
             </div>
           </div>
@@ -649,19 +654,20 @@ const Tools = () => {
         <Link
           to={toolDetailUrl}
           className="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-          aria-label={`View ${tool.name} AI tool details`}
+          aria-label={`View ${tool.name} details`}
         >
           <span className="sr-only">View {tool.name} details</span>
         </Link>
-        <a
+        {!tool.websiteUnavailable && (<a
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-4 right-4 z-20 bg-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          aria-label={`Visit ${tool.name} website (opens in a new tab)`}
+ className="absolute top-4 right-4 z-20 bg-white p-2 rounded-full shadow-lg opacity-100 md:opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 focus:opacity-100 transition-opacity duration-300"
           onClick={(e) => e.stopPropagation()}
         >
           <ExternalLink className="h-4 w-4 text-gray-600" />
-        </a>
+        </a>)}
       </article>
     );
   };

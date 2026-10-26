@@ -33,11 +33,11 @@ const SubmitTool = () => {
         formEl.reset();
       } else {
         const err = await res.json().catch(() => ({}));
-        setMessage(`Submission failed: ${err.error || res.statusText}`);
+        setMessage(`Submission failed: ${err.error || res.statusText}. Please try again or email service@archaitool.com.`);
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unknown error';
-      setMessage(`Submission failed: ${message}`);
+      setMessage(`Unable to submit your tool. Please try again or email service@archaitool.com. (${message})`);
       // Surface the underlying error for debugging.
       console.error('Submit request failed:', error);
     } finally {
@@ -46,25 +46,25 @@ const SubmitTool = () => {
   };
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-10">
+    <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mb-4">Submit an AI Tool</h1>
       <p className="text-gray-700 mb-6">
         Share your architecture / design AI tool with our directory. Submissions are reviewed manually before publishing.
       </p>
       <form className="space-y-4" onSubmit={handleSubmit}>
         <div>
-          <label className="block text-sm font-medium mb-1">Tool name *</label>
+          <label htmlFor="submit-title" className="block text-sm font-medium mb-1">Tool name *</label>
           <input
-            name="title"
+            id="submit-title" name="title"
             required
             className="w-full border border-gray-300 rounded px-3 py-2"
             placeholder="e.g., Rendera AI"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">Website URL *</label>
+          <label htmlFor="submit-url" className="block text-sm font-medium mb-1">Website URL *</label>
           <input
-            name="url"
+            id="submit-url" name="url"
             type="url"
             required
             className="w-full border border-gray-300 rounded px-3 py-2"
@@ -72,9 +72,9 @@ const SubmitTool = () => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">Short description *</label>
+          <label htmlFor="submit-desc" className="block text-sm font-medium mb-1">Short description *</label>
           <textarea
-            name="desc"
+            id="submit-desc" name="desc"
             required
             rows={4}
             className="w-full border border-gray-300 rounded px-3 py-2"
@@ -82,20 +82,20 @@ const SubmitTool = () => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">Tags (optional)</label>
+          <label htmlFor="submit-tags" className="block text-sm font-medium mb-1">Tags (optional)</label>
           <input
-            name="tags"
+            id="submit-tags" name="tags"
             className="w-full border border-gray-300 rounded px-3 py-2"
             placeholder="e.g., rendering, interior, BIM"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">Contact email (optional)</label>
+          <label htmlFor="submit-email" className="block text-sm font-medium mb-1">Contact email (optional)</label>
           <input
-            name="email"
+            id="submit-email" name="email"
             type="email"
             className="w-full border border-gray-300 rounded px-3 py-2"
-            placeholder="you [at] example.com"
+            autoComplete="email" placeholder="you@example.com"
           />
         </div>
         <button
@@ -106,8 +106,8 @@ const SubmitTool = () => {
           {loading ? 'Submitting…' : 'Submit'}
         </button>
       </form>
-      {message && <p className="mt-4 text-sm text-gray-800">{message}</p>}
-    </main>
+      <p role="status" aria-live="polite" className="mt-4 text-sm text-gray-800">{message}</p>
+    </div>
   );
 };
 
