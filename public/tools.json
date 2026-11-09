@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-09",
+  "generatedAt": "2026-11-09",
   "site": "https://archaitool.com",
-  "totalTools": 78,
+  "totalTools": 79,
   "categories": [
     {
       "id": "architecture-spatial",
@@ -1458,6 +1458,43 @@
               "integrations": [],
               "searchAliases": [],
               "lastUpdated": "2026-03-14"
+            },
+            {
+              "id": "3dstudio-ai-render",
+              "name": "3Dstudio.co AI Render",
+              "description": "Upload a screenshot from SketchUp, Revit, Archicad, Rhino, or another modeling tool, choose a lighting setup, then compare the result with the original. The browser-based workflow is useful for early lighting and material studies. Check the generated image against your model before sharing it for client review.",
+              "vendorUrl": "https://3dstudio.co/tools/ai-render/",
+              "directoryUrl": "https://archaitool.com/architectural-design/3dstudio-ai-render/",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro",
+                    "price": "€25",
+                    "billing": "monthly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Browser-based rendering from PNG, JPG, or WebP screenshots",
+                "Daylight, dusk, night, and seasonal lighting options",
+                "Localized edits and comparison with the original"
+              ],
+              "useCases": [
+                "Early concept previews",
+                "Interior and exterior lighting studies",
+                "Material option studies"
+              ],
+              "integrations": [],
+              "searchAliases": [
+                "3D Studio",
+                "SketchUp AI rendering",
+                "Revit AI rendering"
+              ],
+              "lastUpdated": "2026-11-09"
             }
           ]
         },

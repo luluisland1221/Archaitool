@@ -2863,6 +2863,44 @@ export const categories: Category[] = [
               "Client presentation imagery"
             ],
             lastUpdated: "2026-03-14"
+          },
+          {
+            id: "3dstudio-ai-render",
+            name: "3Dstudio.co AI Render",
+            description: "Turn 3D model screenshots into architectural renders in your browser",
+            seoTitle: "3Dstudio.co AI Render Features & Pricing | Arch AI Tool",
+            seoDescription: "Explore screenshot-based rendering from SketchUp, Revit, Archicad, and Rhino, with free trial limits and paid commercial options.",
+            url: "https://3dstudio.co/tools/ai-render/",
+            image: "/screenshots/3dstudio_co_ai_render.webp",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-visualization",
+            searchAliases: ["3D Studio", "SketchUp AI rendering", "Revit AI rendering"],
+            detailedDescription: "Upload a screenshot from SketchUp, Revit, Archicad, Rhino, or another modeling tool, choose a lighting setup, then compare the result with the original. The browser-based workflow is useful for early lighting and material studies. Check the generated image against your model before sharing it for client review.",
+            keyFeatures: [
+              "Browser-based rendering from PNG, JPG, or WebP screenshots",
+              "Daylight, dusk, night, and seasonal lighting options",
+              "Localized edits and comparison with the original"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["1 render without an account", "5 renders and 5 fixes with a free account, no card required"],
+                limitations: ["Some lower-priced regions receive 3 renders and 3 fixes", "Free images include a small logo and are for personal use"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pro",
+                    price: "€25",
+                    billing: "monthly",
+                    features: ["80 HD renders per month", "Commercial use", "Watermark-free exports"],
+                    targetUser: "Individual architects and designers"
+                  }
+                ]
+              }
+            },
+            useCases: ["Early concept previews", "Interior and exterior lighting studies", "Material option studies"],
+            lastUpdated: "2026-11-09"
           }
         ]
       },
