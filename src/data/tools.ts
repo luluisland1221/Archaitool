@@ -1440,6 +1440,43 @@ export const categories: Category[] = [
             ],
             userRating: 4.5,
             lastUpdated: "2025-10-28"
+          },
+          {
+            id: "horezmi",
+            name: "Horezmi",
+            description: "Convert floor plan PDFs, scans, and sketches into editable DWG and DXF drawings",
+            seoTitle: "Horezmi PDF and Image to DWG Converter | Arch AI Tool",
+            seoDescription: "Explore Horezmi for converting floor plan PDFs, photos, scans, and sketches into layered CAD drawings with editable dimensions.",
+            url: "https://horezmi.com/",
+            image: "/screenshots/horezmi_com_.webp",
+            isPaid: true,
+            category: "architecture-spatial",
+            subcategory: "architectural-design",
+            searchAliases: ["PDF to DWG", "scan to CAD", "image to DXF", "floor plan digitization"],
+            detailedDescription: "Horezmi digitizes existing plans from a PDF, photo, scan, or hand sketch. It produces layered CAD drawings with elements such as walls, doors, windows, room areas, and dimensions. You can review the drawing in the browser, request changes in plain language, and generate a PDF sheet or a 3D view. Verify dimensions and geometry against the original before using the output for construction.",
+            keyFeatures: [
+              "Editable DWG and DXF drawings with layers and dimensions",
+              "PDF sheets, 3D views, and room, door, and window schedules",
+              "Text-based revisions with changes shown in the preview"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["Free drawing preview and first file, according to the product page"]
+              },
+              paid: {
+                plans: [
+                  {
+                    name: "Pay as you go",
+                    price: "Varies by drawing",
+                    billing: "onetime",
+                    features: ["Prepaid balance", "No subscription", "See the official pricing page for current rates"],
+                    targetUser: "Teams digitizing plans on demand"
+                  }
+                ]
+              }
+            },
+            useCases: ["Redrawing scanned floor plans", "Converting hand sketches to editable CAD", "Preparing drawings for further CAD review"],
+            lastUpdated: "2026-11-09"
           }
         ]
       },

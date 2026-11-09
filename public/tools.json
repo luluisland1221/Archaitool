@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-11-09",
   "site": "https://archaitool.com",
-  "totalTools": 79,
+  "totalTools": 80,
   "categories": [
     {
       "id": "architecture-spatial",
@@ -677,6 +677,44 @@
               ],
               "searchAliases": [],
               "lastUpdated": "2025-10-28"
+            },
+            {
+              "id": "horezmi",
+              "name": "Horezmi",
+              "description": "Horezmi digitizes existing plans from a PDF, photo, scan, or hand sketch. It produces layered CAD drawings with elements such as walls, doors, windows, room areas, and dimensions. You can review the drawing in the browser, request changes in plain language, and generate a PDF sheet or a 3D view. Verify dimensions and geometry against the original before using the output for construction.",
+              "vendorUrl": "https://horezmi.com/",
+              "directoryUrl": "https://archaitool.com/architectural-design/horezmi/",
+              "isPaid": true,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": false,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pay as you go",
+                    "price": "Varies by drawing",
+                    "billing": "onetime"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Editable DWG and DXF drawings with layers and dimensions",
+                "PDF sheets, 3D views, and room, door, and window schedules",
+                "Text-based revisions with changes shown in the preview"
+              ],
+              "useCases": [
+                "Redrawing scanned floor plans",
+                "Converting hand sketches to editable CAD",
+                "Preparing drawings for further CAD review"
+              ],
+              "integrations": [],
+              "searchAliases": [
+                "PDF to DWG",
+                "scan to CAD",
+                "image to DXF",
+                "floor plan digitization"
+              ],
+              "lastUpdated": "2026-11-09"
             }
           ]
         },
