@@ -1,4 +1,6 @@
 export const newToolIds = [
+  'horezmi',
+  '3dstudio-ai-render',
   'minimax-m3-online',
   'glm-5-2',
   'longcat-2-0',
