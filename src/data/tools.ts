@@ -2921,8 +2921,8 @@ export const categories: Category[] = [
             ],
             pricing: {
               freeTier: {
-                features: ["1 render without an account", "5 renders and 5 fixes with a free account, no card required"],
-                limitations: ["Some lower-priced regions receive 3 renders and 3 fixes", "Free images include a small logo and are for personal use"]
+                features: ["Up to 11 free renders: 1 without an account and 10 with a free account, no card required"],
+                limitations: ["A fix uses the same number of credits as a render", "Free images include a small logo and are for personal use"]
               },
               paid: {
                 plans: [
@@ -2937,7 +2937,7 @@ export const categories: Category[] = [
               }
             },
             useCases: ["Early concept previews", "Interior and exterior lighting studies", "Material option studies"],
-            lastUpdated: "2026-11-09"
+            lastUpdated: "2026-11-10"
           }
         ]
       },
