@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-09",
+  "generatedAt": "2026-11-19",
   "site": "https://archaitool.com",
-  "totalTools": 80,
+  "totalTools": 81,
   "categories": [
     {
       "id": "architecture-spatial",
@@ -2068,6 +2068,50 @@
               ],
               "searchAliases": [],
               "lastUpdated": "2026-01-07"
+            },
+            {
+              "id": "roomagic",
+              "name": "Roomagic",
+              "description": "Roomagic turns a room photograph into interior redesign concepts. Users choose a room type, design style, output quality and optional instructions, then compare the result with the original. In our November 2026 test, one Standard render cost 10 credits, changed furniture and finishes, and broadly preserved the room geometry and camera angle. The generated report included design reasoning, material suggestions and indicative budget ranges. Roomagic also advertises exterior and garden workflows, up to four variations, and HD/4K output on paid plans. Those options were not part of our single-render test. Outputs are early design concepts; dimensions, installation advice and budgets need independent professional verification.",
+              "vendorUrl": "https://roomagic.me/",
+              "directoryUrl": "https://archaitool.com/interior-design/roomagic/",
+              "isPaid": false,
+              "pricing": {
+                "freeTier": true,
+                "trialAvailable": true,
+                "enterprisePlan": false,
+                "paidPlans": [
+                  {
+                    "name": "Pro Monthly",
+                    "price": "$19/month",
+                    "billing": "monthly"
+                  },
+                  {
+                    "name": "Pro Annual",
+                    "price": "$168/year",
+                    "billing": "yearly"
+                  }
+                ]
+              },
+              "keyFeatures": [
+                "Upload a JPG, PNG or GIF photograph",
+                "Choose from 35+ advertised design styles",
+                "Add instructions about furniture, materials and room layout",
+                "Compare the original photograph with the generated concept",
+                "AI design report with material suggestions and indicative costs",
+                "Residential, commercial, interior and exterior controls",
+                "Up to four render variations per run",
+                "Paid HD/4K output and private renders"
+              ],
+              "useCases": [
+                "Interior remodeling concepts",
+                "Furniture and finish exploration",
+                "Client discussion boards",
+                "Early material and budget planning"
+              ],
+              "integrations": [],
+              "searchAliases": [],
+              "lastUpdated": "2026-11-19"
             },
             {
               "id": "roomlab-app",

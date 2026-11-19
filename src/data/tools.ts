@@ -3936,6 +3936,43 @@ export const categories: Category[] = [
             lastUpdated: "2026-01-07"
           },
           {
+            id: "roomagic",
+            name: "Roomagic",
+            description: "Photo-based room redesigns with style controls, before-and-after comparisons, and AI material reports",
+            image: "/screenshots/roomagic.webp",
+            url: "https://roomagic.me/",
+            isPaid: false,
+            category: "interior-design",
+            subcategory: "interior-design-remodeling",
+            detailedDescription: "Roomagic turns a room photograph into interior redesign concepts. Users choose a room type, design style, output quality and optional instructions, then compare the result with the original. In our November 2026 test, one Standard render cost 10 credits, changed furniture and finishes, and broadly preserved the room geometry and camera angle. The generated report included design reasoning, material suggestions and indicative budget ranges. Roomagic also advertises exterior and garden workflows, up to four variations, and HD/4K output on paid plans. Those options were not part of our single-render test. Outputs are early design concepts; dimensions, installation advice and budgets need independent professional verification.",
+            keyFeatures: [
+              "Upload a JPG, PNG or GIF photograph",
+              "Choose from 35+ advertised design styles",
+              "Add instructions about furniture, materials and room layout",
+              "Compare the original photograph with the generated concept",
+              "AI design report with material suggestions and indicative costs",
+              "Residential, commercial, interior and exterior controls",
+              "Up to four render variations per run",
+              "Paid HD/4K output and private renders"
+            ],
+            pricing: {
+              freeTier: {
+                features: ["30 credits on sign-up", "Standard renders at 10 credits each", "AI design report"],
+                limitations: ["Google sign-in required", "Private rendering requires Pro"]
+              },
+              paid: {
+                plans: [
+                  { name: "Pro Monthly", price: "$19/month", billing: "monthly", features: ["1,000 credits per month", "HD and 4K quality", "Private renders"], targetUser: "Designers and homeowners exploring multiple concepts" },
+                  { name: "Pro Annual", price: "$168/year", billing: "yearly", features: ["Equivalent to $14/month billed annually", "1,000 credits per month", "HD and 4K quality", "Private renders"], targetUser: "Regular users of photo-based design concepts" }
+                ]
+              },
+              trialAvailable: true
+            },
+            useCases: ["Interior remodeling concepts", "Furniture and finish exploration", "Client discussion boards", "Early material and budget planning"],
+            companyInfo: { support: { email: "support@roomagic.me" } },
+            lastUpdated: "2026-11-19"
+          },
+          {
             id: "roomlab-app",
             name: "Roomlab.app",
             description: "Hyperrealistic AI interior editor with precision material swapping and commercial licensing",
